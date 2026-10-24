@@ -262,7 +262,8 @@
         "nisa-basics.html",
         "investment-trust-fees.html",
         "investment-trust-vs-etf.html",
-        "regular-investing.html"
+        "regular-investing.html",
+        "investment-trust-actual-cost.html"
       ],
       "subcategory": "nisa-product-selection",
       "topic": "choosing-funds",
@@ -315,7 +316,8 @@
       "related": [
         "choose-investment-trust-nisa.html",
         "investment-trust-vs-etf.html",
-        "nisa-basics.html"
+        "nisa-basics.html",
+        "investment-trust-actual-cost.html"
       ],
       "subcategory": "fund-costs",
       "topic": "expense-types",
@@ -377,6 +379,31 @@
       "publishedAt": "2026-10-25",
       "updatedAt": "2026-10-25",
       "thumbnail": "thumbnails/ai-semiconductor-investing.svg"
+    },
+    {
+      "slug": "investment-trust-actual-cost.html",
+      "title": "投資信託の実質コストとは？総経費率との違いと運用報告書の見方",
+      "category": "funds",
+      "subcategory": "fund-costs",
+      "topic": "expense-types",
+      "tags": [
+        "投資信託",
+        "実質コスト",
+        "総経費率",
+        "信託報酬",
+        "運用報告書",
+        "費用明細",
+        "投資信託の選び方"
+      ],
+      "summary": "実質コスト・実質的な信託報酬率・総経費率の違いと、交付運用報告書で費用を確認する方法を解説。",
+      "status": "published",
+      "related": [
+        "investment-trust-fees.html",
+        "choose-investment-trust-nisa.html"
+      ],
+      "publishedAt": "2026-10-25",
+      "updatedAt": "2026-10-25",
+      "thumbnail": "thumbnails/investment-trust-actual-cost.svg"
     }
   ]
 }
