@@ -382,5 +382,5 @@
 - 記事件数・絞り込みリセットは記事一覧の先頭に維持。更新日の新しい順、公開日・更新日の表示も維持。
 - 変更ファイル：`index.html`、`README.md`、本ファイル。
 - `index.html` の実装コミット：`0c77208263a6fbd64c0b891871c021a2e3fbafd3`、カテゴリラベル表示修正：`4d57a2723ba1335e61f18a11eb655caf1acd23da`。
-- JavaScript構文の静的チェックと主要要素の文字列確認は実施済み。ブラウザでの実操作・PC/モバイルの表示確認、今回の変更後のGitHub Actions結果、公開URLへの反映は未確認。
-- 次の確認：GitHub Actions の build/deploy 成功を確認し、公開ページでタグダイアログ、カテゴリ階層、検索・リセット、画面幅ごとのレイアウトを確認する。
+- JavaScript構文、主要要素、ID重複、CSS括弧の静的チェックを実施。GitHub Actions run [40118031315](https://github.com/webfoundrylab/invest-atlas/actions/runs/40118031315) は build・deploy とも成功。
+- 公開URLを助手側のWeb取得で検証しようとしたが、取得環境側でブロックされ、ブラウザでの実表示・実操作は未確認。次にPC・モバイルでタグダイアログ、カテゴリ階層、検索・リセットを確認する。
