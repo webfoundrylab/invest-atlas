@@ -76,7 +76,7 @@ def generate_category_pages(registry, published):
     nodes = taxonomy_nodes(categories)
     populated_urls = []
     tree_css = """<style>
-body{margin:0;background:#f1f8fa;color:#172b3d;font:16px/1.7 system-ui,-apple-system,'Segoe UI',sans-serif}a{color:#12665f;text-underline-offset:3px}.wrap{width:min(1160px,calc(100% - 32px));margin:auto}header{background:#10243a;padding:17px 0}header a{color:#fff;text-decoration:none;font-weight:800}.crumbs{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px;font-size:.9rem}.layout{display:grid;grid-template-columns:245px minmax(0,1fr);gap:26px;align-items:start}.category-tree{background:#fff;border:1px solid #d5e6eb;border-radius:14px;padding:14px;position:sticky;top:18px;max-height:calc(100vh - 36px);overflow:auto}.category-tree ul{list-style:none;padding-left:14px;margin:8px 0}.category-tree>ul{padding:0}.category-tree li{margin:5px 0}.category-tree summary{cursor:pointer}.category-tree a{font-size:.9rem}.category-tree .active>a,.category-tree .active>details>summary>a{font-weight:800;color:#075f59}.content{background:white;border:1px solid #d5e6eb;border-radius:18px;padding:clamp(20px,4vw,40px);min-width:0}.content h1{font-size:clamp(1.8rem,4vw,2.7rem);line-height:1.25;margin:.35em 0}.lead{color:#536879}h2{font-size:1.25rem;margin:2rem 0 .7rem}.children{list-style:none;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.children li{border:1px solid #d5e6eb;border-radius:12px;padding:12px;display:flex;flex-direction:column}.children span{font-size:.8rem;color:#536879}.articles{display:grid;gap:12px}.article-card{border:1px solid #d5e6eb;border-radius:13px;padding:15px}.article-card strong{font-size:1.05rem}.article-card p{color:#536879;margin:5px 0 8px}.empty{padding:16px;background:#f4f8f9;border-radius:12px}.mobile-tree{display:none}footer{margin-top:40px;background:#0c1c2b;color:#d7e1e8;padding:22px 0}@media(max-width:850px){.layout{grid-template-columns:1fr}.layout>.category-tree{display:none}.mobile-tree{display:block;margin:0 0 18px}.mobile-tree .category-tree{display:block;position:static;max-height:none}.children{grid-template-columns:1fr}}
+body{margin:0;background:#f5f7f8;color:#172b3d;font:16px/1.7 system-ui,-apple-system,'Segoe UI',sans-serif}a{color:#176d65;text-underline-offset:3px}a:hover{color:#0b4843}.wrap{width:min(1160px,calc(100% - 32px));margin:auto}header{background:#10243a;padding:17px 0}header a{color:#fff;text-decoration:none;font-weight:800}.crumbs{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px;font-size:.9rem}.layout{display:grid;grid-template-columns:245px minmax(0,1fr);gap:26px;align-items:start}.category-tree{background:#fff;border:1px solid #dce4e8;border-radius:14px;padding:14px;position:sticky;top:18px;max-height:calc(100vh - 36px);overflow:auto}.category-tree ul{list-style:none;padding-left:14px;margin:8px 0}.category-tree>ul{padding:0}.category-tree li{margin:5px 0}.category-tree summary{cursor:pointer}.category-tree a{font-size:.9rem}.category-tree .active>a,.category-tree .active>details>summary>a{font-weight:800;color:#075f59}.content{background:white;border:1px solid #dce4e8;border-radius:14px;padding:clamp(22px,4vw,42px);min-width:0}.content h1{font-size:clamp(1.8rem,4vw,2.7rem);line-height:1.25;margin:.35em 0}.lead{color:#536879}h2{font-size:1.25rem;margin:2rem 0 .7rem}.children{list-style:none;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.children li{border:1px solid #dce4e8;border-radius:12px;padding:12px;display:flex;flex-direction:column}.children span{font-size:.8rem;color:#536879}.articles{display:grid;gap:12px}.article-card{border:1px solid #dce4e8;border-radius:13px;padding:15px}.article-card strong{font-size:1.05rem}.article-card p{color:#536879;margin:5px 0 8px}.empty{padding:16px;background:#f5f7f8;border-radius:12px}.mobile-tree{display:none}footer{margin-top:40px;background:#0c1c2b;color:#d7e1e8;padding:22px 0}@media(max-width:850px){.layout{grid-template-columns:1fr}.layout>.category-tree{display:none}.mobile-tree{display:block;margin:0 0 18px}.mobile-tree .category-tree{display:block;position:static;max-height:none}.children{grid-template-columns:1fr}}
 </style>"""
     for node in nodes:
         ids = node["ids"]
@@ -157,15 +157,13 @@ def inject_article_category_nav(page, article, registry):
     css = """<style>
 main.wrap{width:min(1160px,calc(100% - 32px))}header .wrap{width:min(1160px,calc(100% - 32px))}
 .article-page-layout{display:grid;grid-template-columns:245px minmax(0,1fr);gap:26px;align-items:start;margin:22px 0 52px}
-.article-sidebar .category-tree{background:#fff;border:1px solid #d5e6eb;border-radius:14px;padding:14px;position:sticky;top:18px;max-height:calc(100vh - 36px);overflow:auto}
+.article-sidebar .category-tree{background:#fff;border:1px solid #dce4e8;border-radius:14px;padding:14px;position:sticky;top:18px;max-height:calc(100vh - 36px);overflow:auto}
 .article-sidebar .category-tree ul{list-style:none;padding-left:14px;margin:8px 0}.article-sidebar .category-tree>ul{padding:0}.article-sidebar .category-tree li{margin:5px 0}.article-sidebar .category-tree summary{cursor:pointer}.article-sidebar .category-tree a{font-size:.9rem}.article-sidebar .category-tree .active>a,.article-sidebar .category-tree .active>details>summary>a{font-weight:800;color:#075f59}
 .article-page-content{min-width:0}.article-page-content .article{max-width:none;width:100%;margin:0;padding:clamp(20px,3.5vw,42px)}
 .article-category-crumbs{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px;font-size:.9rem}.article-mobile-tree{display:none}
 @media(max-width:850px){.article-page-layout{grid-template-columns:1fr;gap:0;margin-top:14px}.article-sidebar{display:none}.article-mobile-tree{display:block;margin:0 0 16px;padding:12px 14px;background:#fff;border:1px solid #d5e6eb;border-radius:12px}.article-mobile-tree summary{cursor:pointer;font-weight:750}.article-mobile-tree .category-tree{margin-top:10px;max-height:320px;overflow:auto}.article-mobile-tree .category-tree ul{list-style:none;padding-left:14px;margin:8px 0}.article-mobile-tree .category-tree>ul{padding:0}.article-page-content .article{padding:clamp(18px,5vw,28px)}}
 </style>"""
     opening = (ARTICLE_OPEN_START + '<div class="article-page-layout"><aside class="article-sidebar">' + tree + '</aside><div class="article-page-content">' +
-        '<div class="article-mobile-tree"><details><summary>カテゴリツリーを開く</summary>' + tree + '</details></div>' +
-        '<nav class="article-category-crumbs" aria-label="パンくずリスト">' + ' › '.join(crumbs) + '</nav>' +
         ARTICLE_OPEN_END)
     closing = ARTICLE_CLOSE_START + '</div></div>' + ARTICLE_CLOSE_END
     main_match = re.search(r'<main\b[^>]*>', page, flags=re.I)
@@ -180,6 +178,12 @@ main.wrap{width:min(1160px,calc(100% - 32px))}header .wrap{width:min(1160px,calc
     if not main_match:
         return page
     page = page[:main_match.end()] + opening + page[main_match.end():]
+    # Place breadcrumbs and mobile navigation inside the same white card as category pages.
+    article_match = re.search(r'<article\\b[^>]*class=["\\'][^"\\']*\\barticle\\b[^"\\']*["\\'][^>]*>', page, flags=re.I)
+    if article_match:
+        crumb_html = '<nav class="article-category-crumbs" aria-label="パンくずリスト">' + ' › '.join(crumbs) + '</nav>'
+        mobile_tree = '<div class="article-mobile-tree"><details><summary>カテゴリツリーを開く</summary>' + tree + '</details></div>'
+        page = page[:article_match.end()] + crumb_html + mobile_tree + page[article_match.end():]
     main_close = page.lower().rfind("</main>")
     page = page[:main_close] + closing + page[main_close:]
     return page
