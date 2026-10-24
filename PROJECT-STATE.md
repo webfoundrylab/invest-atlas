@@ -86,3 +86,10 @@
 - 対象：積立投資、信託報酬、NISAでの投資信託選びへの導線を整備。
 - 各記事の title / meta description / canonical を確認。4記事で canonical と description の設定を確認。
 - GitHub上のファイル内容を再取得して反映確認予定。公開URLのHTTP応答と今回のActions実行結果は未確認。
+
+
+## 2026-10-24 技術SEO・内部リンク点検
+- GitHub main の全7 HTMLページを再取得して確認。各ページに title と meta description があり、canonical はサイトURLの形式と一致。
+- 相対内部リンクのリンク先はすべて既存HTMLファイルを参照しており、未解決の相対リンクは検出されなかった。
+- sitemap.xml の7 URLはリポジトリ内のHTMLページと一致し、すべて想定の GitHub Pages ホストを使用。robots.txt に sitemap URL が記載されている。
+- これらはGitHub上のファイル内容に対する静的チェックであり、公開URLのHTTP応答や外部リンク先の到達性を保証するものではない。
