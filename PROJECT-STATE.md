@@ -99,3 +99,11 @@
 - `regular-investing.html` にレスポンシブ表示の図解と日本語の代替テキスト・キャプションを追加。
 - 数値は記事本文にある説明用の仮定例と一致。図は利益や損失回避を保証するものではない旨を明記。
 - GitHub main へのファイル追加・記事更新コミットは完了。今回の変更後のGitHub Actionsと公開URLでの表示確認はこれから確認する。
+
+## 2026-10-24 トップページのデザイン改善
+- `images/home-investing-illustration.svg` を新規追加。外部の有料画像サービスを使わず、投資学習をテーマにしたオリジナルSVGを作成。
+- `index.html` のヒーロー領域を2カラム構成にし、画像・主要CTA（解説記事を読む／テーマから探す）を追加。
+- 編集方針の特徴（公式情報を優先、リスクも説明、初心者向け）を短いカードで見せ、記事カードの余白・ホバー状態・2列レイアウトを改善。スマートフォン向けの1列表示も設定。
+- title、description、canonical、Google Search Console verification meta、記事リンク、サイトマップは変更していない。
+- 変更ファイル：`index.html`、`images/home-investing-illustration.svg`、本ファイル。
+- GitHubへのコミットは完了。デプロイ結果と公開URLでの実表示は次に確認する。
