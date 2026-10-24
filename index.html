@@ -39,6 +39,7 @@
       <label class="search-label" for="article-search">キーワード検索</label>
       <input id="article-search" type="search" placeholder="例：NISA、手数料、AI、ETF" autocomplete="off">
       <fieldset class="search-mode"><legend>複数キーワードの検索方法</legend><label><input type="radio" name="search-mode" value="or" checked> いずれかを含む（OR）</label><label><input type="radio" name="search-mode" value="and"> すべてを含む（AND）</label></fieldset>
+      <fieldset class="tag-filter-section"><legend>タグで絞り込む</legend><p class="tag-help">複数のタグを選び、OR（いずれか）またはAND（すべて）で絞り込めます。</p><div class="tag-mode"><label><input type="radio" name="tag-mode" value="or" checked> OR</label><label><input type="radio" name="tag-mode" value="and"> AND</label><button type="button" id="clear-tags" class="clear-tags">タグ選択を解除</button></div><div id="tag-filters" class="tag-filters" aria-label="タグ一覧"></div></fieldset>
       <div class="category-filters" role="group" aria-label="記事カテゴリ">
         <button type="button" class="filter-button is-active" data-category="all" aria-pressed="true">すべて</button>
         <button type="button" class="filter-button" data-category="basics" aria-pressed="false">投資の基礎</button>
@@ -64,6 +65,17 @@
     .search-mode legend{font-size:.86rem;font-weight:800;margin-bottom:5px}
     .search-mode label{font-size:.88rem;color:var(--muted);display:inline-flex;align-items:center;gap:6px}
     .search-mode input{accent-color:#087f75}
+    .tag-filter-section{border:0;padding:0;margin:14px 0 0}
+    .tag-filter-section legend{font-size:.86rem;font-weight:800;margin-bottom:4px}
+    .tag-help{font-size:.82rem;color:var(--muted);margin:0 0 8px}
+    .tag-mode{display:flex;align-items:center;flex-wrap:wrap;gap:8px 14px;font-size:.86rem}
+    .tag-mode label{display:inline-flex;align-items:center;gap:5px}
+    .tag-mode input{accent-color:#087f75}
+    .clear-tags{border:0;background:transparent;color:#08766e;text-decoration:underline;font:inherit;cursor:pointer;padding:4px}
+    .tag-filters{display:flex;flex-wrap:wrap;gap:7px;margin-top:9px}
+    .tag-option{display:inline-flex;align-items:center;gap:5px;border:1px solid #c5dedd;background:#f7fbfa;color:#31565a;border-radius:999px;padding:6px 10px;font-size:.82rem;cursor:pointer}
+    .tag-option:has(input:checked){background:#dff6ef;border-color:#3ba99b;color:#075e58;font-weight:800}
+    .tag-option input{accent-color:#087f75}
     .category-filters{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
     .filter-button{border:1px solid #b8d8d9;background:#f4fbfa;color:#24545a;border-radius:999px;padding:8px 13px;font:inherit;font-size:.88rem;font-weight:750;cursor:pointer}
     .filter-button.is-active{background:#087f75;color:white;border-color:#087f75}
@@ -90,7 +102,12 @@
       const count = document.getElementById('result-count');
       const empty = document.getElementById('no-results');
       const modeInputs = [...document.querySelectorAll('input[name="search-mode"]')];
+      const tagModeInputs = [...document.querySelectorAll('input[name="tag-mode"]')];
+      const tagFilters = document.getElementById('tag-filters');
+      const clearTags = document.getElementById('clear-tags');
       let searchMode = 'or';
+      let tagMode = 'or';
+      const selectedTags = new Set();
       let category = 'all';
       let articles = [];
       const categoryLabels = {};
@@ -102,7 +119,11 @@
           const matchesTerms = terms.length === 0 || (searchMode === 'and'
             ? terms.every(term => haystack.includes(term))
             : terms.some(term => haystack.includes(term)));
-          return matchesCategory && matchesTerms;
+          const articleTags = article.tags || [];
+          const matchesTags = selectedTags.size === 0 || (tagMode === 'and'
+            ? [...selectedTags].every(tag => articleTags.includes(tag))
+            : [...selectedTags].some(tag => articleTags.includes(tag)));
+          return matchesCategory && matchesTerms && matchesTags;
         });
         list.replaceChildren();
         visible.forEach(article => {
@@ -138,6 +159,15 @@
         if(input.checked) searchMode = input.value;
         render();
       }));
+      tagModeInputs.forEach(input => input.addEventListener('change',() => {
+        if(input.checked) tagMode = input.value;
+        render();
+      }));
+      clearTags.addEventListener('click',() => {
+        selectedTags.clear();
+        tagFilters.querySelectorAll('input[type="checkbox"]').forEach(input => { input.checked = false; });
+        render();
+      });
       buttons.forEach(button => button.addEventListener('click',() => {
         category = button.dataset.category;
         buttons.forEach(item => {
@@ -152,6 +182,23 @@
         .then(data => {
           (data.categories || []).forEach(item => categoryLabels[item.id] = item.label);
           articles = (data.articles || []).filter(item => item.status === 'published');
+          const allTags = [...new Set(articles.flatMap(article => article.tags || []))].sort((a,b) => a.localeCompare(b,'ja'));
+          tagFilters.replaceChildren();
+          allTags.forEach(tag => {
+            const label = document.createElement('label');
+            label.className = 'tag-option';
+            const input = document.createElement('input');
+            input.type = 'checkbox';
+            input.value = tag;
+            input.addEventListener('change',() => {
+              if(input.checked) selectedTags.add(tag); else selectedTags.delete(tag);
+              render();
+            });
+            const text = document.createElement('span');
+            text.textContent = tag;
+            label.append(input,text);
+            tagFilters.append(label);
+          });
           render();
         })
         .catch(() => {
