@@ -79,3 +79,10 @@
 - トップページに関連記事カードを追加し、`sitemap.xml` に記事URLを登録。
 - 参照先として金融庁、J-FLEC、投資信託協会の公式サイトを掲載。
 - GitHubへのコミットは完了。公開URLの表示と今回のActionsデプロイ結果は未確認。
+
+
+## 2026-10-24 内部リンク点検
+- 既存の `before-you-invest.html`、`investment-trust-vs-etf.html`、`nisa-basics.html`、`choose-investment-trust-nisa.html` を確認し、新規記事との関連リンクを追加。
+- 対象：積立投資、信託報酬、NISAでの投資信託選びへの導線を整備。
+- 各記事の title / meta description / canonical を確認。4記事で canonical と description の設定を確認。
+- GitHub上のファイル内容を再取得して反映確認予定。公開URLのHTTP応答と今回のActions実行結果は未確認。
