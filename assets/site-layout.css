@@ -37,6 +37,6 @@ main.wrap { margin-top: 22px; margin-bottom: 52px; }
 @media (max-width: 850px) {
   .layout, .article-page-layout { grid-template-columns: minmax(0, 1fr); gap: 0; }
   .layout { margin-top: 14px; }
-  .article-page-layout { margin-top: 14px; }
+  .article-page-layout { margin-top: 0 !important; }
   .content, .article-page-content .article { padding: clamp(18px, 5vw, 28px); }
 }
