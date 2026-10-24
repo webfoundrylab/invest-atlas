@@ -38,8 +38,7 @@
     <div class="filters-top" aria-label="記事検索・絞り込み">
       <section class="filter-card keyword-card" aria-labelledby="keyword-title">
         <h3 id="keyword-title">キーワード</h3>
-        <label class="search-label" for="article-search">ワードで記事を探す</label>
-        <input id="article-search" type="search" placeholder="例：NISA、手数料、AI、ETF" autocomplete="off">
+        <input id="article-search" type="search" aria-label="ワードで記事を探す" placeholder="例：NISA、手数料、AI、ETF" autocomplete="off">
         <fieldset class="search-mode"><legend>複数ワード</legend><label><input type="radio" name="search-mode" value="or" checked> いずれか（OR）</label><label><input type="radio" name="search-mode" value="and"> すべて（AND）</label></fieldset>
       </section>
       <section class="filter-card category-card" aria-labelledby="category-title">
@@ -55,11 +54,10 @@
         </div>
       </section>
       <section class="filter-card tags-card" aria-labelledby="tags-title">
-        <div class="filter-card-heading"><h3 id="tags-title">タグ</h3><span id="tag-summary-count" aria-live="polite">未選択</span></div>
+        <div class="filter-card-heading tags-card-heading"><h3 id="tags-title">タグ</h3><span id="tag-summary-count" aria-live="polite">未選択</span><button type="button" id="clear-tags" class="clear-tags">選択解除</button></div>
         <div class="tag-actions">
           <button type="button" id="open-tag-dialog" class="open-tag-dialog">タグ一覧から選ぶ</button>
           <fieldset class="tag-mode"><legend>複数タグ</legend><label><input type="radio" name="tag-mode" value="or" checked> OR</label><label><input type="radio" name="tag-mode" value="and"> AND</label></fieldset>
-          <button type="button" id="clear-tags" class="clear-tags">選択解除</button>
         </div>
         <div id="selected-tag-chips" class="selected-tag-chips" aria-live="polite"><span>タグは未選択です</span></div>
       </section>
@@ -106,7 +104,7 @@
     #article-search,.tag-search{display:block;width:100%;padding:6px 9px;border:1px solid #9fbfc5;border-radius:8px;font:inherit;font-size:.88rem;background:#fbfefe;color:var(--ink)}
     #article-search:focus-visible,.tag-search:focus-visible,.filter-button:focus-visible,.category-level-button:focus-visible,.open-tag-dialog:focus-visible{outline:3px solid #ff9d70;outline-offset:2px}
     .search-mode{display:flex;align-items:center;flex-wrap:wrap;gap:4px 10px;border:0;padding:0;margin:5px 0 0}
-    .search-mode legend,.tag-mode legend{font-size:.76rem;font-weight:800;margin-right:3px}
+    .search-mode legend,.tag-mode legend{font-size:.76rem;font-weight:800;margin-right:3px}\n    .search-mode legend{float:left}
     .search-mode label,.tag-mode label{font-size:.78rem;color:var(--muted);display:inline-flex;align-items:center;gap:4px}
     .search-mode input,.tag-mode input{accent-color:#087f75}
     .category-card{grid-column:2;grid-row:1 / span 2}
@@ -125,7 +123,7 @@
     .open-tag-dialog{border:1px solid #8dc9c0;background:#e5f7f2;color:#075e58;border-radius:8px;padding:6px 9px;font:inherit;font-size:.8rem;font-weight:800;cursor:pointer}
     .tag-mode{display:flex;align-items:center;flex-wrap:wrap;gap:5px 9px;border:0;padding:0;margin:0}
     .tag-mode legend{float:left}
-    .clear-tags{border:0;background:transparent;color:#08766e;text-decoration:underline;font:inherit;font-size:.78rem;cursor:pointer;padding:4px}
+    .clear-tags{border:0;background:transparent;color:#08766e;text-decoration:underline;font:inherit;font-size:.78rem;cursor:pointer;padding:4px;white-space:nowrap}\n    .tags-card-heading #tag-summary-count{margin-left:auto}\n    .tags-card-heading .clear-tags{flex:0 0 auto}
     .selected-tag-chips{display:flex;align-items:center;flex-wrap:wrap;gap:4px;margin-top:5px;min-height:16px;font-size:.73rem;color:var(--muted)}
     .selected-tag-chip{display:inline-flex;align-items:center;gap:4px;background:#dff6ef;border:1px solid #b4e2d9;border-radius:999px;padding:3px 7px;color:#075e58}
     .selected-tag-chip button{border:0;background:transparent;color:inherit;padding:0;font:inherit;cursor:pointer}
