@@ -203,3 +203,9 @@
 - 変更ファイル：`ai-semiconductor-investing.html`、`images/ai-semiconductor-investment-map.svg`、`index.html`、`sitemap.xml`、本ファイル。
 - 新規記事コミット：`118626e9d15f4b54be957e519689cefa1988169f`。図解コミット：`495664b79e7bbd93c2438d262bf9f0de020848d5`。トップページ導線コミット：`a366fe10f94e036aa74d383b61caa09406fa5d3b`。サイトマップコミット：`63ed8736f56b36309ec4ebd4c1847265450dd045`。
 - GitHub上のファイル追加・更新は完了。Actionsのデプロイ結果と公開URLでの表示確認は未確認。
+
+## 2026-10-25 タイル画像のホバー拡大を停止
+- ユーザー指摘を受け、タイルにカーソルを合わせた際に画像だけが拡大するCSS（`transform:scale(1.035)`）を削除。画像サイズ・比率を一定にし、カードの浮き上がりとCTAの変化でクリック可能性を示す構成に変更。
+- 変更ファイル：`index.html`。
+- コミット：`72c78c955282a441b8153b3a0503dceee56d58c5`。
+- GitHub上でCSS修正を再取得して確認。デプロイ結果と公開画面の実表示は未確認。
