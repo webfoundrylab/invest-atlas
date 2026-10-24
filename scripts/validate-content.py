@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
-"""Validate the Invest Atlas editorial registry and published internal links."""
+"""Validate the Invest Atlas editorial registry and generated internal links."""
 import json
 import sys
 from pathlib import Path
 from xml.etree import ElementTree
 
 ROOT = Path(__file__).resolve().parents[1]
-registry_path = ROOT / "article-index.json"
+BASE_URL = "https://webfoundrylab.github.io/invest-atlas/"
 errors = []
 try:
-    registry = json.loads(registry_path.read_text(encoding="utf-8"))
+    registry = json.loads((ROOT / "article-index.json").read_text(encoding="utf-8"))
 except Exception as exc:
     print(f"ERROR: cannot parse article-index.json: {exc}")
     sys.exit(1)
@@ -22,6 +22,8 @@ for item in articles:
     if not slug:
         errors.append("article entry is missing slug")
         continue
+    if "/" in slug or "\\" in slug or slug in {".", ".."}:
+        errors.append(f"unsafe article slug: {slug!r}")
     if slug in by_slug:
         errors.append(f"duplicate slug: {slug}")
     by_slug[slug] = item
@@ -29,6 +31,11 @@ for item in articles:
         errors.append(f"{slug}: unknown category {item.get('category')!r}")
     if not (ROOT / slug).is_file():
         errors.append(f"{slug}: article file does not exist")
+    tags = item.get("tags", [])
+    if not isinstance(tags, list) or any(not isinstance(tag, str) or not tag.strip() for tag in tags):
+        errors.append(f"{slug}: tags must be an array of non-empty strings")
+    elif len(tags) != len(set(tags)):
+        errors.append(f"{slug}: duplicate tags")
     if item.get("status") == "published":
         for field in ("title", "summary"):
             if not item.get(field):
@@ -39,18 +46,35 @@ for item in articles:
     for related in item.get("related", []):
         if related not in by_slug:
             errors.append(f"{slug}: related article not in registry: {related}")
+        elif related == slug:
+            errors.append(f"{slug}: article cannot relate to itself")
+        elif by_slug[related].get("status") != "published":
+            errors.append(f"{slug}: related article is not published: {related}")
         elif not (ROOT / related).is_file():
             errors.append(f"{slug}: related article file missing: {related}")
 
 try:
-    sitemap_text = (ROOT / "sitemap.xml").read_text(encoding="utf-8")
-    for item in articles:
-        if item.get("status") == "published":
-            url = "https://webfoundrylab.github.io/invest-atlas/" + item["slug"]
-            if url not in sitemap_text:
-                errors.append(f"{item['slug']}: published article missing from sitemap.xml")
+    sitemap_root = ElementTree.fromstring((ROOT / "sitemap.xml").read_text(encoding="utf-8"))
+    expected_urls = {BASE_URL} | {
+        BASE_URL + item["slug"] for item in articles if item.get("status") == "published"
+    }
+    actual_urls = {node.text for node in sitemap_root.iter() if node.tag.endswith("loc")}
+    for url in sorted(expected_urls - actual_urls):
+        errors.append(f"sitemap missing URL: {url}")
+    for url in sorted(actual_urls - expected_urls):
+        errors.append(f"sitemap contains unregistered URL: {url}")
 except Exception as exc:
-    errors.append(f"cannot read sitemap.xml: {exc}")
+    errors.append(f"cannot parse sitemap.xml: {exc}")
+
+for item in articles:
+    if item.get("status") != "published":
+        continue
+    try:
+        page = (ROOT / item["slug"]).read_text(encoding="utf-8")
+        if "<!-- GENERATED RELATED ARTICLES: START -->" not in page or "<!-- GENERATED RELATED ARTICLES: END -->" not in page:
+            errors.append(f"{item['slug']}: generated related-article block missing; run scripts/build-site.py first")
+    except Exception as exc:
+        errors.append(f"{item['slug']}: cannot read article HTML: {exc}")
 
 if errors:
     print("Content validation failed:")
