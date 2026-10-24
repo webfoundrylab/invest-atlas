@@ -21,7 +21,7 @@
 - [x] 公開URLが表示されることをユーザーのブラウザで確認（2026-10-24。助手側での独立したHTTP検証は未実施）
 - [x] トップページの新記事導線、既存記事からの内部リンク、sitemap の記事URL追加を反映
 - [ ] 公開URL、内部リンク、sitemap、canonical の公開後動作を確認
-- [ ] Google Search Console 登録と sitemap 送信
+- [ ] Google Search Console の所有権確認（meta tag を追加済み。Search Console 側の「確認」は未実施）と sitemap 送信
 - [ ] 追加記事の検索意図・一次情報・重複確認
 
 ## 初期コンテンツ
@@ -52,8 +52,9 @@
 - 上記変更後の公開URL反映、記事・sitemap の実際のHTTP応答、外部リンクの全件到達性は未確認。GitHub上のファイル更新は完了。
 
 ## 次の作業
+- 2026-10-24: Google Search Console の URL プレフィックスプロパティ用 verification meta tag を `index.html` の `<head>` に追加し、GitHub にコミット。Search Console 側の所有権確認と sitemap 送信はユーザー操作待ち。
 1. 変更後のGitHub Pagesデプロイ結果を確認し、公開URLで新記事・内部リンク・sitemap が反映されたか検証する。
 2. 外部出典リンクの到達性と canonical の整合性を点検する。
 3. 必要なら Node.js 24 対応版の Actions へ更新し、警告を解消する。
-4. Google Search Console 登録と sitemap 送信を進める。
+4. ユーザーが Google Search Console で「確認」を実行し、所有権確認後に sitemap.xml を送信する。
 5. 次の記事を一次資料に基づいて追加する。
