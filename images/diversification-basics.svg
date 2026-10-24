@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+<title id="title">分散投資の考え方</title>
+<desc id="desc">ひとつの投資先に集中する場合と、複数の資産・地域・業種に分ける場合を比較した概念図。分散は集中リスクを抑える考え方だが損失を防ぐ保証はない。</desc>
+<rect width="1200" height="720" rx="28" fill="#f4f7f8"/>
+<text x="60" y="70" font-family="sans-serif" font-size="36" font-weight="700" fill="#10243a">分散投資は「ひとつに集中しない」考え方</text>
+<text x="60" y="112" font-family="sans-serif" font-size="22" fill="#526574">投資先・資産・地域・業種などを分け、特定の対象の影響を抑えることを目指す</text>
+<g font-family="sans-serif">
+<rect x="60" y="150" width="510" height="410" rx="24" fill="#fff" stroke="#e1c7b8" stroke-width="3"/>
+<rect x="630" y="150" width="510" height="410" rx="24" fill="#fff" stroke="#b9dcd5" stroke-width="3"/>
+<text x="315" y="198" text-anchor="middle" font-size="28" font-weight="700" fill="#9a4d36">集中して投資</text>
+<text x="885" y="198" text-anchor="middle" font-size="28" font-weight="700" fill="#176d65">分けて投資</text>
+<rect x="210" y="235" width="210" height="210" rx="22" fill="#f7e4dc"/>
+<g fill="#c36d4f">
+<rect x="250" y="360" width="28" height="48" rx="4"/><rect x="290" y="325" width="28" height="83" rx="4"/><rect x="330" y="285" width="28" height="123" rx="4"/><rect x="370" y="255" width="28" height="153" rx="4"/>
+</g>
+<text x="315" y="475" text-anchor="middle" font-size="22" font-weight="700" fill="#9a4d36">投資先Aに偏る</text>
+<text x="315" y="512" text-anchor="middle" font-size="19" fill="#526574">Aの不調が全体に響きやすい</text>
+<g>
+<rect x="680" y="245" width="195" height="85" rx="14" fill="#dcefeb"/><rect x="895" y="245" width="195" height="85" rx="14" fill="#e5edf8"/>
+<rect x="680" y="350" width="195" height="85" rx="14" fill="#fff0d2"/><rect x="895" y="350" width="195" height="85" rx="14" fill="#e9e3f5"/>
+<text x="777" y="279" text-anchor="middle" font-size="20" font-weight="700" fill="#176d65">国内株式</text><text x="777" y="307" text-anchor="middle" font-size="17" fill="#526574">業種を分ける</text>
+<text x="992" y="279" text-anchor="middle" font-size="20" font-weight="700" fill="#315c8c">海外資産</text><text x="992" y="307" text-anchor="middle" font-size="17" fill="#526574">地域を分ける</text>
+<text x="777" y="384" text-anchor="middle" font-size="20" font-weight="700" fill="#946b18">債券など</text><text x="777" y="412" text-anchor="middle" font-size="17" fill="#526574">資産を分ける</text>
+<text x="992" y="384" text-anchor="middle" font-size="20" font-weight="700" fill="#6b4c9a">複数の分野</text><text x="992" y="412" text-anchor="middle" font-size="17" fill="#526574">対象を分ける</text>
+</g>
+<rect x="60" y="590" width="1080" height="78" rx="16" fill="#10243a"/>
+<text x="90" y="624" font-size="22" font-weight="700" fill="#ffffff">大切な注意点</text>
+<text x="90" y="652" font-size="19" fill="#dce7ec">分散しても市場全体の下落などによる損失は起こり得ます。元本保証や利益を約束する方法ではありません。</text>
+</g>
+</svg>
