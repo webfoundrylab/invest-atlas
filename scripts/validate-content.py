@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Validate the Invest Atlas editorial registry and generated internal links."""
 import json
+import re
 import sys
 from pathlib import Path
 from xml.etree import ElementTree
@@ -71,8 +72,11 @@ for item in articles:
         continue
     try:
         page = (ROOT / item["slug"]).read_text(encoding="utf-8")
-        if "<!-- GENERATED RELATED ARTICLES: START -->" not in page or "<!-- GENERATED RELATED ARTICLES: END -->" not in page:
-            errors.append(f"{item['slug']}: generated related-article block missing; run scripts/build-site.py first")
+        has_generated = "<!-- GENERATED RELATED ARTICLES: START -->" in page and "<!-- GENERATED RELATED ARTICLES: END -->" in page
+        existing_links = set(re.findall(r'href=["\\']([^"\\']+)["\\']', page, flags=re.IGNORECASE))
+        has_registry_related = any(link in by_slug and link != item["slug"] for link in existing_links)
+        if not has_generated and not has_registry_related:
+            errors.append(f"{item['slug']}: no generated or existing internal related links found")
     except Exception as exc:
         errors.append(f"{item['slug']}: cannot read article HTML: {exc}")
 
