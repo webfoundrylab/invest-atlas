@@ -210,7 +210,9 @@
         "ai-semiconductor-investing.html"
       ],
       "subcategory": "getting-started",
-      "topic": "investment-preparation"
+      "topic": "investment-preparation",
+      "publishedAt": "2026-10-24",
+      "updatedAt": "2026-10-25"
     },
     {
       "slug": "nisa-basics.html",
@@ -234,7 +236,9 @@
         "investment-trust-fees.html"
       ],
       "subcategory": "nisa-system",
-      "topic": "new-nisa-basics"
+      "topic": "new-nisa-basics",
+      "publishedAt": "2026-10-24",
+      "updatedAt": "2026-10-25"
     },
     {
       "slug": "choose-investment-trust-nisa.html",
@@ -259,7 +263,9 @@
         "regular-investing.html"
       ],
       "subcategory": "nisa-product-selection",
-      "topic": "choosing-funds"
+      "topic": "choosing-funds",
+      "publishedAt": "2026-10-24",
+      "updatedAt": "2026-10-25"
     },
     {
       "slug": "investment-trust-vs-etf.html",
@@ -284,7 +290,9 @@
         "before-you-invest.html",
         "ai-semiconductor-investing.html"
       ],
-      "subcategory": "fund-etf-comparison"
+      "subcategory": "fund-etf-comparison",
+      "publishedAt": "2026-10-24",
+      "updatedAt": "2026-10-25"
     },
     {
       "slug": "investment-trust-fees.html",
@@ -306,7 +314,9 @@
         "nisa-basics.html"
       ],
       "subcategory": "fund-costs",
-      "topic": "expense-types"
+      "topic": "expense-types",
+      "publishedAt": "2026-10-24",
+      "updatedAt": "2026-10-25"
     },
     {
       "slug": "regular-investing.html",
@@ -330,7 +340,9 @@
         "investment-trust-fees.html"
       ],
       "subcategory": "regular-investing",
-      "topic": "dollar-cost-averaging"
+      "topic": "dollar-cost-averaging",
+      "publishedAt": "2026-10-24",
+      "updatedAt": "2026-10-25"
     },
     {
       "slug": "ai-semiconductor-investing.html",
@@ -355,7 +367,9 @@
         "regular-investing.html"
       ],
       "subcategory": "investment-themes",
-      "topic": "ai-semiconductor"
+      "topic": "ai-semiconductor",
+      "publishedAt": "2026-10-25",
+      "updatedAt": "2026-10-25"
     }
   ]
 }
