@@ -167,7 +167,7 @@ main.wrap{width:min(1160px,calc(100% - 32px))}
     main_close = page.lower().rfind("</main>")
     if not main_match or main_close < 0:
         return page
-    page = page[:main_match.end()] + opening + css + page[main_match.end():]
+    page = page[:main_match.end()] + opening + page[main_match.end():]
     main_close = page.lower().rfind("</main>")
     page = page[:main_close] + closing + page[main_close:]
     return page
