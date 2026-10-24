@@ -22,12 +22,14 @@
 - [x] トップページの新記事導線、既存記事からの内部リンク、sitemap の記事URL追加を反映
 - [ ] 公開URL、内部リンク、sitemap、canonical の公開後動作を確認
 - [ ] Google Search Console の所有権確認（meta tag を追加済み。Search Console 側の「確認」は未実施）と sitemap 送信
+- [x] 新NISAの基本記事を公式情報に基づき作成し、トップページと sitemap に追加
 - [ ] 追加記事の検索意図・一次情報・重複確認
 
 ## 初期コンテンツ
 - `index.html`: トップページ
 - `investment-trust-vs-etf.html`: 投資信託とETFの違いを解説する初回記事
 - `before-you-invest.html`: 投資初心者向け「投資を始める前に確認したい7つのこと」
+- `nisa-basics.html`: 新NISAの2つの投資枠、非課税保有限度額、売却後の枠の再利用を解説
 
 ## 運営・編集ルール
 1. 公的機関、取引所、運用会社、企業の公式資料を優先する。
@@ -50,6 +52,9 @@
 - 2026-10-24: `before-you-invest.html` を新規作成。生活資金、目的、期間、リスク許容度、分散、費用、公式情報の確認を解説し、金融庁・J-FLEC・日本取引所グループの公式資料へリンク。
 - 2026-10-24: トップページの「公開予定」カードを新記事へのリンクに変更。既存記事からも新記事への内部リンクを追加し、sitemap に新記事URLを追加。
 - 上記変更後の公開URL反映、記事・sitemap の実際のHTTP応答、外部リンクの全件到達性は未確認。GitHub上のファイル更新は完了。
+
+- 2026-10-24: Search Console の sitemap 読み込みエラーは、公開URLでXMLが表示されることをユーザーが確認。`creator-terms-db` と同様の症状のため、サイトマップ内容は変更せず、数日様子見する方針。
+- 2026-10-24: `nisa-basics.html` を新規作成。金融庁・国税庁の公式資料を参照し、確認日・リスク・非課税枠のルールを明記。トップページと sitemap に追加。
 
 ## 次の作業
 - 2026-10-24: Google Search Console の URL プレフィックスプロパティ用 verification meta tag を `index.html` の `<head>` に追加し、GitHub にコミット。Search Console 側の所有権確認と sitemap 送信はユーザー操作待ち。
