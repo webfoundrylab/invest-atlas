@@ -170,3 +170,11 @@
 - カードをデスクトップ3列・モバイル1列で表示し、フォーカス表示、ホバー、タッチしやすい余白を整備。既存のtitle、description、canonical、Search Console verification、サイトマップは維持。
 - 変更ファイル：`index.html`。
 - コミット：`29b387d04dac70bc0b3fa12473c70ae76125169e`。公開URLでの実表示とGitHub Actions結果は未確認。
+
+
+## 2026-10-25 トップページのタイルに図解イラストを追加
+- 既存6記事へのタイル導線に、記事テーマに沿ったオリジナルSVGの小さな図解イラストを追加。
+- 新規画像：`images/tile-before-investing.svg`、`images/tile-nisa.svg`、`images/tile-fund-etf.svg`、`images/tile-selection.svg`、`images/tile-fees.svg`、`images/tile-regular-investing.svg`。
+- `index.html` のタイルに画像と日本語の代替テキストを設定。画像はレスポンシブ表示、遅延読み込みに対応し、既存の記事リンク・SEOメタ情報を維持。
+- GitHub main への反映済み。コミット：`2aecfa05135c8bd87d1625219a244c342e60a27c`。
+- GitHub Actions のデプロイ結果と公開URLでの実表示は未確認。
