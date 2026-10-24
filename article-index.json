@@ -1,0 +1,162 @@
+{
+  "_comment": "Invest Atlas 編集用記事台帳。新記事追加時はslug/title/category/tags/summary/relatedを登録し、index.html・関連記事・sitemap.xmlも同期する。",
+  "categories": [
+    {
+      "id": "basics",
+      "label": "投資の基礎"
+    },
+    {
+      "id": "nisa",
+      "label": "NISA・制度"
+    },
+    {
+      "id": "funds",
+      "label": "投資信託・ETF"
+    },
+    {
+      "id": "strategy",
+      "label": "資産形成"
+    },
+    {
+      "id": "markets",
+      "label": "市場・注目テーマ"
+    },
+    {
+      "id": "companies",
+      "label": "個別株・企業分析"
+    }
+  ],
+  "articles": [
+    {
+      "slug": "before-you-invest.html",
+      "title": "投資を始める前に確認したい7つのこと",
+      "category": "basics",
+      "tags": [
+        "投資の基礎",
+        "リスク",
+        "家計管理",
+        "初心者"
+      ],
+      "summary": "生活資金、目的、期間、値下がりへの備えなど投資前の準備を確認。",
+      "status": "published",
+      "related": [
+        "regular-investing.html",
+        "nisa-basics.html",
+        "investment-trust-vs-etf.html"
+      ]
+    },
+    {
+      "slug": "nisa-basics.html",
+      "title": "新NISAの仕組みと投資枠",
+      "category": "nisa",
+      "tags": [
+        "NISA",
+        "税制",
+        "非課税枠"
+      ],
+      "summary": "つみたて投資枠・成長投資枠、非課税保有限度額、売却後の枠の再利用を解説。",
+      "status": "published",
+      "related": [
+        "before-you-invest.html",
+        "choose-investment-trust-nisa.html",
+        "regular-investing.html",
+        "investment-trust-fees.html"
+      ]
+    },
+    {
+      "slug": "choose-investment-trust-nisa.html",
+      "title": "NISAで投資信託を選ぶ7つの視点",
+      "category": "nisa",
+      "tags": [
+        "NISA",
+        "投資信託",
+        "商品選び",
+        "目論見書"
+      ],
+      "summary": "投資対象、分散、費用、リスク、目論見書の確認ポイントを整理。",
+      "status": "published",
+      "related": [
+        "nisa-basics.html",
+        "investment-trust-fees.html",
+        "investment-trust-vs-etf.html",
+        "regular-investing.html"
+      ]
+    },
+    {
+      "slug": "investment-trust-vs-etf.html",
+      "title": "投資信託とETFの違い",
+      "category": "funds",
+      "tags": [
+        "投資信託",
+        "ETF",
+        "比較",
+        "売買"
+      ],
+      "summary": "価格の決まり方、売買方法、費用、流動性などを比較。",
+      "status": "published",
+      "related": [
+        "investment-trust-fees.html",
+        "choose-investment-trust-nisa.html",
+        "regular-investing.html",
+        "before-you-invest.html"
+      ]
+    },
+    {
+      "slug": "investment-trust-fees.html",
+      "title": "投資信託の信託報酬と費用",
+      "category": "funds",
+      "tags": [
+        "投資信託",
+        "信託報酬",
+        "手数料",
+        "コスト"
+      ],
+      "summary": "保有中のコスト、年率の計算例、その他費用や実質コストの確認方法。",
+      "status": "published",
+      "related": [
+        "choose-investment-trust-nisa.html",
+        "investment-trust-vs-etf.html",
+        "nisa-basics.html"
+      ]
+    },
+    {
+      "slug": "regular-investing.html",
+      "title": "積立投資の仕組みと注意点",
+      "category": "strategy",
+      "tags": [
+        "積立投資",
+        "長期投資",
+        "ドル・コスト平均法",
+        "NISA"
+      ],
+      "summary": "定額購入、購入時期の分散、積立額の考え方と元本割れのリスク。",
+      "status": "published",
+      "related": [
+        "before-you-invest.html",
+        "nisa-basics.html",
+        "choose-investment-trust-nisa.html",
+        "investment-trust-fees.html"
+      ]
+    },
+    {
+      "slug": "ai-semiconductor-investing.html",
+      "title": "AI・半導体投資を深掘り",
+      "category": "markets",
+      "tags": [
+        "AI",
+        "半導体",
+        "GPU",
+        "メモリ",
+        "データセンター",
+        "企業分析"
+      ],
+      "summary": "GPU・メモリから製造装置、データセンター、電力まで。成長期待と企業分析の視点を整理。",
+      "status": "published",
+      "related": [
+        "investment-trust-vs-etf.html",
+        "before-you-invest.html",
+        "regular-investing.html"
+      ]
+    }
+  ]
+}
