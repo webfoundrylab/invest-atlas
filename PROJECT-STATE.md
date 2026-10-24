@@ -138,3 +138,13 @@
 - 図中に、分散しても市場全体の下落などによる損失を防ぐ保証ではない旨を明記。
 - 変更ファイル：`images/diversification-basics.svg`、`before-you-invest.html`、本ファイル。
 - GitHubへの反映は完了。デプロイ結果と公開URLでの実表示は次に確認する。
+
+
+## 2026-10-24 記事の図解を追加
+- 既存の図解がある記事（`before-you-invest.html`、`nisa-basics.html`、`regular-investing.html`）に加え、以下の記事に内容に合わせたオリジナルSVG図解を追加。
+- `investment-trust-vs-etf.html`：投資信託とETFの売買方法・価格の違い（`images/fund-vs-etf-diagram.svg`）。
+- `choose-investment-trust-nisa.html`：投資信託を選ぶ7つの確認項目（`images/fund-selection-checklist.svg`）。
+- `investment-trust-fees.html`：信託報酬とその他費用の構造、単純計算例（`images/investment-trust-fees-diagram.svg`）。
+- 画像に代替テキストとキャプションを付け、記事側でレスポンシブ表示するCSSを追加。費用図は仮定例であること、図解が利益を保証しないことを明記。
+- 変更ファイル：上記3記事、上記3 SVG、本ファイル。
+- GitHub main への反映は完了。GitHub Actions の最新結果と公開URLでの表示確認は未確認。
