@@ -212,7 +212,8 @@
       "subcategory": "getting-started",
       "topic": "investment-preparation",
       "publishedAt": "2026-10-24",
-      "updatedAt": "2026-10-25"
+      "updatedAt": "2026-10-25",
+      "thumbnail": "thumbnails/before-you-invest.svg"
     },
     {
       "slug": "nisa-basics.html",
@@ -238,7 +239,8 @@
       "subcategory": "nisa-system",
       "topic": "new-nisa-basics",
       "publishedAt": "2026-10-24",
-      "updatedAt": "2026-10-25"
+      "updatedAt": "2026-10-25",
+      "thumbnail": "thumbnails/nisa-basics.svg"
     },
     {
       "slug": "choose-investment-trust-nisa.html",
@@ -265,7 +267,8 @@
       "subcategory": "nisa-product-selection",
       "topic": "choosing-funds",
       "publishedAt": "2026-10-24",
-      "updatedAt": "2026-10-25"
+      "updatedAt": "2026-10-25",
+      "thumbnail": "thumbnails/choose-investment-trust-nisa.svg"
     },
     {
       "slug": "investment-trust-vs-etf.html",
@@ -292,7 +295,8 @@
       ],
       "subcategory": "fund-etf-comparison",
       "publishedAt": "2026-10-24",
-      "updatedAt": "2026-10-25"
+      "updatedAt": "2026-10-25",
+      "thumbnail": "thumbnails/investment-trust-vs-etf.svg"
     },
     {
       "slug": "investment-trust-fees.html",
@@ -316,7 +320,8 @@
       "subcategory": "fund-costs",
       "topic": "expense-types",
       "publishedAt": "2026-10-24",
-      "updatedAt": "2026-10-25"
+      "updatedAt": "2026-10-25",
+      "thumbnail": "thumbnails/investment-trust-fees.svg"
     },
     {
       "slug": "regular-investing.html",
@@ -342,7 +347,8 @@
       "subcategory": "regular-investing",
       "topic": "dollar-cost-averaging",
       "publishedAt": "2026-10-24",
-      "updatedAt": "2026-10-25"
+      "updatedAt": "2026-10-25",
+      "thumbnail": "thumbnails/regular-investing.svg"
     },
     {
       "slug": "ai-semiconductor-investing.html",
@@ -369,7 +375,8 @@
       "subcategory": "investment-themes",
       "topic": "ai-semiconductor",
       "publishedAt": "2026-10-25",
-      "updatedAt": "2026-10-25"
+      "updatedAt": "2026-10-25",
+      "thumbnail": "thumbnails/ai-semiconductor-investing.svg"
     }
   ]
 }
