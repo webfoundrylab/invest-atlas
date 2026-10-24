@@ -21,6 +21,7 @@
 - [x] 公開URLが表示されることをユーザーのブラウザで確認（2026-10-24。助手側での独立したHTTP検証は未実施）
 - [x] トップページの新記事導線、既存記事からの内部リンク、sitemap の記事URL追加を反映
 - [ ] 公開URL、内部リンク、sitemap、canonical の公開後動作を確認
+- [x] 信託報酬の解説記事を作成し、トップページと sitemap に追加
 - [ ] Google Search Console の所有権確認（meta tag を追加済み。Search Console 側の「確認」は未実施）と sitemap 送信
 - [x] 新NISAの基本記事を公式情報に基づき作成し、トップページと sitemap に追加
 - [x] NISAで投資信託を選ぶ際のチェックポイント記事を作成し、公式資料・内部リンク・canonical・sitemapを整備
@@ -31,6 +32,7 @@
 - `before-you-invest.html`: 投資初心者向け「投資を始める前に確認したい7つのこと」
 - `nisa-basics.html`: 新NISAの2つの投資枠、非課税保有限度額、売却後の枠の再利用を解説
 - `choose-investment-trust-nisa.html`: NISAで投資信託を選ぶ際の投資対象・運用方針・分散・費用・リスク・目論見書の確認点を解説
+- `investment-trust-fees.html`: 信託報酬の仕組み、年率の計算例、その他費用と実質コストの確認方法を解説
 
 ## 運営・編集ルール
 1. 公的機関、取引所、運用会社、企業の公式資料を優先する。
@@ -58,6 +60,8 @@
 - 2026-10-24: `nisa-basics.html` を新規作成。金融庁・国税庁の公式資料を参照し、確認日・リスク・非課税枠のルールを明記。トップページと sitemap に追加。
 
 - 2026-10-24: `choose-investment-trust-nisa.html` を新規作成。金融庁、J-FLEC、資産運用業協会の公式情報を参照し、トップページと sitemap に追加。公開URLの表示・デプロイ結果は未確認。
+
+- 2026-10-24: `investment-trust-fees.html` を新規作成。資産運用業協会、J-FLEC、投資信託協会の公式情報を参照し、計算例・注意点・内部リンクを整備。トップページと sitemap に追加。公開表示・デプロイは未確認。
 
 ## 次の作業
 - 2026-10-24: Google Search Console の URL プレフィックスプロパティ用 verification meta tag を `index.html` の `<head>` に追加し、GitHub にコミット。Search Console 側の所有権確認と sitemap 送信はユーザー操作待ち。
