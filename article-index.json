@@ -1,29 +1,189 @@
 {
-  "_comment": "Invest Atlas 編集用記事台帳。新記事追加時はslug/title/category/tags/summary/relatedを登録し、index.html・関連記事・sitemap.xmlも同期する。",
+  "_comment": "Invest Atlas 編集用記事台帳。category（大カテゴリ）・subcategory（中カテゴリ）・topic（小カテゴリ）で分類し、tagsは横断検索に使う。",
   "categories": [
     {
       "id": "basics",
-      "label": "投資の基礎"
+      "label": "投資の基礎",
+      "children": [
+        {
+          "id": "getting-started",
+          "label": "投資を始める前の準備",
+          "children": [
+            {
+              "id": "investment-preparation",
+              "label": "家計・目的・投資期間"
+            }
+          ]
+        },
+        {
+          "id": "investing-basics",
+          "label": "投資の仕組み・基本用語"
+        },
+        {
+          "id": "risk-return",
+          "label": "リスクとリターン"
+        },
+        {
+          "id": "diversification",
+          "label": "分散投資・資産配分"
+        }
+      ]
     },
     {
       "id": "nisa",
-      "label": "NISA・制度"
+      "label": "NISA・制度",
+      "children": [
+        {
+          "id": "nisa-system",
+          "label": "新NISAの仕組み",
+          "children": [
+            {
+              "id": "new-nisa-basics",
+              "label": "投資枠・非課税保有限度額"
+            }
+          ]
+        },
+        {
+          "id": "nisa-product-selection",
+          "label": "NISAの商品選び",
+          "children": [
+            {
+              "id": "choosing-funds",
+              "label": "投資信託の選び方"
+            }
+          ]
+        },
+        {
+          "id": "tax-and-nisa",
+          "label": "投資と税金"
+        },
+        {
+          "id": "ideco-pension",
+          "label": "iDeCo・年金制度"
+        }
+      ]
     },
     {
       "id": "funds",
-      "label": "投資信託・ETF"
+      "label": "投資信託・ETF",
+      "children": [
+        {
+          "id": "investment-trust-basics",
+          "label": "投資信託の基礎",
+          "children": [
+            {
+              "id": "nav-price",
+              "label": "基準価額と値動き"
+            },
+            {
+              "id": "index-active",
+              "label": "インデックス型・アクティブ型"
+            }
+          ]
+        },
+        {
+          "id": "etf-basics",
+          "label": "ETFの基礎"
+        },
+        {
+          "id": "fund-etf-comparison",
+          "label": "投資信託とETFの比較"
+        },
+        {
+          "id": "fund-costs",
+          "label": "信託報酬・手数料",
+          "children": [
+            {
+              "id": "expense-types",
+              "label": "費用の種類・実質コスト"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "strategy",
-      "label": "資産形成"
+      "label": "資産形成",
+      "children": [
+        {
+          "id": "regular-investing",
+          "label": "積立投資",
+          "children": [
+            {
+              "id": "dollar-cost-averaging",
+              "label": "定額購入・購入時期の分散"
+            }
+          ]
+        },
+        {
+          "id": "long-term-investing",
+          "label": "長期投資"
+        },
+        {
+          "id": "compound-growth",
+          "label": "複利の仕組み"
+        },
+        {
+          "id": "goals-and-contributions",
+          "label": "目標額・積立額の考え方"
+        }
+      ]
     },
     {
       "id": "markets",
-      "label": "市場・注目テーマ"
+      "label": "市場・注目テーマ",
+      "children": [
+        {
+          "id": "economic-indicators",
+          "label": "経済指標・金融政策"
+        },
+        {
+          "id": "market-trends",
+          "label": "株式市場の動向"
+        },
+        {
+          "id": "investment-themes",
+          "label": "注目テーマ",
+          "children": [
+            {
+              "id": "ai-semiconductor",
+              "label": "AI・半導体"
+            }
+          ]
+        },
+        {
+          "id": "fx-rates-inflation",
+          "label": "為替・金利・インフレ"
+        }
+      ]
     },
     {
       "id": "companies",
-      "label": "個別株・企業分析"
+      "label": "個別株・企業分析",
+      "children": [
+        {
+          "id": "financial-statements",
+          "label": "決算書・財務分析",
+          "children": [
+            {
+              "id": "earnings-results",
+              "label": "決算の読み方"
+            },
+            {
+              "id": "financial-metrics",
+              "label": "売上・利益・財務指標"
+            }
+          ]
+        },
+        {
+          "id": "company-analysis",
+          "label": "企業・銘柄の分析"
+        },
+        {
+          "id": "dividends-shareholder-returns",
+          "label": "配当・株主還元"
+        }
+      ]
     }
   ],
   "articles": [
@@ -48,7 +208,9 @@
         "nisa-basics.html",
         "investment-trust-vs-etf.html",
         "ai-semiconductor-investing.html"
-      ]
+      ],
+      "subcategory": "getting-started",
+      "topic": "investment-preparation"
     },
     {
       "slug": "nisa-basics.html",
@@ -70,7 +232,9 @@
         "choose-investment-trust-nisa.html",
         "regular-investing.html",
         "investment-trust-fees.html"
-      ]
+      ],
+      "subcategory": "nisa-system",
+      "topic": "new-nisa-basics"
     },
     {
       "slug": "choose-investment-trust-nisa.html",
@@ -93,7 +257,9 @@
         "investment-trust-fees.html",
         "investment-trust-vs-etf.html",
         "regular-investing.html"
-      ]
+      ],
+      "subcategory": "nisa-product-selection",
+      "topic": "choosing-funds"
     },
     {
       "slug": "investment-trust-vs-etf.html",
@@ -117,7 +283,8 @@
         "regular-investing.html",
         "before-you-invest.html",
         "ai-semiconductor-investing.html"
-      ]
+      ],
+      "subcategory": "fund-etf-comparison"
     },
     {
       "slug": "investment-trust-fees.html",
@@ -137,7 +304,9 @@
         "choose-investment-trust-nisa.html",
         "investment-trust-vs-etf.html",
         "nisa-basics.html"
-      ]
+      ],
+      "subcategory": "fund-costs",
+      "topic": "expense-types"
     },
     {
       "slug": "regular-investing.html",
@@ -159,7 +328,9 @@
         "nisa-basics.html",
         "choose-investment-trust-nisa.html",
         "investment-trust-fees.html"
-      ]
+      ],
+      "subcategory": "regular-investing",
+      "topic": "dollar-cost-averaging"
     },
     {
       "slug": "ai-semiconductor-investing.html",
@@ -182,7 +353,9 @@
         "investment-trust-vs-etf.html",
         "before-you-invest.html",
         "regular-investing.html"
-      ]
+      ],
+      "subcategory": "investment-themes",
+      "topic": "ai-semiconductor"
     }
   ]
 }
