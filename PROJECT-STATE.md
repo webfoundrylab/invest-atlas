@@ -263,3 +263,14 @@
 - 変更ファイル：`article-index.json`、`index.html`、`README.md`、本ファイル。
 - コミット：タグ台帳 `ae6da51416d2be76f8cbe56d30163d75a5bfb856`、UI `d0d9942d05d858818c9430b700cd14ffb43d7fb8`、README `b025d0036484c3240a90843521f2f6654b2760a8`。
 - GitHub Actions と公開画面での今回の変更確認は未実施。デプロイ後、タグ一覧・OR/AND・キーワード検索との併用を確認する。
+
+
+## 2026-10-25 大・中・小カテゴリと記事ナビゲーション
+- article-index.json に大カテゴリ6つと中・小カテゴリの階層を登録。公開済み7記事に中カテゴリと必要な小カテゴリを割り当て、細かなテーマの tags は横断検索用として維持。
+- scripts/build-site.py を拡張し、カテゴリ別の記事一覧ページを categories/ 以下にビルド時生成。公開記事があるカテゴリURLをサイトマップに追加し、記事がないカテゴリページは noindex,follow にする。
+- 記事ページにカテゴリのパンくずとカテゴリツリーをビルド時に挿入。広いPC画面では左側の固定ツリー、狭い画面では本文上部の折りたたみツリーに切り替える。
+- トップページに大・中・小カテゴリの展開式ツリーを追加し、記事一覧のカテゴリ名から大カテゴリページへ移動できるようにした。記事一覧には中・小カテゴリ名も表示。
+- scripts/validate-content.py にカテゴリ階層とカテゴリページのサイトマップ登録チェックを追加。README.md に新しい記事登録方法を記載。
+- 変更ファイル：article-index.json、scripts/build-site.py、scripts/validate-content.py、index.html、README.md、本ファイル。
+- 主なコミット：台帳 ba5447de37e4a3bfb21f1a66a7f0fe5a7766b8a1、カテゴリ生成 7e4b629c1ba6df95893d0cf75e26c1cfc2dc749b、検証 5f6e23e21e45fd797aaccf6f3741149711883513、トップページ de15fb6a6e426e61eee223207123bf439fb42d0a、README 666e83439b3a092d6bc4156fe78843693343ffe2。
+- GitHub Actions のビルド・検証結果、公開URLでのカテゴリページ・パンくず・サイドバー表示は未確認。最新のActions実行結果を確認し、失敗があれば修正する。
