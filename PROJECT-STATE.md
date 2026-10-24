@@ -323,4 +323,4 @@
 - `scripts/build-site.py` を変更し、生成カテゴリページと記事ページの双方から共通CSSを読み込むようにした。既存のページ固有CSSは残しつつ、共通CSSを後から読み込んでレイアウト基準を揃える構成。
 - 変更ファイル：`assets/site-layout.css`（新規）、`scripts/build-site.py`、本ファイル。
 - コミット：共通CSS追加 `d6cc728cc4f7b4abac1c27f9a1c47c9c1142a130`、生成処理変更 `19df12a848f13e4b510f0640f238658af94fcfa6`、余白調整 `1f7e0452ee7ce4555fae0d0895aeff601da49639`、記事レイアウト余白調整 `70ee91a05a2df7b60311a774023aab48f785413e`。
-- GitHub Actions のビルド・検証・デプロイ結果、および公開ページでの実表示比較は未確認。次に Actions の結果を確認し、PC幅・モバイル幅で記事ページとカテゴリページのヘッダー高、コンテンツ開始位置、カード幅・余白を比較する。
+- GitHub Actions run [40112989001](https://github.com/webfoundrylab/invest-atlas/actions/runs/40112989001) は build・deploy とも成功。ブラウザで公開ページを並べた実表示比較は未確認。PC幅・モバイル幅で記事ページとカテゴリページのヘッダー高、コンテンツ開始位置、カード幅・余白を比較する必要がある。
