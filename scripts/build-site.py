@@ -25,7 +25,7 @@ def main():
     by_slug = {}
     for article in articles:
         slug = article.get("slug", "")
-        if not slug or "/" in slug or "\\\\" in slug or slug in {".", ".."}:
+        if not slug or "/" in slug or "\\" in slug or slug in {".", ".."}:
             print(f"ERROR: unsafe or missing article slug: {slug!r}", file=sys.stderr)
             return 1
         if slug in by_slug:
