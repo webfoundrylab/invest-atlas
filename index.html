@@ -45,6 +45,7 @@
       <input id="article-search" type="search" placeholder="例：NISA、手数料、AI、ETF" autocomplete="off">
       <fieldset class="search-mode"><legend>複数キーワードの検索方法</legend><label><input type="radio" name="search-mode" value="or" checked> いずれかを含む（OR）</label><label><input type="radio" name="search-mode" value="and"> すべてを含む（AND）</label></fieldset>
       <fieldset class="tag-filter-section"><legend>タグで絞り込む</legend><p class="tag-help">複数のタグを選び、OR（いずれか）またはAND（すべて）で絞り込めます。</p><div class="tag-mode"><label><input type="radio" name="tag-mode" value="or" checked> OR</label><label><input type="radio" name="tag-mode" value="and"> AND</label><button type="button" id="clear-tags" class="clear-tags">タグ選択を解除</button></div><div id="tag-filters" class="tag-filters" aria-label="タグ一覧"></div></fieldset>
+      <div class="category-filter-heading"><strong>カテゴリで絞り込む</strong><span id="selected-category-label" aria-live="polite">すべてのカテゴリ</span></div>
       <div class="category-filters" role="group" aria-label="記事カテゴリ">
         <button type="button" class="filter-button is-active" data-category="all" aria-pressed="true">すべて</button>
         <button type="button" class="filter-button" data-category="basics" aria-pressed="false">投資の基礎</button>
@@ -92,7 +93,11 @@
     .tag-option{display:inline-flex;align-items:center;gap:5px;border:1px solid #c5dedd;background:#f7fbfa;color:#31565a;border-radius:999px;padding:6px 10px;font-size:.82rem;cursor:pointer}
     .tag-option:has(input:checked){background:#dff6ef;border-color:#3ba99b;color:#075e58;font-weight:800}
     .tag-option input{accent-color:#087f75}
-    .category-filters{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+    .category-filter-heading{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin-top:16px;font-size:.88rem}
+    #selected-category-label{color:var(--muted);font-weight:500}
+    .category-filters{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+    .category-tree-home a[aria-current="true"]{font-weight:850;color:#075e58;background:#dff6ef;border-radius:6px;padding:2px 5px}
+    .category-tree-home a{cursor:pointer}
     .filter-button{border:1px solid #b8d8d9;background:#f4fbfa;color:#24545a;border-radius:999px;padding:8px 13px;font:inherit;font-size:.88rem;font-weight:750;cursor:pointer}
     .filter-button.is-active{background:#087f75;color:white;border-color:#087f75}
     .result-count{margin:12px 0 0;color:var(--muted);font-size:.88rem}
@@ -128,6 +133,9 @@
       let articles = [];
       const categoryLabels = {};
       const categoryTreeHome = document.getElementById('category-tree-home');
+      const selectedCategoryLabel = document.getElementById('selected-category-label');
+      let selectedCategoryPath = [];
+      let categoryNodeLabels = {};
       const renderCategoryTree = (items, prefix = []) => {
         const ul = document.createElement('ul');
         items.forEach(item => {
@@ -136,6 +144,15 @@
           const link = document.createElement('a');
           link.href = 'categories/' + path.join('/') + '/';
           link.textContent = item.label;
+          link.dataset.categoryPath = path.join('/');
+          link.addEventListener('click', event => {
+            event.preventDefault();
+            selectedCategoryPath = path;
+            category = path[0];
+            syncCategoryControls();
+            render();
+            document.getElementById('article-list').scrollIntoView({behavior:'smooth',block:'start'});
+          });
           if (item.children && item.children.length) {
             const details = document.createElement('details');
             const summary = document.createElement('summary');
@@ -149,10 +166,29 @@
         });
         return ul;
       };
+      const syncCategoryControls = () => {
+        const selectedLabels = selectedCategoryPath.map(id => categoryNodeLabels[id]).filter(Boolean);
+        selectedCategoryLabel.textContent = selectedLabels.length ? selectedLabels.join(' › ') : 'すべてのカテゴリ';
+        buttons.forEach(button => {
+          const active = selectedCategoryPath.length
+            ? button.dataset.category === selectedCategoryPath[0]
+            : button.dataset.category === 'all';
+          button.classList.toggle('is-active', active);
+          button.setAttribute('aria-pressed', String(active));
+        });
+        categoryTreeHome.querySelectorAll('a[data-category-path]').forEach(link => {
+          const active = link.dataset.categoryPath === selectedCategoryPath.join('/');
+          if (active) link.setAttribute('aria-current','true');
+          else link.removeAttribute('aria-current');
+        });
+      };
       const render = () => {
-        const terms = search.value.trim().toLocaleLowerCase('ja').split(/\s+/u).filter(Boolean);
+        const terms = search.value.trim().toLocaleLowerCase('ja').split(/\\s+/u).filter(Boolean);
         const visible = articles.filter(article => {
-          const matchesCategory = category === 'all' || article.category === category;
+          const matchesCategory = selectedCategoryPath.length === 0 ||
+            (article.category === selectedCategoryPath[0] &&
+             (selectedCategoryPath.length < 2 || article.subcategory === selectedCategoryPath[1]) &&
+             (selectedCategoryPath.length < 3 || article.topic === selectedCategoryPath[2]));
           const haystack = [article.title,article.summary,...(article.tags||[])].join(' ').toLocaleLowerCase('ja');
           const matchesTerms = terms.length === 0 || (searchMode === 'and'
             ? terms.every(term => haystack.includes(term))
@@ -214,17 +250,19 @@
       });
       buttons.forEach(button => button.addEventListener('click',() => {
         category = button.dataset.category;
-        buttons.forEach(item => {
-          const active = item === button;
-          item.classList.toggle('is-active',active);
-          item.setAttribute('aria-pressed',String(active));
-        });
+        selectedCategoryPath = category === 'all' ? [] : [category];
+        syncCategoryControls();
         render();
       }));
       fetch('article-index.json')
         .then(response => { if(!response.ok) throw new Error('Article index unavailable'); return response.json(); })
         .then(data => {
-          (data.categories || []).forEach(item => categoryLabels[item.id] = item.label);
+          const walkCategories = (nodes, ancestors = []) => nodes.forEach(item => {
+            categoryNodeLabels[item.id] = item.label;
+            if (!ancestors.length) categoryLabels[item.id] = item.label;
+            if (item.children) walkCategories(item.children, [...ancestors, item.id]);
+          });
+          walkCategories(data.categories || []);
           categoryTreeHome.replaceChildren(renderCategoryTree(data.categories || []));
           const middleNodes = (data.categories || []).flatMap(c => c.children || []);
           const leafNodes = middleNodes.flatMap(c => c.children || []);
@@ -250,6 +288,7 @@
             label.append(input,text);
             tagFilters.append(label);
           });
+          syncCategoryControls();
           render();
         })
         .catch(() => {
