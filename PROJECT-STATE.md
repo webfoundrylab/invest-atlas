@@ -285,3 +285,11 @@
 - README.md にレイアウト仕様を反映。
 - 変更ファイル：scripts/build-site.py、README.md、本ファイル。
 - 修正コードの GitHub Actions run 40111139676（https://github.com/webfoundrylab/invest-atlas/actions/runs/40111139676）は build・検証・deploy すべて成功。公開URLの実表示は助手側から取得できず未確認のため、ユーザーによる画面確認が必要。
+
+## 2026-10-25 記事ページのカテゴリツリー配置修正
+- ユーザー報告：「記事ページのツリーが上にある」。最新の `scripts/build-site.py` を調査したところ、記事レイアウト用CSS文字列は定義されていたが、生成HTMLの `<head>` に挿入されていなかったため、ツリーと本文が縦に並ぶ原因になっていた。
+- CSSをマーカー付きで `<head>` に挿入する処理を追加。再ビルド時にCSSが重複しないよう、生成済みCSSをクリーンアップする処理も追加。メイン領域の挿入位置をCSS追加後に再計算するようにして、HTMLの位置ずれを防止。
+- 変更ファイル：`scripts/build-site.py`。
+- コミット：`e0b1724cc8c45ca0623d90432f8aad0341b3d481`（初回、後続修正で置換）および最終コミット `9730e534ef10ac45062ad21d6f157fcbec3c0ccb`。
+- GitHub Actions run [40111434570](https://github.com/webfoundrylab/invest-atlas/actions/runs/40111434570) は build・検証・deploy すべて成功。
+- 公開ページでの実際の表示は助手側から独立確認できていない。ユーザーのブラウザでハード再読み込み後、PC幅でツリーが左、記事本文が右に表示されるか確認が必要。
