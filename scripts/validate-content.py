@@ -73,7 +73,7 @@ for item in articles:
     try:
         page = (ROOT / item["slug"]).read_text(encoding="utf-8")
         has_generated = "<!-- GENERATED RELATED ARTICLES: START -->" in page and "<!-- GENERATED RELATED ARTICLES: END -->" in page
-        existing_links = set(re.findall(r'href=["\\']([^"\\']+)["\\']', page, flags=re.IGNORECASE))
+        existing_links = set(re.findall(r"""href=["']([^"']+)["']""", page, flags=re.IGNORECASE))
         has_registry_related = any(link in by_slug and link != item["slug"] for link in existing_links)
         if not has_generated and not has_registry_related:
             errors.append(f"{item['slug']}: no generated or existing internal related links found")
