@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate sitemap, related-article data, and article-page related sections."""
+"""Generate sitemap, related-article candidate data, and category navigation."""
 import html
 import json
 import re
@@ -284,28 +284,8 @@ def main():
             return 1
         page = clean_existing_block(page_path.read_text(encoding="utf-8"))
         page = inject_article_category_nav(page, article, registry)
-        existing_hrefs = set(re.findall(r"""href=["']([^"']+)["']""", page, flags=re.IGNORECASE))
-        entries = [entry for entry in related_data[article["slug"]] if entry["slug"] not in existing_hrefs]
-        entries = entries[:4]
-        if entries:
-            links = "\n".join(
-                '      <li><a href="' + html.escape(item["slug"], quote=True) + '">' +
-                html.escape(item["title"]) + '</a><p>' + html.escape(item["summary"]) + '</p></li>'
-                for item in entries
-            )
-            block = (
-                START_MARKER + '\n'
-                '<section class="generated-related" aria-labelledby="generated-related-title">\n'
-                '  <h2 id="generated-related-title">関連記事</h2>\n'
-                '  <ul>\n' + links + '\n  </ul>\n'
-                '  <style>.generated-related{margin:2.5rem 0;padding:1.25rem;border:1px solid #d5e6eb;border-radius:16px;background:#f7fbfc}.generated-related h2{margin-top:0}.generated-related ul{padding-left:1.25rem}.generated-related li{margin:0 0 1rem}.generated-related li:last-child{margin-bottom:0}.generated-related p{margin:.2rem 0;color:#536879;font-size:.92rem}.generated-related a{font-weight:750}</style>\n'
-                '</section>\n' + END_MARKER
-            )
-            if "</body>" not in page.lower():
-                print(f"ERROR: no closing body tag in {article['slug']}", file=sys.stderr)
-                return 1
-            pos = page.lower().rfind("</body>")
-            page = page[:pos] + block + "\n" + page[pos:]
+        # Related links are placed contextually in article HTML by editorial review.
+        # Keep the candidate data in related-articles.json without appending a footer list.
         page_path.write_text(page, encoding="utf-8")
 
     RELATED_PATH.write_text(
@@ -313,7 +293,7 @@ def main():
                    ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8"
     )
-    print(f"Generated sitemap.xml ({len(urls)} URLs), related-articles.json ({len(published)} articles), and article-page related sections.")
+    print(f"Generated sitemap.xml ({len(urls)} URLs) and related-articles.json ({len(published)} articles).")
     return 0
 
 
