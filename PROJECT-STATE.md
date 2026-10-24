@@ -162,3 +162,11 @@
 - 対象記事：`before-you-invest.html`、`nisa-basics.html`、`investment-trust-fees.html`、`investment-trust-vs-etf.html`、`choose-investment-trust-nisa.html`、`regular-investing.html`。
 - 図はレスポンシブCSSで表示し、制度数値・模式図の注意書きを付記。新NISA図は年間枠・生涯枠の関係を説明するもので、制度の最新条件は公式情報での確認を促す。
 - GitHub main への反映は完了。公開URLでの実表示と今回のGitHub Actions結果は未確認。
+
+
+## 2026-10-24 トップページをタイル型導線に再構成
+- ユーザー希望に合わせ、トップページの「テーマから探す」にあった記事未作成のカテゴリタイルを、既存6記事へ直接遷移するクリック可能なタイルに再構成。
+- 6タイルは「投資前の基礎」「新NISA」「投資信託とETFの比較」「NISAの商品選び」「信託報酬・費用」「積立投資」に対応。タイル全体をリンクにし、アイコン・短い説明・遷移ラベルを配置。
+- カードをデスクトップ3列・モバイル1列で表示し、フォーカス表示、ホバー、タッチしやすい余白を整備。既存のtitle、description、canonical、Search Console verification、サイトマップは維持。
+- 変更ファイル：`index.html`。
+- コミット：`29b387d04dac70bc0b3fa12473c70ae76125169e`。公開URLでの実表示とGitHub Actions結果は未確認。
