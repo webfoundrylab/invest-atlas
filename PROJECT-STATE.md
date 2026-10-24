@@ -194,3 +194,12 @@
 - 明るい配色、余白、見出しの階層を既存デザインに合わせ、スマートフォンでは1列に切り替わるレスポンシブ構成。
 - 変更ファイル：`index.html`、本ファイル。
 - `index.html` コミット：`1599ec95cfd3afe859af0b7c574e96da0854d4cf`。GitHub main への反映済み。公開画面での表示・Actions結果は未確認。
+
+## 2026-10-25 AI・半導体投資の深掘り記事を追加
+- `ai-semiconductor-investing.html` を新規作成。AIサービスからGPU・先端ロジック・メモリ・製造装置・材料・データセンター・電力・冷却までの関連領域を整理し、決算で見る指標、株価評価、競争・需給・地政学・電力制約などのリスクを解説。
+- 経済産業省の2026年半導体・デジタル産業戦略関連資料、NVIDIAの公式決算資料、WSTSを参照先として掲載。市場予測と将来の株価を混同しない注意書きを付記。
+- `images/ai-semiconductor-investment-map.svg` を新規作成し、産業のつながりと投資家が見るべき項目を概念図として追加。
+- `index.html` の記事カードに新記事への導線を追加し、`sitemap.xml` に記事URLを登録。
+- 変更ファイル：`ai-semiconductor-investing.html`、`images/ai-semiconductor-investment-map.svg`、`index.html`、`sitemap.xml`、本ファイル。
+- 新規記事コミット：`118626e9d15f4b54be957e519689cefa1988169f`。図解コミット：`495664b79e7bbd93c2438d262bf9f0de020848d5`。トップページ導線コミット：`a366fe10f94e036aa74d383b61caa09406fa5d3b`。サイトマップコミット：`63ed8736f56b36309ec4ebd4c1847265450dd045`。
+- GitHub上のファイル追加・更新は完了。Actionsのデプロイ結果と公開URLでの表示確認は未確認。
