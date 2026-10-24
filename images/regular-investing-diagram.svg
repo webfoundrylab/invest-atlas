@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">毎月3,000円を積み立てた場合の購入数量の違い</title>
+  <desc id="desc">価格が1,000円なら3口、750円なら4口、600円なら5口購入。3回の合計投資額は9,000円、購入数量は12口、平均購入価格は1口750円という仮定例。</desc>
+  <rect width="1200" height="700" rx="28" fill="#f4f7f8"/>
+  <text x="64" y="70" font-family="sans-serif" font-size="34" font-weight="700" fill="#10243a">毎月同じ金額でも、買える数量は変わる</text>
+  <text x="64" y="112" font-family="sans-serif" font-size="22" fill="#526574">毎回3,000円を積み立てる仮定例</text>
+  <g font-family="sans-serif">
+    <rect x="64" y="150" width="330" height="285" rx="20" fill="#ffffff" stroke="#dce4e8" stroke-width="2"/>
+    <rect x="435" y="150" width="330" height="285" rx="20" fill="#ffffff" stroke="#dce4e8" stroke-width="2"/>
+    <rect x="806" y="150" width="330" height="285" rx="20" fill="#ffffff" stroke="#dce4e8" stroke-width="2"/>
+    <text x="229" y="195" text-anchor="middle" font-size="22" font-weight="700" fill="#526574">1回目</text>
+    <text x="600" y="195" text-anchor="middle" font-size="22" font-weight="700" fill="#526574">2回目</text>
+    <text x="971" y="195" text-anchor="middle" font-size="22" font-weight="700" fill="#526574">3回目</text>
+    <text x="229" y="242" text-anchor="middle" font-size="27" font-weight="700" fill="#10243a">価格 1,000円</text>
+    <text x="600" y="242" text-anchor="middle" font-size="27" font-weight="700" fill="#10243a">価格 750円</text>
+    <text x="971" y="242" text-anchor="middle" font-size="27" font-weight="700" fill="#10243a">価格 600円</text>
+    <g fill="#1b746b">
+      <circle cx="171" cy="294" r="18"/><circle cx="229" cy="294" r="18"/><circle cx="287" cy="294" r="18"/>
+      <circle cx="542" cy="294" r="18"/><circle cx="600" cy="294" r="18"/><circle cx="658" cy="294" r="18"/><circle cx="571" cy="342" r="18"/>
+      <circle cx="913" cy="294" r="18"/><circle cx="971" cy="294" r="18"/><circle cx="1029" cy="294" r="18"/><circle cx="942" cy="342" r="18"/><circle cx="1000" cy="342" r="18"/>
+    </g>
+    <text x="229" y="374" text-anchor="middle" font-size="24" fill="#526574">3,000円 ÷ 1,000円</text>
+    <text x="229" y="411" text-anchor="middle" font-size="29" font-weight="700" fill="#176d65">= 3口</text>
+    <text x="600" y="390" text-anchor="middle" font-size="24" fill="#526574">3,000円 ÷ 750円</text>
+    <text x="600" y="421" text-anchor="middle" font-size="29" font-weight="700" fill="#176d65">= 4口</text>
+    <text x="971" y="390" text-anchor="middle" font-size="24" fill="#526574">3,000円 ÷ 600円</text>
+    <text x="971" y="421" text-anchor="middle" font-size="29" font-weight="700" fill="#176d65">= 5口</text>
+    <rect x="64" y="470" width="1072" height="150" rx="20" fill="#10243a"/>
+    <text x="100" y="515" font-size="22" fill="#b8dcd6">3回の合計</text>
+    <text x="100" y="565" font-size="32" font-weight="700" fill="#ffffff">投資額 9,000円</text>
+    <text x="440" y="565" font-size="32" font-weight="700" fill="#ffffff">購入数量 12口</text>
+    <text x="790" y="565" font-size="32" font-weight="700" fill="#ffffff">平均購入価格 750円/口</text>
+    <text x="100" y="598" font-size="17" fill="#dce7ec">※価格・口数は説明用の仮定です。実際の投資成果や損失回避を示すものではありません。</text>
+  </g>
+</svg>
