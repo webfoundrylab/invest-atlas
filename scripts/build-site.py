@@ -87,7 +87,7 @@ def main():
             print(f"ERROR: article file missing: {article['slug']}", file=sys.stderr)
             return 1
         page = clean_existing_block(page_path.read_text(encoding="utf-8"))
-        existing_hrefs = set(re.findall(r'href=["\\']([^"\\']+)["\\']', page, flags=re.IGNORECASE))
+        existing_hrefs = set(re.findall(r"""href=["']([^"']+)["']""", page, flags=re.IGNORECASE))
         entries = [entry for entry in related_data[article["slug"]] if entry["slug"] not in existing_hrefs]
         entries = entries[:4]
         if entries:
