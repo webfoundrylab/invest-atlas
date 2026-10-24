@@ -121,10 +121,15 @@ ARTICLE_CLOSE_START = "<!-- GENERATED ARTICLE LAYOUT CLOSE: START -->"
 ARTICLE_CLOSE_END = "<!-- GENERATED ARTICLE LAYOUT CLOSE: END -->"
 
 
+ARTICLE_STYLE_START = "<!-- GENERATED ARTICLE LAYOUT STYLE: START -->"
+ARTICLE_STYLE_END = "<!-- GENERATED ARTICLE LAYOUT STYLE: END -->"
+
+
 def clean_article_layout(page):
     page = clean_category_block(page)
     page = re.sub(re.escape(ARTICLE_OPEN_START) + r".*?" + re.escape(ARTICLE_OPEN_END), "", page, flags=re.S)
     page = re.sub(re.escape(ARTICLE_CLOSE_START) + r".*?" + re.escape(ARTICLE_CLOSE_END), "", page, flags=re.S)
+    page = re.sub(re.escape(ARTICLE_STYLE_START) + r".*?" + re.escape(ARTICLE_STYLE_END), "", page, flags=re.S)
     return page
 
 
@@ -167,6 +172,10 @@ main.wrap{width:min(1160px,calc(100% - 32px))}
     main_close = page.lower().rfind("</main>")
     if not main_match or main_close < 0:
         return page
+    style_block = ARTICLE_STYLE_START + css + ARTICLE_STYLE_END
+    head_close = page.lower().find("</head>")
+    if head_close >= 0:
+        page = page[:head_close] + style_block + page[head_close:]
     page = page[:main_match.end()] + opening + page[main_match.end():]
     main_close = page.lower().rfind("</main>")
     page = page[:main_close] + closing + page[main_close:]
