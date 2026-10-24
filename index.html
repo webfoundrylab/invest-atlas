@@ -45,17 +45,12 @@
         <button type="button" class="filter-button" data-category="funds" aria-pressed="false">投資信託・ETF</button>
         <button type="button" class="filter-button" data-category="strategy" aria-pressed="false">資産形成</button>
         <button type="button" class="filter-button" data-category="markets" aria-pressed="false">市場・注目テーマ</button>
+        <button type="button" class="filter-button" data-category="companies" aria-pressed="false">個別株・企業分析</button>
       </div>
       <p class="result-count" id="result-count" aria-live="polite">記事を読み込み中…</p>
     </div>
-    <div class="article-list" id="article-list">
-      <article class="article-row" data-category="markets" data-search="AI 半導体 GPU メモリ データセンター 電力 企業分析 株価"><span class="article-category">市場・注目テーマ</span><div><h3><a href="ai-semiconductor-investing.html">AI・半導体投資を深掘り</a></h3><p>GPU・メモリから製造装置、データセンター、電力まで。成長期待と企業分析の視点を整理。</p><span class="article-tags">AI / 半導体 / 企業分析</span></div><a class="article-open" href="ai-semiconductor-investing.html">記事を読む</a></article>
-      <article class="article-row" data-category="basics" data-search="投資 基礎 始める前 生活資金 リスク 分散 初心者"><span class="article-category">投資の基礎</span><div><h3><a href="before-you-invest.html">投資を始める前に確認したい7つのこと</a></h3><p>生活資金、目的、期間、値下がりへの備えなど、投資前の準備を確認。</p><span class="article-tags">基礎 / リスク / 家計</span></div><a class="article-open" href="before-you-invest.html">記事を読む</a></article>
-      <article class="article-row" data-category="nisa" data-search="新NISA 非課税 投資枠 年間 生涯 売却 制度 税金"><span class="article-category">NISA・制度</span><div><h3><a href="nisa-basics.html">新NISAの仕組みと投資枠</a></h3><p>つみたて投資枠・成長投資枠、非課税保有限度額、売却後の枠の再利用を解説。</p><span class="article-tags">NISA / 税制 / 制度</span></div><a class="article-open" href="nisa-basics.html">記事を読む</a></article>
-      <article class="article-row" data-category="funds" data-search="投資信託 ETF 違い 比較 売買 価格 コスト 流動性"><span class="article-category">投資信託・ETF</span><div><h3><a href="investment-trust-vs-etf.html">投資信託とETFの違い</a></h3><p>価格の決まり方、売買方法、費用、流動性などを比較。</p><span class="article-tags">投資信託 / ETF / 比較</span></div><a class="article-open" href="investment-trust-vs-etf.html">記事を読む</a></article>
-      <article class="article-row" data-category="nisa" data-search="NISA 投資信託 選び方 商品 目論見書 分散 リスク 費用"><span class="article-category">NISA・制度</span><div><h3><a href="choose-investment-trust-nisa.html">NISAで投資信託を選ぶ7つの視点</a></h3><p>投資対象、分散、費用、リスク、目論見書の確認ポイントを整理。</p><span class="article-tags">NISA / 商品選び / 目論見書</span></div><a class="article-open" href="choose-investment-trust-nisa.html">記事を読む</a></article>
-      <article class="article-row" data-category="funds" data-search="投資信託 信託報酬 手数料 コスト 実質費用 運用報告書"><span class="article-category">投資信託・ETF</span><div><h3><a href="investment-trust-fees.html">投資信託の信託報酬と費用</a></h3><p>保有中のコスト、年率の計算例、その他費用や実質コストの確認方法。</p><span class="article-tags">信託報酬 / 手数料 / コスト</span></div><a class="article-open" href="investment-trust-fees.html">記事を読む</a></article>
-      <article class="article-row" data-category="strategy" data-search="積立投資 定額購入 ドルコスト平均法 長期 分散 NISA"><span class="article-category">資産形成</span><div><h3><a href="regular-investing.html">積立投資の仕組みと注意点</a></h3><p>定額購入、購入時期の分散、積立額の考え方と元本割れのリスク。</p><span class="article-tags">積立 / 長期投資 / リスク</span></div><a class="article-open" href="regular-investing.html">記事を読む</a></article>
+    <div class="article-list" id="article-list" aria-live="polite">
+    </div>
     </div>
     <p class="no-results" id="no-results" hidden>該当する記事がありません。別のキーワードやカテゴリをお試しください。</p>
   </section>
@@ -85,34 +80,70 @@
   <script>
     (() => {
       const search = document.getElementById('article-search');
-      const rows = [...document.querySelectorAll('.article-row')];
+      const list = document.getElementById('article-list');
       const buttons = [...document.querySelectorAll('.filter-button')];
       const count = document.getElementById('result-count');
       const empty = document.getElementById('no-results');
       let category = 'all';
-      const filter = () => {
+      let articles = [];
+      const categoryLabels = {};
+      const render = () => {
         const query = search.value.trim().toLocaleLowerCase('ja');
-        let shown = 0;
-        rows.forEach(row => {
-          const matchesCategory = category === 'all' || row.dataset.category === category;
-          const matchesQuery = !query || (row.dataset.search + ' ' + row.innerText).toLocaleLowerCase('ja').includes(query);
-          row.hidden = !(matchesCategory && matchesQuery);
-          if (!row.hidden) shown++;
+        const visible = articles.filter(article => {
+          const matchesCategory = category === 'all' || article.category === category;
+          const haystack = [article.title,article.summary,...(article.tags||[])].join(' ').toLocaleLowerCase('ja');
+          return matchesCategory && (!query || haystack.includes(query));
         });
-        count.textContent = shown + '件の記事';
-        empty.hidden = shown !== 0;
+        list.replaceChildren();
+        visible.forEach(article => {
+          const row = document.createElement('article');
+          row.className = 'article-row';
+          const label = document.createElement('span');
+          label.className = 'article-category';
+          label.textContent = categoryLabels[article.category] || 'その他';
+          const main = document.createElement('div');
+          const h3 = document.createElement('h3');
+          const titleLink = document.createElement('a');
+          titleLink.href = article.slug;
+          titleLink.textContent = article.title;
+          h3.append(titleLink);
+          const summary = document.createElement('p');
+          summary.textContent = article.summary || '';
+          const tags = document.createElement('span');
+          tags.className = 'article-tags';
+          tags.textContent = (article.tags || []).join(' / ');
+          main.append(h3,summary,tags);
+          const open = document.createElement('a');
+          open.className = 'article-open';
+          open.href = article.slug;
+          open.textContent = '記事を読む';
+          row.append(label,main,open);
+          list.append(row);
+        });
+        count.textContent = visible.length + '件の記事';
+        empty.hidden = visible.length !== 0;
       };
-      search.addEventListener('input', filter);
-      buttons.forEach(button => button.addEventListener('click', () => {
+      search.addEventListener('input',render);
+      buttons.forEach(button => button.addEventListener('click',() => {
         category = button.dataset.category;
         buttons.forEach(item => {
           const active = item === button;
-          item.classList.toggle('is-active', active);
-          item.setAttribute('aria-pressed', String(active));
+          item.classList.toggle('is-active',active);
+          item.setAttribute('aria-pressed',String(active));
         });
-        filter();
+        render();
       }));
-      filter();
+      fetch('article-index.json')
+        .then(response => { if(!response.ok) throw new Error('Article index unavailable'); return response.json(); })
+        .then(data => {
+          (data.categories || []).forEach(item => categoryLabels[item.id] = item.label);
+          articles = (data.articles || []).filter(item => item.status === 'published');
+          render();
+        })
+        .catch(() => {
+          count.textContent = '記事一覧を読み込めませんでした。ページを再読み込みしてください。';
+          list.innerHTML = '<p>記事データの読み込みに失敗しました。しばらくしてから再度お試しください。</p>';
+        });
     })();
   </script>
   <section id="policy" class="note"><strong>編集方針と注意事項</strong>本サイトは一般的な情報提供・学習を目的とし、個別の金融商品への投資を勧誘するものではありません。投資には元本割れのリスクがあります。過去の実績は将来の成果を保証しません。制度・商品情報は変更されることがあるため、記事の確認日と公式出典をご確認ください。広告・アフィリエイトを導入する場合は、その旨を明示します。</section>
