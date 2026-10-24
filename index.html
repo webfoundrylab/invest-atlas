@@ -95,7 +95,7 @@
       let articles = [];
       const categoryLabels = {};
       const render = () => {
-        const terms = search.value.trim().toLocaleLowerCase('ja').split(/\\s+/u).filter(Boolean);
+        const terms = search.value.trim().toLocaleLowerCase('ja').split(/\s+/u).filter(Boolean);
         const visible = articles.filter(article => {
           const matchesCategory = category === 'all' || article.category === category;
           const haystack = [article.title,article.summary,...(article.tags||[])].join(' ').toLocaleLowerCase('ja');
