@@ -12,7 +12,16 @@
 
 ## 公開
 GitHub Pages を GitHub Actions からデプロイする構成です。
-公開URL（予定）: https://webfoundrylab.github.io/invest-atlas/
+公開URL: https://webfoundrylab.github.io/invest-atlas/
+
+## 記事の追加と自動生成
+- 記事情報の単一情報源は `article-index.json` です。
+- 記事一覧はトップページが台帳から公開記事を読み込み、キーワード検索・カテゴリ絞り込みを行います。
+- デプロイ時に `scripts/build-site.py` が台帳を読み、`sitemap.xml` と `related-articles.json` を生成します。
+- `scripts/validate-content.py` が記事ファイル、カテゴリ、関連記事候補、サイトマップを検証します。検証失敗時はデプロイを停止します。
+- `related-articles.json` は関連記事候補の生成データです。各記事本文に表示する関連記事リンクは、読者にとっての関連性を確認して編集します。台帳に登録しただけで本文リンクが自動挿入されるわけではありません。
+
+新記事を追加する際は、HTML記事を作成し、`article-index.json` に `slug`、`title`、`category`、`tags`、`summary`、`status`、`related` を登録してコミットしてください。公開前にActionsの検証結果を確認します。
 
 ## 管理
 進捗の正本は [PROJECT-STATE.md](PROJECT-STATE.md) です。新しい作業を始める前に最新状態を確認してください。
