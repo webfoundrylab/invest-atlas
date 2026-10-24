@@ -273,4 +273,5 @@
 - scripts/validate-content.py にカテゴリ階層とカテゴリページのサイトマップ登録チェックを追加。README.md に新しい記事登録方法を記載。
 - 変更ファイル：article-index.json、scripts/build-site.py、scripts/validate-content.py、index.html、README.md、本ファイル。
 - 主なコミット：台帳 ba5447de37e4a3bfb21f1a66a7f0fe5a7766b8a1、カテゴリ生成 7e4b629c1ba6df95893d0cf75e26c1cfc2dc749b、検証 5f6e23e21e45fd797aaccf6f3741149711883513、トップページ de15fb6a6e426e61eee223207123bf439fb42d0a、README 666e83439b3a092d6bc4156fe78843693343ffe2。
-- GitHub Actions のビルド・検証結果、公開URLでのカテゴリページ・パンくず・サイドバー表示は未確認。最新のActions実行結果を確認し、失敗があれば修正する。
+- GitHub Actions run 40110480550（https://github.com/webfoundrylab/invest-atlas/actions/runs/40110480550）は build・deploy とも成功。カテゴリページ生成と記事台帳・サイトマップ検証も成功。
+- 公開URLの実表示は独立検証ツールからアクセスできず未確認。ユーザーのブラウザでトップページ、カテゴリページ、記事ページのパンくず・左サイドバー／折りたたみ表示を確認する余地がある。
