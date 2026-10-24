@@ -1,6 +1,6 @@
 # Invest Atlas — Project State
 
-最終更新: 2026-10-24
+最終更新: 2026-10-25
 
 ## プロジェクト概要
 - サイト名: Invest Atlas（仮）
@@ -427,3 +427,11 @@
 - `thumbnails/investment-trust-actual-cost.svg` を追加し、`article-index.json` に記事情報・タグ・関連候補を登録。信託報酬記事とNISA商品選び記事の本文中にも、関連する説明の近くから新記事へのリンクを追加。
 - `investment-trust-fees.html` の台帳上のタイトルを実際の見出しに合わせて整合。
 - サイトマップ・カテゴリページはデプロイ時に `scripts/build-site.py` が生成する。最新のActions検証・デプロイ結果は確認中。
+
+
+## 2026-10-25 投資信託の投資対象記事を追加
+- `investment-trust-investment-targets.html` を新規作成。株式・債券・REIT・コモディティ・バランス型の特徴、投資対象地域、目論見書での確認項目を解説。
+- 資産運用業協会、J-FLEC、金融庁の公式資料を出典として掲載し、元本保証ではないこと、資産分散でも損失を防げないことを明記。
+- `thumbnails/fund-investment-targets.svg` を追加。記事台帳に登録し、投資信託の基礎カテゴリに「投資対象資産・地域」の小カテゴリを追加。
+- `choose-investment-trust-nisa.html` と `investment-trust-vs-etf.html` から関連記事として接続。
+- sitemap とカテゴリ一覧は `scripts/build-site.py` によるデプロイ時の生成対象。今回のGitHub Actions結果、生成物、公開URLでの表示は確認待ち。
