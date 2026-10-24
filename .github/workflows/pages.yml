@@ -22,7 +22,9 @@ jobs:
         uses: actions/checkout@v4
       - name: Configure Pages
         uses: actions/configure-pages@v5
-      - name: Validate article registry and sitemap
+      - name: Generate sitemap and related-article data
+        run: python3 scripts/build-site.py
+      - name: Validate article registry and generated sitemap
         run: python3 scripts/validate-content.py
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
