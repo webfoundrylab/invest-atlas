@@ -284,4 +284,4 @@
 - 生成済みマークアップとCSSを再ビルド時に重複させないよう、生成ブロックの正規化処理を追加。
 - README.md にレイアウト仕様を反映。
 - 変更ファイル：scripts/build-site.py、README.md、本ファイル。
-- GitHub Actions の修正後ビルド・デプロイ結果と公開画面の再確認はこれから。
+- 修正コードの GitHub Actions run 40111139676（https://github.com/webfoundrylab/invest-atlas/actions/runs/40111139676）は build・検証・deploy すべて成功。公開URLの実表示は助手側から取得できず未確認のため、ユーザーによる画面確認が必要。
