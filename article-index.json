@@ -78,6 +78,10 @@
             {
               "id": "index-active",
               "label": "インデックス型・アクティブ型"
+            },
+            {
+              "id": "investment-targets",
+              "label": "投資対象資産・地域"
             }
           ]
         },
@@ -263,7 +267,8 @@
         "investment-trust-fees.html",
         "investment-trust-vs-etf.html",
         "regular-investing.html",
-        "investment-trust-actual-cost.html"
+        "investment-trust-actual-cost.html",
+        "investment-trust-investment-targets.html"
       ],
       "subcategory": "nisa-product-selection",
       "topic": "choosing-funds",
@@ -292,7 +297,8 @@
         "choose-investment-trust-nisa.html",
         "regular-investing.html",
         "before-you-invest.html",
-        "ai-semiconductor-investing.html"
+        "ai-semiconductor-investing.html",
+        "investment-trust-investment-targets.html"
       ],
       "subcategory": "fund-etf-comparison",
       "publishedAt": "2026-10-24",
@@ -404,6 +410,34 @@
       "publishedAt": "2026-10-25",
       "updatedAt": "2026-10-25",
       "thumbnail": "thumbnails/investment-trust-actual-cost.svg"
+    },
+    {
+      "slug": "investment-trust-investment-targets.html",
+      "title": "投資信託の投資対象とは？株式・債券・REIT・バランス型の違い",
+      "category": "funds",
+      "subcategory": "investment-trust-basics",
+      "topic": "investment-targets",
+      "tags": [
+        "投資信託",
+        "投資対象",
+        "株式型",
+        "債券型",
+        "REIT",
+        "リート",
+        "コモディティ",
+        "バランス型",
+        "資産配分",
+        "投資対象地域"
+      ],
+      "summary": "株式・債券・REIT・コモディティ・バランス型の特徴と、国内・海外など地域の違い、目論見書での確認方法を解説。",
+      "status": "published",
+      "related": [
+        "choose-investment-trust-nisa.html",
+        "investment-trust-vs-etf.html"
+      ],
+      "publishedAt": "2026-10-25",
+      "updatedAt": "2026-10-25",
+      "thumbnail": "thumbnails/fund-investment-targets.svg"
     }
   ]
 }
