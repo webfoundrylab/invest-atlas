@@ -272,7 +272,7 @@
         categoryLevels.forEach((container,index) => {
           const level = index + 1;
           const row = container.closest('.category-level');
-          const visible = level === 1 || selectedCategoryPath.length >= level - 1;
+          const visible = level === 1 || (selectedCategoryPath.length >= level - 1 && getChildren(selectedCategoryPath.slice(0,level - 1)).length > 0);
           row.setAttribute('aria-hidden',String(!visible));
           row.style.visibility = visible ? 'visible' : 'hidden';
           row.style.pointerEvents = visible ? 'auto' : 'none';
