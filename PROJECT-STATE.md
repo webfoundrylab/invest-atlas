@@ -16,8 +16,9 @@
 - [x] トップページ・初回解説記事の下書き公開準備
 - [x] sitemap.xml / robots.txt の作成
 - [x] GitHub Actions Pages デプロイ workflow の作成
-- [ ] GitHub Pages の設定（Settings > Pages > Build and deployment > Source を GitHub Actions にする）
-- [ ] Pages 初回デプロイ成功と公開URLを確認
+- [x] GitHub Pages の設定（Settings > Pages > Build and deployment > Source を GitHub Actions にする設定が反映されたことを、後続の workflow 成功で確認）
+- [x] GitHub Actions の build / deploy 成功を確認（run `40097453363` の最新試行）
+- [ ] 公開URLが実際に応答することを独立して確認
 - [ ] 公開URL、内部リンク、sitemap、canonical を公開後に検証
 - [ ] Google Search Console 登録と sitemap 送信
 - [ ] 追加記事の検索意図・一次情報・重複確認
@@ -40,12 +41,12 @@
 ## 確認結果
 - 2026-10-24: リポジトリは存在し、Public、default branch は main。初期ファイルは GitHub 上で取得できることを確認。
 - Workflow run `40097453363` は失敗。job `build` の `Configure Pages` ステップで `Get Pages site failed` / HTTP 404。後続の artifact upload と deploy はスキップされた。
-- 現時点では Pages の有効化または公開元設定が未完了と考えられる。GitHub Actions の workflow ファイル自体の修正だけでは解決しない可能性が高い。
-- Node.js 20 の警告も出ているが、今回の失敗の直接原因は Configure Pages の HTTP 404。
+- 2026-10-24: run `40097453363` の最新試行で `build` と `deploy` がともに成功。`Configure Pages` と `Upload site artifact`、`Deploy to GitHub Pages` はすべて成功。Pages 設定が有効になり、デプロイ処理が完了したことを確認。
+- 初回試行では Node.js 20 の警告も出ていたが、最新試行の成功を妨げてはいない。
+- 公開URL（トップ、記事、sitemap）は、Web取得でキャッシュミス／アクセス不可となり、実際のHTTP応答は未確認。実行環境からの直接アクセスもDNS解決エラーで確認できず。
 
 ## 次の作業
-1. リポジトリ Settings > Pages を開き、Build and deployment の Source を GitHub Actions に設定して保存する。
-2. Actions の workflow を再実行し、build と deploy の両方が成功するか確認する。
-3. 公開後にトップページ・記事・sitemap の応答、リンク、canonical の整合性を検証する。
-4. デプロイ成功後、必要なら Node.js 24 対応版の Actions へ更新し、警告を解消する。
-5. 次の記事を一次資料に基づいて追加する。
+1. 公開URL（トップ、初回記事、sitemap）が実際に応答するか、別のネットワーク／ブラウザで確認する。
+2. 公開確認後、トップページ・記事・sitemap のリンクと canonical の整合性を検証する。
+3. 必要なら Node.js 24 対応版の Actions へ更新し、警告を解消する。
+4. 次の記事を一次資料に基づいて追加する。
