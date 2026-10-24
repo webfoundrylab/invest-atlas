@@ -254,3 +254,12 @@
 - 変更ファイル：`index.html`、`scripts/build-site.py`、`scripts/validate-content.py`、`README.md`、本ファイル。
 - GitHub Actionsと公開URLの確認は未完了。ローカル実行でのビルド・検証結果も次に確認する。
 
+
+
+## 2026-10-25 既存記事のタグ整理とAND/ORタグ検索
+- `article-index.json` の公開済み7記事について、タグを個別の検索・関連記事判定に使いやすい粒度へ整理。NISA制度、投資信託の費用、売買方法、投資前の準備、積立投資、AI・半導体などのテーマを複数タグに分割・具体化。
+- `index.html` にタグ選択UIを追加。選択タグに対してOR（いずれかのタグを含む）／AND（すべてのタグを含む）を切り替え可能にし、タグ選択解除も追加。既存のキーワードAND/OR検索とカテゴリ絞り込みを併用できる。
+- `README.md` の重複していたタグ検索説明を統合し、挙動を記載。
+- 変更ファイル：`article-index.json`、`index.html`、`README.md`、本ファイル。
+- コミット：タグ台帳 `ae6da51416d2be76f8cbe56d30163d75a5bfb856`、UI `d0d9942d05d858818c9430b700cd14ffb43d7fb8`、README `b025d0036484c3240a90843521f2f6654b2760a8`。
+- GitHub Actions と公開画面での今回の変更確認は未実施。デプロイ後、タグ一覧・OR/AND・キーワード検索との併用を確認する。
