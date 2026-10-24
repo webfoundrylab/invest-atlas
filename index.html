@@ -44,17 +44,14 @@
       </section>
       <section class="filter-card category-card" aria-labelledby="category-title">
         <div class="filter-card-heading"><h3 id="category-title">カテゴリ</h3><span id="selected-category-label" aria-live="polite">すべてのカテゴリ</span><button type="button" id="clear-category" class="clear-category">解除</button></div>
-        <div class="category-level">
-          <span class="category-level-label">大</span>
-          <div id="category-level-1" class="category-level-options" role="group" aria-label="大カテゴリ"></div>
+        <div class="category-level" data-level="1">
+          <div id="category-level-1" class="category-level-options" role="group" aria-label="カテゴリ"></div>
         </div>
-        <div class="category-level">
-          <span class="category-level-label">中</span>
-          <div id="category-level-2" class="category-level-options" role="group" aria-label="中カテゴリ"></div>
+        <div class="category-level" data-level="2" aria-hidden="true">
+          <div id="category-level-2" class="category-level-options" role="group" aria-label="下位カテゴリ"></div>
         </div>
-        <div class="category-level">
-          <span class="category-level-label">小</span>
-          <div id="category-level-3" class="category-level-options" role="group" aria-label="小カテゴリ"></div>
+        <div class="category-level" data-level="3" aria-hidden="true">
+          <div id="category-level-3" class="category-level-options" role="group" aria-label="さらに下位カテゴリ"></div>
         </div>
       </section>
       <section class="filter-card tags-card" aria-labelledby="tags-title">
@@ -115,10 +112,14 @@
     .category-card{grid-column:2;grid-row:1 / span 2}
     .keyword-card{grid-column:1;grid-row:1}
     .tags-card{grid-column:1;grid-row:2}
-    .category-level{display:flex;align-items:center;gap:8px;min-width:0;height:42px;border-top:1px solid #edf2f3}
-    .category-level-label{flex:0 0 18px;width:18px;font-size:.76rem;font-weight:850;color:#607985;text-align:center}
+    .category-level{display:flex;align-items:center;min-width:0;height:42px;border-top:1px solid #edf2f3;transition:background-color .15s}
+    .category-level[data-level="2"]{padding-left:14px;background:#f8fbfc}
+    .category-level[data-level="3"]{padding-left:28px;background:#f2f7f9}
+    .category-level[aria-hidden="true"]{visibility:hidden;pointer-events:none;border-top-color:transparent;background:transparent}
     .category-level-options{display:flex;align-items:center;gap:5px;min-width:0;flex:1;overflow-x:auto;overflow-y:hidden;white-space:nowrap;scrollbar-width:thin;overscroll-behavior-x:contain;padding:3px 2px}
-    .category-level-button{flex:0 0 auto;border:1px solid #b8d8d9;background:#f4fbfa;color:#24545a;border-radius:8px;padding:6px 9px;font:inherit;font-size:.76rem;font-weight:700;line-height:1.2;cursor:pointer;white-space:nowrap}
+    .category-level[data-level="2"] .category-level-button{font-size:.74rem;padding:5px 8px;border-radius:7px}
+    .category-level[data-level="3"] .category-level-button{font-size:.71rem;padding:5px 7px;border-radius:6px}
+    .category-level-button{flex:0 0 auto;border:1px solid #b8d8d9;background:#fff;color:#24545a;border-radius:9px;padding:7px 11px;font:inherit;font-size:.8rem;font-weight:700;line-height:1.2;cursor:pointer;white-space:nowrap}
     .category-level-button.is-active{background:#087f75;color:#fff;border-color:#087f75}
     .tag-actions{display:flex;align-items:center;flex-wrap:wrap;gap:8px}
     .open-tag-dialog{border:1px solid #8dc9c0;background:#e5f7f2;color:#075e58;border-radius:9px;padding:8px 11px;font:inherit;font-size:.82rem;font-weight:800;cursor:pointer}
@@ -270,7 +271,13 @@
       const renderCategoryLevels = () => {
         categoryLevels.forEach((container,index) => {
           const level = index + 1;
+          const row = container.closest('.category-level');
+          const visible = level === 1 || selectedCategoryPath.length >= level - 1;
+          row.setAttribute('aria-hidden',String(!visible));
+          row.style.visibility = visible ? 'visible' : 'hidden';
+          row.style.pointerEvents = visible ? 'auto' : 'none';
           container.replaceChildren();
+          if (!visible) return;
           const allButton = document.createElement('button');
           allButton.type = 'button';
           allButton.className = 'category-level-button';
