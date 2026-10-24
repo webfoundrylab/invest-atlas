@@ -224,3 +224,15 @@
 3. 新記事本文に関連記事を3〜5件設け、既存の関連記事側にも新記事へのリンクを追加する（関連が薄いページに機械的にばらまかない）。
 4. sitemap.xml にURLを追加し、canonical/title/description/出典/確認日を確認する。
 5. 記事台帳のrelatedと本文リンクの整合性、内部リンク先の存在を静的に点検。
+## 2026-10-25 記事一覧を台帳から自動生成する構成へ
+- `article-index.json` を記事一覧の単一情報源とし、トップページはJSONから公開記事を描画。検索、カテゴリ絞り込み、件数表示を維持し、個別株・企業分析カテゴリを追加。
+- `scripts/validate-content.py` でJSON構文、slug重複、カテゴリ、記事ファイル、関連記事候補、サイトマップ掲載を検証するようにした。
+- `.github/workflows/pages.yml` にデプロイ前検証を追加。検証失敗時はデプロイを止める。
+- コミット：index.html `92701166ac1ad828f7930ce534168e3cf023955f`、検証スクリプト `8b458f22d881bc28593b2c47a2491b22a10acc97`、Workflow `65c12e2e31d4cc6e783a31fe8fa880eec4426134`。
+- GitHub Actionsと公開画面での確認は未完了。記事一覧の自動生成はクライアント側でJSONを読み込む方式。
+
+### 記事追加手順
+1. HTML記事を作成し、`article-index.json` にslug/title/category/tags/summary/status/relatedを追加。
+2. 記事本文に関連リンクを3〜5件設置し、既存記事への逆リンクも関連性を確認して追加。
+3. `sitemap.xml` に公開URLを追加。
+4. Actionsの検証が成功することを確認する。関連記事本文へのリンク挿入は誤リンク防止のため現時点では編集時に行う。
