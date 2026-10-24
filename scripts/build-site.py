@@ -179,7 +179,7 @@ main.wrap{width:min(1160px,calc(100% - 32px))}header .wrap{width:min(1160px,calc
         return page
     page = page[:main_match.end()] + opening + page[main_match.end():]
     # Place breadcrumbs and mobile navigation inside the same white card as category pages.
-    article_match = re.search(r'<article\\b[^>]*class=["\\'][^"\\']*\\barticle\\b[^"\\']*["\\'][^>]*>', page, flags=re.I)
+    article_match = re.search(r'<article\b[^>]*class="[^"]*\barticle\b[^"]*"[^>]*>', page, flags=re.I)
     if article_match:
         crumb_html = '<nav class="article-category-crumbs" aria-label="パンくずリスト">' + ' › '.join(crumbs) + '</nav>'
         mobile_tree = '<div class="article-mobile-tree"><details><summary>カテゴリツリーを開く</summary>' + tree + '</details></div>'
