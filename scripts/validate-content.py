@@ -15,8 +15,21 @@ except Exception as exc:
     print(f"ERROR: cannot parse article-index.json: {exc}")
     sys.exit(1)
 
-categories = {item["id"] for item in registry.get("categories", [])}
+categories = {item["id"]: item for item in registry.get("categories", [])}
 articles = registry.get("articles", [])
+
+def taxonomy_paths(items, prefix=()):
+    paths = {}
+    for node in items:
+        path = prefix + (node["id"],)
+        paths[path] = node
+        paths.update(taxonomy_paths(node.get("children", []), path))
+    return paths
+
+taxonomy = taxonomy_paths(registry.get("categories", []))
+category_base = BASE_URL + "categories/"
+def article_category_path(item):
+    return tuple(value for value in (item.get("category"), item.get("subcategory"), item.get("topic")) if value)
 by_slug = {}
 for item in articles:
     slug = item.get("slug", "")
@@ -30,6 +43,11 @@ for item in articles:
     by_slug[slug] = item
     if item.get("category") not in categories:
         errors.append(f"{slug}: unknown category {item.get('category')!r}")
+    path = article_category_path(item)
+    if path and path not in taxonomy:
+        errors.append(f"{slug}: unknown category hierarchy path {path!r}")
+    elif path and path[0] != item.get("category"):
+        errors.append(f"{slug}: hierarchy path does not begin with category")
     if not (ROOT / slug).is_file():
         errors.append(f"{slug}: article file does not exist")
     tags = item.get("tags", [])
@@ -56,9 +74,11 @@ for item in articles:
 
 try:
     sitemap_root = ElementTree.fromstring((ROOT / "sitemap.xml").read_text(encoding="utf-8"))
-    expected_urls = {BASE_URL} | {
-        BASE_URL + item["slug"] for item in articles if item.get("status") == "published"
-    }
+    published = [item for item in articles if item.get("status") == "published"]
+    expected_urls = {BASE_URL} | {BASE_URL + item["slug"] for item in published}
+    for path in taxonomy:
+        if any(article_category_path(article)[:len(path)] == path for article in published):
+            expected_urls.add(category_base + "/".join(path) + "/")
     actual_urls = {node.text for node in sitemap_root.iter() if node.tag.endswith("loc")}
     for url in sorted(expected_urls - actual_urls):
         errors.append(f"sitemap missing URL: {url}")
@@ -86,4 +106,4 @@ if errors:
         print(f"- {error}")
     sys.exit(1)
 
-print(f"Content validation passed: {len(articles)} registered articles, {sum(a.get('status') == 'published' for a in articles)} published.")
+print(f"Content validation passed: {len(articles)} registered articles, {sum(a.get('status') == 'published' for a in articles)} published; hierarchical categories checked.")
