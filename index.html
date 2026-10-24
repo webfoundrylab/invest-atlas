@@ -408,13 +408,13 @@
         .then(response => { if(!response.ok) throw new Error('Article index unavailable'); return response.json(); })
         .then(data => {
           categoryData = data.categories || [];
-          const walkCategories = nodes => nodes.forEach(item => {
+          const walkCategories = (nodes, isTopLevel = false) => nodes.forEach(item => {
             categoryNodeLabels[item.id] = item.label;
             categoryNodes[item.id] = item;
-            if (!item.children || !item.children.length) categoryLabels[item.id] = item.label;
-            if (item.children) walkCategories(item.children);
+            if (isTopLevel) categoryLabels[item.id] = item.label;
+            if (item.children) walkCategories(item.children,false);
           });
-          walkCategories(categoryData);
+          walkCategories(categoryData,true);
           articles = (data.articles || []).filter(item => item.status === 'published').map(item => {
             const middleNodes = categoryData.flatMap(c => c.children || []);
             const leafNodes = middleNodes.flatMap(c => c.children || []);
