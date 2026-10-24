@@ -97,22 +97,22 @@
     .welcome-step p{font-size:.84rem;line-height:1.5;color:var(--muted);margin:0;flex:1}
     .welcome-link{font-size:.84rem;font-weight:750}
     .filters-top{display:grid;grid-template-columns:minmax(250px,.8fr) minmax(0,1.7fr);gap:12px;margin:16px 0 14px;align-items:stretch}
-    .filter-card{min-width:0;background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 13px}
+    .filter-card{min-width:0;background:#fff;border:1px solid var(--line);border-radius:14px;padding:9px 11px}
     .filter-card h3{margin:0;font-size:.95rem;color:#123653}
-    .filter-card-heading{display:flex;align-items:center;gap:8px;min-width:0;margin-bottom:8px}
+    .filter-card-heading{display:flex;align-items:center;gap:8px;min-width:0;margin-bottom:5px}
     .filter-card-heading>span{margin-left:auto;color:var(--muted);font-size:.76rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
     .clear-category,.reset-filters{border:1px solid #b8d8d9;background:#f4fbfa;color:#075e58;border-radius:8px;padding:6px 9px;font:inherit;font-size:.78rem;font-weight:750;cursor:pointer;white-space:nowrap}.clear-category:hover,.reset-filters:hover{background:#dff6ef}
-    .search-label{display:block;font-weight:800;margin-bottom:6px;font-size:.84rem}
-    #article-search,.tag-search{display:block;width:100%;padding:9px 10px;border:1px solid #9fbfc5;border-radius:9px;font:inherit;font-size:.9rem;background:#fbfefe;color:var(--ink)}
+    .search-label{display:block;font-weight:800;margin-bottom:3px;font-size:.82rem}
+    #article-search,.tag-search{display:block;width:100%;padding:6px 9px;border:1px solid #9fbfc5;border-radius:8px;font:inherit;font-size:.88rem;background:#fbfefe;color:var(--ink)}
     #article-search:focus-visible,.tag-search:focus-visible,.filter-button:focus-visible,.category-level-button:focus-visible,.open-tag-dialog:focus-visible{outline:3px solid #ff9d70;outline-offset:2px}
-    .search-mode{display:flex;align-items:center;flex-wrap:wrap;gap:5px 12px;border:0;padding:0;margin:9px 0 0}
+    .search-mode{display:flex;align-items:center;flex-wrap:wrap;gap:4px 10px;border:0;padding:0;margin:5px 0 0}
     .search-mode legend,.tag-mode legend{font-size:.76rem;font-weight:800;margin-right:3px}
     .search-mode label,.tag-mode label{font-size:.78rem;color:var(--muted);display:inline-flex;align-items:center;gap:4px}
     .search-mode input,.tag-mode input{accent-color:#087f75}
     .category-card{grid-column:2;grid-row:1 / span 2}
     .keyword-card{grid-column:1;grid-row:1}
     .tags-card{grid-column:1;grid-row:2}
-    .category-level{display:flex;align-items:center;min-width:0;height:42px;border-top:1px solid #edf2f3;transition:background-color .15s}
+    .category-level{display:flex;align-items:center;min-width:0;height:38px;border-top:1px solid #edf2f3;transition:background-color .15s}
     .category-level[data-level="2"]{padding-left:14px;background:#f8fbfc}
     .category-level[data-level="3"]{padding-left:28px;background:#f2f7f9}
     .category-level[aria-hidden="true"]{visibility:hidden;pointer-events:none;border-top-color:transparent;background:transparent}
@@ -121,12 +121,12 @@
     .category-level[data-level="3"] .category-level-button{font-size:.71rem;padding:5px 7px;border-radius:6px}
     .category-level-button{flex:0 0 auto;border:1px solid #b8d8d9;background:#fff;color:#24545a;border-radius:9px;padding:7px 11px;font:inherit;font-size:.8rem;font-weight:700;line-height:1.2;cursor:pointer;white-space:nowrap}
     .category-level-button.is-active{background:#087f75;color:#fff;border-color:#087f75}
-    .tag-actions{display:flex;align-items:center;flex-wrap:wrap;gap:8px}
-    .open-tag-dialog{border:1px solid #8dc9c0;background:#e5f7f2;color:#075e58;border-radius:9px;padding:8px 11px;font:inherit;font-size:.82rem;font-weight:800;cursor:pointer}
+    .tag-actions{display:flex;align-items:center;flex-wrap:wrap;gap:6px}
+    .open-tag-dialog{border:1px solid #8dc9c0;background:#e5f7f2;color:#075e58;border-radius:8px;padding:6px 9px;font:inherit;font-size:.8rem;font-weight:800;cursor:pointer}
     .tag-mode{display:flex;align-items:center;flex-wrap:wrap;gap:5px 9px;border:0;padding:0;margin:0}
     .tag-mode legend{float:left}
     .clear-tags{border:0;background:transparent;color:#08766e;text-decoration:underline;font:inherit;font-size:.78rem;cursor:pointer;padding:4px}
-    .selected-tag-chips{display:flex;align-items:center;flex-wrap:wrap;gap:5px;margin-top:8px;min-height:18px;font-size:.75rem;color:var(--muted)}
+    .selected-tag-chips{display:flex;align-items:center;flex-wrap:wrap;gap:4px;margin-top:5px;min-height:16px;font-size:.73rem;color:var(--muted)}
     .selected-tag-chip{display:inline-flex;align-items:center;gap:4px;background:#dff6ef;border:1px solid #b4e2d9;border-radius:999px;padding:3px 7px;color:#075e58}
     .selected-tag-chip button{border:0;background:transparent;color:inherit;padding:0;font:inherit;cursor:pointer}
     .tag-dialog{width:min(760px,calc(100vw - 28px));max-width:none;max-height:85vh;border:1px solid #c9dfe0;border-radius:16px;padding:18px;background:#fff;color:var(--ink);box-shadow:0 18px 60px #12365338}
@@ -145,13 +145,13 @@
     .clear-tags-dialog,.done-tag-dialog{border:1px solid #b8d8d9;background:#f4fbfa;color:#075e58;border-radius:8px;padding:8px 12px;font:inherit;font-size:.82rem;font-weight:750;cursor:pointer}
     .done-tag-dialog{background:#087f75;border-color:#087f75;color:#fff}
     .results-toolbar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin:0 0 10px;padding:10px 12px;background:#e8f5f5;border:1px solid #d2e8e8;border-radius:10px}.result-count{margin:0;color:#123653;font-size:.9rem;font-weight:850}.library-results{min-width:0}
-    .article-dates{display:block;margin-top:5px;color:#637986;font-size:.75rem;line-height:1.4}.article-dates time{white-space:nowrap}
+    .article-dates{display:flex;align-items:center;flex-wrap:wrap;gap:5px;margin-top:7px;font-size:.75rem;line-height:1.4}.article-date-chip{display:inline-flex;align-items:center;border-radius:6px;padding:3px 7px;font-weight:750;white-space:nowrap}.article-date-chip.updated{color:#075e58;background:#dff6ef;border:1px solid #b6e3d9}.article-date-chip.published{color:#40596b;background:#eef3f6;border:1px solid #d8e2e8}
     .article-list{display:flex;flex-direction:column;gap:9px}
-    .article-row{display:grid;grid-template-columns:125px minmax(0,1fr) auto;align-items:center;gap:13px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 15px;transition:border-color .15s,background .15s}
+    .article-row{display:grid;grid-template-columns:140px minmax(0,1fr) auto;align-items:center;gap:13px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px;transition:border-color .15s,background .15s}
     .article-row:hover{border-color:#65c4b5;background:#fbfffe}
     .article-row[hidden]{display:none}
-    .article-category{font-size:.76rem;font-weight:800;color:#08766e;background:#e3f8f3;border-radius:7px;padding:5px 7px;text-align:center;text-decoration:none}
-    .article-row h3{font-size:.98rem;line-height:1.45;margin:0 0 4px}
+    .article-category{display:inline-flex;align-self:flex-start;font-size:.7rem;font-weight:800;color:#08766e;background:#e3f8f3;border-radius:6px;padding:2px 7px;text-align:center;text-decoration:none;margin-bottom:4px}
+    .article-thumbnail{display:block;width:140px;height:79px;object-fit:cover;border-radius:8px;border:1px solid #d8e5e8;background:#edf6f6}.article-row h3{font-size:.98rem;line-height:1.45;margin:0 0 4px}
     .article-row h3 a{color:var(--ink);text-decoration:none}
     .article-row h3 a:hover{text-decoration:underline;color:#08766e}
     .article-row p{font-size:.86rem;color:var(--muted);margin:0;line-height:1.5}
@@ -161,7 +161,7 @@
     @media(max-width:900px){
       .filters-top{grid-template-columns:1fr;gap:9px}
       .keyword-card,.category-card,.tags-card{grid-column:1;grid-row:auto}
-      .filter-card{padding:11px}
+      .filter-card{padding:9px 10px}
       .category-level{height:42px}
       .category-level-options{gap:4px}
       .category-level-button{padding:6px 8px;font-size:.74rem}
@@ -182,10 +182,10 @@
       
       .trust-strip{display:none}
       .section-head{margin:22px 0 12px}
-      .article-row{grid-template-columns:1fr auto;gap:8px 10px;padding:13px}
-      .article-category{grid-column:1/-1;justify-self:start}
+      .article-row{grid-template-columns:84px minmax(0,1fr);gap:8px 10px;padding:10px}
+      .article-thumbnail{grid-column:1;grid-row:1 / span 2;width:84px;height:84px;align-self:start}\n      .article-row>div{grid-column:2;grid-row:1}\n      .article-category{justify-self:start}
       .article-row>div{min-width:0}
-      .article-open{font-size:.8rem}
+      .article-open{grid-column:2;grid-row:2;justify-self:start;font-size:.8rem}
       .article-row p{font-size:.84rem}
     }
   </style>
@@ -332,11 +332,20 @@
         visible.forEach(article => {
           const row = document.createElement('article');
           row.className = 'article-row';
+          const thumbLink = document.createElement('a');
+          thumbLink.href = article.slug;
+          thumbLink.setAttribute('aria-label', article.title + 'を読む');
+          const thumbnail = document.createElement('img');
+          thumbnail.className = 'article-thumbnail';
+          thumbnail.src = article.thumbnail || 'thumbnails/default.svg';
+          thumbnail.alt = '';
+          thumbnail.loading = 'lazy';
+          thumbLink.append(thumbnail);
+          const main = document.createElement('div');
           const label = document.createElement('a');
           label.className = 'article-category';
           label.href = 'categories/' + article.category + '/';
           label.textContent = categoryLabels[article.category] || 'その他';
-          const main = document.createElement('div');
           const h3 = document.createElement('h3');
           const titleLink = document.createElement('a');
           titleLink.href = article.slug;
@@ -350,19 +359,26 @@
           const subcategory = document.createElement('p');
           subcategory.className = 'article-subcategory';
           subcategory.textContent = [article.subcategoryLabel,article.topicLabel].filter(Boolean).join(' › ');
-          const dates = document.createElement('span');
+          const dates = document.createElement('div');
           dates.className = 'article-dates';
-          const dateText = document.createElement('span');
-          dateText.textContent = '更新 ' + (article.updatedAt || article.publishedAt || '日付未登録') + (article.publishedAt ? ' ・ 公開 ' + article.publishedAt : '');
-          dates.append(dateText);
-          main.append(h3,summary);
+          const updated = document.createElement('span');
+          updated.className = 'article-date-chip updated';
+          updated.textContent = '更新 ' + (article.updatedAt || article.publishedAt || '日付未登録');
+          dates.append(updated);
+          if (article.publishedAt) {
+            const published = document.createElement('span');
+            published.className = 'article-date-chip published';
+            published.textContent = '公開 ' + article.publishedAt;
+            dates.append(published);
+          }
+          main.append(label,h3,summary);
           if (subcategory.textContent) main.append(subcategory);
           main.append(tags,dates);
           const open = document.createElement('a');
           open.className = 'article-open';
           open.href = article.slug;
           open.textContent = '記事を読む';
-          row.append(label,main,open);
+          row.append(thumbLink,main,open);
           list.append(row);
         });
         count.textContent = visible.length + '件の記事';
@@ -462,7 +478,7 @@
     })();
   </script>
   <section id="policy" class="note"><strong>編集方針と注意事項</strong>本サイトは一般的な情報提供・学習を目的とし、個別の金融商品への投資を勧誘するものではありません。投資には元本割れのリスクがあります。過去の実績は将来の成果を保証しません。制度・商品情報は変更されることがあるため、記事の確認日と公式出典をご確認ください。広告・アフィリエイトを導入する場合は、その旨を明示します。</section>
-  <p style="color:#657480;font-size:.85rem;margin-top:18px">最終更新：2026年10月24日</p>
+  <p style="color:#657480;font-size:.85rem;margin-top:18px">最終更新：2026年10月25日</p>
 </main>
 <footer><div class="wrap"><strong>Invest Atlas</strong><p>投資を理解するための解説・比較ガイド</p><p><a href="investment-trust-vs-etf.html">投資信託とETFの違い</a> · <a href="https://www.fsa.go.jp/policy/nisa2/invest/" target="_blank" rel="noopener noreferrer">金融庁：投資の基本</a></p><p>掲載内容は一般的な情報であり、投資成果を保証するものではありません。</p></div></footer>
 </body></html>
