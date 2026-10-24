@@ -2,6 +2,7 @@
 """Generate sitemap, related-article data, and article-page related sections."""
 import html
 import json
+import re
 import sys
 from pathlib import Path
 from xml.etree.ElementTree import Element, SubElement, register_namespace, tostring
@@ -86,7 +87,9 @@ def main():
             print(f"ERROR: article file missing: {article['slug']}", file=sys.stderr)
             return 1
         page = clean_existing_block(page_path.read_text(encoding="utf-8"))
-        entries = related_data[article["slug"]]
+        existing_hrefs = set(re.findall(r'href=["\\']([^"\\']+)["\\']', page, flags=re.IGNORECASE))
+        entries = [entry for entry in related_data[article["slug"]] if entry["slug"] not in existing_hrefs]
+        entries = entries[:4]
         if entries:
             links = "\n".join(
                 '      <li><a href="' + html.escape(item["slug"], quote=True) + '">' +
