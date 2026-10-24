@@ -1,0 +1,42 @@
+/* Shared layout primitives for article and category pages. Keep page-specific content styles elsewhere. */
+:root {
+  --ia-ink: #172b3d;
+  --ia-muted: #536879;
+  --ia-navy: #10243a;
+  --ia-teal: #176d65;
+  --ia-line: #dce4e8;
+  --ia-paper: #f5f7f8;
+  --ia-layout-width: 1160px;
+  --ia-header-y-padding: 18px;
+  --ia-content-radius: 14px;
+  --ia-content-padding: clamp(22px, 4vw, 42px);
+  --ia-layout-gap: 26px;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--ia-paper); color: var(--ia-ink); }
+a { color: var(--ia-teal); text-underline-offset: 3px; }
+a:hover { color: #0b4843; }
+header { min-height: 60px; padding: var(--ia-header-y-padding) 0 !important; background: var(--ia-navy); }
+header .wrap, main.wrap, .wrap { width: min(var(--ia-layout-width), calc(100% - 32px)) !important; margin-left: auto; margin-right: auto; }
+header .wrap { display: flex; align-items: center; min-height: 24px; }
+header a { color: #fff; text-decoration: none; font-weight: 800; line-height: 24px; }
+main.wrap { margin-top: 22px; margin-bottom: 52px; }
+.layout, .article-page-layout { display: grid; grid-template-columns: 245px minmax(0, 1fr); gap: var(--ia-layout-gap); align-items: start; }
+.content, .article-page-content .article {
+  min-width: 0;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: var(--ia-content-padding);
+  background: #fff;
+  border: 1px solid var(--ia-line);
+  border-radius: var(--ia-content-radius);
+}
+.crumbs, .article-category-crumbs { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 14px; font-size: .9rem; }
+.content h1 { font-size: clamp(1.8rem, 4vw, 2.65rem); line-height: 1.35; margin: .5em 0; }
+@media (max-width: 850px) {
+  .layout, .article-page-layout { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .layout { margin-top: 14px; }
+  .article-page-layout { margin-top: 14px; }
+  .content, .article-page-content .article { padding: clamp(18px, 5vw, 28px); }
+}
