@@ -411,3 +411,10 @@
 - READMEの検索UI説明を現在の配置（上部検索エリア・タグモーダル）に合わせて修正。
 - 変更ファイル：nisa-basics.html、investment-trust-fees.html、regular-investing.html、choose-investment-trust-nisa.html、before-you-invest.html、investment-trust-vs-etf.html、README.md、本ファイル。
 - 公式情報：金融庁NISA特設サイト、資産運用業協会の公式ページを確認。最終Actionsと公開URLの表示は確認待ち。
+
+
+## 2026-10-25：関連記事リンクの文脈配置
+- 7本の公開記事について、記事末尾にまとめていた関連記事リンクを整理し、費用・NISA・積立・リスクなど、関連する説明の近くへ本文内リンクとして配置。
+- `scripts/build-site.py` は `related-articles.json` の生成を継続する一方、記事末尾への関連記事セクション自動挿入を停止。既存の生成ブロックもビルド時に除去される。
+- `README.md` に文脈に沿った関連記事リンク配置方針を記載。
+- 変更後のHTMLリンク検証とビルド・デプロイ結果は、コミット後のGitHub Actionsで確認する。
