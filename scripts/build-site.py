@@ -115,8 +115,21 @@ def clean_category_block(content):
     return content
 
 
-def inject_article_category_nav(page, article, registry):
+ARTICLE_OPEN_START = "<!-- GENERATED ARTICLE LAYOUT OPEN: START -->"
+ARTICLE_OPEN_END = "<!-- GENERATED ARTICLE LAYOUT OPEN: END -->"
+ARTICLE_CLOSE_START = "<!-- GENERATED ARTICLE LAYOUT CLOSE: START -->"
+ARTICLE_CLOSE_END = "<!-- GENERATED ARTICLE LAYOUT CLOSE: END -->"
+
+
+def clean_article_layout(page):
     page = clean_category_block(page)
+    page = re.sub(re.escape(ARTICLE_OPEN_START) + r".*?" + re.escape(ARTICLE_OPEN_END), "", page, flags=re.S)
+    page = re.sub(re.escape(ARTICLE_CLOSE_START) + r".*?" + re.escape(ARTICLE_CLOSE_END), "", page, flags=re.S)
+    return page
+
+
+def inject_article_category_nav(page, article, registry):
+    page = clean_article_layout(page)
     cats = registry.get("categories", [])
     cat = next((x for x in cats if x["id"] == article.get("category")), None)
     if not cat:
@@ -135,9 +148,60 @@ def inject_article_category_nav(page, article, registry):
         labels.append(current["label"])
     crumbs = ['<a href="' + BASE_URL + '">トップ</a>']
     crumbs += ['<a href="' + html.escape(category_url(tuple(ids[:i])), quote=True) + '">' + html.escape(label) + '</a>' for i, label in enumerate(labels, 1)]
-    nav = CATEGORY_START + '\n<div class="generated-category-nav"><nav class="category-breadcrumbs" aria-label="パンくずリスト">' + ' › '.join(crumbs) + '</nav>' + render_category_tree(cats, tuple(ids)) + '</div><style>.generated-category-nav{margin:0 0 20px}.category-breadcrumbs{display:flex;flex-wrap:wrap;gap:7px;font-size:.82rem;color:#536879;margin:0 0 12px}.generated-category-nav .category-tree{background:#f8fcfc;border:1px solid #d5e6eb;border-radius:12px;padding:12px 14px}.generated-category-nav .category-tree>ul{padding-left:0;list-style:none;margin:8px 0 0}.generated-category-nav .category-tree ul{list-style:none;padding-left:14px;margin:6px 0}.generated-category-nav .category-tree li{margin:5px 0}.generated-category-nav .category-tree summary{cursor:pointer}.generated-category-nav .category-tree a{font-size:.88rem}.generated-category-nav .category-tree .active>a,.generated-category-nav .category-tree .active>details>summary>a{font-weight:800;color:#075f59}@media(min-width:1400px){.generated-category-nav .category-tree{position:fixed;z-index:10;top:110px;left:max(14px,calc((100vw - 1280px)/2));width:220px;max-height:calc(100vh - 130px);overflow:auto;box-shadow:0 8px 26px #172b3d12}}@media(max-width:1399px){.generated-category-nav .category-tree{max-height:280px;overflow:auto}}@media(max-width:760px){.generated-category-nav .category-breadcrumbs{font-size:.76rem}.generated-category-nav .category-tree{padding:10px}}</style>\n' + CATEGORY_END + '\n'
-    m = re.search(r"<h1\\b", page, flags=re.IGNORECASE)
-    return page[:m.start()] + nav + page[m.start():] if m else page.replace("</article>", nav + "</article>", 1)
+    tree = render_category_tree(cats, tuple(ids))
+    css = """<style>
+main.wrap{width:min(1160px,calc(100% - 32px))}
+.article-page-layout{display:grid;grid-template-columns:245px minmax(0,1fr);gap:26px;align-items:start;margin:22px 0 52px}
+.article-sidebar .category-tree{background:#fff;border:1px solid #d5e6eb;border-radius:14px;padding:14px;position:sticky;top:18px;max-height:calc(100vh - 36px);overflow:auto}
+.article-sidebar .category-tree ul{list-style:none;padding-left:14px;margin:8px 0}.article-sidebar .category-tree>ul{padding:0}.article-sidebar .category-tree li{margin:5px 0}.article-sidebar .category-tree summary{cursor:pointer}.article-sidebar .category-tree a{font-size:.9rem}.article-sidebar .category-tree .active>a,.article-sidebar .category-tree .active>details>summary>a{font-weight:800;color:#075f59}
+.article-page-content{min-width:0}.article-page-content .article{max-width:none;width:100%;margin:0;padding:clamp(20px,3.5vw,42px)}
+.article-category-crumbs{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px;font-size:.9rem}.article-mobile-tree{display:none}
+@media(max-width:850px){.article-page-layout{grid-template-columns:1fr;gap:0;margin-top:14px}.article-sidebar{display:none}.article-mobile-tree{display:block;margin:0 0 16px;padding:12px 14px;background:#fff;border:1px solid #d5e6eb;border-radius:12px}.article-mobile-tree summary{cursor:pointer;font-weight:750}.article-mobile-tree .category-tree{margin-top:10px;max-height:320px;overflow:auto}.article-mobile-tree .category-tree ul{list-style:none;padding-left:14px;margin:8px 0}.article-mobile-tree .category-tree>ul{padding:0}.article-page-content .article{padding:clamp(18px,5vw,28px)}}
+</style>"""
+    opening = (ARTICLE_OPEN_START + '<div class="article-page-layout"><aside class="article-sidebar">' + tree + '</aside><div class="article-page-content">' +
+        '<div class="article-mobile-tree"><details><summary>カテゴリツリーを開く</summary>' + tree + '</details></div>' +
+        '<nav class="article-category-crumbs" aria-label="パンくずリスト">' + ' › '.join(crumbs) + '</nav>' +
+        ARTICLE_OPEN_END)
+    closing = ARTICLE_CLOSE_START + '</div></div>' + ARTICLE_CLOSE_END
+    main_match = re.search(r'<main\b[^>]*>', page, flags=re.I)
+    main_close = page.lower().rfind("</main>")
+    if not main_match or main_close < 0:
+        return page
+    page = page[:main_match.end()] + opening + css + page[main_match.end():]
+    main_close = page.lower().rfind("</main>")
+    page = page[:main_close] + closing + page[main_close:]
+    return page
+
+
+def render_home_category_tree(categories):
+    def walk(items, prefix=()):
+        out = ['<ul>']
+        for item in items:
+            path = prefix + (item["id"],)
+            href = "categories/" + "/".join(path) + "/"
+            children = item.get("children", [])
+            out.append("<li>")
+            link = '<a href="' + html.escape(href, quote=True) + '">' + html.escape(item["label"]) + "</a>"
+            if children:
+                out.append("<details><summary>" + link + "</summary>" + walk(children, path) + "</details>")
+            else:
+                out.append(link)
+            out.append("</li>")
+        out.append("</ul>")
+        return "".join(out)
+    return walk(categories)
+
+
+def inject_home_category_tree(registry):
+    path = ROOT / "index.html"
+    if not path.is_file():
+        return
+    page = path.read_text(encoding="utf-8")
+    tree = render_home_category_tree(registry.get("categories", []))
+    pattern = r'(<div id="category-tree-home" class="category-tree-home"[^>]*>).*?(</div>)'
+    updated, count = re.subn(pattern, lambda m: m.group(1) + tree + m.group(2), page, count=1, flags=re.S)
+    if count:
+        path.write_text(updated, encoding="utf-8")
 
 
 def main():
@@ -160,6 +224,7 @@ def main():
         by_slug[slug] = article
 
     published = [a for a in articles if a.get("status") == "published"]
+    inject_home_category_tree(registry)
     category_urls = generate_category_pages(registry, published)
     urls = [BASE_URL] + [BASE_URL + a["slug"] for a in published] + category_urls
     urlset = Element(f"{{{NS}}}urlset")
