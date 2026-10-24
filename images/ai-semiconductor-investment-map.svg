@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+<title id="title">AI半導体の投資マップ</title><desc id="desc">AIサービスからデータセンター、半導体、製造装置・素材、電力・冷却へと広がる関連領域と、投資で確認すべき点を示す概念図。</desc>
+<defs><linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#e6f8f4"/><stop offset="1" stop-color="#f0edff"/></linearGradient></defs>
+<rect width="1200" height="520" rx="28" fill="url(#bg)"/>
+<text x="48" y="56" font-family="sans-serif" font-size="27" font-weight="700" fill="#123653">AIの成長は、半導体だけで完結しない</text>
+<g font-family="sans-serif" text-anchor="middle">
+<rect x="48" y="102" width="240" height="112" rx="18" fill="#fff" stroke="#9edbd0" stroke-width="2"/><text x="168" y="145" font-size="23" font-weight="700" fill="#123653">AIサービス</text><text x="168" y="178" font-size="16" fill="#536879">生成AI・企業向け利用</text>
+<path d="M290 158 H335" stroke="#087f75" stroke-width="4" stroke-linecap="round"/><path d="M324 147 L337 158 L324 169" fill="none" stroke="#087f75" stroke-width="4"/>
+<rect x="342" y="102" width="240" height="112" rx="18" fill="#fff" stroke="#9edbd0" stroke-width="2"/><text x="462" y="145" font-size="23" font-weight="700" fill="#123653">データセンター</text><text x="462" y="178" font-size="16" fill="#536879">計算・通信・ストレージ</text>
+<path d="M584 158 H629" stroke="#087f75" stroke-width="4" stroke-linecap="round"/><path d="M618 147 L631 158 L618 169" fill="none" stroke="#087f75" stroke-width="4"/>
+<rect x="636" y="102" width="240" height="112" rx="18" fill="#fff" stroke="#b9afea" stroke-width="2"/><text x="756" y="145" font-size="23" font-weight="700" fill="#4d438a">半導体</text><text x="756" y="178" font-size="16" fill="#536879">GPU・先端ロジック・メモリ</text>
+<path d="M878 158 H923" stroke="#7566bf" stroke-width="4" stroke-linecap="round"/><path d="M912 147 L925 158 L912 169" fill="none" stroke="#7566bf" stroke-width="4"/>
+<rect x="930" y="102" width="222" height="112" rx="18" fill="#fff" stroke="#b9afea" stroke-width="2"/><text x="1041" y="145" font-size="22" font-weight="700" fill="#4d438a">製造装置・素材</text><text x="1041" y="178" font-size="16" fill="#536879">製造を支える技術</text>
+<path d="M462 216 V262 H330 V284 M756 216 V262 H870 V284" fill="none" stroke="#7a8e9a" stroke-width="3" stroke-dasharray="7 7"/>
+<rect x="110" y="284" width="440" height="94" rx="16" fill="#fff4e9" stroke="#f2c49f" stroke-width="2"/><text x="330" y="320" font-size="22" font-weight="700" fill="#8a512e">電力・冷却・建設</text><text x="330" y="350" font-size="16" fill="#6e6259">AI設備を動かすためのインフラ</text>
+<rect x="650" y="284" width="440" height="94" rx="16" fill="#fff4e9" stroke="#f2c49f" stroke-width="2"/><text x="870" y="320" font-size="22" font-weight="700" fill="#8a512e">投資家が確認すること</text><text x="870" y="350" font-size="16" fill="#6e6259">売上・利益・設備投資・競争・株価評価</text>
+<text x="600" y="438" font-size="18" font-weight="700" fill="#123653">テーマの成長 ≠ 関連企業すべての株価上昇</text><text x="600" y="472" font-size="15" fill="#536879">概念図。企業ごとの事業構成・業績・評価額・リスクは個別に確認が必要。</text>
+</g></svg>
