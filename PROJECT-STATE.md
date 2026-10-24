@@ -154,3 +154,11 @@
 - ユーザー報告により `images/fund-selection-checklist.svg` を再確認し、SVGのマークアップを簡潔な構造に整理して更新。
 - 修正コミット：`80c860dab18371a85acfdff248d45d55e1dd226e`。
 - GitHubから更新後のファイルを再取得して内容を確認。GitHub Pagesでの表示およびActionsの結果は未確認。
+
+
+## 2026-10-24 既存記事の図解を追加
+- 既存の6解説記事すべてに、記事内容に沿った追加図解を1点ずつ追加。既存図解は残し、各図に日本語の代替テキストとキャプションを付与。
+- 新規SVG：`images/before-investing-flow.svg`（投資前の確認フロー）、`images/nisa-allowances.svg`（新NISAの年間枠・生涯枠）、`images/fund-cost-layers.svg`（投資信託の費用タイミング）、`images/fund-vs-etf-decision.svg`（投資信託とETFの比較ポイント）、`images/nisa-selection-flow.svg`（NISAの商品選び手順）、`images/regular-investing-outcomes.svg`（積立投資でも成果は変動することを示す模式図）。
+- 対象記事：`before-you-invest.html`、`nisa-basics.html`、`investment-trust-fees.html`、`investment-trust-vs-etf.html`、`choose-investment-trust-nisa.html`、`regular-investing.html`。
+- 図はレスポンシブCSSで表示し、制度数値・模式図の注意書きを付記。新NISA図は年間枠・生涯枠の関係を説明するもので、制度の最新条件は公式情報での確認を促す。
+- GitHub main への反映は完了。公開URLでの実表示と今回のGitHub Actions結果は未確認。
