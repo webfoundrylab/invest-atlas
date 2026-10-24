@@ -22,6 +22,7 @@
 - [x] トップページの新記事導線、既存記事からの内部リンク、sitemap の記事URL追加を反映
 - [ ] 公開URL、内部リンク、sitemap、canonical の公開後動作を確認
 - [x] 信託報酬の解説記事を作成し、トップページと sitemap に追加
+- [x] 積立投資の基礎記事を作成し、トップページと sitemap に追加
 - [ ] Google Search Console の所有権確認（meta tag を追加済み。Search Console 側の「確認」は未実施）と sitemap 送信
 - [x] 新NISAの基本記事を公式情報に基づき作成し、トップページと sitemap に追加
 - [x] NISAで投資信託を選ぶ際のチェックポイント記事を作成し、公式資料・内部リンク・canonical・sitemapを整備
@@ -33,6 +34,7 @@
 - `nisa-basics.html`: 新NISAの2つの投資枠、非課税保有限度額、売却後の枠の再利用を解説
 - `choose-investment-trust-nisa.html`: NISAで投資信託を選ぶ際の投資対象・運用方針・分散・費用・リスク・目論見書の確認点を解説
 - `investment-trust-fees.html`: 信託報酬の仕組み、年率の計算例、その他費用と実質コストの確認方法を解説
+- `regular-investing.html`: 積立投資の仕組み、定額購入の計算例、メリット・リスク、積立額の決め方を解説
 
 ## 運営・編集ルール
 1. 公的機関、取引所、運用会社、企業の公式資料を優先する。
@@ -70,3 +72,10 @@
 3. 必要なら Node.js 24 対応版の Actions へ更新し、警告を解消する。
 4. ユーザーが Google Search Console で「確認」を実行し、所有権確認後に sitemap.xml を送信する。
 5. 次の記事を一次資料に基づいて追加する。
+
+
+## 2026-10-24 作業記録
+- `regular-investing.html` を新規作成。積立投資、定額購入の例、ドル・コスト平均法の限界、リスク、NISA利用時の注意点を説明。
+- トップページに関連記事カードを追加し、`sitemap.xml` に記事URLを登録。
+- 参照先として金融庁、J-FLEC、投資信託協会の公式サイトを掲載。
+- GitHubへのコミットは完了。公開URLの表示と今回のActionsデプロイ結果は未確認。
