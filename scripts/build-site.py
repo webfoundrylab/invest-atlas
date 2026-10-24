@@ -176,7 +176,7 @@ main.wrap{width:min(1160px,calc(100% - 32px))}
     head_close = page.lower().find("</head>")
     if head_close >= 0:
         page = page[:head_close] + style_block + page[head_close:]
-    main_match = re.search(r'<main\\b[^>]*>', page, flags=re.I)
+    main_match = re.search(r'<main\b[^>]*>', page, flags=re.I)
     if not main_match:
         return page
     page = page[:main_match.end()] + opening + page[main_match.end():]
