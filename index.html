@@ -38,6 +38,7 @@
     <div class="library-tools">
       <label class="search-label" for="article-search">キーワード検索</label>
       <input id="article-search" type="search" placeholder="例：NISA、手数料、AI、ETF" autocomplete="off">
+      <fieldset class="search-mode"><legend>複数キーワードの検索方法</legend><label><input type="radio" name="search-mode" value="or" checked> いずれかを含む（OR）</label><label><input type="radio" name="search-mode" value="and"> すべてを含む（AND）</label></fieldset>
       <div class="category-filters" role="group" aria-label="記事カテゴリ">
         <button type="button" class="filter-button is-active" data-category="all" aria-pressed="true">すべて</button>
         <button type="button" class="filter-button" data-category="basics" aria-pressed="false">投資の基礎</button>
@@ -59,6 +60,10 @@
     .search-label{display:block;font-weight:800;margin-bottom:7px}
     #article-search{display:block;width:100%;max-width:620px;padding:13px 15px;border:1px solid #9fbfc5;border-radius:12px;font:inherit;background:#fbfefe;color:var(--ink)}
     #article-search:focus-visible,.filter-button:focus-visible{outline:3px solid #ff9d70;outline-offset:3px}
+    .search-mode{display:flex;flex-wrap:wrap;gap:8px 18px;border:0;padding:0;margin:12px 0 0}
+    .search-mode legend{font-size:.86rem;font-weight:800;margin-bottom:5px}
+    .search-mode label{font-size:.88rem;color:var(--muted);display:inline-flex;align-items:center;gap:6px}
+    .search-mode input{accent-color:#087f75}
     .category-filters{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
     .filter-button{border:1px solid #b8d8d9;background:#f4fbfa;color:#24545a;border-radius:999px;padding:8px 13px;font:inherit;font-size:.88rem;font-weight:750;cursor:pointer}
     .filter-button.is-active{background:#087f75;color:white;border-color:#087f75}
@@ -84,15 +89,20 @@
       const buttons = [...document.querySelectorAll('.filter-button')];
       const count = document.getElementById('result-count');
       const empty = document.getElementById('no-results');
+      const modeInputs = [...document.querySelectorAll('input[name="search-mode"]')];
+      let searchMode = 'or';
       let category = 'all';
       let articles = [];
       const categoryLabels = {};
       const render = () => {
-        const query = search.value.trim().toLocaleLowerCase('ja');
+        const terms = search.value.trim().toLocaleLowerCase('ja').split(/\\s+/u).filter(Boolean);
         const visible = articles.filter(article => {
           const matchesCategory = category === 'all' || article.category === category;
           const haystack = [article.title,article.summary,...(article.tags||[])].join(' ').toLocaleLowerCase('ja');
-          return matchesCategory && (!query || haystack.includes(query));
+          const matchesTerms = terms.length === 0 || (searchMode === 'and'
+            ? terms.every(term => haystack.includes(term))
+            : terms.some(term => haystack.includes(term)));
+          return matchesCategory && matchesTerms;
         });
         list.replaceChildren();
         visible.forEach(article => {
@@ -124,6 +134,10 @@
         empty.hidden = visible.length !== 0;
       };
       search.addEventListener('input',render);
+      modeInputs.forEach(input => input.addEventListener('change',() => {
+        if(input.checked) searchMode = input.value;
+        render();
+      }));
       buttons.forEach(button => button.addEventListener('click',() => {
         category = button.dataset.category;
         buttons.forEach(item => {
