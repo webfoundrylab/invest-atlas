@@ -16,7 +16,8 @@
 - [x] トップページ・初回解説記事の下書き公開準備
 - [x] sitemap.xml / robots.txt の作成
 - [x] GitHub Actions Pages デプロイ workflow の作成
-- [ ] GitHub Pages の Actions デプロイ設定と初回公開を確認
+- [ ] GitHub Pages の設定（Settings > Pages > Build and deployment > Source を GitHub Actions にする）
+- [ ] Pages 初回デプロイ成功と公開URLを確認
 - [ ] 公開URL、内部リンク、sitemap、canonical を公開後に検証
 - [ ] Google Search Console 登録と sitemap 送信
 - [ ] 追加記事の検索意図・一次情報・重複確認
@@ -37,10 +38,14 @@
 9. 証券会社や金融商品の推奨に関して、法令・規制上の問題が疑われる場合は断定を避け、必要に応じて専門家確認を行う。
 
 ## 確認結果
-- 2026-10-24: リポジトリは存在し、Public、default branch は main、初期状態は空であることを確認。
-- 初期ファイル作成後、GitHub Actions の実行結果と Pages 設定は別途確認が必要。
+- 2026-10-24: リポジトリは存在し、Public、default branch は main。初期ファイルは GitHub 上で取得できることを確認。
+- Workflow run `40097453363` は失敗。job `build` の `Configure Pages` ステップで `Get Pages site failed` / HTTP 404。後続の artifact upload と deploy はスキップされた。
+- 現時点では Pages の有効化または公開元設定が未完了と考えられる。GitHub Actions の workflow ファイル自体の修正だけでは解決しない可能性が高い。
+- Node.js 20 の警告も出ているが、今回の失敗の直接原因は Configure Pages の HTTP 404。
 
 ## 次の作業
-1. GitHub Pages の初回デプロイと公開URLを確認。
-2. 公開後にリンク・canonical・sitemap の整合性を検証。
-3. 次の記事を一次資料に基づいて追加する。
+1. リポジトリ Settings > Pages を開き、Build and deployment の Source を GitHub Actions に設定して保存する。
+2. Actions の workflow を再実行し、build と deploy の両方が成功するか確認する。
+3. 公開後にトップページ・記事・sitemap の応答、リンク、canonical の整合性を検証する。
+4. デプロイ成功後、必要なら Node.js 24 対応版の Actions へ更新し、警告を解消する。
+5. 次の記事を一次資料に基づいて追加する。
