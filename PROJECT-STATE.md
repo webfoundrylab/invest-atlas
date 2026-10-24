@@ -107,3 +107,11 @@
 - title、description、canonical、Google Search Console verification meta、記事リンク、サイトマップは変更していない。
 - 変更ファイル：`index.html`、`images/home-investing-illustration.svg`、本ファイル。
 - GitHubへのコミットは完了。デプロイ結果と公開URLでの実表示は次に確認する。
+
+
+## 2026-10-24 トップページのヒーロー高さ調整
+- ユーザーの指摘を受け、トップページ上部の余白とイラストを縮小。
+- ヒーロー上下の余白を縮め、見出しサイズ・CTA上部余白・画像最大幅を調整。スマートフォン表示でも画像を小さくし、本文に早く到達できる構成に変更。
+- 変更ファイル：`index.html`、本ファイル。
+- `index.html` の変更コミット：`b942ab51b70fa63d9bbb6f05cab60c80bc61c9f4`。
+- この変更後のデプロイ結果と公開URLでの実表示は未確認。
