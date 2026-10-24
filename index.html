@@ -35,39 +35,50 @@
 
   <section id="compare" aria-labelledby="library-title">
     <div class="section-head"><div><div class="eyebrow">Explore the library</div><h2 id="library-title">記事を探す</h2><p>テーマ・キーワードから、読みたい情報へ。</p></div></div>
-    <div class="library-layout">
-      <details id="filter-panel" class="filter-panel">
-        <summary>カテゴリ・キーワード・タグで絞り込む</summary>
-        <div class="library-sidebar">
-          <div class="category-browser" aria-labelledby="category-browser-title">
-            <div class="category-browser-heading"><h3 id="category-browser-title">カテゴリから探す</h3><button type="button" id="clear-category" class="clear-category">カテゴリ解除</button></div>
-            <p>カテゴリ名を選ぶと記事を絞り込みます。＋／−で階層を開閉できます。</p>
-            <div id="category-tree-home" class="category-tree-home" aria-label="大・中・小カテゴリ一覧"></div>
-          </div>
-          <div class="library-tools">
-            <label class="search-label" for="article-search">キーワード検索</label>
-            <input id="article-search" type="search" placeholder="例：NISA、手数料、AI、ETF" autocomplete="off">
-            <fieldset class="search-mode"><legend>複数キーワード</legend><label><input type="radio" name="search-mode" value="or" checked> いずれか（OR）</label><label><input type="radio" name="search-mode" value="and"> すべて（AND）</label></fieldset>
-            <div class="category-filter-heading"><strong>カテゴリで絞り込む</strong><span id="selected-category-label" aria-live="polite">すべてのカテゴリ</span></div>
-            <div class="category-filters" role="group" aria-label="記事カテゴリ">
-              <button type="button" class="filter-button is-active" data-category="all" aria-pressed="true">すべて</button>
-              <button type="button" class="filter-button" data-category="basics" aria-pressed="false">投資の基礎</button>
-              <button type="button" class="filter-button" data-category="nisa" aria-pressed="false">NISA・制度</button>
-              <button type="button" class="filter-button" data-category="funds" aria-pressed="false">投資信託・ETF</button>
-              <button type="button" class="filter-button" data-category="strategy" aria-pressed="false">資産形成</button>
-              <button type="button" class="filter-button" data-category="markets" aria-pressed="false">市場・注目テーマ</button>
-              <button type="button" class="filter-button" data-category="companies" aria-pressed="false">個別株・企業分析</button>
-            </div>
-            <fieldset class="tag-filter-section"><legend>タグで絞り込む</legend><p class="tag-help">記事に登録されているタグだけを表示します。複数選択できます。</p><div class="tag-mode"><label><input type="radio" name="tag-mode" value="or" checked> OR</label><label><input type="radio" name="tag-mode" value="and"> AND</label><button type="button" id="clear-tags" class="clear-tags">選択解除</button></div><details class="tag-disclosure"><summary><span id="tag-summary-count">タグを選ぶ</span><span aria-hidden="true">＋</span></summary><div id="tag-filters" class="tag-filters" aria-label="タグ一覧"></div></details></fieldset>
-            
-          </div>
+    <div class="filters-top" aria-label="記事検索・絞り込み">
+      <section class="filter-card keyword-card" aria-labelledby="keyword-title">
+        <h3 id="keyword-title">キーワード</h3>
+        <label class="search-label" for="article-search">ワードで記事を探す</label>
+        <input id="article-search" type="search" placeholder="例：NISA、手数料、AI、ETF" autocomplete="off">
+        <fieldset class="search-mode"><legend>複数ワード</legend><label><input type="radio" name="search-mode" value="or" checked> いずれか（OR）</label><label><input type="radio" name="search-mode" value="and"> すべて（AND）</label></fieldset>
+      </section>
+      <section class="filter-card category-card" aria-labelledby="category-title">
+        <div class="filter-card-heading"><h3 id="category-title">カテゴリ</h3><span id="selected-category-label" aria-live="polite">すべてのカテゴリ</span><button type="button" id="clear-category" class="clear-category">解除</button></div>
+        <div class="category-level">
+          <span class="category-level-label">大</span>
+          <div id="category-level-1" class="category-level-options" role="group" aria-label="大カテゴリ"></div>
         </div>
-      </details>
-      <div class="library-results">
-        <div class="results-toolbar"><p class="result-count" id="result-count" aria-live="polite">記事を読み込み中…</p><button type="button" id="reset-filters" class="reset-filters">絞り込みをリセット</button></div>
-        <div class="article-list" id="article-list" aria-live="polite"></div>
-        <p class="no-results" id="no-results" hidden>該当する記事がありません。別のキーワードやカテゴリをお試しください。</p>
-      </div>
+        <div class="category-level">
+          <span class="category-level-label">中</span>
+          <div id="category-level-2" class="category-level-options" role="group" aria-label="中カテゴリ"></div>
+        </div>
+        <div class="category-level">
+          <span class="category-level-label">小</span>
+          <div id="category-level-3" class="category-level-options" role="group" aria-label="小カテゴリ"></div>
+        </div>
+      </section>
+      <section class="filter-card tags-card" aria-labelledby="tags-title">
+        <div class="filter-card-heading"><h3 id="tags-title">タグ</h3><span id="tag-summary-count" aria-live="polite">未選択</span></div>
+        <div class="tag-actions">
+          <button type="button" id="open-tag-dialog" class="open-tag-dialog">タグ一覧から選ぶ</button>
+          <fieldset class="tag-mode"><legend>複数タグ</legend><label><input type="radio" name="tag-mode" value="or" checked> OR</label><label><input type="radio" name="tag-mode" value="and"> AND</label></fieldset>
+          <button type="button" id="clear-tags" class="clear-tags">選択解除</button>
+        </div>
+        <div id="selected-tag-chips" class="selected-tag-chips" aria-live="polite"><span>タグは未選択です</span></div>
+      </section>
+    </div>
+    <dialog id="tag-dialog" class="tag-dialog" aria-labelledby="tag-dialog-title">
+      <div class="tag-dialog-heading"><h3 id="tag-dialog-title">タグ一覧</h3><button type="button" id="close-tag-dialog" class="dialog-close" aria-label="タグ一覧を閉じる">閉じる ✕</button></div>
+      <label class="search-label" for="tag-search">タグを検索</label>
+      <input id="tag-search" class="tag-search" type="search" placeholder="タグ名を入力" autocomplete="off">
+      <p class="tag-dialog-help">複数選択できます。チェックしたタグは記事一覧に反映されます。</p>
+      <div id="tag-filters" class="tag-filters" aria-label="タグ一覧"></div>
+      <div class="tag-dialog-footer"><button type="button" id="clear-tags-dialog" class="clear-tags-dialog">選択解除</button><button type="button" id="done-tag-dialog" class="done-tag-dialog">完了</button></div>
+    </dialog>
+    <div class="library-results">
+      <div class="results-toolbar"><p class="result-count" id="result-count" aria-live="polite">記事を読み込み中…</p><button type="button" id="reset-filters" class="reset-filters">絞り込みをリセット</button></div>
+      <div class="article-list" id="article-list" aria-live="polite"></div>
+      <p class="no-results" id="no-results" hidden>該当する記事がありません。別のキーワードやカテゴリをお試しください。</p>
     </div>
   </section>
   <style>
@@ -88,54 +99,50 @@
     .welcome-step strong{font-size:.92rem;line-height:1.4}
     .welcome-step p{font-size:.84rem;line-height:1.5;color:var(--muted);margin:0;flex:1}
     .welcome-link{font-size:.84rem;font-weight:750}
-    .library-layout{display:grid;grid-template-columns:minmax(260px,310px) minmax(0,1fr);align-items:start;gap:22px;margin-top:16px}
-    .filter-panel{min-width:0}
-    .filter-panel>summary{display:none}
-    .library-sidebar{min-width:0}
-    .category-browser{margin:0 0 12px;padding:13px;background:#fff;border:1px solid var(--line);border-radius:14px}
-    .category-browser-heading{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:4px}.category-browser h3{margin:0;font-size:1rem;color:#123653}.clear-category,.reset-filters{border:1px solid #b8d8d9;background:#f4fbfa;color:#075e58;border-radius:8px;padding:6px 9px;font:inherit;font-size:.78rem;font-weight:750;cursor:pointer}.clear-category:hover,.reset-filters:hover{background:#dff6ef}
-    .category-browser>p{margin:0 0 10px;color:var(--muted);font-size:.8rem;line-height:1.45}
-    .category-tree-home{max-height:430px;overflow:auto;overscroll-behavior:contain;border:1px solid #d5e6eb;border-radius:10px;background:#fbfefe;padding:7px}
-    .category-tree-home ul{list-style:none;padding:0;margin:0}
-    .category-tree-root{display:flex;flex-direction:column;gap:3px}
-    .category-tree-root>.category-tree-node{min-width:0;padding:4px;background:#fff;border:1px solid #e0ecee;border-radius:8px}
-    .category-tree-children{padding:3px 0 2px 9px!important;margin:3px 0 0 4px!important;border-left:2px solid #d5e6eb}
-    .category-tree-node{min-width:0;margin:2px 0}
-    .category-tree-row{display:flex;align-items:stretch;gap:4px;min-width:0}
-    .category-tree-select{flex:1;min-width:0;text-align:left;border:1px solid transparent;border-radius:7px;background:transparent;color:#234653;padding:6px 7px;font:inherit;font-size:.82rem;line-height:1.35;cursor:pointer;overflow-wrap:anywhere}
-    .category-tree-select:hover{background:#edf8f5}
-    .category-tree-select.is-selected{background:#dff6ef;border-color:#3ba99b;color:#075e58;font-weight:800}
-    .category-tree-toggle{flex:0 0 30px;width:30px;min-height:30px;border:1px solid #b8d8d9;border-radius:7px;background:#f4fbfa;color:#075e58;font-size:1rem;font-weight:800;cursor:pointer}
-    .category-tree-toggle:hover{background:#dff6ef}
-    .category-tree-select:focus-visible,.category-tree-toggle:focus-visible{outline:3px solid #ff9d70;outline-offset:2px}
-    .category-tree-home [hidden]{display:none!important}
-    .library-tools{background:#fff;border:1px solid var(--line);border-radius:14px;padding:13px;margin:0 0 14px}
-    .search-label{display:block;font-weight:800;margin-bottom:6px;font-size:.9rem}
-    #article-search{display:block;width:100%;padding:10px 11px;border:1px solid #9fbfc5;border-radius:9px;font:inherit;font-size:.9rem;background:#fbfefe;color:var(--ink)}
-    #article-search:focus-visible,.filter-button:focus-visible{outline:3px solid #ff9d70;outline-offset:2px}
-    .search-mode{display:flex;flex-wrap:wrap;gap:5px 12px;border:0;padding:0;margin:10px 0 0}
-    .search-mode legend{font-size:.82rem;font-weight:800;margin-bottom:4px}
-    .search-mode label{font-size:.82rem;color:var(--muted);display:inline-flex;align-items:center;gap:5px}
+    .filters-top{display:grid;grid-template-columns:minmax(250px,.8fr) minmax(0,1.7fr);gap:12px;margin:16px 0 14px;align-items:stretch}
+    .filter-card{min-width:0;background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 13px}
+    .filter-card h3{margin:0;font-size:.95rem;color:#123653}
+    .filter-card-heading{display:flex;align-items:center;gap:8px;min-width:0;margin-bottom:8px}
+    .filter-card-heading>span{margin-left:auto;color:var(--muted);font-size:.76rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .clear-category,.reset-filters{border:1px solid #b8d8d9;background:#f4fbfa;color:#075e58;border-radius:8px;padding:6px 9px;font:inherit;font-size:.78rem;font-weight:750;cursor:pointer;white-space:nowrap}.clear-category:hover,.reset-filters:hover{background:#dff6ef}
+    .search-label{display:block;font-weight:800;margin-bottom:6px;font-size:.84rem}
+    #article-search,.tag-search{display:block;width:100%;padding:9px 10px;border:1px solid #9fbfc5;border-radius:9px;font:inherit;font-size:.9rem;background:#fbfefe;color:var(--ink)}
+    #article-search:focus-visible,.tag-search:focus-visible,.filter-button:focus-visible,.category-level-button:focus-visible,.open-tag-dialog:focus-visible{outline:3px solid #ff9d70;outline-offset:2px}
+    .search-mode{display:flex;align-items:center;flex-wrap:wrap;gap:5px 12px;border:0;padding:0;margin:9px 0 0}
+    .search-mode legend,.tag-mode legend{font-size:.76rem;font-weight:800;margin-right:3px}
+    .search-mode label,.tag-mode label{font-size:.78rem;color:var(--muted);display:inline-flex;align-items:center;gap:4px}
     .search-mode input,.tag-mode input{accent-color:#087f75}
-    .category-filter-heading{display:flex;flex-wrap:wrap;align-items:center;gap:5px 8px;margin-top:13px;font-size:.84rem}
-    #selected-category-label{color:var(--muted);font-weight:500;font-size:.78rem}
-    .category-filters{display:flex;flex-wrap:wrap;gap:6px;margin-top:7px}
-    .filter-button{border:1px solid #b8d8d9;background:#f4fbfa;color:#24545a;border-radius:999px;padding:6px 9px;font:inherit;font-size:.78rem;font-weight:700;cursor:pointer}
-    .filter-button.is-active{background:#087f75;color:white;border-color:#087f75}
-    .tag-filter-section{border:0;border-top:1px solid #e2ecee;padding:10px 0 0;margin:12px 0 0}
-    .tag-filter-section legend{font-size:.86rem;font-weight:800;margin-bottom:3px}
-    .tag-help{font-size:.78rem;line-height:1.45;color:var(--muted);margin:0 0 7px}
-    .tag-mode{display:flex;align-items:center;flex-wrap:wrap;gap:6px 12px;font-size:.8rem}
-    .tag-mode label{display:inline-flex;align-items:center;gap:4px}
-    .clear-tags{border:0;background:transparent;color:#08766e;text-decoration:underline;font:inherit;font-size:.8rem;cursor:pointer;padding:3px}
-    .tag-disclosure{margin-top:8px;border:1px solid #d5e6eb;border-radius:9px;padding:0 9px;background:#fbfefe}
-    .tag-disclosure>summary{display:flex;justify-content:space-between;align-items:center;gap:10px;cursor:pointer;list-style:none;padding:8px 0;font-size:.83rem;font-weight:750;color:#24545a}
-    .tag-disclosure>summary::-webkit-details-marker{display:none}
-    .tag-disclosure[open]>summary span:last-child{transform:rotate(45deg)}
-    .tag-filters{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0 0 9px;max-height:190px;overflow-y:auto;overscroll-behavior:contain}
-    .tag-option{display:inline-flex;align-items:center;gap:4px;border:1px solid #c5dedd;background:#f7fbfa;color:#31565a;border-radius:999px;padding:5px 8px;font-size:.77rem;cursor:pointer}
+    .category-card{grid-column:2;grid-row:1 / span 2}
+    .keyword-card{grid-column:1;grid-row:1}
+    .tags-card{grid-column:1;grid-row:2}
+    .category-level{display:flex;align-items:center;gap:8px;min-width:0;height:42px;border-top:1px solid #edf2f3}
+    .category-level-label{flex:0 0 18px;width:18px;font-size:.76rem;font-weight:850;color:#607985;text-align:center}
+    .category-level-options{display:flex;align-items:center;gap:5px;min-width:0;flex:1;overflow-x:auto;overflow-y:hidden;white-space:nowrap;scrollbar-width:thin;overscroll-behavior-x:contain;padding:3px 2px}
+    .category-level-button{flex:0 0 auto;border:1px solid #b8d8d9;background:#f4fbfa;color:#24545a;border-radius:8px;padding:6px 9px;font:inherit;font-size:.76rem;font-weight:700;line-height:1.2;cursor:pointer;white-space:nowrap}
+    .category-level-button.is-active{background:#087f75;color:#fff;border-color:#087f75}
+    .tag-actions{display:flex;align-items:center;flex-wrap:wrap;gap:8px}
+    .open-tag-dialog{border:1px solid #8dc9c0;background:#e5f7f2;color:#075e58;border-radius:9px;padding:8px 11px;font:inherit;font-size:.82rem;font-weight:800;cursor:pointer}
+    .tag-mode{display:flex;align-items:center;flex-wrap:wrap;gap:5px 9px;border:0;padding:0;margin:0}
+    .tag-mode legend{float:left}
+    .clear-tags{border:0;background:transparent;color:#08766e;text-decoration:underline;font:inherit;font-size:.78rem;cursor:pointer;padding:4px}
+    .selected-tag-chips{display:flex;align-items:center;flex-wrap:wrap;gap:5px;margin-top:8px;min-height:18px;font-size:.75rem;color:var(--muted)}
+    .selected-tag-chip{display:inline-flex;align-items:center;gap:4px;background:#dff6ef;border:1px solid #b4e2d9;border-radius:999px;padding:3px 7px;color:#075e58}
+    .selected-tag-chip button{border:0;background:transparent;color:inherit;padding:0;font:inherit;cursor:pointer}
+    .tag-dialog{width:min(760px,calc(100vw - 28px));max-width:none;max-height:85vh;border:1px solid #c9dfe0;border-radius:16px;padding:18px;background:#fff;color:var(--ink);box-shadow:0 18px 60px #12365338}
+    .tag-dialog::backdrop{background:#102b3c80;backdrop-filter:blur(2px)}
+    .tag-dialog-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px}
+    .tag-dialog-heading h3{margin:0;font-size:1.1rem;color:#123653}
+    .dialog-close{border:1px solid #d5e6eb;background:#f7fbfc;border-radius:8px;padding:7px 10px;font:inherit;font-size:.8rem;cursor:pointer}
+    .tag-dialog-help{margin:8px 0;font-size:.8rem;color:var(--muted)}
+    .tag-filters{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:7px;margin:0;padding:2px 2px 10px;max-height:55vh;overflow-y:auto;overscroll-behavior:contain}
+    .tag-option{display:flex;align-items:center;gap:7px;min-width:0;border:1px solid #c5dedd;background:#f7fbfa;color:#31565a;border-radius:9px;padding:8px 9px;font-size:.8rem;cursor:pointer}
+    .tag-option span{overflow-wrap:anywhere}
     .tag-option:has(input:checked){background:#dff6ef;border-color:#3ba99b;color:#075e58;font-weight:800}
-    .tag-option input{accent-color:#087f75}
+    .tag-option input{flex:0 0 auto;accent-color:#087f75}
+    .tag-option[hidden]{display:none}
+    .tag-dialog-footer{display:flex;justify-content:space-between;gap:10px;padding-top:10px;border-top:1px solid #e2ecee}
+    .clear-tags-dialog,.done-tag-dialog{border:1px solid #b8d8d9;background:#f4fbfa;color:#075e58;border-radius:8px;padding:8px 12px;font:inherit;font-size:.82rem;font-weight:750;cursor:pointer}
+    .done-tag-dialog{background:#087f75;border-color:#087f75;color:#fff}
     .results-toolbar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin:0 0 10px;padding:10px 12px;background:#e8f5f5;border:1px solid #d2e8e8;border-radius:10px}.result-count{margin:0;color:#123653;font-size:.9rem;font-weight:850}.library-results{min-width:0}
     .article-dates{display:block;margin-top:5px;color:#637986;font-size:.75rem;line-height:1.4}.article-dates time{white-space:nowrap}
     .article-list{display:flex;flex-direction:column;gap:9px}
@@ -151,15 +158,14 @@
     .article-open{white-space:nowrap;text-decoration:underline;font-size:.83rem;font-weight:800}
     .no-results{background:#fff;border:1px dashed #aac8ca;border-radius:12px;padding:18px;color:var(--muted)}
     @media(max-width:900px){
-      .library-layout{grid-template-columns:1fr;gap:10px}
-      .filter-panel{border:1px solid var(--line);border-radius:12px;background:#fff;overflow:hidden}
-      .filter-panel>summary{display:flex;justify-content:space-between;align-items:center;gap:10px;cursor:pointer;list-style:none;padding:12px 14px;font-weight:800;color:#123653}
-      .filter-panel>summary::-webkit-details-marker{display:none}
-      .filter-panel>summary::after{content:"＋";color:var(--teal);font-size:1.1rem}
-      .filter-panel[open]>summary::after{content:"−"}
-      .library-sidebar{padding:0 10px 10px}
-      .category-tree-home{max-height:250px}
-      .category-tree-root{display:flex}
+      .filters-top{grid-template-columns:1fr;gap:9px}
+      .keyword-card,.category-card,.tags-card{grid-column:1;grid-row:auto}
+      .filter-card{padding:11px}
+      .category-level{height:42px}
+      .category-level-options{gap:4px}
+      .category-level-button{padding:6px 8px;font-size:.74rem}
+      .tag-dialog{padding:14px;width:calc(100vw - 20px)}
+      .tag-filters{grid-template-columns:repeat(auto-fit,minmax(125px,1fr));max-height:58vh}
       .welcome{margin:10px 0 6px;padding:0 12px}
       .welcome-summary{padding:10px 0}
       .welcome-content{padding-bottom:10px}
@@ -186,91 +192,113 @@
     (() => {
       const search = document.getElementById('article-search');
       const list = document.getElementById('article-list');
-      const buttons = [...document.querySelectorAll('.filter-button')];
       const count = document.getElementById('result-count');
       const empty = document.getElementById('no-results');
       const modeInputs = [...document.querySelectorAll('input[name="search-mode"]')];
       const tagModeInputs = [...document.querySelectorAll('input[name="tag-mode"]')];
       const tagFilters = document.getElementById('tag-filters');
+      const tagSearch = document.getElementById('tag-search');
       const clearTags = document.getElementById('clear-tags');
-      const clearCategory = document.getElementById('clear-category');
+      const clearTagsDialog = document.getElementById('clear-tags-dialog');
       const resetFilters = document.getElementById('reset-filters');
       const tagSummaryCount = document.getElementById('tag-summary-count');
-      const filterPanel = document.getElementById('filter-panel');
-      const syncFilterPanel = () => { filterPanel.open = window.matchMedia('(min-width: 901px)').matches; };
-      syncFilterPanel();
-      window.addEventListener('resize', syncFilterPanel);
+      const selectedTagChips = document.getElementById('selected-tag-chips');
+      const tagDialog = document.getElementById('tag-dialog');
+      const openTagDialog = document.getElementById('open-tag-dialog');
+      const closeTagDialog = document.getElementById('close-tag-dialog');
+      const doneTagDialog = document.getElementById('done-tag-dialog');
+      const clearCategory = document.getElementById('clear-category');
+      const categoryLevels = [
+        document.getElementById('category-level-1'),
+        document.getElementById('category-level-2'),
+        document.getElementById('category-level-3')
+      ];
       let searchMode = 'or';
       let tagMode = 'or';
       const selectedTags = new Set();
-      let category = 'all';
-      let articles = [];
-      const categoryLabels = {};
-      const categoryTreeHome = document.getElementById('category-tree-home');
-      const selectedCategoryLabel = document.getElementById('selected-category-label');
       let selectedCategoryPath = [];
-      let categoryNodeLabels = {};
-      const renderCategoryTree = (items, prefix = []) => {
-        const ul = document.createElement('ul');
-        ul.className = prefix.length ? 'category-tree-children' : 'category-tree-root';
-        items.forEach(item => {
-          const li = document.createElement('li');
-          li.className = 'category-tree-node';
-          const path = [...prefix, item.id];
-          const row = document.createElement('div');
-          row.className = 'category-tree-row';
-          const select = document.createElement('button');
-          select.type = 'button';
-          select.className = 'category-tree-select';
-          select.textContent = item.label;
-          select.dataset.categoryPath = path.join('/');
-          select.addEventListener('click', () => {
-            selectedCategoryPath = path;
-            category = path[0];
-            syncCategoryControls();
+      let articles = [];
+      let categoryData = [];
+      const categoryLabels = {};
+      const categoryNodeLabels = {};
+      const categoryNodes = {};
+      const getChildren = (path) => {
+        if (path.length === 0) return categoryData;
+        const parent = categoryNodes[path[path.length - 1]];
+        return parent && Array.isArray(parent.children) ? parent.children : [];
+      };
+      const updateSelectedTagSummary = () => {
+        tagSummaryCount.textContent = selectedTags.size ? selectedTags.size + '個選択中' : '未選択';
+        selectedTagChips.replaceChildren();
+        if (!selectedTags.size) {
+          const none = document.createElement('span');
+          none.textContent = 'タグは未選択です';
+          selectedTagChips.append(none);
+          return;
+        }
+        [...selectedTags].sort((a,b) => a.localeCompare(b,'ja')).forEach(tag => {
+          const chip = document.createElement('span');
+          chip.className = 'selected-tag-chip';
+          const label = document.createElement('span');
+          label.textContent = tag;
+          const remove = document.createElement('button');
+          remove.type = 'button';
+          remove.textContent = '×';
+          remove.setAttribute('aria-label', tag + 'を解除');
+          remove.addEventListener('click', () => {
+            selectedTags.delete(tag);
+            const input = [...tagFilters.querySelectorAll('input[type="checkbox"]')].find(el => el.value === tag);
+            if (input) input.checked = false;
+            updateSelectedTagSummary();
             render();
           });
-          row.append(select);
-          if (item.children && item.children.length) {
-            const toggle = document.createElement('button');
-            toggle.type = 'button';
-            toggle.className = 'category-tree-toggle';
-            toggle.textContent = '+';
-            toggle.setAttribute('aria-label', item.label + 'を展開');
-            toggle.setAttribute('aria-expanded', 'false');
-            const children = renderCategoryTree(item.children, path);
-            children.hidden = true;
-            toggle.addEventListener('click', () => {
-              const expanded = children.hidden;
-              children.hidden = !expanded;
-              toggle.textContent = expanded ? '−' : '+';
-              toggle.setAttribute('aria-expanded', String(expanded));
-              toggle.setAttribute('aria-label', item.label + (expanded ? 'を折りたたむ' : 'を展開'));
-            });
-            row.append(toggle);
-            li.append(row, children);
-          } else {
-            li.append(row);
-          }
-          ul.append(li);
+          chip.append(label,remove);
+          selectedTagChips.append(chip);
         });
-        return ul;
+      };
+      const clearTagSelection = () => {
+        selectedTags.clear();
+        tagFilters.querySelectorAll('input[type="checkbox"]').forEach(input => { input.checked = false; });
+        updateSelectedTagSummary();
+      };
+      const setCategoryPath = (path) => {
+        selectedCategoryPath = path;
+        renderCategoryLevels();
+        syncCategoryControls();
+        render();
+      };
+      const renderCategoryLevels = () => {
+        categoryLevels.forEach((container,index) => {
+          const level = index + 1;
+          container.replaceChildren();
+          const allButton = document.createElement('button');
+          allButton.type = 'button';
+          allButton.className = 'category-level-button';
+          allButton.textContent = 'すべて';
+          const activeAll = selectedCategoryPath.length < level;
+          allButton.classList.toggle('is-active',activeAll);
+          allButton.setAttribute('aria-pressed',String(activeAll));
+          allButton.addEventListener('click',() => setCategoryPath(selectedCategoryPath.slice(0,level-1)));
+          container.append(allButton);
+          const parentPath = selectedCategoryPath.slice(0,index);
+          const items = getChildren(parentPath);
+          items.forEach(item => {
+            const button = document.createElement('button');
+            button.type = 'button';
+            button.className = 'category-level-button';
+            button.textContent = item.label;
+            const path = [...parentPath,item.id];
+            const active = selectedCategoryPath.length >= level && selectedCategoryPath[level-1] === item.id;
+            button.classList.toggle('is-active',active);
+            button.setAttribute('aria-pressed',String(active));
+            button.addEventListener('click',() => setCategoryPath(path));
+            container.append(button);
+          });
+        });
       };
       const syncCategoryControls = () => {
         const selectedLabels = selectedCategoryPath.map(id => categoryNodeLabels[id]).filter(Boolean);
-        selectedCategoryLabel.textContent = selectedLabels.length ? selectedLabels.join(' › ') : 'すべてのカテゴリ';
-        buttons.forEach(button => {
-          const active = selectedCategoryPath.length
-            ? button.dataset.category === selectedCategoryPath[0]
-            : button.dataset.category === 'all';
-          button.classList.toggle('is-active', active);
-          button.setAttribute('aria-pressed', String(active));
-        });
-        categoryTreeHome.querySelectorAll('button[data-category-path]').forEach(link => {
-          const active = link.dataset.categoryPath === selectedCategoryPath.join('/');
-          link.classList.toggle('is-selected', active);
-          link.setAttribute('aria-pressed', String(active));
-        });
+        document.getElementById('selected-category-label').textContent = selectedLabels.length ? selectedLabels.join(' › ') : 'すべて';
       };
       const render = () => {
         const terms = search.value.trim().toLocaleLowerCase('ja').split(/\s+/u).filter(Boolean);
@@ -314,16 +342,14 @@
           tags.textContent = (article.tags || []).join(' / ');
           const subcategory = document.createElement('p');
           subcategory.className = 'article-subcategory';
-          subcategory.textContent = [article.subcategoryLabel, article.topicLabel].filter(Boolean).join(' › ');
+          subcategory.textContent = [article.subcategoryLabel,article.topicLabel].filter(Boolean).join(' › ');
           const dates = document.createElement('span');
           dates.className = 'article-dates';
-          const updated = article.updatedAt || article.publishedAt;
-          const published = article.publishedAt;
           const dateText = document.createElement('span');
-          dateText.textContent = '更新 ' + (updated || '日付未登録') + (published ? ' ・ 公開 ' + published : '');
+          dateText.textContent = '更新 ' + (article.updatedAt || article.publishedAt || '日付未登録') + (article.publishedAt ? ' ・ 公開 ' + article.publishedAt : '');
           dates.append(dateText);
           main.append(h3,summary);
-          if(subcategory.textContent) main.append(subcategory);
+          if (subcategory.textContent) main.append(subcategory);
           main.append(tags,dates);
           const open = document.createElement('a');
           open.className = 'article-open';
@@ -344,67 +370,72 @@
         if(input.checked) tagMode = input.value;
         render();
       }));
-      const resetCategorySelection = () => {
-        selectedCategoryPath = [];
-        category = 'all';
-        syncCategoryControls();
-      };
-      clearCategory.addEventListener('click',() => {
-        resetCategorySelection();
-        render();
-      });
-      clearTags.addEventListener('click',() => {
-        selectedTags.clear();
-        tagFilters.querySelectorAll('input[type="checkbox"]').forEach(input => { input.checked = false; });
-        tagSummaryCount.textContent = 'タグを選ぶ';
-        render();
-      });
+      clearCategory.addEventListener('click',() => setCategoryPath([]));
+      clearTags.addEventListener('click',() => { clearTagSelection(); render(); });
+      clearTagsDialog.addEventListener('click',() => { clearTagSelection(); render(); });
       resetFilters.addEventListener('click',() => {
         search.value = '';
-        selectedTags.clear();
-        tagFilters.querySelectorAll('input[type="checkbox"]').forEach(input => { input.checked = false; });
-        tagSummaryCount.textContent = 'タグを選ぶ';
+        clearTagSelection();
         modeInputs.forEach(input => { input.checked = input.value === 'or'; });
         tagModeInputs.forEach(input => { input.checked = input.value === 'or'; });
         searchMode = 'or';
         tagMode = 'or';
-        resetCategorySelection();
-        render();
+        setCategoryPath([]);
+        tagSearch.value = '';
+        tagFilters.querySelectorAll('.tag-option').forEach(label => { label.hidden = false; });
       });
-      buttons.forEach(button => button.addEventListener('click',() => {
-        category = button.dataset.category;
-        selectedCategoryPath = category === 'all' ? [] : [category];
-        syncCategoryControls();
-        render();
-      }));
+      openTagDialog.addEventListener('click',() => {
+        if (typeof tagDialog.showModal === 'function') tagDialog.showModal();
+        else tagDialog.setAttribute('open','');
+        tagSearch.focus();
+      });
+      const closeTagDialogNow = () => {
+        if (typeof tagDialog.close === 'function' && tagDialog.open) tagDialog.close();
+        else tagDialog.removeAttribute('open');
+      };
+      closeTagDialog.addEventListener('click',closeTagDialogNow);
+      doneTagDialog.addEventListener('click',closeTagDialogNow);
+      tagDialog.addEventListener('click',event => {
+        if (event.target === tagDialog) closeTagDialogNow();
+      });
+      tagSearch.addEventListener('input',() => {
+        const query = tagSearch.value.trim().toLocaleLowerCase('ja');
+        tagFilters.querySelectorAll('.tag-option').forEach(label => {
+          label.hidden = !label.dataset.tagText.includes(query);
+        });
+      });
       fetch('article-index.json')
         .then(response => { if(!response.ok) throw new Error('Article index unavailable'); return response.json(); })
         .then(data => {
-          const walkCategories = (nodes, ancestors = []) => nodes.forEach(item => {
+          categoryData = data.categories || [];
+          const walkCategories = nodes => nodes.forEach(item => {
             categoryNodeLabels[item.id] = item.label;
-            if (!ancestors.length) categoryLabels[item.id] = item.label;
-            if (item.children) walkCategories(item.children, [...ancestors, item.id]);
+            categoryNodes[item.id] = item;
+            if (!item.children || !item.children.length) categoryLabels[item.id] = item.label;
+            if (item.children) walkCategories(item.children);
           });
-          walkCategories(data.categories || []);
-          categoryTreeHome.replaceChildren(renderCategoryTree(data.categories || []));
-          const middleNodes = (data.categories || []).flatMap(c => c.children || []);
-          const leafNodes = middleNodes.flatMap(c => c.children || []);
-          articles = (data.articles || []).filter(item => item.status === 'published').map(item => ({
-            ...item,
-            subcategoryLabel: middleNodes.find(c => c.id === item.subcategory)?.label || '',
-            topicLabel: leafNodes.find(c => c.id === item.topic)?.label || ''
-          }));
+          walkCategories(categoryData);
+          articles = (data.articles || []).filter(item => item.status === 'published').map(item => {
+            const middleNodes = categoryData.flatMap(c => c.children || []);
+            const leafNodes = middleNodes.flatMap(c => c.children || []);
+            return {
+              ...item,
+              subcategoryLabel: middleNodes.find(c => c.id === item.subcategory)?.label || '',
+              topicLabel: leafNodes.find(c => c.id === item.topic)?.label || ''
+            };
+          });
           const allTags = [...new Set(articles.flatMap(article => article.tags || []))].sort((a,b) => a.localeCompare(b,'ja'));
           tagFilters.replaceChildren();
           allTags.forEach(tag => {
             const label = document.createElement('label');
             label.className = 'tag-option';
+            label.dataset.tagText = tag.toLocaleLowerCase('ja');
             const input = document.createElement('input');
             input.type = 'checkbox';
             input.value = tag;
             input.addEventListener('change',() => {
               if(input.checked) selectedTags.add(tag); else selectedTags.delete(tag);
-              tagSummaryCount.textContent = selectedTags.size ? selectedTags.size + '個のタグを選択中' : 'タグを選ぶ';
+              updateSelectedTagSummary();
               render();
             });
             const text = document.createElement('span');
@@ -412,7 +443,9 @@
             label.append(input,text);
             tagFilters.append(label);
           });
+          renderCategoryLevels();
           syncCategoryControls();
+          updateSelectedTagSummary();
           render();
         })
         .catch(() => {
