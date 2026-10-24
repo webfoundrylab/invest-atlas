@@ -402,3 +402,12 @@
 - 公開日・更新日を独立したラベル表示に変更し、更新日は青緑の背景色で目に入りやすく、公開日は落ち着いたグレーで区別。
 - 変更ファイル：`index.html`、`article-index.json`、`thumbnails/*.svg`（7件）、`README.md`、本ファイル。
 - 静的検証とGitHub Actionsのbuild/deploy結果は今回の最終変更後に確認する。公開URLのブラウザ表示は未確認。
+
+
+## 2026-10-25 記事全体の整合性確認
+- 公開済み7記事、記事台帳、サイトマップ、README、ビルド・検証スクリプトを確認。
+- NISA記事に2027年1月からの未成年者向けつみたて投資枠の変更予定を追記し、金融庁の最新公式ページへリンク。
+- 信託報酬・積立投資の記事で、2026年4月に統合した資産運用業協会の名称と公式リンクに更新。公開日と情報確認日の表記も区別。
+- READMEの検索UI説明を現在の配置（上部検索エリア・タグモーダル）に合わせて修正。
+- 変更ファイル：nisa-basics.html、investment-trust-fees.html、regular-investing.html、choose-investment-trust-nisa.html、before-you-invest.html、investment-trust-vs-etf.html、README.md、本ファイル。
+- 公式情報：金融庁NISA特設サイト、資産運用業協会の公式ページを確認。最終Actionsと公開URLの表示は確認待ち。
