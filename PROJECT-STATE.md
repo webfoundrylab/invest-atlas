@@ -1062,3 +1062,12 @@
 ### 検証・未確認事項
 - 変更後に、記事内の編集方針リンク、目次・アンカー、HTML構造とGitHub Actionsを確認する。
 - 公開画面のブラウザ確認は別途必要。実表示を未確認のまま完了扱いにしない。
+
+
+## 2026-10-26 免責表現・記事末尾の見直し
+- 対象記事：`simple-investing-guide.html`、`investment-trust-fees.html`、`investment-trust-index-active.html`、`regular-investing.html`、`choose-investment-trust-nisa.html`、`investment-trust-actual-cost.html`、`investment-trust-investment-targets.html`、`nisa-basics.html`。
+- 各記事のフッターに重複していた「掲載内容は一般的な情報であり、投資成果を保証するものではありません」という共通文を削り、`editorial-policy.html` の「編集方針・免責事項」へのリンクに置き換えた。
+- 記事末尾の定型的な「一般的な情報提供を目的としており、特定の金融商品への投資を推奨するものではありません」を削減。情報確認日、最新の公式資料を確認する案内、記事テーマに関わる具体的なリスク説明は維持した。
+- 免責文を減らしても、本文中の元本割れ、値動き、為替、金利・信用リスク、比較条件などの具体的な注意点は削除していない。
+- GitHubへの更新は完了。リンク先ファイルの存在は確認済み。公開ブラウザでの表示とGitHub Actionsの最終結果は未確認。
+- 次の確認：今回の変更を含むActionsの検証・デプロイ結果を確認し、残りの記事にも同種の重複がないか必要に応じて監査する。
