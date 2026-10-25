@@ -443,3 +443,10 @@
 - リポジトリに保存された `sitemap.xml` は記事台帳に登録された公開記事・公開カテゴリURLをすべて含んでいないため、生成スクリプトと同じルールで同期する。
 - Google Search Console の取得エラー原因は未確定。実際の公開URLのHTTPステータス、Content-Type、リダイレクト、Google側の取得状況はこの環境から独立確認できていない。サイトマップの同期だけでGSCエラーが解消するとは断定しない。
 - 次の確認：同期後のActions成功を確認し、ユーザーがSearch Consoleの詳細エラーと登録プロパティを確認したうえで再送信する。
+
+## 2026-10-25 Search Console sitemap 読み込み調査
+- ユーザー報告: Search Console の sitemap 詳細は「最終読み込み日時 2026/10/24」「検出されたページ数 0」「サイトマップを読み込めませんでした」。
+- リポジトリ上の sitemap.xml は 30 URL を含む構造で、robots.txt は正しいプロジェクトサイト配下の sitemap URL を参照している。GitHub Actions の build / deploy は直近で成功済み。ただし、助手側から公開 URL の HTTP ステータスと Content-Type は独立確認できていない。
+- GitHub Pages と Search Console の組み合わせでサイトマップ取得に失敗する事例が報告されており、Content-Type の問題は仮説の一つだが、Invest Atlas で同じ原因かは未確認。
+- 無料の切り分け策として、ビルド時に URL を1行ずつ記載する sitemap.txt も生成し、robots.txt から XML とテキスト両方を案内するよう変更。検証スクリプトでも両サイトマップの URL 集合を台帳と照合する。
+- 次の確認: GitHub Actions の最新 build / deploy が成功することを確認後、Search Console で `https://webfoundrylab.github.io/invest-atlas/sitemap.txt` を送信し、検出ページ数と状態を比較する。XML の HTTP 応答・Content-Type、および Search Console の URL 検査ライブテストは未確認。
