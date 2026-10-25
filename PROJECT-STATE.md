@@ -883,3 +883,17 @@
 - `thumbnails/mobile/` 内の旧画像は、記事台帳の登録先ではなく、現在の公開記事サムネイルとしては参照されていないため今回の対象外。現行のスマートフォン縦表示ではサムネイル自体を非表示にする仕様を維持。
 - 変更ファイル：上記SVG 11点、本ファイル。
 - GitHub Actions run `40208219083`（run #431）は build・検証・GitHub Pagesデプロイのすべて成功。公開URLの独立したブラウザ表示確認は未完了（外部取得ツールからの取得が無効化されていたため）。
+
+
+## 2026-10-26 作業記録：記事タイトルの主題・副題統一
+- 最新の `main` ブランチを確認し、`article-index.json` の正式タイトルと一覧用 `cardTitle` の表記が異なり、一覧と記事ページでタイトルの見え方がずれる構造を確認。
+- `article-index.json` に `mainTitle`（主題）・`subtitle`（副題）を追加し、短縮タイトル `cardTitle` を廃止。正式 `title`、ページタイトル、canonical、URLは変更せず維持。
+- トップページの記事一覧と公開済み11記事のH1を、同じ主題・副題の組み合わせで表示するよう変更。
+- `README.md`、`EDITORIAL-GUIDELINES.md`、`THUMBNAIL-GUIDELINES.md` に、正式タイトルと表示タイトルの役割分担、主題・副題の命名基準、公開前チェックを追記。
+- 変更ファイル：`before-you-invest.html`, `nisa-basics.html`, `choose-investment-trust-nisa.html`, `investment-trust-vs-etf.html`, `investment-trust-fees.html`, `regular-investing.html`, `ai-semiconductor-investing.html`, `investment-trust-actual-cost.html`, `investment-trust-investment-targets.html`, `investment-trust-index-active.html`, `stock-market-index-basics.html`, `article-index.json`、`index.html`、`README.md`、`EDITORIAL-GUIDELINES.md`、`THUMBNAIL-GUIDELINES.md`、`PROJECT-STATE.md`。
+- 検証：主題・副題の台帳登録とH1への反映、正式タイトル・canonical・URLの維持を静的に確認。GitHub Actions と公開画面の確認はコミット後に実施する。
+
+## 次の作業
+1. 今回のタイトル変更後に GitHub Actions のビルド・検証・デプロイ結果を確認する。
+2. 公開サイトで記事一覧と記事ページの主題・副題が一致して見えるか、PC・スマートフォンで確認する。
+3. サムネイル内のタイトル表現を主題・副題ルールに合わせる必要がある記事を確認し、必要に応じて段階的に更新する。
