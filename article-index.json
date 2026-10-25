@@ -447,6 +447,34 @@
       "updatedAt": "2026-10-25",
       "thumbnail": "thumbnails/fund-investment-targets.svg",
       "cardTitle": "投資信託の投資対象"
+    },
+    {
+      "slug": "investment-trust-index-active.html",
+      "title": "インデックス型とアクティブ型の違いは？運用方法・コスト・選び方",
+      "category": "funds",
+      "subcategory": "investment-trust-basics",
+      "topic": "index-active",
+      "tags": [
+        "投資信託",
+        "インデックス型",
+        "アクティブ型",
+        "パッシブ運用",
+        "ベンチマーク",
+        "信託報酬",
+        "運用実績",
+        "NISA"
+      ],
+      "summary": "指数への連動を目指すインデックス型と、運用者の判断で指数を上回る成果などを目指すアクティブ型を比較。費用・運用実績・公式資料の確認方法を解説。",
+      "status": "published",
+      "related": [
+        "investment-trust-investment-targets.html",
+        "choose-investment-trust-nisa.html",
+        "investment-trust-fees.html",
+        "investment-trust-actual-cost.html"
+      ],
+      "publishedAt": "2026-10-25",
+      "updatedAt": "2026-10-25",
+      "cardTitle": "インデックス型とアクティブ型"
     }
   ]
 }
