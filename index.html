@@ -182,7 +182,7 @@
       .section-head{margin:22px 0 12px}
       .article-row{display:grid;grid-template-columns:92px minmax(0,1fr);grid-auto-rows:auto;gap:10px 12px;padding:12px;align-items:start;min-height:0;border-radius:14px}
       .article-row>a:first-child{grid-column:1;grid-row:1;width:92px;min-width:0;align-self:start;display:block}
-      .article-picture{display:block;width:92px;height:138px;overflow:hidden;border-radius:9px}.article-thumbnail{display:block;width:92px;height:138px;aspect-ratio:2 / 3;object-fit:fill;border-radius:9px;border:1px solid #d8e5e8;background:#edf6f6}
+      .article-picture{display:block;width:92px;height:207px;overflow:hidden;border-radius:9px}.article-thumbnail{display:block;width:92px;height:207px;aspect-ratio:400 / 900;object-fit:fill;border-radius:9px;border:1px solid #d8e5e8;background:#edf6f6}
       .article-row>div{grid-column:2;grid-row:1;min-width:0;overflow-wrap:anywhere}
       .article-category{justify-self:start;max-width:100%;white-space:normal;overflow-wrap:anywhere;margin-bottom:5px}
       .article-row h3{font-size:1.08rem;line-height:1.45;margin:0 0 6px;max-height:none;overflow:visible;overflow-wrap:anywhere}
@@ -372,12 +372,13 @@
           };
           const tileCopy = mobileTileCopy[article.slug] || [article.cardTitle || article.title, article.summary || ''];
           const cardTitle = tileCopy[0];
-          const titleLines = cardTitle.match(/.{1,8}/gu) || [cardTitle];
+          const titleLines = cardTitle.match(/.{1,7}/gu) || [cardTitle];
           const summaryText = tileCopy[1];
-          const summaryLines = summaryText.match(/.{1,16}/gu) || [];
-          const titleSvg = titleLines.slice(0,3).map((line,i) => '<text x="34" y="' + (108 + i*40) + '" font-family="system-ui,sans-serif" font-size="30" font-weight="800" fill="#17334a">' + line.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') + '</text>').join('');
-          const summarySvg = summaryLines.slice(0,3).map((line,i) => '<text x="36" y="' + (218 + i*25) + '" font-family="system-ui,sans-serif" font-size="17" font-weight="500" fill="#405a6b">' + line.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') + '</text>').join('');
-          const mobileSvg = '<svg xmlns="http://www.w3.org/2000/svg" width="400" height="600" viewBox="0 0 400 600"><rect width="400" height="600" rx="28" fill="' + palette[0] + '"/><rect x="18" y="18" width="364" height="564" rx="22" fill="none" stroke="' + palette[1] + '" stroke-opacity=".2" stroke-width="3"/><text x="34" y="48" font-family="system-ui,sans-serif" font-size="13" font-weight="800" letter-spacing="2" fill="' + palette[1] + '">INVEST ATLAS</text>' + titleSvg + summarySvg + '<circle cx="320" cy="505" r="65" fill="' + palette[1] + '" fill-opacity=".07"/><g transform="translate(0 150) scale(.62)">' + motif + '</g></svg>';
+          const summaryLines = summaryText.match(/.{1,13}/gu) || [];
+          const escapeSvgText = line => line.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+          const titleSvg = titleLines.slice(0,2).map((line,i) => '<text x="30" y="' + (126 + i*50) + '" font-family="system-ui,sans-serif" font-size="39" font-weight="800" fill="#17334a">' + escapeSvgText(line) + '</text>').join('');
+          const summarySvg = summaryLines.slice(0,2).map((line,i) => '<text x="32" y="' + (260 + i*30) + '" font-family="system-ui,sans-serif" font-size="22" font-weight="600" fill="#405a6b">' + escapeSvgText(line) + '</text>').join('');
+          const mobileSvg = '<svg xmlns="http://www.w3.org/2000/svg" width="400" height="900" viewBox="0 0 400 900"><rect width="400" height="900" rx="28" fill="' + palette[0] + '"/><rect x="18" y="18" width="364" height="864" rx="22" fill="none" stroke="' + palette[1] + '" stroke-opacity=".2" stroke-width="3"/><text x="30" y="55" font-family="system-ui,sans-serif" font-size="17" font-weight="800" letter-spacing="2" fill="' + palette[1] + '">INVEST ATLAS</text>' + titleSvg + summarySvg + '<circle cx="310" cy="700" r="120" fill="' + palette[1] + '" fill-opacity=".07"/><g transform="translate(0 450) scale(.82)">' + motif + '</g></svg>';
           mobileSource.srcset = 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(mobileSvg);
           const thumbnail = document.createElement('img');
           thumbnail.className = 'article-thumbnail';
