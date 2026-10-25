@@ -224,7 +224,8 @@
       "publishedAt": "2026-10-24",
       "updatedAt": "2026-10-25",
       "thumbnail": "thumbnails/before-you-invest.svg",
-      "cardTitle": "投資前に確認したい7項目"
+      "cardTitle": "投資前に確認したい7項目",
+      "publishOrder": 4
     },
     {
       "slug": "nisa-basics.html",
@@ -252,7 +253,8 @@
       "publishedAt": "2026-10-24",
       "updatedAt": "2026-10-25",
       "thumbnail": "thumbnails/nisa-basics.svg",
-      "cardTitle": "新NISAの仕組み"
+      "cardTitle": "新NISAの仕組み",
+      "publishOrder": 2
     },
     {
       "slug": "choose-investment-trust-nisa.html",
@@ -283,7 +285,8 @@
       "publishedAt": "2026-10-24",
       "updatedAt": "2026-10-25",
       "thumbnail": "thumbnails/choose-investment-trust-nisa.svg",
-      "cardTitle": "NISAの投資信託選び"
+      "cardTitle": "NISAの投資信託選び",
+      "publishOrder": 1
     },
     {
       "slug": "investment-trust-vs-etf.html",
@@ -313,7 +316,8 @@
       "publishedAt": "2026-10-24",
       "updatedAt": "2026-10-25",
       "thumbnail": "thumbnails/investment-trust-vs-etf.svg",
-      "cardTitle": "投資信託とETFの違い"
+      "cardTitle": "投資信託とETFの違い",
+      "publishOrder": 5
     },
     {
       "slug": "investment-trust-fees.html",
@@ -340,7 +344,8 @@
       "publishedAt": "2026-10-24",
       "updatedAt": "2026-10-25",
       "thumbnail": "thumbnails/investment-trust-fees.svg",
-      "cardTitle": "信託報酬とコスト"
+      "cardTitle": "信託報酬とコスト",
+      "publishOrder": 6
     },
     {
       "slug": "regular-investing.html",
@@ -368,7 +373,8 @@
       "publishedAt": "2026-10-24",
       "updatedAt": "2026-10-25",
       "thumbnail": "thumbnails/regular-investing.svg",
-      "cardTitle": "積立投資の仕組み"
+      "cardTitle": "積立投資の仕組み",
+      "publishOrder": 3
     },
     {
       "slug": "ai-semiconductor-investing.html",
@@ -397,7 +403,8 @@
       "publishedAt": "2026-10-25",
       "updatedAt": "2026-10-25",
       "thumbnail": "thumbnails/ai-semiconductor-investing.svg",
-      "cardTitle": "AI・半導体投資の見方"
+      "cardTitle": "AI・半導体投資の見方",
+      "publishOrder": 7
     },
     {
       "slug": "investment-trust-actual-cost.html",
@@ -423,7 +430,8 @@
       "publishedAt": "2026-10-25",
       "updatedAt": "2026-10-25",
       "thumbnail": "thumbnails/investment-trust-actual-cost.svg",
-      "cardTitle": "投資信託の実質コスト"
+      "cardTitle": "投資信託の実質コスト",
+      "publishOrder": 10
     },
     {
       "slug": "investment-trust-investment-targets.html",
@@ -452,7 +460,8 @@
       "publishedAt": "2026-10-25",
       "updatedAt": "2026-10-25",
       "thumbnail": "thumbnails/fund-investment-targets.svg",
-      "cardTitle": "投資信託の投資対象"
+      "cardTitle": "投資信託の投資対象",
+      "publishOrder": 11
     },
     {
       "slug": "investment-trust-index-active.html",
@@ -481,7 +490,8 @@
       "publishedAt": "2026-10-25",
       "updatedAt": "2026-10-25",
       "cardTitle": "インデックス型とアクティブ型",
-      "thumbnail": "thumbnails/investment-trust-index-active.svg"
+      "thumbnail": "thumbnails/investment-trust-index-active.svg",
+      "publishOrder": 8
     },
     {
       "slug": "stock-market-index-basics.html",
@@ -509,7 +519,8 @@
       "publishedAt": "2026-10-25",
       "updatedAt": "2026-10-25",
       "thumbnail": "thumbnails/stock-market-index-basics.svg",
-      "cardTitle": "株価指数の基本"
+      "cardTitle": "株価指数の基本",
+      "publishOrder": 9
     }
   ]
 }
