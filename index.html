@@ -359,7 +359,8 @@
           summary.textContent = article.summary || '';
           const tags = document.createElement('span');
           tags.className = 'article-tags';
-          tags.textContent = (article.tags || []).join(' / ');
+          const articleTags = article.tags || [];
+          tags.textContent = articleTags.slice(0,3).join(' ・ ') + (articleTags.length > 3 ? ' ほか' : '');
           const subcategory = document.createElement('p');
           subcategory.className = 'article-subcategory';
           subcategory.textContent = [article.subcategoryLabel,article.topicLabel].filter(Boolean).join(' › ');
