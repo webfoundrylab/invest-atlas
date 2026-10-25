@@ -400,17 +400,18 @@
         "成長期待",
         "投資リスク"
       ],
-      "summary": "GPU・メモリ・製造装置・データセンター・電力の成長領域と、企業業績・設備投資・株価評価・投資リスクを整理。",
+      "summary": "GPU・メモリ・製造装置・データセンター・電力の成長領域と、企業業績・設備投資・株価評価・市場予測の読み方を整理。",
       "status": "published",
       "related": [
+        "stock-market-index-basics.html",
+        "investment-trust-investment-targets.html",
         "investment-trust-vs-etf.html",
-        "before-you-invest.html",
-        "regular-investing.html"
+        "before-you-invest.html"
       ],
       "subcategory": "investment-themes",
       "topic": "ai-semiconductor",
       "publishedAt": "2026-10-25",
-      "updatedAt": "2026-10-25",
+      "updatedAt": "2026-10-26",
       "thumbnail": "thumbnails/ai-semiconductor-investing.svg",
       "publishOrder": 7,
       "mainTitle": "AI・半導体投資を深掘り",
