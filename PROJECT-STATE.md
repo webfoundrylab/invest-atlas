@@ -893,7 +893,16 @@
 - 変更ファイル：`before-you-invest.html`, `nisa-basics.html`, `choose-investment-trust-nisa.html`, `investment-trust-vs-etf.html`, `investment-trust-fees.html`, `regular-investing.html`, `ai-semiconductor-investing.html`, `investment-trust-actual-cost.html`, `investment-trust-investment-targets.html`, `investment-trust-index-active.html`, `stock-market-index-basics.html`, `article-index.json`、`index.html`、`README.md`、`EDITORIAL-GUIDELINES.md`、`THUMBNAIL-GUIDELINES.md`、`PROJECT-STATE.md`。
 - 検証：主題・副題の台帳登録とH1への反映、正式タイトル・canonical・URLの維持を静的に確認。GitHub Actions と公開画面の確認はコミット後に実施する。
 
+- GitHub Actions run `40210332270`（run #433）は build・検証・GitHub Pages デプロイ成功。結果URL：https://github.com/webfoundrylab/invest-atlas/actions/runs/40210332270
+- カテゴリ別記事一覧の生成処理も、トップページと同じ主題・副題表示に統一する追加修正を実施。
+- 公開URLの独立したブラウザ表示確認は未完了。GitHub Actions の成功と実際のPC・スマートフォン表示確認は区別する。
+
 ## 次の作業
-1. 今回のタイトル変更後に GitHub Actions のビルド・検証・デプロイ結果を確認する。
-2. 公開サイトで記事一覧と記事ページの主題・副題が一致して見えるか、PC・スマートフォンで確認する。
+1. カテゴリ別記事一覧の生成処理を含む追加修正後の GitHub Actions 結果を確認する。
+2. 公開サイトでトップ・カテゴリ一覧・記事ページの主題と副題が一致して見えるか、PC・スマートフォンで確認する。
 3. サムネイル内のタイトル表現を主題・副題ルールに合わせる必要がある記事を確認し、必要に応じて段階的に更新する。
+
+
+## 2026-10-26 追記：カテゴリ一覧のタイトル表示も統一
+- `scripts/build-site.py` のカテゴリ別記事カード生成を変更し、カテゴリページでも `mainTitle` を主題、`subtitle` を副題として表示するようにした。今後の生成・デプロイでも同じ表示ルールを維持する。
+- 追加変更後の Actions 結果は未確認。
