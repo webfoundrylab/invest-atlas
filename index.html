@@ -340,51 +340,13 @@
           thumbLink.setAttribute('aria-label', article.title + 'を読む');
           const picture = document.createElement('picture');
           picture.className = 'article-picture';
-          const mobileSource = document.createElement('source');
-          mobileSource.media = '(max-width: 900px)';
-          const palette = {
-            basics: ['#eaf5f4','#286b69'], nisa: ['#eef2ff','#4356a3'], funds: ['#f1f5e9','#56723e'],
-            strategy: ['#fff3e6','#a55d27'], markets: ['#eaf1fb','#315d91'], companies: ['#f5edf9','#78518f']
-          }[article.category] || ['#eef4f4','#426b6b'];
-          const illustrationBySlug = {
-            'before-you-invest.html': '<circle cx="200" cy="280" r="90" fill="none" stroke="C" stroke-width="12"/><path d="M160 280 l28 28 55 -65" fill="none" stroke="C" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><rect x="100" y="410" width="200" height="22" rx="11" fill="C" opacity=".24"/>',
-            'nisa-basics.html': '<rect x="105" y="180" width="190" height="250" rx="20" fill="none" stroke="C" stroke-width="12"/><path d="M145 240 H255 M145 290 H255 M145 340 H220" stroke="C" stroke-width="12" stroke-linecap="round"/>',
-            'choose-investment-trust-nisa.html': '<path d="M200 170 L285 220 V320 Q285 390 200 435 Q115 390 115 320 V220 Z" fill="none" stroke="C" stroke-width="12" stroke-linejoin="round"/><path d="M155 300 l30 30 62 -72" fill="none" stroke="C" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>',
-            'investment-trust-vs-etf.html': '<rect x="70" y="220" width="105" height="180" rx="15" fill="none" stroke="C" stroke-width="12"/><rect x="225" y="220" width="105" height="180" rx="15" fill="none" stroke="C" stroke-width="12"/><path d="M105 270 H140 M105 310 H140 M260 270 H295 M260 310 H295 M180 300 H220 M208 282 L226 300 L208 318" fill="none" stroke="C" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>',
-            'investment-trust-fees.html': '<circle cx="200" cy="300" r="100" fill="none" stroke="C" stroke-width="14"/><path d="M200 225 V305 L255 340" fill="none" stroke="C" stroke-width="14" stroke-linecap="round"/>',
-            'regular-investing.html': '<path d="M80 400 L140 340 L190 365 L250 270 L320 210" fill="none" stroke="C" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/><path d="M275 210 H320 V255" fill="none" stroke="C" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>',
-            'ai-semiconductor-investing.html': '<rect x="130" y="220" width="140" height="140" rx="18" fill="none" stroke="C" stroke-width="12"/><rect x="165" y="255" width="70" height="70" rx="10" fill="C" opacity=".7"/><path d="M155 190 V220 M200 190 V220 M245 190 V220 M155 360 V390 M200 360 V390 M245 360 V390 M100 255 H130 M100 300 H130 M100 340 H130 M270 255 H300 M270 300 H300 M270 340 H300" stroke="C" stroke-width="9" stroke-linecap="round"/>',
-            'investment-trust-actual-cost.html': '<circle cx="200" cy="300" r="90" fill="none" stroke="C" stroke-width="12"/><path d="M200 210 A90 90 0 0 1 284 330 L200 300 Z" fill="C" opacity=".7"/><path d="M200 300 L140 370" stroke="C" stroke-width="10" stroke-linecap="round"/>',
-            'investment-trust-investment-targets.html': '<circle cx="200" cy="290" r="105" fill="none" stroke="C" stroke-width="10"/><circle cx="200" cy="290" r="68" fill="none" stroke="C" stroke-width="10" opacity=".6"/><circle cx="200" cy="290" r="30" fill="C"/><path d="M200 165 V135 M200 445 V415 M75 290 H45 M355 290 H325" stroke="C" stroke-width="10" stroke-linecap="round"/>'
-          };
-          const motif = (illustrationBySlug[article.slug] || illustrationBySlug['before-you-invest.html']).replace(/C/g, palette[1]);
-          const mobileTileCopy = {
-            'ai-semiconductor-investing.html': ['AI・半導体投資','技術・企業・市場を分析'],
-            'before-you-invest.html': ['投資前の準備','生活資金・目的・期間'],
-            'choose-investment-trust-nisa.html': ['投資信託の選び方','分散・費用・リスク'],
-            'investment-trust-investment-targets.html': ['投資信託の投資対象','何に投資するかで、値動きの要因やリスクが変わる'],
-            'investment-trust-actual-cost.html': ['投資信託の実質コスト','総経費率と費用明細の見方'],
-            'investment-trust-fees.html': ['信託報酬と費用','保有コストを見える化'],
-            'investment-trust-vs-etf.html': ['投資信託とETF','違いを比較して理解'],
-            'nisa-basics.html': ['新NISAの仕組み','非課税制度を理解する'],
-            'regular-investing.html': ['積立投資','時間を味方にする仕組み']
-          };
-          const tileCopy = mobileTileCopy[article.slug] || [article.cardTitle || article.title, article.summary || ''];
-          const cardTitle = tileCopy[0];
-          const titleLines = cardTitle.match(/.{1,7}/gu) || [cardTitle];
-          const summaryText = tileCopy[1];
-          const summaryLines = summaryText.match(/.{1,13}/gu) || [];
-          const escapeSvgText = line => line.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-          const titleSvg = titleLines.slice(0,2).map((line,i) => '<text x="30" y="' + (126 + i*50) + '" font-family="system-ui,sans-serif" font-size="39" font-weight="800" fill="#17334a">' + escapeSvgText(line) + '</text>').join('');
-          const summarySvg = summaryLines.slice(0,2).map((line,i) => '<text x="32" y="' + (260 + i*30) + '" font-family="system-ui,sans-serif" font-size="22" font-weight="600" fill="#405a6b">' + escapeSvgText(line) + '</text>').join('');
-          const mobileSvg = '<svg xmlns="http://www.w3.org/2000/svg" width="400" height="900" viewBox="0 0 400 900"><rect width="400" height="900" rx="28" fill="' + palette[0] + '"/><rect x="18" y="18" width="364" height="864" rx="22" fill="none" stroke="' + palette[1] + '" stroke-opacity=".2" stroke-width="3"/><text x="30" y="55" font-family="system-ui,sans-serif" font-size="17" font-weight="800" letter-spacing="2" fill="' + palette[1] + '">INVEST ATLAS</text>' + titleSvg + summarySvg + '<circle cx="310" cy="700" r="120" fill="' + palette[1] + '" fill-opacity=".07"/><g transform="translate(0 450) scale(.82)">' + motif + '</g></svg>';
-          mobileSource.srcset = 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(mobileSvg);
+
           const thumbnail = document.createElement('img');
           thumbnail.className = 'article-thumbnail';
           thumbnail.src = article.thumbnail || 'thumbnails/before-you-invest.svg';
           thumbnail.alt = '';
           thumbnail.loading = 'lazy';
-          picture.append(mobileSource, thumbnail);
+          picture.append(thumbnail);
           thumbLink.append(picture);
           const main = document.createElement('div');
           const label = document.createElement('a');
