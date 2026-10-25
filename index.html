@@ -359,9 +359,21 @@
             'investment-trust-investment-targets.html': '<circle cx="200" cy="290" r="105" fill="none" stroke="C" stroke-width="10"/><circle cx="200" cy="290" r="68" fill="none" stroke="C" stroke-width="10" opacity=".6"/><circle cx="200" cy="290" r="30" fill="C"/><path d="M200 165 V135 M200 445 V415 M75 290 H45 M355 290 H325" stroke="C" stroke-width="10" stroke-linecap="round"/>'
           };
           const motif = (illustrationBySlug[article.slug] || illustrationBySlug['before-you-invest.html']).replace(/C/g, palette[1]);
-          const cardTitle = article.cardTitle || article.title;
+          const mobileTileCopy = {
+            'ai-semiconductor-investing.html': ['AI・半導体投資','技術・企業・市場を分析'],
+            'before-you-invest.html': ['投資前の準備','生活資金・目的・期間'],
+            'choose-investment-trust-nisa.html': ['投資信託の選び方','分散・費用・リスク'],
+            'fund-investment-targets.html': ['投資信託の投資対象','何に投資するかで、値動きの要因やリスクが変わる'],
+            'investment-trust-actual-cost.html': ['投資信託の実質コスト','総経費率と費用明細の見方'],
+            'investment-trust-fees.html': ['信託報酬と費用','保有コストを見える化'],
+            'investment-trust-vs-etf.html': ['投資信託とETF','違いを比較して理解'],
+            'nisa-basics.html': ['新NISAの仕組み','非課税制度を理解する'],
+            'regular-investing.html': ['積立投資','時間を味方にする仕組み']
+          };
+          const tileCopy = mobileTileCopy[article.slug] || [article.cardTitle || article.title, article.summary || ''];
+          const cardTitle = tileCopy[0];
           const titleLines = cardTitle.match(/.{1,13}/gu) || [cardTitle];
-          const summaryText = article.summary || '';
+          const summaryText = tileCopy[1];
           const summaryLines = summaryText.match(/.{1,20}/gu) || [];
           const titleSvg = titleLines.slice(0,3).map((line,i) => '<text x="34" y="' + (125 + i*52) + '" font-family="system-ui,sans-serif" font-size="40" font-weight="800" fill="#17334a">' + line.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') + '</text>').join('');
           const summarySvg = summaryLines.slice(0,3).map((line,i) => '<text x="36" y="' + (300 + i*32) + '" font-family="system-ui,sans-serif" font-size="23" font-weight="500" fill="#405a6b">' + line.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') + '</text>').join('');
