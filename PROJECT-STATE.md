@@ -761,3 +761,10 @@
 - `thumbnails/investment-trust-index-active.svg` と `thumbnails/stock-market-index-basics.svg` から背景の白抜き円を削除。
 - 変更ファイル：`THUMBNAIL-GUIDELINES.md`（新規）、`README.md`、`PROJECT-STATE.md`、上記サムネイルSVG 2点。
 - GitHub上の変更反映後、Actionsの検証・デプロイ結果と公開ページの実表示を確認する。既存サムネイル全件の描き直しは今回の対象外。
+
+
+## 2026-10-25 サムネイル新レイアウトの試作
+- 共通ルールを試すため、4点の一覧サムネイルを新デザインに変更：投資前の準備、新NISA、信託報酬、AI・半導体投資。
+- 上部に大きな日本語タイトルと小さな英語タイトル、下部に大きな図柄を配置。図柄の背後の白抜き円は使用していない。
+- 変更ファイル：thumbnails/before-you-invest.svg、thumbnails/nisa-basics.svg、thumbnails/investment-trust-fees.svg、thumbnails/ai-semiconductor-investing.svg。
+- GitHub Actionsと公開画面の実表示は確認待ち。表示確認後、共通ルールを微調整する。
