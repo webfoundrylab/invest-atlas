@@ -11,6 +11,7 @@
 <style>
 :root{--ink:#172b3d;--muted:#5c6d7a;--navy:#10243a;--teal:#176d65;--line:#dce4e8;--paper:#f5f7f8}
 *{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);line-height:1.85;background:var(--paper)}a{color:var(--teal);text-underline-offset:3px}a:hover{color:#0b4843}.wrap{width:min(850px,calc(100% - 36px));margin:auto}header{background:var(--navy);padding:18px 0}header a{color:white;text-decoration:none;font-weight:800}.article{background:white;margin:28px auto 52px;padding:clamp(22px,5vw,54px);border:1px solid var(--line);border-radius:14px}.eyebrow{color:var(--teal);font-size:.8rem;font-weight:800;letter-spacing:.08em}h1{font-size:clamp(1.8rem,4vw,2.65rem);line-height:1.35;margin:.5em 0}h2{font-size:1.4rem;margin-top:2em;border-bottom:1px solid var(--line);padding-bottom:.4em}h3{font-size:1.08rem}p,li{font-size:1rem}.lead{font-size:1.1rem;color:#405565}.meta{font-size:.85rem;color:var(--muted)}.table-wrap{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.93rem}th,td{padding:12px;border:1px solid var(--line);text-align:left;vertical-align:top}th{background:#edf3f5}.callout{background:#edf6f4;border-left:4px solid var(--teal);padding:16px 18px;margin:22px 0}.sources li{margin:.55em 0}.diagram{margin:22px 0;padding:12px;background:#f4f7f8;border:1px solid var(--line);border-radius:14px}.diagram img{display:block;width:100%;height:auto}.diagram figcaption{font-size:.9rem;color:var(--muted);padding:8px 4px 2px}footer{background:#0c1c2b;color:#d7e1e8;padding:24px 0;font-size:.9rem}footer a{color:#aee0d7}
+.toc{margin:24px 0;padding:16px 20px;background:#f4f7f8;border:1px solid var(--line);border-radius:12px}.toc h2{margin:0 0 8px;border:0;padding:0;font-size:1.08rem}.toc ol{margin:0;padding-left:1.5em}.toc li{margin:.2em 0}.toc a{text-decoration:none}.toc a:hover{text-decoration:underline}
 </style>
 </head>
 <body>
@@ -20,6 +21,15 @@
 <h1>新NISAとは？つみたて投資枠・成長投資枠と非課税枠を初心者向けに解説</h1>
 <p class="lead">NISAは、一定の投資から得られる利益が非課税になる制度です。ただし、非課税になることと投資で利益が出ることは別です。制度の枠や注意点を知り、生活資金や投資目的に合うかを確認しましょう。</p>
 <p class="meta">公開日：2026年10月24日・情報確認日：2026年10月25日</p>
+<nav class="toc" aria-label="記事内目次"><h2>この記事の目次</h2><ol>
+<li><a href="#toc-nisa-basics-1">NISAの仕組み</a></li>
+<li><a href="#toc-nisa-basics-2">2つの投資枠の違い</a></li>
+<li><a href="#toc-nisa-basics-3">非課税保有限度額は合計1,800万円</a></li>
+<li><a href="#toc-nisa-basics-4">売却すると非課税枠はどうなる？</a></li>
+<li><a href="#toc-nisa-basics-5">NISAを使う前に確認したい注意点</a></li>
+<li><a href="#toc-nisa-basics-6">公式情報で最新条件を確認する</a></li>
+</ol></nav>
+
 <div class="callout"><strong>この記事の要点</strong>
 <ul>
 <li>成人向けNISAには「つみたて投資枠」と「成長投資枠」があり、併用できます。</li>
@@ -29,11 +39,11 @@
 </ul></div>
 <div class="callout"><strong>2027年1月からの変更予定</strong><p>金融庁は、2027年1月から「つみたて投資枠」の年齢要件を撤廃し、0～17歳もNISAを利用できるようにすると案内しています。未成年者はつみたて投資枠のみが対象で、年間投資枠60万円・非課税保有限度額600万円など、成人向けとは異なる条件があります。対象年齢や条件は変更される可能性があるため、利用前に金融庁の最新案内をご確認ください。</p><p><a href="https://www.fsa.go.jp/policy/nisa2/know/" target="_blank" rel="noopener noreferrer">金融庁：NISAを知る（2027年からの年齢要件変更を含む）</a></p></div>
 <figure class="diagram"><img src="images/nisa-allowances.svg" alt="新NISAの年間投資枠はつみたて投資枠120万円と成長投資枠240万円で合計360万円。生涯の非課税保有限度額は1800万円、成長投資枠はそのうち1200万円まで。" width="1200" height="600" loading="lazy"><figcaption>制度の枠を年間と生涯に分けて整理。制度内容は変更される場合があるため、金融庁の最新情報も確認してください。</figcaption></figure>
-<h2>1. NISAの仕組み</h2>
+<h2 id="toc-nisa-basics-1">1. NISAの仕組み</h2>
 <p>通常、株式や投資信託などの売却益・配当等には税金がかかる場合があります。NISA口座で対象商品を保有し、制度上の条件を満たす場合、売却益や配当等が非課税になります。NISAを使うには、銀行や証券会社などでNISA口座を開設します。</p>
 <p>非課税になるのは対象となる利益であり、投資元本が守られるわけではありません。値下がりすれば、購入額を下回る可能性があります。</p>
 <figure class="diagram"><img src="images/nisa-system-diagram.svg" alt="新NISAの図解。つみたて投資枠は年間120万円、成長投資枠は年間240万円で併用可能。年間合計360万円、非課税保有限度額は1,800万円で成長投資枠は1,200万円まで。売却した商品の取得金額分は翌年以降に再利用できます。" width="1200" height="800" loading="lazy"><figcaption>新NISAの投資枠と売却後の枠の再利用をまとめた概念図。年間投資枠と非課税保有限度額は別の上限です。制度情報は2026年10月25日に確認。</figcaption></figure>
-<h2>2. 2つの投資枠の違い</h2>
+<h2 id="toc-nisa-basics-2">2. 2つの投資枠の違い</h2>
 <div class="table-wrap"><table>
 <thead><tr><th>項目</th><th>つみたて投資枠</th><th>成長投資枠</th></tr></thead>
 <tbody>
@@ -42,13 +52,13 @@
 <tr><th>併用</th><td colspan="2">同じNISA口座で併用可能</td></tr>
 </tbody></table></div>
 <p>年間投資枠は、つみたて投資枠が120万円、成長投資枠が240万円で、合計最大360万円です。これは投資できる上限であり、上限まで投資する必要はありません。投資対象や取扱商品は金融機関によって異なるため、購入前に公式の商品一覧や目論見書を確認してください。</p><p class="related-inline">関連ガイド：<a href="choose-investment-trust-nisa.html">NISAで投資信託を選ぶチェックポイント</a></p>
-<h2>3. 非課税保有限度額は合計1,800万円</h2>
+<h2 id="toc-nisa-basics-3">3. 非課税保有限度額は合計1,800万円</h2>
 <p>成人向けNISAの非課税保有限度額（総枠）は1人あたり1,800万円です。このうち、成長投資枠で保有できる上限は1,200万円です。枠は時価ではなく、原則として買付け時の金額（簿価）をもとに管理されます。</p>
 <p>例えば、商品を100万円で購入し、値上がりして150万円になった場合、保有枠の計算は時価150万円ではなく、取得金額100万円を基準にします。具体的な枠の利用状況は、金融機関の口座画面で確認してください。</p>
-<h2>4. 売却すると非課税枠はどうなる？</h2>
+<h2 id="toc-nisa-basics-4">4. 売却すると非課税枠はどうなる？</h2>
 <p>NISA口座の商品を売却すると、売却した商品の取得金額（簿価）分の非課税保有限度額を翌年以降に再利用できます。売却した年に年間投資枠が増えるわけではなく、再利用できるのは翌年以降です。また、その年に使わなかった年間投資枠を翌年に繰り越すことはできません。</p>
 <div class="callout"><strong>例</strong>100万円で購入した商品を150万円で売却した場合、翌年以降に再利用できる非課税保有限度額は、売却額の150万円ではなく取得金額の100万円分です。売却によって損益がなくなるわけではありません。</div>
-<h2>5. NISAを使う前に確認したい注意点</h2>
+<h2 id="toc-nisa-basics-5">5. NISAを使う前に確認したい注意点</h2>
 <ul>
 <li><strong>元本保証ではない：</strong>株式や投資信託の価格は変動し、損失が生じることがあります。</li>
 <li><strong>対象商品を確認する：</strong>すべての金融商品がNISAで買えるわけではありません。</li>
@@ -57,7 +67,7 @@
 <li><strong>配当等の受取方法を確認する：</strong>上場株式の配当等を非課税にするには、受取方法など所定の条件があります。証券会社の案内を確認してください。</li>
 <li><strong>制度改正に注意する：</strong>制度や対象者の条件は変更される場合があります。申込み時点の金融庁・国税庁の案内を確認してください。</li>
 </ul><p class="related-inline">関連ガイド：<a href="before-you-invest.html">投資を始める前に確認したい7つのこと</a></p>
-<h2>6. 公式情報で最新条件を確認する</h2>
+<h2 id="toc-nisa-basics-6">6. 公式情報で最新条件を確認する</h2>
 <p>制度の条件や対象商品は変更される可能性があります。口座開設や商品購入の前には、次の公式情報を確認してください。</p>
 <ul class="sources">
 <li><a href="https://www.fsa.go.jp/policy/nisa2/know/index.html" target="_blank" rel="noopener noreferrer">金融庁：NISAを知る</a> — 制度の概要、投資枠、非課税保有限度額</li>
