@@ -845,3 +845,11 @@
 - assets/category-pagination.js コミット：adce0a820be6ee86e84039a58d30eb5e05b9fed2。
 - README コミット：c15d84c28f084353405b543e638c0564d3a4b566。
 - 未確認：GitHub Actions のビルド・デプロイ結果、生成されたカテゴリページの実表示、スマホでの実操作。次にActionsを確認し、カテゴリページの上位・下位カテゴリで表示件数切り替えとページ遷移を確認する。
+
+
+## 2026-10-26 スマートフォン向けPC表示切り替えを追加
+- iPhoneのSafariで「デスクトップ用Webサイトを表示」を選んでも、サイト側のレスポンシブCSSがスマホ用レイアウトを適用し続ける問題への対応。
+- `assets/display-mode.js` を追加。ページ右下のボタンで「PC表示に切替／スマホ表示に戻す」を選べるようにし、PC表示では viewport 幅を1024pxに変更する方式を採用。選択は localStorage に保存する。
+- トップページ `index.html` と、`scripts/build-site.py` が生成するカテゴリページ・記事ページに共通スクリプトを読み込ませる。
+- `README.md` に動作と保存方式を記録。
+- GitHubへの変更はファイル単位でコミット済み。GitHub Actionsの結果と公開URLでのiPhone実機表示は、これから確認する。実機での確認は未実施。
