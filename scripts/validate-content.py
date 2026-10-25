@@ -84,6 +84,11 @@ try:
         errors.append(f"sitemap missing URL: {url}")
     for url in sorted(actual_urls - expected_urls):
         errors.append(f"sitemap contains unregistered URL: {url}")
+    text_urls = set((ROOT / "sitemap.txt").read_text(encoding="utf-8").splitlines())
+    for url in sorted(expected_urls - text_urls):
+        errors.append(f"text sitemap missing URL: {url}")
+    for url in sorted(text_urls - expected_urls):
+        errors.append(f"text sitemap contains unregistered URL: {url}")
 except Exception as exc:
     errors.append(f"cannot parse sitemap.xml: {exc}")
 
