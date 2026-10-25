@@ -217,7 +217,8 @@
       "topic": "investment-preparation",
       "publishedAt": "2026-10-24",
       "updatedAt": "2026-10-25",
-      "thumbnail": "thumbnails/before-you-invest.svg"
+      "thumbnail": "thumbnails/before-you-invest.svg",
+      "cardTitle": "投資前に確認したい7項目"
     },
     {
       "slug": "nisa-basics.html",
@@ -244,7 +245,8 @@
       "topic": "new-nisa-basics",
       "publishedAt": "2026-10-24",
       "updatedAt": "2026-10-25",
-      "thumbnail": "thumbnails/nisa-basics.svg"
+      "thumbnail": "thumbnails/nisa-basics.svg",
+      "cardTitle": "新NISAの仕組み"
     },
     {
       "slug": "choose-investment-trust-nisa.html",
@@ -274,7 +276,8 @@
       "topic": "choosing-funds",
       "publishedAt": "2026-10-24",
       "updatedAt": "2026-10-25",
-      "thumbnail": "thumbnails/choose-investment-trust-nisa.svg"
+      "thumbnail": "thumbnails/choose-investment-trust-nisa.svg",
+      "cardTitle": "NISAの投資信託選び"
     },
     {
       "slug": "investment-trust-vs-etf.html",
@@ -303,7 +306,8 @@
       "subcategory": "fund-etf-comparison",
       "publishedAt": "2026-10-24",
       "updatedAt": "2026-10-25",
-      "thumbnail": "thumbnails/investment-trust-vs-etf.svg"
+      "thumbnail": "thumbnails/investment-trust-vs-etf.svg",
+      "cardTitle": "投資信託とETFの違い"
     },
     {
       "slug": "investment-trust-fees.html",
@@ -329,7 +333,8 @@
       "topic": "expense-types",
       "publishedAt": "2026-10-24",
       "updatedAt": "2026-10-25",
-      "thumbnail": "thumbnails/investment-trust-fees.svg"
+      "thumbnail": "thumbnails/investment-trust-fees.svg",
+      "cardTitle": "信託報酬とコスト"
     },
     {
       "slug": "regular-investing.html",
@@ -356,7 +361,8 @@
       "topic": "dollar-cost-averaging",
       "publishedAt": "2026-10-24",
       "updatedAt": "2026-10-25",
-      "thumbnail": "thumbnails/regular-investing.svg"
+      "thumbnail": "thumbnails/regular-investing.svg",
+      "cardTitle": "積立投資の仕組み"
     },
     {
       "slug": "ai-semiconductor-investing.html",
@@ -384,7 +390,8 @@
       "topic": "ai-semiconductor",
       "publishedAt": "2026-10-25",
       "updatedAt": "2026-10-25",
-      "thumbnail": "thumbnails/ai-semiconductor-investing.svg"
+      "thumbnail": "thumbnails/ai-semiconductor-investing.svg",
+      "cardTitle": "AI・半導体投資の見方"
     },
     {
       "slug": "investment-trust-actual-cost.html",
@@ -409,7 +416,8 @@
       ],
       "publishedAt": "2026-10-25",
       "updatedAt": "2026-10-25",
-      "thumbnail": "thumbnails/investment-trust-actual-cost.svg"
+      "thumbnail": "thumbnails/investment-trust-actual-cost.svg",
+      "cardTitle": "投資信託の実質コスト"
     },
     {
       "slug": "investment-trust-investment-targets.html",
@@ -437,7 +445,8 @@
       ],
       "publishedAt": "2026-10-25",
       "updatedAt": "2026-10-25",
-      "thumbnail": "thumbnails/fund-investment-targets.svg"
+      "thumbnail": "thumbnails/fund-investment-targets.svg",
+      "cardTitle": "投資信託の投資対象"
     }
   ]
 }
