@@ -145,11 +145,11 @@
     .results-toolbar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin:0 0 10px;padding:10px 12px;background:#e8f5f5;border:1px solid #d2e8e8;border-radius:10px}.result-count{margin:0;color:#123653;font-size:.9rem;font-weight:850}.library-results{min-width:0}
     .article-dates{display:flex;align-items:center;flex-wrap:wrap;gap:5px;margin-top:7px;font-size:.75rem;line-height:1.4}.article-date-chip{display:inline-flex;align-items:center;border-radius:6px;padding:3px 7px;font-weight:750;white-space:nowrap}.article-date-chip.updated{color:#075e58;background:#dff6ef;border:1px solid #b6e3d9}.article-date-chip.published{color:#40596b;background:#eef3f6;border:1px solid #d8e2e8}
     .article-list{display:flex;flex-direction:column;gap:9px}
-    .article-row{display:grid;grid-template-columns:140px minmax(0,1fr) auto;align-items:center;gap:13px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px;transition:border-color .15s,background .15s}
+    .article-row{display:grid;grid-template-columns:176px minmax(0,1fr) auto;align-items:center;gap:20px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px 22px;transition:border-color .15s,background .15s;min-height:190px}
     .article-row:hover{border-color:#65c4b5;background:#fbfffe}
     .article-row[hidden]{display:none}
     .article-category{display:inline-flex;align-self:flex-start;font-size:.7rem;font-weight:800;color:#08766e;background:#e3f8f3;border-radius:6px;padding:2px 7px;text-align:center;text-decoration:none;margin-bottom:4px}
-    .article-picture{display:block;width:100%;min-width:0}.article-thumbnail{display:block;width:140px;height:79px;object-fit:cover;border-radius:8px;border:1px solid #d8e5e8;background:#edf6f6}.article-row h3{font-size:.98rem;line-height:1.45;margin:0 0 4px}
+    .article-picture{display:block;width:100%;min-width:0;max-width:176px}.article-thumbnail{display:block;width:140px;height:79px;object-fit:cover;border-radius:8px;border:1px solid #d8e5e8;background:#edf6f6}.article-row h3{font-size:.98rem;line-height:1.45;margin:0 0 4px}
     .article-row h3 a{color:var(--ink);text-decoration:none}
     .article-row h3 a:hover{text-decoration:underline;color:#08766e}
     .article-row p{font-size:.86rem;color:var(--muted);margin:0;line-height:1.5}
@@ -343,16 +343,23 @@
           picture.className = 'article-picture';
           const mobileSource = document.createElement('source');
           mobileSource.media = '(max-width: 900px)';
-          const categoryName = categoryLabels[article.category] || '投資ガイド';
           const palette = {
-            basics: ['#eaf5f4','#286b69'],
-            nisa: ['#eef2ff','#4356a3'],
-            funds: ['#f1f5e9','#56723e'],
-            strategy: ['#fff3e6','#a55d27'],
-            markets: ['#eaf1fb','#315d91'],
-            companies: ['#f5edf9','#78518f']
+            basics: ['#eaf5f4','#286b69'], nisa: ['#eef2ff','#4356a3'], funds: ['#f1f5e9','#56723e'],
+            strategy: ['#fff3e6','#a55d27'], markets: ['#eaf1fb','#315d91'], companies: ['#f5edf9','#78518f']
           }[article.category] || ['#eef4f4','#426b6b'];
-          const mobileSvg = '<svg xmlns="http://www.w3.org/2000/svg" width="400" height="600" viewBox="0 0 400 600"><rect width="400" height="600" rx="28" fill="' + palette[0] + '"/><rect x="18" y="18" width="364" height="564" rx="22" fill="none" stroke="' + palette[1] + '" stroke-opacity=".24" stroke-width="3"/><circle cx="300" cy="115" r="68" fill="' + palette[1] + '" fill-opacity=".10"/><circle cx="94" cy="458" r="74" fill="' + palette[1] + '" fill-opacity=".08"/><g transform="translate(58 142)" fill="none" stroke="' + palette[1] + '" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"><rect x="0" y="0" width="284" height="210" rx="24" stroke-opacity=".28" stroke-width="5"/><path d="M34 166 L92 118 L139 140 L201 61 L249 88"/><circle cx="92" cy="118" r="9" fill="' + palette[1] + '"/><circle cx="201" cy="61" r="9" fill="' + palette[1] + '"/><path d="M222 61 H201 V82" stroke-width="7"/></g><path d="M72 420 H328" stroke="' + palette[1] + '" stroke-opacity=".35" stroke-width="5" stroke-linecap="round"/><rect x="72" y="456" width="112" height="16" rx="8" fill="' + palette[1] + '" fill-opacity=".75"/><rect x="72" y="486" width="206" height="12" rx="6" fill="' + palette[1] + '" fill-opacity=".3"/><rect x="72" y="510" width="160" height="12" rx="6" fill="' + palette[1] + '" fill-opacity=".18"/></svg>';
+          const illustrationBySlug = {
+            'before-you-invest.html': '<circle cx="200" cy="280" r="90" fill="none" stroke="C" stroke-width="12"/><path d="M160 280 l28 28 55 -65" fill="none" stroke="C" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><rect x="100" y="410" width="200" height="22" rx="11" fill="C" opacity=".24"/>',
+            'nisa-basics.html': '<rect x="105" y="180" width="190" height="250" rx="20" fill="none" stroke="C" stroke-width="12"/><path d="M145 240 H255 M145 290 H255 M145 340 H220" stroke="C" stroke-width="12" stroke-linecap="round"/>',
+            'choose-investment-trust-nisa.html': '<path d="M200 170 L285 220 V320 Q285 390 200 435 Q115 390 115 320 V220 Z" fill="none" stroke="C" stroke-width="12" stroke-linejoin="round"/><path d="M155 300 l30 30 62 -72" fill="none" stroke="C" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>',
+            'investment-trust-vs-etf.html': '<rect x="70" y="220" width="105" height="180" rx="15" fill="none" stroke="C" stroke-width="12"/><rect x="225" y="220" width="105" height="180" rx="15" fill="none" stroke="C" stroke-width="12"/><path d="M105 270 H140 M105 310 H140 M260 270 H295 M260 310 H295 M180 300 H220 M208 282 L226 300 L208 318" fill="none" stroke="C" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>',
+            'investment-trust-fees.html': '<circle cx="200" cy="300" r="100" fill="none" stroke="C" stroke-width="14"/><path d="M200 225 V305 L255 340" fill="none" stroke="C" stroke-width="14" stroke-linecap="round"/>',
+            'regular-investing.html': '<path d="M80 400 L140 340 L190 365 L250 270 L320 210" fill="none" stroke="C" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/><path d="M275 210 H320 V255" fill="none" stroke="C" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>',
+            'ai-semiconductor-investing.html': '<rect x="130" y="220" width="140" height="140" rx="18" fill="none" stroke="C" stroke-width="12"/><rect x="165" y="255" width="70" height="70" rx="10" fill="C" opacity=".7"/><path d="M155 190 V220 M200 190 V220 M245 190 V220 M155 360 V390 M200 360 V390 M245 360 V390 M100 255 H130 M100 300 H130 M100 340 H130 M270 255 H300 M270 300 H300 M270 340 H300" stroke="C" stroke-width="9" stroke-linecap="round"/>',
+            'investment-trust-actual-cost.html': '<circle cx="200" cy="300" r="90" fill="none" stroke="C" stroke-width="12"/><path d="M200 210 A90 90 0 0 1 284 330 L200 300 Z" fill="C" opacity=".7"/><path d="M200 300 L140 370" stroke="C" stroke-width="10" stroke-linecap="round"/>',
+            'investment-trust-investment-targets.html': '<circle cx="200" cy="290" r="105" fill="none" stroke="C" stroke-width="10"/><circle cx="200" cy="290" r="68" fill="none" stroke="C" stroke-width="10" opacity=".6"/><circle cx="200" cy="290" r="30" fill="C"/><path d="M200 165 V135 M200 445 V415 M75 290 H45 M355 290 H325" stroke="C" stroke-width="10" stroke-linecap="round"/>'
+          };
+          const motif = (illustrationBySlug[article.slug] || illustrationBySlug['before-you-invest.html']).replace(/C/g, palette[1]);
+          const mobileSvg = '<svg xmlns="http://www.w3.org/2000/svg" width="400" height="600" viewBox="0 0 400 600"><rect width="400" height="600" rx="28" fill="' + palette[0] + '"/><rect x="18" y="18" width="364" height="564" rx="22" fill="none" stroke="' + palette[1] + '" stroke-opacity=".2" stroke-width="3"/><circle cx="320" cy="100" r="70" fill="' + palette[1] + '" fill-opacity=".07"/><circle cx="80" cy="500" r="80" fill="' + palette[1] + '" fill-opacity=".06"/>' + motif + '</svg>';
           mobileSource.srcset = 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(mobileSvg);
           const thumbnail = document.createElement('img');
           thumbnail.className = 'article-thumbnail';
