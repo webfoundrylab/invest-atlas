@@ -873,3 +873,13 @@
 - スマートフォンの縦表示ではサムネイルを明示的に非表示にし、記事タイトル・概要・分類・日付を横幅いっぱいに使えるようにした。
 - 変更ファイル：index.html、本ファイル。
 - GitHub Actionsの結果と公開画面でのPC・スマートフォン表示はコミット後に確認する。
+
+
+## 2026-10-26 全公開記事のサムネイルを新ルールで統一
+- 最新の `article-index.json` を基準に、公開記事11件の登録済みサムネイルを総点検し、全11点を共通ルールで再制作。
+- 対象：`before-you-invest.svg`、`nisa-basics.svg`、`choose-investment-trust-nisa.svg`、`investment-trust-vs-etf.svg`、`investment-trust-fees.svg`、`regular-investing.svg`、`ai-semiconductor-investing.svg`、`investment-trust-actual-cost.svg`、`fund-investment-targets.svg`、`investment-trust-index-active.svg`、`stock-market-index-basics.svg`。
+- 全点を1200×675（16:9）に統一。英語タイトルを上、日本語の正式記事タイトルをその下に配置し、下部は記事ごとに異なる主図柄を大きく配置。図柄の背後の装飾用白抜き大円は不使用。
+- SVG内の日本語タイトルと `article-index.json` の正式タイトルを11件すべて照合し、サムネイル登録パスも確認。
+- `thumbnails/mobile/` 内の旧画像は、記事台帳の登録先ではなく、現在の公開記事サムネイルとしては参照されていないため今回の対象外。現行のスマートフォン縦表示ではサムネイル自体を非表示にする仕様を維持。
+- 変更ファイル：上記SVG 11点、本ファイル。
+- GitHub Actionsの検証・デプロイ結果と公開ページでの実表示確認は、コミット後に確認する。

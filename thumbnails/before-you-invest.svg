@@ -1,17 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
-<defs><linearGradient id="bg" x2="0" y2="1"><stop stop-color="#e7faf4"/><stop offset="1" stop-color="#c8eee4"/></linearGradient></defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="投資を始める前に確認したい7つのこと">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e9f8f3"/><stop offset="1" stop-color="#c9eee3"/></linearGradient></defs>
 <rect width="1200" height="675" rx="24" fill="url(#bg)"/>
-<text x="64" y="139" font-family="sans-serif" font-size="56" font-weight="800" fill="#17334a">投資前に確認したい7つのこと</text>
-<text x="68" y="76" font-family="sans-serif" font-size="30" font-weight="700" letter-spacing="3" fill="#087f75">BEFORE YOU INVEST</text>
-<path d="M64 176H1136" stroke="#87cfc0" stroke-width="3"/>
-<g transform="translate(600 425)">
- <path d="M0 -185L170 -115L150 45Q125 140 0 188Q-125 140 -150 45L-170 -115Z" fill="#fff" stroke="#087f75" stroke-width="10" stroke-linejoin="round"/>
- <path d="M-74 0L-20 54L87 -70" fill="none" stroke="#087f75" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
- <g fill="#f2b84b" stroke="#a66b19" stroke-width="5">
- <circle cx="-265" cy="-95" r="34"/><circle cx="270" cy="-80" r="34"/><circle cx="-260" cy="112" r="34"/><circle cx="260" cy="115" r="34"/>
- </g>
- <g stroke="#a66b19" stroke-width="6" stroke-linecap="round">
- <path d="M-280 -95h30M-265 -110v30M255 -80h30M270 -95v30M-275 112h30M-260 97v30M245 115h30M260 100v30"/>
- </g>
- <path d="M-210 -115L-155 -100M210 -110L155 -100M-210 110L-155 100M210 112L155 102" stroke="#4a9e90" stroke-width="7" stroke-linecap="round" stroke-dasharray="10 12"/>
-</g></svg>
+<text x="64" y="65" font-family="sans-serif" font-size="30" font-weight="700" letter-spacing="2" fill="#138578">BEFORE YOU INVEST</text>
+<text x="64" y="124" font-family="sans-serif" font-size="40" font-weight="800" fill="#17334a"><tspan x="64" dy="0">投資を始める前に確認したい</tspan><tspan x="64" dy="48">7つのこと</tspan></text>
+<path d="M64 218H1136" stroke="#138578" stroke-opacity=".35" stroke-width="3"/>
+<g stroke-linecap="round" stroke-linejoin="round"><path d="M600 278 L735 330 V425 C735 500 675 548 600 576 C525 548 465 500 465 425 V330Z" fill="#fffdf8" stroke="#138578" stroke-width="9"/><path d="M545 424 l38 38 77 -88" fill="none" stroke="#138578" stroke-width="17"/><rect x="300" y="360" width="110" height="145" rx="18" fill="#f7fffc" stroke="#83cbbd" stroke-width="6"/><path d="M325 395h60M325 425h48M325 455h55" stroke="#83cbbd" stroke-width="8"/><rect x="790" y="360" width="110" height="145" rx="18" fill="#f7fffc" stroke="#83cbbd" stroke-width="6"/><path d="M815 395h60M815 425h48M815 455h55" stroke="#83cbbd" stroke-width="8"/></g>
+</svg>

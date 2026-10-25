@@ -1,18 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
-<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e0f4ef"/><stop offset="1" stop-color="#e5ebfa"/></linearGradient></defs>
-<rect width="1200" height="675" rx="28" fill="url(#bg)"/>
-<text x="64" y="78" font-family="system-ui,sans-serif" font-size="30" font-weight="700" fill="#176d65" letter-spacing="2">INVESTMENT TRUST BASICS</text>
-<text x="64" y="160" font-family="system-ui,sans-serif" font-size="59" font-weight="800" fill="#172b3d">インデックス型</text>
-<text x="64" y="228" font-family="system-ui,sans-serif" font-size="59" font-weight="800" fill="#172b3d">vs アクティブ型</text>
-<rect x="64" y="280" width="1072" height="310" rx="24" fill="#fff" opacity=".84"/>
-<rect x="94" y="312" width="478" height="244" rx="18" fill="#e8f5f2"/>
-<rect x="628" y="312" width="478" height="244" rx="18" fill="#eef0fb"/>
-<text x="125" y="356" font-family="system-ui,sans-serif" font-size="27" font-weight="800" fill="#176d65">INDEX</text>
-<path d="M130 488H530 M130 448H530 M130 408H530" stroke="#c7dfda" stroke-width="2" stroke-dasharray="7 8"/>
-<path d="M138 478 L205 463 L270 448 L340 430 L405 414 L470 394 L525 378" fill="none" stroke="#176d65" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="659" y="356" font-family="system-ui,sans-serif" font-size="27" font-weight="800" fill="#4b58a2">ACTIVE</text>
-<path d="M664 488H1064 M664 448H1064 M664 408H1064" stroke="#d7d9ef" stroke-width="2" stroke-dasharray="7 8"/>
-<path d="M672 478 L735 451 L798 464 L865 407 L925 431 L990 386 L1058 369" fill="none" stroke="#4b58a2" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="125" y="532" font-family="system-ui,sans-serif" font-size="19" font-weight="600" fill="#405565">指数への連動を目指す</text>
-<text x="659" y="532" font-family="system-ui,sans-serif" font-size="19" font-weight="600" fill="#405565">運用者が銘柄などを判断</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="インデックス型とアクティブ型の違いは？運用方法・コスト・選び方">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e5f5ef"/><stop offset="1" stop-color="#e4eafb"/></linearGradient></defs>
+<rect width="1200" height="675" rx="24" fill="url(#bg)"/>
+<text x="64" y="65" font-family="sans-serif" font-size="30" font-weight="700" letter-spacing="2" fill="#176d65">INDEX VS ACTIVE</text>
+<text x="64" y="124" font-family="sans-serif" font-size="40" font-weight="800" fill="#17334a"><tspan x="64" dy="0">インデックス型とアクティブ型の違いは？</tspan><tspan x="64" dy="48">運用方法・コスト・選び方</tspan></text>
+<path d="M64 218H1136" stroke="#176d65" stroke-opacity=".35" stroke-width="3"/>
+<g stroke-linejoin="round"><rect x="260" y="295" width="300" height="270" rx="24" fill="#fafffd" stroke="#8bcbbd" stroke-width="7"/><rect x="640" y="295" width="300" height="270" rx="24" fill="#fafffd" stroke="#8bcbbd" stroke-width="7"/><text x="410" y="350" text-anchor="middle" font-size="30" font-weight="800" fill="#176d65">インデックス型</text><text x="790" y="350" text-anchor="middle" font-size="30" font-weight="800" fill="#176d65">アクティブ型</text><path d="M310 475l50-40 50 10 50-10 50 0" fill="none" stroke="#176d65" stroke-width="8" stroke-linecap="round"/><path d="M690 485l45-65 40 40 40-80 45 35 35-55" fill="none" stroke="#176d65" stroke-width="8" stroke-linecap="round"/><path d="M310 515h200M690 515h200" stroke="#b4dfd5" stroke-width="7" stroke-linecap="round"/></g>
 </svg>

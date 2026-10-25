@@ -1,15 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
-<defs><linearGradient id="bg" x2="0" y2="1"><stop stop-color="#edf0ff"/><stop offset="1" stop-color="#ccd7ff"/></linearGradient></defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="AI・半導体投資を深掘り｜成長領域・関連企業・リスクの見方">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#edf0ff"/><stop offset="1" stop-color="#cdd7ff"/></linearGradient></defs>
 <rect width="1200" height="675" rx="24" fill="url(#bg)"/>
-<text x="64" y="139" font-family="sans-serif" font-size="54" font-weight="800" fill="#17334a">AI・半導体投資の見方</text>
-<text x="68" y="76" font-family="sans-serif" font-size="30" font-weight="700" letter-spacing="3" fill="#4b5eb7">AI &amp; SEMICONDUCTORS</text>
-<path d="M64 176H1136" stroke="#a8b7f0" stroke-width="3"/>
-<g transform="translate(600 435)">
- <rect x="-160" y="-145" width="320" height="290" rx="28" fill="#fff" stroke="#4b5eb7" stroke-width="10"/>
- <rect x="-83" y="-70" width="166" height="140" rx="15" fill="#dbe2ff" stroke="#4b5eb7" stroke-width="8"/>
- <path d="M-105 -190V-145M-35 -190V-145M35 -190V-145M105 -190V-145M-105 145V190M-35 145V190M35 145V190M105 145V190M-210 -80H-160M-210 0H-160M-210 80H-160M160 -80H210M160 0H210M160 80H210" stroke="#4b5eb7" stroke-width="12" stroke-linecap="round"/>
- <path d="M-55 35L-15 -15L20 10L60 -38" fill="none" stroke="#7061cf" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
- <circle cx="245" cy="-100" r="38" fill="#f2a69a" stroke="#b85d64" stroke-width="7"/>
- <path d="M220 -100H270M245 -125V-75" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
- <path d="M-255 105L-225 75L-195 95L-165 55" fill="none" stroke="#4b5eb7" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-</g></svg>
+<text x="64" y="65" font-family="sans-serif" font-size="30" font-weight="700" letter-spacing="2" fill="#4b5eb7">AI &amp; SEMICONDUCTORS</text>
+<text x="64" y="124" font-family="sans-serif" font-size="40" font-weight="800" fill="#17334a"><tspan x="64" dy="0">AI・半導体投資を深掘り｜成長領域・</tspan><tspan x="64" dy="48">関連企業・リスクの見方</tspan></text>
+<path d="M64 218H1136" stroke="#4b5eb7" stroke-opacity=".35" stroke-width="3"/>
+<g stroke-linejoin="round"><rect x="415" y="300" width="370" height="265" rx="30" fill="#f9faff" stroke="#8295e6" stroke-width="8"/><rect x="485" y="360" width="230" height="145" rx="18" fill="#dce3ff" stroke="#4b5eb7" stroke-width="7"/><path d="M515 335v25M565 335v25M615 335v25M665 335v25M515 505v25M565 505v25M615 505v25M665 505v25M390 350h25M390 400h25M390 450h25M390 500h25M785 350h25M785 400h25M785 450h25M785 500h25" stroke="#4b5eb7" stroke-width="8" stroke-linecap="round"/><path d="M530 455l45-45 35 27 60-55" fill="none" stroke="#4b5eb7" stroke-width="10" stroke-linecap="round"/><path d="M650 382h20v20" fill="none" stroke="#4b5eb7" stroke-width="8" stroke-linecap="round"/><path d="M300 540l50-55 45 20M815 300l42-44 42 14" fill="none" stroke="#8a9beb" stroke-width="8" stroke-linecap="round"/></g>
+</svg>
