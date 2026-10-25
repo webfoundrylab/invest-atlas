@@ -905,4 +905,4 @@
 
 ## 2026-10-26 追記：カテゴリ一覧のタイトル表示も統一
 - `scripts/build-site.py` のカテゴリ別記事カード生成を変更し、カテゴリページでも `mainTitle` を主題、`subtitle` を副題として表示するようにした。今後の生成・デプロイでも同じ表示ルールを維持する。
-- 追加変更後の Actions 結果は未確認。
+- 追加変更後の GitHub Actions run `40210429429`（run #434）は build・検証・GitHub Pages デプロイのすべて成功。結果URL：https://github.com/webfoundrylab/invest-atlas/actions/runs/40210429429
