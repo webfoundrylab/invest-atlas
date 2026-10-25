@@ -768,3 +768,11 @@
 - 上部に大きな日本語タイトルと小さな英語タイトル、下部に大きな図柄を配置。図柄の背後の白抜き円は使用していない。
 - 変更ファイル：thumbnails/before-you-invest.svg、thumbnails/nisa-basics.svg、thumbnails/investment-trust-fees.svg、thumbnails/ai-semiconductor-investing.svg。
 - GitHub Actionsと公開画面の実表示は確認待ち。表示確認後、共通ルールを微調整する。
+
+
+## 2026-10-25 サムネイルのタイトル配置を微調整
+- 試作4点で英語タイトルを上、日本語の記事名を下に入れ替え、日本語タイトルが上端に寄って見える印象を緩和。
+- 英語タイトルを23pxから30pxへ拡大し、タイトル帯下の区切り線を少し下げた。
+- `THUMBNAIL-GUIDELINES.md` も更新し、以後の標準配置として記録。
+- 変更ファイル：`thumbnails/before-you-invest.svg`、`thumbnails/nisa-basics.svg`、`thumbnails/investment-trust-fees.svg`、`thumbnails/ai-semiconductor-investing.svg`、`THUMBNAIL-GUIDELINES.md`、`PROJECT-STATE.md`。
+- GitHubへの反映は完了。今回の変更後のGitHub Actions結果と公開画面での実表示は確認待ち。
