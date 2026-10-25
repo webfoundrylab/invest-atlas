@@ -1,1 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675"><defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d9f4ee"/><stop offset="1" stop-color="#dce8ff"/></linearGradient></defs><rect width="1200" height="675" rx="28" fill="url(#bg)"/><circle cx="1010" cy="450" r="210" fill="#fff" opacity=".5"/><text x="72" y="94" font-family="system-ui,sans-serif" font-size="34" font-weight="700" fill="#176d65">MARKET BASICS</text><text x="72" y="190" font-family="system-ui,sans-serif" font-size="72" font-weight="800" fill="#172b3d">株価指数とは？</text><text x="74" y="250" font-family="system-ui,sans-serif" font-size="31" font-weight="600" fill="#405565">日経平均・TOPIX・S&amp;P 500</text><rect x="100" y="325" width="970" height="220" rx="24" fill="#fff" opacity=".78"/><path d="M155 495H1015 M155 440H1015 M155 385H1015 M165 491 L270 470 L360 483 L450 428 L540 451 L640 402 L725 421 L820 370 L915 387 L1000 350" fill="none" stroke="#176d65" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d9f4ee"/><stop offset="1" stop-color="#dce8ff"/></linearGradient></defs>
+<rect width="1200" height="675" rx="28" fill="url(#bg)"/>
+<circle cx="1000" cy="455" r="145" fill="#fff" opacity=".46"/>
+<text x="64" y="86" font-family="system-ui,sans-serif" font-size="32" font-weight="700" fill="#176d65">MARKET BASICS</text>
+<text x="64" y="172" font-family="system-ui,sans-serif" font-size="68" font-weight="800" fill="#172b3d">株価指数とは？</text>
+<text x="66" y="228" font-family="system-ui,sans-serif" font-size="29" font-weight="600" fill="#405565">日経平均・TOPIX・S&amp;P 500</text>
+<rect x="64" y="285" width="1072" height="305" rx="24" fill="#fff" opacity=".82"/>
+<path d="M102 525H1098 M102 465H1098 M102 405H1098 M102 345H1098" stroke="#cbdde1" stroke-width="3" stroke-dasharray="8 12"/>
+<path d="M112 518 L215 496 L310 507 L405 452 L500 474 L595 422 L690 439 L785 386 L880 401 L975 357 L1085 333" fill="none" stroke="#176d65" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<g fill="#176d65"><circle cx="215" cy="496" r="8"/><circle cx="405" cy="452" r="8"/><circle cx="595" cy="422" r="8"/><circle cx="785" cy="386" r="8"/><circle cx="975" cy="357" r="8"/></g>
+</svg>
