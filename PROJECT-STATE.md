@@ -813,3 +813,13 @@
 - `index.html` コミット：`59e212811feb9d7afd4c555fa31e1c4c0daa180e`。
 - README コミット：`5a55236271bc1f2f4bd8bbfe585e8dbd372f71f9`。
 - GitHub Actions の結果と公開URLでの実表示は未確認。
+
+
+## 2026-10-25 記事一覧を公開順フィールドで管理
+- 公開日ではなく、記事台帳の `publishOrder` で一覧順を決める方式に変更。
+- 既存公開記事は `publishedAt` の日付順を基本に、同日の記事はタイトル日本語順で仮の連番を割り当てた。実際の厳密な公開履歴を再現したものではなく、運用開始時点の初期順序として扱う。
+- 今後、新規公開記事には現在の最大 `publishOrder` に1を足した値を付ける。監査・修正では値を変えない。
+- 変更ファイル：`article-index.json`、`index.html`、`README.md`、本ファイル。
+- `article-index.json` コミット：`963d48acdda15b583d4b4d65231185fbc3dfadd9`。
+- `index.html` コミット：`e8f578cdc7e51608d33b3e68ded7041f338da086`。
+- GitHub Actionsの検証・デプロイ結果と公開URLでの実表示は未確認。
