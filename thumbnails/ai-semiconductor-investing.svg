@@ -1,1 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#dce8ff"/><stop offset="1" stop-color="#b8ccff"/></linearGradient></defs><rect width="1200" height="675" rx="28" fill="url(#g)"/><circle cx="1000" cy="485" r="190" fill="#fff" opacity=".42"/><path d="M0 530 Q260 450 500 555 T1200 500 V675 H0Z" fill="#fff" opacity=".25"/><text x="74" y="110" font-family="system-ui,sans-serif" font-size="42" font-weight="800" letter-spacing="5" fill="#3f5fba">INVEST ATLAS</text><text x="74" y="205" font-family="system-ui,sans-serif" font-size="72" font-weight="800" fill="#17334a">AI・半導体投資</text><text x="78" y="285" font-family="system-ui,sans-serif" font-size="32" font-weight="600" fill="#405a6b">技術・企業・市場を分析</text><rect x="74" y="395" width="120" height="7" rx="4" fill="#6656b5"/><g transform="translate(1000 485) scale(1.15)"><rect x='-40' y='-40' width='80' height='80' rx='10' fill='#fff' stroke='#3f5fba' stroke-width='6'/><rect x='-17' y='-17' width='34' height='34' rx='5' fill='#3f5fba'/><path d='M-22 -58 V-40 M0 -58 V-40 M22 -58 V-40 M-22 40 V58 M0 40 V58 M22 40 V58 M-58 -22 H-40 M-58 0 H-40 M-58 22 H-40 M40 -22 H58 M40 0 H58 M40 22 H58' stroke='#3f5fba' stroke-width='5' stroke-linecap='round'/></g><text x="74" y="620" font-family="system-ui,sans-serif" font-size="26" font-weight="700" letter-spacing="2" fill="#405a6b">基礎からわかる投資ガイド</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+<defs><linearGradient id="bg" x2="0" y2="1"><stop stop-color="#edf0ff"/><stop offset="1" stop-color="#ccd7ff"/></linearGradient></defs>
+<rect width="1200" height="675" rx="24" fill="url(#bg)"/>
+<text x="64" y="76" font-family="sans-serif" font-size="54" font-weight="800" fill="#17334a">AI・半導体投資の見方</text>
+<text x="68" y="126" font-family="sans-serif" font-size="23" font-weight="700" letter-spacing="3" fill="#4b5eb7">AI &amp; SEMICONDUCTORS</text>
+<path d="M64 158H1136" stroke="#a8b7f0" stroke-width="3"/>
+<g transform="translate(600 435)">
+ <rect x="-160" y="-145" width="320" height="290" rx="28" fill="#fff" stroke="#4b5eb7" stroke-width="10"/>
+ <rect x="-83" y="-70" width="166" height="140" rx="15" fill="#dbe2ff" stroke="#4b5eb7" stroke-width="8"/>
+ <path d="M-105 -190V-145M-35 -190V-145M35 -190V-145M105 -190V-145M-105 145V190M-35 145V190M35 145V190M105 145V190M-210 -80H-160M-210 0H-160M-210 80H-160M160 -80H210M160 0H210M160 80H210" stroke="#4b5eb7" stroke-width="12" stroke-linecap="round"/>
+ <path d="M-55 35L-15 -15L20 10L60 -38" fill="none" stroke="#7061cf" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+ <circle cx="245" cy="-100" r="38" fill="#f2a69a" stroke="#b85d64" stroke-width="7"/>
+ <path d="M220 -100H270M245 -125V-75" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
+ <path d="M-255 105L-225 75L-195 95L-165 55" fill="none" stroke="#4b5eb7" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g></svg>
