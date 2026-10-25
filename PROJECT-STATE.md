@@ -752,3 +752,12 @@
 - `thumbnails/stock-market-index-basics.svg` の装飾円が右端に近く、グラフィックがはみ出して見える状態を避けるため、円とグラフを安全領域内に収めたデザインへ調整。
 - GitHub Actions run `40198866947` は記事台帳・サイトマップ検証と GitHub Pages デプロイを含め成功。
 - 画像をブラウザでの実表示として独立確認したかは未確認。次回、公開ページのカード表示を確認する。
+
+
+## 2026-10-25 サムネイル制作ルールを明文化
+- サムネイルごとに構成が変わって統一感が弱くならないよう、`THUMBNAIL-GUIDELINES.md` を新設。キャンバス、基本レイアウト、色、文字、図柄セーフエリア、モバイル表示、品質確認を定義。
+- 図柄の背後に置く白抜きの大きな円は今後使用しない。円形の図柄パーツ自体は禁止しない。
+- `README.md` から制作ガイドラインへリンクし、記事台帳の `thumbnail` を明示登録する運用も記載。
+- `thumbnails/investment-trust-index-active.svg` と `thumbnails/stock-market-index-basics.svg` から背景の白抜き円を削除。
+- 変更ファイル：`THUMBNAIL-GUIDELINES.md`（新規）、`README.md`、`PROJECT-STATE.md`、上記サムネイルSVG 2点。
+- GitHub上の変更反映後、Actionsの検証・デプロイ結果と公開ページの実表示を確認する。既存サムネイル全件の描き直しは今回の対象外。
