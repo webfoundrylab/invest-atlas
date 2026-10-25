@@ -1143,9 +1143,9 @@
 - ai-semiconductor-investing.htmlの冒頭HTMLタグは <!doctype html> と <html lang="ja"> のまま維持されていることを更新時に確認。
 - article-index.jsonは更新後にJSONとして正常に解析できることを確認。
 - 記事変更コミット：dd50d89f025c810d412c809db71e8463e21e7594。記事台帳コミット：9575bf120ddf51ef8e01f79f31cf9625108b6b8a。
-- GitHub Actionsの最新実行と公開ページでの実表示は、この記録時点では未確認。Actions成功とブラウザ表示確認を混同しない。
+- GitHub Actions run 40218650700（コミット 8fdbc2ccfd32f1a1406c83bfa346ea1b7dba3444）はbuild、記事台帳・生成サイトマップ検証、artifact upload、GitHub Pages deployのすべて成功。
+- 公開URL https://webfoundrylab.github.io/invest-atlas/ai-semiconductor-investing.html はブラウザ取得ツールからアクセスできず、実際の画面表示は未確認。Actions成功とブラウザ表示確認を混同しない。
 
 ### 次の作業
-- 最新のGitHub Actions実行結果を確認し、記事台帳・関連記事生成・サイトマップ検証・デプロイの結果を記録する。
-- 公開URLの実ブラウザ表示は未確認のため、表示確認可能な環境で目次・表・出典リンクを確認する。
+- 公開URLの実ブラウザ表示が確認できる環境で、目次・表・出典リンクを確認する。
 - 続けて残りの記事を監査する場合は、最新のGitHub状態を再取得してから着手する。
