@@ -23,7 +23,7 @@
 
     var style = document.createElement("style");
     style.textContent =
-      ".ia-footer-tools{display:flex;justify-content:flex-end;align-items:center;gap:12px;margin:18px auto 0;padding:12px 0;font:12px/1.5 system-ui,-apple-system,sans-serif;color:#647887}" +
+      ".ia-footer-tools{display:flex;justify-content:flex-start;align-items:center;gap:12px;margin:18px auto 0;padding:12px 0;font:12px/1.5 system-ui,-apple-system,sans-serif;color:#647887}" +
       "#ia-display-toggle{border:0;padding:3px 0;background:transparent;color:inherit;font:inherit;text-decoration:underline;text-underline-offset:3px;cursor:pointer}" +
       "#ia-display-toggle:hover{color:#176d65}" +
       "#ia-display-toggle:focus-visible,#ia-back-to-top:focus-visible{outline:3px solid #ffb58d;outline-offset:3px}" +
@@ -52,6 +52,8 @@
     });
     footerTools.appendChild(toggle);
     footer.appendChild(footerTools);
+    // The switch is intended for phones/tablets; on a physical desktop it has no useful effect.
+    if (window.screen && window.screen.width > 850) footerTools.hidden = true;
 
     var topButton = document.createElement("button");
     topButton.id = "ia-back-to-top";
