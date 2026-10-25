@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+<title id="title">投資信託の主な投資対象</title>
+<desc id="desc">投資信託の主な投資対象を株式、債券、不動産投資信託REIT、コモディティ、バランス型に分けて示す概念図。商品によって投資先やリスクは異なる。</desc>
+<rect width="1200" height="700" rx="28" fill="#f4f7f8"/>
+<g font-family="sans-serif" fill="#172b3d">
+<text x="60" y="72" font-size="38" font-weight="800">投資信託は「何に投資するか」で特徴が変わる</text>
+<text x="60" y="116" font-size="22" fill="#526574">投資対象の代表例。実際の組入資産は目論見書などで確認しましょう。</text>
+<g>
+<rect x="60" y="165" width="340" height="190" rx="22" fill="#fff" stroke="#a9d5cc" stroke-width="3"/>
+<circle cx="112" cy="218" r="25" fill="#176d65"/><path d="M98 229l10-13 9 6 12-17" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="155" y="227" font-size="28" font-weight="800">株式</text><text x="88" y="275" font-size="20">企業の成長や業績が価格に影響</text><text x="88" y="312" font-size="18" fill="#526574">値動きが大きくなることも</text>
+</g>
+<g>
+<rect x="430" y="165" width="340" height="190" rx="22" fill="#fff" stroke="#b9cce7" stroke-width="3"/>
+<circle cx="482" cy="218" r="25" fill="#315c8c"/><path d="M468 209h28M468 218h28M468 227h28" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+<text x="525" y="227" font-size="28" font-weight="800">債券</text><text x="458" y="275" font-size="20">国や企業などが発行する債券</text><text x="458" y="312" font-size="18" fill="#526574">金利・信用リスクなどがある</text>
+</g>
+<g>
+<rect x="800" y="165" width="340" height="190" rx="22" fill="#fff" stroke="#e5cda1" stroke-width="3"/>
+<circle cx="852" cy="218" r="25" fill="#98651c"/><path d="M839 230v-20l13-10 13 10v20M846 230v-10h12v10" fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round"/>
+<text x="895" y="227" font-size="28" font-weight="800">REIT</text><text x="828" y="275" font-size="20">不動産を運用する投資法人など</text><text x="828" y="312" font-size="18" fill="#526574">賃料・不動産市況などに左右</text>
+</g>
+<g>
+<rect x="245" y="390" width="340" height="190" rx="22" fill="#fff" stroke="#d3c5ed" stroke-width="3"/>
+<circle cx="297" cy="443" r="25" fill="#6657b5"/><path d="M284 450l13-20 13 20zM289 455h16" fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round"/>
+<text x="340" y="452" font-size="28" font-weight="800">コモディティ</text><text x="273" y="500" font-size="20">金・原油などの商品関連資産</text><text x="273" y="537" font-size="18" fill="#526574">価格変動や為替の影響も</text>
+</g>
+<g>
+<rect x="615" y="390" width="340" height="190" rx="22" fill="#fff" stroke="#a9d5cc" stroke-width="3"/>
+<circle cx="667" cy="443" r="25" fill="#176d65"/><circle cx="659" cy="438" r="7" fill="#fff"/><circle cx="675" cy="438" r="7" fill="#fff"/><path d="M653 453q6-10 12 0M669 453q6-10 12 0" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+<text x="710" y="452" font-size="28" font-weight="800">バランス型</text><text x="643" y="500" font-size="20">株式・債券など複数資産を組合せ</text><text x="643" y="537" font-size="18" fill="#526574">配分・リバランス方針を確認</text>
+</g>
+<text x="600" y="640" text-anchor="middle" font-size="20" font-weight="700" fill="#526574">同じ分類でも投資地域・運用方針・リスクは商品ごとに異なります</text>
+</g></svg>
