@@ -71,8 +71,9 @@
       <div class="tag-dialog-footer"><button type="button" id="clear-tags-dialog" class="clear-tags-dialog">選択解除</button><button type="button" id="done-tag-dialog" class="done-tag-dialog">完了</button></div>
     </dialog>
     <div class="library-results">
-      <div class="results-toolbar"><p class="result-count" id="result-count" aria-live="polite">記事を読み込み中…</p><button type="button" id="reset-filters" class="reset-filters">絞り込みをリセット</button></div>
+      <div class="results-toolbar"><p class="result-count" id="result-count" aria-live="polite">記事を読み込み中…</p><div class="results-actions"><label class="page-size-control" for="page-size">表示件数<select id="page-size"><option value="10" selected>10件</option><option value="20">20件</option><option value="50">50件</option><option value="100">100件</option></select></label><button type="button" id="reset-filters" class="reset-filters">絞り込みをリセット</button></div></div>
       <div class="article-list" id="article-list" aria-live="polite"></div>
+      <nav class="pagination" id="pagination" aria-label="記事一覧のページ切り替え" hidden></nav>
       <p class="no-results" id="no-results" hidden>該当する記事がありません。別のキーワードやカテゴリをお試しください。</p>
     </div>
   </section>
@@ -142,7 +143,7 @@
     .tag-dialog-footer{display:flex;justify-content:space-between;gap:10px;padding-top:10px;border-top:1px solid #e2ecee}
     .clear-tags-dialog,.done-tag-dialog{border:1px solid #b8d8d9;background:#f4fbfa;color:#075e58;border-radius:8px;padding:8px 12px;font:inherit;font-size:.82rem;font-weight:750;cursor:pointer}
     .done-tag-dialog{background:#087f75;border-color:#087f75;color:#fff}
-    .results-toolbar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin:0 0 10px;padding:10px 12px;background:#e8f5f5;border:1px solid #d2e8e8;border-radius:10px}.result-count{margin:0;color:#123653;font-size:.9rem;font-weight:850}.library-results{min-width:0}
+    .results-toolbar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin:0 0 10px;padding:10px 12px;background:#e8f5f5;border:1px solid #d2e8e8;border-radius:10px}.result-count{margin:0;color:#123653;font-size:.9rem;font-weight:850}.results-actions{display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:8px}.page-size-control{display:flex;align-items:center;gap:7px;color:#31505f;font-size:.82rem;font-weight:750;white-space:nowrap}.page-size-control select{border:1px solid #b8d8d9;background:#fff;color:var(--ink);border-radius:8px;padding:6px 8px;font:inherit;font-size:.82rem;cursor:pointer}.pagination{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:6px;margin:16px 0 8px}.pagination[hidden]{display:none}.page-button{min-width:36px;min-height:36px;padding:6px 10px;border:1px solid #b8d8d9;border-radius:8px;background:#fff;color:#075e58;font:inherit;font-size:.85rem;font-weight:750;cursor:pointer}.page-button:hover:not(:disabled){background:#e5f7f2}.page-button[aria-current="page"]{background:#087f75;border-color:#087f75;color:#fff}.page-button:disabled{opacity:.4;cursor:not-allowed}.page-status{padding:0 5px;color:var(--muted);font-size:.82rem;white-space:nowrap}.library-results{min-width:0}
     .article-dates{display:flex;align-items:center;flex-wrap:wrap;gap:5px;margin-top:7px;font-size:.75rem;line-height:1.4}.article-date-chip{display:inline-flex;align-items:center;border-radius:6px;padding:3px 7px;font-weight:750;white-space:nowrap}.article-date-chip.updated{color:#075e58;background:#dff6ef;border:1px solid #b6e3d9}.article-date-chip.published{color:#40596b;background:#eef3f6;border:1px solid #d8e2e8}
     .article-list{display:flex;flex-direction:column;gap:9px}
     .article-row{display:grid;grid-template-columns:360px minmax(0,1fr);align-items:center;gap:28px;background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px 30px;transition:border-color .15s,background .15s;min-height:280px}
@@ -180,7 +181,7 @@
       
       .trust-strip{display:none}
       .section-head{margin:22px 0 12px}
-      .article-row{display:block;padding:14px 16px;min-height:0;border-radius:14px}
+      .results-toolbar{align-items:flex-start}.results-actions{width:100%;justify-content:space-between}.page-size-control{font-size:.78rem}.page-size-control select{padding:6px}.pagination{gap:5px}.page-button{min-width:34px;min-height:34px;padding:5px 8px}.article-row{display:block;padding:14px 16px;min-height:0;border-radius:14px}
       .article-row>a:first-child{display:none}
       .article-row>div{min-width:0;overflow-wrap:anywhere}
       .article-category{justify-self:start;max-width:100%;white-space:normal;overflow-wrap:anywhere;margin-bottom:5px}
@@ -198,6 +199,10 @@
       const list = document.getElementById('article-list');
       const count = document.getElementById('result-count');
       const empty = document.getElementById('no-results');
+      const pageSizeSelect = document.getElementById('page-size');
+      const pagination = document.getElementById('pagination');
+      let pageSize = Number(pageSizeSelect.value) || 10;
+      let currentPage = 1;
       const modeInputs = [...document.querySelectorAll('input[name="search-mode"]')];
       const tagModeInputs = [...document.querySelectorAll('input[name="tag-mode"]')];
       const tagFilters = document.getElementById('tag-filters');
@@ -310,7 +315,8 @@
         const selectedLabels = selectedCategoryPath.map(id => categoryNodeLabels[id]).filter(Boolean);
         document.getElementById('selected-category-label').textContent = selectedLabels.length ? selectedLabels.join(' › ') : 'すべて';
       };
-      const render = () => {
+      const render = (resetPage = true) => {
+        if (resetPage) currentPage = 1;
         const terms = search.value.trim().toLocaleLowerCase('ja').split(/\s+/u).filter(Boolean);
         const visible = articles.filter(article => {
           const matchesCategory = selectedCategoryPath.length === 0 ||
@@ -331,8 +337,13 @@
           const bOrder = Number.isFinite(Number(b.publishOrder)) ? Number(b.publishOrder) : 0;
           return bOrder - aOrder || a.title.localeCompare(b.title,'ja');
         });
+        const total = visible.length;
+        const totalPages = Math.max(1, Math.ceil(total / pageSize));
+        currentPage = Math.min(Math.max(1, currentPage), totalPages);
+        const startIndex = (currentPage - 1) * pageSize;
+        const pageArticles = visible.slice(startIndex, startIndex + pageSize);
         list.replaceChildren();
-        visible.forEach(article => {
+        pageArticles.forEach(article => {
           const row = document.createElement('article');
           row.className = 'article-row';
           const thumbLink = document.createElement('a');
@@ -385,9 +396,66 @@
           row.append(thumbLink,main);
           list.append(row);
         });
-        count.textContent = visible.length + '件の記事';
-        empty.hidden = visible.length !== 0;
+        count.textContent = total === 0
+          ? '該当する記事はありません'
+          : '全' + total + '件中 ' + (startIndex + 1) + '〜' + Math.min(startIndex + pageSize, total) + '件を表示';
+        empty.hidden = total !== 0;
+        renderPagination(totalPages);
       };
+      const renderPagination = (totalPages) => {
+        pagination.replaceChildren();
+        pagination.hidden = totalPages <= 1;
+        if (totalPages <= 1) return;
+        const addButton = (label, page, options = {}) => {
+          const button = document.createElement('button');
+          button.type = 'button';
+          button.className = 'page-button';
+          button.textContent = label;
+          button.disabled = Boolean(options.disabled);
+          if (options.current) button.setAttribute('aria-current', 'page');
+          if (options.label) button.setAttribute('aria-label', options.label);
+          button.addEventListener('click', () => {
+            currentPage = page;
+            render(false);
+            document.getElementById('library-title').scrollIntoView({behavior:'auto',block:'start'});
+          });
+          pagination.append(button);
+        };
+        addButton('前へ', currentPage - 1, {disabled: currentPage === 1, label:'前のページ'});
+        let firstPage = Math.max(1, currentPage - 2);
+        let lastPage = Math.min(totalPages, firstPage + 4);
+        firstPage = Math.max(1, lastPage - 4);
+        if (firstPage > 1) {
+          addButton('1', 1, {current: currentPage === 1, label:'1ページ目'});
+          if (firstPage > 2) {
+            const dots = document.createElement('span');
+            dots.className = 'page-status';
+            dots.textContent = '…';
+            pagination.append(dots);
+          }
+        }
+        for (let page = firstPage; page <= lastPage; page++) {
+          addButton(String(page), page, {current: page === currentPage, label:page + 'ページ目'});
+        }
+        if (lastPage < totalPages) {
+          if (lastPage < totalPages - 1) {
+            const dots = document.createElement('span');
+            dots.className = 'page-status';
+            dots.textContent = '…';
+            pagination.append(dots);
+          }
+          addButton(String(totalPages), totalPages, {current: currentPage === totalPages, label:totalPages + 'ページ目'});
+        }
+        addButton('次へ', currentPage + 1, {disabled: currentPage === totalPages, label:'次のページ'});
+        const status = document.createElement('span');
+        status.className = 'page-status';
+        status.textContent = currentPage + ' / ' + totalPages + 'ページ';
+        pagination.append(status);
+      };
+      pageSizeSelect.addEventListener('change', () => {
+        pageSize = Number(pageSizeSelect.value) || 10;
+        render();
+      });
       search.addEventListener('input',render);
       modeInputs.forEach(input => input.addEventListener('change',() => {
         if(input.checked) searchMode = input.value;
