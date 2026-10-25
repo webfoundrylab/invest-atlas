@@ -532,6 +532,39 @@
       "publishOrder": 9,
       "mainTitle": "株価指数とは？",
       "subtitle": "日経平均・TOPIX・S&P 500の違いを初心者向けに解説"
+    },
+    {
+      "slug": "simple-investing-guide.html",
+      "title": "投資は何を買えばいい？迷った人のためのシンプルな考え方",
+      "category": "basics",
+      "tags": [
+        "投資の考え方",
+        "リスク許容度",
+        "長期投資",
+        "積立投資",
+        "一括投資",
+        "全世界株式",
+        "S&P 500",
+        "インデックス型",
+        "アクティブ型",
+        "分散投資"
+      ],
+      "summary": "投資先に迷ったとき、リスク許容度・全世界株式とS&P 500・積立と一括投資・インデックス型とアクティブ型の違いから、無理なく続けるための判断の順番を整理。",
+      "status": "published",
+      "related": [
+        "before-you-invest.html",
+        "regular-investing.html",
+        "investment-trust-investment-targets.html",
+        "investment-trust-index-active.html",
+        "investment-trust-fees.html",
+        "nisa-basics.html"
+      ],
+      "subcategory": "investing-basics",
+      "publishedAt": "2026-10-26",
+      "updatedAt": "2026-10-26",
+      "publishOrder": 12,
+      "mainTitle": "投資は何を買えばいい？",
+      "subtitle": "迷った人のためのシンプルな考え方"
     }
   ]
 }
