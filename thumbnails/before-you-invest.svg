@@ -1,1 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d7f6ed"/><stop offset="1" stop-color="#b9e9df"/></linearGradient></defs><rect width="1200" height="675" rx="28" fill="url(#g)"/><circle cx="1000" cy="445" r="180" fill="#fff" opacity=".45"/><path d="M0 530 Q260 450 500 555 T1200 500 V675 H0Z" fill="#fff" opacity=".3"/><text x="74" y="110" font-family="system-ui,sans-serif" font-size="42" font-weight="800" letter-spacing="5" fill="#087f75">INVEST ATLAS</text><text x="74" y="280" font-family="system-ui,sans-serif" font-size="72" font-weight="800" fill="#17334a">投資前の準備</text><text x="78" y="350" font-family="system-ui,sans-serif" font-size="32" fill="#405a6b">生活資金・目的・期間</text><rect x="74" y="405" width="120" height="8" rx="4" fill="#087f75"/><g transform="translate(1000 445) scale(1.1)"><path d="M0 -65 L52 -42 L45 14 Q35 48 0 65 Q-35 48 -45 14 L-52 -42 Z" fill="#fff" stroke="#087f75" stroke-width="5"/><path d="M-24 0 L-5 20 L26 -20" fill="none" stroke="#087f75" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></g><text x="74" y="595" font-family="system-ui,sans-serif" font-size="33" font-weight="700" letter-spacing="2" fill="#405a6b">基礎からわかる投資ガイド</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+<defs><linearGradient id="bg" x2="0" y2="1"><stop stop-color="#e7faf4"/><stop offset="1" stop-color="#c8eee4"/></linearGradient></defs>
+<rect width="1200" height="675" rx="24" fill="url(#bg)"/>
+<text x="64" y="76" font-family="sans-serif" font-size="56" font-weight="800" fill="#17334a">投資前に確認したい7つのこと</text>
+<text x="68" y="126" font-family="sans-serif" font-size="23" font-weight="700" letter-spacing="3" fill="#087f75">BEFORE YOU INVEST</text>
+<path d="M64 158H1136" stroke="#87cfc0" stroke-width="3"/>
+<g transform="translate(600 425)">
+ <path d="M0 -185L170 -115L150 45Q125 140 0 188Q-125 140 -150 45L-170 -115Z" fill="#fff" stroke="#087f75" stroke-width="10" stroke-linejoin="round"/>
+ <path d="M-74 0L-20 54L87 -70" fill="none" stroke="#087f75" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+ <g fill="#f2b84b" stroke="#a66b19" stroke-width="5">
+ <circle cx="-265" cy="-95" r="34"/><circle cx="270" cy="-80" r="34"/><circle cx="-260" cy="112" r="34"/><circle cx="260" cy="115" r="34"/>
+ </g>
+ <g stroke="#a66b19" stroke-width="6" stroke-linecap="round">
+ <path d="M-280 -95h30M-265 -110v30M255 -80h30M270 -95v30M-275 112h30M-260 97v30M245 115h30M260 100v30"/>
+ </g>
+ <path d="M-210 -115L-155 -100M210 -110L155 -100M-210 110L-155 100M210 112L155 102" stroke="#4a9e90" stroke-width="7" stroke-linecap="round" stroke-dasharray="10 12"/>
+</g></svg>
