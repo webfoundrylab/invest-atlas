@@ -834,3 +834,14 @@
 - index.html コミット：8a0a8446b4e5f7ebbf26bd4fcec8511b02202263。
 - README コミット：2f75c005755d00b189d95406915a9372812c3d10。
 - 未確認：JavaScriptの実行テスト、GitHub Actionsの最終結果、公開URLでのPC・スマホ実表示。次は構文・動作の静的検証とActions結果を確認し、デプロイ後に表示件数切り替えとページ遷移を点検する。
+
+
+## 2026-10-25 ページ切り替えUIの改善
+- トップページの記事一覧のページ切り替えを、一覧の上部と下部の両方に表示。
+- 生成カテゴリページにも表示件数（10・20・50・100件）、表示範囲、前へ・次へ・ページ番号を追加。ページ切り替えは上下に配置し、記事は publishOrder 降順で表示。
+- 変更ファイル：index.html、scripts/build-site.py、assets/category-pagination.js、README.md、本ファイル。
+- index.html コミット：0655eb84e95cf18a300f91fb96a24b3d478600ef。
+- scripts/build-site.py コミット：a0a3ddfc1b1784a6f0d38256f9a7fa63d231ce9b。
+- assets/category-pagination.js コミット：adce0a820be6ee86e84039a58d30eb5e05b9fed2。
+- README コミット：c15d84c28f084353405b543e638c0564d3a4b566。
+- 未確認：GitHub Actions のビルド・デプロイ結果、生成されたカテゴリページの実表示、スマホでの実操作。次にActionsを確認し、カテゴリページの上位・下位カテゴリで表示件数切り替えとページ遷移を確認する。
