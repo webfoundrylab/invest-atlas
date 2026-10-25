@@ -776,3 +776,11 @@
 - `THUMBNAIL-GUIDELINES.md` も更新し、以後の標準配置として記録。
 - 変更ファイル：`thumbnails/before-you-invest.svg`、`thumbnails/nisa-basics.svg`、`thumbnails/investment-trust-fees.svg`、`thumbnails/ai-semiconductor-investing.svg`、`THUMBNAIL-GUIDELINES.md`、`PROJECT-STATE.md`。
 - GitHubへの反映は完了。今回の変更後のGitHub Actions結果と公開画面での実表示は確認待ち。
+
+
+## 2026-10-25 サムネイルと正式記事タイトルの一致ルール
+- `THUMBNAIL-GUIDELINES.md` に、サムネイル内の日本語タイトルは原則 `article-index.json` の正式記事タイトルと一致させるルールを追加。
+- 長い場合の短縮条件、記事タイトル変更時の確認、一覧・記事ページ・サムネイル間の不一致チェックも明記。
+- 変更ファイル：`THUMBNAIL-GUIDELINES.md`。
+- コミット SHA：553dac311d4e428f694ffd903352f5b59c331ec4。
+- GitHub Actions と公開画面での確認は未確認。
