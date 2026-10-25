@@ -327,9 +327,9 @@
             : [...selectedTags].some(tag => articleTags.includes(tag)));
           return matchesCategory && matchesTerms && matchesTags;
         }).sort((a,b) => {
-          const aDate = a.updatedAt || a.publishedAt || '';
-          const bDate = b.updatedAt || b.publishedAt || '';
-          return bDate.localeCompare(aDate) || (b.publishedAt || '').localeCompare(a.publishedAt || '') || a.title.localeCompare(b.title,'ja');
+          const aDate = a.publishedAt || '';
+          const bDate = b.publishedAt || '';
+          return bDate.localeCompare(aDate) || a.title.localeCompare(b.title,'ja');
         });
         list.replaceChildren();
         visible.forEach(article => {
