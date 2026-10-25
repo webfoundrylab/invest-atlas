@@ -480,7 +480,8 @@
       ],
       "publishedAt": "2026-10-25",
       "updatedAt": "2026-10-25",
-      "cardTitle": "インデックス型とアクティブ型"
+      "cardTitle": "インデックス型とアクティブ型",
+      "thumbnail": "thumbnails/investment-trust-index-active.svg"
     },
     {
       "slug": "stock-market-index-basics.html",
