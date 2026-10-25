@@ -1246,3 +1246,11 @@
 ### 次の作業
 - 最新コミットのGitHub Actionsでビルド、記事台帳・サイトマップ検証、デプロイ結果を確認する。
 - 記事台帳と本文の概要・導線の整合性、外部公式資料の現行性を引き続き点検する。
+
+## 2026-10-26 アクティブ運用の長期実績の説明を整理
+- `simple-investing-guide.html` の「インデックス型とアクティブ型の過去実績」から、日本株・米国株の短期比率を並べていた説明を削除。市場をまたいだ数字の並列による誤解を避け、長期比較を詳しい記事へ案内する短い説明に変更。
+- `investment-trust-index-active.html` に、S&P Dow Jones Indices「SPIVA U.S. Year-End 2025」による米国大型株アクティブファンドの10年間のベンチマーク劣後率（85.59%）を、米国市場の一例と明示して追加。日本株や個別商品にそのまま一般化できないこと、将来成果を保証しないことを併記し、公式出典リンクを追加。
+- `investment-trust-index-active.html` の運用方法の説明で重複していた段落を削除。
+- 変更ファイル：`investment-trust-index-active.html`、`simple-investing-guide.html`、本ファイル。
+- 公式出典： https://www.spglobal.com/spdji/en/spiva/article/spiva-us-year-end-2025/ （S&P Dow Jones Indices、2025年末データ）。
+- GitHub Actions の実行結果と公開URLでの表示確認は更新後に確認する。
