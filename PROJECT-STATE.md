@@ -803,3 +803,13 @@
 - 変更ファイル：`editorial-policy.html`（新規）、`index.html`。
 - コミット：編集方針ページ `7d903ad5c9fee6f229ca1e806d68cadf472e1d33`、トップページ `a14bf74c179dc0a9a986e7f1647fa45eb3dad583`。
 - GitHub Actionsと公開ページでの表示確認は未確認。
+
+
+## 2026-10-25 記事一覧の公開日順への変更
+- トップページの記事一覧は `updatedAt` を並び替えに使わず、`publishedAt` の新しい順に表示するよう変更。
+- 公開日が同じ記事はタイトルの日本語順で並べる。公開日が未設定の記事は日付設定済みの記事より後ろに表示される。
+- README.md の運用ルールも更新。定期監査で内容を見直しても、公開順が変わらない方針に統一。
+- 変更ファイル：`index.html`、`README.md`、本ファイル。
+- `index.html` コミット：`59e212811feb9d7afd4c555fa31e1c4c0daa180e`。
+- README コミット：`5a55236271bc1f2f4bd8bbfe585e8dbd372f71f9`。
+- GitHub Actions の結果と公開URLでの実表示は未確認。
