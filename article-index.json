@@ -143,7 +143,13 @@
         },
         {
           "id": "market-trends",
-          "label": "株式市場の動向"
+          "label": "株式市場の動向",
+          "children": [
+            {
+              "id": "stock-indices",
+              "label": "株価指数"
+            }
+          ]
         },
         {
           "id": "investment-themes",
@@ -475,6 +481,34 @@
       "publishedAt": "2026-10-25",
       "updatedAt": "2026-10-25",
       "cardTitle": "インデックス型とアクティブ型"
+    },
+    {
+      "slug": "stock-market-index-basics.html",
+      "title": "株価指数とは？日経平均・TOPIX・S&P 500の違いを初心者向けに解説",
+      "category": "markets",
+      "subcategory": "market-trends",
+      "topic": "stock-indices",
+      "tags": [
+        "株価指数",
+        "日経平均",
+        "TOPIX",
+        "S&P 500",
+        "NASDAQ-100",
+        "株式市場",
+        "ベンチマーク",
+        "インデックス投資"
+      ],
+      "summary": "株価指数の役割と計算方法、日経平均・TOPIX・S&P 500・NASDAQ-100の違い、投資信託・ETFとの関係や確認時の注意点を解説。",
+      "status": "published",
+      "related": [
+        "investment-trust-index-active.html",
+        "investment-trust-investment-targets.html",
+        "ai-semiconductor-investing.html"
+      ],
+      "publishedAt": "2026-10-25",
+      "updatedAt": "2026-10-25",
+      "thumbnail": "thumbnails/stock-market-index-basics.svg",
+      "cardTitle": "株価指数の基本"
     }
   ]
 }
