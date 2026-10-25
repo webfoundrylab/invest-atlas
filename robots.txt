@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://webfoundrylab.github.io/invest-atlas/sitemap.xml
+Sitemap: https://webfoundrylab.github.io/invest-atlas/sitemap.txt
