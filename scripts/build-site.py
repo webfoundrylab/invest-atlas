@@ -250,7 +250,7 @@ def main():
         SubElement(node, f"{{{NS}}}loc").text = url
     xml = '<?xml version="1.0" encoding="UTF-8"?>\n' + tostring(urlset, encoding="unicode") + "\n"
     SITEMAP_PATH.write_text(xml, encoding="utf-8")
-    TEXT_SITEMAP_PATH.write_text("\\n".join(urls) + "\\n", encoding="utf-8")
+    TEXT_SITEMAP_PATH.write_text("\n".join(urls) + "\n", encoding="utf-8")
 
     related_data = {}
     for article in published:
