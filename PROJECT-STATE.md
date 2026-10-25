@@ -450,3 +450,7 @@
 - GitHub Pages と Search Console の組み合わせでサイトマップ取得に失敗する事例が報告されており、Content-Type の問題は仮説の一つだが、Invest Atlas で同じ原因かは未確認。
 - 無料の切り分け策として、ビルド時に URL を1行ずつ記載する sitemap.txt も生成し、robots.txt から XML とテキスト両方を案内するよう変更。検証スクリプトでも両サイトマップの URL 集合を台帳と照合する。
 - 次の確認: GitHub Actions の最新 build / deploy が成功することを確認後、Search Console で `https://webfoundrylab.github.io/invest-atlas/sitemap.txt` を送信し、検出ページ数と状態を比較する。XML の HTTP 応答・Content-Type、および Search Console の URL 検査ライブテストは未確認。
+
+- 2026-10-25 追記: ユーザー報告で Search Console の `sitemap.txt` も「取得できませんでした」、検出ページ0件。GitHub Actions run `40156020884` は build / validate / deploy とも成功。テキストサイトマップはビルド成果物として生成されるため、ソースリポジトリ直下に `sitemap.txt` が存在しないのは想定どおり。
+- XML・テキスト両形式で同じエラーのため、XMLの構文だけが原因である可能性は低下。Search Console の登録プロパティとフルサイトマップURLの不一致、Google側の取得エラー、GitHub Pages の配信ヘッダー等は未切り分け。
+- 次の対応: Search Consoleで選択中のプロパティURLを確認し、サイトマップ詳細ページでエラー名を展開。続いて正確なサイトマップURLを URL 検査のライブテストにかけ、「クロールが許可されていますか」「ページの取得」の結果を確認する。HTTPステータス・Content-Typeの助手側確認は未実施。原因を確定するまで追加の形式変更は行わない。
