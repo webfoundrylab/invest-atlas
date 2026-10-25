@@ -454,3 +454,12 @@
 - 2026-10-25 追記: ユーザー報告で Search Console の `sitemap.txt` も「取得できませんでした」、検出ページ0件。GitHub Actions run `40156020884` は build / validate / deploy とも成功。テキストサイトマップはビルド成果物として生成されるため、ソースリポジトリ直下に `sitemap.txt` が存在しないのは想定どおり。
 - XML・テキスト両形式で同じエラーのため、XMLの構文だけが原因である可能性は低下。Search Console の登録プロパティとフルサイトマップURLの不一致、Google側の取得エラー、GitHub Pages の配信ヘッダー等は未切り分け。
 - 次の対応: Search Consoleで選択中のプロパティURLを確認し、サイトマップ詳細ページでエラー名を展開。続いて正確なサイトマップURLを URL 検査のライブテストにかけ、「クロールが許可されていますか」「ページの取得」の結果を確認する。HTTPステータス・Content-Typeの助手側確認は未実施。原因を確定するまで追加の形式変更は行わない。
+
+
+## 2026-10-25 記事内目次と関連記事リンクの明確化
+- `ai-semiconductor-investing.html` に記事冒頭の目次を追加し、各章へページ内移動できるよう見出しIDを設定。
+- AI・半導体記事から `before-you-invest.html#risk-tolerance` へリンクし、リンク文言に遷移先の記事名と「第3章：値下がりにどこまで耐えられるか考える」を明記。
+- `before-you-invest.html` にも7項目と購入前チェックリストへ移動できる目次を追加し、第3章に `id="risk-tolerance"` を設定。
+- `article-index.json` のAI・半導体記事タイトルと概要を本文の内容に合わせて具体化。
+- 変更ファイル：`ai-semiconductor-investing.html`、`before-you-invest.html`、`article-index.json`、本ファイル。
+- GitHubへの更新コミットは実施。GitHub Actionsの検証・デプロイ結果と公開URL上での表示・ページ内移動は、次に確認する。
