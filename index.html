@@ -327,9 +327,9 @@
             : [...selectedTags].some(tag => articleTags.includes(tag)));
           return matchesCategory && matchesTerms && matchesTags;
         }).sort((a,b) => {
-          const aDate = a.publishedAt || '';
-          const bDate = b.publishedAt || '';
-          return bDate.localeCompare(aDate) || a.title.localeCompare(b.title,'ja');
+          const aOrder = Number.isFinite(Number(a.publishOrder)) ? Number(a.publishOrder) : 0;
+          const bOrder = Number.isFinite(Number(b.publishOrder)) ? Number(b.publishOrder) : 0;
+          return bOrder - aOrder || a.title.localeCompare(b.title,'ja');
         });
         list.replaceChildren();
         visible.forEach(article => {
