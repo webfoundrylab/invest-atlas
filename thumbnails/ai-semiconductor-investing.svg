@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
 <defs><linearGradient id="bg" x2="0" y2="1"><stop stop-color="#edf0ff"/><stop offset="1" stop-color="#ccd7ff"/></linearGradient></defs>
 <rect width="1200" height="675" rx="24" fill="url(#bg)"/>
-<text x="64" y="76" font-family="sans-serif" font-size="54" font-weight="800" fill="#17334a">AI・半導体投資の見方</text>
-<text x="68" y="126" font-family="sans-serif" font-size="23" font-weight="700" letter-spacing="3" fill="#4b5eb7">AI &amp; SEMICONDUCTORS</text>
-<path d="M64 158H1136" stroke="#a8b7f0" stroke-width="3"/>
+<text x="64" y="139" font-family="sans-serif" font-size="54" font-weight="800" fill="#17334a">AI・半導体投資の見方</text>
+<text x="68" y="76" font-family="sans-serif" font-size="30" font-weight="700" letter-spacing="3" fill="#4b5eb7">AI &amp; SEMICONDUCTORS</text>
+<path d="M64 176H1136" stroke="#a8b7f0" stroke-width="3"/>
 <g transform="translate(600 435)">
  <rect x="-160" y="-145" width="320" height="290" rx="28" fill="#fff" stroke="#4b5eb7" stroke-width="10"/>
  <rect x="-83" y="-70" width="166" height="140" rx="15" fill="#dbe2ff" stroke="#4b5eb7" stroke-width="8"/>
