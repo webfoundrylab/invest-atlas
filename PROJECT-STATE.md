@@ -938,3 +938,10 @@
 - 記事HTMLの参照先は変更していないため、本文内の図解に直接反映される。
 - GitHub commit: `8ce7ab755ba374dc3108a7eabd9fa8ef7eaa3fb7`。
 - GitHub Actions と公開ページでの表示確認は未確認。
+
+
+## 2026-10-26 投資信託の投資対象記事の本文図解修正
+- `investment-trust-investment-targets.html` の本文図解がサムネイル `thumbnails/fund-investment-targets.svg` を参照していたため、専用図解 `images/fund-investment-targets-diagram.svg` を新規作成して参照先を修正。
+- 専用図解では株式・債券・REIT・コモディティ・バランス型の特徴をカード形式で説明。サムネイルとは別ファイルに分離。
+- コミット: 図解追加 `478a2d11783bdbb3b6314345ff5c20780bf71884`、記事参照更新 `e7aa8b156bee03ae6d32e145c3fae3f026b16406`。
+- GitHub Actions / 公開ページでの表示は未確認。
