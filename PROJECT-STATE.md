@@ -435,3 +435,11 @@
 - `thumbnails/fund-investment-targets.svg` を追加。記事台帳に登録し、投資信託の基礎カテゴリに「投資対象資産・地域」の小カテゴリを追加。
 - `choose-investment-trust-nisa.html` と `investment-trust-vs-etf.html` から関連記事として接続。
 - sitemap とカテゴリ一覧は `scripts/build-site.py` によるデプロイ時の生成対象。今回のGitHub Actions結果、生成物、公開URLでの表示は確認待ち。
+
+
+## 2026-10-25 サイトマップ再点検
+- GitHub main の `article-index.json`、`scripts/build-site.py`、`robots.txt`、`sitemap.xml`、Pages workflow を再確認。
+- 最新の GitHub Actions run `40126447491` はサイトマップ生成・コンテンツ検証・Pages デプロイのすべて成功。
+- リポジトリに保存された `sitemap.xml` は記事台帳に登録された公開記事・公開カテゴリURLをすべて含んでいないため、生成スクリプトと同じルールで同期する。
+- Google Search Console の取得エラー原因は未確定。実際の公開URLのHTTPステータス、Content-Type、リダイレクト、Google側の取得状況はこの環境から独立確認できていない。サイトマップの同期だけでGSCエラーが解消するとは断定しない。
+- 次の確認：同期後のActions成功を確認し、ユーザーがSearch Consoleの詳細エラーと登録プロパティを確認したうえで再送信する。
