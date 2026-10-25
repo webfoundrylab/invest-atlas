@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
 <defs><linearGradient id="bg" x2="0" y2="1"><stop stop-color="#fff0ee"/><stop offset="1" stop-color="#ffd5d0"/></linearGradient></defs>
 <rect width="1200" height="675" rx="24" fill="url(#bg)"/>
-<text x="64" y="76" font-family="sans-serif" font-size="54" font-weight="800" fill="#17334a">投資信託の信託報酬</text>
-<text x="68" y="126" font-family="sans-serif" font-size="23" font-weight="700" letter-spacing="3" fill="#b84c4c">INVESTMENT FUND FEES</text>
-<path d="M64 158H1136" stroke="#e8a29d" stroke-width="3"/>
+<text x="64" y="139" font-family="sans-serif" font-size="54" font-weight="800" fill="#17334a">投資信託の信託報酬</text>
+<text x="68" y="76" font-family="sans-serif" font-size="30" font-weight="700" letter-spacing="3" fill="#b84c4c">INVESTMENT FUND FEES</text>
+<path d="M64 176H1136" stroke="#e8a29d" stroke-width="3"/>
 <g transform="translate(600 430)">
  <path d="M-255 -100H255L220 150H-220Z" fill="#fff9f8" stroke="#b84c4c" stroke-width="9" stroke-linejoin="round"/>
  <path d="M-185 -35H185M-170 30H170M-155 95H155" stroke="#f0b8b3" stroke-width="7" stroke-linecap="round"/>
