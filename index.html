@@ -72,8 +72,9 @@
     </dialog>
     <div class="library-results">
       <div class="results-toolbar"><p class="result-count" id="result-count" aria-live="polite">記事を読み込み中…</p><div class="results-actions"><label class="page-size-control" for="page-size">表示件数<select id="page-size"><option value="10" selected>10件</option><option value="20">20件</option><option value="50">50件</option><option value="100">100件</option></select></label><button type="button" id="reset-filters" class="reset-filters">絞り込みをリセット</button></div></div>
+      <nav class="pagination pagination-top" id="pagination-top" aria-label="記事一覧の上部ページ切り替え" hidden></nav>
       <div class="article-list" id="article-list" aria-live="polite"></div>
-      <nav class="pagination" id="pagination" aria-label="記事一覧のページ切り替え" hidden></nav>
+      <nav class="pagination pagination-bottom" id="pagination-bottom" aria-label="記事一覧の下部ページ切り替え" hidden></nav>
       <p class="no-results" id="no-results" hidden>該当する記事がありません。別のキーワードやカテゴリをお試しください。</p>
     </div>
   </section>
@@ -200,7 +201,7 @@
       const count = document.getElementById('result-count');
       const empty = document.getElementById('no-results');
       const pageSizeSelect = document.getElementById('page-size');
-      const pagination = document.getElementById('pagination');
+      const paginationContainers = [document.getElementById('pagination-top'), document.getElementById('pagination-bottom')];
       let pageSize = Number(pageSizeSelect.value) || 10;
       let currentPage = 1;
       const modeInputs = [...document.querySelectorAll('input[name="search-mode"]')];
@@ -403,54 +404,56 @@
         renderPagination(totalPages);
       };
       const renderPagination = (totalPages) => {
-        pagination.replaceChildren();
-        pagination.hidden = totalPages <= 1;
-        if (totalPages <= 1) return;
-        const addButton = (label, page, options = {}) => {
-          const button = document.createElement('button');
-          button.type = 'button';
-          button.className = 'page-button';
-          button.textContent = label;
-          button.disabled = Boolean(options.disabled);
-          if (options.current) button.setAttribute('aria-current', 'page');
-          if (options.label) button.setAttribute('aria-label', options.label);
-          button.addEventListener('click', () => {
-            currentPage = page;
-            render(false);
-            document.getElementById('library-title').scrollIntoView({behavior:'auto',block:'start'});
-          });
-          pagination.append(button);
-        };
-        addButton('前へ', currentPage - 1, {disabled: currentPage === 1, label:'前のページ'});
-        let firstPage = Math.max(1, currentPage - 2);
-        let lastPage = Math.min(totalPages, firstPage + 4);
-        firstPage = Math.max(1, lastPage - 4);
-        if (firstPage > 1) {
-          addButton('1', 1, {current: currentPage === 1, label:'1ページ目'});
-          if (firstPage > 2) {
-            const dots = document.createElement('span');
-            dots.className = 'page-status';
-            dots.textContent = '…';
-            pagination.append(dots);
+        paginationContainers.forEach(pagination => {
+          pagination.replaceChildren();
+          pagination.hidden = totalPages <= 1;
+          if (totalPages <= 1) return;
+          const addButton = (label, page, options = {}) => {
+            const button = document.createElement('button');
+            button.type = 'button';
+            button.className = 'page-button';
+            button.textContent = label;
+            button.disabled = Boolean(options.disabled);
+            if (options.current) button.setAttribute('aria-current', 'page');
+            if (options.label) button.setAttribute('aria-label', options.label);
+            button.addEventListener('click', () => {
+              currentPage = page;
+              render(false);
+              document.getElementById('library-title').scrollIntoView({behavior:'auto',block:'start'});
+            });
+            pagination.append(button);
+          };
+          addButton('前へ', currentPage - 1, {disabled: currentPage === 1, label:'前のページ'});
+          let firstPage = Math.max(1, currentPage - 2);
+          let lastPage = Math.min(totalPages, firstPage + 4);
+          firstPage = Math.max(1, lastPage - 4);
+          if (firstPage > 1) {
+            addButton('1', 1, {current: currentPage === 1, label:'1ページ目'});
+            if (firstPage > 2) {
+              const dots = document.createElement('span');
+              dots.className = 'page-status';
+              dots.textContent = '…';
+              pagination.append(dots);
+            }
           }
-        }
-        for (let page = firstPage; page <= lastPage; page++) {
-          addButton(String(page), page, {current: page === currentPage, label:page + 'ページ目'});
-        }
-        if (lastPage < totalPages) {
-          if (lastPage < totalPages - 1) {
-            const dots = document.createElement('span');
-            dots.className = 'page-status';
-            dots.textContent = '…';
-            pagination.append(dots);
+          for (let page = firstPage; page <= lastPage; page++) {
+            addButton(String(page), page, {current: page === currentPage, label:page + 'ページ目'});
           }
-          addButton(String(totalPages), totalPages, {current: currentPage === totalPages, label:totalPages + 'ページ目'});
-        }
-        addButton('次へ', currentPage + 1, {disabled: currentPage === totalPages, label:'次のページ'});
-        const status = document.createElement('span');
-        status.className = 'page-status';
-        status.textContent = currentPage + ' / ' + totalPages + 'ページ';
-        pagination.append(status);
+          if (lastPage < totalPages) {
+            if (lastPage < totalPages - 1) {
+              const dots = document.createElement('span');
+              dots.className = 'page-status';
+              dots.textContent = '…';
+              pagination.append(dots);
+            }
+            addButton(String(totalPages), totalPages, {current: currentPage === totalPages, label:totalPages + 'ページ目'});
+          }
+          addButton('次へ', currentPage + 1, {disabled: currentPage === totalPages, label:'次のページ'});
+          const status = document.createElement('span');
+          status.className = 'page-status';
+          status.textContent = currentPage + ' / ' + totalPages + 'ページ';
+          pagination.append(status);
+        });
       };
       pageSizeSelect.addEventListener('change', () => {
         pageSize = Number(pageSizeSelect.value) || 10;
