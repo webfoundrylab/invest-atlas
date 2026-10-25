@@ -531,3 +531,13 @@
 - 記事修正コミット：`90af9b8d73dc8d4c45b2f6ef040136b80947c4a0`。
 - GitHub上のHTMLを確認して修正。外部リンクはJ-FLECの遷移先タイトルを検索結果で確認したが、参考資料URL全件の到達性、ブラウザ上の表示・クリック操作は未確認。今回の変更後のGitHub Actions結果は確認待ち。
 - 次の作業：Actionsの検証・デプロイ結果を確認し、問題がなければ公開画面での表示確認を行う。
+
+
+## 2026-10-25 全記事の目次整備
+- main の記事9本（トップページを除く）を確認。既存の目次は `before-you-invest.html` と `ai-semiconductor-investing.html` の2本にあり、残る7本には目次がなかったため、既存デザインに合わせて目次を追加。
+- 追加対象：`nisa-basics.html`、`choose-investment-trust-nisa.html`、`investment-trust-fees.html`、`regular-investing.html`、`investment-trust-vs-etf.html`、`investment-trust-actual-cost.html`、`investment-trust-investment-targets.html`。
+- 各目次は本文の主要な h2 見出しへ移動する構成とし、「まとめ」は目次から除外。目次に対応する見出しIDを追加し、記事内リンクの移動先を明示した。h3は目次の階層を深くしすぎないため、今回の目次項目には含めていない。
+- 変更ファイル：上記7記事、本ファイル。
+- 記事更新コミット：`65c3e540e817b69b6804a8f0bad55aa56be3d88a`。
+- GitHub上のHTMLで、記事9本すべてに目次が1つずつあること、ID重複がないこと、ページ内フラグメントリンクの遷移先が存在することを静的検証。ブラウザ上の表示・実際のクリック操作は未確認。GitHub Actionsの検証・デプロイ結果は確認待ち。
+- 次の確認：GitHub Actionsが成功したことを確認し、公開URLで目次の表示と各項目の移動を簡単に確認する。
