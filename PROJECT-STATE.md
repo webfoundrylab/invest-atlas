@@ -953,3 +953,14 @@
 - 更新ファイル：`EDITORIAL-GUIDELINES.md`、`README.md`、本ファイル。
 - 編集ガイドラインのコミット：`1f8c3800182a23dce8dd38dbb83bf1ffd3220dc0`。READMEのコミット：`17b31447841120e12204973aa8baa5086636b7cd`。
 - 次の作業：この方針に沿って既存記事の役割を確認し、最初の基礎記事候補を決める。Search Consoleはユーザー側で未確認のため、別途状況を確認する。日々の監査は更新が古い記事からランダムに複数選び、重大な問題があれば優先して対応する方針。
+
+
+## 2026-10-26 「はじめての方へ」に投資判断の入口を追加
+- 既存記事を確認し、投資前の準備・積立投資・投資対象・インデックス型とアクティブ型の比較など、関連する詳細記事がすでにあることを確認。新しい入口記事は、個別の論点を重複解説するのではなく、判断の順番を示して既存記事へ案内する役割とした。
+- 新規記事 `simple-investing-guide.html`「投資は何を買えばいい？迷った人のためのシンプルな考え方」を作成。リスク許容度、全世界株式とS&P 500、積立と一括投資、タイミング投資の難しさ、インデックス型とアクティブ型の比較を扱い、公式資料・比較データの出典と確認日、投資リスクを記載。
+- トップページの「はじめての方へ」に「何を買えばいいか迷っている方へ」の入口を追加し、従来の3ステップ案内も維持。
+- 既存の `before-you-invest.html`、`regular-investing.html`、`investment-trust-index-active.html`、`choose-investment-trust-nisa.html` からも、文脈に合う箇所で新しい入口記事へリンクを追加。`article-index.json` に記事情報と関連記事候補を登録。
+- 変更ファイル：`simple-investing-guide.html`（新規）、`index.html`、`article-index.json`、`before-you-invest.html`、`regular-investing.html`、`investment-trust-index-active.html`、`choose-investment-trust-nisa.html`、本ファイル。
+- 主なコミット：記事追加 `ed3f30bb9cf71fa36e28340459618a0b5537ca17`、台帳登録 `8935257fe39c9680d53bceba01c940cd73f1cea8`、トップページ入口 `63b8e5d910d0e98960fbec9418bad29eca776cd1`、関連記事台帳更新 `a8a653c9bde701fa0c897808b5c493407b260116`。既存記事へのリンク追加も個別にコミット済み。
+- 未確認：今回の変更後のGitHub Actions build・content validation・Pages deploy、生成される `sitemap.xml` / `sitemap.txt`、公開画面の実表示。Search Consoleの最新状況も未確認。
+- 次の作業：記事台帳・アンカー・内部リンク・サイトマップの整合性を確認し、GitHub Actionsの結果を確認する。次の関連記事候補として「複利・ジルとジャックの例」「リスク調整後リターンとシャープレシオ」「現代ポートフォリオ理論と資産配分」を、既存記事との重複を確認してから企画する。市場タイミングについては「必ず負ける」と断定せず、一括投資と毎月の収入からの積立を区別して説明する。
