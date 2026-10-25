@@ -1,7 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
 <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d9f4ee"/><stop offset="1" stop-color="#dce8ff"/></linearGradient></defs>
 <rect width="1200" height="675" rx="28" fill="url(#bg)"/>
-<circle cx="1000" cy="455" r="145" fill="#fff" opacity=".46"/>
 <text x="64" y="86" font-family="system-ui,sans-serif" font-size="32" font-weight="700" fill="#176d65">MARKET BASICS</text>
 <text x="64" y="172" font-family="system-ui,sans-serif" font-size="68" font-weight="800" fill="#172b3d">株価指数とは？</text>
 <text x="66" y="228" font-family="system-ui,sans-serif" font-size="29" font-weight="600" fill="#405565">日経平均・TOPIX・S&amp;P 500</text>
