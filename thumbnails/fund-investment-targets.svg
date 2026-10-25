@@ -2,7 +2,8 @@
 <defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#eeeaff"/><stop offset="1" stop-color="#d9d2ff"/></linearGradient></defs>
 <rect width="1200" height="675" rx="24" fill="url(#bg)"/>
 <text x="64" y="65" font-family="sans-serif" font-size="30" font-weight="700" letter-spacing="2" fill="#6657b5">FUND INVESTMENT TARGETS</text>
-<text x="64" y="124" font-family="sans-serif" font-size="40" font-weight="800" fill="#17334a"><tspan x="64" dy="0">投資信託の投資対象とは？</tspan><tspan x="64" dy="48">株式・債券・REIT・バランス型の違い</tspan></text>
+<text x="64" y="124" font-family="sans-serif" font-size="40" font-weight="800" fill="#17334a">投資信託の投資対象とは？</text>
+<text x="64" y="174" font-family="sans-serif" font-size="27" font-weight="700" fill="#536879">株式・債券・REIT・バランス型の違い</text>
 <path d="M64 218H1136" stroke="#6657b5" stroke-opacity=".35" stroke-width="3"/>
 <g stroke-linejoin="round"><rect x="255" y="300" width="210" height="250" rx="22" fill="#faf9ff" stroke="#aaa0ed" stroke-width="6"/><rect x="495" y="300" width="210" height="250" rx="22" fill="#faf9ff" stroke="#aaa0ed" stroke-width="6"/><rect x="735" y="300" width="210" height="250" rx="22" fill="#faf9ff" stroke="#aaa0ed" stroke-width="6"/><path d="M300 450l38-48 35 20 45-65" fill="none" stroke="#6657b5" stroke-width="9" stroke-linecap="round"/><path d="M535 385h130M535 430h130M535 475h130" stroke="#aaa0ed" stroke-width="10" stroke-linecap="round"/><path d="M790 470l45-70 45 70Z" fill="#d8d2ff" stroke="#6657b5" stroke-width="7"/><path d="M790 495h90M805 515h60" stroke="#aaa0ed" stroke-width="7" stroke-linecap="round"/><text x="360" y="520" text-anchor="middle" font-size="25" font-weight="800" fill="#6657b5">株式</text><text x="600" y="520" text-anchor="middle" font-size="25" font-weight="800" fill="#6657b5">債券</text><text x="840" y="520" text-anchor="middle" font-size="25" font-weight="800" fill="#6657b5">REIT</text></g>
 </svg>

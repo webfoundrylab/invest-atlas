@@ -2,7 +2,8 @@
 <defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e6f7e2"/><stop offset="1" stop-color="#c7ebbf"/></linearGradient></defs>
 <rect width="1200" height="675" rx="24" fill="url(#bg)"/>
 <text x="64" y="65" font-family="sans-serif" font-size="30" font-weight="700" letter-spacing="2" fill="#39834a">REGULAR INVESTING</text>
-<text x="64" y="124" font-family="sans-serif" font-size="40" font-weight="800" fill="#17334a"><tspan x="64" dy="0">積立投資とは？仕組み・メリットと</tspan><tspan x="64" dy="48">注意点を初心者向けに解説</tspan></text>
+<text x="64" y="124" font-family="sans-serif" font-size="40" font-weight="800" fill="#17334a">積立投資とは？</text>
+<text x="64" y="174" font-family="sans-serif" font-size="27" font-weight="700" fill="#536879">仕組み・メリットと注意点を初心者向けに解説</text>
 <path d="M64 218H1136" stroke="#39834a" stroke-opacity=".35" stroke-width="3"/>
 <g stroke-linejoin="round"><rect x="340" y="275" width="520" height="300" rx="24" fill="#fafff8" stroke="#8dc985" stroke-width="7"/><rect x="340" y="275" width="520" height="66" rx="22" fill="#d5f0ce"/><path d="M410 258v42M790 258v42" stroke="#39834a" stroke-width="12" stroke-linecap="round"/><path d="M400 385h400M400 435h400M400 485h400" stroke="#d3eccc" stroke-width="7"/><g fill="#f6c95d" stroke="#b88725" stroke-width="5"><circle cx="450" cy="385" r="24"/><circle cx="580" cy="435" r="24"/><circle cx="710" cy="485" r="24"/></g><path d="M465 530h260" stroke="#39834a" stroke-width="8" stroke-linecap="round"/><path d="M700 512l25 18-25 18" fill="none" stroke="#39834a" stroke-width="8" stroke-linecap="round"/></g>
 </svg>

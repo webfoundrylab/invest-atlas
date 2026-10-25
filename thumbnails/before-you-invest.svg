@@ -2,7 +2,8 @@
 <defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e9f8f3"/><stop offset="1" stop-color="#c9eee3"/></linearGradient></defs>
 <rect width="1200" height="675" rx="24" fill="url(#bg)"/>
 <text x="64" y="65" font-family="sans-serif" font-size="30" font-weight="700" letter-spacing="2" fill="#138578">BEFORE YOU INVEST</text>
-<text x="64" y="124" font-family="sans-serif" font-size="40" font-weight="800" fill="#17334a"><tspan x="64" dy="0">投資を始める前に確認したい</tspan><tspan x="64" dy="48">7つのこと</tspan></text>
+<text x="64" y="124" font-family="sans-serif" font-size="40" font-weight="800" fill="#17334a">投資を始める前に</text>
+<text x="64" y="174" font-family="sans-serif" font-size="27" font-weight="700" fill="#536879">確認したい7つのこと</text>
 <path d="M64 218H1136" stroke="#138578" stroke-opacity=".35" stroke-width="3"/>
 <g stroke-linecap="round" stroke-linejoin="round"><path d="M600 278 L735 330 V425 C735 500 675 548 600 576 C525 548 465 500 465 425 V330Z" fill="#fffdf8" stroke="#138578" stroke-width="9"/><path d="M545 424 l38 38 77 -88" fill="none" stroke="#138578" stroke-width="17"/><rect x="300" y="360" width="110" height="145" rx="18" fill="#f7fffc" stroke="#83cbbd" stroke-width="6"/><path d="M325 395h60M325 425h48M325 455h55" stroke="#83cbbd" stroke-width="8"/><rect x="790" y="360" width="110" height="145" rx="18" fill="#f7fffc" stroke="#83cbbd" stroke-width="6"/><path d="M815 395h60M815 425h48M815 455h55" stroke="#83cbbd" stroke-width="8"/></g>
 </svg>

@@ -2,7 +2,8 @@
 <defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff0ee"/><stop offset="1" stop-color="#ffd4cf"/></linearGradient></defs>
 <rect width="1200" height="675" rx="24" fill="url(#bg)"/>
 <text x="64" y="65" font-family="sans-serif" font-size="30" font-weight="700" letter-spacing="2" fill="#b84c4c">INVESTMENT FUND FEES</text>
-<text x="64" y="124" font-family="sans-serif" font-size="40" font-weight="800" fill="#17334a"><tspan x="64" dy="0">投資信託の信託報酬とは？</tspan><tspan x="64" dy="48">年率の見方とコスト計算例</tspan></text>
+<text x="64" y="124" font-family="sans-serif" font-size="40" font-weight="800" fill="#17334a">投資信託の信託報酬とは？</text>
+<text x="64" y="174" font-family="sans-serif" font-size="27" font-weight="700" fill="#536879">年率の見方とコスト計算例</text>
 <path d="M64 218H1136" stroke="#b84c4c" stroke-opacity=".35" stroke-width="3"/>
 <g stroke-linejoin="round"><rect x="330" y="280" width="540" height="300" rx="26" fill="#fffaf9" stroke="#e7a09b" stroke-width="7"/><path d="M380 350h210M380 390h160" stroke="#e7a09b" stroke-width="9" stroke-linecap="round"/><text x="390" y="475" font-size="42" font-weight="800" fill="#b84c4c">年率 0.2%</text><path d="M390 520h180" stroke="#f0c3bf" stroke-width="10" stroke-linecap="round"/><circle cx="740" cy="410" r="78" fill="#ffded9" stroke="#b84c4c" stroke-width="7"/><path d="M740 362v95M710 385h45a20 20 0 0 1 0 40h-30a20 20 0 0 0 0 40h45" fill="none" stroke="#b84c4c" stroke-width="8" stroke-linecap="round"/><path d="M650 530l40 -35 32 18 58 -72" fill="none" stroke="#d56e68" stroke-width="9" stroke-linecap="round"/></g>
 </svg>

@@ -2,7 +2,8 @@
 <defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#eeeaff"/><stop offset="1" stop-color="#d9d2ff"/></linearGradient></defs>
 <rect width="1200" height="675" rx="24" fill="url(#bg)"/>
 <text x="64" y="65" font-family="sans-serif" font-size="30" font-weight="700" letter-spacing="2" fill="#6657b5">CHOOSING A FUND</text>
-<text x="64" y="124" font-family="sans-serif" font-size="40" font-weight="800" fill="#17334a"><tspan x="64" dy="0">NISAで投資信託を選ぶときの</tspan><tspan x="64" dy="48">7つのチェックポイント</tspan></text>
+<text x="64" y="124" font-family="sans-serif" font-size="40" font-weight="800" fill="#17334a">NISAでの投資信託選び</text>
+<text x="64" y="174" font-family="sans-serif" font-size="27" font-weight="700" fill="#536879">7つのチェックポイント</text>
 <path d="M64 218H1136" stroke="#6657b5" stroke-opacity=".35" stroke-width="3"/>
 <g stroke-linejoin="round"><rect x="370" y="265" width="460" height="330" rx="26" fill="#fff" stroke="#aaa0ed" stroke-width="7"/><rect x="420" y="310" width="360" height="45" rx="10" fill="#f0edff"/><path d="M445 333l12 12 22-25" fill="none" stroke="#6657b5" stroke-width="8" stroke-linecap="round"/><path d="M500 333h235" stroke="#aaa0ed" stroke-width="8" stroke-linecap="round"/><path d="M445 395l12 12 22-25" fill="none" stroke="#6657b5" stroke-width="8" stroke-linecap="round"/><path d="M500 395h200" stroke="#aaa0ed" stroke-width="8" stroke-linecap="round"/><path d="M445 457l12 12 22-25" fill="none" stroke="#6657b5" stroke-width="8" stroke-linecap="round"/><path d="M500 457h230" stroke="#aaa0ed" stroke-width="8" stroke-linecap="round"/><path d="M445 519l12 12 22-25" fill="none" stroke="#6657b5" stroke-width="8" stroke-linecap="round"/><path d="M500 519h180" stroke="#aaa0ed" stroke-width="8" stroke-linecap="round"/><circle cx="790" cy="505" r="70" fill="#c7bfff" stroke="#6657b5" stroke-width="7"/><path d="M840 555l48 48" stroke="#6657b5" stroke-width="16" stroke-linecap="round"/></g>
 </svg>

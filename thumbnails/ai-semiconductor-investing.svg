@@ -2,7 +2,8 @@
 <defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#edf0ff"/><stop offset="1" stop-color="#cdd7ff"/></linearGradient></defs>
 <rect width="1200" height="675" rx="24" fill="url(#bg)"/>
 <text x="64" y="65" font-family="sans-serif" font-size="30" font-weight="700" letter-spacing="2" fill="#4b5eb7">AI &amp; SEMICONDUCTORS</text>
-<text x="64" y="124" font-family="sans-serif" font-size="40" font-weight="800" fill="#17334a"><tspan x="64" dy="0">AI・半導体投資を深掘り｜成長領域・</tspan><tspan x="64" dy="48">関連企業・リスクの見方</tspan></text>
+<text x="64" y="124" font-family="sans-serif" font-size="40" font-weight="800" fill="#17334a">AI・半導体投資を深掘り</text>
+<text x="64" y="174" font-family="sans-serif" font-size="27" font-weight="700" fill="#536879">成長領域・関連企業・リスクの見方</text>
 <path d="M64 218H1136" stroke="#4b5eb7" stroke-opacity=".35" stroke-width="3"/>
 <g stroke-linejoin="round"><rect x="415" y="300" width="370" height="265" rx="30" fill="#f9faff" stroke="#8295e6" stroke-width="8"/><rect x="485" y="360" width="230" height="145" rx="18" fill="#dce3ff" stroke="#4b5eb7" stroke-width="7"/><path d="M515 335v25M565 335v25M615 335v25M665 335v25M515 505v25M565 505v25M615 505v25M665 505v25M390 350h25M390 400h25M390 450h25M390 500h25M785 350h25M785 400h25M785 450h25M785 500h25" stroke="#4b5eb7" stroke-width="8" stroke-linecap="round"/><path d="M530 455l45-45 35 27 60-55" fill="none" stroke="#4b5eb7" stroke-width="10" stroke-linecap="round"/><path d="M650 382h20v20" fill="none" stroke="#4b5eb7" stroke-width="8" stroke-linecap="round"/><path d="M300 540l50-55 45 20M815 300l42-44 42 14" fill="none" stroke="#8a9beb" stroke-width="8" stroke-linecap="round"/></g>
 </svg>

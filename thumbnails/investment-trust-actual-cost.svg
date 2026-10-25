@@ -2,7 +2,8 @@
 <defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e2f5ef"/><stop offset="1" stop-color="#dce8ff"/></linearGradient></defs>
 <rect width="1200" height="675" rx="24" fill="url(#bg)"/>
 <text x="64" y="65" font-family="sans-serif" font-size="30" font-weight="700" letter-spacing="2" fill="#087f75">ACTUAL FUND COST</text>
-<text x="64" y="124" font-family="sans-serif" font-size="40" font-weight="800" fill="#17334a"><tspan x="64" dy="0">投資信託の実質コストとは？</tspan><tspan x="64" dy="48">総経費率との違いと運用報告書の見方</tspan></text>
+<text x="64" y="124" font-family="sans-serif" font-size="40" font-weight="800" fill="#17334a">投資信託の実質コストとは？</text>
+<text x="64" y="174" font-family="sans-serif" font-size="27" font-weight="700" fill="#536879">総経費率との違いと運用報告書の見方</text>
 <path d="M64 218H1136" stroke="#087f75" stroke-opacity=".35" stroke-width="3"/>
 <g stroke-linejoin="round"><path d="M365 280h320l95 95v205H365Z" fill="#fbfffd" stroke="#83cfc0" stroke-width="7"/><path d="M685 280v95h95" fill="#d2f0e8" stroke="#83cfc0" stroke-width="7"/><path d="M410 420h270M410 465h230M410 510h170" stroke="#a8ddd2" stroke-width="10" stroke-linecap="round"/><circle cx="730" cy="470" r="76" fill="#d4f3eb" stroke="#087f75" stroke-width="7"/><circle cx="710" cy="450" r="32" fill="none" stroke="#087f75" stroke-width="8"/><path d="M734 475l40 40" stroke="#087f75" stroke-width="12" stroke-linecap="round"/><path d="M700 450l9 10 18-22" fill="none" stroke="#087f75" stroke-width="7" stroke-linecap="round"/></g>
 </svg>

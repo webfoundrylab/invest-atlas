@@ -2,7 +2,8 @@
 <defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#dff4ef"/><stop offset="1" stop-color="#dce8ff"/></linearGradient></defs>
 <rect width="1200" height="675" rx="24" fill="url(#bg)"/>
 <text x="64" y="65" font-family="sans-serif" font-size="30" font-weight="700" letter-spacing="2" fill="#176d65">STOCK MARKET INDICES</text>
-<text x="64" y="124" font-family="sans-serif" font-size="40" font-weight="800" fill="#17334a"><tspan x="64" dy="0">株価指数とは？日経平均・TOPIX・</tspan><tspan x="64" dy="48">S&amp;P 500の違いを初心者向けに解説</tspan></text>
+<text x="64" y="124" font-family="sans-serif" font-size="40" font-weight="800" fill="#17334a">株価指数とは？</text>
+<text x="64" y="174" font-family="sans-serif" font-size="27" font-weight="700" fill="#536879">日経平均・TOPIX・S&amp;P 500の違いを初心者向けに解説</text>
 <path d="M64 218H1136" stroke="#176d65" stroke-opacity=".35" stroke-width="3"/>
 <g stroke-linejoin="round"><rect x="270" y="285" width="660" height="300" rx="24" fill="#fafffd" stroke="#9ed7cb" stroke-width="7"/><path d="M330 520H870M330 345V520" stroke="#9ccfc5" stroke-width="6"/><path d="M350 480l80-55 75 20 80-85 70 45 75-80 65 25" fill="none" stroke="#176d65" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/><g fill="#fff" stroke="#176d65" stroke-width="6"><circle cx="430" cy="425" r="11"/><circle cx="585" cy="360" r="11"/><circle cx="730" cy="405" r="11"/><circle cx="805" cy="325" r="11"/></g><rect x="350" y="540" width="145" height="28" rx="8" fill="#c9eee4"/><rect x="525" y="540" width="145" height="28" rx="8" fill="#c9eee4"/><rect x="700" y="540" width="145" height="28" rx="8" fill="#c9eee4"/></g>
 </svg>
