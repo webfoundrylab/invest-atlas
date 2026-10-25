@@ -42,8 +42,8 @@
 
 ## サムネイル制作ルール
 - 記事サムネイルは `thumbnails/<slug>.svg` に保存し、`article-index.json` の `thumbnail` に明示登録する。
-- 画像仕様・共通レイアウト・配色・セーフエリア・モバイル確認の基準は [THUMBNAIL-GUIDELINES.md](THUMBNAIL-GUIDELINES.md) を参照する。
-- 図柄の背後に置く白抜きの大きな円は使用しない。PC用は16:9の横長で作成し、モバイルでは無理な正方形切り抜きを行わない。
+- 標準構成は「上部に大きな日本語記事名＋小さな英語タイトル、下部の大部分に大きなテーマ図柄」。タイトル位置・文字階層・上下の面積比を統一する。
+- 図柄の背後に飾りとして置く白抜きの大きな円は使わない。詳細は [THUMBNAIL-GUIDELINES.md](THUMBNAIL-GUIDELINES.md) を参照。
 
 ## 記事ページ・生成処理
 - `scripts/build-site.py` はカテゴリ別記事一覧を `categories/` 以下に生成する。
