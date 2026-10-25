@@ -11,6 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 BASE_URL = "https://webfoundrylab.github.io/invest-atlas/"
 REGISTRY_PATH = ROOT / "article-index.json"
 SITEMAP_PATH = ROOT / "sitemap.xml"
+TEXT_SITEMAP_PATH = ROOT / "sitemap.txt"
 RELATED_PATH = ROOT / "related-articles.json"
 START_MARKER = "<!-- GENERATED RELATED ARTICLES: START -->"
 END_MARKER = "<!-- GENERATED RELATED ARTICLES: END -->"
@@ -249,6 +250,7 @@ def main():
         SubElement(node, f"{{{NS}}}loc").text = url
     xml = '<?xml version="1.0" encoding="UTF-8"?>\n' + tostring(urlset, encoding="unicode") + "\n"
     SITEMAP_PATH.write_text(xml, encoding="utf-8")
+    TEXT_SITEMAP_PATH.write_text("\\n".join(urls) + "\\n", encoding="utf-8")
 
     related_data = {}
     for article in published:
@@ -293,7 +295,7 @@ def main():
                    ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8"
     )
-    print(f"Generated sitemap.xml ({len(urls)} URLs) and related-articles.json ({len(published)} articles).")
+    print(f"Generated sitemap.xml and sitemap.txt ({len(urls)} URLs each), plus related-articles.json ({len(published)} articles).")
     return 0
 
 
