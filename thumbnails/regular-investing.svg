@@ -1,9 +1,41 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="積立投資とは？仕組み・メリットと注意点を初心者向けに解説">
-<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e6f7e2"/><stop offset="1" stop-color="#c7ebbf"/></linearGradient></defs>
-<rect width="1200" height="675" rx="24" fill="url(#bg)"/>
-<text x="64" y="65" font-family="sans-serif" font-size="30" font-weight="700" letter-spacing="2" fill="#39834a">REGULAR INVESTING</text>
-<text x="64" y="124" font-family="sans-serif" font-size="40" font-weight="800" fill="#17334a">積立投資とは？</text>
-<text x="64" y="174" font-family="sans-serif" font-size="27" font-weight="700" fill="#536879">仕組み・メリットと注意点を初心者向けに解説</text>
-<path d="M64 218H1136" stroke="#39834a" stroke-opacity=".35" stroke-width="3"/>
-<g><rect x="205" y="300" width="790" height="255" rx="28" fill="#fafff8" stroke="#8dc985" stroke-width="8"/><g fill="#f6c95d" stroke="#b88725" stroke-width="5"><circle cx="330" cy="420" r="38"/><circle cx="510" cy="420" r="38"/><circle cx="690" cy="420" r="38"/><circle cx="870" cy="420" r="38"/></g><g stroke="#39834a" stroke-width="10" stroke-linecap="round"><path d="M385 420h70m-20-20 20 20-20 20M565 420h70m-20-20 20 20-20 20M745 420h70m-20-20 20 20-20 20"/></g><text x="600" y="515" text-anchor="middle" font-family="sans-serif" font-size="32" font-weight="800" fill="#39834a">同じ金額を定期的に購入</text></g>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+<title id="title">積立投資とは？｜仕組み・メリットと注意点を初心者向けに解説</title>
+<desc id="desc">決めた間隔で購入を続ける積立投資の仕組みを、カレンダー、定期的な購入、保有資産の流れで表した図。</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e8f7e8"/><stop offset="1" stop-color="#c8e9d1"/></linearGradient></defs>
+<rect width="1200" height="675" rx="28" fill="url(#bg)"/>
+<rect x="24" y="22" width="1152" height="150" rx="22" fill="#fff" stroke="#a7d2b1" stroke-width="2"/>
+<text x="64" y="62" font-family="sans-serif" font-size="30" font-weight="800" letter-spacing="1" fill="#39834a">REGULAR INVESTING</text>
+<text x="64" y="111" font-family="sans-serif" font-size="48" font-weight="800" fill="#172b3d">積立投資とは？</text>
+<text x="64" y="151" font-family="sans-serif" font-size="29" font-weight="650" fill="#536879">仕組み・メリットと注意点を初心者向けに解説</text>
+<!-- calendar card -->
+<rect x="56" y="224" width="268" height="330" rx="28" fill="#fff" stroke="#75b983" stroke-width="4"/>
+<path d="M56 252Q56 224 84 224H296Q324 224 324 252V290H56Z" fill="#39834a"/>
+<text x="190" y="267" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="800" fill="#fff">購入日を決める</text>
+<rect x="96" y="318" width="188" height="166" rx="12" fill="#f2fbf3" stroke="#9acda4" stroke-width="4"/>
+<path d="M96 360H284M143 306V335M237 306V335" stroke="#39834a" stroke-width="8" stroke-linecap="round"/>
+<g fill="#d4ead8"><rect x="113" y="377" width="35" height="29" rx="5"/><rect x="172" y="377" width="35" height="29" rx="5"/><rect x="231" y="377" width="35" height="29" rx="5"/><rect x="113" y="425" width="35" height="29" rx="5"/><rect x="172" y="425" width="35" height="29" rx="5"/><rect x="231" y="425" width="35" height="29" rx="5"/></g>
+<g fill="#39834a"><circle cx="130" cy="391" r="7"/><circle cx="189" cy="391" r="7"/><circle cx="248" cy="391" r="7"/><circle cx="130" cy="439" r="7"/><circle cx="189" cy="439" r="7"/><circle cx="248" cy="439" r="7"/></g>
+<text x="190" y="523" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="800" fill="#286b38">毎月・毎週など</text>
+<!-- recurring purchase sequence -->
+<rect x="368" y="224" width="776" height="330" rx="28" fill="#fff" stroke="#75b983" stroke-width="4"/>
+<text x="756" y="270" text-anchor="middle" font-family="sans-serif" font-size="32" font-weight="800" fill="#286b38">決めた間隔で購入を続ける</text>
+<path d="M470 385H1045" stroke="#a8d5b0" stroke-width="8" stroke-linecap="round"/>
+<g>
+<circle cx="492" cy="385" r="56" fill="#fff0bc" stroke="#c89a2f" stroke-width="5"/>
+<circle cx="492" cy="385" r="35" fill="#f6cf63" stroke="#c89a2f" stroke-width="3"/>
+<text x="492" y="397" text-anchor="middle" font-family="sans-serif" font-size="34" font-weight="800" fill="#795514">¥</text>
+<circle cx="680" cy="385" r="56" fill="#fff0bc" stroke="#c89a2f" stroke-width="5"/>
+<circle cx="680" cy="385" r="35" fill="#f6cf63" stroke="#c89a2f" stroke-width="3"/>
+<text x="680" y="397" text-anchor="middle" font-family="sans-serif" font-size="34" font-weight="800" fill="#795514">¥</text>
+<circle cx="868" cy="385" r="56" fill="#fff0bc" stroke="#c89a2f" stroke-width="5"/>
+<circle cx="868" cy="385" r="35" fill="#f6cf63" stroke="#c89a2f" stroke-width="3"/>
+<text x="868" y="397" text-anchor="middle" font-family="sans-serif" font-size="34" font-weight="800" fill="#795514">¥</text>
+<circle cx="1056" cy="385" r="56" fill="#fff0bc" stroke="#c89a2f" stroke-width="5"/>
+<circle cx="1056" cy="385" r="35" fill="#f6cf63" stroke="#c89a2f" stroke-width="3"/>
+<text x="1056" y="397" text-anchor="middle" font-family="sans-serif" font-size="34" font-weight="800" fill="#795514">¥</text>
+</g>
+<g stroke="#39834a" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M552 385h42m-12-12 12 12-12 12M740 385h42m-12-12 12 12-12 12M928 385h42m-12-12 12 12-12 12"/></g>
+<g font-family="sans-serif" font-size="29" font-weight="800" fill="#536879" text-anchor="middle"><text x="492" y="472">1回目</text><text x="680" y="472">2回目</text><text x="868" y="472">3回目</text><text x="1056" y="472">その後も</text></g>
+<text x="756" y="520" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="650" fill="#536879">買う時期を分けて投資する</text>
+<text x="600" y="625" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="800" fill="#244b35">積立を続けても、利益や元本は保証されない</text>
 </svg>
