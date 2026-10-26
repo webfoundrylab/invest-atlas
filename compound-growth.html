@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>複利とは？投資でお金が増える仕組みとシミュレーション｜Invest Atlas</title>
+<meta name="description" content="複利とは、運用で得た利益も次の運用に回す仕組みです。単利との違い、毎月積立のシミュレーション、長期投資での注意点を図解と計算例で初心者向けに解説します。">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://webfoundrylab.github.io/invest-atlas/compound-growth.html">
+<meta name="theme-color" content="#10243a">
+<style>
+:root{--ink:#172b3d;--muted:#5c6d7a;--navy:#10243a;--teal:#176d65;--line:#dce4e8;--paper:#f5f7f8}*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);line-height:1.85;background:var(--paper)}a{color:var(--teal);text-underline-offset:3px}.wrap{width:min(850px,calc(100% - 36px));margin:auto}header{background:var(--navy);padding:18px 0}header a{color:white;text-decoration:none;font-weight:800}.article{background:white;margin:28px auto 52px;padding:clamp(22px,5vw,54px);border:1px solid var(--line);border-radius:14px}.eyebrow{color:var(--teal);font-size:.8rem;font-weight:800;letter-spacing:.08em}h1{font-size:clamp(1.8rem,4vw,2.65rem);line-height:1.35;margin:.5em 0}.title-main,.title-subtitle{display:block}.title-subtitle{font-size:.62em;line-height:1.5;font-weight:650;letter-spacing:0;color:#536879;margin-top:.24em}h2{font-size:1.4rem;margin-top:2em;border-bottom:1px solid var(--line);padding-bottom:.4em}h3{font-size:1.1rem;margin-top:1.5em}p,li{font-size:1rem}.lead{font-size:1.1rem;color:#405565}.meta{font-size:.85rem;color:var(--muted)}.table-wrap{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.93rem}th,td{padding:12px;border:1px solid var(--line);text-align:left;vertical-align:top}th{background:#edf3f5}.callout{background:#edf6f4;border-left:4px solid var(--teal);padding:16px 18px;margin:22px 0}.related-inline{margin:18px 0;padding:12px 16px;background:#f4f7f8;border-radius:8px}.toc{margin:24px 0;padding:16px 20px;background:#f4f7f8;border:1px solid var(--line);border-radius:12px}.toc h2{margin:0 0 8px;border:0;padding:0;font-size:1.08rem}.toc ol{margin:0;padding-left:1.5em}.toc li{margin:.2em 0}.toc a{text-decoration:none}.toc a:hover{text-decoration:underline}.diagram{display:block;width:100%;height:auto;margin:22px auto 8px}.caption{font-size:.85rem;color:var(--muted);margin-top:4px}.formula{padding:16px;background:#f4f7f8;border-radius:10px;text-align:center;font-weight:750;font-size:1.05rem;overflow-wrap:anywhere}.sources li{margin:.55em 0}footer{background:#0c1c2b;color:#d7e1e8;padding:24px 0;font-size:.9rem}footer a{color:#aee0d7}
+</style></head>
+<body><header><div class="wrap"><a href="./">← INVEST ATLAS</a></div></header>
+<main class="wrap"><article class="article">
+<div class="eyebrow">資産形成の基礎</div>
+<h1><span class="title-main">複利とは？</span><span class="title-subtitle">投資でお金が増える仕組みとシミュレーション</span></h1>
+<p class="lead">複利（ふくり）は、運用で得た利益を元本に加え、その後は「元本＋それまでの利益」をもとに運用する考え方です。運用期間が長いほど複利の効果が表れやすくなる一方、実際の投資では利益が毎年一定になるとは限らず、元本割れすることもあります。仕組みと限界をセットで理解しましょう。</p>
+<p class="meta">公開日：2026年10月26日・情報確認日：2026年10月26日</p>
+<nav class="toc" aria-label="記事内目次"><h2>この記事の目次</h2><ol>
+<li><a href="#compound-1">複利とは？単利との違い</a></li>
+<li><a href="#compound-2">複利で増える仕組みを図で見る</a></li>
+<li><a href="#compound-3">毎月積み立てた場合のシミュレーション</a></li>
+<li><a href="#compound-4">複利を考えるときの注意点</a></li>
+<li><a href="#compound-5">長期投資で意識したいこと</a></li>
+<li><a href="#compound-6">よくある質問</a></li>
+<li><a href="#compound-7">公式情報・参考資料</a></li>
+</ol></nav>
+<div class="callout"><strong>先に要点</strong><ul>
+<li>単利は当初の元本をもとに利息などを計算し、複利は元本とそれまでの利益を合わせた金額をもとに運用する考え方。</li>
+<li>利益を再投資できれば、利益がさらに利益を生む可能性がある。</li>
+<li>複利は利益を保証する仕組みではない。運用成績がマイナスなら資産が減ることもある。</li>
+<li>試算結果は利回り・期間・費用・税金などの前提で変わり、将来の成果を予測・保証するものではない。</li>
+</ul></div>
+<h2 id="compound-1">1. 複利とは？単利との違い</h2>
+<p>単利は、当初の元本を基準に利息などを計算する考え方です。複利は、得られた利益を元本に加えて運用を続ける考え方です。銀行預金の利息や投資商品の運用成果など、具体的な仕組みは商品によって異なりますが、「利益を再び運用に回すことで、その後の運用対象額が大きくなり得る」という点が複利の基本です。</p>
+<div class="table-wrap"><table><thead><tr><th>比較</th><th>単利</th><th>複利</th></tr></thead><tbody>
+<tr><th>計算の基準</th><td>当初の元本</td><td>元本＋再投資された利益</td></tr>
+<tr><th>利益の扱い</th><td>利益を元本に加えない前提</td><td>利益を運用に回す前提</td></tr>
+<tr><th>期間が長くなると</th><td>同じ利率なら利益額は一定ペースで増える</td><td>同じ利率で利益を再投資できれば、増加額が大きくなり得る</td></tr>
+</tbody></table></div>
+<p>投資信託などでは、利益が必ず毎年発生するわけではありません。価格が下がる年もあり、分配金を受け取る商品では再投資するかどうかによって結果が変わります。「複利の商品」という名前が付いていれば利益が保証される、という意味ではありません。</p>
+<h2 id="compound-2">2. 複利で増える仕組みを図で見る</h2>
+<p>たとえば、元本10万円を年率3％で運用できたと仮定します。1年後の利益は3,000円です。利益を引き出さずに運用を続けると、2年目は10万3,000円をもとに計算するため、同じ3％なら2年目の利益は3,090円になります。</p>
+<img class="diagram" src="images/compound-growth-diagram.svg" width="1200" height="650" alt="単利は元本10万円を基準に毎年3,000円ずつ増える仮定、複利は利益を元本に加え翌年の計算対象が10万3,000円になる仕組みを比較する図">
+<p class="caption">説明用の仮定例：元本10万円、年率3％、税金・費用なし。実際の投資成果を示すものではありません。</p>
+<p>この例では、単利の2年目も利益は3,000円ですが、複利では3,090円になります。差は小さく見えても、利益を再投資しながら期間を重ねると差が広がる場合があります。ただし、実際の投資では毎年のリターンは一定ではなく、複利計算どおりに増えるとは限りません。</p>
+<div class="formula">複利の基本式：将来の金額 ＝ 元本 × (1 ＋ 期間あたりの利率)<sup>運用回数</sup></div>
+<p>この式は、利率が一定で、利益を再投資し、追加投資や引き出しがない場合の基本形です。積立投資では毎回の購入時期が異なるため、各積立額が運用される期間も異なります。</p>
+<h2 id="compound-3">3. 毎月積み立てた場合のシミュレーション</h2>
+<p>毎月1万円を積み立てる例で、運用期間と仮定利回りの影響を考えてみます。次の数字は、毎月末に積み立て、年率を月率に換算して複利運用できたと仮定した概算です。利回りは保証されず、税金・費用・インフレを考慮していません。</p>
+<div class="table-wrap"><table><thead><tr><th>期間</th><th>積立元本の合計</th><th>年率3％と仮定した場合</th></tr></thead><tbody>
+<tr><th>10年</th><td>120万円</td><td>約140万円</td></tr>
+<tr><th>20年</th><td>240万円</td><td>約328万円</td></tr>
+<tr><th>30年</th><td>360万円</td><td>約583万円</td></tr>
+</tbody></table></div>
+<p>この例では、期間が長くなるにつれて、積立元本と試算額の差が大きくなります。ただし、差額すべてを「複利だけの効果」と単純に切り分けることはできません。実際の資産額は、購入時期ごとの値動き、利回りの変動、費用、税金、分配金の扱いなどによって変わります。</p>
+<p class="related-inline">毎月一定額を購入する仕組みと、積立でも損失を防げるわけではない理由は、<a href="regular-investing.html">「積立投資とは？仕組み・メリットと注意点」</a>で解説しています。</p>
+<h2 id="compound-4">4. 複利を考えるときの注意点</h2>
+<h3>利回りは一定ではない</h3><p>シミュレーションは、前提を固定して仕組みを理解するためのものです。株式や投資信託の価格は上がることも下がることもあり、実際のリターンは年ごとに変動します。一定利回りの試算を、将来の資産額の予測として扱わないようにしましょう。</p>
+<h3>費用や税金は運用成果に影響する</h3><p>投資信託では信託報酬などの費用がかかる場合があり、課税口座では利益や分配金に税金がかかることがあります。費用や税金が差し引かれると、再投資に回せる金額が小さくなります。</p>
+<p class="related-inline">投資信託の保有中にかかる費用の基本は、<a href="investment-trust-fees.html">「投資信託の信託報酬とは？年率の見方とコスト計算例」</a>で確認できます。NISAの非課税枠や制度上の注意点は、<a href="nisa-basics.html">「新NISAとは？つみたて投資枠・成長投資枠と非課税枠」</a>を参照してください。</p>
+<h3>分配金を受け取るか再投資するかで違いが出る</h3><p>投資信託などの分配金を受け取ると、そのお金は自動的には運用に回りません。再投資する場合も、商品や口座、制度上の条件を確認する必要があります。また、分配金が支払われると、その分だけ基準価額が下がる要因になることがあり、分配金の多さだけで運用成果を判断するのは適切ではありません。</p>
+<h3>インフレでお金の購買力が変わる</h3><p>名目上の金額が増えていても、物価が上がれば同じ金額で買えるものは少なくなる可能性があります。将来必要なお金を考える際は、資産額だけでなく、物価の変化も意識しましょう。</p>
+<h2 id="compound-5">5. 長期投資で意識したいこと</h2>
+<ul><li><strong>無理のない金額にする：</strong>生活費や近く使う予定のお金を確保し、値下がりしても生活に支障が出にくい金額を検討する。</li>
+<li><strong>仕組みとリスクを理解する：</strong>投資対象、値動き、費用、換金条件を確認してから商品を選ぶ。</li>
+<li><strong>時間だけに期待しない：</strong>長期保有でも元本割れする可能性はあり、期間を延ばせば必ず利益が出るわけではない。</li>
+<li><strong>定期的に状況を確認する：</strong>目的や家計、リスク許容度が変わった場合は、投資額や資産配分を見直す。</li></ul>
+<p class="related-inline">投資先に迷っている場合は、<a href="simple-investing-guide.html">「投資は何を買えばいい？迷った人のためのシンプルな考え方」</a>で、投資対象・リスク許容度・積立と一括投資の考え方を整理できます。投資を始める前の準備については、<a href="before-you-invest.html#risk-tolerance">「投資を始める前に確認したい7つのこと」の「値下がりへの耐性」</a>も参考になります。</p>
+<h2 id="compound-6">6. よくある質問</h2>
+<h3>複利なら必ずお金は増えますか？</h3><p>いいえ。複利は利益を再投資する仕組みを表す言葉で、利益や元本を保証するものではありません。投資商品は値下がりすることがあり、損失が続けば資産額が減る可能性があります。</p>
+<h3>複利の効果を得るには、毎月積み立てる必要がありますか？</h3><p>毎月の積立は複利を活用する一つの方法ですが、必須ではありません。まとまった資金を運用する場合でも、利益を再投資すれば複利の考え方が関係します。いずれの場合も、投資対象やリスク、費用を確認することが大切です。</p>
+<h3>利回りが高い商品ほどよいですか？</h3><p>利回りの数字だけでは判断できません。高いリターンが示されていても、対象期間やリスク、費用、分配金の扱いが異なる可能性があります。過去の実績は将来の成果を保証しません。</p>
+<h2 id="compound-7">7. 公式情報・参考資料</h2>
+<ul class="sources">
+<li><a href="https://www.fsa.go.jp/policy/nisa2/know/index.html" target="_blank" rel="noopener noreferrer">金融庁「NISAを知る」</a> — NISA制度の公式情報。制度を利用する場合は最新の条件を確認してください。</li>
+<li><a href="https://www.j-flec.go.jp/" target="_blank" rel="noopener noreferrer">J-FLEC（金融経済教育推進機構）</a> — 資産形成や金融リテラシーに関する学習情報。</li>
+</ul>
+<p>本記事の計算例は、複利の仕組みを説明するための仮定に基づく概算です。特定の金融商品を推奨するものではなく、投資判断を個別に助言するものでもありません。投資には元本割れのリスクがあります。</p>
+<p class="meta">最終確認日：2026年10月26日</p>
+</article></main>
+<footer><div class="wrap"><p>Invest Atlas｜投資を理解するための情報ライブラリ</p><p><a href="./">トップページ</a> ・ <a href="editorial-policy.html">編集方針</a></p></div></footer>
+</body></html>
