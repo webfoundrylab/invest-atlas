@@ -12,7 +12,7 @@
 <text x="600" y="157" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="650" fill="#536879">年率の見方とコスト計算例</text>
 
 <!-- fixed shared title panel -->
-<text x="64" y="62" font-family="sans-serif" font-size="30" font-weight="800" letter-spacing="1" fill="#b84c4c">INVESTMENT FUND FEES</text>
+
 <path d="M0 588Q210 554 400 592T790 584T1200 590V675H0Z" fill="#f3b6b1" opacity=".7"/>
 <!-- annual rate dial -->
 <g transform="translate(100 260)">
