@@ -10,53 +10,5 @@
 <text x="72" y="66" font-family="Arial,sans-serif" font-size="30" font-weight="700" fill="#087f75" letter-spacing="2">A SIMPLE INVESTING GUIDE</text>
 <text x="72" y="126" font-family="sans-serif" font-size="43" font-weight="800" fill="#10243a">投資は何を買えばいい？</text>
 <text x="72" y="174" font-family="sans-serif" font-size="31" font-weight="700" fill="#526779">迷った人のためのシンプルな考え方</text>
-<g transform="translate(60 255)">
-  <rect width="310" height="350" rx="26" fill="url(#panel)" stroke="#d6e5e6" stroke-width="3"/>
-  <rect x="24" y="24" width="262" height="48" rx="14" fill="#ffeadb"/>
-  <text x="155" y="56" font-family="sans-serif" font-size="25" font-weight="800" text-anchor="middle" fill="#87512f">01 生活資金を分ける</text>
-  <g transform="translate(60 112)">
-    <rect x="10" y="28" width="170" height="115" rx="14" fill="#e5f5ef" stroke="#7bbeb1" stroke-width="4"/>
-    <path d="M10 50 H180" stroke="#7bbeb1" stroke-width="4"/>
-    <rect x="122" y="65" width="58" height="30" rx="7" fill="#fff" stroke="#7bbeb1" stroke-width="3"/>
-    <circle cx="137" cy="80" r="4" fill="#087f75"/>
-    <path d="M48 10 H145 L162 28 H31 Z" fill="#ffcf9f" stroke="#d69a64" stroke-width="3"/>
-    <path d="M54 83 H97 M54 101 H112" stroke="#087f75" stroke-width="6" stroke-linecap="round"/>
-  </g>
-  <text x="155" y="302" font-family="sans-serif" font-size="23" text-anchor="middle" font-weight="700" fill="#263f52">近く使うお金は</text>
-  <text x="155" y="334" font-family="sans-serif" font-size="23" text-anchor="middle" font-weight="700" fill="#263f52">投資と分けて考える</text>
-</g>
-<g transform="translate(445 255)">
-  <rect width="310" height="350" rx="26" fill="url(#panel)" stroke="#d6e5e6" stroke-width="3"/>
-  <rect x="24" y="24" width="262" height="48" rx="14" fill="#d9f4ec"/>
-  <text x="155" y="56" font-family="sans-serif" font-size="25" font-weight="800" text-anchor="middle" fill="#12665f">02 広く分散する</text>
-  <g transform="translate(58 105)">
-    <circle cx="96" cy="76" r="69" fill="#e2f0ff" stroke="#6e9cc7" stroke-width="4"/>
-    <ellipse cx="96" cy="76" rx="31" ry="69" fill="none" stroke="#6e9cc7" stroke-width="3"/>
-    <ellipse cx="96" cy="76" rx="60" ry="27" fill="none" stroke="#6e9cc7" stroke-width="3"/>
-    <path d="M29 76 H163 M96 9 V145" stroke="#6e9cc7" stroke-width="3"/>
-    <path d="M53 47 Q72 35 81 52 L74 70 L54 75 L46 62 Z M115 31 L140 41 L135 60 L119 63 L108 49 Z M88 90 L110 98 L114 117 L99 135 L82 118 Z" fill="#65b79f" opacity=".95"/>
-    <circle cx="155" cy="18" r="23" fill="#ffcc77" stroke="#d69a64" stroke-width="3"/>
-    <path d="M145 18 H165 M155 8 V28" stroke="#87512f" stroke-width="4" stroke-linecap="round"/>
-  </g>
-  <text x="155" y="302" font-family="sans-serif" font-size="23" text-anchor="middle" font-weight="700" fill="#263f52">何に投資するかを知り</text>
-  <text x="155" y="334" font-family="sans-serif" font-size="23" text-anchor="middle" font-weight="700" fill="#263f52">費用とリスクを確認</text>
-</g>
-<g transform="translate(830 255)">
-  <rect width="310" height="350" rx="26" fill="url(#panel)" stroke="#d6e5e6" stroke-width="3"/>
-  <rect x="24" y="24" width="262" height="48" rx="14" fill="#e8e3ff"/>
-  <text x="155" y="56" font-family="sans-serif" font-size="25" font-weight="800" text-anchor="middle" fill="#5b4ca0">03 無理なく続ける</text>
-  <g transform="translate(62 107)">
-    <rect x="8" y="16" width="170" height="133" rx="15" fill="#fff" stroke="#8d8bc5" stroke-width="4"/>
-    <path d="M8 49 H178" stroke="#8d8bc5" stroke-width="4"/>
-    <path d="M44 5 V28 M142 5 V28" stroke="#8d8bc5" stroke-width="7" stroke-linecap="round"/>
-    <g fill="#c9c4f5">
-      <rect x="28" y="66" width="25" height="22" rx="5"/><rect x="66" y="66" width="25" height="22" rx="5"/><rect x="104" y="66" width="25" height="22" rx="5"/>
-      <rect x="28" y="101" width="25" height="22" rx="5"/><rect x="66" y="101" width="25" height="22" rx="5"/>
-    </g>
-    <path d="M107 116 L128 133 L170 82" fill="none" stroke="#087f75" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
-  </g>
-  <text x="155" y="302" font-family="sans-serif" font-size="23" text-anchor="middle" font-weight="700" fill="#263f52">相場予想よりも</text>
-  <text x="155" y="334" font-family="sans-serif" font-size="23" text-anchor="middle" font-weight="700" fill="#263f52">自分のルールを大切に</text>
-</g>
-<text x="600" y="646" font-family="sans-serif" font-size="18" text-anchor="middle" fill="#5c6d7a">概念図：投資の判断を整理するための考え方であり、利益を保証するものではありません</text>
+<g><rect x="90" y="275" width="300" height="320" rx="28" fill="#fff" stroke="#d6e5e6" stroke-width="7"/><rect x="450" y="275" width="300" height="320" rx="28" fill="#fff" stroke="#d6e5e6" stroke-width="7"/><rect x="810" y="275" width="300" height="320" rx="28" fill="#fff" stroke="#d6e5e6" stroke-width="7"/><g font-family="sans-serif" font-size="30" font-weight="800" text-anchor="middle"><text x="240" y="345" fill="#87512f">生活資金</text><text x="600" y="345" fill="#12665f">分散</text><text x="960" y="345" fill="#5b4ca0">継続</text></g><g stroke-width="13" stroke-linecap="round"><path d="M160 420h160M160 465h120" stroke="#ffcf9f"/><circle cx="600" cy="455" r="65" fill="#e2f0ff" stroke="#6e9cc7" stroke-width="5"/><path d="M875 500v-70h55v70h55v-110h55" fill="none" stroke="#087f75"/></g></g><text x="600" y="646" font-family="sans-serif" font-size="18" text-anchor="middle" fill="#5c6d7a">概念図：投資の判断を整理するための考え方であり、利益を保証するものではありません</text>
 </svg>
