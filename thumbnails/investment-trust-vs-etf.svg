@@ -1,9 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="投資信託とETFの違いは？仕組み・コスト・売買方法を比較">
-<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e6f4ff"/><stop offset="1" stop-color="#c4e3f8"/></linearGradient></defs>
-<rect width="1200" height="675" rx="24" fill="url(#bg)"/>
-<text x="64" y="65" font-family="sans-serif" font-size="30" font-weight="700" letter-spacing="2" fill="#246ca5">MUTUAL FUND VS ETF</text>
-<text x="64" y="124" font-family="sans-serif" font-size="40" font-weight="800" fill="#17334a">投資信託とETFの違いは？</text>
-<text x="64" y="174" font-family="sans-serif" font-size="27" font-weight="700" fill="#536879">仕組み・コスト・売買方法を比較</text>
-<path d="M64 218H1136" stroke="#246ca5" stroke-opacity=".35" stroke-width="3"/>
-<g><rect x="170" y="300" width="390" height="255" rx="28" fill="#f9fdff" stroke="#6eafd9" stroke-width="8"/><rect x="640" y="300" width="390" height="255" rx="28" fill="#f9fdff" stroke="#6eafd9" stroke-width="8"/><text x="365" y="365" text-anchor="middle" font-family="sans-serif" font-size="36" font-weight="800" fill="#246ca5">投資信託</text><text x="835" y="365" text-anchor="middle" font-family="sans-serif" font-size="36" font-weight="800" fill="#246ca5">ETF</text><g fill="#9cc9e7"><rect x="245" y="410" width="240" height="28" rx="14"/><rect x="245" y="460" width="180" height="28" rx="14"/><rect x="715" y="410" width="240" height="28" rx="14"/><rect x="715" y="460" width="180" height="28" rx="14"/></g><path d="M575 425h50m-18-18 18 18-18 18" fill="none" stroke="#246ca5" stroke-width="10" stroke-linecap="round"/></g>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+<title id="title">投資信託とETFの違いは？｜仕組み・コスト・売買方法を比較</title>
+<desc id="desc">一般的な投資信託とETFについて、価格の決まり方と売買方法を左右に比較した図。</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e5f4ff"/><stop offset="1" stop-color="#d8e9ff"/></linearGradient></defs>
+<rect width="1200" height="675" rx="28" fill="url(#bg)"/>
+<rect x="24" y="22" width="1152" height="150" rx="22" fill="#fff" stroke="#9bc9e8" stroke-width="2"/>
+<text x="64" y="62" font-family="sans-serif" font-size="30" font-weight="800" letter-spacing="1" fill="#246ca5">MUTUAL FUND VS ETF</text>
+<text x="64" y="111" font-family="sans-serif" font-size="48" font-weight="800" fill="#172b3d">投資信託とETFの違いは？</text>
+<text x="64" y="151" font-family="sans-serif" font-size="29" font-weight="650" fill="#536879">仕組み・コスト・売買方法を比較</text>
+<rect x="54" y="205" width="518" height="382" rx="28" fill="#fff" stroke="#6eafd9" stroke-width="4"/>
+<rect x="628" y="205" width="518" height="382" rx="28" fill="#fff" stroke="#d4a15b" stroke-width="4"/>
+<path d="M54 233Q54 205 82 205H544Q572 205 572 233V274H54Z" fill="#246ca5"/>
+<path d="M628 233Q628 205 656 205H1118Q1146 205 1146 233V274H628Z" fill="#b87928"/>
+<text x="313" y="252" text-anchor="middle" font-family="sans-serif" font-size="32" font-weight="800" fill="#fff">投資信託</text>
+<text x="887" y="252" text-anchor="middle" font-family="sans-serif" font-size="32" font-weight="800" fill="#fff">ETF</text>
+<circle cx="313" cy="354" r="58" fill="#e3f3ff"/>
+<rect x="279" y="319" width="68" height="73" rx="9" fill="#fff" stroke="#246ca5" stroke-width="5"/>
+<path d="M292 339H334M292 352H326M292 365H331" stroke="#6eafd9" stroke-width="6" stroke-linecap="round"/>
+<circle cx="337" cy="384" r="19" fill="#d8efff" stroke="#246ca5" stroke-width="4"/>
+<path d="M337 373V384L345 389" fill="none" stroke="#246ca5" stroke-width="4" stroke-linecap="round"/>
+<text x="313" y="445" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="800" fill="#246ca5">基準価額で取引</text>
+<text x="313" y="491" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="650" fill="#536879">注文後に価格が決まる</text>
+<path d="M172 526H454" stroke="#b9d9ef" stroke-width="3" stroke-linecap="round"/>
+<text x="313" y="563" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="800" fill="#246ca5">金額指定・積立など</text>
+<circle cx="600" cy="387" r="30" fill="#fff" stroke="#8bb8d7" stroke-width="3"/>
+<path d="M584 387H614M603 376L614 387L603 398" fill="none" stroke="#246ca5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="887" cy="354" r="58" fill="#fff0d9"/>
+<path d="M850 382V347L873 332V382M881 382V316H905V382M913 382V354L929 343V382" fill="#f3c26e" stroke="#b87928" stroke-width="4" stroke-linejoin="round"/>
+<path d="M844 390H936" stroke="#b87928" stroke-width="5" stroke-linecap="round"/>
+<path d="M856 323L875 310L893 317L918 294M903 294H918V309" fill="none" stroke="#3c987d" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="887" y="445" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="800" fill="#a56820">市場価格で売買</text>
+<text x="887" y="491" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="650" fill="#536879">取引時間中に価格が動く</text>
+<path d="M746 526H1028" stroke="#efd2a5" stroke-width="3" stroke-linecap="round"/>
+<text x="887" y="563" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="800" fill="#a56820">取引所で注文</text>
+<text x="600" y="631" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="800" fill="#244b67">費用や条件は商品ごとに確認</text>
 </svg>
