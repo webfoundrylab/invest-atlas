@@ -206,7 +206,17 @@
       const pageSizeSelect = document.getElementById('page-size');
       const paginationContainers = [document.getElementById('pagination-top'), document.getElementById('pagination-bottom')];
       let pageSize = Number(pageSizeSelect.value) || 10;
-      let currentPage = 1;
+      const getPageFromUrl = () => {
+        const value = Number(new URLSearchParams(window.location.search).get('page'));
+        return Number.isInteger(value) && value > 1 ? value : 1;
+      };
+      let currentPage = getPageFromUrl();
+      const syncPageUrl = () => {
+        const url = new URL(window.location.href);
+        if (currentPage > 1) url.searchParams.set('page', String(currentPage));
+        else url.searchParams.delete('page');
+        window.history.replaceState({}, '', url);
+      };
       const modeInputs = [...document.querySelectorAll('input[name="search-mode"]')];
       const tagModeInputs = [...document.querySelectorAll('input[name="tag-mode"]')];
       const tagFilters = document.getElementById('tag-filters');
@@ -344,6 +354,7 @@
         const total = visible.length;
         const totalPages = Math.max(1, Math.ceil(total / pageSize));
         currentPage = Math.min(Math.max(1, currentPage), totalPages);
+        syncPageUrl();
         const startIndex = (currentPage - 1) * pageSize;
         const pageArticles = visible.slice(startIndex, startIndex + pageSize);
         list.replaceChildren();
@@ -557,7 +568,7 @@
           renderCategoryLevels();
           syncCategoryControls();
           updateSelectedTagSummary();
-          render();
+          render(false);
         })
         .catch(() => {
           count.textContent = '記事一覧を読み込めませんでした。ページを再読み込みしてください。';
