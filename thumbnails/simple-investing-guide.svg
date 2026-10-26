@@ -6,6 +6,10 @@
   <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f7fbfc"/></linearGradient>
 </defs>
 <rect width="1200" height="675" fill="url(#bg)"/>
+<g id="invest-atlas-watermark" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="270" letter-spacing="-8" fill="#087f75" opacity="0.075">
+  <text x="18" y="400">Invest</text>
+  <text x="1180" y="605" text-anchor="end">Atlas</text>
+</g>
 <rect x="42" y="28" width="1116" height="190" rx="24" fill="#fffdf9" stroke="#dbe7e8" stroke-width="2"/>
 <text x="72" y="66" font-family="Arial,sans-serif" font-size="30" font-weight="700" fill="#087f75" letter-spacing="2">A SIMPLE INVESTING GUIDE</text>
 <text x="72" y="126" font-family="sans-serif" font-size="43" font-weight="800" fill="#10243a">投資は何を買えばいい？</text>
