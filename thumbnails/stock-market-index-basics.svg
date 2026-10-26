@@ -2,7 +2,7 @@
 <defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#dff4ef"/><stop offset="1" stop-color="#dce8ff"/></linearGradient></defs>
 <rect width="1200" height="675" rx="24" fill="url(#bg)"/>
 <rect x="24" y="22" width="1152" height="150" rx="22" fill="#fff" stroke="#176d65" stroke-width="2"/>
-<text x="600" y="57" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="800" letter-spacing="1" fill="#176d65">STOCK MARKET INDEX BASICS</text>
+<text x="600" y="57" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="800" letter-spacing="1" fill="#176d65">STOCK INDICES</text>
 <text x="600" y="116" text-anchor="middle" font-family="sans-serif" font-size="48" font-weight="800" fill="#17334a">株価指数とは？</text>
 <text x="600" y="157" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="650" fill="#536879">日経平均・TOPIX・S&amp;P 500の違いを初心者向けに解説</text>
 
