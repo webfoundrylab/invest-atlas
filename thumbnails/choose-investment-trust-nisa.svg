@@ -54,5 +54,5 @@
 <rect x="370" y="574" width="440" height="76" rx="38" fill="#9e4f32"/>
 <circle cx="414" cy="612" r="20" fill="#fff"/>
 <path d="M404 612l7 7 14-16" fill="none" stroke="#9e4f32" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="604" y="623" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="800" fill="#fff">自分の目的に合う商品を選ぶ</text>
+<text x="620" y="623" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="800" fill="#fff">目的に合う商品を選ぶ</text>
 </svg>
