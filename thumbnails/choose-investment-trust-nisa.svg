@@ -1,61 +1,58 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
 <title id="title">NISAでの投資信託選び｜7つのチェックポイント</title>
-<desc id="desc">投資信託の商品資料を虫眼鏡で確認するイラスト。投資対象、リスク、費用などを見比べて選ぶことを表す。</desc>
+<desc id="desc">投資対象、値動き、費用などの違いを3つの投資先カードで見比べ、目的に合う投資信託を選ぶイメージ図。</desc>
 <defs>
-  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e8f7f4"/><stop offset="1" stop-color="#d7eaf8"/></linearGradient>
-  <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#f4f8fb"/></linearGradient>
-  <linearGradient id="lens" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#a7e7dc" stop-opacity=".7"/><stop offset="1" stop-color="#d6f2f5" stop-opacity=".55"/></linearGradient>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff1d9"/><stop offset="1" stop-color="#f8d9cf"/></linearGradient>
+  <linearGradient id="card" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#fffaf4"/></linearGradient>
 </defs>
 <rect width="1200" height="675" rx="28" fill="url(#bg)"/>
-<rect x="24" y="22" width="1152" height="150" rx="22" fill="#fff" stroke="#cbdedc" stroke-width="2"/>
-<text x="64" y="62" font-family="sans-serif" font-size="30" font-weight="800" letter-spacing="1" fill="#087f75">FUND SELECTION</text>
+<!-- fixed shared title panel -->
+<rect x="24" y="22" width="1152" height="150" rx="22" fill="#fff" stroke="#e8c9b6" stroke-width="2"/>
+<text x="64" y="62" font-family="sans-serif" font-size="30" font-weight="800" letter-spacing="1" fill="#b45c36">FUND SELECTION</text>
 <text x="64" y="111" font-family="sans-serif" font-size="48" font-weight="800" fill="#172b3d">NISAでの投資信託選び</text>
 <text x="64" y="151" font-family="sans-serif" font-size="29" font-weight="650" fill="#536879">7つのチェックポイント</text>
-<path d="M0 570Q170 530 330 575T660 565T970 570T1200 535V675H0Z" fill="#c6e5dc"/>
-<!-- large fund report -->
-<g transform="translate(290 214) rotate(-5 230 200)">
-  <rect x="14" y="15" width="440" height="390" rx="24" fill="#8ba8b6" opacity=".22"/>
-  <rect width="440" height="390" rx="24" fill="url(#paper)" stroke="#a9c2cd" stroke-width="4"/>
-  <rect x="0" y="0" width="440" height="76" rx="22" fill="#176d65"/>
-  <path d="M0 52H440V76H0Z" fill="#176d65"/>
-  <text x="34" y="48" font-family="sans-serif" font-size="30" font-weight="800" fill="#fff">投資信託の商品資料</text>
-  <circle cx="58" cy="126" r="20" fill="#d8f3eb"/>
-  <path d="M48 126l7 8 15-18" fill="none" stroke="#087f75" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="94" y="136" font-family="sans-serif" font-size="30" font-weight="800" fill="#203b4d">投資対象</text>
-  <rect x="94" y="151" width="260" height="9" rx="4" fill="#dce7ec"/>
-  <circle cx="58" cy="205" r="20" fill="#e0edfb"/>
-  <path d="M43 211l13-15 10 7 10-15" fill="none" stroke="#2879bd" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="94" y="215" font-family="sans-serif" font-size="30" font-weight="800" fill="#203b4d">値動き・リスク</text>
-  <rect x="94" y="230" width="230" height="9" rx="4" fill="#dce7ec"/>
-  <circle cx="58" cy="284" r="20" fill="#fff0d4"/>
-  <text x="58" y="295" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="800" fill="#a96b09">¥</text>
-  <text x="94" y="294" font-family="sans-serif" font-size="30" font-weight="800" fill="#203b4d">保有中の費用</text>
-  <rect x="94" y="309" width="280" height="9" rx="4" fill="#dce7ec"/>
-  <rect x="28" y="344" width="384" height="28" rx="14" fill="#e1f4ee"/>
-  <text x="220" y="365" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="800" fill="#176d65">目論見書で確認</text>
-</g>
-<!-- magnifying glass -->
-<g transform="translate(650 270) rotate(12)">
-  <circle cx="145" cy="130" r="122" fill="#fff" opacity=".42"/>
-  <circle cx="145" cy="130" r="105" fill="url(#lens)" stroke="#237b91" stroke-width="18"/>
-  <circle cx="145" cy="130" r="83" fill="none" stroke="#fff" stroke-width="5" opacity=".8"/>
-  <path d="M218 207L310 302Q324 317 310 331L300 341Q286 354 272 339L183 248Z" fill="#176d65" stroke="#10574f" stroke-width="5"/>
-  <path d="M231 226L295 291" stroke="#65bcae" stroke-width="9" stroke-linecap="round"/>
-  <!-- simple diversified portfolio symbols inside lens -->
-  <circle cx="110" cy="115" r="28" fill="#f4bd50"/>
-  <path d="M110 87A28 28 0 0 1 138 115H110Z" fill="#e58b42"/>
-  <path d="M110 115L89 133A28 28 0 0 1 82 101Z" fill="#e58b42"/>
-  <path d="M145 167V128M145 146L124 132M145 154L166 137" fill="none" stroke="#176d65" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M145 167Q120 171 116 147Q139 147 145 167M145 154Q149 127 174 124Q172 148 145 154" fill="#48b99a" stroke="#176d65" stroke-width="3"/>
-</g>
-<!-- supporting labels -->
+<!-- distinct illustration: compare investment destinations, then choose by purpose -->
+<path d="M0 604Q190 565 390 604T790 594T1200 600V675H0Z" fill="#f0bda6" opacity=".65"/>
 <g>
-  <rect x="760" y="220" width="310" height="64" rx="32" fill="#fff" stroke="#9bcfc3" stroke-width="3"/>
-  <circle cx="796" cy="252" r="14" fill="#087f75"/>
-  <path d="M789 252l5 5 10-12" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="824" y="262" font-family="sans-serif" font-size="30" font-weight="800" fill="#175d57">何に投資する？</text>
-  <rect x="820" y="555" width="320" height="64" rx="32" fill="#fff" stroke="#a8c8eb" stroke-width="3"/>
-  <path d="M850 584l15-14 13 8 16-20" fill="none" stroke="#2879bd" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="908" y="597" font-family="sans-serif" font-size="30" font-weight="800" fill="#20568c">値動きは？</text>
+  <!-- stocks / companies card -->
+  <rect x="64" y="236" width="300" height="280" rx="26" fill="#b7795c" opacity=".16"/>
+  <rect x="54" y="226" width="300" height="280" rx="26" fill="url(#card)" stroke="#d9a28a" stroke-width="4"/>
+  <circle cx="204" cy="324" r="65" fill="#ffe2c9"/>
+  <path d="M158 362V322H184V362M192 362V291H218V362M226 362V308H252V362" fill="#d8784e" stroke="#9f4d2e" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M148 369H262" stroke="#9f4d2e" stroke-width="6" stroke-linecap="round"/>
+  <text x="204" y="424" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="800" fill="#8f472d">株式・企業</text>
+  <text x="204" y="466" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="650" fill="#66534b">値動きと成長性</text>
+  <!-- world / regions card -->
+  <rect x="450" y="236" width="300" height="280" rx="26" fill="#688e9e" opacity=".16"/>
+  <rect x="440" y="226" width="300" height="280" rx="26" fill="url(#card)" stroke="#91b8c5" stroke-width="4"/>
+  <circle cx="590" cy="324" r="65" fill="#dceff4" stroke="#4d94a6" stroke-width="5"/>
+  <ellipse cx="590" cy="324" rx="30" ry="65" fill="none" stroke="#4d94a6" stroke-width="4"/>
+  <path d="M528 324H652M539 292Q590 309 641 292M539 356Q590 339 641 356" fill="none" stroke="#4d94a6" stroke-width="4"/>
+  <path d="M552 290l18-12 16 7 13-10 19 10-8 17-20 4-8 18-17-6-4-16Z" fill="#53a78d"/>
+  <path d="M605 335l16 8 4 20-14 13-12-18Z" fill="#53a78d"/>
+  <text x="590" y="424" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="800" fill="#276b7b">地域・資産</text>
+  <text x="590" y="466" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="650" fill="#526a72">分散の範囲</text>
+  <!-- costs / structure card -->
+  <rect x="836" y="236" width="300" height="280" rx="26" fill="#8e9a53" opacity=".18"/>
+  <rect x="826" y="226" width="300" height="280" rx="26" fill="url(#card)" stroke="#b5bd7b" stroke-width="4"/>
+  <circle cx="976" cy="324" r="65" fill="#edf0d3"/>
+  <circle cx="976" cy="324" r="42" fill="none" stroke="#7b8b35" stroke-width="12"/>
+  <path d="M976 282A42 42 0 0 1 1018 324H976Z" fill="#d3a13f"/>
+  <path d="M976 324L1018 324A42 42 0 0 1 956 364Z" fill="#4d9b83"/>
+  <circle cx="976" cy="324" r="15" fill="#fff"/>
+  <text x="976" y="424" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="800" fill="#5d7025">費用・リスク</text>
+  <text x="976" y="466" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="650" fill="#62694a">保有コストも確認</text>
 </g>
+<!-- comparison lines flow into the selection result -->
+<g fill="none" stroke="#9e624b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M204 518V544H510"/>
+  <path d="M590 518V544"/>
+  <path d="M976 518V544H670"/>
+  <path d="M590 544V565"/>
+</g>
+<path d="M575 555L590 573L605 555" fill="none" stroke="#9e624b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="370" y="574" width="440" height="76" rx="38" fill="#9e4f32"/>
+<circle cx="414" cy="612" r="20" fill="#fff"/>
+<path d="M404 612l7 7 14-16" fill="none" stroke="#9e4f32" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="604" y="623" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="800" fill="#fff">自分の目的に合う商品を選ぶ</text>
 </svg>
