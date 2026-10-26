@@ -12,7 +12,7 @@
 <text x="600" y="157" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="650" fill="#536879">総経費率との違いと運用報告書の見方</text>
 
 <!-- title band -->
-<text x="600" y="57" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="800" letter-spacing="1" fill="#087f75">FUND COST GUIDE</text>
+
 <path d="M0 570Q180 540 350 570T700 565T1000 570T1200 548V675H0Z" fill="#c5e4d9"/>
 <!-- report sheet -->
 <g transform="translate(65 238)">
