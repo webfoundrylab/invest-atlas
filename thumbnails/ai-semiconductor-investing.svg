@@ -1,9 +1,63 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="AI・半導体投資を深掘り｜成長領域・関連企業・リスクの見方">
-<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#edf0ff"/><stop offset="1" stop-color="#cdd7ff"/></linearGradient></defs>
-<rect width="1200" height="675" rx="24" fill="url(#bg)"/>
-<text x="64" y="65" font-family="sans-serif" font-size="30" font-weight="700" letter-spacing="2" fill="#4b5eb7">AI &amp; SEMICONDUCTORS</text>
-<text x="64" y="124" font-family="sans-serif" font-size="40" font-weight="800" fill="#17334a">AI・半導体投資を深掘り</text>
-<text x="64" y="174" font-family="sans-serif" font-size="27" font-weight="700" fill="#536879">成長領域・関連企業・リスクの見方</text>
-<path d="M64 218H1136" stroke="#4b5eb7" stroke-opacity=".35" stroke-width="3"/>
-<g><rect x="430" y="320" width="340" height="205" rx="28" fill="#f9faff" stroke="#4b5eb7" stroke-width="9"/><rect x="500" y="370" width="200" height="105" rx="18" fill="#dce3ff" stroke="#4b5eb7" stroke-width="8"/><g stroke="#4b5eb7" stroke-width="9" stroke-linecap="round"><path d="M465 350v-30m65 30v-30m65 30v-30m65 30v-30m65 30v-30M465 525v30m65-30v30m65-30v30m65-30v30m65-30v30M430 360h-30m30 55h-30m30 55h-30m370-110h30m-30 55h30m-30 55h30"/></g><g fill="#4b5eb7"><circle cx="250" cy="365" r="42"/><circle cx="950" cy="365" r="42"/><circle cx="250" cy="500" r="42"/><circle cx="950" cy="500" r="42"/></g><g stroke="#8295e6" stroke-width="9" fill="none"><path d="M292 365h108l30 35M908 365H800l-30 35M292 500h108l30-35M908 500H800l-30-35"/></g></g>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="AI・半導体投資を深掘り。AI需要が半導体、製造装置、データセンター、電力へ広がる流れと、企業業績・株価評価を確認する重要性を示す図解">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f2f5ff"/><stop offset="1" stop-color="#d9e4ff"/></linearGradient>
+  <linearGradient id="chip" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#5369cf"/><stop offset="1" stop-color="#273f9b"/></linearGradient>
+</defs>
+<rect width="1200" height="675" fill="url(#bg)"/>
+<!-- Shared title panel: keep geometry and typography consistent across thumbnails -->
+<rect x="24" y="22" width="1152" height="150" rx="22" fill="#fff" stroke="#5369cf" stroke-width="2"/>
+<text x="64" y="62" font-family="sans-serif" font-size="30" font-weight="800" letter-spacing="1" fill="#5369cf">AI &amp; SEMICONDUCTORS</text>
+<text x="64" y="111" font-family="sans-serif" font-size="48" font-weight="800" fill="#172b55">AI・半導体投資を深掘り</text>
+<text x="64" y="151" font-family="sans-serif" font-size="29" font-weight="650" fill="#536879">成長領域・関連企業・リスクの見方</text>
+<!-- Demand spreads through four linked fields -->
+<g stroke="#7084d8" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+ <path d="M274 325H302"/><path d="M293 316l9 9-9 9"/>
+ <path d="M549 325H577"/><path d="M568 316l9 9-9 9"/>
+ <path d="M824 325H852"/><path d="M843 316l9 9-9 9"/>
+</g>
+<!-- Semiconductor / memory -->
+<g>
+ <rect x="45" y="238" width="229" height="180" rx="20" fill="#fff" stroke="#5369cf" stroke-width="3"/>
+ <rect x="120" y="258" width="80" height="64" rx="10" fill="url(#chip)" stroke="#273f9b" stroke-width="3"/>
+ <rect x="141" y="276" width="38" height="28" rx="4" fill="#dce5ff"/>
+ <g stroke="#5369cf" stroke-width="4" stroke-linecap="round"><path d="M133 250v-8m18 8v-8m18 8v-8m18 8v-8M133 322v8m18-8v8m18-8v8m18-8v8M112 270h8m-8 18h8m80-18h8m-8 18h8"/></g>
+ <text x="159" y="366" font-family="sans-serif" font-size="29" font-weight="800" text-anchor="middle" fill="#172b55">半導体</text>
+ <text x="159" y="401" font-family="sans-serif" font-size="29" font-weight="650" text-anchor="middle" fill="#536879">GPU・メモリ</text>
+</g>
+<!-- Manufacturing equipment -->
+<g>
+ <rect x="302" y="238" width="247" height="180" rx="20" fill="#fff" stroke="#2c938b" stroke-width="3"/>
+ <circle cx="425" cy="286" r="29" fill="#d8f4ee" stroke="#2c938b" stroke-width="4"/>
+ <circle cx="425" cy="286" r="10" fill="#2c938b"/>
+ <g stroke="#2c938b" stroke-width="5" stroke-linecap="round"><path d="M425 245v-8m0 90v-8m-41-33h-8m90 0h-8m-62-29-6-6m64 64-6-6m0-52 6-6m-64 64-6-6"/></g>
+ <text x="425" y="366" font-family="sans-serif" font-size="29" font-weight="800" text-anchor="middle" fill="#172b55">製造装置</text>
+ <text x="425" y="401" font-family="sans-serif" font-size="29" font-weight="650" text-anchor="middle" fill="#536879">生産を支える</text>
+</g>
+<!-- Data center -->
+<g>
+ <rect x="577" y="238" width="247" height="180" rx="20" fill="#fff" stroke="#bd7c32" stroke-width="3"/>
+ <g fill="#ffebcb" stroke="#bd7c32" stroke-width="3"><rect x="664" y="250" width="35" height="76" rx="5"/><rect x="706" y="250" width="35" height="76" rx="5"/></g>
+ <g stroke="#bd7c32" stroke-width="4" stroke-linecap="round"><path d="M672 266h19m-19 14h19m-19 14h19m24-28h19m-19 14h19m-19 14h19"/></g>
+ <text x="700" y="366" font-family="sans-serif" font-size="29" font-weight="800" text-anchor="middle" fill="#172b55">データセンター</text>
+ <text x="700" y="401" font-family="sans-serif" font-size="29" font-weight="650" text-anchor="middle" fill="#536879">計算・保存</text>
+</g>
+<!-- Power / cooling -->
+<g>
+ <rect x="852" y="238" width="303" height="180" rx="20" fill="#fff" stroke="#c35e6e" stroke-width="3"/>
+ <path d="M944 252l-27 43h26l-9 30 42-49h-27l11-24z" fill="#ffe0e4" stroke="#c35e6e" stroke-width="3" stroke-linejoin="round"/>
+ <path d="M1010 265c-10 12-10 23 0 34m18-34c-10 12-10 23 0 34m18-34c-10 12-10 23 0 34" fill="none" stroke="#c35e6e" stroke-width="4" stroke-linecap="round"/>
+ <text x="1003" y="366" font-family="sans-serif" font-size="29" font-weight="800" text-anchor="middle" fill="#172b55">電力・冷却</text>
+ <text x="1003" y="401" font-family="sans-serif" font-size="29" font-weight="650" text-anchor="middle" fill="#536879">稼働を支える</text>
+</g>
+<!-- Core investment lens -->
+<path d="M600 430v29m-8-9 8 9 8-9" stroke="#5369cf" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="600" y="496" font-family="sans-serif" font-size="30" font-weight="800" text-anchor="middle" fill="#273f9b">需要の拡大だけでは投資判断できない</text>
+<g>
+ <rect x="290" y="519" width="270" height="83" rx="16" fill="#e0f5f0" stroke="#2c938b" stroke-width="3"/>
+ <path d="M320 574v-19l15-10 15 10v19m-23 0v-12h16v12" fill="none" stroke="#217b75" stroke-width="4" stroke-linejoin="round"/>
+ <text x="442" y="571" font-family="sans-serif" font-size="31" font-weight="800" text-anchor="middle" fill="#175d58">企業業績</text>
+ <rect x="640" y="519" width="270" height="83" rx="16" fill="#fff0dc" stroke="#bd7c32" stroke-width="3"/>
+ <path d="M670 579v-25h10v25m9 0v-37h10v37m9 0v-17h10v17" fill="none" stroke="#a76a24" stroke-width="4" stroke-linejoin="round"/>
+ <text x="795" y="571" font-family="sans-serif" font-size="31" font-weight="800" text-anchor="middle" fill="#81501e">株価評価</text>
+</g>
 </svg>
