@@ -1422,3 +1422,10 @@
 - `thumbnails/compound-growth.svg` の図中ラベル（複利・単利）と時間軸の文字を25〜28pxから29pxへ拡大し、サブタイトルと同等以上のサイズに統一。
 - 変更コミット：`a9edc2359224b77cc260420a565a7b4b58f344d7`。
 - GitHub mainへの保存は完了。GitHub Actionsと公開画面での実表示は未確認。
+
+
+## 2026-10-26 NISA投資信託選びサムネイルを再生成
+- `thumbnails/choose-investment-trust-nisa.svg` を既存の3カード型から、NISA口座を起点に2つの投資枠へ分岐する図、人のイラスト、投資対象の本、貯金箱を組み合わせた構成へ再生成。
+- SVGとして直接作成し、文字は英語タイトルを除いて29px以上を維持。新しい図柄をサムネイルに反映。
+- 変更コミット：`b44450f0c5b403907c5dbd6f46b538198c7824c5`。
+- GitHub mainへの保存は完了。GitHub Actionsと公開画面での実表示は未確認。
