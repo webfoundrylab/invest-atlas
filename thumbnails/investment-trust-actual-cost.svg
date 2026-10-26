@@ -1,9 +1,62 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="投資信託の実質コストとは？総経費率との違いと運用報告書の見方">
-<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e2f5ef"/><stop offset="1" stop-color="#dce8ff"/></linearGradient></defs>
-<rect width="1200" height="675" rx="24" fill="url(#bg)"/>
-<text x="64" y="65" font-family="sans-serif" font-size="30" font-weight="700" letter-spacing="2" fill="#087f75">ACTUAL FUND COST</text>
-<text x="64" y="124" font-family="sans-serif" font-size="40" font-weight="800" fill="#17334a">投資信託の実質コストとは？</text>
-<text x="64" y="174" font-family="sans-serif" font-size="27" font-weight="700" fill="#536879">総経費率との違いと運用報告書の見方</text>
-<path d="M64 218H1136" stroke="#087f75" stroke-opacity=".35" stroke-width="3"/>
-<g><path d="M340 300h350l100 100v160H340Z" fill="#fbfffd" stroke="#83cfc0" stroke-width="8"/><path d="M690 300v100h100" fill="#d2f0e8" stroke="#83cfc0" stroke-width="8"/><g stroke="#a8ddd2" stroke-width="14" stroke-linecap="round"><path d="M390 440h260M390 485h215"/></g><circle cx="760" cy="475" r="65" fill="#d4f3eb" stroke="#087f75" stroke-width="8"/><circle cx="745" cy="460" r="26" fill="none" stroke="#087f75" stroke-width="8"/><path d="M765 480l35 35" stroke="#087f75" stroke-width="12" stroke-linecap="round"/><text x="570" y="365" text-anchor="middle" font-family="sans-serif" font-size="32" font-weight="800" fill="#087f75">費用明細を確認</text></g>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+<title id="title">投資信託の実質コストとは？｜総経費率との違いと運用報告書の見方</title>
+<desc id="desc">運用報告書の費用明細を虫眼鏡で確認するイラスト。信託報酬、売買手数料、その他費用を確認し、総経費率の意味を理解する。</desc>
+<defs>
+  <linearGradient id="background" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e5f5ef"/><stop offset="1" stop-color="#dce9fb"/></linearGradient>
+  <linearGradient id="report" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ffffff"/><stop offset="1" stop-color="#f4faf8"/></linearGradient>
+  <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#a9e4d9" stop-opacity=".75"/><stop offset="1" stop-color="#d8f2f2" stop-opacity=".5"/></linearGradient>
+</defs>
+<rect width="1200" height="675" rx="26" fill="url(#background)"/>
+<!-- title band -->
+<rect x="24" y="22" width="1152" height="184" rx="22" fill="#fff" stroke="#c8dfd9" stroke-width="3"/>
+<text x="62" y="61" font-family="sans-serif" font-size="30" font-weight="800" letter-spacing="1" fill="#087f75">FUND COST GUIDE</text>
+<text x="62" y="117" font-family="sans-serif" font-size="40" font-weight="800" fill="#17334a">投資信託の実質コストとは？</text>
+<text x="62" y="165" font-family="sans-serif" font-size="27" font-weight="700" fill="#536879">総経費率との違いと運用報告書の見方</text>
+<!-- lower illustration field -->
+<path d="M0 560Q170 526 335 562T670 555T1000 563T1200 535V675H0Z" fill="#c5e4d9"/>
+<!-- report sheet -->
+<g transform="translate(115 238)">
+  <rect x="10" y="12" width="455" height="374" rx="22" fill="#7899a3" opacity=".22"/>
+  <rect x="0" y="0" width="455" height="374" rx="22" fill="url(#report)" stroke="#8ebdb2" stroke-width="4"/>
+  <path d="M0 22Q0 0 22 0H433Q455 0 455 22V72H0Z" fill="#176d65"/>
+  <text x="28" y="48" font-family="sans-serif" font-size="30" font-weight="800" fill="#fff">交付運用報告書</text>
+  <text x="28" y="111" font-family="sans-serif" font-size="29" font-weight="800" fill="#203b4d">費用明細</text>
+  <g font-family="sans-serif" font-size="29" font-weight="700">
+    <rect x="24" y="129" width="407" height="58" rx="10" fill="#e2f4ee"/>
+    <circle cx="52" cy="158" r="13" fill="#087f75"/>
+    <path d="M46 158l5 5 9-11" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="78" y="168" fill="#175d57">信託報酬</text>
+    <rect x="24" y="198" width="407" height="58" rx="10" fill="#e5effb"/>
+    <circle cx="52" cy="227" r="13" fill="#2879bd"/>
+    <path d="M46 227l5 5 9-11" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="78" y="237" fill="#20568c">売買手数料</text>
+    <rect x="24" y="267" width="407" height="58" rx="10" fill="#fff0d5"/>
+    <circle cx="52" cy="296" r="13" fill="#c78a20"/>
+    <path d="M46 296l5 5 9-11" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="78" y="306" fill="#895b10">その他費用</text>
+  </g>
+</g>
+<!-- magnifier overlaps report edge, not decorative halo -->
+<g transform="translate(500 270) rotate(-8)">
+  <circle cx="155" cy="126" r="111" fill="url(#glass)" stroke="#287b8b" stroke-width="18"/>
+  <circle cx="155" cy="126" r="88" fill="none" stroke="#fff" stroke-width="5" opacity=".85"/>
+  <path d="M232 207L322 297Q337 312 322 327L311 338Q296 352 281 337L192 248Z" fill="#176d65" stroke="#10574f" stroke-width="5"/>
+  <path d="M244 222L307 285" stroke="#66bcae" stroke-width="9" stroke-linecap="round"/>
+  <!-- clear cost pie chart inside the lens -->
+  <circle cx="155" cy="126" r="57" fill="#f3bf52"/>
+  <path d="M155 69A57 57 0 0 1 210 145L155 126Z" fill="#2879bd"/>
+  <path d="M155 126L210 145A57 57 0 0 1 119 175Z" fill="#49b79b"/>
+  <circle cx="155" cy="126" r="24" fill="#fff"/>
+  <text x="155" y="137" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="800" fill="#17334a">%</text>
+</g>
+<!-- clear total expense ratio label -->
+<g transform="translate(810 285)">
+  <rect x="0" y="0" width="320" height="92" rx="20" fill="#fff" stroke="#91cbbd" stroke-width="4"/>
+  <text x="160" y="38" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="700" fill="#536879">費用をまとめて確認</text>
+  <text x="160" y="74" text-anchor="middle" font-family="sans-serif" font-size="34" font-weight="800" fill="#087f75">総経費率</text>
+  <path d="M50 126H270" stroke="#8bbdb1" stroke-width="5" stroke-linecap="round"/>
+  <path d="M160 108V144" stroke="#8bbdb1" stroke-width="5" stroke-linecap="round"/>
+  <rect x="12" y="160" width="296" height="76" rx="18" fill="#176d65"/>
+  <text x="160" y="207" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="800" fill="#fff">定義と対象期間も確認</text>
+</g>
 </svg>
