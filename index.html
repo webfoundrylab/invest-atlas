@@ -186,7 +186,7 @@
       .trust-strip{display:none}
       .section-head{margin:22px 0 12px}
       .results-toolbar{align-items:flex-start}.results-actions{width:100%;justify-content:space-between}.page-size-control{font-size:.78rem}.page-size-control select{padding:6px}.pagination{gap:5px}.page-button{min-width:34px;min-height:34px;padding:5px 8px}.article-row{display:block;padding:14px 16px;min-height:0;border-radius:14px}
-      #article-list .article-row > a:first-child{display:none!important}
+      #article-list .article-row > .article-thumb-link{display:none!important}
       .article-row>div{min-width:0;overflow-wrap:anywhere}
       .article-category{justify-self:start;max-width:100%;white-space:normal;overflow-wrap:anywhere;margin-bottom:5px}
       .article-row h3{font-size:1.08rem;line-height:1.45;margin:0 0 6px;max-height:none;overflow:visible;overflow-wrap:anywhere}
@@ -351,6 +351,7 @@
           const row = document.createElement('article');
           row.className = 'article-row';
           const thumbLink = document.createElement('a');
+          thumbLink.className = 'article-thumb-link';
           thumbLink.href = article.slug;
           thumbLink.setAttribute('aria-label', article.title + 'を読む');
           const picture = document.createElement('picture');
