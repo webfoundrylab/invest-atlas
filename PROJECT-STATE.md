@@ -1519,3 +1519,12 @@
 - 新NISAの図は下部メッセージを「2つの投資枠は併用できる」に変更し、元本保証の注記をサムネイルの主メッセージから外した（リスク説明は記事本文で扱う）。
 - SVGを直接編集し、画像生成ツールは不使用。GitHubへの保存は完了。
 - 公開ページ・実機スマートフォンでの見え方は未確認。デプロイ結果はActionsで確認する。
+
+
+## 2026-10-27 サムネイル10枚の図柄・タイトル帯を共通化
+- 対象: `ai-semiconductor-investing.svg`、`before-you-invest.svg`、`choose-investment-trust-nisa.svg`、`investment-trust-actual-cost.svg`、`investment-trust-fees.svg`、`investment-trust-index-active.svg`、`investment-trust-vs-etf.svg`、`regular-investing.svg`、`simple-investing-guide.svg`、`stock-market-index-basics.svg`
+- タイトル帯をガイドラインの固定位置・サイズ・中央揃えに統一し、正式な `article-index.json` の主題・副題を使用。
+- 背景の大きな透かし文字「Invest / Atlas」を削除し、図柄との視覚的な競合を低減。
+- SVGソースを直接編集。画像生成ツールは不使用。
+- GitHub上の10ファイルを再取得し、透かしの削除と中央配置を確認。公開ページ・実機での視覚確認は未実施。
+- デプロイ確認は後続のGitHub Actions実行を参照。
