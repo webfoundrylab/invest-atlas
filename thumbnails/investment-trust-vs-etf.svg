@@ -4,7 +4,7 @@
 <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e5f4ff"/><stop offset="1" stop-color="#d8e9ff"/></linearGradient></defs>
 <rect width="1200" height="675" rx="28" fill="url(#bg)"/>
 <rect x="24" y="22" width="1152" height="150" rx="22" fill="#fff" stroke="#246ca5" stroke-width="2"/>
-<text x="600" y="57" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="800" letter-spacing="1" fill="#246ca5">INVESTMENT TRUST VS ETF</text>
+<text x="600" y="57" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="800" letter-spacing="1" fill="#246ca5">FUND VS ETF</text>
 <text x="600" y="116" text-anchor="middle" font-family="sans-serif" font-size="48" font-weight="800" fill="#172b3d">投資信託とETFの違いは？</text>
 <text x="600" y="157" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="650" fill="#536879">仕組み・コスト・売買方法を比較</text>
 
