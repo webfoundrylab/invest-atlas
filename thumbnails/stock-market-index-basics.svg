@@ -1,13 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="株価指数とは？日経平均・TOPIX・S&amp;P 500の違いを初心者向けに解説">
 <defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#dff4ef"/><stop offset="1" stop-color="#dce8ff"/></linearGradient></defs>
 <rect width="1200" height="675" rx="24" fill="url(#bg)"/>
-<g id="invest-atlas-watermark" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="270" letter-spacing="-8" fill="#176d65" opacity="0.075">
-  <text x="18" y="400">Invest</text>
-  <text x="1180" y="605" text-anchor="end">Atlas</text>
-</g>
+<rect x="24" y="22" width="1152" height="150" rx="22" fill="#fff" stroke="#176d65" stroke-width="2"/>
+<text x="600" y="57" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="800" letter-spacing="1" fill="#176d65">STOCK MARKET INDEX BASICS</text>
+<text x="600" y="116" text-anchor="middle" font-family="sans-serif" font-size="48" font-weight="800" fill="#17334a">株価指数とは？</text>
+<text x="600" y="157" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="650" fill="#536879">日経平均・TOPIX・S&amp;P 500の違いを初心者向けに解説</text>
+
 <text x="64" y="65" font-family="sans-serif" font-size="30" font-weight="700" letter-spacing="2" fill="#176d65">STOCK MARKET INDICES</text>
-<text x="64" y="124" font-family="sans-serif" font-size="40" font-weight="800" fill="#17334a">株価指数とは？</text>
-<text x="64" y="174" font-family="sans-serif" font-size="27" font-weight="700" fill="#536879">日経平均・TOPIX・S&amp;P 500の違いを初心者向けに解説</text>
 <path d="M64 218H1136" stroke="#176d65" stroke-opacity=".35" stroke-width="3"/>
 <g><rect x="190" y="295" width="820" height="270" rx="28" fill="#fafffd" stroke="#9ed7cb" stroke-width="8"/><path d="M270 500H930M270 355V500" stroke="#9ccfc5" stroke-width="7"/><path d="M300 465l105-65 100 25 105-95 100 50 100-95 75 25" fill="none" stroke="#176d65" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/><g fill="#fff" stroke="#176d65" stroke-width="7"><circle cx="405" cy="400" r="12"/><circle cx="610" cy="330" r="12"/><circle cx="810" cy="380" r="12"/><circle cx="910" cy="285" r="12"/></g></g>
 </svg>
