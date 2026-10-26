@@ -571,6 +571,36 @@
       "mainTitle": "投資は何を買えばいい？",
       "subtitle": "迷った人のためのシンプルな考え方",
       "thumbnail": "thumbnails/simple-investing-guide.svg"
+    },
+    {
+      "slug": "compound-growth.html",
+      "title": "複利とは？投資でお金が増える仕組みとシミュレーション",
+      "category": "strategy",
+      "subcategory": "long-term-investing",
+      "topic": "compound-growth",
+      "tags": [
+        "複利",
+        "長期投資",
+        "資産形成",
+        "積立投資",
+        "運用利回り",
+        "投資初心者"
+      ],
+      "summary": "複利と単利の違い、利益を再投資する仕組み、毎月積立の試算例と注意点を図解で解説。",
+      "status": "published",
+      "related": [
+        "regular-investing.html",
+        "simple-investing-guide.html",
+        "investment-trust-fees.html",
+        "nisa-basics.html",
+        "before-you-invest.html"
+      ],
+      "publishedAt": "2026-10-26",
+      "updatedAt": "2026-10-26",
+      "thumbnail": "thumbnails/compound-growth.svg",
+      "publishOrder": 13,
+      "mainTitle": "複利とは？",
+      "subtitle": "投資でお金が増える仕組みとシミュレーション"
     }
   ]
 }
