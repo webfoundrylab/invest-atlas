@@ -1,9 +1,48 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="投資信託の信託報酬とは？年率の見方とコスト計算例">
-<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff0ee"/><stop offset="1" stop-color="#ffd4cf"/></linearGradient></defs>
-<rect width="1200" height="675" rx="24" fill="url(#bg)"/>
-<text x="64" y="65" font-family="sans-serif" font-size="30" font-weight="700" letter-spacing="2" fill="#b84c4c">INVESTMENT FUND FEES</text>
-<text x="64" y="124" font-family="sans-serif" font-size="40" font-weight="800" fill="#17334a">投資信託の信託報酬とは？</text>
-<text x="64" y="174" font-family="sans-serif" font-size="27" font-weight="700" fill="#536879">年率の見方とコスト計算例</text>
-<path d="M64 218H1136" stroke="#b84c4c" stroke-opacity=".35" stroke-width="3"/>
-<g><rect x="235" y="300" width="730" height="255" rx="28" fill="#fffaf9" stroke="#e7a09b" stroke-width="8"/><text x="600" y="375" text-anchor="middle" font-family="sans-serif" font-size="36" font-weight="800" fill="#b84c4c">保有中にかかる費用</text><rect x="325" y="410" width="550" height="54" rx="18" fill="#ffd4cf"/><rect x="325" y="410" width="355" height="54" rx="18" fill="#d56e68"/><text x="600" y="515" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="750" fill="#7c3737">年率 × 保有額 × 期間</text></g>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+<title id="title">投資信託の信託報酬とは？｜年率の見方とコスト計算例</title>
+<desc id="desc">年率のパーセント表示を、保有額と期間を掛け合わせた費用のイメージに結びつける図解。</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff0ee"/><stop offset="1" stop-color="#ffd4cf"/></linearGradient>
+  <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#fff8f7"/></linearGradient>
+</defs>
+<rect width="1200" height="675" rx="28" fill="url(#bg)"/>
+<!-- fixed shared title panel -->
+<rect x="24" y="22" width="1152" height="150" rx="22" fill="#fff" stroke="#e8b7b2" stroke-width="2"/>
+<text x="64" y="62" font-family="sans-serif" font-size="30" font-weight="800" letter-spacing="1" fill="#b84c4c">INVESTMENT FUND FEES</text>
+<text x="64" y="111" font-family="sans-serif" font-size="48" font-weight="800" fill="#172b3d">投資信託の信託報酬とは？</text>
+<text x="64" y="151" font-family="sans-serif" font-size="29" font-weight="650" fill="#536879">年率の見方とコスト計算例</text>
+<path d="M0 588Q210 554 400 592T790 584T1200 590V675H0Z" fill="#f3b6b1" opacity=".7"/>
+<!-- annual rate dial -->
+<g transform="translate(100 260)">
+  <circle cx="155" cy="145" r="122" fill="#fff" stroke="#e7a09b" stroke-width="5"/>
+  <circle cx="155" cy="145" r="91" fill="#ffe4e0" stroke="#d56e68" stroke-width="10" stroke-dasharray="390 182" transform="rotate(-90 155 145)"/>
+  <path d="M155 145L211 77" stroke="#b84c4c" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="155" cy="145" r="15" fill="#b84c4c"/>
+  <text x="155" y="178" text-anchor="middle" font-family="sans-serif" font-size="38" font-weight="800" fill="#9e3f3f">年率</text>
+  <text x="155" y="330" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="800" fill="#7c3737">表示は年単位</text>
+</g>
+<!-- calculation flow -->
+<g>
+  <rect x="390" y="260" width="260" height="145" rx="24" fill="url(#panel)" stroke="#e7a09b" stroke-width="4"/>
+  <circle cx="440" cy="307" r="23" fill="#ffd4cf"/>
+  <path d="M440 291V323M426 302H454M426 312H454" stroke="#b84c4c" stroke-width="4" stroke-linecap="round"/>
+  <text x="520" y="316" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="800" fill="#9e3f3f">保有額</text>
+  <text x="520" y="365" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="650" fill="#536879">いくら保有するか</text>
+  <path d="M665 333H710" stroke="#b84c4c" stroke-width="7" stroke-linecap="round"/>
+  <path d="M696 319L712 333L696 347" fill="none" stroke="#b84c4c" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="725" y="260" width="260" height="145" rx="24" fill="url(#panel)" stroke="#e7a09b" stroke-width="4"/>
+  <circle cx="775" cy="307" r="23" fill="#ffd4cf"/>
+  <path d="M775 290V324M760 307H790" stroke="#b84c4c" stroke-width="4" stroke-linecap="round"/>
+  <text x="855" y="316" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="800" fill="#9e3f3f">保有期間</text>
+  <text x="855" y="365" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="650" fill="#536879">どれくらい持つか</text>
+  <path d="M995 333H1032" stroke="#b84c4c" stroke-width="7" stroke-linecap="round"/>
+  <path d="M1018 319L1034 333L1018 347" fill="none" stroke="#b84c4c" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="1045" y="260" width="105" height="145" rx="20" fill="#b84c4c"/>
+  <text x="1097" y="320" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="800" fill="#fff">費用</text>
+  <text x="1097" y="360" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="800" fill="#fff">目安</text>
+</g>
+<!-- clear bottom calculation note -->
+<rect x="385" y="466" width="640" height="104" rx="22" fill="#fff" stroke="#e7a09b" stroke-width="4"/>
+<text x="705" y="507" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="650" fill="#7c5553">年率 × 保有額 × 期間</text>
+<text x="705" y="547" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="800" fill="#b84c4c">実際の負担は残高などで変わる</text>
 </svg>
