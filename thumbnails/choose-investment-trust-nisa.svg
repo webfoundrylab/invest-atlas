@@ -1,9 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="NISAで投資信託を選ぶときの7つのチェックポイント">
-<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#eeeaff"/><stop offset="1" stop-color="#d9d2ff"/></linearGradient></defs>
-<rect width="1200" height="675" rx="24" fill="url(#bg)"/>
-<text x="64" y="65" font-family="sans-serif" font-size="30" font-weight="700" letter-spacing="2" fill="#6657b5">CHOOSING A FUND</text>
-<text x="64" y="124" font-family="sans-serif" font-size="40" font-weight="800" fill="#17334a">NISAでの投資信託選び</text>
-<text x="64" y="174" font-family="sans-serif" font-size="27" font-weight="700" fill="#536879">7つのチェックポイント</text>
-<path d="M64 218H1136" stroke="#6657b5" stroke-opacity=".35" stroke-width="3"/>
-<g><rect x="205" y="300" width="790" height="255" rx="30" fill="#fff" stroke="#aaa0ed" stroke-width="8"/><g fill="#f0edff" stroke="#6657b5" stroke-width="6"><rect x="250" y="345" width="200" height="72" rx="16"/><rect x="500" y="345" width="200" height="72" rx="16"/><rect x="750" y="345" width="200" height="72" rx="16"/><rect x="250" y="445" width="200" height="72" rx="16"/><rect x="500" y="445" width="200" height="72" rx="16"/><rect x="750" y="445" width="200" height="72" rx="16"/></g><g fill="#6657b5"><circle cx="290" cy="381" r="15"/><circle cx="540" cy="381" r="15"/><circle cx="790" cy="381" r="15"/><circle cx="290" cy="481" r="15"/><circle cx="540" cy="481" r="15"/><circle cx="790" cy="481" r="15"/></g><g stroke="#6657b5" stroke-width="7" stroke-linecap="round"><path d="M320 381h95M570 381h95M820 381h95M320 481h95M570 481h95M820 481h95"/></g></g>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+<title id="title">NISAでの投資信託選び｜7つのチェックポイント</title>
+<desc id="desc">投資信託を選ぶ際に、投資対象やリスク、費用などを確認するイメージ図。</desc>
+<rect width="1200" height="675" rx="28" fill="#eaf5f2"/>
+<rect x="32" y="28" width="1136" height="210" rx="22" fill="#fff" stroke="#d4e4e0" stroke-width="2"/>
+<text x="72" y="77" font-family="sans-serif" font-size="30" font-weight="700" letter-spacing="1" fill="#087f75">CHOOSING A FUND</text>
+<text x="72" y="137" font-family="sans-serif" font-size="48" font-weight="800" fill="#172b3d">NISAでの投資信託選び</text>
+<text x="72" y="190" font-family="sans-serif" font-size="29" font-weight="650" fill="#536879">7つのチェックポイント</text>
+<rect x="32" y="258" width="1136" height="385" rx="22" fill="#f8fcfb" stroke="#d4e4e0" stroke-width="2"/>
+<g transform="translate(80 315)">
+  <rect x="0" y="0" width="300" height="230" rx="24" fill="#d8f4eb" stroke="#8fd5c5" stroke-width="3"/>
+  <circle cx="150" cy="76" r="42" fill="#087f75"/>
+  <path d="M128 76l15 15 30-34" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="150" y="157" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="800" fill="#175d57">投資対象</text>
+  <text x="150" y="195" text-anchor="middle" font-family="sans-serif" font-size="23" font-weight="650" fill="#386f69">何に投資する？</text>
+</g>
+<g transform="translate(450 315)">
+  <rect x="0" y="0" width="300" height="230" rx="24" fill="#e4effb" stroke="#a7c9ef" stroke-width="3"/>
+  <path d="M58 112l47-45 42 24 52-58" fill="none" stroke="#2775c8" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M178 33h22v22" fill="none" stroke="#2775c8" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M60 139h180" stroke="#8fb5e3" stroke-width="5" stroke-linecap="round"/>
+  <text x="150" y="177" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="800" fill="#20568c">リスク</text>
+  <text x="150" y="209" text-anchor="middle" font-family="sans-serif" font-size="23" font-weight="650" fill="#426f9f">値動きはどの程度？</text>
+</g>
+<g transform="translate(820 315)">
+  <rect x="0" y="0" width="300" height="230" rx="24" fill="#fff0d7" stroke="#f2cc83" stroke-width="3"/>
+  <circle cx="150" cy="78" r="45" fill="#f2a51a"/>
+  <text x="150" y="94" text-anchor="middle" font-family="sans-serif" font-size="49" font-weight="800" fill="#fff">¥</text>
+  <text x="150" y="157" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="800" fill="#885a0b">費用</text>
+  <text x="150" y="195" text-anchor="middle" font-family="sans-serif" font-size="23" font-weight="650" fill="#946b28">コストはいくら？</text>
+</g>
+<rect x="350" y="570" width="500" height="48" rx="24" fill="#087f75"/>
+<text x="600" y="602" text-anchor="middle" font-family="sans-serif" font-size="25" font-weight="800" fill="#fff">自分の目的に合うか確認</text>
 </svg>
