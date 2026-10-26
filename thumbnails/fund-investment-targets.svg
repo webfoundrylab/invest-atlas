@@ -12,9 +12,9 @@
 </g>
 <!-- fixed shared title panel -->
 <rect x="24" y="22" width="1152" height="150" rx="22" fill="#fff" stroke="#c9c1ed" stroke-width="2"/>
-<text x="64" y="62" font-family="sans-serif" font-size="30" font-weight="800" letter-spacing="1" fill="#6657b5">FUND INVESTMENT TARGETS</text>
-<text x="64" y="111" font-family="sans-serif" font-size="48" font-weight="800" fill="#172b3d">投資信託の投資対象とは？</text>
-<text x="64" y="151" font-family="sans-serif" font-size="29" font-weight="650" fill="#536879">株式・債券・REIT・バランス型の違い</text>
+<text x="600" y="57" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="800" letter-spacing="1" fill="#6657b5">FUND INVESTMENT TARGETS</text>
+<text x="600" y="116" text-anchor="middle" font-family="sans-serif" font-size="48" font-weight="800" fill="#172b3d">投資信託の投資対象とは？</text>
+<text x="600" y="157" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="650" fill="#536879">株式・債券・REIT・バランス型の違い</text>
 <path d="M0 590Q180 555 390 590T790 582T1200 588V675H0Z" fill="#c9c0f1" opacity=".6"/>
 <!-- four distinct asset types -->
 <g>
@@ -53,7 +53,7 @@
   <path d="M1032 331L966 352A67 67 0 0 1 1032 264Z" fill="#9a82d8" stroke="#fff" stroke-width="4"/>
   <circle cx="1032" cy="331" r="22" fill="#fff" stroke="#9ccbbd" stroke-width="4"/>
   <text x="1035" y="454" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="800" fill="#347c68">バランス型</text>
-  <text x="1035" y="502" text-anchor="middle" font-family="sans-serif" font-size="25" font-weight="650" fill="#536879">複数資産を組合せ</text>
+  <text x="1035" y="502" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="650" fill="#536879">複数資産を組合せ</text>
 </g>
 <rect x="270" y="600" width="660" height="54" rx="27" fill="#6657b5"/>
 <text x="600" y="636" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="800" fill="#fff">資産ごとに値動きとリスクが異なる</text>
