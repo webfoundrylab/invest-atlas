@@ -41,15 +41,15 @@
   <text x="759" y="454" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="800" fill="#9b6225">REIT</text>
   <text x="759" y="502" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="650" fill="#536879">不動産</text>
   <!-- balanced: combination pie -->
-  <rect x="918" y="224" width="228" height="350" rx="26" fill="#fff" stroke="#9ccbbd" stroke-width="4"/>
+  <rect x="906" y="224" width="258" height="350" rx="26" fill="#fff" stroke="#9ccbbd" stroke-width="4"/>
   <circle cx="1032" cy="331" r="78" fill="#e0f4ec"/>
   <path d="M1032 331V264A67 67 0 0 1 1097 315Z" fill="#dca346" stroke="#fff" stroke-width="4"/>
   <path d="M1032 331L1097 315A67 67 0 0 1 1050 397Z" fill="#4ca68c" stroke="#fff" stroke-width="4"/>
   <path d="M1032 331L1050 397A67 67 0 0 1 966 352Z" fill="#6c8fd0" stroke="#fff" stroke-width="4"/>
   <path d="M1032 331L966 352A67 67 0 0 1 1032 264Z" fill="#9a82d8" stroke="#fff" stroke-width="4"/>
   <circle cx="1032" cy="331" r="22" fill="#fff" stroke="#9ccbbd" stroke-width="4"/>
-  <text x="1032" y="454" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="800" fill="#347c68">バランス型</text>
-  <text x="1032" y="502" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="650" fill="#536879">複数資産を組合せ</text>
+  <text x="1035" y="454" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="800" fill="#347c68">バランス型</text>
+  <text x="1035" y="502" text-anchor="middle" font-family="sans-serif" font-size="25" font-weight="650" fill="#536879">複数資産を組合せ</text>
 </g>
 <rect x="270" y="600" width="660" height="54" rx="27" fill="#6657b5"/>
 <text x="600" y="636" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="800" fill="#fff">資産ごとに値動きとリスクが異なる</text>
