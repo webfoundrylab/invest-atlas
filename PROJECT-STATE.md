@@ -1388,3 +1388,11 @@
 - `thumbnails/compound-growth.svg` の下部図柄だけを再設計。小さな注釈と細かい軸ラベルを減らし、単利・複利の2本の線、比較ラベル、時間の流れを大きく配置。模式図の内容が縮小時にも把握しやすい構成にした。
 - 変更ファイル：`thumbnails/compound-growth.svg`、`PROJECT-STATE.md`。
 - 他のサムネイルへの展開は未実施。GitHub Actionsと公開画面での表示確認は更新後に実施する。
+
+
+## 2026-10-26 既存サムネイルの図柄を一括見直し
+- ユーザー希望に基づき、公開記事のサムネイルを点検し、主題・サブタイトルの文言、サイズ、配置は維持したまま、下部の図柄を縮小表示向けに簡素化。
+- 更新したサムネイル：`before-you-invest.svg`、`nisa-basics.svg`、`choose-investment-trust-nisa.svg`、`investment-trust-vs-etf.svg`、`investment-trust-fees.svg`、`regular-investing.svg`、`ai-semiconductor-investing.svg`、`investment-trust-actual-cost.svg`、`fund-investment-targets.svg`、`investment-trust-index-active.svg`、`stock-market-index-basics.svg`、`simple-investing-guide.svg`。加えて先行作業で`compound-growth.svg`を更新済み。
+- 細かい装飾や読みにくい小文字を減らし、比較対象・主要図形・短いラベルを大きくした。本文内の図解は変更していない。
+- 変更ファイル：上記12件のサムネイルSVG、`PROJECT-STATE.md`。
+- GitHub Actionsの検証・デプロイ結果と公開画面の実表示確認はこれから。
