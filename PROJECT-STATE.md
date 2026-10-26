@@ -1502,3 +1502,11 @@
 - 既存の主図柄・タイトル文字・タイトル帯は原則変更せず、背景文字のみ追加。サムネイルSVGを直接編集し、画像生成は使用していない。
 - GitHub mainへの保存は完了。SVGソースの再取得で追加を確認済み。GitHub Actionsと公開URLでの実表示確認は未実施。
 
+
+
+## 2026-10-27 サムネイルの共通タイトル帯を3枚で調整
+- 対象: `thumbnails/compound-growth.svg`、`thumbnails/nisa-basics.svg`、`thumbnails/fund-investment-targets.svg`
+- `THUMBNAIL-GUIDELINES.md` の固定テンプレートに合わせ、白い角丸タイトル帯、英語ラベル24px・主題48px・副題29px、3行中央揃えに統一。
+- 「投資信託の投資対象」では、図中の「複数資産を組合せ」を25pxから29pxに拡大。
+- SVGソースを直接編集。画像生成ツールは不使用。
+- GitHub保存後に3ファイルを再取得し、更新後のソースを確認。GitHub Actions は確認時点で実行中。公開ページの実表示確認は未完了。
