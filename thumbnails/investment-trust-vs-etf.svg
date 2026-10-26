@@ -8,7 +8,7 @@
 <text x="600" y="116" text-anchor="middle" font-family="sans-serif" font-size="48" font-weight="800" fill="#172b3d">投資信託とETFの違いは？</text>
 <text x="600" y="157" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="650" fill="#536879">仕組み・コスト・売買方法を比較</text>
 
-<text x="64" y="62" font-family="sans-serif" font-size="30" font-weight="800" letter-spacing="1" fill="#246ca5">MUTUAL FUND VS ETF</text>
+
 <rect x="54" y="205" width="518" height="382" rx="28" fill="#fff" stroke="#6eafd9" stroke-width="4"/>
 <rect x="628" y="205" width="518" height="382" rx="28" fill="#fff" stroke="#d4a15b" stroke-width="4"/>
 <path d="M54 233Q54 205 82 205H544Q572 205 572 233V274H54Z" fill="#246ca5"/>
