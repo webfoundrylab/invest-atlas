@@ -1528,3 +1528,9 @@
 - SVGソースを直接編集。画像生成ツールは不使用。
 - GitHub上の10ファイルを再取得し、透かしの削除と中央配置を確認。公開ページ・実機での視覚確認は未実施。
 - デプロイ確認は後続のGitHub Actions実行を参照。
+
+## 2026-10-27 サムネイル内容の初回点検
+- 書式統一後のSVGソースを再点検し、旧英語ラベルなどが共通タイトル帯に重複して残っていたファイルを修正。対象は `ai-semiconductor-investing.svg`、`before-you-invest.svg`、`choose-investment-trust-nisa.svg`、`investment-trust-actual-cost.svg`、`investment-trust-fees.svg`、`investment-trust-index-active.svg`、`investment-trust-vs-etf.svg`、`regular-investing.svg`、`simple-investing-guide.svg`、`stock-market-index-basics.svg`、`nisa-basics.svg`。
+- NISAサムネイルではタイトル帯に入り込んでいた円記号の文字を削除。実質コストのサムネイルでは旧英語ラベルの重複を削除。
+- 一部の英語ラベルを内容に合う短い表現へ調整。SVGソースのテキスト構造は再確認済み。
+- 図柄の視覚的な伝わりやすさ、文字や図形の重なり、スマートフォンでの縮小時の読みやすさは、公開表示またはレンダリングで別途確認が必要。GitHub Actionsの最新結果も未確認。
