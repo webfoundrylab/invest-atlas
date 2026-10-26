@@ -11,6 +11,6 @@
 <text x="600" y="116" text-anchor="middle" font-family="sans-serif" font-size="48" font-weight="800" fill="#10243a">投資は何を買えばいい？</text>
 <text x="600" y="157" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="650" fill="#536879">迷った人のためのシンプルな考え方</text>
 
-<text x="72" y="66" font-family="Arial,sans-serif" font-size="30" font-weight="700" fill="#087f75" letter-spacing="2">A SIMPLE INVESTING GUIDE</text>
+
 <g><rect x="90" y="275" width="300" height="320" rx="28" fill="#fff" stroke="#d6e5e6" stroke-width="7"/><rect x="450" y="275" width="300" height="320" rx="28" fill="#fff" stroke="#d6e5e6" stroke-width="7"/><rect x="810" y="275" width="300" height="320" rx="28" fill="#fff" stroke="#d6e5e6" stroke-width="7"/><g font-family="sans-serif" font-size="30" font-weight="800" text-anchor="middle"><text x="240" y="345" fill="#87512f">生活資金</text><text x="600" y="345" fill="#12665f">分散</text><text x="960" y="345" fill="#5b4ca0">継続</text></g><g stroke-width="13" stroke-linecap="round"><path d="M160 420h160M160 465h120" stroke="#ffcf9f"/><circle cx="600" cy="455" r="65" fill="#e2f0ff" stroke="#6e9cc7" stroke-width="5"/><path d="M875 500v-70h55v70h55v-110h55" fill="none" stroke="#087f75"/></g></g>
 </svg>
