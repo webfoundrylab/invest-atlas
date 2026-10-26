@@ -1495,3 +1495,10 @@
 ## 2026-10-27 タイトル帯の中央揃えを1枚で試行
 - `thumbnails/investment-trust-actual-cost.svg` のタイトル帯のみを試験変更。英語ラベルを24px・中央揃えにし、日本語主題48px・副題29pxも中央揃えに変更。イラスト領域は変更していない。
 - コミット: `73801d59e63f0b8e72f3c4abf81aa677ee7651d9`。GitHubから再取得し、3要素の配置と文字サイズを確認。Actions・公開画面での実表示は未確認のため、見た目の最終評価はブラウザ表示で行う。
+
+## 2026-10-27 サムネイルに共通の背景ウォーターマークを追加
+- ユーザー確認済みの試作構成に合わせ、既存のサムネイルSVGへ薄い大文字の背景文字を追加。1段目の「Invest」は左揃え、2段目の「Atlas」は右揃えとし、記事ごとの背景色に合う色を低い不透明度で使用。
+- 対象：`thumbnails/ai-semiconductor-investing.svg`、`before-you-invest.svg`、`choose-investment-trust-nisa.svg`、`compound-growth.svg`、`fund-investment-targets.svg`、`investment-trust-actual-cost.svg`、`investment-trust-fees.svg`、`investment-trust-index-active.svg`、`investment-trust-vs-etf.svg`、`nisa-basics.svg`、`regular-investing.svg`、`simple-investing-guide.svg`、`stock-market-index-basics.svg`。
+- 既存の主図柄・タイトル文字・タイトル帯は原則変更せず、背景文字のみ追加。サムネイルSVGを直接編集し、画像生成は使用していない。
+- GitHub mainへの保存は完了。SVGソースの再取得で追加を確認済み。GitHub Actionsと公開URLでの実表示確認は未実施。
+
