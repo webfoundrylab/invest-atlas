@@ -7,7 +7,7 @@
 </defs>
 <rect width="1200" height="675" rx="28" fill="url(#bg)"/>
 <rect x="24" y="22" width="1152" height="150" rx="22" fill="#fff" stroke="#b84c4c" stroke-width="2"/>
-<text x="600" y="57" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="800" letter-spacing="1" fill="#b84c4c">INVESTMENT TRUST FEES</text>
+<text x="600" y="57" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="800" letter-spacing="1" fill="#b84c4c">FEE EXPLAINER</text>
 <text x="600" y="116" text-anchor="middle" font-family="sans-serif" font-size="48" font-weight="800" fill="#172b3d">投資信託の信託報酬とは？</text>
 <text x="600" y="157" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="650" fill="#536879">年率の見方とコスト計算例</text>
 
