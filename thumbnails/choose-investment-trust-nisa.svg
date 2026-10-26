@@ -1,34 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
-<title id="title">NISAでの投資信託選び｜7つのチェックポイント</title>
-<desc id="desc">投資信託を選ぶ際に、投資対象やリスク、費用などを確認するイメージ図。</desc>
-<rect width="1200" height="675" rx="28" fill="#eaf5f2"/>
-<rect x="24" y="22" width="1152" height="150" rx="22" fill="#fff" stroke="#d4e4e0" stroke-width="2"/>
-<text x="64" y="63" font-family="sans-serif" font-size="26" font-weight="700" letter-spacing="1" fill="#087f75">CHOOSING A FUND</text>
-<text x="64" y="111" font-family="sans-serif" font-size="48" font-weight="800" fill="#172b3d">NISAでの投資信託選び</text>
-<text x="64" y="151" font-family="sans-serif" font-size="29" font-weight="650" fill="#536879">7つのチェックポイント</text>
-<rect x="24" y="190" width="1152" height="461" rx="22" fill="#f8fcfb" stroke="#d4e4e0" stroke-width="2"/>
-<g transform="translate(62 258)">
-  <rect x="0" y="0" width="320" height="258" rx="24" fill="#d8f4eb" stroke="#8fd5c5" stroke-width="3"/>
-  <circle cx="160" cy="82" r="46" fill="#087f75"/>
-  <path d="M136 82l17 17 32-37" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="160" y="173" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="800" fill="#175d57">投資対象</text>
-  <text x="160" y="216" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="650" fill="#386f69">何に投資する？</text>
-</g>
-<g transform="translate(440 258)">
-  <rect x="0" y="0" width="320" height="258" rx="24" fill="#e4effb" stroke="#a7c9ef" stroke-width="3"/>
-  <path d="M62 120l50-48 44 26 55-62" fill="none" stroke="#2775c8" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M190 36h22v22" fill="none" stroke="#2775c8" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M64 151h192" stroke="#8fb5e3" stroke-width="5" stroke-linecap="round"/>
-  <text x="160" y="190" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="800" fill="#20568c">リスク</text>
-  <text x="160" y="231" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="650" fill="#426f9f">値動きはどの程度？</text>
-</g>
-<g transform="translate(818 258)">
-  <rect x="0" y="0" width="320" height="258" rx="24" fill="#fff0d7" stroke="#f2cc83" stroke-width="3"/>
-  <circle cx="160" cy="82" r="46" fill="#f2a51a"/>
-  <text x="160" y="100" text-anchor="middle" font-family="sans-serif" font-size="50" font-weight="800" fill="#fff">¥</text>
-  <text x="160" y="173" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="800" fill="#885a0b">費用</text>
-  <text x="160" y="216" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="650" fill="#946b28">コストはいくら？</text>
-</g>
-<rect x="310" y="565" width="580" height="54" rx="27" fill="#087f75"/>
-<text x="600" y="600" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="800" fill="#fff">自分の目的に合うか確認</text>
+<title id="title">NISAでの投資信託選び｜つみたて投資枠・成長投資枠の違いと選び方</title>
+<desc id="desc">NISA口座からつみたて投資枠と成長投資枠に分かれる仕組みを、人や投資対象の本、貯金箱のイラストで示した図。</desc>
+<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#eafaff"/><stop offset="1" stop-color="#d4f3f3"/></linearGradient><linearGradient id="blue" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#51b9f6"/><stop offset="1" stop-color="#238be0"/></linearGradient><linearGradient id="green" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#36c5a0"/><stop offset="1" stop-color="#169d83"/></linearGradient></defs>
+<rect width="1200" height="675" rx="28" fill="#fff"/><rect x="20" y="18" width="1160" height="202" rx="24" fill="#fff" stroke="#bde9e9" stroke-width="5"/>
+<text x="54" y="56" font-family="sans-serif" font-size="26" font-weight="800" fill="#087f75" letter-spacing="2">NISA</text><text x="54" y="119" font-family="sans-serif" font-size="48" font-weight="800" fill="#12314f">NISAでの投資信託選び</text><text x="54" y="166" font-family="sans-serif" font-size="29" font-weight="700" fill="#466987">つみたて投資枠・成長投資枠の違いと選び方</text>
+<rect x="0" y="236" width="1200" height="439" fill="url(#sky)"/><path d="M0 585Q120 545 250 580T520 570T820 585T1200 560V675H0Z" fill="#ffefd5"/>
+<path d="M35 675Q32 586 74 545Q107 520 157 528L238 560Q286 588 305 675Z" fill="#159d8d"/><path d="M86 570L132 635L197 635L233 583" fill="none" stroke="#087f75" stroke-width="9" stroke-linecap="round"/><path d="M81 414Q57 364 94 325Q122 290 174 300Q227 301 241 345Q253 381 230 423L218 480L102 481Z" fill="#183d68"/><ellipse cx="163" cy="405" rx="76" ry="96" fill="#ffd0b2"/><path d="M89 402Q72 338 128 316Q183 288 225 330Q241 350 231 386Q202 363 187 337Q153 379 89 402Z" fill="#183d68"/><path d="M126 399q12-9 24 0M181 399q12-9 24 0" fill="none" stroke="#183d68" stroke-width="6" stroke-linecap="round"/><ellipse cx="140" cy="416" rx="6" ry="10" fill="#183d68"/><ellipse cx="194" cy="416" rx="6" ry="10" fill="#183d68"/><path d="M158 441q16 17 34 0" fill="none" stroke="#b85d4c" stroke-width="5" stroke-linecap="round"/><path d="M158 465q-18 15-2 29l24 16q10 8 17-3l-13-23" fill="none" stroke="#ffd0b2" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/><path d="M256 333l18-19m-10 42 26-6" stroke="#ffc842" stroke-width="9" stroke-linecap="round"/>
+<rect x="350" y="258" width="440" height="372" rx="28" fill="#fff" stroke="#9bd9ef" stroke-width="8" transform="rotate(-3 570 444)"/><text x="570" y="320" text-anchor="middle" font-family="sans-serif" font-size="38" font-weight="800" fill="#12314f">NISA口座</text><path d="M510 346L465 378m45-32-2 23m2-23-23 3M630 346l45 32m-45-32 3 23m-3-23 23 3" fill="none" stroke="#329ee4" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="390" y="386" width="165" height="214" rx="20" fill="url(#blue)"/><rect x="605" y="386" width="165" height="214" rx="20" fill="url(#green)"/><text x="472" y="435" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="800" fill="#fff">つみたて</text><text x="472" y="471" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="800" fill="#fff">投資枠</text><rect x="425" y="491" width="95" height="83" rx="12" fill="#fff"/><path d="M472 558v-37m0 9q-28-2-30-30 26 2 30 30m0-4q3-29 29-36-1 26-29 36" fill="#4fc89f"/><g fill="#ffc83d" stroke="#e6a91d" stroke-width="3"><ellipse cx="506" cy="554" rx="19" ry="8"/><rect x="487" y="539" width="38" height="15" rx="4"/><ellipse cx="506" cy="539" rx="19" ry="8"/><ellipse cx="506" cy="530" rx="19" ry="8"/></g><text x="687" y="435" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="800" fill="#fff">成長</text><text x="687" y="471" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="800" fill="#fff">投資枠</text><path d="M640 552l27-27 20 7 27-38" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/><path d="M704 495h12v12" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/><g fill="#fff"><rect x="632" y="559" width="18" height="18" rx="3"/><rect x="659" y="550" width="18" height="27" rx="3"/><rect x="686" y="541" width="18" height="36" rx="3"/></g><circle cx="737" cy="546" r="23" fill="#ffc83d" stroke="#e5a61d" stroke-width="4"/><text x="737" y="557" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="800" fill="#fff">¥</text>
+<g transform="translate(812 332)"><path d="M30 30Q140 2 244 26L238 69Q133 51 30 72Z" fill="#57c4f2" stroke="#8bdcf8" stroke-width="4"/><path d="M30 78Q140 51 244 73L238 116Q133 98 30 120Z" fill="#35bda0" stroke="#78d9c5" stroke-width="4"/><path d="M30 126Q140 100 244 121L238 164Q133 146 30 168Z" fill="#ffc84c" stroke="#f5d782" stroke-width="4"/><path d="M30 174Q140 148 244 169L238 212Q133 194 30 216Z" fill="#9285e8" stroke="#b5adf5" stroke-width="4"/><g font-family="sans-serif" font-size="29" font-weight="800" text-anchor="middle"><text x="137" y="58" fill="#fff">国内株式</text><text x="137" y="106" fill="#fff">海外株式</text><text x="137" y="154" fill="#875a12">債券</text><text x="137" y="202" fill="#fff">バランス型</text></g></g>
+<path d="M1085 450V335" stroke="#369b77" stroke-width="8" stroke-linecap="round"/><path d="M1085 385Q1028 365 1024 324Q1076 333 1085 385M1085 364Q1090 310 1134 293Q1133 341 1085 364M1085 420Q1037 403 1031 373Q1074 376 1085 420" fill="#6ed1a7" stroke="#48b98b" stroke-width="4"/>
+<ellipse cx="1070" cy="566" rx="91" ry="58" fill="#ffb6b4"/><ellipse cx="1002" cy="558" rx="28" ry="22" fill="#ffb6b4"/><ellipse cx="1099" cy="520" rx="21" ry="28" fill="#ffb6b4" transform="rotate(20 1099 520)"/><ellipse cx="1099" cy="520" rx="9" ry="15" fill="#ff8f98" transform="rotate(20 1099 520)"/><ellipse cx="1137" cy="555" rx="15" ry="12" fill="#ffb6b4"/><circle cx="1068" cy="548" r="6" fill="#593b4c"/><path d="M1040 586q19 12 37 0" fill="none" stroke="#e7828a" stroke-width="4" stroke-linecap="round"/><path d="M1040 609v21m68-21v21" stroke="#ffb6b4" stroke-width="17" stroke-linecap="round"/><path d="M1040 513q27-12 53 0" fill="none" stroke="#e7828a" stroke-width="6" stroke-linecap="round"/><circle cx="1012" cy="481" r="29" fill="#ffc83d" stroke="#e5a61d" stroke-width="4"/><text x="1012" y="492" text-anchor="middle" font-family="sans-serif" font-size="33" font-weight="800" fill="#fff">¥</text>
 </svg>
