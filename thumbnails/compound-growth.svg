@@ -1,1 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630"><rect width="1200" height="630" rx="30" fill="#eaf5f2"/><circle cx="1000" cy="95" r="190" fill="#cce9e1"/><circle cx="110" cy="570" r="150" fill="#d7e6f7"/><rect x="70" y="70" width="1060" height="490" rx="28" fill="#fff" stroke="#d4e4e0" stroke-width="3"/><text x="125" y="170" font-size="34" font-weight="700" fill="#176d65">資産形成の基礎</text><text x="125" y="270" font-size="72" font-weight="800" fill="#172b3d">複利とは？</text><text x="125" y="335" font-size="38" font-weight="650" fill="#536879">お金が増える仕組みとシミュレーション</text><path d="M155 450 L310 420 L455 390 L600 330 L745 280" fill="none" stroke="#176d65" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/><path d="M715 276 L755 275 L747 315" fill="none" stroke="#176d65" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/><text x="830" y="465" font-size="24" font-weight="700" fill="#315d85">単利と複利の違い</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+<title id="title">複利とは？ 投資でお金が増える仕組みとシミュレーション</title>
+<desc id="desc">上部に記事タイトル、下部に利益を再投資して資産が増える仕組みを示す模式図。</desc>
+<rect width="1200" height="675" rx="28" fill="#eaf5f2"/>
+<rect x="32" y="28" width="1136" height="210" rx="22" fill="#fff" stroke="#d4e4e0" stroke-width="2"/>
+<text x="72" y="77" font-family="sans-serif" font-size="30" font-weight="700" letter-spacing="1" fill="#087f75">COMPOUND GROWTH</text>
+<text x="72" y="137" font-family="sans-serif" font-size="48" font-weight="800" fill="#172b3d">複利とは？</text>
+<text x="72" y="190" font-family="sans-serif" font-size="29" font-weight="650" fill="#536879">投資でお金が増える仕組みとシミュレーション</text>
+<rect x="32" y="258" width="1136" height="385" rx="22" fill="#f8fcfb" stroke="#d4e4e0" stroke-width="2"/>
+<text x="72" y="304" font-family="sans-serif" font-size="25" font-weight="750" fill="#315d85">利益を再投資すると、増えた分も次の利益を生む</text>
+<g stroke="#dce9e7" stroke-width="2"><line x1="108" y1="555" x2="1080" y2="555"/><line x1="108" y1="495" x2="1080" y2="495"/><line x1="108" y1="435" x2="1080" y2="435"/><line x1="108" y1="375" x2="1080" y2="375"/></g>
+<g font-family="sans-serif" font-size="20" fill="#536879"><text x="108" y="590">開始</text><text x="395" y="590">時間がたつ</text><text x="750" y="590">利益も運用</text><text x="1005" y="590">さらに増える</text></g>
+<path d="M130 530 C330 510 510 480 690 450 S930 415 1055 390" fill="none" stroke="#7f9db2" stroke-width="9" stroke-linecap="round" stroke-dasharray="16 13"/>
+<path d="M130 530 C330 520 500 490 650 445 S870 360 1055 330" fill="none" stroke="#087f75" stroke-width="12" stroke-linecap="round"/>
+<g fill="#087f75"><circle cx="130" cy="530" r="9"/><circle cx="430" cy="495" r="9"/><circle cx="700" cy="430" r="9"/><circle cx="1055" cy="330" r="11"/></g>
+<rect x="730" y="352" width="238" height="46" rx="23" fill="#d8f4eb"/><text x="849" y="382" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="800" fill="#08766e">複利：増え方が加速</text>
+<rect x="730" y="410" width="238" height="42" rx="21" fill="#e6edf3"/><text x="849" y="437" text-anchor="middle" font-family="sans-serif" font-size="21" font-weight="700" fill="#536879">単利：一定のペース</text>
+<text x="72" y="622" font-family="sans-serif" font-size="17" fill="#536879">※仕組みを示す模式図。実際の運用成果を予測するものではありません。</text>
+</svg>
