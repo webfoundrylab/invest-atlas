@@ -12,7 +12,7 @@
 <text x="600" y="157" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="650" fill="#536879">7つのチェックポイント</text>
 
 <!-- fixed shared title panel -->
-<text x="64" y="62" font-family="sans-serif" font-size="30" font-weight="800" letter-spacing="1" fill="#b45c36">FUND SELECTION</text>
+
 <!-- distinct illustration: compare investment destinations, then choose by purpose -->
 <path d="M0 604Q190 565 390 604T790 594T1200 600V675H0Z" fill="#f0bda6" opacity=".65"/>
 <g>
