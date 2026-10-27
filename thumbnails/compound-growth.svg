@@ -6,24 +6,13 @@
 <text x="600" y="57" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="800" letter-spacing="1" fill="#087f75">COMPOUND GROWTH</text>
 <text x="600" y="116" text-anchor="middle" font-family="sans-serif" font-size="48" font-weight="800" fill="#172b3d">複利とは？</text>
 <text x="600" y="157" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="650" fill="#536879">投資でお金が増える仕組みとシミュレーション</text>
-<rect x="32" y="190" width="1136" height="453" rx="22" fill="#f8fcfb" stroke="#d4e4e0" stroke-width="2"/>
-<g stroke="#dce9e7" stroke-width="2">
-<line x1="100" y1="575" x2="1090" y2="575"/>
-<line x1="100" y1="510" x2="1090" y2="510"/>
-<line x1="100" y1="445" x2="1090" y2="445"/>
-<line x1="100" y1="380" x2="1090" y2="380"/>
-<line x1="100" y1="315" x2="1090" y2="315"/>
-</g>
-<path d="M120 550 C340 530 530 500 710 465 S950 430 1060 405" fill="none" stroke="#7f9db2" stroke-width="11" stroke-linecap="round" stroke-dasharray="20 16"/>
-<path d="M120 550 C340 540 515 500 680 435 S900 335 1060 300" fill="none" stroke="#087f75" stroke-width="15" stroke-linecap="round"/>
-<g fill="#087f75"><circle cx="120" cy="550" r="11"/><circle cx="430" cy="515" r="11"/><circle cx="700" cy="427" r="11"/><circle cx="1060" cy="300" r="13"/></g>
-<rect x="700" y="322" width="300" height="58" rx="29" fill="#d8f4eb"/>
-<text x="850" y="360" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="800" fill="#08766e">複利：増え方が加速</text>
-<rect x="700" y="395" width="300" height="54" rx="27" fill="#e6edf3"/>
-<text x="850" y="430" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="750" fill="#536879">単利：一定のペース</text>
-<g font-family="sans-serif" font-size="29" font-weight="700" fill="#536879">
-<text x="120" y="615">運用開始</text>
-<text x="485" y="615">時間の経過</text>
-<text x="895" y="615">将来に向けて</text>
-</g>
+
+<text x="600" y="220" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="800" fill="#286d61">利益が出て、再投資した場合のイメージ</text>
+<g><rect x="65" y="285" width="280" height="250" rx="28" fill="#fff" stroke="#9acdbf" stroke-width="4"/><text x="205" y="329" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="800" fill="#536879">最初の元本</text><rect x="125" y="375" width="160" height="70" rx="12" fill="#287d69"/><rect x="140" y="390" width="130" height="40" rx="8" fill="#70c4a7"/><path d="M150 410h110" stroke="#fff" stroke-width="5" stroke-linecap="round"/><text x="205" y="490" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="800" fill="#286d61">運用の土台</text></g>
+<path d="M355 410H410m-20-20 22 20-22 20" stroke="#579d8c" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<g><rect x="425" y="285" width="300" height="250" rx="28" fill="#fff" stroke="#9acdbf" stroke-width="4"/><text x="575" y="329" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="800" fill="#536879">利益が出たら</text><rect x="475" y="380" width="120" height="58" rx="10" fill="#287d69"/><rect x="610" y="355" width="65" height="83" rx="10" fill="#f0c66d"/><text x="535" y="418" text-anchor="middle" font-family="sans-serif" font-size="27" font-weight="800" fill="#fff">元本</text><text x="642" y="405" text-anchor="middle" font-family="sans-serif" font-size="27" font-weight="800" fill="#765317">利益</text><path d="M490 461H670" stroke="#b4d9cf" stroke-width="5" stroke-linecap="round"/><text x="575" y="497" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="800" fill="#286d61">利益を再投資</text></g>
+<path d="M735 410H790m-20-20 22 20-22 20" stroke="#579d8c" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<g><rect x="805" y="285" width="330" height="250" rx="28" fill="#fff" stroke="#9acdbf" stroke-width="4"/><text x="970" y="329" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="800" fill="#536879">次の運用の土台</text><g><rect x="875" y="430" width="160" height="22" rx="7" fill="#287d69"/><rect x="875" y="405" width="160" height="22" rx="7" fill="#4aa98b"/><rect x="875" y="380" width="160" height="22" rx="7" fill="#f0c66d"/><rect x="875" y="355" width="160" height="22" rx="7" fill="#8bd0b6"/></g><path d="M850 468H1060" stroke="#b4d9cf" stroke-width="5" stroke-linecap="round"/><text x="970" y="505" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="800" fill="#286d61">土台が大きくなる</text></g>
+<path d="M1010 560C1010 604 205 604 205 560" fill="none" stroke="#6aa996" stroke-width="5" stroke-dasharray="12 10" stroke-linecap="round"/><path d="M186 577l19-19 19 19" fill="none" stroke="#6aa996" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="600" y="636" text-anchor="middle" font-family="sans-serif" font-size="27" font-weight="800" fill="#536879">複利は仕組みの説明であり、利益や元本を保証しない</text>
 </svg>
