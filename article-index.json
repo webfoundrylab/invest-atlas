@@ -82,6 +82,10 @@
             {
               "id": "investment-targets",
               "label": "投資対象資産・地域"
+            },
+            {
+              "id": "distribution",
+              "label": "分配金と再投資"
             }
           ]
         },
@@ -282,7 +286,8 @@
         "regular-investing.html",
         "investment-trust-actual-cost.html",
         "investment-trust-investment-targets.html",
-        "simple-investing-guide.html"
+        "simple-investing-guide.html",
+        "investment-trust-distributions.html"
       ],
       "subcategory": "nisa-product-selection",
       "topic": "choosing-funds",
@@ -503,7 +508,8 @@
         "investment-trust-fees.html",
         "investment-trust-actual-cost.html",
         "simple-investing-guide.html",
-        "investment-trust-nav.html"
+        "investment-trust-nav.html",
+        "investment-trust-distributions.html"
       ],
       "publishedAt": "2026-10-25",
       "updatedAt": "2026-10-26",
@@ -628,7 +634,8 @@
         "investment-trust-index-active.html",
         "investment-trust-vs-etf.html",
         "investment-trust-fees.html",
-        "simple-investing-guide.html"
+        "simple-investing-guide.html",
+        "investment-trust-distributions.html"
       ],
       "publishedAt": "2026-10-27",
       "updatedAt": "2026-10-27",
@@ -636,6 +643,40 @@
       "publishOrder": 14,
       "mainTitle": "投資信託の基準価額とは？",
       "subtitle": "1万口あたりの価格と値動きの見方"
+    },
+    {
+      "slug": "investment-trust-distributions.html",
+      "title": "投資信託の分配金とは？普通分配金・元本払戻金と再投資の考え方",
+      "category": "funds",
+      "subcategory": "investment-trust-basics",
+      "topic": "distribution",
+      "tags": [
+        "投資信託",
+        "分配金",
+        "普通分配金",
+        "元本払戻金",
+        "特別分配金",
+        "再投資",
+        "基準価額",
+        "トータルリターン",
+        "NISA",
+        "税金"
+      ],
+      "summary": "分配金の仕組み、普通分配金と元本払戻金の違い、基準価額への影響、受取型・再投資型とNISAでの税務上の扱いを図解で解説。",
+      "status": "published",
+      "related": [
+        "investment-trust-nav.html",
+        "choose-investment-trust-nisa.html",
+        "compound-growth.html",
+        "nisa-basics.html",
+        "investment-trust-index-active.html"
+      ],
+      "publishedAt": "2026-10-27",
+      "updatedAt": "2026-10-27",
+      "thumbnail": "thumbnails/investment-trust-distributions.svg",
+      "publishOrder": 15,
+      "mainTitle": "投資信託の分配金とは？",
+      "subtitle": "普通分配金・元本払戻金と再投資の考え方"
     }
   ]
 }
