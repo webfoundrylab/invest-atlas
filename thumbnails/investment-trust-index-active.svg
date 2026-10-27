@@ -1,12 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="インデックス型とアクティブ型の違いは？運用方法・コスト・選び方">
-<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e5f5ef"/><stop offset="1" stop-color="#e4eafb"/></linearGradient></defs>
-<rect width="1200" height="675" rx="24" fill="url(#bg)"/>
-<rect x="24" y="22" width="1152" height="150" rx="22" fill="#fff" stroke="#176d65" stroke-width="2"/>
-<text x="600" y="57" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="800" letter-spacing="1" fill="#176d65">INDEX VS ACTIVE</text>
-<text x="600" y="116" text-anchor="middle" font-family="sans-serif" font-size="48" font-weight="800" fill="#17334a">インデックス型とアクティブ型の違いは？</text>
-<text x="600" y="157" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="650" fill="#536879">運用方法・コスト・選び方</text>
-
-
-<path d="M64 218H1136" stroke="#176d65" stroke-opacity=".35" stroke-width="3"/>
-<g><rect x="170" y="305" width="390" height="245" rx="28" fill="#fafffd" stroke="#8bcbbd" stroke-width="8"/><rect x="640" y="305" width="390" height="245" rx="28" fill="#fafffd" stroke="#8bcbbd" stroke-width="8"/><text x="365" y="365" text-anchor="middle" font-family="sans-serif" font-size="32" font-weight="800" fill="#176d65">インデックス型</text><text x="835" y="365" text-anchor="middle" font-family="sans-serif" font-size="32" font-weight="800" fill="#176d65">アクティブ型</text><text x="365" y="414" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="650" fill="#536879">指数への連動を目指す</text><text x="835" y="414" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="650" fill="#536879">指数を上回る成果を目指す</text><path d="M235 475l60-20 60 8 60-8 60 0M705 485l55-65 45 40 45-80 45 35 50-55" fill="none" stroke="#176d65" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/><path d="M235 510h260M705 510h260" stroke="#b4dfd5" stroke-width="8" stroke-linecap="round"/></g>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+<title id="title">インデックス型とアクティブ型の違いは？｜運用方法・コスト・選び方</title><desc id="desc">インデックス型は指数への連動を目指し、アクティブ型は運用者の判断で指数を上回る成果などを目指す。図中の線は説明用の模式図。</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#eaf7f2"/><stop offset="1" stop-color="#e3eafb"/></linearGradient></defs><rect width="1200" height="675" rx="24" fill="url(#bg)"/><rect x="24" y="22" width="1152" height="150" rx="22" fill="#fff" stroke="#176d65" stroke-width="2"/>
+<text x="600" y="57" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="800" letter-spacing="1" fill="#176d65">INDEX VS ACTIVE</text><text x="600" y="116" text-anchor="middle" font-family="sans-serif" font-size="48" font-weight="800" fill="#17334a">インデックス型とアクティブ型の違いは？</text><text x="600" y="157" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="650" fill="#536879">運用方法・コスト・選び方</text>
+<g><rect x="55" y="220" width="525" height="360" rx="28" fill="#fff" stroke="#83c6b5" stroke-width="4"/><rect x="620" y="220" width="525" height="360" rx="28" fill="#fff" stroke="#9eb8e8" stroke-width="4"/>
+<rect x="55" y="220" width="525" height="76" rx="26" fill="#176d65"/><rect x="620" y="220" width="525" height="76" rx="26" fill="#3f64ad"/>
+<text x="317" y="269" text-anchor="middle" font-family="sans-serif" font-size="34" font-weight="800" fill="#fff">インデックス型</text><text x="882" y="269" text-anchor="middle" font-family="sans-serif" font-size="34" font-weight="800" fill="#fff">アクティブ型</text>
+<text x="317" y="337" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="700" fill="#245f55">指数への連動を目指す</text><text x="882" y="337" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="700" fill="#35518a">運用判断で指数超えなどを目指す</text>
+<g stroke="#d9e8e4" stroke-width="2"><path d="M105 470H530M105 405H530M105 535H530M670 470H1095M670 405H1095M670 535H1095"/></g>
+<path d="M105 505L165 480 225 492 285 447 345 455 405 420 465 435 530 390" fill="none" stroke="#176d65" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M105 510L165 483 225 495 285 450 345 458 405 423 465 438 530 393" fill="none" stroke="#a3cfc4" stroke-width="5" stroke-dasharray="8 9" stroke-linecap="round"/>
+<path d="M670 505L730 480 790 492 850 447 910 455 970 420 1030 435 1095 390" fill="none" stroke="#a3b4d9" stroke-width="5" stroke-dasharray="8 9" stroke-linecap="round"/>
+<path d="M670 510L730 465 790 488 850 430 910 460 970 402 1030 425 1095 410" fill="none" stroke="#3f64ad" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="317" y="557" text-anchor="middle" font-family="sans-serif" font-size="25" font-weight="700" fill="#536879">指数に近い動きを目指す</text><text x="882" y="557" text-anchor="middle" font-family="sans-serif" font-size="25" font-weight="700" fill="#536879">指数との差は上下どちらもあり得る</text></g>
+<text x="600" y="625" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="800" fill="#334d67">模式図：どちらも利益や超過成果を保証しない</text>
 </svg>
