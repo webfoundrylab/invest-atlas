@@ -2,7 +2,10 @@
 <title id="title">投資を始める前に｜確認したい7つのこと</title><desc id="desc">商品を選ぶ前に、生活資金を確保し、目的と期間を決め、リスクと費用を確認する3段階の準備フロー。</desc>
 <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#eaf8f3"/><stop offset="1" stop-color="#d5eee6"/></linearGradient><linearGradient id="card" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#f8fcfa"/></linearGradient></defs>
 <rect width="1200" height="675" rx="24" fill="url(#bg)"/>
-<g data-brand-watermark="invest-atlas" aria-hidden="true" font-family="sans-serif" font-weight="900" fill="#17334a" opacity="0.075"><text x="190" y="390" font-size="132" letter-spacing="2">Invest</text><text x="1010" y="585" text-anchor="end" font-size="132" letter-spacing="2">Atlas</text></g><rect x="24" y="22" width="1152" height="150" rx="22" fill="#fff" stroke="#138578" stroke-width="2"/>
+<g id="invest-atlas-watermark" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="270" letter-spacing="-8" fill="#176d65" opacity="0.075">
+  <text x="18" y="400">Invest</text>
+  <text x="1180" y="605" text-anchor="end">Atlas</text>
+</g><rect x="24" y="22" width="1152" height="150" rx="22" fill="#fff" stroke="#138578" stroke-width="2"/>
 <text x="600" y="57" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="800" letter-spacing="1" fill="#138578">PREPARE TO INVEST</text><text x="600" y="116" text-anchor="middle" font-family="sans-serif" font-size="48" font-weight="800" fill="#17334a">投資を始める前に</text><text x="600" y="157" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="650" fill="#536879">確認したい7つのこと</text>
 <text x="600" y="220" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="800" fill="#23675e">商品選びの前に、3段階で準備する</text>
 <path d="M375 415H420M780 415H825" stroke="#47998a" stroke-width="10" stroke-linecap="round"/><path d="M405 398l18 17-18 17M810 398l18 17-18 17" fill="none" stroke="#47998a" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
