@@ -2,6 +2,7 @@
 <title id="title">複利とは？ 投資でお金が増える仕組みとシミュレーション</title>
 <desc id="desc">上部のタイトルの下に、単利と複利の増え方の違いを大きな2本の線で示す模式図。</desc>
 <rect width="1200" height="675" rx="28" fill="#eaf5f2"/>
+<g data-brand-watermark="invest-atlas" aria-hidden="true" font-family="sans-serif" font-weight="900" fill="#17334a" opacity="0.075"><text x="190" y="390" font-size="132" letter-spacing="2">Invest</text><text x="1010" y="585" text-anchor="end" font-size="132" letter-spacing="2">Atlas</text></g>
 <rect x="24" y="22" width="1152" height="150" rx="22" fill="#fff" stroke="#d4e4e0" stroke-width="2"/>
 <text x="600" y="57" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="800" letter-spacing="1" fill="#087f75">COMPOUND GROWTH</text>
 <text x="600" y="116" text-anchor="middle" font-family="sans-serif" font-size="48" font-weight="800" fill="#172b3d">複利とは？</text>

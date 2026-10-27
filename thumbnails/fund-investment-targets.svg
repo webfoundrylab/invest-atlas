@@ -6,6 +6,7 @@
   <linearGradient id="tile" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#f9f8ff"/></linearGradient>
 </defs>
 <rect width="1200" height="675" rx="28" fill="url(#bg)"/>
+<g data-brand-watermark="invest-atlas" aria-hidden="true" font-family="sans-serif" font-weight="900" fill="#17334a" opacity="0.075"><text x="190" y="390" font-size="132" letter-spacing="2">Invest</text><text x="1010" y="585" text-anchor="end" font-size="132" letter-spacing="2">Atlas</text></g>
 <!-- fixed shared title panel -->
 <rect x="24" y="22" width="1152" height="150" rx="22" fill="#fff" stroke="#c9c1ed" stroke-width="2"/>
 <text x="600" y="57" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="800" letter-spacing="1" fill="#6657b5">FUND ASSETS</text>
