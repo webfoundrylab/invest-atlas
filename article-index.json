@@ -315,7 +315,8 @@
         "regular-investing.html",
         "before-you-invest.html",
         "ai-semiconductor-investing.html",
-        "investment-trust-investment-targets.html"
+        "investment-trust-investment-targets.html",
+        "investment-trust-nav.html"
       ],
       "subcategory": "fund-etf-comparison",
       "publishedAt": "2026-10-24",
@@ -343,7 +344,8 @@
         "choose-investment-trust-nisa.html",
         "investment-trust-vs-etf.html",
         "nisa-basics.html",
-        "investment-trust-actual-cost.html"
+        "investment-trust-actual-cost.html",
+        "investment-trust-nav.html"
       ],
       "subcategory": "fund-costs",
       "topic": "expense-types",
@@ -467,7 +469,8 @@
       "status": "published",
       "related": [
         "choose-investment-trust-nisa.html",
-        "investment-trust-vs-etf.html"
+        "investment-trust-vs-etf.html",
+        "investment-trust-nav.html"
       ],
       "publishedAt": "2026-10-25",
       "updatedAt": "2026-10-26",
@@ -499,7 +502,8 @@
         "choose-investment-trust-nisa.html",
         "investment-trust-fees.html",
         "investment-trust-actual-cost.html",
-        "simple-investing-guide.html"
+        "simple-investing-guide.html",
+        "investment-trust-nav.html"
       ],
       "publishedAt": "2026-10-25",
       "updatedAt": "2026-10-26",
@@ -600,6 +604,38 @@
       "publishOrder": 13,
       "mainTitle": "複利とは？",
       "subtitle": "投資でお金が増える仕組みとシミュレーション"
+    },
+    {
+      "slug": "investment-trust-nav.html",
+      "title": "投資信託の基準価額とは？1万口あたりの価格と値動きの見方",
+      "category": "funds",
+      "subcategory": "investment-trust-basics",
+      "topic": "nav-price",
+      "tags": [
+        "投資信託",
+        "基準価額",
+        "純資産総額",
+        "口数",
+        "値動き",
+        "騰落率",
+        "分配金",
+        "投資信託の選び方"
+      ],
+      "summary": "基準価額の計算の考え方、1万口あたりで表示される理由、値動きの要因と商品比較時の確認ポイントを図解で解説。",
+      "status": "published",
+      "related": [
+        "investment-trust-investment-targets.html",
+        "investment-trust-index-active.html",
+        "investment-trust-vs-etf.html",
+        "investment-trust-fees.html",
+        "simple-investing-guide.html"
+      ],
+      "publishedAt": "2026-10-27",
+      "updatedAt": "2026-10-27",
+      "thumbnail": "thumbnails/investment-trust-nav.svg",
+      "publishOrder": 14,
+      "mainTitle": "投資信託の基準価額とは？",
+      "subtitle": "1万口あたりの価格と値動きの見方"
     }
   ]
 }
