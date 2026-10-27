@@ -1,8 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
   <title id="title">Invest Atlas compass</title>
-  <rect width="64" height="64" fill="#ffffff"/>
-  <circle cx="32" cy="32" r="24" fill="none" stroke="#123a60" stroke-width="3.2"/>
-  <path d="M45.5 18.5 36.5 35.5 18.5 45.5 27.5 28.5Z" fill="#123a60" stroke="#123a60" stroke-linejoin="round" stroke-width="1"/>
-  <path d="M45.5 18.5 36.5 35.5 27.5 28.5Z" fill="#12aaa5"/>
-  <circle cx="32" cy="32" r="3.5" fill="#ffffff" stroke="#123a60" stroke-width="1.4"/>
+  <rect width="64" height="64" rx="12" fill="#ffffff"/>
+  <circle cx="32" cy="32" r="20" fill="none" stroke="#123a60" stroke-width="4.5"/>
+  <path d="M32 3.5 26.8 25.5 32 22.8 37.2 25.5Z" fill="#123a60"/>
+  <path d="M32 60.5 26.8 38.5 32 41.2 37.2 38.5Z" fill="#123a60"/>
+  <path d="M3.5 32 25.5 26.8 22.8 32 25.5 37.2Z" fill="#123a60"/>
+  <path d="M60.5 32 38.5 26.8 41.2 32 38.5 37.2Z" fill="#123a60"/>
+  <path d="M47.5 16.5 35.2 34.4 16.5 47.5 28.8 29.6Z" fill="#123a60"/>
+  <path d="M47.5 16.5 35.2 34.4 28.8 29.6Z" fill="#12aaa5"/>
+  <circle cx="32" cy="32" r="3.8" fill="#ffffff" stroke="#123a60" stroke-width="1.5"/>
 </svg>
