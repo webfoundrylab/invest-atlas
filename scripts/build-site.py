@@ -44,6 +44,16 @@ def taxonomy_nodes(categories):
     return result
 
 
+
+def render_site_header(current_page=False):
+    """Return the shared site header used on article and category pages."""
+    current = ' aria-current="page"' if current_page else ''
+    return ('<header class="ia-site-header"><div class="ia-header-inner">'
+            '<a class="ia-brand" href="' + BASE_URL + '"><img src="' + BASE_URL + 'favicon.svg" alt="" width="42" height="42"><span>Invest Atlas</span></a>'
+            '<nav class="ia-header-nav" aria-label="主要メニュー"><a href="' + BASE_URL + 'editorial-policy.html"' + current + '>編集方針</a></nav>'
+            '</div></header>')
+
+
 def category_url(ids):
     return BASE_URL + "categories/" + "/".join(ids) + "/"
 
@@ -107,7 +117,7 @@ body{margin:0;background:#f5f7f8;color:#172b3d;font:16px/1.7 system-ui,-apple-sy
         canonical = category_url(ids)
         title = html.escape(node["item"]["label"] + "の記事一覧｜Invest Atlas")
         tree = render_category_tree(categories, ids)
-        page = '<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" type="image/svg+xml" href="' + BASE_URL + 'favicon.svg"><script src="' + BASE_URL + 'assets/display-mode.js"></script><title>' + title + '</title><meta name="description" content="' + html.escape(node["item"]["label"] + "に関する投資解説記事をまとめています。", quote=True) + '"><meta name="robots" content="' + ('index,follow' if is_populated else 'noindex,follow') + '"><link rel="canonical" href="' + html.escape(canonical, quote=True) + '">' + tree_css + '<link rel="stylesheet" href="' + BASE_URL + 'assets/site-layout.css"></head><body><header><div class="wrap"><a href="' + BASE_URL + '">← INVEST ATLAS</a></div></header><main class="wrap"><div class="layout">' + tree + '<div class="content"><nav class="crumbs" aria-label="パンくずリスト">' + ' › '.join(crumbs) + '</nav><div class="mobile-tree"><details><summary>カテゴリツリーを開く</summary>' + tree + '</details></div><div style="font-size:.8rem;font-weight:800;color:#087f75">CATEGORY GUIDE</div><h1>' + html.escape(node["item"]["label"]) + '</h1><p class="lead">カテゴリから記事を探せます。公開記事の内容に応じて分類しています。</p>' + ('<section><h2>下位カテゴリ</h2><ul class="children">' + ''.join(child_html) + '</ul></section>' if child_html else '') + ('<section><h2>記事一覧</h2><div class="category-results-toolbar"><p class="category-results-count" id="category-result-count" aria-live="polite">記事一覧</p><label class="category-page-size" for="category-page-size">表示件数<select id="category-page-size"><option value="10" selected>10件</option><option value="20">20件</option><option value="50">50件</option><option value="100">100件</option></select></label></div><nav class="category-pagination" id="category-pagination-top" aria-label="記事一覧の上部ページ切り替え" hidden></nav><div class="articles" id="category-articles">' + cards + '</div><nav class="category-pagination" id="category-pagination-bottom" aria-label="記事一覧の下部ページ切り替え" hidden></nav><script src="' + BASE_URL + 'assets/category-pagination.js" defer></script></section>' if matches else '') + '</div></div></main><footer><div class="wrap">Invest Atlas｜投資を理解するための解説・比較ガイド</div></footer></body></html>'
+        page = '<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" type="image/svg+xml" href="' + BASE_URL + 'favicon.svg"><script src="' + BASE_URL + 'assets/display-mode.js"></script><title>' + title + '</title><meta name="description" content="' + html.escape(node["item"]["label"] + "に関する投資解説記事をまとめています。", quote=True) + '"><meta name="robots" content="' + ('index,follow' if is_populated else 'noindex,follow') + '"><link rel="canonical" href="' + html.escape(canonical, quote=True) + '">' + tree_css + '<link rel="stylesheet" href="' + BASE_URL + 'assets/site-layout.css"><link rel="stylesheet" href="' + BASE_URL + 'assets/site-header.css"></head><body>' + render_site_header() + '<main class="wrap"><div class="layout">' + tree + '<div class="content"><nav class="crumbs" aria-label="パンくずリスト">' + ' › '.join(crumbs) + '</nav><div class="mobile-tree"><details><summary>カテゴリツリーを開く</summary>' + tree + '</details></div><div style="font-size:.8rem;font-weight:800;color:#087f75">CATEGORY GUIDE</div><h1>' + html.escape(node["item"]["label"]) + '</h1><p class="lead">カテゴリから記事を探せます。公開記事の内容に応じて分類しています。</p>' + ('<section><h2>下位カテゴリ</h2><ul class="children">' + ''.join(child_html) + '</ul></section>' if child_html else '') + ('<section><h2>記事一覧</h2><div class="category-results-toolbar"><p class="category-results-count" id="category-result-count" aria-live="polite">記事一覧</p><label class="category-page-size" for="category-page-size">表示件数<select id="category-page-size"><option value="10" selected>10件</option><option value="20">20件</option><option value="50">50件</option><option value="100">100件</option></select></label></div><nav class="category-pagination" id="category-pagination-top" aria-label="記事一覧の上部ページ切り替え" hidden></nav><div class="articles" id="category-articles">' + cards + '</div><nav class="category-pagination" id="category-pagination-bottom" aria-label="記事一覧の下部ページ切り替え" hidden></nav><script src="' + BASE_URL + 'assets/category-pagination.js" defer></script></section>' if matches else '') + '</div></div></main><footer><div class="wrap">Invest Atlas｜投資を理解するための解説・比較ガイド</div></footer></body></html>'
         (page_dir / "index.html").write_text(page, encoding="utf-8")
         if is_populated:
             populated_urls.append(canonical)
@@ -173,6 +183,7 @@ main.wrap{width:min(1160px,calc(100% - 32px))}header .wrap{width:min(1160px,calc
     opening = (ARTICLE_OPEN_START + '<div class="article-page-layout"><aside class="article-sidebar">' + tree + '</aside><div class="article-page-content">' +
         ARTICLE_OPEN_END)
     closing = ARTICLE_CLOSE_START + '</div></div>' + ARTICLE_CLOSE_END
+    page, header_count = re.subn(r'<header\b[^>]*>.*?</header>', lambda _m: render_site_header(), page, count=1, flags=re.I | re.S)
     main_match = re.search(r'<main\b[^>]*>', page, flags=re.I)
     main_close = page.lower().rfind("</main>")
     if not main_match or main_close < 0:
@@ -180,7 +191,7 @@ main.wrap{width:min(1160px,calc(100% - 32px))}header .wrap{width:min(1160px,calc
     style_block = ARTICLE_STYLE_START + css + ARTICLE_STYLE_END
     head_close = page.lower().find("</head>")
     if head_close >= 0:
-        page = page[:head_close] + style_block + '<link rel="stylesheet" href="' + BASE_URL + 'assets/site-layout.css"><script src="' + BASE_URL + 'assets/display-mode.js"></script>' + page[head_close:]
+        page = page[:head_close] + style_block + '<link rel="stylesheet" href="' + BASE_URL + 'assets/site-layout.css"><link rel="stylesheet" href="' + BASE_URL + 'assets/site-header.css"><script src="' + BASE_URL + 'assets/display-mode.js"></script>' + page[head_close:]
     main_match = re.search(r'<main\b[^>]*>', page, flags=re.I)
     if not main_match:
         return page
