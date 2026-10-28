@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <script src="assets/display-mode.js"></script>
+  <title>投資の羅針盤｜比較・検証から考える投資の指針｜Invest Atlas</title>
+  <meta name="description" content="Invest Atlasの投資の羅針盤。投資対象・資産配分・投資タイミングを比較し、条件に応じた投資方針を考えます。根拠と限界を明らかにしながら随時更新します。">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://webfoundrylab.github.io/invest-atlas/investment-compass.html">
+  <link rel="stylesheet" href="assets/site-header.css">
+  <meta name="theme-color" content="#10243a">
+  <style>
+    :root{color-scheme:light;--ink:#172b3d;--muted:#536879;--navy:#10243a;--teal:#087f75;--paper:#f1f8fa;--line:#d5e6eb;--white:#fff;--gold:#e9bc62}
+    *{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:var(--paper);line-height:1.8}
+    a{color:#12665f;text-underline-offset:3px}a:hover{color:#0b4843}.wrap{width:min(1000px,calc(100% - 36px));margin:auto}
+    main{padding:28px 0 64px}.hero{position:relative;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(220px,.8fr);align-items:center;gap:28px;padding:clamp(24px,5vw,48px);border:1px solid #d3e7e7;border-radius:24px;background:radial-gradient(circle at 80% 15%,#ffedc4 0,transparent 28%),linear-gradient(125deg,#e4f7f4,#f9fcff 58%,#e8e6fb);overflow:hidden}
+    .eyebrow{display:inline-flex;align-items:center;gap:7px;font-size:.76rem;letter-spacing:.09em;text-transform:uppercase;color:#08766e;background:#d6f4ec;border:1px solid #a8e3d5;border-radius:99px;padding:5px 11px;font-weight:850}
+    h1{font-size:clamp(2rem,4.5vw,3.2rem);line-height:1.2;letter-spacing:-.04em;color:#123653;margin:15px 0}.hero p{max-width:600px;margin:0;color:#425e70;font-size:1.03rem}.hero-art{width:100%;max-width:290px;justify-self:center}
+    .compass{display:block;width:100%;height:auto;filter:drop-shadow(0 12px 16px #10243a18)}
+    .section{margin-top:30px}.section-heading{margin:0 0 14px}.section-heading .eyebrow{margin-bottom:8px}.section h2{font-size:clamp(1.35rem,3vw,1.8rem);line-height:1.35;color:#123653;margin:0 0 8px}.section-intro{margin:0;color:var(--muted)}
+    .principles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.principle,.lens,.status-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:19px;min-width:0}.number{display:grid;place-items:center;width:34px;height:34px;border-radius:11px;background:#d8f4eb;color:#08766e;font-weight:900;margin-bottom:10px}.principle h3,.lens h3{font-size:1rem;line-height:1.45;margin:0 0 6px;color:#123653}.principle p,.lens p{font-size:.9rem;color:var(--muted);margin:0}
+    .lenses{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.lens-head{display:flex;align-items:center;gap:11px;margin-bottom:9px}.lens-icon{display:grid;place-items:center;flex:0 0 42px;height:42px;border-radius:13px;background:linear-gradient(135deg,#d6f4ec,#e9e4ff);color:#08766e;font-size:1.15rem;font-weight:900}
+    .lens ul{padding-left:1.2rem;margin:10px 0 0;font-size:.9rem}.lens li+li{margin-top:4px}
+    .caution{margin-top:14px;padding:16px 18px;border-left:4px solid #d6a64b;background:#fff7e5;border-radius:0 12px 12px 0;color:#55472c;font-size:.92rem}
+    .current{display:grid;grid-template-columns:1fr 1fr;gap:12px}.current a{display:block;height:100%;padding:17px 18px;background:#fff;border:1px solid var(--line);border-radius:14px;text-decoration:none}.current a strong{display:block;color:#075f59;line-height:1.5}.current a span{display:block;color:var(--muted);font-size:.88rem;margin-top:5px}.current a:hover{border-color:#65c4b5;background:#fbfffe}
+    .status-card{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:start;background:linear-gradient(120deg,#fff,#f1fbf8)}.status-card h2{margin:0 0 7px;font-size:1.2rem}.status-card p{margin:0;color:var(--muted);font-size:.92rem}.status-label{white-space:nowrap;font-size:.78rem;font-weight:800;color:#765522;background:#fff0c9;border:1px solid #ead49b;border-radius:99px;padding:5px 10px}
+    .updated{margin-top:18px;padding-top:13px;border-top:1px solid var(--line);font-size:.82rem;color:var(--muted)}footer{background:#0c1c2b;color:#d7e1e8;padding:24px 0;font-size:.9rem}footer a{color:#aee0d7}footer p{margin:6px 0}
+    @media(max-width:700px){.hero{grid-template-columns:1fr;gap:10px;padding:24px}.hero-art{max-width:180px;grid-row:1}.hero-copy{grid-row:2}.principles{grid-template-columns:1fr}.lenses,.current{grid-template-columns:1fr}.section{margin-top:24px}.status-card{grid-template-columns:1fr;gap:10px}.status-label{justify-self:start}}
+  </style>
+</head>
+<body>
+<header class="ia-site-header"><div class="ia-header-inner"><a class="ia-brand" href="https://webfoundrylab.github.io/invest-atlas/"><img src="https://webfoundrylab.github.io/invest-atlas/favicon.svg" alt="" width="42" height="42"><span>Invest Atlas</span></a><nav class="ia-header-nav" aria-label="主要メニュー"><a href="https://webfoundrylab.github.io/invest-atlas/#welcome">初めての方へ</a><a href="https://webfoundrylab.github.io/invest-atlas/investment-compass.html" aria-current="page">投資の羅針盤</a></nav></div></header>
+<main class="wrap">
+  <section class="hero" aria-labelledby="page-title">
+    <div class="hero-copy">
+      <span class="eyebrow">Investment Compass</span>
+      <h1 id="page-title">投資の羅針盤</h1>
+      <p>知識を集め、選択肢を比べ、進む方向を考える。Invest Atlasの記事や公式情報を横断し、投資対象・資産配分・投資タイミングについて、条件ごとの判断をまとめていくページです。</p>
+    </div>
+    <div class="hero-art">
+      <svg class="compass" viewBox="0 0 300 300" role="img" aria-labelledby="compass-title compass-desc" xmlns="http://www.w3.org/2000/svg">
+        <title id="compass-title">Invest Atlasの羅針盤</title><desc id="compass-desc">地図の緯度経度を思わせる円と、北を示す紺色・青緑・珊瑚色の方位針。</desc>
+        <circle cx="150" cy="150" r="126" fill="#ffffff" fill-opacity=".8" stroke="#123a60" stroke-width="4"/>
+        <circle cx="150" cy="150" r="103" fill="none" stroke="#8bb9ba" stroke-width="1.5" stroke-dasharray="3 7"/>
+        <path d="M150 35V265M35 150H265M69 69L231 231M231 69L69 231" stroke="#b7d5d5" stroke-width="1.4"/>
+        <path d="M150 35L127 139L150 127L173 139Z" fill="#123a60"/>
+        <path d="M150 265L127 161L150 173L173 161Z" fill="#123a60" opacity=".62"/>
+        <path d="M265 150L161 127L173 150L161 173Z" fill="#087f75" opacity=".9"/>
+        <path d="M35 150L139 127L127 150L139 173Z" fill="#087f75" opacity=".6"/>
+        <path d="M224 76L160 157L76 224L140 143Z" fill="#087f75"/>
+        <path d="M224 76L160 157L140 143Z" fill="#ff8b73"/>
+        <circle cx="150" cy="150" r="8" fill="#fff" stroke="#123a60" stroke-width="3"/>
+        <text x="150" y="20" text-anchor="middle" fill="#123a60" font-size="13" font-weight="800">N</text>
+        <text x="150" y="293" text-anchor="middle" fill="#536879" font-size="10" letter-spacing="2">FIND YOUR DIRECTION</text>
+      </svg>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="principles-title">
+    <div class="section-heading"><span class="eyebrow">Our approach</span><h2 id="principles-title">結論を急がず、判断の道筋を示す</h2><p class="section-intro">誰にとっても唯一の正解があるとは限りません。結論は、目的・期間・リスクの取り方などの条件とセットで考えます。</p></div>
+    <div class="principles">
+      <article class="principle"><span class="number">01</span><h3>条件を先に整理する</h3><p>生活資金、投資目的、使う時期、値下がりへの耐性を確認し、選択肢を比べる前提を整えます。</p></article>
+      <article class="principle"><span class="number">02</span><h3>比較条件と根拠を明示する</h3><p>公式資料や比較記事をもとに、費用・リスク・分散・過去データの条件を確認します。</p></article>
+      <article class="principle"><span class="number">03</span><h3>変わる結論は更新する</h3><p>商品条件や制度、根拠となるデータが変われば再検証します。結論を変えない場合も確認したことを記録します。</p></article>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="lenses-title">
+    <div class="section-heading"><span class="eyebrow">Decision lenses</span><h2 id="lenses-title">何を重視するかで、候補は変わる</h2><p class="section-intro">ここに示すのは検討の切り口です。現時点での確定ランキングや、すべての人への推奨ではありません。</p></div>
+    <div class="lenses">
+      <article class="lens"><div class="lens-head"><span class="lens-icon" aria-hidden="true">↗</span><div><h3>長期的な成長を重視する</h3><p>成長性と、値下がりに耐えられるかを一緒に考える。</p></div></div><ul><li>全世界株式と米国株式の違い</li><li>集中度・地域分散・費用</li></ul></article>
+      <article class="lens"><div class="lens-head"><span class="lens-icon" aria-hidden="true">⇄</span><div><h3>リスクに対する効率を重視する</h3><p>リターンだけでなく、どの程度の値動きを伴ったかを見る。</p></div></div><ul><li>シャープレシオなどの指標と限界</li><li>株式・債券を組み合わせた資産配分</li></ul></article>
+      <article class="lens"><div class="lens-head"><span class="lens-icon" aria-hidden="true">◎</span><div><h3>分散と安定性を重視する</h3><p>ひとつの地域や資産への依存をどう抑えるか考える。</p></div></div><ul><li>全世界株式、債券、現金の役割</li><li>相関・値下がり・資金を使う時期</li></ul></article>
+      <article class="lens"><div class="lens-head"><span class="lens-icon" aria-hidden="true">◷</span><div><h3>投資を始める時期・続け方を考える</h3><p>相場の予測だけに頼らず、資金と行動の計画を立てる。</p></div></div><ul><li>一括投資と積立投資</li><li>リバランス、見直し、売却・取り崩し</li></ul></article>
+    </div>
+    <div class="caution"><strong>大切な注意点：</strong>過去のリターンやシャープレシオが高かったことだけで、将来の最適な投資先が決まるわけではありません。比較するときは期間・通貨・リスク指標などの条件をそろえ、データの限界も確認します。</div>
+  </section>
+
+  <section class="section" aria-labelledby="existing-title">
+    <div class="section-heading"><span class="eyebrow">Start with what we know</span><h2 id="existing-title">まずは、公開済みの記事から考える</h2><p class="section-intro">現在は基本的な判断材料を整理している段階です。個別の比較と検証が増えるにつれ、このページの結論も具体化していきます。</p></div>
+    <div class="current">
+      <a href="before-you-invest.html"><strong>投資を始める前に確認したい7つのこと →</strong><span>生活資金・目的・投資期間・リスク許容度など、商品選びの前提を確認。</span></a>
+      <a href="risk-return-basics.html"><strong>投資のリスクとリターンとは？ →</strong><span>リスクの意味、損失と回復、商品を比較する際の考え方。</span></a>
+      <a href="diversification-basics.html"><strong>分散投資とは？ →</strong><span>資産・地域・銘柄・時間を分ける意味と、分散の限界。</span></a>
+      <a href="investment-trust-investment-targets.html"><strong>投資信託の投資対象とは？ →</strong><span>株式・債券・REITなど、投資対象の違いを整理。</span></a>
+      <a href="simple-investing-guide.html"><strong>投資は何を買えばいい？ →</strong><span>迷ったときに、リスクや投資対象、投資方法から考える。</span></a>
+      <a href="regular-investing.html"><strong>積立投資とは？ →</strong><span>定額購入の仕組みとメリット・注意点を確認。</span></a>
+    </div>
+  </section>
+
+  <section class="section status-card" aria-labelledby="status-title">
+    <div><h2 id="status-title">このページは、更新しながら育てます</h2><p>比較記事の追加、制度や商品条件の変更、重要なデータの更新をきっかけに、判断の根拠・代替案・結論が変わる条件を見直します。根拠が十分でないテーマは、未検証であることを明記します。</p></div>
+    <span class="status-label">初版・検証継続中</span>
+  </section>
+  <p class="updated">初版公開：2026年10月29日　／　更新時は、確認日と主な変更理由を記録します。</p>
+</main>
+<footer><div class="wrap"><strong>Invest Atlas</strong><p>投資の仕組みを理解し、自分で考え、判断するための情報を届けます。</p><p><a href="editorial-policy.html">編集方針・免責事項</a>　｜　<a href="./">トップページへ戻る</a></p><p>本ページは一般的な情報提供を目的とし、個別の投資助言や利益を保証するものではありません。</p></div></footer>
+</body>
+</html>
