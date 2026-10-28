@@ -223,7 +223,8 @@
         "investment-trust-vs-etf.html",
         "ai-semiconductor-investing.html",
         "simple-investing-guide.html",
-        "risk-return-basics.html"
+        "risk-return-basics.html",
+        "diversification-basics.html"
       ],
       "subcategory": "getting-started",
       "topic": "investment-preparation",
@@ -383,7 +384,8 @@
         "choose-investment-trust-nisa.html",
         "investment-trust-fees.html",
         "simple-investing-guide.html",
-        "risk-return-basics.html"
+        "risk-return-basics.html",
+        "diversification-basics.html"
       ],
       "subcategory": "regular-investing",
       "topic": "dollar-cost-averaging",
@@ -479,7 +481,8 @@
         "choose-investment-trust-nisa.html",
         "investment-trust-vs-etf.html",
         "investment-trust-nav.html",
-        "risk-return-basics.html"
+        "risk-return-basics.html",
+        "diversification-basics.html"
       ],
       "publishedAt": "2026-10-25",
       "updatedAt": "2026-10-26",
@@ -577,7 +580,8 @@
         "investment-trust-index-active.html",
         "investment-trust-fees.html",
         "nisa-basics.html",
-        "risk-return-basics.html"
+        "risk-return-basics.html",
+        "diversification-basics.html"
       ],
       "subcategory": "investing-basics",
       "publishedAt": "2026-10-26",
@@ -706,7 +710,8 @@
         "regular-investing.html",
         "investment-trust-investment-targets.html",
         "ai-semiconductor-investing.html",
-        "compound-growth.html"
+        "compound-growth.html",
+        "diversification-basics.html"
       ],
       "publishedAt": "2026-10-28",
       "updatedAt": "2026-10-28",
@@ -714,6 +719,37 @@
       "publishOrder": 16,
       "mainTitle": "投資のリスクとリターンとは？",
       "subtitle": "値動き・損失・商品の選び方を解説"
+    },
+    {
+      "slug": "diversification-basics.html",
+      "title": "分散投資とは？資産・地域・時間の分け方と注意点を図解",
+      "category": "basics",
+      "subcategory": "diversification",
+      "tags": [
+        "分散投資",
+        "資産配分",
+        "リスク管理",
+        "地域分散",
+        "銘柄分散",
+        "時間分散",
+        "投資信託",
+        "投資初心者"
+      ],
+      "summary": "分散投資の目的と、資産・地域・銘柄・購入時期を分ける方法を解説。投資信託の中身の確認、分散しても防げない損失、始める前のチェックポイントを図解で紹介。",
+      "status": "published",
+      "related": [
+        "before-you-invest.html",
+        "risk-return-basics.html",
+        "simple-investing-guide.html",
+        "regular-investing.html",
+        "investment-trust-investment-targets.html"
+      ],
+      "publishedAt": "2026-10-28",
+      "updatedAt": "2026-10-28",
+      "thumbnail": "thumbnails/diversification-basics.svg",
+      "publishOrder": 17,
+      "mainTitle": "分散投資とは？",
+      "subtitle": "資産・地域・時間の分け方と注意点を図解"
     }
   ]
 }
