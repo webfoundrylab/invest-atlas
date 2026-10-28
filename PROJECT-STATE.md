@@ -1635,3 +1635,11 @@
 - `before-you-invest.html`、`simple-investing-guide.html`、`regular-investing.html`、`investment-trust-investment-targets.html`、`ai-semiconductor-investing.html`、`compound-growth.html` から、文脈に沿った本文内リンクを追加。記事台帳の関連記事候補にも相互参照を登録。
 - 公式資料候補としてGPIF、金融庁、J-FLECへのリンクを掲載。確認日を2026-10-28と記載。
 - GitHubへの変更コミットは完了。GitHub Actionsのビルド・検証・デプロイ結果、および公開URLでの実表示・リンク動作は未確認。次にActionsの最新runを確認し、失敗があれば修正する。
+
+## 2026-10-28 分散投資の記事を追加
+- `diversification-basics.html` を新規作成。資産・地域・銘柄・時間の分散、集中投資との違い、投資信託の保有内容の確認、分散しても防げない損失、開始前の確認事項を説明。
+- 本文に2点のSVG図解（集中投資と分散投資の概念比較、分散投資を考える手順）を追加。模式図であることと分散投資の限界を明記。
+- `thumbnails/diversification-basics.svg` をサムネイル制作ガイドラインに沿って作成。 `article-index.json` にカテゴリ「投資の基礎 > 分散投資・資産配分」、タグ、関連記事候補、公開日、サムネイル、公開順を登録。
+- `before-you-invest.html`、`risk-return-basics.html`、`simple-investing-guide.html`、`regular-investing.html`、`investment-trust-investment-targets.html` から文脈に沿う本文リンクを追加し、関連記事候補にも登録。
+- 公式出典として金融庁「資産形成の基本」、GPIF「分散投資の意義①・②」を参照。情報確認日：2026-10-28。
+- GitHubへのファイル保存は完了。GitHub Actionsのビルド・検証・デプロイ結果、および公開URLでの実表示・リンク動作は未確認。
