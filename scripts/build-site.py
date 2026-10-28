@@ -45,12 +45,12 @@ def taxonomy_nodes(categories):
 
 
 
-def render_site_header(current_page=False):
+def render_site_header(current_page=None):
     """Return the shared site header used on article and category pages."""
-    current = ' aria-current="page"' if current_page else ''
+    compass_current = ' aria-current="page"' if current_page == "compass" else ''
     return ('<header class="ia-site-header"><div class="ia-header-inner">'
             '<a class="ia-brand" href="' + BASE_URL + '"><img src="' + BASE_URL + 'favicon.svg" alt="" width="42" height="42"><span>Invest Atlas</span></a>'
-            '<nav class="ia-header-nav" aria-label="主要メニュー"><a href="' + BASE_URL + 'editorial-policy.html"' + current + '>編集方針</a></nav>'
+            '<nav class="ia-header-nav" aria-label="主要メニュー"><a href="' + BASE_URL + '#welcome">初めての方へ</a><a href="' + BASE_URL + 'investment-compass.html"' + compass_current + '>投資の羅針盤</a></nav>'
             '</div></header>')
 
 
@@ -260,7 +260,8 @@ def main():
     published = [a for a in articles if a.get("status") == "published"]
     inject_home_category_tree(registry)
     category_urls = generate_category_pages(registry, published)
-    urls = [BASE_URL] + [BASE_URL + a["slug"] for a in published] + category_urls
+    static_pages = [page for page in registry.get("pages", []) if page.get("status", "published") == "published"]
+    urls = [BASE_URL] + [BASE_URL + a["slug"] for a in published] + category_urls + [BASE_URL + page["slug"] for page in static_pages]
     urlset = Element(f"{{{NS}}}urlset")
     for url in urls:
         node = SubElement(urlset, f"{{{NS}}}url")
