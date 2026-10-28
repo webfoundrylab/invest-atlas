@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="560" viewBox="0 0 1440 560" role="img" aria-labelledby="title desc">
+<title id="title">地図とコンパスを組み合わせたInvest Atlasのメインビジュアル</title>
+<desc id="desc">アイボリーの余白を左に取り、右側に青い地球儀、地図の輪郭、コンパスローズ、軌道を配した編集的なグラフィック。</desc>
+<defs>
+ <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fbf8ef"/><stop offset=".58" stop-color="#f0f5ef"/><stop offset="1" stop-color="#dbeef0"/></linearGradient>
+ <linearGradient id="ocean" x1=".12" y1=".05" x2=".86" y2=".95"><stop stop-color="#65c2cb"/><stop offset=".45" stop-color="#177ca8"/><stop offset="1" stop-color="#102d59"/></linearGradient>
+ <linearGradient id="land" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f5eedc"/><stop offset="1" stop-color="#b7d8d4"/></linearGradient>
+ <linearGradient id="navy" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#153c67"/><stop offset="1" stop-color="#0d2447"/></linearGradient>
+ <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f7d99a"/><stop offset="1" stop-color="#b98132"/></linearGradient>
+ <clipPath id="globeClip"><circle cx="1048" cy="260" r="202"/></clipPath>
+ <pattern id="grain" width="38" height="38" patternUnits="userSpaceOnUse"><circle cx="5" cy="8" r=".7" fill="#567d86" opacity=".12"/><circle cx="27" cy="24" r=".6" fill="#567d86" opacity=".10"/></pattern>
+</defs>
+<rect width="1440" height="560" fill="url(#paper)"/><rect width="1440" height="560" fill="url(#grain)"/>
+<!-- faint atlas map and geometric fields -->
+<path d="M640 0H1070L870 560H430Z" fill="#dce9e3" opacity=".62"/>
+<path d="M885 0H1440V560H1090L1018 340Z" fill="#d4e9e8" opacity=".72"/>
+<path d="M1178 0H1440V560H1298L1190 350Z" fill="#123b69" opacity=".98"/>
+<path d="M0 488Q220 450 420 500T790 490L900 560H0Z" fill="#d9e9e6"/>
+<path d="M0 524Q250 490 475 530T860 520L940 560H0Z" fill="#5ba9b5" opacity=".72"/>
+<g fill="#bfd7d5" opacity=".7" transform="translate(710 24)">
+ <path d="M15 65l32-28 45 9 18 28-21 19-8 30-25 11-14 34-19-7-3-31-21-23z"/>
+ <path d="M110 185l24-18 29 12 10 31-13 32-4 45-18 29-15-31 1-38-15-28z"/>
+ <path d="M210 61l29-19 36 12 14 23-22 18-36-7z"/>
+ <path d="M264 118l53-20 52 15 21 30-28 26-37-8-20 25-29-13-13-25z"/>
+ <path d="M322 212l42-18 47 18 14 31-30 32-22 47-25-13-3-40-26-20z"/>
+</g>
+<!-- globe -->
+<circle cx="1048" cy="260" r="222" fill="#75c4c7" opacity=".28"/>
+<circle cx="1048" cy="260" r="202" fill="url(#ocean)" stroke="#f5f0df" stroke-width="5"/>
+<g clip-path="url(#globeClip)">
+ <path d="M845 95l34-21 34 7 15 20 35 5 23 25-8 30-26 7-9 28-25 12-5 35-22 8-13-30-24-15-15-34-17-16z" fill="url(#land)"/>
+ <path d="M962 226l32-19 32 12 13 26-13 32 15 30-10 42-24 29-14 43-25-15-9-39-23-29-2-36-20-19 6-31z" fill="url(#land)"/>
+ <path d="M1044 87l34-18 45 12 21 27 41 8 26 29-14 22-34-2-22 25-34-4-21 19-25-17-7-34-23-18z" fill="#d5e7dc"/>
+ <path d="M1128 224l31-17 28 8 21 26-6 31-22 16-10 37-26 19-14-25 3-28-17-25z" fill="#d5e7dc"/>
+ <path d="M1190 364l27-17 31 12 15 27-20 26-30-4-17-19z" fill="#d5e7dc"/>
+ <g fill="none" stroke="#e7f4ed" stroke-width="1.5" opacity=".6">
+  <ellipse cx="1048" cy="260" rx="74" ry="202"/><ellipse cx="1048" cy="260" rx="145" ry="202"/>
+  <ellipse cx="1048" cy="260" rx="202" ry="74"/><ellipse cx="1048" cy="260" rx="202" ry="142"/>
+  <path d="M846 260H1250M1048 58V462"/>
+ </g>
+ <path d="M848 170Q1048 55 1248 170M848 350Q1048 465 1248 350" fill="none" stroke="#d7f0eb" stroke-width="2" opacity=".55"/>
+</g>
+<circle cx="1048" cy="260" r="211" fill="none" stroke="#fff8e8" stroke-width="3" opacity=".8"/>
+<!-- compass / orbital arcs -->
+<g fill="none" stroke-linecap="round">
+ <ellipse cx="1048" cy="260" rx="276" ry="126" transform="rotate(-22 1048 260)" stroke="#d3a452" stroke-width="2.5"/>
+ <ellipse cx="1048" cy="260" rx="246" ry="168" transform="rotate(28 1048 260)" stroke="#f8f2dc" stroke-width="2.5"/>
+ <path d="M807 100Q1015 -8 1262 112" stroke="#f3d9a0" stroke-width="2"/>
+ <path d="M820 437Q1060 530 1328 348" stroke="#1b8a9b" stroke-width="3" opacity=".8"/>
+</g>
+<g fill="url(#gold)" stroke="#fff3d0" stroke-width="2">
+ <circle cx="816" cy="167" r="8"/><circle cx="1280" cy="171" r="7"/><circle cx="1195" cy="426" r="7"/><circle cx="929" cy="457" r="6"/>
+</g>
+<!-- compass rose in lower right -->
+<g transform="translate(1240 390)">
+ <circle r="133" fill="#f7f1df" fill-opacity=".93" stroke="#d4a45a" stroke-width="3"/>
+ <circle r="116" fill="none" stroke="#214b6e" stroke-width="2"/>
+ <circle r="94" fill="none" stroke="#b9c9c6" stroke-width="1.5"/>
+ <g stroke="#254b69" stroke-width="2" opacity=".75">
+  <path d="M0-110V-91M0 91V110M-110 0H-91M91 0H110M-78-78l14 14M78 78L64 64M78-78L64-64M-78 78l14-14"/>
+  <path d="M0-100L15-12 0 0-15-12Z" fill="#1a6387"/>
+  <path d="M0 100L-12 15 0 0 12 15Z" fill="#d6a04c"/>
+  <path d="M-100 0L-15-12 0 0-15 12Z" fill="#c6d9d5"/>
+  <path d="M100 0L15 12 0 0 15-12Z" fill="#1a6387"/>
+  <path d="M0-72L10-10 0 0-10-10Z" fill="#102c50" stroke="none"/>
+  <path d="M0 72L-8 10 0 0 8 10Z" fill="#d6a04c" stroke="none"/>
+ </g>
+ <circle r="10" fill="#d6a04c" stroke="#fff8e8" stroke-width="3"/>
+</g>
+<!-- understated frame lines -->
+<path d="M0 0H250M0 18H155M0 542H390" stroke="#d8b878" stroke-width="1.5" opacity=".7"/>
+</svg>
