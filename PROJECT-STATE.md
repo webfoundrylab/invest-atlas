@@ -1643,3 +1643,10 @@
 - `before-you-invest.html`、`risk-return-basics.html`、`simple-investing-guide.html`、`regular-investing.html`、`investment-trust-investment-targets.html` から文脈に沿う本文リンクを追加し、関連記事候補にも登録。
 - 公式出典として金融庁「資産形成の基本」、GPIF「分散投資の意義①・②」を参照。情報確認日：2026-10-28。
 - GitHubへのファイル保存は完了。GitHub Actionsのビルド・検証・デプロイ結果、および公開URLでの実表示・リンク動作は未確認。
+
+
+## 2026-10-28 共通ヘッダーを全ページで統一
+- トップページ、編集方針ページ、記事ページ、カテゴリページで、コンパスのファビコンと「Invest Atlas」表記、濃紺背景、右側の「編集方針」リンクを共通化する実装を追加。
+- 共通CSS `assets/site-header.css` を新設。記事・カテゴリページは `scripts/build-site.py` の生成時に共通ヘッダーを適用する方式とし、個別ページへの重複実装を避ける。
+- スマートフォンではロゴとナビゲーションを同じ行に保ち、ロゴとアイコンを縮小。ページ固有のパンくず・カテゴリツリーはヘッダーから分離。
+- GitHubへの保存後、Actionsのビルド・デプロイ結果と公開ページでの表示を確認する。
