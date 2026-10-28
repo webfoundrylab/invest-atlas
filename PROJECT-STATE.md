@@ -1627,3 +1627,11 @@
 - ユーザー提示のSVG案を `favicon.svg` に反映。円周を半径24・線幅6とし、青緑のコンパス針に赤いアクセントを加えた。
 - トップページのヘッダー背景は白ではなく従来の紺色に戻し、コンパスアイコンと `Invest Atlas` のワードマークを維持。文字色・ナビゲーション色も紺色背景用に戻した。
 - `favicon.svg` コミット：`1159fc902a35ee285079d3e789a6f5b1b33126ab`。`index.html` コミット：`2922f2f2c6fbb1a19be64ae539c436c211b05ac8`。公開表示、Actions、スマートフォン表示は未確認。
+
+## 2026-10-28 リスクとリターン記事の追加
+- `risk-return-basics.html` を新規作成。リスクをリターンの振れ幅として説明し、損失率と回復に必要な上昇率の計算例、価格変動・金利・為替・信用・流動性リスク、商品比較と判断手順を掲載。
+- 本文に3点のSVG図解（リスクの振れ幅、損失後の回復率、投資前の判断フロー）を追加。図の要点と計算条件を本文・キャプションに明記。
+- `thumbnails/risk-return-basics.svg` をサムネイルガイドラインに沿って作成し、`article-index.json` に正式タイトル、主題・副題、カテゴリ「投資の基礎 > リスクとリターン」、タグ、関連記事候補、公開日、表示順を登録。
+- `before-you-invest.html`、`simple-investing-guide.html`、`regular-investing.html`、`investment-trust-investment-targets.html`、`ai-semiconductor-investing.html`、`compound-growth.html` から、文脈に沿った本文内リンクを追加。記事台帳の関連記事候補にも相互参照を登録。
+- 公式資料候補としてGPIF、金融庁、J-FLECへのリンクを掲載。確認日を2026-10-28と記載。
+- GitHubへの変更コミットは完了。GitHub Actionsのビルド・検証・デプロイ結果、および公開URLでの実表示・リンク動作は未確認。次にActionsの最新runを確認し、失敗があれば修正する。
