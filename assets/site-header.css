@@ -59,8 +59,9 @@
 }
 @media (max-width: 480px) {
   .ia-site-header { min-height: 60px; padding: 10px 0 !important; }
-  .ia-header-inner { gap: 10px; }
-  .ia-site-header .ia-brand { gap: 7px; font-size: 1.08rem; }
-  .ia-site-header .ia-brand img { width: 34px; height: 34px; flex-basis: 34px; }
-  .ia-site-header .ia-header-nav a { font-size: .82rem; }
+  .ia-header-inner { gap: 8px; }
+  .ia-site-header .ia-brand { gap: 6px; font-size: 1rem; }
+  .ia-site-header .ia-brand img { width: 32px; height: 32px; flex-basis: 32px; }
+  .ia-header-nav { gap: 8px; }
+  .ia-site-header .ia-header-nav a { font-size: .72rem; white-space: nowrap; }
 }
