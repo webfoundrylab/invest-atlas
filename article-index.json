@@ -222,7 +222,8 @@
         "nisa-basics.html",
         "investment-trust-vs-etf.html",
         "ai-semiconductor-investing.html",
-        "simple-investing-guide.html"
+        "simple-investing-guide.html",
+        "risk-return-basics.html"
       ],
       "subcategory": "getting-started",
       "topic": "investment-preparation",
@@ -381,7 +382,8 @@
         "nisa-basics.html",
         "choose-investment-trust-nisa.html",
         "investment-trust-fees.html",
-        "simple-investing-guide.html"
+        "simple-investing-guide.html",
+        "risk-return-basics.html"
       ],
       "subcategory": "regular-investing",
       "topic": "dollar-cost-averaging",
@@ -413,7 +415,8 @@
         "stock-market-index-basics.html",
         "investment-trust-investment-targets.html",
         "investment-trust-vs-etf.html",
-        "before-you-invest.html"
+        "before-you-invest.html",
+        "risk-return-basics.html"
       ],
       "subcategory": "investment-themes",
       "topic": "ai-semiconductor",
@@ -475,7 +478,8 @@
       "related": [
         "choose-investment-trust-nisa.html",
         "investment-trust-vs-etf.html",
-        "investment-trust-nav.html"
+        "investment-trust-nav.html",
+        "risk-return-basics.html"
       ],
       "publishedAt": "2026-10-25",
       "updatedAt": "2026-10-26",
@@ -572,7 +576,8 @@
         "investment-trust-investment-targets.html",
         "investment-trust-index-active.html",
         "investment-trust-fees.html",
-        "nisa-basics.html"
+        "nisa-basics.html",
+        "risk-return-basics.html"
       ],
       "subcategory": "investing-basics",
       "publishedAt": "2026-10-26",
@@ -602,7 +607,8 @@
         "simple-investing-guide.html",
         "investment-trust-fees.html",
         "nisa-basics.html",
-        "before-you-invest.html"
+        "before-you-invest.html",
+        "risk-return-basics.html"
       ],
       "publishedAt": "2026-10-26",
       "updatedAt": "2026-10-26",
@@ -677,6 +683,37 @@
       "publishOrder": 15,
       "mainTitle": "投資信託の分配金とは？",
       "subtitle": "普通分配金・元本払戻金と再投資の考え方"
+    },
+    {
+      "slug": "risk-return-basics.html",
+      "title": "投資のリスクとリターンとは？値動き・損失・商品の選び方を解説",
+      "category": "basics",
+      "subcategory": "risk-return",
+      "tags": [
+        "投資初心者",
+        "リスク",
+        "リターン",
+        "価格変動",
+        "元本割れ",
+        "リスク許容度",
+        "分散投資"
+      ],
+      "summary": "投資のリスクを値動きの振れ幅として理解し、損失率と回復に必要な上昇率、価格変動・金利・為替などのリスク、自分に合う投資を考える手順を図解で解説。",
+      "status": "published",
+      "related": [
+        "before-you-invest.html",
+        "simple-investing-guide.html",
+        "regular-investing.html",
+        "investment-trust-investment-targets.html",
+        "ai-semiconductor-investing.html",
+        "compound-growth.html"
+      ],
+      "publishedAt": "2026-10-28",
+      "updatedAt": "2026-10-28",
+      "thumbnail": "thumbnails/risk-return-basics.svg",
+      "publishOrder": 16,
+      "mainTitle": "投資のリスクとリターンとは？",
+      "subtitle": "値動き・損失・商品の選び方を解説"
     }
   ]
 }
