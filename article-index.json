@@ -747,6 +747,40 @@
       "publishOrder": 17,
       "mainTitle": "分散投資とは？",
       "subtitle": "資産・地域・時間の分け方と注意点を図解"
+    },
+    {
+      "slug": "global-vs-sp500.html",
+      "title": "全世界株式とS&P 500の違いは？投資対象・分散・選び方を比較",
+      "category": "markets",
+      "subcategory": "market-trends",
+      "topic": "stock-indices",
+      "tags": [
+        "全世界株式",
+        "S&P 500",
+        "MSCI ACWI",
+        "米国株式",
+        "地域分散",
+        "株価指数",
+        "インデックス投資",
+        "投資信託",
+        "NISA"
+      ],
+      "summary": "全世界株式型とS&P 500型の投資対象、地域分散、米国株の比重、為替・費用・リスクを比較。どちらが必ず優れているとは決めず、自分の投資目的と条件から選ぶ視点を整理。",
+      "status": "published",
+      "related": [
+        "stock-market-index-basics.html",
+        "investment-trust-investment-targets.html",
+        "investment-trust-index-active.html",
+        "choose-investment-trust-nisa.html",
+        "diversification-basics.html",
+        "simple-investing-guide.html"
+      ],
+      "publishedAt": "2026-10-29",
+      "updatedAt": "2026-10-29",
+      "thumbnail": "thumbnails/global-vs-sp500.svg",
+      "publishOrder": 18,
+      "mainTitle": "全世界株式とS&P 500の違いは？",
+      "subtitle": "投資対象・分散・選び方を比較"
     }
   ],
   "pages": [
