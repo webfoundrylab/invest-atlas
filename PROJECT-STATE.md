@@ -1,6 +1,6 @@
 # Invest Atlas — Project State
 
-最終更新: 2026-10-26
+最終更新: 2026-10-29
 
 ## プロジェクト概要
 - サイト名: Invest Atlas（仮）
@@ -1666,4 +1666,5 @@
 - simple-investing-guide.html は全世界株式とS&P 500、一括と積立、インデックス型とアクティブ型の詳細比較を抱え込む構成を見直し、基本的な判断視点と羅針盤への案内を中心に整理。詳細な知識は専用記事へリンクする方針。
 - investment-compass.html の説明を、条件整理・選択肢比較と解説記事を行き来できるハブとして明確化。現時点では個別回答から自動診断結果を生成する機能は未実装であり、ページ文言でそのような機能があると誤認させない。
 - EDITORIAL-GUIDELINES.md に導線設計の原則を追記。
-- GitHubブランチでの変更保存は完了。PR作成後にActionsの検証結果を確認し、問題がなければマージする。公開画面・PC/スマートフォンでの実表示は未確認。
+- PR #2（https://github.com/webfoundrylab/invest-atlas/pull/2）は squash merge 済み。マージコミット: e525399c937553a98d646d79bebb333a16854681。main から変更ファイルを再取得し、保存内容を確認した。
+- マージコミットに対するGitHub Actionsの実行結果は確認できていない（combined statusにチェックなし、workflow runも取得できず）。公開画面・PC/スマートフォンでの実表示は未確認。次にActionsと公開ページを確認する。
