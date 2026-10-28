@@ -1675,4 +1675,5 @@
 - トップページの2つ目の入口、記事ページのH1/title/meta description、article-index.json の正式タイトル・主題・副題・概要・タグを更新。
 - 「投資を始める前に確認したい7つのこと」のまとめの後に、確認した内容を「投資の羅針盤」で自分の判断につなげるCTAを追加。7つのことからも羅針盤へ進めるようにした。
 - 既存記事6ページの本文内リンク文言を新タイトルに合わせて更新。EDITORIAL-GUIDELINES.md に、7つのことからも羅針盤へ進む導線と、シンプルな記事の役割を追記。
-- 変更はブランチ navigation/compass-from-both-paths に保存中。PR作成後に記事台帳・内部リンク・ビルド検証を確認する。公開画面は未確認。
+- PR #3（https://github.com/webfoundrylab/invest-atlas/pull/3）は squash merge 済み。マージコミット: 20b10358789deb28a283d47f1cf9415da508257f。記事タイトル・article-index の主題/副題/概要、旧タイトルの残存、7つのこととシンプル記事から羅針盤へのリンクを確認した。
+- マージコミットのGitHub Actions結果は連携ツールから取得できず（combined status・workflow runsともに空）。公開画面・モバイル表示は未確認。
