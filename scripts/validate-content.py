@@ -17,6 +17,7 @@ except Exception as exc:
 
 categories = {item["id"]: item for item in registry.get("categories", [])}
 articles = registry.get("articles", [])
+static_pages = registry.get("pages", [])
 
 def taxonomy_paths(items, prefix=()):
     paths = {}
@@ -75,7 +76,7 @@ for item in articles:
 try:
     sitemap_root = ElementTree.fromstring((ROOT / "sitemap.xml").read_text(encoding="utf-8"))
     published = [item for item in articles if item.get("status") == "published"]
-    expected_urls = {BASE_URL} | {BASE_URL + item["slug"] for item in published}
+    expected_urls = {BASE_URL} | {BASE_URL + item["slug"] for item in published} | {BASE_URL + page["slug"] for page in static_pages if page.get("status", "published") == "published"}
     for path in taxonomy:
         if any(article_category_path(article)[:len(path)] == path for article in published):
             expected_urls.add(category_base + "/".join(path) + "/")
@@ -91,6 +92,24 @@ try:
         errors.append(f"text sitemap contains unregistered URL: {url}")
 except Exception as exc:
     errors.append(f"cannot parse sitemap.xml: {exc}")
+
+for page_info in static_pages:
+    slug = page_info.get("slug", "")
+    if not slug or "/" in slug or "\\" in slug or slug in {".", ".."}:
+        errors.append(f"unsafe or missing static page slug: {slug!r}")
+        continue
+    if page_info.get("status", "published") == "published":
+        static_path = ROOT / slug
+        if not static_path.is_file():
+            errors.append(f"static page file does not exist: {slug}")
+        else:
+            try:
+                static_html = static_path.read_text(encoding="utf-8")
+                canonical = BASE_URL + slug
+                if not re.search(r'<link\\s+rel=["\\']canonical["\\']\\s+href=["\\']' + re.escape(canonical) + r'["\\']', static_html, flags=re.I):
+                    errors.append(f"{slug}: canonical does not match its registered URL")
+            except Exception as exc:
+                errors.append(f"{slug}: cannot read static page: {exc}")
 
 for item in articles:
     if item.get("status") != "published":
