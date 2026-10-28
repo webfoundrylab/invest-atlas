@@ -1693,4 +1693,6 @@
 - `article-index.json` に正式タイトル、主題・副題、カテゴリ、タグ、概要、関連記事候補、公開日、表示順を登録。
 - 株価指数、投資信託の投資対象、NISAの商品選び、シンプルな投資方針、投資の羅針盤から本文リンクを追加。
 - MSCI、S&P Dow Jones Indices、金融庁、J-FLECの公式資料を参照。過去実績で優劣を断定せず、採用指数によって全世界株式の対象範囲が異なる点を説明。
-- GitHubへの保存は作業ブランチ上で完了。静的検証、GitHub Actions、公開画面とスマートフォンでの実表示は未確認。
+- PR #5（https://github.com/webfoundrylab/invest-atlas/pull/5）は squash merge 済み。マージコミット：`dcfdd5ff0431fe41e4cc25cd20caf725659c1ad2`。
+- GitHub Actions run `40732737123` の build・記事台帳/サイトマップ検証・Pages deploy は成功。生成処理内でサイトマップを更新したことを確認。
+- 公開URLをブラウザ確認ツールから取得できず、公開画面・スマートフォンでの実表示は未確認。
