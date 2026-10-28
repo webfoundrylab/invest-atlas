@@ -1,0 +1,66 @@
+/* Shared Invest Atlas header. Loaded by the home, policy, article and category pages. */
+.ia-site-header {
+  display: block;
+  min-height: 70px;
+  padding: 14px 0 !important;
+  background: #10243a !important;
+  color: #fff;
+}
+.ia-header-inner {
+  width: min(1160px, calc(100% - 32px));
+  min-height: 42px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.ia-site-header .ia-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  text-decoration: none;
+  white-space: nowrap;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: 1.2;
+}
+.ia-site-header .ia-brand img {
+  display: block;
+  width: 42px;
+  height: 42px;
+  flex: 0 0 42px;
+}
+.ia-header-nav {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.ia-site-header .ia-header-nav a {
+  color: #e6f0f5;
+  text-decoration: none;
+  font-size: .92rem;
+  font-weight: 650;
+  line-height: 1.5;
+}
+.ia-site-header .ia-header-nav a:hover,
+.ia-site-header .ia-header-nav a:focus-visible {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.ia-site-header a:focus-visible {
+  outline: 3px solid #ffb58d;
+  outline-offset: 4px;
+  border-radius: 3px;
+}
+@media (max-width: 480px) {
+  .ia-site-header { min-height: 60px; padding: 10px 0 !important; }
+  .ia-header-inner { gap: 10px; }
+  .ia-site-header .ia-brand { gap: 7px; font-size: 1.08rem; }
+  .ia-site-header .ia-brand img { width: 34px; height: 34px; flex-basis: 34px; }
+  .ia-site-header .ia-header-nav a { font-size: .82rem; }
+}
