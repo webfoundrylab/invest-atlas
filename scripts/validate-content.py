@@ -107,7 +107,7 @@ for page_info in static_pages:
                 static_html = static_path.read_text(encoding="utf-8")
                 canonical = BASE_URL + slug
                 if 'rel="canonical"' not in static_html or 'href="' + canonical + '"' not in static_html:
-                    errors.append(f"{slug}: canonical does not match its registered URL")                    errors.append(f"{slug}: canonical does not match its registered URL")
+                    errors.append(f"{slug}: canonical does not match its registered URL")
             except Exception as exc:
                 errors.append(f"{slug}: cannot read static page: {exc}")
 
