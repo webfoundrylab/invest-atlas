@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e8f7f7"/><stop offset="1" stop-color="#f8f5ed"/></linearGradient></defs>
+<rect width="1200" height="675" fill="url(#bg)"/>
+<g opacity=".075" fill="#10243a" font-family="sans-serif" font-weight="800"><text x="44" y="360" font-size="115">Invest</text><text x="44" y="485" font-size="115">Atlas</text></g>
+<rect x="24" y="22" width="1152" height="150" rx="22" fill="#fff" stroke="#b8d9d9" stroke-width="2"/>
+<text x="600" y="57" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="800" letter-spacing="1" fill="#087f75">RISK &amp; RETURN</text>
+<text x="600" y="116" text-anchor="middle" font-family="sans-serif" font-size="48" font-weight="800" fill="#10243a">投資のリスクとリターンとは？</text>
+<text x="600" y="157" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="650" fill="#536879">値動き・損失・商品の選び方を解説</text>
+<g transform="translate(120 214)">
+<rect x="0" y="0" width="960" height="400" rx="30" fill="#ffffff" stroke="#d5e6eb" stroke-width="3"/>
+<line x1="70" y1="205" x2="890" y2="205" stroke="#9bb0b8" stroke-width="3" stroke-dasharray="10 10"/>
+<path d="M70 205 L145 182 L215 223 L285 174 L355 199 L425 186 L495 228 L565 192 L635 207 L705 180 L775 217 L890 188" fill="none" stroke="#087f75" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" opacity=".82"/>
+<path d="M70 205 L145 98 L215 318 L285 147 L355 250 L425 72 L495 345 L565 169 L635 282 L705 90 L775 305 L890 158" fill="none" stroke="#d97745" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="425" cy="72" r="12" fill="#d97745"/><circle cx="495" cy="345" r="12" fill="#d97745"/>
+<g font-family="sans-serif" font-weight="800" font-size="25"><text x="70" y="52" fill="#087f75">値動き</text><text x="890" y="375" text-anchor="end" fill="#804526">利益も損失も振れ幅がある</text></g>
+</g></svg>
