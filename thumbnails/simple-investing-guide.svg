@@ -1,40 +1,57 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
 <title id="title">投資をシンプルに考える｜低コスト・分散・長期保有を出発点に</title>
-<desc id="desc">落ち着いた道筋と3つの道しるべで、低コスト・分散・長期保有を投資方針の出発点として示す概念図。</desc>
+<desc id="desc">低コスト・分散・長期保有の3つの基本方針を、コイン、分散した投資先、時間を表すフラットな図柄で示す。</desc>
 <defs>
-  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff8f1"/><stop offset=".52" stop-color="#f3eaf8"/><stop offset="1" stop-color="#e8e9ef"/></linearGradient>
-  <linearGradient id="path" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e65c4f"/><stop offset=".52" stop-color="#ed9a42"/><stop offset="1" stop-color="#8b70bd"/></linearGradient>
-  <linearGradient id="sun" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffd68a"/><stop offset="1" stop-color="#f4a65b"/></linearGradient>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff8ef"/><stop offset="1" stop-color="#f0eaf5"/></linearGradient>
 </defs>
 <rect width="1200" height="675" fill="url(#bg)"/>
-<g id="invest-atlas-watermark" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="270" letter-spacing="-8" fill="#9a5c86" opacity=".065">
-  <text x="18" y="400">Invest</text>
-  <text x="1180" y="605" text-anchor="end">Atlas</text>
-</g>
-<rect x="24" y="22" width="1152" height="150" rx="22" fill="#fff" stroke="#d86c56" stroke-width="2"/>
-<text x="600" y="57" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="800" letter-spacing="1" fill="#bd5148">SIMPLE INVESTING</text>
+<g id="invest-atlas-watermark" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="270" letter-spacing="-8" fill="#8d668e" opacity="0.065"><text x="18" y="400">Invest</text><text x="1180" y="605" text-anchor="end">Atlas</text></g>
+<rect x="24" y="22" width="1152" height="150" rx="22" fill="#fff" stroke="#d9b5d5" stroke-width="2"/>
+<text x="600" y="57" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="800" letter-spacing="1" fill="#98618f">SIMPLE INVESTING</text>
 <text x="600" y="116" text-anchor="middle" font-family="sans-serif" font-size="48" font-weight="800" fill="#30283e">投資をシンプルに考える</text>
 <text x="600" y="157" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="650" fill="#66566f">低コスト・分散・長期保有を出発点に</text>
 
-<!-- open landscape and one clear path -->
-<circle cx="922" cy="278" r="63" fill="url(#sun)" opacity=".95"/>
-<path d="M0 470 Q150 390 305 458 T610 448 T900 440 T1200 420 V675 H0Z" fill="#d9cfe4" opacity=".85"/>
-<path d="M0 520 Q180 452 360 515 T700 493 T1000 486 T1200 470 V675 H0Z" fill="#c3b6d4"/>
-<path d="M0 570 Q180 530 360 560 T720 548 T1000 532 T1200 540 V675 H0Z" fill="#b7c0cc"/>
-<path d="M420 675 C445 620 515 590 580 552 C655 510 695 478 725 432 C750 393 787 370 834 349" fill="none" stroke="#fff4e8" stroke-width="104" stroke-linecap="round"/>
-<path d="M420 675 C445 620 515 590 580 552 C655 510 695 478 725 432 C750 393 787 370 834 349" fill="none" stroke="url(#path)" stroke-width="72" stroke-linecap="round"/>
-<path d="M432 675 C456 622 522 594 586 554 C657 512 699 478 729 432 C753 395 790 372 835 350" fill="none" stroke="#fff4e8" stroke-width="4" stroke-dasharray="12 17" stroke-linecap="round" opacity=".9"/>
-
-<!-- signpost: three principles, large readable shapes -->
-<path d="M888 358 L888 595" stroke="#4b4056" stroke-width="20" stroke-linecap="round"/>
-<path d="M887 382 L1052 382 L1090 416 L1052 450 L887 450 Z" fill="#d9574f" stroke="#fff7f1" stroke-width="4" stroke-linejoin="round"/>
-<text x="978" y="425" text-anchor="middle" font-family="sans-serif" font-size="31" font-weight="800" fill="#fff">長期保有</text>
-<path d="M888 463 L1034 463 L1072 497 L1034 531 L888 531 Z" fill="#e99a3e" stroke="#fff7f1" stroke-width="4" stroke-linejoin="round"/>
-<text x="967" y="506" text-anchor="middle" font-family="sans-serif" font-size="31" font-weight="800" fill="#fff">分散</text>
-<path d="M888 544 L1015 544 L1053 578 L1015 612 L888 612 Z" fill="#8065ad" stroke="#fff7f1" stroke-width="4" stroke-linejoin="round"/>
-<text x="955" y="587" text-anchor="middle" font-family="sans-serif" font-size="31" font-weight="800" fill="#fff">低コスト</text>
-
-<!-- starting point marker -->
-<circle cx="420" cy="675" r="25" fill="#fff8f1" stroke="#d9574f" stroke-width="8"/>
-<path d="M420 653 L420 697 M398 675 L442 675" stroke="#d9574f" stroke-width="5" stroke-linecap="round"/>
+<!-- three clear, flat illustrations; accent colors intentionally vary by principle -->
+<g transform="translate(65 210)">
+  <rect x="0" y="0" width="330" height="395" rx="26" fill="#fff" stroke="#ead9d1" stroke-width="3"/>
+  <rect x="0" y="0" width="330" height="14" rx="7" fill="#df6651"/>
+  <!-- coins and a price tag -->
+  <ellipse cx="165" cy="270" rx="91" ry="22" fill="#f3d2c3"/>
+  <ellipse cx="142" cy="249" rx="76" ry="21" fill="#f3b09b" stroke="#c84f43" stroke-width="5"/>
+  <path d="M66 205 Q66 184 142 184 Q218 184 218 205 V249 Q218 270 142 270 Q66 270 66 249Z" fill="#e9785f" stroke="#c84f43" stroke-width="5"/>
+  <ellipse cx="142" cy="205" rx="76" ry="21" fill="#ffd7a6" stroke="#c84f43" stroke-width="5"/>
+  <ellipse cx="142" cy="205" rx="54" ry="12" fill="none" stroke="#c84f43" stroke-width="4"/>
+  <path d="M215 167 L257 167 L257 220 L236 208 L215 220 Z" fill="#e9785f" stroke="#c84f43" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M226 181 H246 M226 192 H246" stroke="#fff7ef" stroke-width="4" stroke-linecap="round"/>
+  <text x="165" y="326" text-anchor="middle" font-family="sans-serif" font-size="34" font-weight="800" fill="#b64e42">低コスト</text>
+  <text x="165" y="365" text-anchor="middle" font-family="sans-serif" font-size="25" font-weight="650" fill="#66566f">手数料を確認する</text>
+</g>
+<g transform="translate(435 210)">
+  <rect x="0" y="0" width="330" height="395" rx="26" fill="#fff" stroke="#d8d6ec" stroke-width="3"/>
+  <rect x="0" y="0" width="330" height="14" rx="7" fill="#8170bd"/>
+  <!-- three asset groups connected to one shared center -->
+  <path d="M165 170 L82 223 M165 170 L248 223 M165 170 V257" fill="none" stroke="#a39acb" stroke-width="9" stroke-linecap="round"/>
+  <rect x="115" y="113" width="100" height="75" rx="16" fill="#8170bd"/>
+  <path d="M139 145 H191 M165 125 V166" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+  <rect x="31" y="220" width="100" height="78" rx="16" fill="#d9d2f0" stroke="#8170bd" stroke-width="4"/>
+  <circle cx="81" cy="259" r="22" fill="none" stroke="#6654a2" stroke-width="5"/><path d="M81 237 V281 M59 259 H103" stroke="#6654a2" stroke-width="4"/>
+  <rect x="199" y="220" width="100" height="78" rx="16" fill="#d9d2f0" stroke="#8170bd" stroke-width="4"/>
+  <path d="M221 275 L239 247 L257 264 L278 238" fill="none" stroke="#6654a2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="165" cy="257" r="30" fill="#f2b85b" stroke="#8170bd" stroke-width="4"/>
+  <circle cx="165" cy="257" r="12" fill="#fff3d6"/>
+  <text x="165" y="326" text-anchor="middle" font-family="sans-serif" font-size="34" font-weight="800" fill="#6654a2">分散</text>
+  <text x="165" y="365" text-anchor="middle" font-family="sans-serif" font-size="25" font-weight="650" fill="#66566f">投資先を分ける</text>
+</g>
+<g transform="translate(805 210)">
+  <rect x="0" y="0" width="330" height="395" rx="26" fill="#fff" stroke="#e9d8ad" stroke-width="3"/>
+  <rect x="0" y="0" width="330" height="14" rx="7" fill="#df9b3f"/>
+  <!-- calendar and steady timeline -->
+  <rect x="83" y="142" width="164" height="139" rx="16" fill="#fff0d1" stroke="#d58a2e" stroke-width="6"/>
+  <path d="M83 178 H247" stroke="#d58a2e" stroke-width="10"/>
+  <path d="M119 127 V158 M211 127 V158" stroke="#d58a2e" stroke-width="10" stroke-linecap="round"/>
+  <g fill="#e6a14a"><rect x="108" y="198" width="23" height="22" rx="5"/><rect x="154" y="198" width="23" height="22" rx="5"/><rect x="200" y="198" width="23" height="22" rx="5"/><rect x="108" y="238" width="23" height="22" rx="5"/><rect x="154" y="238" width="23" height="22" rx="5"/></g>
+  <path d="M155 303 L174 318 L213 290" fill="none" stroke="#b87527" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="165" y="326" text-anchor="middle" font-family="sans-serif" font-size="34" font-weight="800" fill="#b87527">長期保有</text>
+  <text x="165" y="365" text-anchor="middle" font-family="sans-serif" font-size="25" font-weight="650" fill="#66566f">時間を味方にする</text>
+</g>
 </svg>
