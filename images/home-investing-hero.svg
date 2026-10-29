@@ -3,6 +3,7 @@
 <desc id="desc">アイボリーの余白を左に取り、右側に青い地球儀、地図の輪郭、コンパスローズ、軌道を配した編集的なグラフィック。</desc>
 <defs>
  <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fbf8ef"/><stop offset=".58" stop-color="#f0f5ef"/><stop offset="1" stop-color="#dbeef0"/></linearGradient>
+ <linearGradient id="leftEdgeBlend" gradientUnits="userSpaceOnUse" x1="400" y1="0" x2="650" y2="0"><stop offset="0" stop-color="#f8f7ef"/><stop offset=".42" stop-color="#f8f7ef" stop-opacity=".96"/><stop offset="1" stop-color="#f8f7ef" stop-opacity="0"/></linearGradient>
  <linearGradient id="ocean" x1=".12" y1=".05" x2=".86" y2=".95"><stop stop-color="#65c2cb"/><stop offset=".45" stop-color="#177ca8"/><stop offset="1" stop-color="#102d59"/></linearGradient>
  <linearGradient id="land" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f5eedc"/><stop offset="1" stop-color="#b7d8d4"/></linearGradient>
  <linearGradient id="navy" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#153c67"/><stop offset="1" stop-color="#0d2447"/></linearGradient>
@@ -67,6 +68,8 @@
  </g>
  <circle r="10" fill="#d6a04c" stroke="#fff8e8" stroke-width="3"/>
 </g>
+<!-- blend the SVG left edge into the hero background -->
+<rect x="400" y="30" width="250" height="460" fill="url(#leftEdgeBlend)"/>
 <!-- understated frame lines -->
 <path d="M0 0H250M0 18H155M0 542H390" stroke="#d8b878" stroke-width="1.5" opacity=".7"/>
 </svg>
