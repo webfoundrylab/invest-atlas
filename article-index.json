@@ -352,7 +352,8 @@
         "investment-trust-vs-etf.html",
         "nisa-basics.html",
         "investment-trust-actual-cost.html",
-        "investment-trust-nav.html"
+        "investment-trust-nav.html",
+        "orbukan-guide.html"
       ],
       "subcategory": "fund-costs",
       "topic": "expense-types",
@@ -448,7 +449,8 @@
       "status": "published",
       "related": [
         "investment-trust-fees.html",
-        "choose-investment-trust-nisa.html"
+        "choose-investment-trust-nisa.html",
+        "orbukan-guide.html"
       ],
       "publishedAt": "2026-10-25",
       "updatedAt": "2026-10-26",
@@ -482,7 +484,8 @@
         "investment-trust-vs-etf.html",
         "investment-trust-nav.html",
         "risk-return-basics.html",
-        "diversification-basics.html"
+        "diversification-basics.html",
+        "orbukan-guide.html"
       ],
       "publishedAt": "2026-10-25",
       "updatedAt": "2026-10-26",
@@ -516,7 +519,8 @@
         "investment-trust-actual-cost.html",
         "simple-investing-guide.html",
         "investment-trust-nav.html",
-        "investment-trust-distributions.html"
+        "investment-trust-distributions.html",
+        "orbukan-guide.html"
       ],
       "publishedAt": "2026-10-25",
       "updatedAt": "2026-10-26",
@@ -708,7 +712,8 @@
         "investment-trust-investment-targets.html",
         "ai-semiconductor-investing.html",
         "compound-growth.html",
-        "diversification-basics.html"
+        "diversification-basics.html",
+        "orbukan-guide.html"
       ],
       "publishedAt": "2026-10-28",
       "updatedAt": "2026-10-28",
@@ -739,7 +744,8 @@
         "risk-return-basics.html",
         "simple-investing-guide.html",
         "regular-investing.html",
-        "investment-trust-investment-targets.html"
+        "investment-trust-investment-targets.html",
+        "orbukan-guide.html"
       ],
       "publishedAt": "2026-10-28",
       "updatedAt": "2026-10-28",
@@ -773,7 +779,8 @@
         "investment-trust-index-active.html",
         "choose-investment-trust-nisa.html",
         "diversification-basics.html",
-        "simple-investing-guide.html"
+        "simple-investing-guide.html",
+        "orbukan-guide.html"
       ],
       "publishedAt": "2026-10-29",
       "updatedAt": "2026-10-29",
@@ -781,6 +788,42 @@
       "publishOrder": 18,
       "mainTitle": "全世界株式とS&P 500の違いは？",
       "subtitle": "投資対象・分散・選び方を比較"
+    },
+    {
+      "slug": "orbukan-guide.html",
+      "title": "オルカンとは？投資対象・指数・費用とリスクを解説",
+      "category": "funds",
+      "subcategory": "investment-trust-basics",
+      "tags": [
+        "オルカン",
+        "全世界株式",
+        "eMAXIS Slim",
+        "MSCI ACWI",
+        "投資信託",
+        "インデックス投資",
+        "地域分散",
+        "為替リスク",
+        "信託報酬",
+        "NISA"
+      ],
+      "summary": "eMAXIS Slim 全世界株式（オール・カントリー）とMSCI ACWI、全世界株式という投資方針の違いを整理。投資対象・費用・リスクと購入前の確認ポイントを解説。",
+      "status": "published",
+      "related": [
+        "global-vs-sp500.html",
+        "investment-trust-investment-targets.html",
+        "investment-trust-index-active.html",
+        "investment-trust-fees.html",
+        "investment-trust-actual-cost.html",
+        "diversification-basics.html",
+        "risk-return-basics.html",
+        "investment-compass.html"
+      ],
+      "publishedAt": "2026-10-29",
+      "updatedAt": "2026-10-29",
+      "thumbnail": "thumbnails/orbukan-guide.svg",
+      "publishOrder": 19,
+      "mainTitle": "オルカンとは？",
+      "subtitle": "投資対象・指数・費用とリスクを解説"
     }
   ],
   "pages": [
