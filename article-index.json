@@ -791,27 +791,27 @@
     },
     {
       "slug": "orbukan-guide.html",
-      "title": "オルカンとは？投資対象・指数・費用とリスクを解説",
+      "title": "オルカン・楽天VT・VTの違い｜全世界株式の指数と商品を比較",
       "category": "funds",
       "subcategory": "investment-trust-basics",
       "tags": [
         "オルカン",
         "全世界株式",
         "eMAXIS Slim",
+        "楽天VT",
+        "VT",
         "MSCI ACWI",
+        "FTSE Global All Cap",
         "投資信託",
-        "インデックス投資",
-        "地域分散",
-        "為替リスク",
-        "信託報酬",
+        "ETF",
+        "小型株",
         "NISA"
       ],
-      "summary": "eMAXIS Slim 全世界株式（オール・カントリー）とMSCI ACWI、全世界株式という投資方針の違いを整理。投資対象・費用・リスクと購入前の確認ポイントを解説。",
+      "summary": "オルカン、楽天・全世界株式インデックス・ファンド（楽天・VT）、米国ETFのVTを比較。MSCI ACWIとFTSE Global All Capの対象企業規模、小型株の違い、投資信託とETFの選び方を解説。",
       "status": "published",
       "related": [
         "global-vs-sp500.html",
         "investment-trust-investment-targets.html",
-        "investment-trust-index-active.html",
         "investment-trust-fees.html",
         "investment-trust-actual-cost.html",
         "diversification-basics.html",
@@ -821,8 +821,8 @@
       "updatedAt": "2026-10-29",
       "thumbnail": "thumbnails/orbukan-guide.svg",
       "publishOrder": 19,
-      "mainTitle": "オルカンとは？",
-      "subtitle": "投資対象・指数・費用とリスクを解説"
+      "mainTitle": "全世界株式を比較",
+      "subtitle": "オルカン・楽天VT・米国ETF"
     }
   ],
   "pages": [
