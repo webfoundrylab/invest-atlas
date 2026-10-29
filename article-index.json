@@ -853,7 +853,7 @@
         "SBI・V・全世界株式",
         "全世界株式ファンド比較"
       ],
-      "summary": "全世界株式ファンドを指数と商品の仕組みで比較。オルカン、楽天・プラス、Tracers、はじめてのNISA、楽天VT、SBIの全世界株式ファンド、米国ETFのVTなど代表例を整理し、費用・売買方法の確認点を解説。",
+      "summary": "国内の全世界株式インデックス投資信託7商品を比較。指数、運用会社、設定日、信託報酬・実質コスト、運用方式、購入・積立時の確認点を整理し、費用指標の違いも解説。",
       "status": "published",
       "related": [
         "global-equity-indexes.html",
@@ -865,7 +865,7 @@
         "risk-return-basics.html"
       ],
       "publishedAt": "2026-10-29",
-      "updatedAt": "2026-10-29",
+      "updatedAt": "2026-10-30",
       "thumbnail": "thumbnails/orbukan-guide.svg",
       "publishOrder": 19,
       "mainTitle": "全世界株式ファンド比較",
