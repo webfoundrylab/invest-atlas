@@ -1,9 +1,47 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="title desc">
-<title id="title">オルカンとは？</title><desc id="desc">地球を囲む軌道と複数地域を示す抽象的な図柄</desc>
-<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#152f4a"/><stop offset="1" stop-color="#176d65"/></linearGradient><linearGradient id="globe" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#7ce0d1"/><stop offset="1" stop-color="#d9f1e8"/></linearGradient></defs>
-<rect width="640" height="400" rx="24" fill="url(#bg)"/>
-<g opacity=".18" fill="none" stroke="#d8f2e9" stroke-width="1.5"><path d="M0 85H640M0 145H640M0 205H640M0 265H640M0 325H640M80 0V400M160 0V400M240 0V400M320 0V400M400 0V400M480 0V400M560 0V400"/></g>
-<g transform="translate(418 186)"><circle r="104" fill="url(#globe)"/><ellipse rx="104" ry="42" fill="none" stroke="#176d65" stroke-width="2.5" opacity=".8"/><ellipse rx="52" ry="104" fill="none" stroke="#176d65" stroke-width="2.5" opacity=".8"/><path d="M-99 -33H99M-104 0H104M-99 33H99" stroke="#176d65" stroke-width="2" opacity=".65"/><path d="M-58 -72l22 -10 16 15 -6 20 -22 5 -14 -16zM14 -47l31 -10 18 22 -9 18 -25 -5zM-16 13l29 5 12 24 -17 30 -23 -12 -10 -26zM49 58l24 4 9 15 -19 14 -19 -11z" fill="#1e8075" opacity=".9"/></g>
-<g fill="none" stroke="#f0c779" stroke-width="2.5"><ellipse cx="418" cy="186" rx="150" ry="58" transform="rotate(-25 418 186)"/><path d="M533 75l15 -14 4 21z" fill="#f0c779" stroke="none"/></g>
-<g fill="#f0c779"><circle cx="287" cy="245" r="5"/><circle cx="535" cy="82" r="4"/></g>
-<g font-family="system-ui,-apple-system,sans-serif" fill="#fff"><text x="42" y="56" font-size="15" font-weight="700" letter-spacing="3">INVESTMENT BASICS</text><text x="42" y="295" font-size="39" font-weight="800">オルカンとは？</text><text x="44" y="332" font-size="17" fill="#d6e8e6">投資対象・指数・費用とリスク</text><text x="42" y="374" font-size="17" font-weight="700" opacity=".23">Invest</text><text x="598" y="374" font-size="17" font-weight="700" text-anchor="end" opacity=".23">Atlas</text></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+<title id="title">オルカン・楽天VT・VTの違い</title>
+<desc id="desc">MSCI ACWIとFTSE Global All Capの対象企業規模を比較する図解</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f5f0e6"/><stop offset="1" stop-color="#d9e8e3"/></linearGradient>
+  <linearGradient id="left" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1b4561"/><stop offset="1" stop-color="#337c85"/></linearGradient>
+  <linearGradient id="right" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ad5a35"/><stop offset="1" stop-color="#e0a65f"/></linearGradient>
+</defs>
+<rect width="1200" height="675" fill="url(#bg)"/>
+<g font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="270" letter-spacing="-8" fill="#304b51" opacity=".07">
+  <text x="18" y="400">Invest</text><text x="1180" y="605" text-anchor="end">Atlas</text>
+</g>
+<rect x="24" y="22" width="1152" height="150" rx="22" fill="#fff" stroke="#cbdad6" stroke-width="2"/>
+<g font-family="sans-serif" text-anchor="middle" fill="#19384b">
+  <text x="600" y="57" font-size="24" font-weight="800" letter-spacing="1">GLOBAL EQUITY INDEXES</text>
+  <text x="600" y="116" font-size="48" font-weight="800">全世界株式を比較</text>
+  <text x="600" y="157" font-size="29" font-weight="650">オルカン・楽天VT・米国ETF</text>
+</g>
+<g>
+  <rect x="55" y="205" width="520" height="405" rx="24" fill="#fff" opacity=".84" stroke="#c7d9d8" stroke-width="2"/>
+  <rect x="625" y="205" width="520" height="405" rx="24" fill="#fff" opacity=".84" stroke="#e3c9b8" stroke-width="2"/>
+  <text x="315" y="250" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="800" fill="#1b4561">MSCI ACWI</text>
+  <text x="885" y="250" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="800" fill="#9d4f30">FTSE Global All Cap</text>
+  <g transform="translate(315 385)">
+    <circle cx="0" cy="0" r="110" fill="url(#left)"/>
+    <ellipse cx="0" cy="0" rx="48" ry="110" fill="none" stroke="#dceee9" stroke-width="3"/>
+    <ellipse cx="0" cy="0" rx="110" ry="42" fill="none" stroke="#dceee9" stroke-width="3"/>
+    <path d="M-106 0H106M0-106V106" stroke="#dceee9" stroke-width="2" opacity=".75"/>
+    <g fill="#f2d38a" stroke="#f2d38a"><circle cx="-25" cy="-40" r="13"/><circle cx="36" cy="-18" r="10"/><circle cx="10" cy="43" r="12"/><circle cx="-49" cy="28" r="8"/></g>
+  </g>
+  <g transform="translate(885 385)">
+    <circle cx="0" cy="0" r="110" fill="url(#right)"/>
+    <ellipse cx="0" cy="0" rx="48" ry="110" fill="none" stroke="#fff0dc" stroke-width="3"/>
+    <ellipse cx="0" cy="0" rx="110" ry="42" fill="none" stroke="#fff0dc" stroke-width="3"/>
+    <path d="M-106 0H106M0-106V106" stroke="#fff0dc" stroke-width="2" opacity=".75"/>
+    <g fill="#fff0dc"><circle cx="-25" cy="-40" r="13"/><circle cx="36" cy="-18" r="10"/><circle cx="10" cy="43" r="12"/><circle cx="-49" cy="28" r="8"/><circle cx="63" cy="54" r="7"/><circle cx="-67" cy="-65" r="7"/><circle cx="65" cy="-64" r="6"/><circle cx="-72" cy="62" r="6"/></g>
+  </g>
+  <g font-family="sans-serif" font-size="29" font-weight="750" text-anchor="middle" fill="#19384b">
+    <text x="315" y="535">大型株・中型株</text>
+    <text x="885" y="535">大型株・中型株・小型株</text>
+  </g>
+  <g font-family="sans-serif" font-size="23" font-weight="650" text-anchor="middle" fill="#526a70">
+    <text x="315" y="574">オルカン</text>
+    <text x="885" y="574">楽天VT・米国ETF VT</text>
+  </g>
+</g>
+</svg>
