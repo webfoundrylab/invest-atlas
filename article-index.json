@@ -810,6 +810,7 @@
       "summary": "オルカン、楽天・全世界株式インデックス・ファンド（楽天・VT）、米国ETFのVTを比較。MSCI ACWIとFTSE Global All Capの対象企業規模、小型株の違い、投資信託とETFの選び方を解説。",
       "status": "published",
       "related": [
+        "global-equity-indexes.html",
         "global-vs-sp500.html",
         "investment-trust-investment-targets.html",
         "investment-trust-fees.html",
@@ -823,6 +824,38 @@
       "publishOrder": 19,
       "mainTitle": "全世界株式を比較",
       "subtitle": "オルカン・楽天VT・米国ETF"
+    },
+    {
+      "slug": "global-equity-indexes.html",
+      "title": "全世界株式とは？MSCI ACWIとFTSE Global All Capの違い",
+      "category": "funds",
+      "subcategory": "investment-trust-basics",
+      "tags": [
+        "全世界株式",
+        "MSCI ACWI",
+        "FTSE Global All Cap",
+        "株価指数",
+        "大型株",
+        "中型株",
+        "小型株",
+        "地域分散",
+        "投資信託"
+      ],
+      "summary": "全世界株式とは何かを解説。MSCI ACWIとFTSE Global All Capの違い、先進国・新興国、大型株・中型株・小型株、指数のカバー範囲と分散投資の考え方を整理します。",
+      "status": "published",
+      "related": [
+        "orbukan-guide.html",
+        "global-vs-sp500.html",
+        "stock-market-index-basics.html",
+        "diversification-basics.html",
+        "investment-trust-investment-targets.html"
+      ],
+      "publishedAt": "2026-10-29",
+      "updatedAt": "2026-10-29",
+      "thumbnail": "thumbnails/global-equity-indexes.svg",
+      "publishOrder": 20,
+      "mainTitle": "全世界株式とは？",
+      "subtitle": "MSCI ACWIとFTSEの違い"
     }
   ],
   "pages": [
