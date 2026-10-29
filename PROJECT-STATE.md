@@ -51,6 +51,8 @@
 9. 証券会社や金融商品の推奨に関して、法令・規制上の問題が疑われる場合は断定を避け、必要に応じて専門家確認を行う。
 
 ## 確認結果
+- 2026-10-29: スマートフォンのトップページヒーローで、画像領域を120pxから80pxへ戻し、下端の余白に見えるずれを減らすため背景位置を `bottom -18px` から `bottom` に変更。公開画面での見た目は未確認。
+
 - 2026-10-24: リポジトリは存在し、Public、default branch は main。初期ファイルは GitHub 上で取得できることを確認。
 - Workflow run `40097453363` は失敗。job `build` の `Configure Pages` ステップで `Get Pages site failed` / HTTP 404。後続の artifact upload と deploy はスキップされた。
 - 2026-10-24: run `40097453363` の最新試行で `build` と `deploy` がともに成功。`Configure Pages` と `Upload site artifact`、`Deploy to GitHub Pages` はすべて成功。Pages 設定が有効になり、デプロイ処理が完了したことを確認。
