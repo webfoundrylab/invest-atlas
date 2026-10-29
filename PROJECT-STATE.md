@@ -1714,3 +1714,11 @@
 - `images/home-investing-hero.svg` を追加。アイボリーの余白、青〜ターコイズの地球儀、地図の輪郭、コンパスローズ、控えめなゴールドの軌道をSVGで構成。生成画像の方向性を参考にした軽量なベクター制作であり、生成されたラスター画像そのものを配置したものではない。
 - `index.html` のヒーロー領域を、左側の見出しと右側の図柄が共存する背景画像方式に変更。スマートフォン向けには背景位置と文字可読性を調整。
 - GitHub上のファイル更新は完了。GitHub Actions、公開URLでの表示、PC・スマートフォンの実表示は未確認。次にデプロイ結果と表示を確認し、図柄の主張・文字との重なり・モバイルでの見え方を評価する。
+
+
+## 2026-10-29 サイトマップ再点検
+- GitHub Actions run `40817199237`（commit `5e067ef2fcfc6cd495198a83465e9ac684da6f3b`）で build・content validation・GitHub Pages deploy が成功。
+- `scripts/build-site.py` がデプロイ時に `article-index.json` を基に `sitemap.xml` と `sitemap.txt` を再生成し、`scripts/validate-content.py` がXMLのパースと登録URLの整合性を検証することを確認。
+- 訂正：前回の報告では `sitemap.xml` のURLが終了タグの外にあると説明したが、再確認すると該当URLは `</urlset>` より前にあり、XMLの終了タグ外に出ていたわけではなかった。今回のコミットはサイトマップ取得エラーの原因を特定した修正とはいえない。
+- 実行環境から公開GitHub PagesへのHTTPアクセスを試みたが、DNS解決ができず独立した公開URL検証は未完了。Google Search Consoleの「取得できませんでした」について、公開時のHTTP応答・Google側の取得ログ・検出URL数は未確認。
+- 次の作業：公開URLでの `sitemap.xml` / `sitemap.txt` / `robots.txt` の応答確認を行い、Search Consoleのサイトマップ詳細とURL検査結果を照合する。原因が確認できるまで、サイトマップの再送信だけを繰り返さない。
