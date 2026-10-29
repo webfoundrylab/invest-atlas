@@ -791,7 +791,7 @@
     },
     {
       "slug": "orbukan-guide.html",
-      "title": "オルカン・楽天VT・VTの違い｜全世界株式の指数と商品を比較",
+      "title": "全世界株式ファンド比較｜オルカン・楽天プラス・SBIなどの違い",
       "category": "funds",
       "subcategory": "investment-trust-basics",
       "tags": [
@@ -805,9 +805,15 @@
         "投資信託",
         "ETF",
         "小型株",
-        "NISA"
+        "NISA",
+        "楽天・プラス・オールカントリー",
+        "Tracers MSCIオール・カントリー",
+        "はじめてのNISA",
+        "SBI・全世界株式",
+        "SBI・V・全世界株式",
+        "全世界株式ファンド比較"
       ],
-      "summary": "オルカン、楽天・全世界株式インデックス・ファンド（楽天・VT）、米国ETFのVTを比較。MSCI ACWIとFTSE Global All Capの対象企業規模、小型株の違い、投資信託とETFの選び方を解説。",
+      "summary": "全世界株式ファンドを指数と商品の仕組みで比較。オルカン、楽天・プラス、Tracers、はじめてのNISA、楽天VT、SBIの全世界株式ファンド、米国ETFのVTなど代表例を整理し、費用・売買方法の確認点を解説。",
       "status": "published",
       "related": [
         "global-equity-indexes.html",
@@ -822,8 +828,8 @@
       "updatedAt": "2026-10-29",
       "thumbnail": "thumbnails/orbukan-guide.svg",
       "publishOrder": 19,
-      "mainTitle": "全世界株式を比較",
-      "subtitle": "オルカン・楽天VT・米国ETF"
+      "mainTitle": "全世界株式ファンド比較",
+      "subtitle": "オルカン・楽天・SBIなどの違い"
     },
     {
       "slug": "global-equity-indexes.html",
