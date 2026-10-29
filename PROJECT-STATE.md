@@ -1836,3 +1836,11 @@
 - 変更ファイル：`orbukan-guide.html`、`thumbnails/orbukan-guide.svg`、`article-index.json`、`global-vs-sp500.html`、`investment-trust-investment-targets.html`、本ファイル。
 - GitHub上のファイル更新は完了。GitHub Actionsのビルド・コンテンツ検証・Pagesデプロイ結果、および公開URLでの表示・内部リンクの動作は未確認。
 - 次にActionsの結果を確認し、記事の公開表示とスマートフォンでの目次・表・図柄を点検する。
+
+
+## 2026-10-29 全世界株式記事の比較軸を拡張
+- `orbukan-guide.html` を、eMAXIS Slim 全世界株式（オール・カントリー）単体の紹介に寄りすぎないよう改稿。オルカン、楽天・全世界株式インデックス・ファンド（楽天・VT）、米国ETFのVTを比較し、MSCI ACWIとFTSE Global All Capの対象企業規模、小型株の扱い、投資信託と米国ETFの違いを説明する構成に変更。
+- 公式情報として運用会社・指数提供会社・Vanguardの資料を参照するリンクを追加。指数の構成銘柄数・市場カバー率は基準日で変動する目安として扱い、カバー範囲の広さが将来の成績の優位性を意味しないことを明記。
+- `thumbnails/orbukan-guide.svg` をサムネイルガイドラインの1200×675テンプレートに合わせて作り直し、タイトル帯・透かし・下部の比較図を統一。画像生成ツールは使用せずSVGソースを直接編集。
+- `article-index.json` の正式タイトル、主題・副題、タグ、概要を本文と一致させた。
+- GitHub Actionsと公開画面の検証は変更後に実施する。
