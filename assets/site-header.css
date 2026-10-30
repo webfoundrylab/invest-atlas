@@ -12,7 +12,7 @@
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 20px;
 }
 .ia-site-header .ia-brand {
@@ -34,10 +34,11 @@
   height: 42px;
   flex: 0 0 42px;
 }
-.ia-header-nav {
+ .ia-header-nav {
   display: flex;
   align-items: center;
   gap: 18px;
+  margin-left: 28px;
 }
 .ia-site-header .ia-header-nav a {
   color: #e6f0f5;
@@ -62,6 +63,6 @@
   .ia-header-inner { gap: 8px; }
   .ia-site-header .ia-brand { gap: 6px; font-size: 1rem; }
   .ia-site-header .ia-brand img { width: 32px; height: 32px; flex-basis: 32px; }
-  .ia-header-nav { gap: 6px; }
+  .ia-header-nav { gap: 6px; margin-left: 12px; }
   .ia-site-header .ia-header-nav a { font-size: .68rem; white-space: nowrap; }
 }
