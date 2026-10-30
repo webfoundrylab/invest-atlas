@@ -2002,3 +2002,10 @@
 - `risk-return-basics.html`、`investment-trust-investment-targets.html`、`investment-trust-vs-etf.html` から本文内リンクを追加。
 - `thumbnails/bonds-basics.svg` を既存サムネイルの固定タイトル帯・Invest Atlas透かしルールに合わせて新規作成。
 - sitemap.xml / sitemap.txt とカテゴリ一覧ページは `scripts/build-site.py` によりActions実行時に再生成される。更新後のActions検証と公開画面確認は別途実施。
+
+
+## 2026-10-30 記事ページの横幅を拡張
+- 対象：`bonds-basics.html`、`before-you-invest.html`、`risk-return-basics.html`、`investment-trust-investment-targets.html`、`investment-trust-vs-etf.html`。
+- PC向け記事ラッパーの最大幅を1120pxに統一し、記事カード内の左右パディングを最大36pxに調整。本文・比較表・図解が使える横幅を拡張した。
+- スマートフォン向けの既存メディアクエリは維持。幅の異なる既存記事（例：`orbukan-guide.html`）は今回変更していない。
+- GitHub Actions run `41071236884` は確認時点で pending。公開画面でのPC・スマートフォン表示確認は未実施。
