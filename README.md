@@ -21,6 +21,7 @@
 - `article-index.json`：記事台帳の単一情報源。記事タイトル、概要、カテゴリ、タグ、状態、サムネイル、関連記事候補などを管理。
 - `scripts/build-site.py`：カテゴリページ、サイトマップ、関連記事候補などの生成処理。
 - `categories/index.html`：全カテゴリを一覧できるカテゴリトップ。`scripts/build-site.py` が記事台帳から生成する。
+- `getting-started.html`：初めて訪れた読者向けに、2つの入口と投資の羅針盤を通じた学び方を案内する静的ページ。
 - `scripts/validate-content.py`：記事ファイル、カテゴリ、関連記事候補、サイトマップなどの検証。
 - `index.html`：トップページ、検索・カテゴリ・タグによる記事絞り込み。
 - `assets/`、`thumbnails/`：共通レイアウト資産と記事サムネイル。
