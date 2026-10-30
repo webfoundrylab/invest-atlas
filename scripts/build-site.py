@@ -142,8 +142,19 @@ ARTICLE_STYLE_START = "<!-- GENERATED ARTICLE LAYOUT STYLE: START -->"
 ARTICLE_STYLE_END = "<!-- GENERATED ARTICLE LAYOUT STYLE: END -->"
 
 
+def clean_page_layout_styles(page):
+    """Remove per-article width and card spacing; these belong to site-layout.css."""
+    def strip_layout_rules(match):
+        css = match.group(2)
+        css = re.sub(r"\.wrap\s*\{[^{}]*\}", "", css)
+        css = re.sub(r"\.article\s*\{[^{}]*\}", "", css)
+        return match.group(1) + css + match.group(3)
+    return re.sub(r"(<style\b[^>]*>)([\s\S]*?)(</style>)", strip_layout_rules, page, flags=re.I)
+
+
 def clean_article_layout(page):
     page = clean_category_block(page)
+    page = clean_page_layout_styles(page)
     page = re.sub(re.escape(ARTICLE_OPEN_START) + r".*?" + re.escape(ARTICLE_OPEN_END), "", page, flags=re.S)
     page = re.sub(re.escape(ARTICLE_CLOSE_START) + r".*?" + re.escape(ARTICLE_CLOSE_END), "", page, flags=re.S)
     page = re.sub(re.escape(ARTICLE_STYLE_START) + r".*?" + re.escape(ARTICLE_STYLE_END), "", page, flags=re.S)
