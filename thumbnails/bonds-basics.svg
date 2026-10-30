@@ -5,8 +5,6 @@
   <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f2eee8"/><stop offset="1" stop-color="#e8f0ef"/></linearGradient>
   <linearGradient id="bond" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#f7f3e9"/></linearGradient>
   <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#263d4a" flood-opacity=".14"/></filter>
-  <marker id="arrowTeal" markerUnits="userSpaceOnUse" markerWidth="30" markerHeight="30" refX="24" refY="15" orient="auto"><path d="M0 0 L30 15 L0 30 Z" fill="#176d65"/></marker>
-  <marker id="arrowOrange" markerUnits="userSpaceOnUse" markerWidth="18" markerHeight="18" refX="14" refY="9" orient="auto"><path d="M0 0 L30 15 L0 30 Z" fill="#b65d3d"/></marker>
 </defs>
 <rect width="1200" height="675" fill="url(#bg)"/>
 <g id="invest-atlas-watermark" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="270" letter-spacing="-8" fill="#668b83" opacity=".07"><text x="18" y="400">Invest</text><text x="1180" y="605" text-anchor="end">Atlas</text></g>
@@ -33,10 +31,12 @@
 </g>
 
 <!-- Principal lent -->
-<path d="M274 353 H456" stroke="#176d65" stroke-width="10" stroke-linecap="round" marker-end="url(#arrowTeal)"/>
+<path d="M274 353 H438" stroke="#176d65" stroke-width="10" stroke-linecap="round"/>
+<path d="M438 341 L456 353 L438 365 Z" fill="#176d65"/>
 <text x="365" y="328" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="800" fill="#176d65">資金を貸す</text>
 <!-- Interest and principal returned -->
-<path d="M456 465 H274" stroke="#b65d3d" stroke-width="10" stroke-linecap="round" marker-end="url(#arrowOrange)"/>
+<path d="M456 465 H292" stroke="#b65d3d" stroke-width="10" stroke-linecap="round"/>
+<path d="M292 453 L274 465 L292 477 Z" fill="#b65d3d"/>
 <text x="365" y="510" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="800" fill="#9a4d32">利子 ＋ 元本</text>
 <text x="367" y="570" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="750" fill="#405a63">元本は満期に返済（原則）</text>
 
@@ -45,7 +45,8 @@
 <text x="939" y="250" text-anchor="middle" font-family="sans-serif" font-size="32" font-weight="850" fill="#173b45">保有中の価格は変動</text>
 <rect x="758" y="286" width="362" height="126" rx="18" fill="#fff0e9"/>
 <text x="939" y="330" text-anchor="middle" font-family="sans-serif" font-size="32" font-weight="850" fill="#a84f32">市場金利 ↑</text>
-<path d="M939 345 V370" stroke="#b65d3d" stroke-width="8" stroke-linecap="round" marker-end="url(#arrowOrange)"/>
+<path d="M939 345 V360" stroke="#b65d3d" stroke-width="8" stroke-linecap="round"/>
+<path d="M929 360 L949 360 L939 378 Z" fill="#b65d3d"/>
 <text x="939" y="402" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="800" fill="#a84f32">既発債の価格 ↓</text>
 <text x="939" y="466" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="750" fill="#405a63">金利が下がると</text>
 <text x="939" y="510" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="850" fill="#176d65">価格は上がりやすい</text>
