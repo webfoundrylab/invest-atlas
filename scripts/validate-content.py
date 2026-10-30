@@ -77,9 +77,19 @@ try:
     sitemap_root = ElementTree.fromstring((ROOT / "sitemap.xml").read_text(encoding="utf-8"))
     published = [item for item in articles if item.get("status") == "published"]
     expected_urls = {BASE_URL} | {BASE_URL + item["slug"] for item in published} | {BASE_URL + page["slug"] for page in static_pages if page.get("status", "published") == "published"}
+    if published:
+        expected_urls.add(category_base)
     for path in taxonomy:
         if any(article_category_path(article)[:len(path)] == path for article in published):
             expected_urls.add(category_base + "/".join(path) + "/")
+    if published:
+        landing_path = ROOT / "categories" / "index.html"
+        if not landing_path.is_file():
+            errors.append("categories/index.html: category landing page does not exist")
+        else:
+            landing_html = landing_path.read_text(encoding="utf-8")
+            if 'rel="canonical"' not in landing_html or 'href="' + category_base + '"' not in landing_html:
+                errors.append("categories/index.html: canonical does not match its registered URL")
     actual_urls = {node.text for node in sitemap_root.iter() if node.tag.endswith("loc")}
     for url in sorted(expected_urls - actual_urls):
         errors.append(f"sitemap missing URL: {url}")
