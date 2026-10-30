@@ -1,17 +1,39 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
-<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f8eee5"/><stop offset="1" stop-color="#f1f5f8"/></linearGradient></defs>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f5eee7"/><stop offset="1" stop-color="#eaf1f2"/></linearGradient>
+  <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#f7f5ef"/></linearGradient>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#263d4a" flood-opacity=".13"/></filter>
+</defs>
 <rect width="1200" height="675" fill="url(#bg)"/>
-<g id="invest-atlas-watermark" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="270" letter-spacing="-8" fill="#a35e39" opacity="0.075"><text x="18" y="400">Invest</text><text x="1180" y="605" text-anchor="end">Atlas</text></g>
-<rect x="24" y="22" width="1152" height="150" rx="22" fill="#fff" stroke="#e4c7b4" stroke-width="2"/>
+<g id="invest-atlas-watermark" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="270" letter-spacing="-8" fill="#9a684d" opacity="0.065"><text x="18" y="400">Invest</text><text x="1180" y="605" text-anchor="end">Atlas</text></g>
+
+<!-- Fixed title area -->
+<rect x="24" y="22" width="1152" height="150" rx="22" fill="#fff" stroke="#dfc9b8" stroke-width="2"/>
 <text x="600" y="57" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="800" letter-spacing="1" fill="#a6532e">BOND INVESTING</text>
 <text x="600" y="116" text-anchor="middle" font-family="sans-serif" font-size="48" font-weight="800" fill="#10243a">債券投資とは？</text>
 <text x="600" y="157" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="650" fill="#536879">利回り・価格変動・リスクの仕組み</text>
-<g transform="translate(110 205)">
-<path d="M60 80 L60 365 M60 365 L980 365" fill="none" stroke="#8295a0" stroke-width="5" stroke-linecap="round"/>
-<path d="M120 135 C300 135 365 155 480 225 S720 320 900 320" fill="none" stroke="#176d65" stroke-width="15" stroke-linecap="round"/>
-<path d="M120 320 C300 320 365 295 480 225 S720 130 900 130" fill="none" stroke="#c36b3e" stroke-width="15" stroke-linecap="round"/>
-<circle cx="480" cy="225" r="22" fill="#fff" stroke="#10243a" stroke-width="8"/>
-<g font-family="sans-serif" font-weight="800" font-size="31"><text x="130" y="95" fill="#176d65">金利 ↓</text><text x="900" y="95" text-anchor="end" fill="#176d65">債券価格 ↑</text><text x="130" y="405" fill="#a6532e">金利 ↑</text><text x="900" y="405" text-anchor="end" fill="#a6532e">債券価格 ↓</text></g>
-<g fill="#536879" font-family="sans-serif" font-size="22" font-weight="650"><text x="480" y="275" text-anchor="middle">逆方向に動きやすい</text></g>
+
+<!-- Bond certificate: a single, clear focal object -->
+<g filter="url(#shadow)">
+  <path d="M175 255 Q175 238 194 238 H605 L690 323 V575 Q690 594 671 594 H194 Q175 594 175 575 Z" fill="url(#paper)" stroke="#c9d5d8" stroke-width="4"/>
+  <path d="M605 238 V305 Q605 323 623 323 H690" fill="#e9eff0" stroke="#c9d5d8" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M605 238 L690 323 H623 Q605 323 605 305 Z" fill="#dfe8e8"/>
+  <path d="M225 315 H535" stroke="#b8c8cd" stroke-width="10" stroke-linecap="round"/>
+  <path d="M225 365 H465" stroke="#d1dcdf" stroke-width="9" stroke-linecap="round"/>
+  <path d="M225 410 H495" stroke="#d1dcdf" stroke-width="9" stroke-linecap="round"/>
+  <path d="M225 455 H430" stroke="#d1dcdf" stroke-width="9" stroke-linecap="round"/>
+  <path d="M225 500 H390" stroke="#d1dcdf" stroke-width="9" stroke-linecap="round"/>
+  <circle cx="570" cy="495" r="67" fill="#f3e2c8" stroke="#bd8951" stroke-width="7"/>
+  <circle cx="570" cy="495" r="49" fill="none" stroke="#d3a66f" stroke-width="4"/>
+  <path d="M570 463 V527 M548 484 H592 M548 506 H592" stroke="#9b6536" stroke-width="8" stroke-linecap="round"/>
 </g>
+
+<!-- Opposing market movements, separated from the certificate and without labels -->
+<g stroke-linecap="round" stroke-linejoin="round">
+  <path d="M835 535 V315" stroke="#176d65" stroke-width="25"/>
+  <path d="M782 372 L835 305 L888 372" fill="none" stroke="#176d65" stroke-width="25"/>
+  <path d="M1010 305 V525" stroke="#bd6843" stroke-width="25"/>
+  <path d="M957 468 L1010 535 L1063 468" fill="none" stroke="#bd6843" stroke-width="25"/>
+</g>
+<path d="M770 420 H1075" stroke="#9aaeb4" stroke-width="4" stroke-dasharray="8 14" opacity=".65"/>
 </svg>
