@@ -50,7 +50,7 @@ def render_site_header(current_page=None):
     compass_current = ' aria-current="page"' if current_page == "compass" else ''
     return ('<header class="ia-site-header"><div class="ia-header-inner">'
             '<a class="ia-brand" href="' + BASE_URL + '"><img src="' + BASE_URL + 'favicon.svg" alt="" width="42" height="42"><span>Invest Atlas</span></a>'
-            '<nav class="ia-header-nav" aria-label="主要メニュー"><a href="' + BASE_URL + '#welcome">初めての方へ</a><a href="' + BASE_URL + 'investment-compass.html"' + compass_current + '>投資の羅針盤</a></nav>'
+            '<nav class="ia-header-nav" aria-label="主要メニュー"><a href="' + BASE_URL + 'categories/"' + (' aria-current="page"' if current_page == "categories" else '') + '>カテゴリ</a><a href="' + BASE_URL + '#welcome">初めての方へ</a><a href="' + BASE_URL + 'investment-compass.html"' + compass_current + '>投資の羅針盤</a></nav>'
             '</div></header>')
 
 
@@ -80,6 +80,98 @@ def render_category_tree(categories, active=()):
     walk(categories)
     out.append('</ul></nav>')
     return ''.join(out)
+
+
+
+
+def generate_category_index_page(registry, published):
+    """Generate the category landing page at /categories/."""
+    categories = registry.get("categories", [])
+    descriptions = {
+        "basics": "投資の仕組み、リスク、分散など、判断の土台になる知識",
+        "nisa": "NISA・iDeCoなどの制度や、投資に関係する税金",
+        "funds": "投資信託・ETFの仕組み、選び方、費用、商品比較",
+        "strategy": "積立・長期運用・複利など、資産形成の考え方",
+        "markets": "株式市場、経済・金融、AI・半導体などの注目テーマ",
+        "companies": "企業の決算・財務、銘柄分析、配当・株主還元"
+    }
+    cards = []
+    for category in categories:
+        category_id = category["id"]
+        count = sum(1 for article in published if article_category_path(article)[:1] == (category_id,))
+        child_links = []
+        for child in category.get("children", []):
+            child_ids = (category_id, child["id"])
+            child_count = sum(1 for article in published if article_category_path(article)[:2] == child_ids)
+            if child_count:
+                child_links.append(
+                    '<li><a href="' + html.escape(category_url(child_ids), quote=True) + '">' +
+                    html.escape(child["label"]) + '</a><span>' + str(child_count) + '件</span></li>'
+                )
+        child_html = ('<ul class="category-index-children">' + ''.join(child_links) + '</ul>') if child_links else ''
+        cards.append(
+            '<article class="category-index-card"><div class="category-index-card-head">'
+            '<h2><a href="' + html.escape(category_url((category_id,)), quote=True) + '">' +
+            html.escape(category["label"]) + '</a></h2><span class="category-index-count">' + str(count) + '記事</span></div>'
+            '<p>' + html.escape(descriptions.get(category_id, "この分野の投資解説記事をまとめています。")) + '</p>' +
+            child_html + '<a class="category-index-more" href="' + html.escape(category_url((category_id,)), quote=True) +
+            '">このカテゴリの記事を見る →</a></article>'
+        )
+    page = '''<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/svg+xml" href="''' + BASE_URL + '''favicon.svg">
+<script src="''' + BASE_URL + '''assets/display-mode.js"></script>
+<title>カテゴリから探す｜Invest Atlas</title>
+<meta name="description" content="投資の基礎、投資制度・税制、投資信託・ETF、市場、企業分析など、Invest Atlasの記事をカテゴリから探せます。">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="''' + html.escape(category_url(()), quote=True) + '''">
+<link rel="stylesheet" href="''' + BASE_URL + '''assets/site-layout.css">
+<link rel="stylesheet" href="''' + BASE_URL + '''assets/site-header.css">
+<style>
+body{margin:0;background:#f5f7f8;color:#172b3d;font:16px/1.7 system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:#176d65;text-underline-offset:3px}a:hover{color:#0b4843}
+.category-index-wrap{width:min(1160px,calc(100% - 32px));margin:28px auto 56px}
+.category-index-panel{background:#fff;border:1px solid #dce4e8;border-radius:16px;padding:clamp(22px,4vw,42px)}
+.category-index-eyebrow{font-size:.8rem;font-weight:800;letter-spacing:.08em;color:#087f75}
+.category-index-panel h1{font-size:clamp(1.8rem,4vw,2.6rem);line-height:1.25;margin:.35em 0}
+.category-index-lead{margin:0;color:#536879;max-width:48em}
+.category-index-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:28px}
+.category-index-card{min-width:0;border:1px solid #dce4e8;border-radius:14px;padding:18px;background:#fff;display:flex;flex-direction:column}
+.category-index-card-head{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.category-index-card h2{font-size:1.2rem;line-height:1.4;margin:0}
+.category-index-card h2 a{color:#173b4b;text-decoration:none}
+.category-index-count{flex:0 0 auto;border-radius:999px;background:#e8f5f5;color:#075f59;padding:3px 10px;font-size:.78rem;font-weight:800}
+.category-index-card>p{margin:10px 0;color:#536879;font-size:.92rem}
+.category-index-children{list-style:none;padding:10px 0 0;margin:0 0 14px;border-top:1px solid #edf1f3;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px 12px}
+.category-index-children li{display:flex;justify-content:space-between;align-items:baseline;gap:8px;font-size:.84rem}
+.category-index-children li span{color:#71818d;font-size:.75rem;white-space:nowrap}
+.category-index-more{margin-top:auto;padding-top:10px;font-size:.88rem;font-weight:800;text-decoration:none}
+.category-index-back{display:inline-block;margin-bottom:14px;font-size:.88rem;font-weight:700}
+footer{margin-top:40px;background:#0c1c2b;color:#d7e1e8;padding:22px 0}
+@media(max-width:700px){.category-index-wrap{margin:16px auto 40px}.category-index-grid{grid-template-columns:1fr;gap:12px}.category-index-card{padding:16px}.category-index-children{grid-template-columns:1fr}}
+</style>
+</head>
+<body>''' + render_site_header("categories") + '''
+<main class="category-index-wrap">
+<a class="category-index-back" href="''' + BASE_URL + '''">← トップページ</a>
+<section class="category-index-panel" aria-labelledby="category-index-title">
+<div class="category-index-eyebrow">EXPLORE BY CATEGORY</div>
+<h1 id="category-index-title">カテゴリから探す</h1>
+<p class="category-index-lead">Invest Atlasの記事を6つの分野に整理しています。気になるカテゴリや下位カテゴリから、知りたいテーマを探せます。</p>
+<div class="category-index-grid">''' + ''.join(cards) + '''</div>
+</section>
+</main>
+<footer><div class="category-index-wrap">Invest Atlas｜投資を理解するための解説・比較ガイド</div></footer>
+</body>
+</html>
+'''
+    page_dir = ROOT / "categories"
+    page_dir.mkdir(parents=True, exist_ok=True)
+    (page_dir / "index.html").write_text(page, encoding="utf-8")
+    return category_url(())
 
 
 def generate_category_pages(registry, published):
@@ -270,7 +362,8 @@ def main():
 
     published = [a for a in articles if a.get("status") == "published"]
     inject_home_category_tree(registry)
-    category_urls = generate_category_pages(registry, published)
+    category_index_url = generate_category_index_page(registry, published)
+    category_urls = [category_index_url] + generate_category_pages(registry, published)
     static_pages = [page for page in registry.get("pages", []) if page.get("status", "published") == "published"]
     urls = [BASE_URL] + [BASE_URL + a["slug"] for a in published] + category_urls + [BASE_URL + page["slug"] for page in static_pages]
     urlset = Element(f"{{{NS}}}urlset")
