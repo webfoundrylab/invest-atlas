@@ -1965,4 +1965,5 @@
 - 選び方記事からの有用な判断手順を残し、独立記事への内部リンクを指数解説記事へのリンクに差し替え。
 - `article-index.json` から選び方記事の登録を削除し、商品比較記事の概要・タグを更新。専用サムネイル `thumbnails/global-equity-fund-selection.svg` も削除。
 - 関連記事候補の `related` に選び方記事を参照する記事がないことを確認。サイトマップと関連記事データは `scripts/build-site.py` による生成対象のため、手作業では編集していない。
-- GitHubへの各変更コミットは完了。GitHub Actionsの検証・デプロイ結果と公開画面での表示・旧URLの挙動は確認待ち。
+- 旧URL `global-equity-fund-selection.html` は独立記事としては廃止し、比較記事へ自動転送する `noindex` の移行案内ページとして残した。専用サムネイルは削除済み。
+- GitHubへの各変更コミットは完了。GitHub Actionsの検証・デプロイ結果と公開画面での表示・転送動作は確認待ち。
