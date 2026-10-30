@@ -55,7 +55,8 @@ def render_site_header(current_page=None):
 
 
 def category_url(ids):
-    return BASE_URL + "categories/" + "/".join(ids) + "/"
+    path = "/".join(ids)
+    return BASE_URL + "categories/" + (path + "/" if path else "")
 
 
 def article_category_path(article):
