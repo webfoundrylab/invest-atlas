@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<title>債券投資とは？利率・利回り・価格変動とリスクを解説｜Invest Atlas</title>
+<meta name="description" content="債券投資の仕組みを初心者向けに解説。国債・社債の違い、利率と利回り、金利上昇で価格が下がる理由、デュレーション、個別債券と債券ファンドの違い、主なリスクを整理します。">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://webfoundrylab.github.io/invest-atlas/bonds-basics.html">
+<meta name="theme-color" content="#10243a">
+<style>
+:root{--ink:#172b3d;--muted:#5c6d7a;--navy:#10243a;--teal:#176d65;--line:#dce4e8;--paper:#f5f7f8}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);line-height:1.85;background:var(--paper)}a{color:var(--teal);text-underline-offset:3px}.wrap{width:min(850px,calc(100% - 36px));margin:auto}header{background:var(--navy);padding:18px 0}header a{color:white;text-decoration:none;font-weight:800}.article{background:white;margin:28px auto 52px;padding:clamp(22px,5vw,54px);border:1px solid var(--line);border-radius:14px}.eyebrow{color:var(--teal);font-size:.8rem;font-weight:800;letter-spacing:.08em}h1{font-size:clamp(1.8rem,4vw,2.65rem);line-height:1.35;margin:.5em 0}.title-main,.title-subtitle{display:block}.title-subtitle{font-size:.62em;line-height:1.5;font-weight:650;letter-spacing:0;color:#536879;margin-top:.24em}h2{font-size:1.4rem;margin-top:2em;border-bottom:1px solid var(--line);padding-bottom:.4em}h3{font-size:1.1rem;margin-top:1.5em}p,li{font-size:1rem}.lead{font-size:1.1rem;color:#405565}.meta{font-size:.85rem;color:var(--muted)}.table-wrap{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.93rem}th,td{padding:12px;border:1px solid var(--line);text-align:left;vertical-align:top}th{background:#edf3f5}.callout{background:#edf6f4;border-left:4px solid var(--teal);padding:16px 18px;margin:22px 0}.related-inline{margin:18px 0;padding:12px 16px;background:#f4f7f8;border-radius:8px}.toc{margin:24px 0;padding:16px 20px;background:#f4f7f8;border:1px solid var(--line);border-radius:12px}.toc h2{margin:0 0 8px;border:0;padding:0;font-size:1.08rem}.toc ol{margin:0;padding-left:1.5em}.toc li{margin:.2em 0}.toc a{text-decoration:none}.toc a:hover{text-decoration:underline}.diagram{margin:22px 0;padding:14px;background:#f4f7f8;border:1px solid var(--line);border-radius:12px}.diagram svg{display:block;width:100%;height:auto}.diagram figcaption{font-size:.86rem;color:var(--muted);margin-top:8px}.formula{padding:14px;background:#f4f7f8;border-radius:10px;text-align:center;font-weight:750;overflow-wrap:anywhere}.sources li{margin:.55em 0}footer{background:#0c1c2b;color:#d7e1e8;padding:24px 0;font-size:.9rem}footer a{color:#aee0d7}@media(max-width:560px){.wrap{width:min(100% - 22px,850px)}.article{margin:12px auto 28px;padding:20px 16px;border-radius:12px}.toc{padding:15px}h2{font-size:1.28rem}.diagram{padding:9px}table{font-size:.86rem}th,td{padding:8px}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a href="index.html">← INVEST ATLAS</a></div></header>
+<main class="wrap"><article class="article">
+<div class="eyebrow">投資の基礎 / 債券投資</div>
+<h1><span class="title-main">債券投資とは？</span><span class="title-subtitle">利回り・価格変動・リスクの仕組み</span></h1>
+<p class="lead">債券は、国や地方公共団体、企業などがお金を借りるために発行する有価証券です。利子や満期時の償還を受け取る仕組みがありますが、途中で売ると価格が変動し、発行体の信用状況によっては利子や元本が支払われないこともあります。債券を理解するには、利率だけでなく、購入価格・利回り・満期までの期間を一緒に見ることが大切です。</p>
+<p class="meta">公開日：2026年10月30日・情報確認日：2026年10月30日｜制度・商品条件は変更される場合があります。</p>
+<nav class="toc" aria-label="記事内目次"><h2>この記事の目次</h2><ol>
+<li><a href="#bond-1">債券の仕組みと主な種類</a></li>
+<li><a href="#bond-2">利率・利回り・償還価格の違い</a></li>
+<li><a href="#bond-3">金利が上がると債券価格が下がる理由</a></li>
+<li><a href="#bond-4">デュレーションで金利への敏感さを見る</a></li>
+<li><a href="#bond-5">個別債券と債券投資信託・ETFの違い</a></li>
+<li><a href="#bond-6">債券投資の主なリスク</a></li>
+<li><a href="#bond-7">購入前に確認したいこと</a></li>
+<li><a href="#bond-8">よくある質問</a></li>
+<li><a href="#bond-sources">公式情報・参考資料</a></li>
+</ol></nav>
+
+<h2 id="bond-1">1. 債券の仕組みと主な種類</h2>
+<p>債券を購入することは、発行体に資金を貸し出すことに近い仕組みです。発行時に決められた条件に従い、保有期間中に利子が支払われ、満期（償還日）には原則として額面金額が返済されます。ただし、発行体が債務を履行できることが前提であり、すべての債券で元本や利子が保証されるわけではありません。</p>
+<div class="table-wrap"><table><thead><tr><th>分類</th><th>主な種類・特徴</th><th>確認したい点</th></tr></thead><tbody>
+<tr><th>発行体</th><td>国債、地方債、社債（企業が発行）</td><td>発行体の信用力、財務状況、返済順位</td></tr>
+<tr><th>利率の決まり方</th><td>固定利付債、変動利付債</td><td>利子が固定か、基準金利などに応じて変わるか</td></tr>
+<tr><th>通貨</th><td>円建て債券、外貨建て債券</td><td>利子・償還金を受け取る通貨、為替変動の影響</td></tr>
+<tr><th>物価との連動</th><td>物価連動債など</td><td>元金や利子の調整方法、商品固有の条件</td></tr>
+</tbody></table></div>
+<p>国債は国が発行する債券、社債は企業が発行する債券です。発行体が異なれば信用リスクも異なります。また、同じ発行体でも、満期までの期間や利率、担保・返済順位などの条件は銘柄ごとに異なります。</p>
+<p>日本の個人向け国債には、変動10年・固定5年・固定3年のタイプがあります。募集条件や中途換金のルールは商品ごとに定められているため、購入時には財務省の最新案内を確認してください。</p>
+
+<h2 id="bond-2">2. 利率・利回り・償還価格の違い</h2>
+<p>「利率」と「利回り」は似ていますが、意味が異なります。利率（表面利率・クーポン率）は額面に対して受け取る利子の割合です。一方、利回りは購入価格や償還時の差額も含め、投資金額に対してどの程度の収益が見込まれるかを表します。</p>
+<div class="table-wrap"><table><thead><tr><th>用語</th><th>意味</th><th>例・見るポイント</th></tr></thead><tbody>
+<tr><th>額面金額</th><td>満期時に償還される基準となる金額</td><td>額面100万円なら、条件どおり償還される場合の満期受取額は100万円</td></tr>
+<tr><th>利率（表面利率）</th><td>額面に対する年間利子の割合</td><td>額面100万円・利率2%なら、1年分の税引前利子は2万円</td></tr>
+<tr><th>購入価格</th><td>実際に債券を買う価格</td><td>額面100円に対して95円や105円など、額面と異なることがある</td></tr>
+<tr><th>利回り</th><td>利子と購入・償還価格の差などを含めた投資収益率</td><td>同じ利率でも、購入価格や残存期間が違えば利回りは異なる</td></tr>
+</tbody></table></div>
+<p>例えば、額面100円・年利率2%・残存期間5年の固定利付債を考えます。額面どおり100円で買えば、信用リスクなどを除けば、毎年2円の利子を受け取り、満期に100円が償還されます。95円で買えば、利子は同じ2円でも購入金額に対する割合が高く、満期に額面との差額も受け取ります。反対に105円で買うと、満期に100円しか戻らないため、利子収入の一部は購入価格と償還額の差で相殺されます。</p>
+<p>このため、債券を比較するときは利率だけで判断せず、購入価格・残存期間・最終利回りなどを確認します。最終利回りは、満期まで保有し、利子や償還が予定どおり行われることなどを前提にした指標です。途中売却した場合の実際の収益とは異なる可能性があります。</p>
+<div class="formula">債券の収益を考える基本：利子収入 ＋ 償還時の差額（額面 − 購入価格）</div>
+<p class="meta">上記は仕組みを理解するための単純化した説明です。実際の利回り計算では、利払い日、経過利子、複利、税金、購入手数料などの条件が関係します。</p>
+
+<h2 id="bond-3">3. 金利が上がると債券価格が下がる理由</h2>
+<p>市場金利が上がると、一般に、すでに発行されている固定利付債券の市場価格は下がりやすくなります。新しく発行される債券の利回りが高くなると、以前の低い利率の債券は相対的に魅力が小さくなるためです。反対に、市場金利が下がると、既発債券の価格は上がりやすくなります。</p>
+<figure class="diagram"><svg viewBox="0 0 900 360" role="img" aria-labelledby="bond-rate-title bond-rate-desc" xmlns="http://www.w3.org/2000/svg">
+<title id="bond-rate-title">市場金利と固定利付債券価格の一般的な関係</title><desc id="bond-rate-desc">市場金利が上昇すると既発債券の価格は下落しやすく、市場金利が低下すると価格は上昇しやすいことを示す。</desc>
+<rect x="12" y="12" width="876" height="336" rx="20" fill="#fff" stroke="#dce4e8" stroke-width="2"/>
+<rect x="48" y="48" width="360" height="250" rx="16" fill="#fff1e9"/><rect x="492" y="48" width="360" height="250" rx="16" fill="#eaf5f3"/>
+<text x="228" y="91" text-anchor="middle" font-size="26" font-weight="800" fill="#8d452b">市場金利が上昇</text>
+<text x="672" y="91" text-anchor="middle" font-size="26" font-weight="800" fill="#176d65">市場金利が低下</text>
+<path d="M145 142 L310 142 M310 142 L280 122 M310 142 L280 162" fill="none" stroke="#8d452b" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M755 142 L590 142 M590 142 L620 122 M590 142 L620 162" fill="none" stroke="#176d65" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="228" y="214" text-anchor="middle" font-size="24" font-weight="750" fill="#172b3d">既発債券の価格</text><text x="228" y="263" text-anchor="middle" font-size="34" font-weight="900" fill="#b45332">下がりやすい ↓</text>
+<text x="672" y="214" text-anchor="middle" font-size="24" font-weight="750" fill="#172b3d">既発債券の価格</text><text x="672" y="263" text-anchor="middle" font-size="34" font-weight="900" fill="#176d65">上がりやすい ↑</text>
+</svg><figcaption>固定利付債券の一般的な関係を示した模式図。価格変動の大きさは残存期間や利率などによって異なります。</figcaption></figure>
+<p>例えば、年2円の利子が受け取れる債券を持っているとき、新しく発行される同程度のリスクの債券が年3円の利子を提供するなら、既発債券を額面と同じ価格で買いたい人は少なくなります。既発債券の価格が下がることで、購入価格に対する利回りが上がり、新しい債券との条件差が調整されます。</p>
+<p>価格の変化は、単純に金利差と同じ割合になるわけではありません。将来受け取る利子と償還金を現在価値に割り引いて評価するため、残存期間や利払い条件などによって変わります。</p>
+
+<h2 id="bond-4">4. デュレーションで金利への敏感さを見る</h2>
+<p>デュレーションは、債券から受け取る利子と元本を、現在価値で加重平均した回収までの期間を表す指標です。金利変動に対する価格の反応を見るときは、修正デュレーションが使われます。一般に、修正デュレーションが大きい債券ほど、金利変動に対する価格の振れ幅が大きくなります。</p>
+<div class="callout"><strong>概算例：</strong>修正デュレーションが5の債券では、他の条件が同じなら、市場利回りが1%ポイント上昇したとき、価格はおよそ5%下落する目安になります。反対に1%ポイント低下すれば、およそ5%上昇する目安です。</div>
+<p>これは小幅な金利変化を想定した近似で、実際の価格変化と一致するとは限りません。金利変化が大きい場合の価格と利回りの関係には曲線性（コンベクシティ）があり、信用スプレッドや期限前償還条項なども価格に影響します。</p>
+<p>デュレーションは「満期までの年数」と同じではありません。利子を受け取る時期や利回りなどを反映した指標です。債券ファンドでは、組み入れ債券全体の平均的な金利感応度を把握する目安として、ポートフォリオのデュレーションが公表されることがあります。</p>
+
+<h2 id="bond-5">5. 個別債券と債券投資信託・ETFの違い</h2>
+<div class="table-wrap"><table><thead><tr><th>比較点</th><th>個別債券</th><th>債券投資信託・ETF</th></tr></thead><tbody>
+<tr><th>投資対象</th><td>特定の発行体・銘柄</td><td>複数の債券を組み合わせる商品が多い</td></tr>
+<tr><th>満期</th><td>銘柄ごとに償還日がある</td><td>一般的なオープンエンド型ファンドには、投資家が待てば額面で戻る単一の満期日はない</td></tr>
+<tr><th>収益</th><td>利子と、購入・売却または償還価格の差</td><td>組入債券の利子収入、価格変動、費用などが基準価額・市場価格に反映</td></tr>
+<tr><th>金利変動</th><td>途中売却時の価格に影響。満期まで保有する場合も信用リスク等は残る</td><td>組入債券の価格が基準価額やETF価格に反映され、保有中も変動する</td></tr>
+<tr><th>分散</th><td>銘柄数が少ないと発行体への集中が生じる</td><td>複数銘柄・国・期間に分散する商品があるが、分散範囲は商品次第</td></tr>
+</tbody></table></div>
+<p>個別債券は償還日と受取条件が決まっているため、資金を使う時期に合わせて検討しやすい一方、発行体の信用リスクや途中売却時の価格変動を受けます。満期まで保有すれば必ず損をしないという意味ではなく、発行体が利子や元本を支払えることが前提です。</p>
+<p>一方、一般的な債券投資信託やETFは複数の債券を保有し、償還を迎えた債券を入れ替えながら運用することがあります。ファンド自体に決まった満期がない商品では、投資家が保有を続けても、特定の日に購入元本が額面で返ってくるわけではありません。基準価額や市場価格は金利・信用状況などに応じて変動します。</p>
+<p class="related-inline">投資信託とETFの売買方法・価格・費用の一般的な違いは、<a href="investment-trust-vs-etf.html">投資信託とETFの違い</a>で整理しています。</p>
+
+<h2 id="bond-6">6. 債券投資の主なリスク</h2>
+<div class="table-wrap"><table><thead><tr><th>リスク</th><th>内容</th><th>確認すること</th></tr></thead><tbody>
+<tr><th>金利変動リスク</th><td>市場金利の変化で債券価格が変動する</td><td>残存期間、デュレーション、利率</td></tr>
+<tr><th>信用リスク</th><td>発行体の財務悪化や破綻などで利子・元本が支払われない可能性</td><td>発行体の財務、信用格付け、担保・返済順位</td></tr>
+<tr><th>為替変動リスク</th><td>外貨建て債券では円換算の受取額や評価額が為替で変わる</td><td>通貨、為替ヘッジの有無とコスト</td></tr>
+<tr><th>流動性リスク</th><td>売りたいときに希望する価格・数量で売れない可能性</td><td>売買量、取引市場、売買価格の差</td></tr>
+<tr><th>インフレリスク</th><td>受け取る利子や償還金の購買力が物価上昇で低下する可能性</td><td>利率、投資期間、物価連動の有無</td></tr>
+<tr><th>再投資リスク</th><td>受け取った利子を、以前より低い利回りでしか運用できない可能性</td><td>利払い時期、再投資先の金利水準</td></tr>
+</tbody></table></div>
+<p>債券は株式と値動きの要因が異なるため、資産を分散する手段として使われることがあります。ただし、金利上昇や信用不安が広がる局面では、債券と株式が同時に下落することもあります。債券を組み入れればポートフォリオの損失を必ず抑えられるわけではありません。</p>
+<p class="related-inline">リスクの意味や、資産ごとに異なる値動きの要因は、<a href="risk-return-basics.html">投資のリスクとリターン</a>でも解説しています。</p>
+
+<h2 id="bond-7">7. 購入前に確認したいこと</h2>
+<ol>
+<li><strong>発行体：</strong>国・地方公共団体・企業など、誰が債務を負うのか。</li>
+<li><strong>通貨と受取条件：</strong>利子・償還金の通貨、利払い日、償還日、額面金額。</li>
+<li><strong>価格と利回り：</strong>購入価格、最終利回り、経過利子、手数料や税金。</li>
+<li><strong>金利への感応度：</strong>残存期間やデュレーション。金利が動いたときにどの程度価格が変わり得るか。</li>
+<li><strong>信用力と流動性：</strong>信用格付け、発行体の財務、途中売却の可否や売買価格。</li>
+<li><strong>商品構造：</strong>個別債券かファンドか。ファンドなら組入銘柄、通貨、デュレーション、費用、分配方針。</li>
+<li><strong>資金を使う時期：</strong>満期まで保有できるか、途中換金の可能性があるか。</li>
+</ol>
+<p>利回りが高い債券には、信用リスクや流動性リスクなど、利回り以外の条件が関係していることがあります。利回りの数字だけを見て安全性や有利さを判断せず、目論見書・契約締結前交付書面・発行条件・運用報告書など、商品に対応した公式資料を確認しましょう。</p>
+
+<h2 id="bond-8">8. よくある質問</h2>
+<h3>債券は満期まで持てば元本割れしませんか？</h3>
+<p>発行体が利子と元本を予定どおり支払うことが前提です。発行体の信用状況が悪化すれば、満期でも予定どおり返済されない可能性があります。また、外貨建て債券は円に換算した受取額が為替で変わります。個別債券と債券ファンドでも満期の扱いは異なります。</p>
+<h3>金利が上がると、すべての債券が同じだけ値下がりしますか？</h3>
+<p>同じではありません。残存期間、利率、信用力、金利変化の幅などによって価格への影響は異なります。一般に、他の条件が同じなら残存期間が長い債券ほど金利変動の影響を受けやすく、デュレーションがその感応度を見る目安になります。</p>
+<h3>債券ファンドにも満期はありますか？</h3>
+<p>一般的なオープンエンド型の債券ファンドには、個別債券のように投資家全員が同じ日に額面で償還を受ける満期日はありません。一方、満期や償還時期を設けた商品もあるため、商品ごとの仕組みを確認してください。</p>
+<h3>債券は預貯金の代わりになりますか？</h3>
+<p>同じではありません。債券には価格変動・信用・流動性などのリスクがあり、預金保険制度の対象となる預金とも異なります。使う予定のある資金を投資に回す前に、換金条件と損失の可能性を確認してください。</p>
+
+<h2 id="bond-sources">9. 公式情報・参考資料</h2>
+<ul class="sources">
+<li><a href="https://www.j-flec.go.jp/links/jikan/qa/013.html" target="_blank" rel="noopener noreferrer">J-FLEC：債券価格と金利って、どういう関係なの？</a> — 市場金利と既発債券価格の関係。</li>
+<li><a href="https://www.j-flec.go.jp/links/jikan/qa/010.html" target="_blank" rel="noopener noreferrer">J-FLEC：債券投資のリスクって何？</a> — 価格変動・信用・為替・カントリーリスク。</li>
+<li><a href="https://www.boj.or.jp/about/education/oshiete/glossary/market/m11.htm" target="_blank" rel="noopener noreferrer">日本銀行：国債金利</a> — 利回り、表面利率、債券価格の関係。</li>
+<li><a href="https://www.mof.go.jp/jgbs/individual/how_to/index.htm" target="_blank" rel="noopener noreferrer">財務省：個人向け国債</a> — 個人向け国債の種類や購入・中途換金に関する案内。</li>
+<li><a href="https://market.jsda.or.jp/shijyo/saiken/saiken/index9.html" target="_blank" rel="noopener noreferrer">日本証券業協会：公社債の売買取引について</a> — 金利変動・信用・流動性・為替リスク。</li>
+<li><a href="https://www.gpif.go.jp/gpif/words/ta.html" target="_blank" rel="noopener noreferrer">年金積立金管理運用独立行政法人（GPIF）：用語集「デュレーション」</a> — デュレーションと金利感応度。</li>
+</ul>
+<p class="meta">債券は発行体・商品条件・市場環境によって損失が生じることがあります。利回りや過去の価格変動は将来の成果を保証しません。購入前には最新の発行条件・公式資料をご確認ください。サイト共通の方針は<a href="editorial-policy.html">編集方針・免責事項</a>をご覧ください。</p>
+<p><a href="index.html">← Invest Atlas トップページへ戻る</a></p>
+</article></main>
+<footer><div class="wrap"><strong>Invest Atlas</strong><p>投資を理解するための解説・比較ガイド</p></div></footer>
+</body></html>
