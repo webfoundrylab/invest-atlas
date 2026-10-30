@@ -1992,3 +1992,13 @@
 - 海外上場ETFの売買手数料・為替交換コストと、国内上場ETFの円建て売買・為替リスクを混同しない説明を `investment-trust-vs-etf.html` に追加。
 - `orbukan-guide.html` から、費用解説記事に加えて連動指標の解説記事への本文内リンクを追加。
 - 静的HTMLの構造・リンク・アンカー検証およびGitHub Actions・公開画面の確認は、更新後に別途実施。
+
+## 2026-10-30 債券投資の基礎記事を追加
+- 新規記事：`bonds-basics.html`「債券投資とは？利率・利回り・価格変動とリスクを解説」。
+- 債券の仕組みと種類、利率・利回り・額面・購入価格の違い、金利と債券価格の逆方向の関係、デュレーション、個別債券と債券投資信託・ETFの違い、主なリスク、購入前の確認項目を整理。
+- 金利・価格の関係は模式図を追加。デュレーションの数値例は近似であること、個別債券の満期償還も発行体の債務履行が前提であることを明記。
+- J-FLEC、日本銀行、財務省、日本証券業協会、GPIFの公式資料を参考資料として掲載。
+- `article-index.json` に新記事・タグ・関連リンク・カテゴリ階層を登録。債券投資を「投資の基礎」配下の独立カテゴリとして追加。
+- `risk-return-basics.html`、`investment-trust-investment-targets.html`、`investment-trust-vs-etf.html` から本文内リンクを追加。
+- `thumbnails/bonds-basics.svg` を既存サムネイルの固定タイトル帯・Invest Atlas透かしルールに合わせて新規作成。
+- sitemap.xml / sitemap.txt とカテゴリ一覧ページは `scripts/build-site.py` によりActions実行時に再生成される。更新後のActions検証と公開画面確認は別途実施。
