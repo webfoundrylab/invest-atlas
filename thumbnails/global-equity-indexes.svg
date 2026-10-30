@@ -1,1 +1,37 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc"><title id="title">全世界株式とは？</title><desc id="desc">大型株・中型株・小型株という企業規模の層と、指数ごとの対象範囲を示す図解</desc><defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f2ead9"/><stop offset="1" stop-color="#dce8ed"/></linearGradient><linearGradient id="large" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#244d67"/><stop offset="1" stop-color="#347f87"/></linearGradient><linearGradient id="mid" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#8a5a32"/><stop offset="1" stop-color="#d49a4c"/></linearGradient><linearGradient id="small" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#6d588b"/><stop offset="1" stop-color="#a28abd"/></linearGradient></defs><rect width="1200" height="675" fill="url(#bg)"/><g font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="270" letter-spacing="-8" fill="#304b51" opacity=".07"><text x="18" y="400">Invest</text><text x="1180" y="605" text-anchor="end">Atlas</text></g><rect x="24" y="22" width="1152" height="150" rx="22" fill="#fff" stroke="#cbd8dc" stroke-width="2"/><g font-family="sans-serif" text-anchor="middle" fill="#19384b"><text x="600" y="57" font-size="24" font-weight="800" letter-spacing="1">GLOBAL EQUITY INDEXES</text><text x="600" y="116" font-size="48" font-weight="800">全世界株式とは？</text><text x="600" y="157" font-size="29" font-weight="650">MSCI ACWIとFTSEの違い</text></g><text x="90" y="233" font-family="sans-serif" font-size="28" font-weight="800" fill="#19384b">企業規模で見ると</text><rect x="90" y="260" width="1020" height="95" rx="18" fill="url(#large)"/><text x="135" y="318" font-family="sans-serif" font-size="32" font-weight="800" fill="#fff">大型株</text><g fill="#e7d8a4"><rect x="430" y="283" width="120" height="48" rx="8"/><rect x="570" y="283" width="180" height="48" rx="8"/><rect x="770" y="283" width="290" height="48" rx="8"/></g><text x="745" y="385" text-anchor="middle" font-family="sans-serif" font-size="23" fill="#4b626a">時価総額の大きい企業</text><rect x="175" y="408" width="850" height="75" rx="16" fill="url(#mid)"/><text x="215" y="455" font-family="sans-serif" font-size="30" font-weight="800" fill="#fff">中型株</text><g fill="#f8e6c9"><rect x="480" y="426" width="110" height="38" rx="7"/><rect x="605" y="426" width="150" height="38" rx="7"/><rect x="770" y="426" width="205" height="38" rx="7"/></g><rect x="270" y="510" width="660" height="65" rx="14" fill="url(#small)"/><text x="310" y="550" font-family="sans-serif" font-size="28" font-weight="800" fill="#fff">小型株</text><g fill="#eee7f7"><rect x="510" y="527" width="72" height="30" rx="6"/><rect x="595" y="527" width="92" height="30" rx="6"/><rect x="700" y="527" width="55" height="30" rx="6"/><rect x="767" y="527" width="120" height="30" rx="6"/></g><rect x="85" y="594" width="1030" height="48" rx="14" fill="#fff" stroke="#d3dfe1"/><text x="600" y="626" text-anchor="middle" font-family="sans-serif" font-size="25" font-weight="750" fill="#344f5d">ACWIは大型・中型株中心 ／ FTSE Global All Capは小型株も対象</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+<title id="title">全世界株式とは？</title>
+<desc id="desc">先進国・新興国の株式を対象にする2つの代表的な指数を比較。MSCI ACWIは大型株・中型株、FTSE Global All Capはそれに加えて小型株も対象とする。</desc>
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f1eadb"/><stop offset="1" stop-color="#dce9e9"/></linearGradient>
+ <linearGradient id="acwi" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#24566c"/><stop offset="1" stop-color="#438b87"/></linearGradient>
+ <linearGradient id="ftse" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#76516f"/><stop offset="1" stop-color="#b17b69"/></linearGradient>
+</defs>
+<rect width="1200" height="675" fill="url(#bg)"/>
+<g font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="270" letter-spacing="-8" fill="#304b51" opacity=".065"><text x="18" y="400">Invest</text><text x="1180" y="605" text-anchor="end">Atlas</text></g>
+<rect x="24" y="22" width="1152" height="150" rx="22" fill="#fff" stroke="#cbd8dc" stroke-width="2"/>
+<g font-family="sans-serif" text-anchor="middle" fill="#19384b">
+ <text x="600" y="57" font-size="24" font-weight="800" letter-spacing="1">GLOBAL EQUITY INDEXES</text>
+ <text x="600" y="116" font-size="48" font-weight="800">全世界株式とは？</text>
+ <text x="600" y="157" font-size="30" font-weight="650">MSCI ACWIとFTSEの違い</text>
+</g>
+<rect x="170" y="195" width="860" height="58" rx="18" fill="#fff" stroke="#c5d5d6" stroke-width="2"/>
+<text x="600" y="234" text-anchor="middle" font-family="sans-serif" font-size="32" font-weight="800" fill="#294c59">共通：先進国・新興国の株式</text>
+<rect x="65" y="275" width="510" height="326" rx="24" fill="#fff" fill-opacity=".88" stroke="#9dbdbb" stroke-width="3"/>
+<rect x="625" y="275" width="510" height="326" rx="24" fill="#fff" fill-opacity=".88" stroke="#c9b4c3" stroke-width="3"/>
+<text x="320" y="321" text-anchor="middle" font-family="sans-serif" font-size="36" font-weight="800" fill="#24566c">MSCI ACWI</text>
+<text x="880" y="321" text-anchor="middle" font-family="sans-serif" font-size="36" font-weight="800" fill="#76516f">FTSE Global All Cap</text>
+<g font-family="sans-serif" font-size="32" font-weight="800" text-anchor="middle" fill="#fff">
+ <rect x="105" y="348" width="430" height="82" rx="16" fill="url(#acwi)"/>
+ <text x="320" y="400">大型株</text>
+ <rect x="105" y="444" width="430" height="82" rx="16" fill="url(#acwi)"/>
+ <text x="320" y="496">中型株</text>
+ <rect x="665" y="348" width="430" height="70" rx="16" fill="url(#ftse)"/>
+ <text x="880" y="395">大型株</text>
+ <rect x="665" y="429" width="430" height="70" rx="16" fill="url(#ftse)"/>
+ <text x="880" y="476">中型株</text>
+ <rect x="665" y="510" width="430" height="70" rx="16" fill="#9a6b42"/>
+ <text x="880" y="557">小型株</text>
+</g>
+<rect x="190" y="615" width="820" height="44" rx="14" fill="#fff" stroke="#cbd8dc" stroke-width="2"/>
+<text x="600" y="646" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="800" fill="#344f5d">違いは「小型株まで含むかどうか」</text>
+</svg>
