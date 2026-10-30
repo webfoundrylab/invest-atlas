@@ -1,1 +1,71 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc"><title id="title">全世界株式ファンド比較</title><desc id="desc">投資信託と米国上場ETFを複数の商品の形で比較するイラスト</desc><defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e8eee4"/><stop offset="1" stop-color="#f2dfd5"/></linearGradient><linearGradient id="fund" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#24566c"/><stop offset="1" stop-color="#408b83"/></linearGradient><linearGradient id="etf" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8a4b3b"/><stop offset="1" stop-color="#d79b52"/></linearGradient></defs><rect width="1200" height="675" fill="url(#bg)"/><g font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="270" letter-spacing="-8" fill="#304b51" opacity=".07"><text x="18" y="400">Invest</text><text x="1180" y="605" text-anchor="end">Atlas</text></g><rect x="24" y="22" width="1152" height="150" rx="22" fill="#fff" stroke="#cbd8dc" stroke-width="2"/><g font-family="sans-serif" text-anchor="middle" fill="#19384b"><text x="600" y="57" font-size="24" font-weight="800" letter-spacing="1">GLOBAL EQUITY FUNDS</text><text x="600" y="116" font-size="48" font-weight="800">全世界株式ファンド比較</text><text x="600" y="157" font-size="29" font-weight="650">オルカン・楽天・SBIなどの違い</text></g><g transform="translate(55 220)"><rect width="335" height="365" rx="24" fill="#fff" stroke="#c8d9dc" stroke-width="2"/><rect x="28" y="28" width="279" height="180" rx="18" fill="url(#fund)"/><path d="M94 68h147v102H94z" fill="#fff" opacity=".95"/><path d="M112 90h110M112 111h110M112 132h82M112 153h62" stroke="#347f87" stroke-width="7" stroke-linecap="round"/><circle cx="240" cy="156" r="30" fill="#e5c879" stroke="#fff" stroke-width="5"/><path d="M226 156l10 10 20-23" fill="none" stroke="#24566c" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><text x="167" y="253" text-anchor="middle" font-family="sans-serif" font-size="28" font-weight="800" fill="#19384b">国内投資信託</text><text x="167" y="293" text-anchor="middle" font-family="sans-serif" font-size="23" font-weight="650" fill="#526a70">オルカン・楽天・SBI</text><text x="167" y="329" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#526a70">円で積立・基準価額</text></g><g transform="translate(432 220)"><rect width="335" height="365" rx="24" fill="#fff" stroke="#d9d6c9" stroke-width="2"/><rect x="28" y="28" width="279" height="180" rx="18" fill="#e8f0f0"/><g transform="translate(167 118)"><circle r="65" fill="url(#fund)"/><ellipse rx="28" ry="65" fill="none" stroke="#e6f1ed" stroke-width="3"/><ellipse rx="65" ry="24" fill="none" stroke="#e6f1ed" stroke-width="3"/><path d="M-61 0H61M0-61V61" stroke="#e6f1ed" stroke-width="2"/><circle cx="-18" cy="-22" r="8" fill="#f2d38a"/><circle cx="24" cy="13" r="9" fill="#f2d38a"/></g><text x="167" y="253" text-anchor="middle" font-family="sans-serif" font-size="28" font-weight="800" fill="#19384b">指数を比較</text><text x="167" y="293" text-anchor="middle" font-family="sans-serif" font-size="23" font-weight="650" fill="#526a70">MSCI ACWI</text><text x="167" y="329" text-anchor="middle" font-family="sans-serif" font-size="23" font-weight="650" fill="#526a70">FTSE Global All Cap</text></g><g transform="translate(809 220)"><rect width="335" height="365" rx="24" fill="#fff" stroke="#e3cbb8" stroke-width="2"/><rect x="28" y="28" width="279" height="180" rx="18" fill="url(#etf)"/><rect x="58" y="62" width="219" height="115" rx="10" fill="#fff" opacity=".96"/><path d="M82 144l35-30 31 14 32-37 34 16 37-25" fill="none" stroke="#a34f39" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/><path d="M231 82h20v20" fill="none" stroke="#a34f39" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><text x="167" y="253" text-anchor="middle" font-family="sans-serif" font-size="28" font-weight="800" fill="#19384b">米国上場ETF</text><text x="167" y="293" text-anchor="middle" font-family="sans-serif" font-size="23" font-weight="650" fill="#526a70">例：VT</text><text x="167" y="329" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#526a70">米ドル・市場価格</text></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+<title id="title">全世界株式の投資信託を比較</title>
+<desc id="desc">世界を表す地球儀と、異なる運用商品を表す複数のファンドカードを組み合わせた比較イラスト</desc>
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e7eee9"/><stop offset="1" stop-color="#e7e0d5"/></linearGradient>
+ <linearGradient id="globe" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#24566c"/><stop offset="1" stop-color="#4b9b91"/></linearGradient>
+ <linearGradient id="cardA" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f4e5c8"/><stop offset="1" stop-color="#d8a66c"/></linearGradient>
+ <linearGradient id="cardB" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#dce9e4"/><stop offset="1" stop-color="#83aaa0"/></linearGradient>
+ <linearGradient id="cardC" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e7dfe9"/><stop offset="1" stop-color="#a88eaa"/></linearGradient>
+ <clipPath id="globeClip"><circle cx="600" cy="425" r="154"/></clipPath>
+ <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#314b50" flood-opacity=".14"/></filter>
+</defs>
+<rect width="1200" height="675" fill="url(#bg)"/>
+<g font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="270" letter-spacing="-8" fill="#304b51" opacity=".07"><text x="18" y="400">Invest</text><text x="1180" y="605" text-anchor="end">Atlas</text></g>
+<rect x="24" y="22" width="1152" height="150" rx="22" fill="#fff" stroke="#cbd8dc" stroke-width="2"/>
+<g font-family="sans-serif" text-anchor="middle" fill="#19384b">
+ <text x="600" y="57" font-size="24" font-weight="800" letter-spacing="1">GLOBAL INDEX FUNDS</text>
+ <text x="600" y="116" font-size="48" font-weight="800">全世界株式の投資信託を比較</text>
+ <text x="600" y="157" font-size="30" font-weight="650">オルカン・楽天・SBIなど7商品</text>
+</g>
+<!-- Seven products represented as a connected set of fund cards; no small lettering is used. -->
+<g fill="none" stroke="#8da9a4" stroke-width="3" opacity=".65">
+ <path d="M260 360Q390 240 510 305M690 305Q820 240 940 360"/>
+ <path d="M260 500Q410 590 510 540M690 540Q790 590 940 500"/>
+</g>
+<g filter="url(#shadow)">
+ <g transform="translate(92 286) rotate(-8 112 130)">
+  <rect width="224" height="260" rx="20" fill="#fff" stroke="#cbd8d5" stroke-width="3"/>
+  <rect x="18" y="18" width="188" height="126" rx="14" fill="url(#cardA)"/>
+  <circle cx="112" cy="80" r="42" fill="#fff" opacity=".9"/>
+  <path d="M82 80h60M112 50v60M91 59l42 42M133 59l-42 42" stroke="#9c633c" stroke-width="7" stroke-linecap="round"/>
+  <rect x="28" y="171" width="168" height="12" rx="6" fill="#b9c9c5"/>
+  <rect x="28" y="197" width="130" height="12" rx="6" fill="#d7e0dd"/>
+  <rect x="28" y="223" width="150" height="12" rx="6" fill="#d7e0dd"/>
+ </g>
+ <g transform="translate(884 286) rotate(8 112 130)">
+  <rect width="224" height="260" rx="20" fill="#fff" stroke="#cbd8d5" stroke-width="3"/>
+  <rect x="18" y="18" width="188" height="126" rx="14" fill="url(#cardC)"/>
+  <path d="M56 112l35-43 29 20 46-48" fill="none" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="166" cy="41" r="10" fill="#fff"/>
+  <rect x="28" y="171" width="168" height="12" rx="6" fill="#b9c9c5"/>
+  <rect x="28" y="197" width="130" height="12" rx="6" fill="#d7e0dd"/>
+  <rect x="28" y="223" width="150" height="12" rx="6" fill="#d7e0dd"/>
+ </g>
+ <g transform="translate(486 395)">
+  <rect x="-112" y="-116" width="224" height="260" rx="20" fill="#fff" stroke="#cbd8d5" stroke-width="3"/>
+  <rect x="-94" y="-98" width="188" height="126" rx="14" fill="url(#cardB)"/>
+  <circle cx="0" cy="-35" r="47" fill="url(#globe)"/>
+  <path d="M-44-35H44M0-82V12M-31-70Q-4-35-31 0M31-70Q4-35 31 0" fill="none" stroke="#e9f2ec" stroke-width="4" opacity=".9"/>
+  <rect x="-84" y="55" width="168" height="12" rx="6" fill="#b9c9c5"/>
+  <rect x="-84" y="81" width="130" height="12" rx="6" fill="#d7e0dd"/>
+  <rect x="-84" y="107" width="150" height="12" rx="6" fill="#d7e0dd"/>
+ </g>
+</g>
+<g fill="#e6c47f" stroke="#fff" stroke-width="7">
+ <circle cx="376" cy="260" r="17"/><circle cx="824" cy="260" r="17"/><circle cx="355" cy="555" r="17"/><circle cx="845" cy="555" r="17"/>
+</g>
+<g transform="translate(600 425)" fill="none" stroke="#f6f3e9" stroke-width="5" opacity=".92">
+ <circle r="154" stroke="#24566c" stroke-width="8"/>
+ <ellipse rx="66" ry="154"/><ellipse rx="154" ry="58"/>
+ <path d="M-148 0H148M0-148V148"/>
+</g>
+<g fill="#d6e8df" opacity=".9">
+ <path d="M548 358l23-18 17 10 13 28-17 13-8 27-22-7-14-24z"/>
+ <path d="M622 386l28-10 26 20-8 25-24 8-17 26-19-15 7-28z"/>
+ <path d="M560 453l20-8 17 18-10 27-21-5-14-17z"/>
+</g>
+<g fill="#e6c47f" stroke="#fff" stroke-width="5">
+ <circle cx="600" cy="271" r="13"/><circle cx="753" cy="425" r="13"/><circle cx="600" cy="579" r="13"/>
+</g>
+</svg>
