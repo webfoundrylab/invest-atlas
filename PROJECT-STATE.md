@@ -2009,3 +2009,11 @@
 - PC向け記事ラッパーの最大幅を1120pxに統一し、記事カード内の左右パディングを最大36pxに調整。本文・比較表・図解が使える横幅を拡張した。
 - スマートフォン向けの既存メディアクエリは維持。幅の異なる既存記事（例：`orbukan-guide.html`）は今回変更していない。
 - GitHub Actions run `41071236884` は確認時点で pending。公開画面でのPC・スマートフォン表示確認は未実施。
+
+
+## 2026-10-30 記事ページの横幅・余白を全体統一
+- 対象：公開用の通常記事21ページ（`ai-semiconductor-investing.html`、`before-you-invest.html`、`bonds-basics.html`、`choose-investment-trust-nisa.html`、`compound-growth.html`、`diversification-basics.html`、`global-equity-indexes.html`、`global-vs-sp500.html`、`investment-trust-actual-cost.html`、`investment-trust-distributions.html`、`investment-trust-fees.html`、`investment-trust-index-active.html`、`investment-trust-investment-targets.html`、`investment-trust-nav.html`、`investment-trust-vs-etf.html`、`nisa-basics.html`、`orbukan-guide.html`、`regular-investing.html`、`risk-return-basics.html`、`simple-investing-guide.html`、`stock-market-index-basics.html`）。
+- PC向け記事ラッパー最大幅を1120px、記事カード内余白を `clamp(18px, 3vw, 36px)` に統一。個別記事の見た目・本文・図表は変更していない。
+- スマートフォン用の既存メディアクエリと個別の表・図のレスポンシブ設定は維持。旧URL移行案内、編集方針ページ、羅針盤、トップページは通常記事ではないため対象外。
+- 静的確認：21ページすべてのメイン記事幅と基本カード余白が統一されていることを再取得して確認。公開画面でのPC・スマートフォン実表示は未確認。
+- GitHub Actionsの最新実行結果を別途確認する。直前の実行ではbuild成功・Pages deploy失敗が発生しているため、公開完了とは扱わない。
