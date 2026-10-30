@@ -50,7 +50,7 @@ def render_site_header(current_page=None):
     compass_current = ' aria-current="page"' if current_page == "compass" else ''
     return ('<header class="ia-site-header"><div class="ia-header-inner">'
             '<a class="ia-brand" href="' + BASE_URL + '"><img src="' + BASE_URL + 'favicon.svg" alt="" width="42" height="42"><span>Invest Atlas</span></a>'
-            '<nav class="ia-header-nav" aria-label="主要メニュー"><a href="' + BASE_URL + 'categories/"' + (' aria-current="page"' if current_page == "categories" else '') + '>カテゴリ</a><a href="' + BASE_URL + '#welcome">初めての方へ</a><a href="' + BASE_URL + 'investment-compass.html"' + compass_current + '>投資の羅針盤</a></nav>'
+            '<nav class="ia-header-nav" aria-label="主要メニュー"><a href="' + BASE_URL + 'categories/"' + (' aria-current="page"' if current_page == "categories" else '') + '>カテゴリ</a><a href="' + BASE_URL + 'getting-started.html"' + (' aria-current="page"' if current_page == "getting-started" else '') + '>初めての方へ</a><a href="' + BASE_URL + 'investment-compass.html"' + compass_current + '>投資の羅針盤</a></nav>'
             '</div></header>')
 
 
