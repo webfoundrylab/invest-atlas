@@ -1,39 +1,54 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+<title id="title">債券投資の仕組みと金利による価格変動</title>
+<desc id="desc">投資家が国や企業に資金を貸し、利子と満期時の元本を受け取る仕組み。市場金利が上がると既に発行された債券の価格は下がりやすい。</desc>
 <defs>
-  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f5eee7"/><stop offset="1" stop-color="#eaf1f2"/></linearGradient>
-  <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#f7f5ef"/></linearGradient>
-  <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#263d4a" flood-opacity=".13"/></filter>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f2eee8"/><stop offset="1" stop-color="#e8f0ef"/></linearGradient>
+  <linearGradient id="bond" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#f7f3e9"/></linearGradient>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#263d4a" flood-opacity=".14"/></filter>
+  <marker id="arrowTeal" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 Z" fill="#176d65"/></marker>
+  <marker id="arrowOrange" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 Z" fill="#b65d3d"/></marker>
 </defs>
 <rect width="1200" height="675" fill="url(#bg)"/>
-<g id="invest-atlas-watermark" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="270" letter-spacing="-8" fill="#9a684d" opacity="0.065"><text x="18" y="400">Invest</text><text x="1180" y="605" text-anchor="end">Atlas</text></g>
-
-<!-- Fixed title area -->
-<rect x="24" y="22" width="1152" height="150" rx="22" fill="#fff" stroke="#dfc9b8" stroke-width="2"/>
-<text x="600" y="57" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="800" letter-spacing="1" fill="#a6532e">BOND INVESTING</text>
-<text x="600" y="116" text-anchor="middle" font-family="sans-serif" font-size="48" font-weight="800" fill="#10243a">債券投資とは？</text>
+<g id="invest-atlas-watermark" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="270" letter-spacing="-8" fill="#668b83" opacity=".07"><text x="18" y="400">Invest</text><text x="1180" y="605" text-anchor="end">Atlas</text></g>
+<rect x="24" y="22" width="1152" height="150" rx="22" fill="#fff" stroke="#cbd9d5" stroke-width="2"/>
+<text x="600" y="57" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="800" letter-spacing="1" fill="#176d65">BOND INVESTING</text>
+<text x="600" y="116" text-anchor="middle" font-family="sans-serif" font-size="48" font-weight="800" fill="#102f3b">債券投資とは？</text>
 <text x="600" y="157" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="650" fill="#536879">利回り・価格変動・リスクの仕組み</text>
 
-<!-- Bond certificate: a single, clear focal object -->
+<!-- Main mechanism: lending money and receiving interest/principal -->
+<rect x="42" y="205" width="650" height="420" rx="24" fill="#ffffff" fill-opacity=".82" stroke="#d5e0dd" stroke-width="2"/>
+<text x="367" y="250" text-anchor="middle" font-family="sans-serif" font-size="32" font-weight="850" fill="#173b45">債券は「お金を貸す」しくみ</text>
+
 <g filter="url(#shadow)">
-  <path d="M175 255 Q175 238 194 238 H605 L690 323 V575 Q690 594 671 594 H194 Q175 594 175 575 Z" fill="url(#paper)" stroke="#c9d5d8" stroke-width="4"/>
-  <path d="M605 238 V305 Q605 323 623 323 H690" fill="#e9eff0" stroke="#c9d5d8" stroke-width="4" stroke-linejoin="round"/>
-  <path d="M605 238 L690 323 H623 Q605 323 605 305 Z" fill="#dfe8e8"/>
-  <path d="M225 315 H535" stroke="#b8c8cd" stroke-width="10" stroke-linecap="round"/>
-  <path d="M225 365 H465" stroke="#d1dcdf" stroke-width="9" stroke-linecap="round"/>
-  <path d="M225 410 H495" stroke="#d1dcdf" stroke-width="9" stroke-linecap="round"/>
-  <path d="M225 455 H430" stroke="#d1dcdf" stroke-width="9" stroke-linecap="round"/>
-  <path d="M225 500 H390" stroke="#d1dcdf" stroke-width="9" stroke-linecap="round"/>
-  <circle cx="570" cy="495" r="67" fill="#f3e2c8" stroke="#bd8951" stroke-width="7"/>
-  <circle cx="570" cy="495" r="49" fill="none" stroke="#d3a66f" stroke-width="4"/>
-  <path d="M570 463 V527 M548 484 H592 M548 506 H592" stroke="#9b6536" stroke-width="8" stroke-linecap="round"/>
+  <rect x="78" y="322" width="178" height="174" rx="18" fill="#e9f2ef" stroke="#b9d2ca" stroke-width="3"/>
+  <circle cx="167" cy="371" r="27" fill="#176d65"/>
+  <path d="M122 453 Q125 410 167 410 Q209 410 212 453" fill="#176d65"/>
+  <text x="167" y="476" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="850" fill="#173b45">投資家</text>
+
+  <rect x="478" y="322" width="178" height="174" rx="18" fill="#f6eee5" stroke="#e0c9b6" stroke-width="3"/>
+  <path d="M520 388 L567 354 L614 388 Z" fill="#b66a43"/>
+  <rect x="528" y="391" width="78" height="55" fill="#d8a47d"/>
+  <path d="M520 449 H614" stroke="#b66a43" stroke-width="9" stroke-linecap="round"/>
+  <text x="567" y="476" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="850" fill="#75432e">国・企業</text>
 </g>
 
-<!-- Opposing market movements, separated from the certificate and without labels -->
-<g stroke-linecap="round" stroke-linejoin="round">
-  <path d="M835 535 V315" stroke="#176d65" stroke-width="25"/>
-  <path d="M782 372 L835 305 L888 372" fill="none" stroke="#176d65" stroke-width="25"/>
-  <path d="M1010 305 V525" stroke="#bd6843" stroke-width="25"/>
-  <path d="M957 468 L1010 535 L1063 468" fill="none" stroke="#bd6843" stroke-width="25"/>
-</g>
-<path d="M770 420 H1075" stroke="#9aaeb4" stroke-width="4" stroke-dasharray="8 14" opacity=".65"/>
+<!-- Principal lent -->
+<path d="M274 353 H456" stroke="#176d65" stroke-width="10" stroke-linecap="round" marker-end="url(#arrowTeal)"/>
+<text x="365" y="328" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="800" fill="#176d65">資金を貸す</text>
+<!-- Interest and principal returned -->
+<path d="M456 465 H274" stroke="#b65d3d" stroke-width="10" stroke-linecap="round" marker-end="url(#arrowOrange)"/>
+<text x="365" y="510" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="800" fill="#9a4d32">利子 ＋ 元本</text>
+<text x="367" y="570" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="750" fill="#405a63">元本は満期に返済（原則）</text>
+
+<!-- Price risk from interest-rate changes -->
+<rect x="720" y="205" width="438" height="420" rx="24" fill="#f9fbfa" stroke="#d5e0dd" stroke-width="2"/>
+<text x="939" y="250" text-anchor="middle" font-family="sans-serif" font-size="32" font-weight="850" fill="#173b45">保有中の価格は変動</text>
+<rect x="758" y="286" width="362" height="126" rx="18" fill="#fff0e9"/>
+<text x="939" y="330" text-anchor="middle" font-family="sans-serif" font-size="32" font-weight="850" fill="#a84f32">市場金利 ↑</text>
+<path d="M939 345 V370" stroke="#b65d3d" stroke-width="8" stroke-linecap="round" marker-end="url(#arrowOrange)"/>
+<text x="939" y="402" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="800" fill="#a84f32">既発債の価格 ↓</text>
+<text x="939" y="466" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="750" fill="#405a63">金利が下がると</text>
+<text x="939" y="510" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="850" fill="#176d65">価格は上がりやすい</text>
+<path d="M790 548 H1088" stroke="#cbd9d5" stroke-width="3" stroke-linecap="round"/>
+<text x="939" y="590" text-anchor="middle" font-family="sans-serif" font-size="28" font-weight="750" fill="#405a63">利回りと価格は逆方向に動く</text>
 </svg>
