@@ -28,6 +28,10 @@ section{margin-top:30px}.section-head{margin-bottom:14px}.section-head h2{margin
 .route-cta{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:18px;padding:12px 14px;border-radius:10px;background:#e5f6f1;color:#075e56;font-weight:850}
 .route-link:hover .route-cta{background:#d3eee7}
 .compass-feature{display:grid;grid-template-columns:minmax(0,1fr) 150px;gap:20px;align-items:center;padding:clamp(22px,4vw,34px);border:2px solid #80bdb4;border-radius:20px;background:linear-gradient(115deg,#e3f7f1 0%,#fff 68%,#fff2d9 100%);box-shadow:0 12px 30px #12365312}
+.compass-card{color:inherit;text-decoration:none;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}
+.compass-card:hover{color:inherit;border-color:#087f75;box-shadow:0 14px 32px #12365320;transform:translateY(-2px)}
+.compass-card:focus-visible{outline:3px solid #d6a64b;outline-offset:4px}
+.compass-card:hover .compass-cta{background:#075f58;color:#fff}
 .compass-kicker{display:inline-block;color:#08766e;font-size:.82rem;font-weight:900;letter-spacing:.04em}
 .compass-feature h2{margin:5px 0 8px;color:#123653;font-size:clamp(1.7rem,3.5vw,2.2rem);line-height:1.25}
 .compass-feature p{margin:0;color:#425e70}
@@ -69,10 +73,10 @@ footer{background:#0c1c2b;color:#d7e1e8;padding:24px 0;font-size:.9rem}footer a{
 <a class="route route-link" href="https://webfoundrylab.github.io/invest-atlas/simple-investing-guide.html"><span class="route-label">入口 02 · 自分の条件から始める</span><h3>自分の条件を整理して判断する</h3><p>商品名から選び始めず、低コスト・分散・長期保有などの基本的な考え方と、自分の条件を整理します。</p><span class="route-cta">「投資をシンプルに考える」へ <span aria-hidden="true">→</span></span></a>
 </div>
 </section>
-<section class="compass-feature" aria-labelledby="compass-title">
-<div class="compass-copy"><span class="compass-kicker">2つの入口の、その先へ</span><h2 id="compass-title">投資の羅針盤</h2><p>知識を深めたい人も、まず結論や選択肢を整理したい人も。自分の条件を起点に、投資対象や比較のポイントを確認できます。</p><p class="compass-sub">生活資金・投資目的・運用期間・値下がりへの耐性などを整理し、必要な解説記事へ進みながら判断を深められます。</p><a class="compass-cta" href="https://webfoundrylab.github.io/invest-atlas/investment-compass.html">投資の羅針盤を使う <span aria-hidden="true">→</span></a></div>
+<a class="compass-feature compass-card" href="https://webfoundrylab.github.io/invest-atlas/investment-compass.html" aria-labelledby="compass-title">
+<div class="compass-copy"><span class="compass-kicker">2つの入口の、その先へ</span><h2 id="compass-title">投資の羅針盤</h2><p>知識を深めたい人も、まず結論や選択肢を整理したい人も。自分の条件を起点に、投資対象や比較のポイントを確認できます。</p><p class="compass-sub">生活資金・投資目的・運用期間・値下がりへの耐性などを整理し、必要な解説記事へ進みながら判断を深められます。</p><span class="compass-cta">投資の羅針盤を使う <span aria-hidden="true">→</span></span></div>
 <div class="compass-symbol" aria-hidden="true"><span>✦</span><b>羅針盤</b></div>
-</section>
+</a>
 <p class="flow-note">羅針盤は特定の商品を自動で推奨する診断ではありません。条件を整理し、比較・解説や公式情報を確認しながら、自分で判断するための案内役です。</p>
 <section aria-labelledby="search-title">
 <div class="section-head"><h2 id="search-title">記事を探したいときは</h2><p>羅針盤で気になったテーマを、カテゴリやキーワードからさらに調べられます。</p></div>
