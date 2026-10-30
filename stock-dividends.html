@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<title>株式の配当金とは？配当利回り・権利確定日・税金の仕組みを解説｜Invest Atlas</title>
+<meta name="description" content="国内上場株式の配当金の仕組み、配当利回りの計算、権利付き最終日・権利落ち日、NISAで非課税にする受取方式、配当性向や減配リスクを解説します。">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://webfoundrylab.github.io/invest-atlas/stock-dividends.html">
+<meta name="theme-color" content="#10243a">
+<style>
+:root{--ink:#172b3d;--muted:#536879;--navy:#10243a;--teal:#087f75;--line:#eadbd4;--paper:#fbf5f1;--white:#fff}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:var(--paper);line-height:1.8}a{color:#12665f;text-underline-offset:3px}header{background:var(--navy);color:white;padding:16px 0}header a{color:white;text-decoration:none;font-weight:800}.eyebrow{color:#b45b3c;font-size:.8rem;font-weight:800;letter-spacing:.08em}.article h1{font-size:clamp(1.8rem,4vw,2.6rem);line-height:1.35;margin:.5em 0}.title-main,.title-subtitle{display:block}.title-subtitle{font-size:.62em;line-height:1.5;font-weight:650;letter-spacing:0;color:#536879;margin-top:.24em}.lead{font-size:1.08rem;color:#3e596b}.toc{background:#fff7f2;border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:24px 0}.toc h2{font-size:1.1rem;margin:0 0 8px}.toc ol{margin:0;padding-left:1.4em}.toc li{margin:4px 0}.article h2{font-size:1.45rem;line-height:1.45;margin:2.1em 0 .65em;border-bottom:2px solid #eadbd4;padding-bottom:.4em}.article h3{font-size:1.12rem;margin:1.4em 0 .4em}.article p{margin:.8em 0}.diagram{margin:22px 0;padding:16px;border:1px solid var(--line);border-radius:14px;background:#fffaf7}.diagram svg{display:block;width:100%;height:auto}.diagram figcaption{font-size:.88rem;color:var(--muted);margin-top:10px}.note{padding:14px 16px;background:#fff7e8;border-left:4px solid #d88b55;border-radius:7px}.callout{padding:15px 18px;background:#fff2e9;border-left:4px solid #b85d3c;border-radius:8px;margin:22px 0}.table-wrap{overflow-x:auto}table{border-collapse:collapse;width:100%;margin:18px 0;font-size:.94rem}th,td{border:1px solid var(--line);padding:10px;text-align:left;vertical-align:top}th{background:#fff0e8}.related-inline{background:#fff7f2;padding:12px 15px;border-radius:9px}.sources li{margin:.55em 0}.meta{color:var(--muted);font-size:.9rem}footer{padding:24px 0 40px;color:var(--muted);font-size:.9rem}@media(max-width:560px){.toc{padding:15px}.article h2{font-size:1.28rem}.diagram{padding:10px}table{font-size:.86rem}th,td{padding:8px}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a href="index.html">← INVEST ATLAS</a></div></header>
+<main class="wrap"><article class="article">
+<div class="eyebrow">個別株・企業分析</div>
+<h1><span class="title-main">株式の配当金とは？</span><span class="title-subtitle">配当利回り・権利確定日・税金の仕組み</span></h1>
+<p class="lead">株式の配当金は、企業が株主に利益などを還元する方法の一つです。配当利回りが高い銘柄を見つけても、その数字だけで投資判断はできません。いつ株を保有すれば配当を受け取れるのか、税金はいくらかかるのか、配当を続けられる企業なのかを確認する必要があります。この記事では、国内上場株式を中心に、配当金の仕組みと確認ポイントを整理します。</p>
+<div class="callout"><strong>この記事の要点</strong><ul><li>配当金は企業が決定する株主還元であり、支払いは保証されない。</li><li>配当利回りは「1株あたり年間配当予想 ÷ 株価」で計算するが、株価や配当予想によって変わる。</li><li>NISAで国内上場株式の配当金を非課税にするには、原則として「株式数比例配分方式」を選ぶ必要がある。</li><li>配当金と株価変動を合わせたトータルリターンで成果を考える。</li></ul></div>
+<nav class="toc" aria-label="記事内目次"><h2>この記事の目次</h2><ol>
+<li><a href="#dividend-basics">株式の配当金とは？</a></li>
+<li><a href="#yield">配当金・配当利回りの計算方法</a></li>
+<li><a href="#schedule">配当を受け取るための日程</a></li>
+<li><a href="#ex-dividend">権利落ち日に株価はどう動く？</a></li>
+<li><a href="#high-yield">配当利回りが高い株を選べばよい？</a></li>
+<li><a href="#tax-nisa">配当金の税金とNISA</a></li>
+<li><a href="#total-return">配当金と株価を合わせた運用成果</a></li>
+<li><a href="#checklist">銘柄を確認するときのチェック項目</a></li>
+<li><a href="#sources">公式情報・参考資料</a></li>
+</ol></nav>
+
+<h2 id="dividend-basics">1. 株式の配当金とは？</h2>
+<p>配当金は、企業が株主に対して、事業で得た利益などを原資として支払う金銭です。株主は会社の株式を保有することで、会社が決定した配当を受け取る権利を得る場合があります。配当を実施するか、いくら支払うか、いつ支払うかは、会社の方針や業績、財務状況、株主総会・取締役会などの決定に基づきます。</p>
+<p>企業によっては年1回、年2回など複数回配当を行います。一方、成長投資や財務基盤の強化を優先して配当を行わない企業もあります。業績が悪化した場合などには、配当の減額（減配）や無配への変更もあり得ます。配当金は預金利息のように、あらかじめ決まった金額が必ず支払われるものではありません。</p>
+<p>配当金は、企業が株主へ利益を還元する方法の一つです。企業によっては、自社株買いなど別の方法で株主還元を行うこともあります。配当額だけで企業の価値や投資成果を判断せず、事業の成長性や財務状況も合わせて確認しましょう。</p>
+<p class="related-inline">投資信託から支払われる分配金は、株式の配当金とは仕組みが異なります。普通分配金・元本払戻金や基準価額への影響は、<a href="investment-trust-distributions.html">「投資信託の分配金とは？」</a>で解説しています。</p>
+
+<h2 id="yield">2. 配当金・配当利回りの計算方法</h2>
+<p>受け取る配当金の概算は、1株あたりの配当金に保有株数を掛けて考えます。配当利回りは、1年間の1株あたり配当金を株価で割った割合です。</p>
+<div class="table-wrap"><table><thead><tr><th>指標</th><th>計算方法</th><th>意味</th></tr></thead><tbody>
+<tr><th>年間配当金（税引前）</th><td>1株あたり年間配当金 × 保有株数</td><td>保有株数に応じた年間配当の概算</td></tr>
+<tr><th>配当利回り</th><td>1株あたり年間配当金 ÷ 株価 × 100</td><td>現在の株価に対する年間配当予想の割合</td></tr>
+</tbody></table></div>
+<h3>計算例：株価2,000円、年間配当60円の場合</h3>
+<p>ある企業の株価が2,000円、1株あたりの年間配当予想が60円なら、配当利回りは次のようになります。</p>
+<div class="callout"><p><strong>60円 ÷ 2,000円 × 100 ＝ 3.0%</strong></p><p>100株を保有している場合、年間配当金の税引前概算は60円 × 100株 ＝ 6,000円です。</p></div>
+<p>この例は、年間配当が予想どおり支払われ、株数が変わらないと仮定した単純計算です。実際の配当額は企業の決定によって変更される場合があります。中間配当と期末配当がある企業では、それぞれの予想額を合計して年間配当を確認します。</p>
+<p>配当利回りは株価が変わると変化します。配当予想が変わらなくても、株価が下がれば計算上の利回りは高くなります。したがって、利回りが上昇した理由が配当の増額なのか、株価の下落なのかを分けて見ることが重要です。</p>
+
+<h2 id="schedule">3. 配当を受け取るための日程</h2>
+<p>配当を受け取るには、企業が定める基準日に株主名簿へ記載される必要があります。日本の上場株式では、株式の受渡しに必要な営業日を考慮するため、基準日当日に買えばよいわけではありません。</p>
+<div class="diagram"><svg viewBox="0 0 720 250" role="img" aria-labelledby="date-title date-desc"><title id="date-title">配当を受け取るための日程</title><desc id="date-desc">権利付き最終売買日、権利落ち日、権利確定日の順に並ぶ。配当を受け取るには権利付き最終売買日までに買い付けて保有する。</desc>
+<line x1="92" y1="106" x2="628" y2="106" stroke="#b8c7cc" stroke-width="7" stroke-linecap="round"/>
+<g><circle cx="115" cy="106" r="18" fill="#b85d3c"/><rect x="20" y="25" width="190" height="55" rx="12" fill="#fff0e8" stroke="#dba58d"/><text x="115" y="48" text-anchor="middle" font-size="17" font-weight="800" fill="#873f29">権利付き最終日</text><text x="115" y="68" text-anchor="middle" font-size="13" fill="#536879">この日までに買う</text><text x="115" y="151" text-anchor="middle" font-size="15" font-weight="700" fill="#873f29">保有が必要</text></g>
+<g><circle cx="360" cy="106" r="18" fill="#d58a43"/><rect x="265" y="25" width="190" height="55" rx="12" fill="#fff5e8" stroke="#e4c28e"/><text x="360" y="48" text-anchor="middle" font-size="17" font-weight="800" fill="#875b24">権利落ち日</text><text x="360" y="68" text-anchor="middle" font-size="13" fill="#536879">この日以降の購入は対象外</text><text x="360" y="151" text-anchor="middle" font-size="15" fill="#536879">売却しても権利は残る</text></g>
+<g><circle cx="605" cy="106" r="18" fill="#176d65"/><rect x="510" y="25" width="190" height="55" rx="12" fill="#e8f5f1" stroke="#a8d4c8"/><text x="605" y="48" text-anchor="middle" font-size="17" font-weight="800" fill="#15594f">権利確定日</text><text x="605" y="68" text-anchor="middle" font-size="13" fill="#536879">株主名簿の基準日</text><text x="605" y="151" text-anchor="middle" font-size="15" fill="#536879">株主を確定する日</text></g>
+<text x="360" y="214" text-anchor="middle" font-size="14" fill="#536879">通常は権利確定日の2営業日前が権利付き最終日</text></svg><figcaption>国内上場株式の一般的な日程の考え方です。休日や銘柄ごとの基準日により実際の日付は変わります。</figcaption></div>
+<ul>
+<li><strong>権利付き最終日：</strong>配当を受け取る権利を得るために、原則としてこの日の取引終了時点までに株式を買い付けて保有しておく必要がある最終売買日。</li>
+<li><strong>権利落ち日：</strong>この日に買い付けても、通常、その基準日の配当を受け取る権利は得られない日。権利付き最終日の翌営業日です。</li>
+<li><strong>権利確定日：</strong>企業が定める基準日。株主名簿に記載された株主を確定する日です。</li>
+</ul>
+<p>一般的には、権利確定日の2営業日前が権利付き最終日、1営業日前が権利落ち日です。ただし、銘柄ごとに基準日が異なり、臨時の基準日が設けられることもあります。購入前に企業のIR情報や証券取引所・証券会社の最新日程を確認してください。</p>
+<p>配当金の実際の支払日は、権利確定日とは別です。決算や株主総会などの手続きを経て、後日支払われます。支払時期は企業の決算期や配当方針によって異なります。</p>
+
+<h2 id="ex-dividend">4. 権利落ち日に株価はどう動く？</h2>
+<p>配当を受け取る権利がなくなる権利落ち日には、理論上、配当相当額だけ株価が下がる要因が生じます。株式を買う人にとって、配当を受け取る権利が付いていない株式の価値は、その分だけ低く評価されると考えられるためです。</p>
+<p>ただし、実際の株価は企業業績、市場全体の動き、金利、需給、ニュースなど複数の要因で変動します。配当額と同じだけ必ず下落するわけでも、権利落ち後に必ず値下がりするわけでもありません。</p>
+<p class="note">配当を受け取るためだけに権利付き最終日に株を買えば、配当分だけ確実に得をするわけではありません。購入価格と権利落ち後の株価、税金、売買手数料を含めて考える必要があります。</p>
+
+<h2 id="high-yield">5. 配当利回りが高い株を選べばよい？</h2>
+<p>配当利回りが高いことは、投資を検討する際の一つの情報ですが、高いほど優れた銘柄という意味ではありません。株価が急落して利回りが高く見えている場合や、業績悪化によって将来の減配が懸念されている場合もあります。</p>
+<h3>配当性向を確認する</h3>
+<p>配当性向は、企業の利益のうち、どの程度を配当として株主に還元したかを見る指標です。一般的には、年間配当総額を当期純利益で割って計算します。1株あたりの数値を使う場合は、1株あたり配当金 ÷ 1株あたり利益（EPS）で表します。</p>
+<p>配当性向が高い場合、利益の多くを配当に回している可能性があります。ただし、適切な水準は業種、利益の変動、成長投資の必要性、財務状況、会社の配当方針によって異なります。利益が一時的に落ち込むと、配当額を維持していても配当性向が高くなることがあります。赤字や一時的な利益で数値が大きく変わる場合は、単年度だけで判断しないことが大切です。</p>
+<h3>配当を続けられるかを複数の情報で見る</h3>
+<ul>
+<li><strong>業績：</strong>売上高・営業利益・当期純利益の推移と、利益の変動要因。</li>
+<li><strong>キャッシュフロー：</strong>営業活動で現金を生み出せているか、設備投資や借入返済などに必要な資金はどれくらいか。</li>
+<li><strong>財務状況：</strong>借入金、自己資本、資金繰りなどに無理がないか。</li>
+<li><strong>配当方針：</strong>累進配当、配当性向目標、DOE（株主資本配当率）など、会社がどの指標を重視しているか。</li>
+<li><strong>配当の内訳：</strong>通常の配当か、記念配当・特別配当など一時的な上乗せが含まれていないか。</li>
+</ul>
+<p>企業の決算短信、決算説明資料、有価証券報告書、配当方針の説明などを確認し、配当予想の修正や減配の可能性も考慮します。配当性向が低ければ必ず安全、高ければ必ず危険という単純な基準はありません。</p>
+
+<h2 id="tax-nisa">6. 配当金の税金とNISA</h2>
+<h3>課税口座で受け取る場合</h3>
+<p>国内上場株式の配当金は、一般的な個人株主の場合、支払時に所得税・復興特別所得税15.315%、住民税5%、合計20.315%が源泉徴収されます。たとえば税引前の配当金が6,000円なら、税額は単純計算で約1,219円、受取額は約4,781円です。実際の税額・端数処理は支払条件などによって異なります。</p>
+<p>上場株式等の配当所得には、確定申告をしない方法のほか、一定の条件のもとで総合課税または申告分離課税を選択できる場合があります。総合課税では配当控除の対象になる場合があり、申告分離課税では上場株式等の譲渡損失との損益通算が可能な場合があります。一方、確定申告をすると合計所得金額や扶養・保険料などの判定に影響する場合もあります。どの方法が有利かは所得状況などによって異なるため、国税庁の最新情報や税理士等に確認してください。</p>
+<h3>NISAで配当金を非課税にする条件</h3>
+<p>NISA口座で保有する国内上場株式の配当金を非課税で受け取るには、証券会社を通じて配当金を受け取る<strong>「株式数比例配分方式」</strong>を選択しておく必要があります。銀行口座で受け取る方式や配当金領収証方式など、別の受取方法ではNISA口座で保有していても課税される場合があります。</p>
+<div class="table-wrap"><table><thead><tr><th>配当金の受取方法</th><th>NISAで保有する国内上場株式の配当</th></tr></thead><tbody>
+<tr><th>株式数比例配分方式</th><td>所定の条件を満たす場合、非課税</td></tr>
+<tr><th>登録配当金受領口座方式・個別銘柄指定方式</th><td>原則として20.315%が源泉徴収される</td></tr>
+<tr><th>配当金領収証方式</th><td>原則として20.315%が源泉徴収される</td></tr>
+</tbody></table></div>
+<p>受取方式の変更には手続きや反映までの時間がかかることがあります。配当基準日より前に、利用している証券会社で登録状況を確認してください。複数の証券会社に口座がある場合、受取方式の設定が他口座の上場株式にも関係することがあるため、変更時は証券会社の説明を確認しましょう。</p>
+<p>NISAでは、国内上場株式は原則として成長投資枠で購入します。つみたて投資枠は、金融庁の基準を満たす一定の投資信託・ETFが対象で、個別企業の株式を直接購入する枠ではありません。NISA口座であっても、株価下落による損失がなくなるわけではありません。</p>
+<p class="related-inline">NISAの年間投資枠・非課税保有限度額・売却後の枠の扱いは、<a href="nisa-basics.html">「新NISAとは？」</a>で確認できます。</p>
+
+<h2 id="total-return">7. 配当金と株価を合わせた運用成果</h2>
+<p>株式投資の成果は、受け取った配当金だけでは判断できません。保有期間中の株価変動と配当金を合わせて考える必要があります。単純化した税引前のトータルリターンは、次の式で表せます。</p>
+<div class="callout"><strong>トータルリターン（概算）</strong><p>（売却時の株価 − 購入時の株価 ＋ 受取配当金） ÷ 購入時の株価 × 100</p></div>
+<p>たとえば、1株2,000円で購入し、保有期間中に配当金を60円受け取り、売却時の株価が1,900円なら、配当を含む損益は1,900円 − 2,000円 ＋ 60円 ＝ マイナス40円です。配当を受け取っていても、株価下落を合わせると投資成果がマイナスになることがあります。</p>
+<p>この例は1株あたりの単純計算で、税金・手数料・配当の再投資・保有期間中の追加売買などを含みません。実際の成果を比較するときは、投資期間と税引前・税引後の条件をそろえましょう。</p>
+<p class="related-inline">値下がりによる損失と回復に必要な上昇率、株式投資の主なリスクは、<a href="risk-return-basics.html">「投資のリスクとリターンとは？」</a>で解説しています。</p>
+
+<h2 id="checklist">8. 銘柄を確認するときのチェック項目</h2>
+<ul>
+<li>会社が公表している年間配当予想と、その基準日・発表日</li>
+<li>配当利回りの計算に使った株価と、配当予想が更新されていないか</li>
+<li>過去数年の配当実績、増配・減配・無配の履歴</li>
+<li>配当性向だけでなく、利益・営業キャッシュフロー・財務状況</li>
+<li>配当方針と、記念配当・特別配当など一時的な要因</li>
+<li>権利付き最終日、権利落ち日、権利確定日、実際の支払日</li>
+<li>NISAを利用する場合は、成長投資枠の対象か、配当受取方式が株式数比例配分方式か</li>
+<li>配当金と株価変動を合わせたトータルリターン、売買コスト・税金</li>
+</ul>
+<p>配当の予想や方針は、決算発表や業績の変化に伴って修正される場合があります。証券会社の画面に表示される利回りだけで判断せず、企業のIR情報や決算資料など一次情報も確認しましょう。</p>
+
+<h2 id="sources">9. 公式情報・参考資料</h2>
+<ul class="sources">
+<li><a href="https://www.j-flec.go.jp/links/jikan/word/048.html" target="_blank" rel="noopener noreferrer">J-FLEC：権利落ち、配当落ち</a> — 権利付き最終日・権利落ち日・権利確定日の関係</li>
+<li><a href="https://www.jpx.co.jp/listing/others/ex-rights/" target="_blank" rel="noopener noreferrer">日本取引所グループ：配当落・権利落等情報</a> — 直近の配当落日・権利落日等の確認</li>
+<li><a href="https://www.j-flec.go.jp/links/jikan/word/110.html" target="_blank" rel="noopener noreferrer">J-FLEC：配当性向</a> — 配当性向の意味と留意点</li>
+<li><a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1330.htm" target="_blank" rel="noopener noreferrer">国税庁：No.1330 配当金を受け取ったとき（配当所得）</a> — 配当所得と確定申告不要制度</li>
+<li><a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1331.htm" target="_blank" rel="noopener noreferrer">国税庁：No.1331 上場株式等の配当等に係る申告分離課税制度</a> — 税率・申告分離課税・損益通算</li>
+<li><a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1250.htm" target="_blank" rel="noopener noreferrer">国税庁：No.1250 配当控除</a> — 総合課税を選択した場合の配当控除</li>
+<li><a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1535.htm" target="_blank" rel="noopener noreferrer">国税庁：No.1535 NISA制度</a> — NISA口座の配当等の非課税条件</li>
+<li><a href="https://www.jsda.or.jp/shijyo/seido/tax/nisahaitoukin.html" target="_blank" rel="noopener noreferrer">日本証券業協会：NISA口座における上場株式の配当金等受取方式に関する注意事項</a> — 株式数比例配分方式の必要性</li>
+<li><a href="https://www.fsa.go.jp/policy/nisa2/know/" target="_blank" rel="noopener noreferrer">金融庁：NISAを知る</a> — 成長投資枠・つみたて投資枠の対象と制度概要</li>
+</ul>
+<h2>まとめ</h2>
+<p>配当金は企業の株主還元の一つですが、支払いは保証されず、配当利回りが高いだけで有利とは限りません。配当予想の根拠、配当性向、利益やキャッシュフロー、財務状況を確認し、株価変動と配当金を合わせた成果で考えましょう。NISAで国内上場株式の配当を非課税にする場合は、株式数比例配分方式の登録も忘れずに確認してください。</p>
+<p class="meta">本記事は国内上場株式の一般的な配当制度を解説するもので、特定銘柄の購入を勧めるものではありません。税務上の取扱いは保有状況や申告方法などで異なります。制度・税務の確認日：2026年10月30日。</p>
+</article></main>
+<footer><div class="wrap"><strong>Invest Atlas</strong><p>投資を理解するための解説・比較ガイド</p><p><a href="./">トップページ</a></p><p><a href="editorial-policy.html">編集方針・免責事項</a></p></div></footer>
+</body></html>

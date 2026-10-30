@@ -205,7 +205,13 @@
         },
         {
           "id": "dividends-shareholder-returns",
-          "label": "配当・株主還元"
+          "label": "配当・株主還元",
+          "children": [
+            {
+              "id": "stock-dividend-basics",
+              "label": "配当金・利回り・税金"
+            }
+          ]
         }
       ]
     }
@@ -693,7 +699,8 @@
         "choose-investment-trust-nisa.html",
         "compound-growth.html",
         "nisa-basics.html",
-        "investment-trust-index-active.html"
+        "investment-trust-index-active.html",
+        "stock-dividends.html"
       ],
       "publishedAt": "2026-10-27",
       "updatedAt": "2026-10-27",
@@ -914,6 +921,39 @@
       "publishOrder": 21,
       "mainTitle": "債券投資とは？",
       "subtitle": "利回り・価格変動・リスクの仕組み"
+    },
+    {
+      "slug": "stock-dividends.html",
+      "title": "株式の配当金とは？配当利回り・権利確定日・税金の仕組みを解説",
+      "category": "companies",
+      "subcategory": "dividends-shareholder-returns",
+      "topic": "stock-dividend-basics",
+      "tags": [
+        "株式",
+        "配当金",
+        "配当利回り",
+        "権利確定日",
+        "権利付き最終日",
+        "権利落ち日",
+        "配当性向",
+        "高配当株",
+        "NISA",
+        "税金",
+        "株主還元"
+      ],
+      "summary": "国内上場株式の配当金の仕組み、配当利回りの計算、権利付き最終日・権利落ち日、NISAの受取方式、配当性向や減配リスクを解説。配当金だけでなく株価変動を含むトータルリターンの見方も整理。",
+      "status": "published",
+      "related": [
+        "investment-trust-distributions.html",
+        "nisa-basics.html",
+        "risk-return-basics.html"
+      ],
+      "publishedAt": "2026-10-30",
+      "updatedAt": "2026-10-30",
+      "thumbnail": "thumbnails/stock-dividends.svg",
+      "publishOrder": 22,
+      "mainTitle": "株式の配当金とは？",
+      "subtitle": "配当利回り・権利確定日・税金の仕組み"
     }
   ],
   "pages": [
