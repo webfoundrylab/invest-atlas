@@ -49,8 +49,8 @@
 <g font-family="sans-serif" text-anchor="middle" font-weight="750">
  <text x="326" y="510" font-size="32" fill="#19384b">大型・中型株が中心</text>
  <text x="874" y="510" font-size="32" fill="#19384b">小型株まで含む</text>
- <text x="326" y="540" font-size="25" fill="#54717a">4商品</text>
- <text x="874" y="540" font-size="25" fill="#80677b">3商品</text>
+ <text x="326" y="540" font-size="30" fill="#54717a">4商品</text>
+ <text x="874" y="540" font-size="30" fill="#80677b">3商品</text>
 </g>
 <!-- Shared comparison lenses -->
 <g font-family="sans-serif" text-anchor="middle" font-size="32" font-weight="800">
