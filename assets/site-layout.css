@@ -9,7 +9,8 @@
   --ia-layout-width: 1440px;
   --ia-header-y-padding: 18px;
   --ia-content-radius: 14px;
-  --ia-content-padding: clamp(22px, 4vw, 42px);
+  --ia-content-padding: clamp(18px, 3vw, 36px);
+  --ia-article-max-width: 1120px;
   --ia-layout-gap: 26px;
 }
 * { box-sizing: border-box; }
@@ -26,13 +27,13 @@ main.wrap { margin-top: 22px; margin-bottom: 52px; }
 .content, .article-page-content .article {
   min-width: 0;
   width: 100%;
-  max-width: none;
   margin: 0;
   padding: var(--ia-content-padding);
   background: #fff;
   border: 1px solid var(--ia-line);
   border-radius: var(--ia-content-radius);
 }
+.article-page-content .article { max-width: var(--ia-article-max-width); }
 .crumbs, .article-category-crumbs { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 14px; font-size: .9rem; }
 .content h1 { font-size: clamp(1.8rem, 4vw, 2.65rem); line-height: 1.35; margin: .5em 0; }
 @media (max-width: 850px) {
