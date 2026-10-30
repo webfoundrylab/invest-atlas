@@ -790,46 +790,6 @@
       "subtitle": "投資対象・分散・選び方を比較"
     },
     {
-      "slug": "global-equity-fund-selection.html",
-      "title": "全世界株式ファンドの選び方｜指数・運用方式・コストを比較",
-      "category": "funds",
-      "subcategory": "investment-trust-basics",
-      "tags": [
-        "全世界株式",
-        "商品比較",
-        "ファンド選び",
-        "MSCI ACWI",
-        "FTSE Global All Cap",
-        "実質コスト",
-        "信託報酬",
-        "指数との連動差",
-        "純資産総額",
-        "分配金",
-        "NISA",
-        "投資信託",
-        "ETF",
-        "S&P 500"
-      ],
-      "summary": "全世界株式ファンドの違いと選び方を解説。指数・投資対象地域・企業規模、運用方式、実質コスト、指数との連動差、純資産総額、分配金、NISAや積立の使いやすさなど、費用以外の比較軸も整理します。",
-      "status": "published",
-      "related": [
-        "orbukan-guide.html",
-        "global-equity-indexes.html",
-        "global-vs-sp500.html",
-        "investment-trust-fees.html",
-        "investment-trust-actual-cost.html",
-        "investment-trust-distributions.html",
-        "investment-trust-vs-etf.html",
-        "choose-investment-trust-nisa.html"
-      ],
-      "publishedAt": "2026-10-29",
-      "updatedAt": "2026-10-29",
-      "thumbnail": "thumbnails/global-equity-fund-selection.svg",
-      "publishOrder": 18,
-      "mainTitle": "全世界株式の選び方",
-      "subtitle": "指数・運用方式・コストを比較"
-    },
-    {
       "slug": "orbukan-guide.html",
       "title": "全世界株式ファンド比較｜オルカン・楽天プラス・SBIなどの違い",
       "category": "funds",
@@ -851,9 +811,10 @@
         "はじめてのNISA",
         "SBI・全世界株式",
         "SBI・V・全世界株式",
-        "全世界株式ファンド比較"
+        "全世界株式ファンド比較",
+        "ファンド選び"
       ],
-      "summary": "国内の全世界株式インデックス投資信託7商品を比較。指数、運用会社、設定日、信託報酬・実質コスト、運用方式、購入・積立時の確認点を整理し、費用指標の違いも解説。",
+      "summary": "オルカン、楽天・プラス、Tracers、はじめてのNISA、楽天・VT、SBIの全世界株式インデックス投資信託を比較。指数の選び方から同じ指数の商品比較、運用方式、信託報酬・実質コスト、運用実績、NISA対象枠まで整理。",
       "status": "published",
       "related": [
         "global-equity-indexes.html",
