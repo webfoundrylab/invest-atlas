@@ -813,7 +813,7 @@
     },
     {
       "slug": "orbukan-guide.html",
-      "title": "全世界株式ファンド比較｜オルカン・楽天プラス・SBIなどの違い",
+      "title": "全世界株式の投資信託を比較｜オルカン・楽天・SBIなど7商品",
       "category": "funds",
       "subcategory": "investment-trust-basics",
       "tags": [
@@ -821,11 +821,9 @@
         "全世界株式",
         "eMAXIS Slim",
         "楽天VT",
-        "VT",
         "MSCI ACWI",
         "FTSE Global All Cap",
         "投資信託",
-        "ETF",
         "小型株",
         "NISA",
         "楽天・プラス・オールカントリー",
@@ -833,10 +831,10 @@
         "はじめてのNISA",
         "SBI・全世界株式",
         "SBI・V・全世界株式",
-        "全世界株式ファンド比較",
+        "全世界株式の投資信託",
         "ファンド選び"
       ],
-      "summary": "オルカン、楽天・プラス、Tracers、はじめてのNISA、楽天・VT、SBIの全世界株式インデックス投資信託を比較。指数別の商品群、投資先ETFの構造、信託報酬・実質コスト、同一期間の指数との連動差、運用実績、NISA対象枠と商品ごとの違いを整理。",
+      "summary": "オルカン、楽天・プラス、Tracers、はじめてのNISA、楽天・VT、SBIなど国内の全世界株式インデックス投資信託7商品を比較。指数別の商品群、投資先ETFを活用する運用構造、信託報酬・実質コスト、指数との連動差、運用実績、NISA対象枠と商品ごとの違いを整理。",
       "status": "published",
       "related": [
         "global-equity-indexes.html",
@@ -848,11 +846,11 @@
         "risk-return-basics.html"
       ],
       "publishedAt": "2026-10-29",
-      "updatedAt": "2026-10-30",
+      "updatedAt": "2026-10-31",
       "thumbnail": "thumbnails/orbukan-guide.svg",
       "publishOrder": 19,
-      "mainTitle": "全世界株式ファンド比較",
-      "subtitle": "オルカン・楽天・SBIなどの違い"
+      "mainTitle": "全世界株式の投資信託を比較",
+      "subtitle": "オルカン・楽天・SBIなど7商品"
     },
     {
       "slug": "global-equity-indexes.html",
