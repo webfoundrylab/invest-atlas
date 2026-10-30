@@ -26,6 +26,16 @@
         {
           "id": "diversification",
           "label": "分散投資・資産配分"
+        },
+        {
+          "id": "bond-investing",
+          "label": "債券投資",
+          "children": [
+            {
+              "id": "bond-basics",
+              "label": "債券の仕組み・利回り・リスク"
+            }
+          ]
         }
       ]
     },
@@ -356,7 +366,8 @@
         "before-you-invest.html",
         "ai-semiconductor-investing.html",
         "investment-trust-investment-targets.html",
-        "investment-trust-nav.html"
+        "investment-trust-nav.html",
+        "bonds-basics.html"
       ],
       "subcategory": "fund-etf-comparison",
       "publishedAt": "2026-10-24",
@@ -550,7 +561,8 @@
         "investment-trust-nav.html",
         "risk-return-basics.html",
         "diversification-basics.html",
-        "orbukan-guide.html"
+        "orbukan-guide.html",
+        "bonds-basics.html"
       ],
       "publishedAt": "2026-10-25",
       "updatedAt": "2026-10-26",
@@ -582,7 +594,8 @@
         "investment-trust-fees.html",
         "nisa-basics.html",
         "risk-return-basics.html",
-        "diversification-basics.html"
+        "diversification-basics.html",
+        "bonds-basics.html"
       ],
       "subcategory": "investing-basics",
       "publishedAt": "2026-10-26",
@@ -713,7 +726,8 @@
         "ai-semiconductor-investing.html",
         "compound-growth.html",
         "diversification-basics.html",
-        "orbukan-guide.html"
+        "orbukan-guide.html",
+        "bonds-basics.html"
       ],
       "publishedAt": "2026-10-28",
       "updatedAt": "2026-10-28",
@@ -745,7 +759,8 @@
         "simple-investing-guide.html",
         "regular-investing.html",
         "investment-trust-investment-targets.html",
-        "orbukan-guide.html"
+        "orbukan-guide.html",
+        "bonds-basics.html"
       ],
       "publishedAt": "2026-10-28",
       "updatedAt": "2026-10-28",
@@ -863,6 +878,42 @@
       "publishOrder": 20,
       "mainTitle": "全世界株式とは？",
       "subtitle": "MSCI ACWIとFTSEの違い"
+    },
+    {
+      "slug": "bonds-basics.html",
+      "title": "債券投資とは？利率・利回り・価格変動とリスクを解説",
+      "category": "basics",
+      "subcategory": "bond-investing",
+      "topic": "bond-basics",
+      "tags": [
+        "債券",
+        "債券投資",
+        "国債",
+        "社債",
+        "利率",
+        "利回り",
+        "金利",
+        "デュレーション",
+        "債券投資信託",
+        "債券ETF",
+        "信用リスク",
+        "為替リスク"
+      ],
+      "summary": "債券の仕組み、国債・社債の違い、利率と利回り、金利変動による価格の動き、デュレーション、個別債券と債券ファンドの違い、主なリスクを解説。",
+      "status": "published",
+      "related": [
+        "investment-trust-investment-targets.html",
+        "risk-return-basics.html",
+        "investment-trust-vs-etf.html",
+        "diversification-basics.html",
+        "simple-investing-guide.html"
+      ],
+      "publishedAt": "2026-10-30",
+      "updatedAt": "2026-10-30",
+      "thumbnail": "thumbnails/bonds-basics.svg",
+      "publishOrder": 21,
+      "mainTitle": "債券投資とは？",
+      "subtitle": "利回り・価格変動・リスクの仕組み"
     }
   ],
   "pages": [
