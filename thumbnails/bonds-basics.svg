@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f8eee5"/><stop offset="1" stop-color="#f1f5f8"/></linearGradient></defs>
+<rect width="1200" height="675" fill="url(#bg)"/>
+<g id="invest-atlas-watermark" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="270" letter-spacing="-8" fill="#a35e39" opacity="0.075"><text x="18" y="400">Invest</text><text x="1180" y="605" text-anchor="end">Atlas</text></g>
+<rect x="24" y="22" width="1152" height="150" rx="22" fill="#fff" stroke="#e4c7b4" stroke-width="2"/>
+<text x="600" y="57" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="800" letter-spacing="1" fill="#a6532e">BOND INVESTING</text>
+<text x="600" y="116" text-anchor="middle" font-family="sans-serif" font-size="48" font-weight="800" fill="#10243a">債券投資とは？</text>
+<text x="600" y="157" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="650" fill="#536879">利回り・価格変動・リスクの仕組み</text>
+<g transform="translate(110 205)">
+<path d="M60 80 L60 365 M60 365 L980 365" fill="none" stroke="#8295a0" stroke-width="5" stroke-linecap="round"/>
+<path d="M120 135 C300 135 365 155 480 225 S720 320 900 320" fill="none" stroke="#176d65" stroke-width="15" stroke-linecap="round"/>
+<path d="M120 320 C300 320 365 295 480 225 S720 130 900 130" fill="none" stroke="#c36b3e" stroke-width="15" stroke-linecap="round"/>
+<circle cx="480" cy="225" r="22" fill="#fff" stroke="#10243a" stroke-width="8"/>
+<g font-family="sans-serif" font-weight="800" font-size="31"><text x="130" y="95" fill="#176d65">金利 ↓</text><text x="900" y="95" text-anchor="end" fill="#176d65">債券価格 ↑</text><text x="130" y="405" fill="#a6532e">金利 ↑</text><text x="900" y="405" text-anchor="end" fill="#a6532e">債券価格 ↓</text></g>
+<g fill="#536879" font-family="sans-serif" font-size="22" font-weight="650"><text x="480" y="275" text-anchor="middle">逆方向に動きやすい</text></g>
+</g>
+</svg>
