@@ -150,6 +150,7 @@ a{color:#176d65;text-underline-offset:3px}a:hover{color:#0b4843}
 .category-index-children li span{color:#71818d;font-size:.75rem;white-space:nowrap}
 .category-index-more{margin-top:auto;padding-top:10px;font-size:.88rem;font-weight:800;text-decoration:none}
 .category-index-back{display:inline-block;margin-bottom:14px;font-size:.88rem;font-weight:700}
+.category-index-footer-inner{width:min(1160px,calc(100% - 32px));margin:0 auto}
 footer{margin-top:40px;background:#0c1c2b;color:#d7e1e8;padding:22px 0}
 @media(max-width:700px){.category-index-wrap{margin:16px auto 40px}.category-index-grid{grid-template-columns:1fr;gap:12px}.category-index-card{padding:16px}.category-index-children{grid-template-columns:1fr}}
 </style>
@@ -164,7 +165,7 @@ footer{margin-top:40px;background:#0c1c2b;color:#d7e1e8;padding:22px 0}
 <div class="category-index-grid">''' + ''.join(cards) + '''</div>
 </section>
 </main>
-<footer><div class="category-index-wrap">Invest Atlas｜投資を理解するための解説・比較ガイド</div></footer>
+<footer><div class="category-index-footer-inner">Invest Atlas｜投資を理解するための解説・比較ガイド</div></footer>
 </body>
 </html>
 '''
