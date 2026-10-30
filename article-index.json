@@ -960,6 +960,12 @@
       "title": "投資の羅針盤｜比較・検証から考える投資の指針",
       "status": "published",
       "summary": "公開済みの記事や公式情報を横断し、投資対象・資産配分・投資タイミングについて条件ごとの判断をまとめる中核ページ。比較と検証の蓄積に合わせて随時更新する。"
+    },
+    {
+      "slug": "getting-started.html",
+      "title": "初めての方へ｜Invest Atlasの使い方と学び方",
+      "status": "published",
+      "summary": "Invest Atlasの2つの入口、投資の羅針盤を使った学びと判断の流れ、記事の探し方を案内するページ。"
     }
   ]
 }
