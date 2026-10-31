@@ -2192,3 +2192,5 @@
 - risk-return-basics.html、maximum-drawdown.html、investment-trust-index-active.html から、新記事の内容が必要になる文脈に内部リンクを追加。記事台帳の関連記事候補にも相互関係を登録。
 - 参考資料：資産運用業協会の用語集・Q&A、日本銀行のコール市場統計、Morningstarの計算方法説明、CFA Instituteの資料。
 - GitHub main への反映コミット：記事 aee965c3、サムネイル 70c43070、記事台帳 c5616402、内部リンク更新 a734801e / 3af12eca / 2bc168d6。Actionsの検証・デプロイ結果と公開画面の確認は別途実施する。
+
+- 最終反映後のGitHub Actions run 41207646965 は build・記事台帳/サイトマップ検証・Pages deploy がすべて成功。GitHub上のHTML・記事台帳・関連記事・アンカー・サムネイル登録の静的確認も完了。公開ページの独立したブラウザ表示確認は未実施。
