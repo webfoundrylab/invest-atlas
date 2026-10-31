@@ -2194,3 +2194,10 @@
 - GitHub main への反映コミット：記事 aee965c3、サムネイル 70c43070、記事台帳 c5616402、内部リンク更新 a734801e / 3af12eca / 2bc168d6。Actionsの検証・デプロイ結果と公開画面の確認は別途実施する。
 
 - 最終反映後のGitHub Actions run 41207646965 は build・記事台帳/サイトマップ検証・Pages deploy がすべて成功。GitHub上のHTML・記事台帳・関連記事・アンカー・サムネイル登録の静的確認も完了。公開ページの独立したブラウザ表示確認は未実施。
+
+## 2026-10-31 シャープレシオ・最大ドローダウン記事の共通レイアウト修正
+- ユーザー指摘により、両記事のHTMLがビルド時の共通記事レイアウトに適した基本構造になっていなかった点を修正。
+- sharpe-ratio.html と maximum-drawdown.html の main を article-wrap から wrap に変更し、footer も共通 wrap に統一。独自パンくずを削除し、scripts/build-site.py が生成するカテゴリ階層パンくずとの二重表示を防止。
+- 共通ビルド処理 inject_article_category_nav() により、共通ヘッダー、パンくず、PC用カテゴリサイドバー、スマートフォン用カテゴリツリーが挿入される構造に統一。本文・図解・比較表・参考資料は維持。
+- README.md に記事ページ共通レイアウトの必須ルールを追加。新規・修正時は main.wrap / article.article を使い、独自ヘッダー・パンくず・カテゴリナビや独自本文幅を実装しないことを明文化。
+- コミット：sharpe-ratio.html 46d823b3、maximum-drawdown.html 29f5aa4c、README.md 82a2ab43。GitHub Actions の再ビルド・デプロイ結果は確認待ち。
