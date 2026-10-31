@@ -952,6 +952,39 @@
       "publishOrder": 22,
       "mainTitle": "株式の配当金とは？",
       "subtitle": "配当利回り・権利確定日・税金の仕組み"
+    },
+    {
+      "slug": "maximum-drawdown.html",
+      "title": "最大ドローダウンとは？計算方法・回復期間・比較時の注意点を解説",
+      "category": "basics",
+      "tags": [
+        "最大ドローダウン",
+        "ドローダウン",
+        "最大下落率",
+        "下落率",
+        "回復期間",
+        "標準偏差",
+        "ボラティリティ",
+        "投資信託",
+        "リスク"
+      ],
+      "summary": "過去の高値から安値までの最大下落率を示す最大ドローダウンについて、計算式・具体例・回復期間・標準偏差との違い、投資信託や指数を比較するときの条件を解説。",
+      "status": "published",
+      "related": [
+        "risk-return-basics.html",
+        "diversification-basics.html",
+        "investment-trust-investment-targets.html",
+        "investment-trust-nav.html",
+        "investment-trust-distributions.html",
+        "orbukan-guide.html",
+        "bonds-basics.html"
+      ],
+      "publishedAt": "2026-10-31",
+      "updatedAt": "2026-10-31",
+      "thumbnail": "thumbnails/maximum-drawdown.svg",
+      "publishOrder": 23,
+      "mainTitle": "最大ドローダウンとは？",
+      "subtitle": "計算方法・回復期間・比較時の注意点を解説"
     }
   ],
   "pages": [
