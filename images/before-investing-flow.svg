@@ -1,1 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520"><title>投資を始める前の確認フロー</title><desc>生活資金の確保、目的と期間の整理、リスク確認、商品比較、少額からの検討という順序。</desc><rect width="1200" height="520" rx="28" fill="#f4f7f8"/><g font-family="sans-serif" text-anchor="middle" fill="#172b3d"><text x="600" y="65" font-size="36" font-weight="700">投資を始める前の5ステップ</text><g font-size="23" font-weight="700"><rect x="65" y="125" width="200" height="125" rx="18" fill="#fff" stroke="#b8d8d0" stroke-width="3"/><text x="165" y="170">1. 生活資金</text><text x="165" y="207" font-size="18" font-weight="400">予備費を確保</text><path d="M270 188h30l-10 -10m10 10-10 10" fill="none" stroke="#176d65" stroke-width="4"/><rect x="305" y="125" width="200" height="125" rx="18" fill="#fff" stroke="#b8d8d0" stroke-width="3"/><text x="405" y="170">2. 目的・期間</text><text x="405" y="207" font-size="18" font-weight="400">いつ使うお金か</text><path d="M510 188h30l-10 -10m10 10-10 10" fill="none" stroke="#176d65" stroke-width="4"/><rect x="545" y="125" width="200" height="125" rx="18" fill="#fff" stroke="#b8d8d0" stroke-width="3"/><text x="645" y="170">3. リスク</text><text x="645" y="207" font-size="18" font-weight="400">損失への備え</text><path d="M750 188h30l-10 -10m10 10-10 10" fill="none" stroke="#176d65" stroke-width="4"/><rect x="785" y="125" width="150" height="125" rx="18" fill="#fff" stroke="#b8d8d0" stroke-width="3"/><text x="860" y="170">4. 比較</text><text x="860" y="207" font-size="18" font-weight="400">費用・仕組み</text><path d="M940 188h30l-10 -10m10 10-10 10" fill="none" stroke="#176d65" stroke-width="4"/><rect x="975" y="125" width="160" height="125" rx="18" fill="#d9eee9" stroke="#b8d8d0" stroke-width="3"/><text x="1055" y="170">5. 無理なく</text><text x="1055" y="207" font-size="18" font-weight="400">金額を決める</text></g><rect x="150" y="315" width="900" height="105" rx="18" fill="#fff" stroke="#dce4e8" stroke-width="2"/><text x="600" y="355" font-size="24" font-weight="700">どの段階でも、わからない商品は急いで買わない</text><text x="600" y="390" font-size="20" fill="#526574">投資は元本割れの可能性があり、利益は保証されません</text></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1160" viewBox="0 0 1000 1160" role="img" aria-labelledby="title desc">
+<title id="title">投資を始める前に確認したい7つのこと</title>
+<desc id="desc">生活資金、目的と期間、投資額、値下がりへの耐性、投資対象、分散と運用方法、費用と税制の7項目を整理する。</desc>
+<rect width="1000" height="1160" rx="28" fill="#f2f6f7"/>
+<g font-family="'Noto Sans JP',sans-serif" fill="#172b3d">
+<text x="500" y="76" text-anchor="middle" font-size="42" font-weight="800">商品を選ぶ前に、7つを確認</text>
+<text x="500" y="119" text-anchor="middle" font-size="23" fill="#526574">自分の条件を整理するためのチェックポイント</text>
+<g font-size="28">
+<rect x="70" y="165" width="410" height="190" rx="22" fill="#fff" stroke="#b8d8d0" stroke-width="3"/>
+<circle cx="118" cy="213" r="27" fill="#176d65"/><text x="118" y="223" text-anchor="middle" fill="#fff" font-size="27" font-weight="800">1</text>
+<text x="165" y="220" font-weight="800">生活資金</text><text x="105" y="278" font-size="22" fill="#526574">生活費・予備費を投資資金と分ける</text>
+<rect x="520" y="165" width="410" height="190" rx="22" fill="#fff" stroke="#b8d8d0" stroke-width="3"/>
+<circle cx="568" cy="213" r="27" fill="#176d65"/><text x="568" y="223" text-anchor="middle" fill="#fff" font-size="27" font-weight="800">2</text>
+<text x="615" y="220" font-weight="800">目的と期間</text><text x="555" y="278" font-size="22" fill="#526574">何のために、いつ使うお金か</text>
+<rect x="70" y="385" width="410" height="190" rx="22" fill="#fff" stroke="#b8d8d0" stroke-width="3"/>
+<circle cx="118" cy="433" r="27" fill="#176d65"/><text x="118" y="443" text-anchor="middle" fill="#fff" font-size="27" font-weight="800">3</text>
+<text x="165" y="440" font-weight="800">投資額</text><text x="105" y="498" font-size="22" fill="#526574">家計に無理のない金額か</text>
+<rect x="520" y="385" width="410" height="190" rx="22" fill="#fff" stroke="#b8d8d0" stroke-width="3"/>
+<circle cx="568" cy="433" r="27" fill="#176d65"/><text x="568" y="443" text-anchor="middle" fill="#fff" font-size="27" font-weight="800">4</text>
+<text x="615" y="440" font-weight="800">値下がりへの耐性</text><text x="555" y="498" font-size="22" fill="#526574">どの程度の損失まで受け入れるか</text>
+<rect x="70" y="605" width="410" height="190" rx="22" fill="#fff" stroke="#b8d8d0" stroke-width="3"/>
+<circle cx="118" cy="653" r="27" fill="#176d65"/><text x="118" y="663" text-anchor="middle" fill="#fff" font-size="27" font-weight="800">5</text>
+<text x="165" y="660" font-weight="800">投資対象の理解</text><text x="105" y="718" font-size="22" fill="#526574">何に投資し、どう値動きするか</text>
+<rect x="520" y="605" width="410" height="190" rx="22" fill="#fff" stroke="#b8d8d0" stroke-width="3"/>
+<circle cx="568" cy="653" r="27" fill="#176d65"/><text x="568" y="663" text-anchor="middle" fill="#fff" font-size="27" font-weight="800">6</text>
+<text x="615" y="660" font-weight="800">分散と運用方法</text><text x="555" y="718" font-size="22" fill="#526574">投資先・購入時期・保有方針</text>
+<rect x="180" y="825" width="640" height="160" rx="22" fill="#e0f1ec" stroke="#8fc8b9" stroke-width="3"/>
+<circle cx="238" cy="875" r="27" fill="#176d65"/><text x="238" y="885" text-anchor="middle" fill="#fff" font-size="27" font-weight="800">7</text>
+<text x="285" y="882" font-weight="800">費用・税制・公式資料</text><text x="500" y="938" text-anchor="middle" font-size="22" fill="#526574">手数料・税金・商品条件を確認する</text>
+</g>
+<path d="M500 1005v45" stroke="#176d65" stroke-width="5" stroke-linecap="round"/><path d="M485 1037l15 18 15-18" fill="none" stroke="#176d65" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="120" y="1065" width="760" height="65" rx="18" fill="#10243a"/>
+<text x="500" y="1108" text-anchor="middle" font-size="25" font-weight="800" fill="#fff">条件を整理してから、商品を比較する</text>
+</g></svg>
