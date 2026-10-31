@@ -326,16 +326,20 @@
         "生活防衛資金",
         "投資目的",
         "投資期間",
+        "投資可能額",
         "リスク許容度",
-        "分散投資"
+        "分散投資",
+        "投資信託"
       ],
-      "summary": "生活資金・投資目的・期間・値下がりへの備え・分散・費用など、商品選びの前に確認したい7項目を整理。",
+      "summary": "生活資金・目的と期間・投資額・リスク許容度・投資対象・分散と運用方法・費用と税制。商品選びの前に確認したい7項目を整理。",
       "status": "published",
       "related": [
         "regular-investing.html",
         "nisa-basics.html",
-        "investment-trust-vs-etf.html",
-        "ai-semiconductor-investing.html",
+        "choose-investment-trust-nisa.html",
+        "investment-trust-investment-targets.html",
+        "investment-trust-fees.html",
+        "investment-trust-actual-cost.html",
         "simple-investing-guide.html",
         "risk-return-basics.html",
         "diversification-basics.html"
@@ -343,7 +347,7 @@
       "subcategory": "getting-started",
       "topic": "investment-preparation",
       "publishedAt": "2026-10-24",
-      "updatedAt": "2026-10-26",
+      "updatedAt": "2026-10-31",
       "thumbnail": "thumbnails/before-you-invest.svg",
       "publishOrder": 4,
       "mainTitle": "投資を始める前に",
