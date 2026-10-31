@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<script src="assets/display-mode.js"></script>
+<title>シャープレシオとは？計算方法・見方と投資信託の比較ポイント｜Invest Atlas</title>
+<meta name="description" content="シャープレシオは、リスクに対してどれだけの超過リターンを得たかを見る指標です。計算式、具体例、数値の読み方、年率換算、無リスク金利、最大ドローダウンとの違い、投資信託の比較での注意点を図解します。">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://webfoundrylab.github.io/invest-atlas/sharpe-ratio.html">
+<link rel="stylesheet" href="assets/site-layout.css">
+<link rel="stylesheet" href="assets/site-header.css">
+<meta name="theme-color" content="#10243a">
+<style>
+:root{--ink:#172b3d;--muted:#536879;--navy:#10243a;--teal:#087f75;--line:#d5e6eb;--paper:#f1f8fa}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.85 system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:#12665f;text-underline-offset:3px}
+.article-wrap{width:min(1040px,calc(100% - 32px));margin:26px auto 54px}
+.article{background:#fff;border:1px solid #dce4e8;border-radius:16px;padding:clamp(20px,4vw,44px);min-width:0}
+.eyebrow{font-size:.8rem;font-weight:800;letter-spacing:.08em;color:var(--teal)}
+h1{font-size:clamp(1.85rem,4vw,2.65rem);line-height:1.32;margin:.45em 0}
+.title-main,.title-subtitle{display:block}.title-subtitle{font-size:.62em;line-height:1.5;font-weight:650;color:#536879;margin-top:.22em}
+.lead{font-size:1.08rem;color:#40596a}
+.meta{font-size:.85rem;color:var(--muted)}
+.toc{margin:24px 0;padding:17px 21px;background:#f4f8f9;border:1px solid var(--line);border-radius:12px}
+.toc h2{font-size:1.08rem;margin:0 0 8px;border:0;padding:0}.toc ol{margin:0;padding-left:1.4em}.toc li{margin:.25em 0}
+.article h2{font-size:1.42rem;line-height:1.45;margin:2.1em 0 .65em;border-bottom:2px solid #dcebe9;padding-bottom:.4em}
+.article h3{font-size:1.12rem;margin:1.45em 0 .4em}.article p{margin:.85em 0}
+.callout{margin:20px 0;padding:15px 18px;background:#edf7f4;border-left:4px solid #168276;border-radius:8px}
+.note{margin:18px 0;padding:14px 16px;background:#fff7e9;border-left:4px solid #d99a43;border-radius:8px}
+.diagram{margin:24px 0;padding:14px;border:1px solid var(--line);border-radius:13px;background:#fbfdfd}
+.diagram svg{display:block;width:100%;height:auto}.diagram figcaption{margin-top:9px;font-size:.88rem;color:var(--muted)}
+.table-wrap{overflow-x:auto;margin:18px 0}table{width:100%;border-collapse:collapse;font-size:.93rem}th,td{padding:11px;border:1px solid var(--line);text-align:left;vertical-align:top}th{background:#edf4f5}
+.formula{margin:18px 0;padding:16px;background:#f2f6fa;border-radius:10px;text-align:center;font-size:1.05rem;font-weight:750;overflow-wrap:anywhere}
+.related-inline{margin:18px 0;padding:12px 15px;background:#f3f7f8;border-radius:9px}
+.source-list li{margin:.6em 0}
+footer{padding:24px 0 40px;color:var(--muted);font-size:.9rem}
+@media(max-width:600px){.article-wrap{width:calc(100% - 20px);margin:12px auto 32px}.article{padding:18px 15px}.article h2{font-size:1.28rem}.toc{padding:14px}.diagram{padding:8px}th,td{padding:8px;font-size:.86rem}}
+</style>
+</head>
+<body>
+<header class="ia-site-header"><div class="ia-header-inner"><a class="ia-brand" href="./"><img src="favicon.svg" alt="" width="42" height="42"><span>Invest Atlas</span></a><nav class="ia-header-nav" aria-label="主要メニュー"><a href="categories/">カテゴリ</a><a href="getting-started.html">初めての方へ</a><a href="investment-compass.html">投資の羅針盤</a></nav></div></header>
+<main class="article-wrap"><article class="article">
+<nav class="crumbs" aria-label="パンくずリスト"><a href="./">トップ</a> › <a href="categories/basics/">投資の基礎</a> › <a href="categories/basics/risk-return/">リスクとリターン</a> › シャープレシオ</nav>
+<div class="eyebrow">投資の基礎・リスクとリターン</div>
+<h1><span class="title-main">シャープレシオとは？</span><span class="title-subtitle">計算方法・見方と比較の注意点</span></h1>
+<p class="lead">シャープレシオは、投資で取ったリスクに対して、どれだけのリターンを得られたかを見る指標です。投資信託や運用商品の過去の成績を比べるとき、リターンの高さだけでは分からない「運用効率」を考える手がかりになります。ただし、数値が高ければ必ず優れた商品とは限りません。計算方法や比較条件、指標の限界も理解して使いましょう。</p>
+<p class="meta">公開日：2026年10月31日・情報確認日：2026年10月31日</p>
+<div class="callout"><strong>先に結論</strong><ul>
+<li>シャープレシオは、無リスク資産を上回るリターンを、リターンのばらつき（標準偏差）で割った指標。</li>
+<li>同じ条件で比べるなら、数値が高いほど、取ったリスク1単位あたりの超過リターンが大きかったと読める。</li>
+<li>比較期間・通貨・無リスク金利・計算頻度などが違う数値は、そのまま比べない。</li>
+<li>最大ドローダウンなど、下落の深さを見る指標と組み合わせて判断する。</li>
+</ul></div>
+<nav class="toc" aria-label="記事内目次"><h2>この記事の目次</h2><ol>
+<li><a href="#meaning">シャープレシオとは？</a></li>
+<li><a href="#formula">計算方法と具体例</a></li>
+<li><a href="#reading">数値の見方</a></li>
+<li><a href="#comparison">2つの投資信託を比べる例</a></li>
+<li><a href="#annualization">年率換算と計算条件</a></li>
+<li><a href="#limits">シャープレシオの注意点・限界</a></li>
+<li><a href="#other-metrics">最大ドローダウン・標準偏差との違い</a></li>
+<li><a href="#practice">投資信託を比較するときの確認ポイント</a></li>
+<li><a href="#sources">公式情報・参考資料</a></li>
+</ol></nav>
+
+<h2 id="meaning">1. シャープレシオとは？</h2>
+<p><strong>シャープレシオ（Sharpe Ratio）</strong>は、投資で得たリターンのうち、無リスク資産のリターンを上回る部分（超過リターン）が、リターンのばらつきに対してどの程度あったかを示す指標です。考案者のウィリアム・シャープの名前に由来し、リスク調整後リターンを測る代表的な指標として使われます。</p>
+<p>たとえば、同じ8%のリターンを得た2つのファンドでも、一方の値動きが比較的小さく、もう一方の値動きが大きければ、リスクに対する成果の効率は異なります。シャープレシオは、こうした違いを一つの数値で捉えようとするものです。</p>
+<figure class="diagram"><svg viewBox="0 0 760 310" role="img" aria-labelledby="sr-idea-title sr-idea-desc" xmlns="http://www.w3.org/2000/svg">
+<title id="sr-idea-title">シャープレシオは超過リターンと値動きのばらつきを比べる指標</title>
+<desc id="sr-idea-desc">無リスク資産のリターンを差し引いた超過リターンを、リターンの標準偏差で割る関係を示す概念図。</desc>
+<rect x="8" y="8" width="744" height="294" rx="18" fill="#fff" stroke="#d5e6eb" stroke-width="2"/>
+<rect x="42" y="54" width="280" height="190" rx="15" fill="#e8f5f2"/><rect x="438" y="54" width="280" height="190" rx="15" fill="#fdf0e8"/>
+<text x="182" y="91" text-anchor="middle" font-size="20" font-weight="800" fill="#176d65">超過リターン</text>
+<text x="182" y="143" text-anchor="middle" font-size="31" font-weight="850" fill="#176d65">運用リターン</text>
+<text x="182" y="178" text-anchor="middle" font-size="25" font-weight="800" fill="#536879">− 無リスク金利</text>
+<text x="182" y="218" text-anchor="middle" font-size="15" fill="#536879">上乗せされた成果</text>
+<text x="380" y="165" text-anchor="middle" font-size="40" font-weight="850" fill="#536879">÷</text>
+<text x="578" y="91" text-anchor="middle" font-size="20" font-weight="800" fill="#a45b3d">リスク</text>
+<path d="M478 172 L508 153 L538 183 L568 119 L598 193 L628 145 L678 174" fill="none" stroke="#c46e42" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="578" y="218" text-anchor="middle" font-size="20" font-weight="800" fill="#a45b3d">標準偏差</text>
+<text x="380" y="278" text-anchor="middle" font-size="19" font-weight="850" fill="#172b3d">シャープレシオ ＝ 超過リターン ÷ 標準偏差</text>
+</svg><figcaption>シャープレシオの基本的な考え方を示した概念図です。具体的な計算では、リターンと無リスク金利の期間・頻度をそろえます。</figcaption></figure>
+<p>ここでいうリスクは、一般にリターンの標準偏差、つまり平均的なリターンからのばらつきです。日常語の「危険」や「損失の大きさ」と完全に同じ意味ではありません。</p>
+
+<h2 id="formula">2. 計算方法と具体例</h2>
+<p>一般的な年率ベースの計算式は、次のとおりです。</p>
+<div class="formula">シャープレシオ ＝（投資リターン − 無リスク金利）÷ リターンの標準偏差</div>
+<p>投資リターンから無リスク金利を差し引いた値を<strong>超過リターン</strong>と呼びます。無リスク金利は、理論上リスクがないとみなす資産の収益率を指し、実際の分析では国債利回りや短期金融市場金利などを代理として使うことがあります。</p>
+<p>仮に、あるファンドの年率リターンが8%、比較期間に対応する無リスク金利が1%、年率標準偏差が10%だったとします。</p>
+<div class="formula">（8% − 1%）÷ 10% ＝ 0.7</div>
+<p>この場合のシャープレシオは<strong>0.7</strong>です。無リスク金利を上回るリターンが7ポイントあり、その値を標準偏差10ポイントで割った結果です。数値そのものに「％」は付きません。</p>
+<div class="note"><strong>計算例の前提：</strong>すべて年率にそろえた仮定の数値です。実際のファンドの公表値や将来の運用成果を示すものではありません。</div>
+
+<h2 id="reading">3. 数値の見方</h2>
+<p>同じ期間・同じ通貨・同じ算出方法で比較するなら、シャープレシオが高いほど、リスク1単位あたりの超過リターンが大きかったと解釈できます。ただし、数値だけで投資先の良し悪しが決まるわけではありません。</p>
+<div class="table-wrap"><table><thead><tr><th>数値の状態</th><th>基本的な読み方</th><th>注意点</th></tr></thead><tbody>
+<tr><td>プラスで高い</td><td>標準偏差に対して超過リターンが大きかった</td><td>対象期間や投資対象が違えば単純比較できない</td></tr>
+<tr><td>プラスで低い</td><td>超過リターンに対して値動きのばらつきが相対的に大きかった</td><td>短期間の値や相場環境に左右される</td></tr>
+<tr><td>ゼロ付近</td><td>無リスク金利を上回るリターンがほとんどなかった</td><td>リターンが低いのか、標準偏差が大きいのかを分けて見る</td></tr>
+<tr><td>マイナス</td><td>投資リターンが無リスク金利を下回った</td><td>リスクを取ったのに、基準となる金利を下回った状態</td></tr>
+</tbody></table></div>
+<p>「シャープレシオが1以上なら良い」など、すべての商品に共通する絶対的な合格ラインがあるわけではありません。資産の種類、計測期間、金利水準、市場環境によって数値の意味は変わります。</p>
+
+<h2 id="comparison">4. 2つの投資信託を比べる例</h2>
+<p>次の表は、同じ期間・同じ通貨で比較したと仮定する説明用の例です。ファンドAはリターンが8%、ファンドBは10%で、Bのほうがリターンは高い一方、値動きのばらつきも大きいとします。</p>
+<div class="table-wrap"><table><thead><tr><th>項目</th><th>ファンドA</th><th>ファンドB</th></tr></thead><tbody>
+<tr><th>年率リターン</th><td>8%</td><td>10%</td></tr>
+<tr><th>無リスク金利</th><td>1%</td><td>1%</td></tr>
+<tr><th>年率標準偏差</th><td>10%</td><td>18%</td></tr>
+<tr><th>超過リターン</th><td>7%</td><td>9%</td></tr>
+<tr><th>シャープレシオ</th><td><strong>0.70</strong></td><td><strong>0.50</strong></td></tr>
+</tbody></table></div>
+<figure class="diagram"><svg viewBox="0 0 760 300" role="img" aria-labelledby="sr-compare-title sr-compare-desc" xmlns="http://www.w3.org/2000/svg">
+<title id="sr-compare-title">ファンドAとBのシャープレシオ比較</title><desc id="sr-compare-desc">仮定例ではファンドAのシャープレシオが0.70、ファンドBが0.50。Bはリターンが高いが値動きのばらつきも大きく、リスクあたりの超過リターンはAのほうが大きい。</desc>
+<rect x="8" y="8" width="744" height="284" rx="16" fill="#fff" stroke="#d5e6eb" stroke-width="2"/>
+<text x="30" y="42" font-size="18" font-weight="800" fill="#172b3d">シャープレシオ（仮定例）</text>
+<text x="30" y="104" font-size="18" font-weight="750" fill="#176d65">ファンドA</text><rect x="190" y="77" width="420" height="36" rx="7" fill="#e2eeeb"/><rect x="190" y="77" width="294" height="36" rx="7" fill="#167c72"/><text x="500" y="103" font-size="21" font-weight="850" fill="#176d65">0.70</text>
+<text x="30" y="174" font-size="18" font-weight="750" fill="#a45b3d">ファンドB</text><rect x="190" y="147" width="420" height="36" rx="7" fill="#f4e9e2"/><rect x="190" y="147" width="210" height="36" rx="7" fill="#bd7544"/><text x="416" y="173" font-size="21" font-weight="850" fill="#a45b3d">0.50</text>
+<text x="30" y="235" font-size="15" fill="#536879">Bのリターンは高い一方、値動きのばらつきも大きい設定。</text>
+<text x="30" y="260" font-size="15" fill="#536879">リスク1単位あたりの超過リターンはAのほうが大きい。</text>
+</svg><figcaption>数値は説明用の仮定例です。実在する投資信託のランキングや推奨を示すものではありません。</figcaption></figure>
+<p>この例では、ファンドBのほうが高いリターンを得ていますが、リスクも大きいため、シャープレシオはAを下回ります。つまり「最もリターンが高い商品」と「リスクに対する成果の効率が高い商品」は、必ずしも同じではありません。</p>
+<p>ただし、シャープレシオがAのほうが高いからといって、Aが誰にとっても適切とは限りません。投資対象、下落局面での損失、費用、運用目的、資金を使う時期なども確認する必要があります。</p>
+
+<h2 id="annualization">5. 年率換算と計算条件</h2>
+<p>シャープレシオを比較するときに見落としやすいのが、月次・日次などの計算頻度と年率換算です。月次データから年率換算する場合、一般的には月次シャープレシオに√12を掛けます。</p>
+<div class="formula">年率シャープレシオ ≒ 月次シャープレシオ × √12</div>
+<p>たとえば、月次の平均超過リターンが0.7%、月次標準偏差が4%なら、月次シャープレシオは0.7 ÷ 4 ＝ 0.175です。年率換算の目安は、0.175 × √12 ≒ <strong>0.61</strong>となります。</p>
+<p>これは、各月のリターンが独立して同じような分布に従うなど、一定の前提を置いた近似です。リターンに連続性（自己相関）がある場合や、データ頻度・算出期間が異なる場合は、単純な年率換算で比較できないことがあります。</p>
+<h3>無リスク金利は何を使う？</h3>
+<p>無リスク金利は、分析対象の通貨や期間に対応するものを選びます。円建ての運用実績を分析するなら円金利、米ドル建てなら米ドル金利を使うのが基本的な考え方です。日本では、日本銀行が公表する無担保コールO/N物レートなどの短期金融市場金利を確認できます。ただし、どの金利を採用するかは分析目的や運用会社・データ提供会社の方法によって異なります。</p>
+<p>無リスク金利が異なると、超過リターンもシャープレシオも変わります。比較するファンドで金利の代理指標や計算期間が異なっていないか、公表資料の算出条件を確認しましょう。</p>
+<h3>標準偏差は何の標準偏差？</h3>
+<p>一般的な説明では投資リターンの標準偏差を使います。一方、データ提供会社によっては、各期間の超過リターンの標準偏差を使うなど、計算方法に違いがあります。リターンの平均値を年率換算する方法や、分配金再投資・費用控除の扱いも確認が必要です。</p>
+<div class="note">同じ「シャープレシオ」という名称でも、計算頻度、無リスク金利、標準偏差の対象、年率換算の方法が違えば数値は一致しません。異なるサイトの数字を並べるときは、算出条件が同じかを先に確認してください。</div>
+
+<h2 id="limits">6. シャープレシオの注意点・限界</h2>
+<ul>
+<li><strong>上昇と下落の両方をリスクとして扱う：</strong>標準偏差は上昇方向の大きな値動きも、下落方向の大きな値動きも、平均からのばらつきとして捉えます。損失だけを測る指標ではありません。</li>
+<li><strong>大きな一時損失を見落とすことがある：</strong>平均的なばらつきが同程度でも、短期間に急落した商品と、比較的なだらかに動いた商品では、投資家が受ける印象が異なる場合があります。</li>
+<li><strong>過去の期間に依存する：</strong>相場環境や計測期間を変えると数値も変わります。短期間の好成績だけで判断しないことが大切です。</li>
+<li><strong>極端な値動きや分布の偏りを十分に表せない：</strong>リターンの分布が左右対称でない場合や、まれな大幅下落がある場合、標準偏差だけではリスクの特徴を捉えきれないことがあります。</li>
+<li><strong>比較対象が違うと意味が薄れる：</strong>株式ファンドと短期債券ファンドなど、投資対象や運用目的が異なる商品を数値だけで順位付けするのは適切ではありません。</li>
+<li><strong>将来の成果を示すものではない：</strong>過去のシャープレシオが高くても、今後も同じ効率で運用できる保証はありません。</li>
+</ul>
+<p>特に、標準偏差は上昇時の変動も含みます。そのため、投資家が知りたい「大きく下落したときにどれほど損失を経験したか」は、シャープレシオだけでは分かりません。</p>
+
+<h2 id="other-metrics">7. 最大ドローダウン・標準偏差との違い</h2>
+<div class="table-wrap"><table><thead><tr><th>指標</th><th>何を見るか</th><th>得意なこと</th><th>単独では分からないこと</th></tr></thead><tbody>
+<tr><th>シャープレシオ</th><td>超過リターン ÷ 標準偏差</td><td>取ったリスクに対するリターンの効率</td><td>最大下落率、回復期間、損失の偏り</td></tr>
+<tr><th>標準偏差</th><td>リターンの平均からのばらつき</td><td>値動きの振れ幅</td><td>下落だけの大きさ、ピークからの下落</td></tr>
+<tr><th>最大ドローダウン</th><td>過去の高値から安値までの最大下落率</td><td>過去に経験した最も大きな下落</td><td>日常的な値動きのばらつき、将来の最大損失</td></tr>
+</tbody></table></div>
+<p>3つの指標は、見ているリスクの側面が異なります。シャープレシオで運用効率を、標準偏差で値動きのばらつきを、最大ドローダウンで過去のピークからの下落の深さを確認する、という使い分けができます。</p>
+<p class="related-inline">高値からどれほど下落したか、回復にどれくらいかかったかを詳しく見るには、<a href="maximum-drawdown.html">「最大ドローダウンとは？計算方法・回復期間・比較時の注意点」</a>を参照してください。リスクとリターンの基本的な意味は、<a href="risk-return-basics.html#risk-return">「投資のリスクとリターンとは？」</a>で解説しています。</p>
+
+<h2 id="practice">8. 投資信託を比較するときの確認ポイント</h2>
+<ol>
+<li><strong>投資対象をそろえる：</strong>国内株式、先進国株式、債券など、運用対象やリスク特性が近い商品を比べる。</li>
+<li><strong>比較期間をそろえる：</strong>同じ開始日・終了日を使い、可能なら複数の期間で確認する。</li>
+<li><strong>通貨と為替ヘッジをそろえる：</strong>円建てか外貨建てか、為替ヘッジの有無を確認する。</li>
+<li><strong>無リスク金利と計算頻度を確認する：</strong>採用金利、月次・日次などの頻度、年率換算方法を確認する。</li>
+<li><strong>リターンと費用の扱いを見る：</strong>分配金再投資後か、費用控除後か、税引前かなどの条件を確認する。</li>
+<li><strong>他の指標も合わせる：</strong>標準偏差や最大ドローダウン、下落局面の実績、費用、運用方針も確認する。</li>
+<li><strong>将来の保証と考えない：</strong>過去の数値は、今後の運用成果を約束するものではない。</li>
+</ol>
+<p>投資信託の月次レポートや運用報告書では、リターン、標準偏差、シャープレシオなどが掲載されることがあります。数字だけを抜き出すのではなく、資料の対象期間や計算条件も一緒に読みましょう。</p>
+<p class="related-inline">インデックス型とアクティブ型の運用実績を比べるときの注意点は、<a href="investment-trust-index-active.html#toc-index-active-4">「インデックス型とアクティブ型の違い」の第4章「運用実績を比較するときの注意点」</a>も参考になります。</p>
+
+<h2 id="sources">9. 公式情報・参考資料</h2>
+<ul class="source-list">
+<li><a href="https://www.imaj.or.jp/glossary/detail/119.html" target="_blank" rel="noopener noreferrer">資産運用業協会：シャープレシオ</a> — 指標の意味と一般的な計算式。</li>
+<li><a href="https://www.imaj.or.jp/special/toushin-qa100/opening-account/" target="_blank" rel="noopener noreferrer">資産運用業協会：投資信託なんでもQ&amp;A「運用実績を見るときに出てくるシャープレシオ」</a> — 投資信託の運用効率を比較する際の基本的な説明。</li>
+<li><a href="https://www.boj.or.jp/statistics/market/short/mutan/" target="_blank" rel="noopener noreferrer">日本銀行：コール市場関連統計（毎営業日）</a> — 無担保コールO/N物レートなど、円の短期金融市場金利の公表資料。</li>
+<li><a href="https://admainnew.morningstar.com/webhelp/glossary_definitions/mutual_fund/mfglossary_Sharpe_Ratio.html" target="_blank" rel="noopener noreferrer">Morningstar：Sharpe Ratio</a> — 月次データによる計算、年率換算、超過リターンの標準偏差を使う方法の説明。</li>
+<li><a href="https://cfatraininghub.com/staging/wp-content/uploads/2020/10/2020-L1V6.pdf" target="_blank" rel="noopener noreferrer">CFA Institute：Portfolio Performance Appraisal Measures</a> — シャープレシオの理論的な位置づけとリスク調整後リターンの考え方。</li>
+</ul>
+<p class="meta">情報確認日：2026年10月31日。シャープレシオの計算方法は、運用会社・データ提供会社によって異なる場合があります。実際に数値を比較する際は、各資料の対象期間・無リスク金利・標準偏差・年率換算の定義を確認してください。</p>
+<h2>まとめ</h2>
+<p>シャープレシオは、無リスク金利を上回るリターンを、リターンのばらつきに対してどれだけ得られたかを見る指標です。同じ条件で比較する場合、数値が高いほど過去の運用効率が高かったと読めます。ただし、最大下落や回復期間、投資対象、費用などは別に確認する必要があります。標準偏差や最大ドローダウンと組み合わせ、比較条件をそろえて活用しましょう。</p>
+</article></main>
+<footer><div class="article-wrap"><a href="./">Invest Atlas トップへ戻る</a></div></footer>
+</body>
+</html>
