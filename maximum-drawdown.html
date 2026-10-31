@@ -175,6 +175,20 @@ footer{padding:24px 0 40px;color:var(--muted);font-size:.9rem}
 <h3>円建てと米ドル建てでは結果が変わる</h3>
 <p>海外株式指数を日本円で保有する場合、株価の変化だけでなく為替レートも円換算の評価額に影響します。外貨建て資産の円換算リターンは、概念的には次の式で表せます。</p>
 <div class="formula">円換算後のリターン ＝（1＋外貨建てリターン）×（期末の円／外貨レート ÷ 期初の円／外貨レート）− 1</div>
+<figure class="diagram">
+<svg viewBox="0 0 760 220" role="img" aria-labelledby="fx-chart-title fx-chart-desc" xmlns="http://www.w3.org/2000/svg">
+<title id="fx-chart-title">MSCI ACWIの2022年年間リターンを米ドル建てと円建てで比較</title>
+<desc id="fx-chart-desc">2022年のMSCI ACWIのグロスリターンは米ドル建てマイナス17.96パーセント、円建てマイナス6.00パーセント。</desc>
+<rect x="1" y="1" width="758" height="218" rx="14" fill="#fff" stroke="#d5e6eb"/>
+<text x="22" y="34" font-family="system-ui,sans-serif" font-size="16" font-weight="800" fill="#40596a">2022年・MSCI ACWI 年間グロスリターン</text>
+<line x1="420" y1="55" x2="420" y2="184" stroke="#91a5af" stroke-width="2"/>
+<g font-family="system-ui,sans-serif" font-size="15" fill="#40596a"><text x="22" y="100">米ドル建て</text><text x="22" y="160">円建て</text></g>
+<rect x="204" y="76" width="216" height="30" rx="5" fill="#bd7544"/><rect x="348" y="136" width="72" height="30" rx="5" fill="#167c72"/>
+<g font-family="system-ui,sans-serif" font-size="16" font-weight="800" fill="#172b3d"><text x="194" y="97" text-anchor="end">−17.96%</text><text x="338" y="157" text-anchor="end">−6.00%</text></g>
+<text x="420" y="199" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#647987">0%</text>
+</svg>
+<figcaption>同じ指数でも、基準通貨によって年間リターンが異なった例。MSCI公表のグロスリターン。</figcaption>
+</figure>
 <p>たとえばMSCI ACWIの2022年年間グロスリターンは、米ドル建てで約−18.0%、円建てで約−6.0%でした。同じ世界株指数でも、円安による為替要因が円換算の下落を一部和らげたことが分かります。これは年間リターンの比較であり、日々の最大ドローダウンや回復期間が同じ割合で変わったという意味ではありません。</p>
 <p>反対に、株価が回復していても円高が進めば、円換算の評価額は戻りにくくなることがあります。為替ヘッジありの商品では為替変動の影響を抑えられる一方、ヘッジコストなど別の要素が加わります。日本の投資家が実際に負担する値動きを考えるなら、外貨建て指数だけでなく、円換算・為替ヘッジの有無を確認しましょう。</p>
 <p>なお、円建てと米ドル建ての最大ドローダウンを厳密に比較するには、同じ指数の同じ日次データを使い、為替レートを各営業日に反映して再計算する必要があります。通貨の違う資料に掲載された最大ドローダウンの数字を、そのまま並べることはできません。</p>
