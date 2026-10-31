@@ -27,6 +27,16 @@
 - `assets/`、`thumbnails/`：共通レイアウト資産と記事サムネイル。
 - `robots.txt`、`sitemap.xml`：クローラー向け設定。ビルド時に生成・同期される内容は生成スクリプトを正とする。
 
+## 記事ページの共通レイアウト
+
+- 公開記事のHTMLは共通レイアウトを前提に作成する。基本構造は `<main class="wrap"><article class="article">…</article></main>` とする。
+- `scripts/build-site.py` の `inject_article_category_nav()` が、記事台帳のカテゴリ情報を使って共通ヘッダー、パンくず、PC用カテゴリサイドバー、スマートフォン用カテゴリツリーをビルド時に挿入する。記事HTML側で独自のヘッダー・パンくず・カテゴリナビを重ねて実装しない。
+- 記事本文ファイルには、共通処理が対象にできる `main.wrap` と `article.article` を必ず用意する。独自の `article-wrap` などで本文幅を固定せず、`assets/site-layout.css` とビルド時の共通レイアウトに幅・余白・カードを任せる。
+- `.wrap` や `.article` に対するページ固有の幅・余白・カード装飾を追加しない。共通CSSに任せ、記事固有CSSは見出し・図解・表・注記など本文表現に限定する。
+- 共通ヘッダー、パンくず、カテゴリサイドバー、モバイル用カテゴリツリーはビルド時に生成される。手動で同じ要素を追加すると二重表示になるため避ける。
+- 新規記事・既存記事の修正後は、GitHub Actionsのビルド成果物で共通レイアウトが挿入されることを確認する。特にPCの左サイドバー、スマートフォンの開閉式カテゴリツリー、本文幅、パンくず、ヘッダーを確認する。
+- 共通レイアウトの実装変更は `scripts/build-site.py`、`assets/site-layout.css`、`assets/site-header.css` を正とし、記事ごとに独自実装で再現しない。
+
 ## 記事台帳とカテゴリ
 - `article-index.json` の `categories` は `children` で階層を定義する。
 - 記事には `category`（大カテゴリ）、`subcategory`（中カテゴリ）、必要な場合のみ `topic`（小カテゴリ）を設定する。
