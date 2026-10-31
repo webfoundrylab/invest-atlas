@@ -466,6 +466,7 @@
       "summary": "指数への連動を目指すインデックス型と、運用者の判断で指数を上回る成果などを目指すアクティブ型を比較。費用・運用実績・公式資料の確認方法を解説。",
       "status": "published",
       "related": [
+        "sharpe-ratio.html",
         "investment-trust-investment-targets.html",
         "choose-investment-trust-nisa.html",
         "investment-trust-fees.html",
@@ -726,6 +727,7 @@
       "summary": "投資のリスクを値動きの振れ幅として理解し、損失率と回復に必要な上昇率、価格変動・金利・為替などのリスク、自分に合う投資を考える手順を図解で解説。",
       "status": "published",
       "related": [
+        "sharpe-ratio.html",
         "before-you-invest.html",
         "simple-investing-guide.html",
         "regular-investing.html",
@@ -971,6 +973,7 @@
       "summary": "過去の高値から安値までの最大下落率を示す最大ドローダウンについて、計算式・具体例・回復期間・標準偏差との違い、投資信託や指数を比較するときの条件を解説。",
       "status": "published",
       "related": [
+        "sharpe-ratio.html",
         "risk-return-basics.html",
         "diversification-basics.html",
         "investment-trust-investment-targets.html",
@@ -985,6 +988,38 @@
       "publishOrder": 23,
       "mainTitle": "最大ドローダウンとは？",
       "subtitle": "計算方法・回復期間・比較時の注意点を解説"
+    },
+    {
+      "slug": "sharpe-ratio.html",
+      "title": "シャープレシオとは？計算方法・見方と投資信託の比較ポイント",
+      "category": "basics",
+      "subcategory": "risk-return",
+      "tags": [
+        "シャープレシオ",
+        "リスク調整後リターン",
+        "標準偏差",
+        "無リスク金利",
+        "超過リターン",
+        "投資信託",
+        "運用実績",
+        "リスク",
+        "リターン"
+      ],
+      "summary": "シャープレシオの意味と計算式、具体例、数値の読み方、年率換算や無リスク金利の注意点を解説。最大ドローダウン・標準偏差との違いや、投資信託を比較するときの確認項目も整理。",
+      "status": "published",
+      "related": [
+        "risk-return-basics.html",
+        "maximum-drawdown.html",
+        "investment-trust-index-active.html",
+        "investment-trust-actual-cost.html",
+        "choose-investment-trust-nisa.html"
+      ],
+      "publishedAt": "2026-10-31",
+      "updatedAt": "2026-10-31",
+      "thumbnail": "thumbnails/sharpe-ratio.svg",
+      "publishOrder": 24,
+      "mainTitle": "シャープレシオとは？",
+      "subtitle": "計算方法・見方と比較の注意点"
     }
   ],
   "pages": [
