@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<script src="assets/display-mode.js"></script>
+<title>最大ドローダウンとは？計算方法・回復期間・比較時の注意点を解説｜Invest Atlas</title>
+<meta name="description" content="最大ドローダウンとは、過去の高値からその後の安値までの最大下落率です。計算式、具体例、回復にかかる期間、標準偏差との違い、投資信託や指数を比較するときの注意点を図解で解説します。">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://webfoundrylab.github.io/invest-atlas/maximum-drawdown.html">
+<link rel="stylesheet" href="assets/site-layout.css">
+<link rel="stylesheet" href="assets/site-header.css">
+<meta name="theme-color" content="#10243a">
+<style>
+:root{--ink:#172b3d;--muted:#536879;--navy:#10243a;--teal:#087f75;--line:#d5e6eb;--paper:#f1f8fa}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.85 system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:#12665f;text-underline-offset:3px}
+.article-wrap{width:min(1040px,calc(100% - 32px));margin:26px auto 54px}
+.article{background:#fff;border:1px solid #dce4e8;border-radius:16px;padding:clamp(20px,4vw,44px);min-width:0}
+.eyebrow{font-size:.8rem;font-weight:800;letter-spacing:.08em;color:var(--teal)}
+h1{font-size:clamp(1.85rem,4vw,2.65rem);line-height:1.32;margin:.45em 0}
+.title-main,.title-subtitle{display:block}.title-subtitle{font-size:.62em;line-height:1.5;font-weight:650;color:#536879;margin-top:.22em}
+.lead{font-size:1.08rem;color:#40596a}
+.meta{font-size:.85rem;color:var(--muted)}
+.toc{margin:24px 0;padding:17px 21px;background:#f4f8f9;border:1px solid var(--line);border-radius:12px}
+.toc h2{font-size:1.08rem;margin:0 0 8px;border:0;padding:0}.toc ol{margin:0;padding-left:1.4em}.toc li{margin:.25em 0}
+.article h2{font-size:1.42rem;line-height:1.45;margin:2.1em 0 .65em;border-bottom:2px solid #dcebe9;padding-bottom:.4em}
+.article h3{font-size:1.12rem;margin:1.45em 0 .4em}.article p{margin:.85em 0}
+.callout{margin:20px 0;padding:15px 18px;background:#edf7f4;border-left:4px solid #168276;border-radius:8px}
+.note{margin:18px 0;padding:14px 16px;background:#fff7e9;border-left:4px solid #d99a43;border-radius:8px}
+.diagram{margin:24px 0;padding:14px;border:1px solid var(--line);border-radius:13px;background:#fbfdfd}
+.diagram svg{display:block;width:100%;height:auto}.diagram figcaption{margin-top:9px;font-size:.88rem;color:var(--muted)}
+.table-wrap{overflow-x:auto;margin:18px 0}table{width:100%;border-collapse:collapse;font-size:.93rem}th,td{padding:11px;border:1px solid var(--line);text-align:left;vertical-align:top}th{background:#edf4f5}
+.formula{margin:18px 0;padding:16px;background:#f2f6fa;border-radius:10px;text-align:center;font-size:1.05rem;font-weight:750;overflow-wrap:anywhere}
+.related-inline{margin:18px 0;padding:12px 15px;background:#f3f7f8;border-radius:9px}
+.source-list li{margin:.6em 0}
+footer{padding:24px 0 40px;color:var(--muted);font-size:.9rem}
+@media(max-width:600px){.article-wrap{width:calc(100% - 20px);margin:12px auto 32px}.article{padding:18px 15px}.article h2{font-size:1.28rem}.toc{padding:14px}.diagram{padding:8px}th,td{padding:8px;font-size:.86rem}}
+</style>
+</head>
+<body>
+<header class="ia-site-header"><div class="ia-header-inner"><a class="ia-brand" href="./"><img src="favicon.svg" alt="" width="42" height="42"><span>Invest Atlas</span></a><nav class="ia-header-nav" aria-label="主要メニュー"><a href="categories/">カテゴリ</a><a href="getting-started.html">初めての方へ</a><a href="investment-compass.html">投資の羅針盤</a></nav></div></header>
+<main class="article-wrap"><article class="article">
+<nav class="crumbs" aria-label="パンくずリスト"><a href="./">トップ</a> › <a href="categories/basics/">投資の基礎</a> › <a href="categories/basics/risk-return/">リスクとリターン</a> › 最大ドローダウン</nav>
+<div class="eyebrow">投資の基礎・リスクとリターン</div>
+<h1><span class="title-main">最大ドローダウンとは？</span><span class="title-subtitle">計算方法・回復期間・比較時の注意点を解説</span></h1>
+<p class="lead">最大ドローダウンは、ある期間に投資資産が過去の高値からどれだけ大きく下落したかを示す指標です。値動きの平均的な大きさだけでは分かりにくい「過去にどの程度の下落を経験したか」を把握できます。計算方法だけでなく、回復までの期間や比較条件も合わせて見ることが大切です。</p>
+<p class="meta">公開日：2026年10月31日・情報確認日：2026年10月31日</p>
+<div class="callout"><strong>先に結論</strong><ul>
+<li>最大ドローダウンは、計測期間中の「過去の高値から、その後の安値まで」の最大下落率。</li>
+<li>下落率だけでなく、下落が始まった時期・底を付けた時期・元の高値を回復した時期も重要。</li>
+<li>比較する場合は、期間・データ頻度・分配金・通貨・費用などの条件をそろえる。</li>
+</ul></div>
+<nav class="toc" aria-label="記事内目次"><h2>この記事の目次</h2><ol>
+<li><a href="#meaning">最大ドローダウンとは？</a></li>
+<li><a href="#calculation">計算方法と具体例</a></li>
+<li><a href="#recovery">下落率と回復に必要な上昇率</a></li>
+<li><a href="#duration">回復期間も確認する</a></li>
+<li><a href="#compare">投資信託・指数を比較するときの見方</a></li>
+<li><a href="#limitations">最大ドローダウンの注意点</a></li>
+<li><a href="#volatility">標準偏差・ボラティリティとの違い</a></li>
+<li><a href="#practice">比較・判断に使うチェックポイント</a></li>
+<li><a href="#sources">参考資料</a></li>
+</ol></nav>
+
+<h2 id="meaning">1. 最大ドローダウンとは？</h2>
+<p><strong>ドローダウン</strong>は、資産価値がそれまでの高値から下落した状態、またはその下落率を指します。そのうち、設定した計測期間の中で最も大きかった下落率が<strong>最大ドローダウン（Maximum Drawdown、MDD）</strong>です。</p>
+<p>たとえば、評価額が100万円から120万円まで上がった後、90万円まで下がった場合、直前の高値120万円から安値90万円への下落率は25%です。その後に別の下落局面があっても、この期間内で25%を超える下落がなければ、最大ドローダウンはマイナス25%となります。</p>
+<figure class="diagram">
+<svg viewBox="0 0 760 390" role="img" aria-labelledby="mdd-path-title mdd-path-desc" xmlns="http://www.w3.org/2000/svg">
+<title id="mdd-path-title">高値から安値までの最大ドローダウンと回復</title>
+<desc id="mdd-path-desc">資産価値が100から110に上がり、その後88まで下落し、110を回復して120に上昇する模式図。高値110から安値88までの下落率は20パーセント。</desc>
+<rect x="8" y="8" width="744" height="374" rx="18" fill="#fff" stroke="#d5e6eb" stroke-width="2"/>
+<line x1="72" y1="300" x2="700" y2="300" stroke="#aabac1" stroke-width="2"/>
+<line x1="72" y1="55" x2="72" y2="300" stroke="#aabac1" stroke-width="2"/>
+<g stroke="#e1e9ec" stroke-width="1"><line x1="72" y1="100" x2="700" y2="100"/><line x1="72" y1="170" x2="700" y2="170"/><line x1="72" y1="240" x2="700" y2="240"/></g>
+<path d="M85 240 L170 185 L255 125 L340 205 L425 275 L510 225 L595 125 L680 65" fill="none" stroke="#176d65" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M255 125 L425 275 L425 125 Z" fill="#f4c7b5" opacity=".38"/>
+<circle cx="255" cy="125" r="8" fill="#176d65"/><circle cx="425" cy="275" r="8" fill="#c65f3d"/><circle cx="595" cy="125" r="8" fill="#4569a8"/>
+<path d="M272 137 L408 258" stroke="#c65f3d" stroke-width="3" stroke-dasharray="7 6"/>
+<text x="255" y="93" text-anchor="middle" font-size="19" font-weight="800" fill="#176d65">過去の高値 110</text>
+<text x="425" y="322" text-anchor="middle" font-size="19" font-weight="800" fill="#a64d32">その後の安値 88</text>
+<text x="595" y="93" text-anchor="middle" font-size="18" font-weight="800" fill="#345a91">高値を回復</text>
+<rect x="300" y="165" width="160" height="42" rx="10" fill="#fff0e9" stroke="#e8b49d"/>
+<text x="380" y="192" text-anchor="middle" font-size="20" font-weight="850" fill="#a64d32">最大下落 −20%</text>
+<g font-size="15" fill="#536879"><text x="72" y="333">計測開始</text><text x="700" y="333" text-anchor="end">その後</text><text x="30" y="64">評価額</text></g>
+<text x="380" y="365" text-anchor="middle" font-size="14" fill="#536879">説明用の模式図。実際の市場データではありません。</text>
+</svg>
+<figcaption>高値110から、その後の安値88までの下落が最大ドローダウンの計算対象です。安値から元の高値まで戻る期間は、回復期間として別に確認します。</figcaption>
+</figure>
+<p>最大ドローダウンは「最終的にいくら増えたか」ではなく、途中でどの程度の下落を経験したかを表します。最終的なリターンが同じ投資でも、途中の下落の深さや長さが異なることがあります。</p>
+
+<h2 id="calculation">2. 計算方法と具体例</h2>
+<p>各時点の評価額を、それまでの最高値と比べて下落率を計算し、その中で最も大きい下落を探します。下落率は通常、マイナスの値で表します。</p>
+<div class="formula">各時点のドローダウン ＝（現在の評価額 ÷ それまでの最高評価額）− 1</div>
+<div class="formula">最大ドローダウン ＝ 計測期間中のドローダウンの最小値</div>
+<p>たとえば、次のような評価額の推移を考えます。数字は計算方法を説明するための仮定です。</p>
+<div class="table-wrap"><table><thead><tr><th>時点</th><th>評価額</th><th>それまでの最高額</th><th>ドローダウン</th></tr></thead><tbody>
+<tr><td>開始</td><td>100万円</td><td>100万円</td><td>0%</td></tr>
+<tr><td>高値</td><td>110万円</td><td>110万円</td><td>0%</td></tr>
+<tr><td>下落途中</td><td>99万円</td><td>110万円</td><td>−10%</td></tr>
+<tr><td>安値</td><td>88万円</td><td>110万円</td><td><strong>−20%</strong></td></tr>
+<tr><td>回復途中</td><td>105万円</td><td>110万円</td><td>−4.5%</td></tr>
+<tr><td>回復後</td><td>110万円</td><td>110万円</td><td>0%</td></tr>
+<tr><td>新高値</td><td>120万円</td><td>120万円</td><td>0%</td></tr>
+</tbody></table></div>
+<p>この例では、最高額110万円に対して安値88万円まで下がったため、（88万円 ÷ 110万円）− 1 ＝ −20%です。計測期間内にこれより大きな下落がなければ、最大ドローダウンは−20%となります。</p>
+<p>なお、計測開始時点の評価額も最初の高値として扱います。そのため、計測を始めてすぐに下落した場合も、開始時点からの下落を計算に含めます。</p>
+
+<h2 id="recovery">3. 下落率と回復に必要な上昇率</h2>
+<p>下落した割合と、元の金額に戻るために必要な上昇率は同じではありません。下落後は小さくなった金額を基準に増えるため、元の水準へ戻すには下落率より大きな上昇率が必要です。</p>
+<div class="table-wrap"><table><thead><tr><th>高値からの下落</th><th>下落後の評価額<br>（100万円を基準）</th><th>元に戻るための上昇率</th></tr></thead><tbody>
+<tr><td>−10%</td><td>90万円</td><td>約11.1%</td></tr>
+<tr><td>−20%</td><td>80万円</td><td>25%</td></tr>
+<tr><td>−30%</td><td>70万円</td><td>約42.9%</td></tr>
+<tr><td>−40%</td><td>60万円</td><td>約66.7%</td></tr>
+<tr><td>−50%</td><td>50万円</td><td>100%</td></tr>
+</tbody></table></div>
+<p>たとえば100万円が20%下落すると80万円です。80万円から100万円へ戻るには20万円の増加が必要で、80万円に対して25%の上昇となります。</p>
+<p>この関係は、投資額の大きさを考えるうえでも重要です。自分の投資額に下落率を掛けると、評価額がどの程度減るかを概算できます。</p>
+<div class="formula">下落額の目安 ＝ 投資額 × 下落率の絶対値</div>
+<p>投資額が300万円で20%下落した場合、評価額の減少は約60万円です。実際の投資信託では、追加購入・換金・分配金・費用などにより個人の損益は変わりますが、下落の規模をイメージする目安になります。</p>
+<p class="related-inline">損失率と回復に必要な上昇率の基本は、<a href="risk-return-basics.html#loss">「投資のリスクとリターンとは？」の「損失率と元に戻るための上昇率」</a>でも扱っています。</p>
+
+<h2 id="duration">4. 回復期間も確認する</h2>
+<p>最大ドローダウンを見るときは、下落率だけでなく回復までにかかった時間も確認しましょう。大きく下落しても比較的早く高値を回復する場合と、下落幅は小さくても長い期間、高値を下回り続ける場合では、投資家が受ける影響が異なります。</p>
+<ul>
+<li><strong>下落開始：</strong>過去の高値を下回り始めた時点。</li>
+<li><strong>最大下落の時点：</strong>その下落局面で最も低い水準になった時点。</li>
+<li><strong>回復：</strong>下落前の高値と同じ水準以上に戻った時点。</li>
+</ul>
+<p>「回復期間」は資料によって、下落開始から回復までの期間を指す場合と、最安値から元の高値まで戻る期間を指す場合があります。比較するときは、どの期間を表示しているか定義を確認してください。まだ元の高値を回復していない場合は、回復期間が確定していないこともあります。</p>
+<p>また、追加投資によって口座残高が元に戻ったことと、保有資産そのものが下落前の価格を回復したことは別です。回復期間を比較するときは、追加資金の流入を含む個人の口座残高ではなく、同じ条件で計算された基準価額や指数の推移を確認します。</p>
+
+<h2 id="compare">5. 投資信託・指数を比較するときの見方</h2>
+<p>最大ドローダウンは、投資信託や株価指数の過去の下落局面を比較する材料になります。ただし、数値だけを並べても、公平な比較になるとは限りません。</p>
+<div class="table-wrap"><table><thead><tr><th>確認する条件</th><th>なぜ重要か</th></tr></thead><tbody>
+<tr><td>計測期間</td><td>期間が違えば経験した相場下落も異なる。短い期間では大きな下落局面を含まないことがある。</td></tr>
+<tr><td>データ頻度</td><td>日次・週次・月次などで観測値が異なる。月末だけでは月中の安値を捉えられない場合がある。</td></tr>
+<tr><td>分配金の扱い</td><td>分配金を再投資したトータルリターンか、基準価額だけかで推移が変わる。</td></tr>
+<tr><td>通貨・為替</td><td>円換算か外貨建てか、為替ヘッジの有無で下落幅が変わることがある。</td></tr>
+<tr><td>費用・税金</td><td>指数と投資信託では費用の反映方法が異なる。比較対象に何が含まれるかを確認する。</td></tr>
+<tr><td>運用開始時期</td><td>設定から日が浅いファンドは、過去の大きな危機を経験していない可能性がある。</td></tr>
+</tbody></table></div>
+<p>投資信託同士を比べるなら、できるだけ同じ期間・同じ通貨・同じ分配金の扱いで計算されたデータを使います。ファンドの設定日が異なる場合、共通して比較できる期間を確認し、その期間にどのような市場環境が含まれているかも見ておきましょう。</p>
+<p>また、ファンドの最大ドローダウンと、連動を目指す指数の最大ドローダウンは同じとは限りません。信託報酬やその他費用、現金保有、売買タイミング、為替ヘッジ、指数との連動誤差などが影響します。</p>
+<p class="related-inline">投資信託の基準価額や分配金の扱いを確認するには、<a href="investment-trust-nav.html">「投資信託の基準価額とは？」</a>と<a href="investment-trust-distributions.html">「投資信託の分配金とは？」</a>も参考になります。</p>
+
+<h2 id="limitations">6. 最大ドローダウンの注意点</h2>
+<h3>過去の最大値であり、将来の下落上限ではない</h3>
+<p>最大ドローダウンは、あくまで指定された過去の期間に実際に起きた下落を集計したものです。過去の最大下落が20%だったからといって、将来も20%以内に収まるとは限りません。計測期間が長くなれば、より大きな下落局面を含む可能性もあります。</p>
+<h3>計測期間の取り方で結果が変わる</h3>
+<p>同じ商品でも、いつからいつまでを計測するかによって最大ドローダウンは変わります。上昇相場の途中から計測を始めた場合、過去の大きな下落が計算に含まれないことがあります。</p>
+<h3>下落の頻度や日常的な値動きは分からない</h3>
+<p>最大ドローダウンは、最も大きな下落局面に注目する指標です。小さな下落が何度も起きたか、値動きが日常的にどれほど大きかったか、下落からの回復を何度繰り返したかまでは、単独では分かりません。</p>
+<h3>投資家ごとの損益とは一致しない</h3>
+<p>一括投資か積立投資か、購入した時期、追加投資や売却の有無によって、個人の損益は異なります。ファンドの最大ドローダウンは、同じルールで計算した価格・基準価額などの過去の推移を示すもので、すべての投資家が同じ損失を経験したという意味ではありません。</p>
+
+<h2 id="volatility">7. 標準偏差・ボラティリティとの違い</h2>
+<p>最大ドローダウンと標準偏差は、どちらもリスクを考えるときに使われますが、見ているものが異なります。</p>
+<div class="table-wrap"><table><thead><tr><th>指標</th><th>主に分かること</th><th>読み取れないこと</th></tr></thead><tbody>
+<tr><td><strong>最大ドローダウン</strong></td><td>過去の高値から安値までに経験した最大下落</td><td>日常的な値動きの大きさ、将来の最大損失</td></tr>
+<tr><td><strong>標準偏差</strong></td><td>一定期間のリターンが平均からどの程度ばらついたか</td><td>過去に高値から何%下落したか、回復までの期間</td></tr>
+</tbody></table></div>
+<p>標準偏差は、上昇・下落の両方向を含むリターンのばらつきを測る指標です。一方、最大ドローダウンは、過去の資産価値の推移の中で、ピークからどれだけ下がったかに注目します。</p>
+<p>そのため、最大ドローダウンが小さくても、日々の値動きが小さいとは限りません。逆に標準偏差が同程度の商品でも、下落の順序や相場の動き方によって最大ドローダウンが異なることがあります。両方を確認すると、値動きの性質を違う角度から把握できます。</p>
+<p class="related-inline">標準偏差を含む投資のリスクの基本は、<a href="risk-return-basics.html#risk-return">「投資のリスクとリターンとは？」</a>で解説しています。GPIFの資料でも、標準偏差をリターンのブレの大きさとして説明しています。</p>
+
+<h2 id="practice">8. 比較・判断に使うチェックポイント</h2>
+<p>投資信託や指数の比較資料で最大ドローダウンを見つけたら、次の順に確認すると数字の意味をつかみやすくなります。</p>
+<ol>
+<li><strong>計測期間を確認する：</strong>何年何月から何年何月までの数値か。大きな市場下落を含んでいるか。</li>
+<li><strong>計算対象を確認する：</strong>基準価額、分配金再投資後の価値、指数のどれを使っているか。</li>
+<li><strong>比較条件をそろえる：</strong>通貨、為替ヘッジ、観測頻度、費用の扱いを確認する。</li>
+<li><strong>回復期間も見る：</strong>下落の深さだけでなく、元の高値に戻るまでの時間を確認する。</li>
+<li><strong>他の指標と合わせる：</strong>標準偏差、リターン、投資対象、資産配分、費用なども見る。</li>
+<li><strong>自分の資金計画に当てはめる：</strong>同程度の下落が起きた場合、投資額や使う時期に無理がないか考える。</li>
+</ol>
+<p>最大ドローダウンは、過去に経験した下落を具体的な数字で把握するための指標です。単独で商品を選ぶのではなく、投資対象や費用、投資期間、回復までの時間などと合わせて使いましょう。</p>
+<p class="related-inline">値下がりへの耐性や投資期間を整理したい場合は、<a href="before-you-invest.html#risk-tolerance">「投資を始める前に確認したい7つのこと」の「値下がりにどこまで耐えられるか考える」</a>も確認してください。資産を分ける考え方は<a href="diversification-basics.html">「分散投資とは？」</a>で解説しています。</p>
+
+<h2 id="sources">9. 参考資料</h2>
+<ul class="source-list">
+<li><a href="https://www.robeco.com/jp-jp/insights/2024/10/the-formula-maximum-drawdown" target="_blank" rel="noopener noreferrer">Robeco Japan：Maximum drawdown: the formula</a> — 最大ドローダウンの定義や、ピークからトラフへの下落の考え方。</li>
+<li><a href="https://rpc.cfainstitute.org/research/cfa-digest/2018/01/dig-v48-n1-3" target="_blank" rel="noopener noreferrer">CFA Institute：Performance Drawdowns in Asset Management</a> — ドローダウンの算出・活用と、過去の実績指標としての限界。</li>
+<li><a href="https://www.gpif.go.jp/gpif/diversification2.html" target="_blank" rel="noopener noreferrer">年金積立金管理運用独立行政法人（GPIF）：分散投資の意義② 投資のリスクとは</a> — 標準偏差を用いたリスクの説明。</li>
+<li><a href="https://www.toushin.or.jp/investmenttrust/information/report/" target="_blank" rel="noopener noreferrer">投資信託協会：運用報告書</a> — 投資信託の運用経過や基準価額の推移などを確認する資料。</li>
+</ul>
+<p class="meta">情報確認日：2026年10月31日。最大ドローダウンの計算方法や表示期間は、データ提供元・運用会社によって異なる場合があります。数値を比較する際は各資料の定義と算出条件を確認してください。</p>
+<h2>まとめ</h2>
+<p>最大ドローダウンは、一定期間に過去の高値からその後の安値までどれだけ下落したかを示す指標です。過去の大きな下落を把握するのに役立ちますが、将来の損失上限を示すものではありません。比較するときは計測期間・データ頻度・分配金・通貨・費用の条件をそろえ、回復期間や標準偏差なども合わせて確認しましょう。</p>
+</article></main>
+<footer><div class="article-wrap"><a href="./">Invest Atlas トップへ戻る</a></div></footer>
+</body>
+</html>
