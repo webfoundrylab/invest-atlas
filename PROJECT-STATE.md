@@ -2255,3 +2255,13 @@
 - 運用詳細は `PUBLICATION-OPERATIONS.md` に集約。
 - 現状確認：`.github/workflows/pages.yml` は push / 手動実行のみで cron なし。`build-site.py` は公開記事からカテゴリ・サイトマップ等を生成。`related-articles.json` は候補データで、本文リンクの自動挿入はしない。
 - 今回は運用文書と公開前検証の安全策を整備開始。Private 保管先・認証が未設定のため、自動公開はまだ有効化しない。
+
+
+## 2026-11-01 Private 記事ストックと予約公開の仕組みを実装開始
+- ユーザーが Private リポジトリ `webfoundrylab/invest-atlas-stock` を作成。GitHub上で Private であること、こちらからの読み書き権限を確認。
+- Private 側に `README.md`、`ARTICLE-PACKAGE.md`、空の `queue.json`、`scripts/publish.py`、`.github/workflows/publish.yml` を作成。
+- 予約実行は毎日 UTC 01:00（日本時間 10:00）と手動実行。公開予定時刻を過ぎた記事だけを対象に、1回最大1記事で処理する。
+- 公開処理は記事パッケージと編集・出典・図解・SVGサムネイル・内部リンク・逆方向リンク確認を検査し、公開側の台帳に追加。公開側 `build-site.py` と `validate-content.py` が成功した後にだけ公開リポジトリへ push する。
+- 公開 push 後に Private 側 queue を published に更新する。push後にqueue更新だけが失敗した場合に備え、次回実行で公開済みslugを検出して状態回復する処理を用意。
+- Private 側 README に必要な fine-grained PAT の設定を記載。残作業は `INVEST_ATLAS_PUBLISH_TOKEN` Secret の登録と、最初の記事パッケージによる実動テスト。
+- 現時点では queue は空であり、予約公開は記事を公開しない。Secret未設定のため、最初の実動テストは未実施。
