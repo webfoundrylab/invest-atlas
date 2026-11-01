@@ -1,6 +1,6 @@
 # 記事ストック・予約公開の運用
 
-最終更新: 2026-11-01
+最終更新: 2026-11-02
 
 ## 目的
 
@@ -60,11 +60,12 @@
 
 - 公開サイトのビルド・検証・Pages デプロイは `.github/workflows/pages.yml` が担当している。
 - 公開側 `pages.yml` は `main` への push と手動実行でビルド・検証・Pages デプロイを行う。
-- Private 側 `invest-atlas-stock/.github/workflows/publish.yml` に毎日 UTC 01:00（日本時間 10:00）の予約実行と手動実行を追加した。1回の実行で最大1記事のみ処理する。
+- Private 側 `invest-atlas-stock/.github/workflows/publish.yml` は毎日 UTC 20:00・08:00（日本時間 05:00・17:00）の2回、予約実行する。1回の実行で最大1記事のみ処理する。GitHub Actions の実行時刻は遅延する場合がある。
 - Private 側 `scripts/publish.py` が公開予定・記事パッケージ・確認項目を検査し、公開側へコピーして記事台帳を更新する。公開側のビルド・検証成功後にだけ公開リポジトリへ push し、その後にストック側の queue を published に更新する。
 - `build-site.py` は `status == "published"` の記事からカテゴリ・サイトマップ等を生成する。
 - `related-articles.json` は候補データであり、本文の文脈に合うリンクを自動挿入するものではない。
-- Private ストックリポジトリと予約公開 workflow は作成済み。ただし公開側へ push する fine-grained PAT を `INVEST_ATLAS_PUBLISH_TOKEN` として Private リポジトリの Actions Secrets に登録する作業が残っている。
-- Secret の設定前は queue が空のため公開処理は発生しない。Secret 設定後、最初のテスト記事を予約して workflow_dispatch で一連の処理を検証してから通常運用に入る。
+- Private ストックリポジトリと予約公開 workflow は作成済み。公開側へ push する fine-grained PAT は `INVEST_ATLAS_PUBLISH_TOKEN` として Private リポジトリの Actions Secrets に登録する必要がある。Secret の登録状態はリポジトリファイルからは確認できないため、未確認として扱う。
+- 手動実行の `workflow_dispatch` は `dry-run` が初期値。`dry-run` は公開側の一時コピーでビルド・検証するだけで、公開 push と queue 更新は行わない。実際の公開は `publish` を明示した手動実行、または予約実行で行う。
+- 現在の `queue.json` は空で、公開予定記事は登録されていない。リスク許容度記事はパッケージと確認項目が準備済みだが、公開日時を含む queue 登録は未実施。
 - 公開処理は1回1記事。公開前の検証失敗時は push しない。公開 push 後に queue 更新が失敗した場合も、次回実行で公開済み slug を検出して queue 状態を回復する。
 
