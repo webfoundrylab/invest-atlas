@@ -10,7 +10,7 @@
 - `article-index.json` に登録。カテゴリは「資産形成 > 目標額・積立額の考え方」、公開順は26。
 - `before-you-invest.html`、`regular-investing.html`、`emergency-fund.html` から文脈に合う位置で新記事へリンク。新記事からも既存の生活防衛資金・投資前確認・積立投資の記事へリンク。
 - 金融庁「資産形成の基本」、政府広報オンライン「社会人として知っておきたいお金の話」、J-FLECの貯蓄と投資のバランスに関する資料を参照。情報確認日：2026-11-01。
-- GitHub main への反映後、Actionsの検証・デプロイ結果と公開画面での表示確認を別途確認する。
+- GitHub main への反映後、Actions run `41310726849` で build・記事台帳／サイトマップ検証・deploy がすべて成功。公開URL `investment-amount.html` の実画面確認は、確認ツールからアクセスできず未実施。
 
 
 
