@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f4eee5"/><stop offset="1" stop-color="#e8e3f1"/></linearGradient></defs>
+<rect width="1200" height="675" fill="url(#bg)"/>
+<g fill="#5b526b" opacity=".075" font-family="Arial, Helvetica, sans-serif" font-size="270" font-weight="800" letter-spacing="-8"><text x="18" y="400">Invest</text><text x="1180" y="605" text-anchor="end">Atlas</text></g>
+<rect x="24" y="22" width="1152" height="150" rx="22" fill="#fff" stroke="#d5cbdc" stroke-width="2"/>
+<text x="600" y="57" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="800" letter-spacing="1" fill="#9274a2">RISK TOLERANCE</text>
+<text x="600" y="116" text-anchor="middle" font-family="sans-serif" font-size="48" font-weight="800" fill="#28344b">リスク許容度とは？</text>
+<text x="600" y="157" text-anchor="middle" font-family="sans-serif" font-size="34" font-weight="650" fill="#536879">自分に合う投資リスクの考え方</text>
+<g transform="translate(0 12)">
+<path d="M210 480 H990" stroke="#9b8aa9" stroke-width="12" stroke-linecap="round"/>
+<path d="M600 278 L600 478" stroke="#7b6a91" stroke-width="7" stroke-linecap="round"/>
+<path d="M360 330 L840 330" stroke="#7b6a91" stroke-width="12" stroke-linecap="round"/>
+<path d="M360 330 L300 450 H420 Z" fill="#d68c66" stroke="#9b654c" stroke-width="4"/>
+<path d="M840 330 L780 450 H900 Z" fill="#6b9b9b" stroke="#477779" stroke-width="4"/>
+<circle cx="600" cy="330" r="24" fill="#e6bd65" stroke="#8f7440" stroke-width="5"/>
+<path d="M600 355 V480" stroke="#7b6a91" stroke-width="7"/>
+<rect x="175" y="492" width="290" height="70" rx="18" fill="#f8e4d8" stroke="#d7a083" stroke-width="3"/>
+<rect x="735" y="492" width="290" height="70" rx="18" fill="#dcebea" stroke="#8ab4b1" stroke-width="3"/>
+<g font-size="30" font-weight="800" text-anchor="middle" fill="#344354"><text x="320" y="537">家計の余力</text><text x="880" y="537">気持ちの耐性</text></g>
+<path d="M465 525 H735" stroke="#596d7d" stroke-width="4" stroke-dasharray="10 10"/>
+<path d="M600 590 V615" stroke="#596d7d" stroke-width="5"/>
+<rect x="385" y="615" width="430" height="48" rx="16" fill="#344e67"/>
+<text x="600" y="647" text-anchor="middle" font-size="26" font-weight="800" fill="#fff">続けられる投資を考える</text>
+</g>
+</svg>

@@ -345,7 +345,8 @@
         "simple-investing-guide.html",
         "risk-return-basics.html",
         "diversification-basics.html",
-        "emergency-fund.html"
+        "emergency-fund.html",
+        "risk-tolerance-guide.html"
       ],
       "subcategory": "getting-started",
       "topic": "investment-preparation",
@@ -1092,6 +1093,36 @@
       "publishOrder": 26,
       "mainTitle": "投資に回すお金はいくら？",
       "subtitle": "家計から無理のない投資額を決める方法"
+    },
+    {
+      "slug": "risk-tolerance-guide.html",
+      "title": "リスク許容度とは？自分に合う投資リスクの考え方と判断方法",
+      "mainTitle": "リスク許容度とは？",
+      "subtitle": "自分に合う投資リスクの考え方と判断方法",
+      "summary": "リスク許容度を、収入・資産・投資期間・ライフイベントなどの客観的条件と、値下がりへの心理的な耐性の両面から整理。投資額に応じた損失額の試算に加え、MSCI ACWI指数の過去の最大ドローダウンを参考に、厳しい下落局面の損失規模を具体的に解説。",
+      "category": "basics",
+      "subcategory": "risk-return",
+      "tags": [
+        "リスク許容度",
+        "投資リスク",
+        "値下がり",
+        "投資期間",
+        "資産配分",
+        "ポートフォリオ",
+        "投資初心者"
+      ],
+      "status": "published",
+      "related": [
+        "before-you-invest.html",
+        "risk-return-basics.html",
+        "investment-amount.html",
+        "emergency-fund.html",
+        "maximum-drawdown.html"
+      ],
+      "thumbnail": "thumbnails/risk-tolerance-guide.svg",
+      "publishedAt": "2026-11-02",
+      "updatedAt": "2026-11-02",
+      "publishOrder": 27
     }
   ],
   "pages": [
