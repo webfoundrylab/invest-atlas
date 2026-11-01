@@ -10,6 +10,7 @@
 - 広告・アフィリエイトを導入した場合は適切に明示し、報酬の有無で比較結果を歪めない。
 
 ## 公開・デプロイ
+- 記事ストックと予約公開の運用は `PUBLICATION-OPERATIONS.md` を参照する。未公開原稿は Public リポジトリに保存しない。
 - 公開URL: https://webfoundrylab.github.io/invest-atlas/
 - GitHub Pages を GitHub Actions からデプロイする。
 - `.github/workflows/pages.yml` がビルド・検証・デプロイを実行する。
