@@ -41,7 +41,7 @@
 
 - 公開リポジトリ `webfoundrylab/invest-atlas` は Public のため、未公開記事の本文・画像・サムネイル・完全な原稿・非公開の公開計画を保存しない。
 - 公開ブランチだけでなく、公開リポジトリ内の別ブランチも非公開保管場所として扱わない。
-- 未公開原稿は、Private リポジトリ等の非公開保管場所に置く。非公開保管場所が用意できるまでは、公開リポジトリへストック記事を追加しない。
+- 未公開原稿は Private リポジトリ `webfoundrylab/invest-atlas-stock` に保管する。公開リポジトリへ未公開ストック記事を追加しない。
 - 公開用リポジトリには公開済み記事のみを登録する。公開用 `article-index.json` に未公開記事を登録しない。
 - 秘密情報やアクセストークンは原稿・コード・ログに書かず、GitHub Actions Secrets 等の適切な秘密情報管理を使う。
 
@@ -59,8 +59,12 @@
 ## 現在の実装状況と未完了事項
 
 - 公開サイトのビルド・検証・Pages デプロイは `.github/workflows/pages.yml` が担当している。
-- 現行 workflow は `main` への push と手動実行のみで、予約公開の cron はまだない。
+- 公開側 `pages.yml` は `main` への push と手動実行でビルド・検証・Pages デプロイを行う。
+- Private 側 `invest-atlas-stock/.github/workflows/publish.yml` に毎日 UTC 01:00（日本時間 10:00）の予約実行と手動実行を追加した。1回の実行で最大1記事のみ処理する。
+- Private 側 `scripts/publish.py` が公開予定・記事パッケージ・確認項目を検査し、公開側へコピーして記事台帳を更新する。公開側のビルド・検証成功後にだけ公開リポジトリへ push し、その後にストック側の queue を published に更新する。
 - `build-site.py` は `status == "published"` の記事からカテゴリ・サイトマップ等を生成する。
 - `related-articles.json` は候補データであり、本文の文脈に合うリンクを自動挿入するものではない。
-- 公開リポジトリは Public。Private ストックから公開リポジトリへ安全に受け渡すための保管先、認証、権限設定が未整備。
-- したがって、予約公開の自動反映はまだ有効化しない。Private 保管先と認証を用意し、公開前検証を実装してから有効化する。
+- Private ストックリポジトリと予約公開 workflow は作成済み。ただし公開側へ push する fine-grained PAT を `INVEST_ATLAS_PUBLISH_TOKEN` として Private リポジトリの Actions Secrets に登録する作業が残っている。
+- Secret の設定前は queue が空のため公開処理は発生しない。Secret 設定後、最初のテスト記事を予約して workflow_dispatch で一連の処理を検証してから通常運用に入る。
+- 公開処理は1回1記事。公開前の検証失敗時は push しない。公開 push 後に queue 更新が失敗した場合も、次回実行で公開済み slug を検出して queue 状態を回復する。
+
