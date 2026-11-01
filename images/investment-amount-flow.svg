@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="650" viewBox="0 0 1000 650" role="img" aria-labelledby="t d">
+<title id="t">家計から投資額を決める流れ</title><desc id="d">手取り収入から生活費、不定期支出、目的資金、生活防衛資金、予備費を確保し、残額を投資候補にする流れ。</desc>
+<rect width="1000" height="650" rx="24" fill="#f4f7f8"/><rect x="300" y="24" width="400" height="72" rx="16" fill="#173b45"/><text x="500" y="69" text-anchor="middle" font-size="30" font-family="sans-serif" font-weight="800" fill="#fff">手取り収入</text>
+<path d="M500 96 V124 M490 114 L500 126 L510 114" stroke="#748e96" stroke-width="4" fill="none"/>
+<g font-family="sans-serif" font-size="27" font-weight="750" text-anchor="middle">
+<rect x="100" y="132" width="800" height="66" rx="14" fill="#f8e9df" stroke="#d9b69e" stroke-width="2"/><text x="500" y="174" fill="#854d31">① 日常の生活費</text>
+<rect x="100" y="216" width="800" height="66" rx="14" fill="#f8f0dc" stroke="#e0c98c" stroke-width="2"/><text x="500" y="258" fill="#795d20">② 年払い・不定期支出</text>
+<rect x="100" y="300" width="800" height="66" rx="14" fill="#e8eef8" stroke="#b7c7e0" stroke-width="2"/><text x="500" y="342" fill="#34577e">③ 近い将来の目的資金</text>
+<rect x="100" y="384" width="800" height="66" rx="14" fill="#e4f1ec" stroke="#b3d5c8" stroke-width="2"/><text x="500" y="426" fill="#216455">④ 生活防衛資金の積立</text>
+<rect x="100" y="468" width="800" height="66" rx="14" fill="#eeeaf7" stroke="#cfc3e5" stroke-width="2"/><text x="500" y="510" fill="#59447f">⑤ 家計の予備費</text></g>
+<path d="M500 534 V562 M490 552 L500 564 L510 552" stroke="#748e96" stroke-width="4" fill="none"/><rect x="230" y="570" width="540" height="62" rx="16" fill="#176d65"/><text x="500" y="610" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="800" fill="#fff">残った金額が投資候補</text></svg>
