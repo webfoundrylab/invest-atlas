@@ -342,7 +342,8 @@
         "investment-trust-actual-cost.html",
         "simple-investing-guide.html",
         "risk-return-basics.html",
-        "diversification-basics.html"
+        "diversification-basics.html",
+        "emergency-fund.html"
       ],
       "subcategory": "getting-started",
       "topic": "investment-preparation",
@@ -606,7 +607,8 @@
         "nisa-basics.html",
         "risk-return-basics.html",
         "diversification-basics.html",
-        "bonds-basics.html"
+        "bonds-basics.html",
+        "emergency-fund.html"
       ],
       "subcategory": "investing-basics",
       "publishedAt": "2026-10-26",
@@ -1024,6 +1026,35 @@
       "publishOrder": 24,
       "mainTitle": "シャープレシオとは？",
       "subtitle": "計算方法・見方と投資信託の比較ポイント"
+    },
+    {
+      "slug": "emergency-fund.html",
+      "title": "生活防衛資金とは？いくら必要？生活費から必要額を計算する方法",
+      "category": "basics",
+      "subcategory": "getting-started",
+      "topic": "investment-preparation",
+      "tags": [
+        "生活防衛資金",
+        "生活費",
+        "家計管理",
+        "投資前の準備",
+        "貯蓄",
+        "緊急予備資金",
+        "投資可能額"
+      ],
+      "summary": "生活防衛資金の役割と必要額の計算方法を解説。最低限の生活費の出し方、3・6・12か月分の試算、働き方や家族構成に応じた考え方、置き場所と貯め方を具体例で整理。",
+      "status": "published",
+      "related": [
+        "before-you-invest.html",
+        "simple-investing-guide.html",
+        "risk-return-basics.html"
+      ],
+      "publishedAt": "2026-11-01",
+      "updatedAt": "2026-11-01",
+      "thumbnail": "thumbnails/emergency-fund.svg",
+      "publishOrder": 25,
+      "mainTitle": "生活防衛資金とは？",
+      "subtitle": "必要額の計算と備え方"
     }
   ],
   "pages": [
