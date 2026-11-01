@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="650" viewBox="0 0 1000 650" role="img" aria-labelledby="t d">
+<title id="t">お金の目的別の分け方</title><desc id="d">日常生活費、近い将来の予定支出、緊急時の生活防衛資金、当面使わない投資資金を目的別に分ける図。</desc>
+<rect width="1000" height="650" rx="28" fill="#f3f6f5"/>
+<text x="500" y="66" text-anchor="middle" font-family="sans-serif" font-size="36" font-weight="800" fill="#173b45">お金は「使う時期」と「目的」で分ける</text>
+<rect x="330" y="105" width="340" height="82" rx="18" fill="#10243a"/><text x="500" y="157" text-anchor="middle" font-family="sans-serif" font-size="31" font-weight="800" fill="#fff">手元のお金</text>
+<path d="M500 187V225M155 225H845M155 225V258M385 225V258M615 225V258M845 225V258" fill="none" stroke="#78918f" stroke-width="5" stroke-linecap="round"/>
+<g font-family="sans-serif" text-anchor="middle">
+<rect x="35" y="258" width="240" height="245" rx="20" fill="#fff" stroke="#9cc9bd" stroke-width="3"/>
+<rect x="295" y="258" width="180" height="245" rx="20" fill="#fff" stroke="#d7bc8c" stroke-width="3"/>
+<rect x="495" y="258" width="220" height="245" rx="20" fill="#fff" stroke="#d18e73" stroke-width="3"/>
+<rect x="735" y="258" width="230" height="245" rx="20" fill="#fff" stroke="#9bb4d1" stroke-width="3"/>
+<text x="155" y="307" font-size="26" font-weight="800" fill="#176d65">日常生活費</text><text x="155" y="365" font-size="22" fill="#405565">毎月の家賃・食費</text><text x="155" y="400" font-size="22" fill="#405565">光熱費・通信費</text><text x="155" y="463" font-size="20" font-weight="700" fill="#176d65">毎月使う</text>
+<text x="385" y="307" font-size="24" font-weight="800" fill="#8b641f">予定支出</text><text x="385" y="365" font-size="21" fill="#405565">車・教育費</text><text x="385" y="400" font-size="21" fill="#405565">引っ越し</text><text x="385" y="463" font-size="20" font-weight="700" fill="#8b641f">時期が決まる</text>
+<text x="605" y="307" font-size="25" font-weight="800" fill="#a65337">生活防衛資金</text><text x="605" y="365" font-size="21" fill="#405565">失業・病気</text><text x="605" y="400" font-size="21" fill="#405565">収入減・急な出費</text><text x="605" y="463" font-size="20" font-weight="700" fill="#a65337">いつ必要か不明</text>
+<text x="850" y="307" font-size="25" font-weight="800" fill="#315c8c">投資資金</text><text x="850" y="365" font-size="21" fill="#405565">当面使わない</text><text x="850" y="400" font-size="21" fill="#405565">余裕資金</text><text x="850" y="463" font-size="20" font-weight="700" fill="#315c8c">長期の運用</text>
+</g>
+<rect x="90" y="545" width="820" height="66" rx="16" fill="#e3eeeb"/><text x="500" y="587" text-anchor="middle" font-family="sans-serif" font-size="25" font-weight="800" fill="#173b45">生活防衛資金は「すぐ使える状態」で別に確保</text>
+</svg>
