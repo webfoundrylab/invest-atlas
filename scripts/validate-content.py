@@ -56,7 +56,9 @@ for item in articles:
         errors.append(f"{slug}: tags must be an array of non-empty strings")
     elif len(tags) != len(set(tags)):
         errors.append(f"{slug}: duplicate tags")
-    if item.get("status") == "published":
+    if item.get("status") != "published":
+        errors.append(f"{slug}: unpublished stock must not be stored in the public repository")
+    else:
         for field in ("title", "summary"):
             if not item.get(field):
                 errors.append(f"{slug}: published article missing {field}")
@@ -68,8 +70,8 @@ for item in articles:
             errors.append(f"{slug}: related article not in registry: {related}")
         elif related == slug:
             errors.append(f"{slug}: article cannot relate to itself")
-        elif by_slug[related].get("status") != "published":
-            errors.append(f"{slug}: related article is not published: {related}")
+        elif item.get("status") == "published" and by_slug[related].get("status") != "published":
+            errors.append(f"{slug}: published article links to unpublished article: {related}")
         elif not (ROOT / related).is_file():
             errors.append(f"{slug}: related article file missing: {related}")
 
@@ -128,6 +130,13 @@ for item in articles:
         page = (ROOT / item["slug"]).read_text(encoding="utf-8")
         has_generated = "<!-- GENERATED RELATED ARTICLES: START -->" in page and "<!-- GENERATED RELATED ARTICLES: END -->" in page
         existing_links = set(re.findall(r"""href=["']([^"']+)["']""", page, flags=re.IGNORECASE))
+        unpublished_targets = [
+            link.split("#", 1)[0] for link in existing_links
+            if link.split("#", 1)[0] in by_slug
+            and by_slug[link.split("#", 1)[0]].get("status") != "published"
+        ]
+        for target in sorted(set(unpublished_targets)):
+            errors.append(f"{item['slug']}: published HTML links to unpublished article: {target}")
         has_registry_related = any(link.split("#", 1)[0] in by_slug and link.split("#", 1)[0] != item["slug"] for link in existing_links)
         if not has_generated and not has_registry_related:
             errors.append(f"{item['slug']}: no generated or existing internal related links found")
