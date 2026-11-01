@@ -1,5 +1,16 @@
 # Invest Atlas — Project State
 
+最終更新: 2026-11-01
+
+## 2026-11-01 生活防衛資金の記事を追加
+- 新規記事：`emergency-fund.html`「生活防衛資金とは？必要額の計算と備え方」。
+- 毎月の最低生活費の計算、3・6・12か月分の試算、収入の安定性・家族構成・働き方による調整、預貯金での管理、段階的な準備方法を解説。月数は一律の公的基準ではなく、家計に合わせて比較する試算パターンとして説明。
+- 本文内の図解：`images/emergency-fund-cash-flow.svg`、`images/emergency-fund-months.svg`。サムネイル：`thumbnails/emergency-fund.svg`（既存のSVGルールに沿って新規作成）。
+- `article-index.json` に登録し、カテゴリは「投資の基礎 > 投資を始める前の準備 > 家計・目的・投資期間」。公開順は最新の25。
+- `before-you-invest.html` の生活資金の節、`simple-investing-guide.html` の投資前の条件整理から本文へリンクを追加。記事台帳の関連記事候補も相互に更新。
+- 公式情報は金融庁、政府広報オンライン、日本FP協会の資料を参照。情報確認日：2026-11-01。
+- GitHub main へのファイル追加・更新コミットは完了。GitHub Actions の検証・デプロイ結果と公開URLでの表示確認は未確認。
+
 最終更新: 2026-10-30
 
 ## プロジェクト概要
