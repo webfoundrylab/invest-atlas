@@ -9,7 +9,7 @@
 - `article-index.json` に登録し、カテゴリは「投資の基礎 > 投資を始める前の準備 > 家計・目的・投資期間」。公開順は最新の25。
 - `before-you-invest.html` の生活資金の節に家計調査の平均額を短く掲載し、詳細は `emergency-fund.html#household-average` へ誘導。`simple-investing-guide.html` は生活資金の計算記事への導線を維持。
 - 公式情報は金融庁、政府広報オンライン、日本FP協会に加え、総務省統計局「家計調査報告 2025年平均結果の概要」を参照。情報確認日：2026-11-01。
-- GitHub main へのファイル追加・更新コミットは完了。GitHub Actions の検証・デプロイ結果と公開URLでの表示確認は未確認。
+- GitHub main へのファイル追加・更新コミットは完了。GitHub Actions run `41310134472` で build・deploy とも成功。公開URLでの実表示確認は未実施。
 
 最終更新: 2026-10-30
 
