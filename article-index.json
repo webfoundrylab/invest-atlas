@@ -299,6 +299,7 @@
       "status": "published",
       "related": [
         "before-you-invest.html",
+        "investment-amount.html",
         "nisa-basics.html",
         "choose-investment-trust-nisa.html",
         "investment-trust-fees.html",
@@ -335,6 +336,7 @@
       "status": "published",
       "related": [
         "regular-investing.html",
+        "investment-amount.html",
         "nisa-basics.html",
         "choose-investment-trust-nisa.html",
         "investment-trust-investment-targets.html",
@@ -601,6 +603,7 @@
       "related": [
         "before-you-invest.html",
         "regular-investing.html",
+        "investment-amount.html",
         "investment-trust-investment-targets.html",
         "investment-trust-index-active.html",
         "investment-trust-fees.html",
@@ -1046,6 +1049,7 @@
       "status": "published",
       "related": [
         "before-you-invest.html",
+        "investment-amount.html",
         "simple-investing-guide.html",
         "risk-return-basics.html"
       ],
@@ -1055,6 +1059,39 @@
       "publishOrder": 25,
       "mainTitle": "生活防衛資金とは？",
       "subtitle": "必要額の計算と備え方"
+    },
+    {
+      "slug": "investment-amount.html",
+      "title": "投資に回すお金はいくら？家計から無理のない投資額を決める方法",
+      "category": "strategy",
+      "subcategory": "goals-and-contributions",
+      "topic": "monthly-investment-budget",
+      "tags": [
+        "投資額",
+        "投資可能額",
+        "積立額",
+        "家計管理",
+        "収支",
+        "生活防衛資金",
+        "投資初心者",
+        "資産形成",
+        "ライフプラン"
+      ],
+      "summary": "手取り収入から生活費、年払い・不定期支出、近い将来の目的資金、生活防衛資金、予備費を整理し、毎月無理なく投資に回せる金額を計算する方法を具体例で解説。",
+      "status": "published",
+      "related": [
+        "before-you-invest.html",
+        "emergency-fund.html",
+        "regular-investing.html",
+        "simple-investing-guide.html",
+        "risk-return-basics.html"
+      ],
+      "publishedAt": "2026-11-01",
+      "updatedAt": "2026-11-01",
+      "thumbnail": "thumbnails/investment-amount.svg",
+      "publishOrder": 26,
+      "mainTitle": "投資に回すお金はいくら？",
+      "subtitle": "家計から無理のない投資額を決める方法"
     }
   ],
   "pages": [
@@ -1071,4 +1108,4 @@
       "summary": "Invest Atlasの2つの入口、投資の羅針盤を使った学びと判断の流れ、記事の探し方を案内するページ。"
     }
   ]
-}
+}\n
