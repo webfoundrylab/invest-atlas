@@ -996,7 +996,8 @@
       "thumbnail": "thumbnails/maximum-drawdown.svg",
       "publishOrder": 23,
       "mainTitle": "最大ドローダウンとは？",
-      "subtitle": "計算方法・回復期間・比較時の注意点を解説"
+      "subtitle": "計算方法・回復期間・比較時の注意点を解説",
+      "subcategory": "risk-return"
     },
     {
       "slug": "sharpe-ratio.html",
