@@ -192,10 +192,6 @@ Invest Atlas は、文章を読む負担を減らし、投資の仕組みや比�
 
 
 
-## 記事フォーマットへの参照
-
-記事の共通構成、記事タイプ別の章立て、目次・まとめ・参考資料の配置は [ARTICLE-FORMAT.md](https://github.com/webfoundrylab/invest-atlas/blob/main/ARTICLE-FORMAT.md) を正本とする。この編集ガイドでは品質判断を定め、記事フォーマットの重複定義をしない。
-
 ## 記事制作・ストック運用への参照
 
 記事制作の工程・ユーザー確認・プレビュー・公開準備の唯一の手順は、Private stock の [ARTICLE-WORKFLOW.md](https://github.com/webfoundrylab/invest-atlas-stock/blob/main/ARTICLE-WORKFLOW.md) とする。この編集ガイドは内容品質の判断基準だけを定め、工程を重複定義しない。
