@@ -305,7 +305,8 @@
         "investment-trust-fees.html",
         "simple-investing-guide.html",
         "risk-return-basics.html",
-        "diversification-basics.html"
+        "diversification-basics.html",
+        "lump-sum-vs-dca.html"
       ],
       "subcategory": "regular-investing",
       "topic": "dollar-cost-averaging",
@@ -1157,6 +1158,37 @@
       "publishedAt": "2026-11-02",
       "updatedAt": "2026-11-02",
       "publishOrder": 28
+    },
+    {
+      "slug": "lump-sum-vs-dca.html",
+      "title": "一括投資と積立投資はどちらが有利？長期実績・数字・暴落時の違いで比較",
+      "mainTitle": "一括投資と積立投資はどちらが有利？",
+      "subtitle": "長期実績・数字・暴落時の違いで比較",
+      "summary": "まとまった資金の一括投資と短期分割投入を、Vanguardの1976～2022年の市場実績とシミュレーションで比較。市場別の勝率、ポートフォリオ別の最終資産額・差額率、結果の分布、分割期間と待機資金の利息、投資直後の下落、給与からの積立との違い、判断手順を数字で解説。",
+      "category": "strategy",
+      "subcategory": "regular-investing",
+      "topic": "dollar-cost-averaging",
+      "tags": [
+        "一括投資",
+        "積立投資",
+        "ドル・コスト平均法",
+        "長期投資",
+        "投資タイミング",
+        "株式市場",
+        "資産形成"
+      ],
+      "status": "published",
+      "related": [
+        "regular-investing.html",
+        "investment-amount.html",
+        "risk-tolerance-guide.html",
+        "investment-period-guide.html",
+        "maximum-drawdown.html"
+      ],
+      "thumbnail": "thumbnails/lump-sum-vs-dca.svg",
+      "publishedAt": "2026-11-03",
+      "updatedAt": "2026-11-03",
+      "publishOrder": 29
     }
   ],
   "pages": [
