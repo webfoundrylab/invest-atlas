@@ -346,7 +346,8 @@
         "risk-return-basics.html",
         "diversification-basics.html",
         "emergency-fund.html",
-        "risk-tolerance-guide.html"
+        "risk-tolerance-guide.html",
+        "investment-period-guide.html"
       ],
       "subcategory": "getting-started",
       "topic": "investment-preparation",
@@ -1123,6 +1124,39 @@
       "publishedAt": "2026-11-02",
       "updatedAt": "2026-11-02",
       "publishOrder": 27
+    },
+    {
+      "slug": "investment-period-guide.html",
+      "title": "投資に終わりはあるのか？積立・運用・取り崩しから考える資産形成の出口",
+      "mainTitle": "投資に終わりはあるのか？",
+      "subtitle": "積立・運用・取り崩しから考える資産形成の出口",
+      "summary": "積立をやめても保有資産の運用は続く。必要な分を取り崩しながら残りを運用する期間と、投資に回していた資産を目的に使い終える段階を分け、資産形成の出口を解説。",
+      "category": "basics",
+      "subcategory": "getting-started",
+      "topic": "investment-preparation",
+      "tags": [
+        "投資期間",
+        "運用期間",
+        "投資目的",
+        "資金計画",
+        "長期投資",
+        "資産形成",
+        "投資初心者"
+      ],
+      "status": "published",
+      "related": [
+        "before-you-invest.html",
+        "investment-amount.html",
+        "emergency-fund.html",
+        "risk-tolerance-guide.html",
+        "regular-investing.html",
+        "maximum-drawdown.html",
+        "compound-growth.html"
+      ],
+      "thumbnail": "thumbnails/investment-period-guide.svg",
+      "publishedAt": "2026-11-02",
+      "updatedAt": "2026-11-02",
+      "publishOrder": 28
     }
   ],
   "pages": [

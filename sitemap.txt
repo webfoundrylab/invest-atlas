@@ -26,6 +26,7 @@ https://webfoundrylab.github.io/invest-atlas/sharpe-ratio.html
 https://webfoundrylab.github.io/invest-atlas/emergency-fund.html
 https://webfoundrylab.github.io/invest-atlas/investment-amount.html
 https://webfoundrylab.github.io/invest-atlas/risk-tolerance-guide.html
+https://webfoundrylab.github.io/invest-atlas/investment-period-guide.html
 https://webfoundrylab.github.io/invest-atlas/categories/
 https://webfoundrylab.github.io/invest-atlas/categories/basics/
 https://webfoundrylab.github.io/invest-atlas/categories/basics/getting-started/

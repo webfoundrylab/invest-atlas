@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="t d">
+<title id="t">積立から資産を使い終えるまでの流れ</title><desc id="d">積立を止めた後も保有運用は続き、必要な分を取り崩す期間を経て、目的のために資産を使い終える。</desc>
+<rect width="1200" height="520" rx="28" fill="#f4f7f8"/>
+<text x="600" y="58" text-anchor="middle" font-size="34" font-weight="800" fill="#20384d">資産形成は「積立終了＝投資終了」ではない</text>
+<g font-family="sans-serif" text-anchor="middle">
+<rect x="45" y="130" width="245" height="210" rx="22" fill="#e4efed" stroke="#83aaa1" stroke-width="3"/>
+<text x="167" y="184" font-size="27" font-weight="800" fill="#245f58">① 積立する</text>
+<text x="167" y="235" font-size="21" fill="#344b5e"><tspan x="167">新しい資金を</tspan><tspan x="167" dy="32">追加して買う</tspan></text>
+<text x="167" y="310" font-size="19" font-weight="700" fill="#397e78">買付を継続</text>
+<path d="M300 235 H345 M330 220 L347 235 L330 250" fill="none" stroke="#8196a2" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="355" y="130" width="245" height="210" rx="22" fill="#fff" stroke="#b7c6ce" stroke-width="3"/>
+<text x="477" y="184" font-size="27" font-weight="800" fill="#20384d">② 保有・運用</text>
+<text x="477" y="235" font-size="21" fill="#344b5e"><tspan x="477">追加購入を止めても</tspan><tspan x="477" dy="32">資産は値動きする</tspan></text>
+<text x="477" y="310" font-size="19" font-weight="700" fill="#397e78">運用は続く</text>
+<path d="M610 235 H655 M640 220 L657 235 L640 250" fill="none" stroke="#8196a2" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="665" y="130" width="245" height="210" rx="22" fill="#fff" stroke="#b7c6ce" stroke-width="3"/>
+<text x="787" y="184" font-size="27" font-weight="800" fill="#20384d">③ 取り崩す</text>
+<text x="787" y="235" font-size="21" fill="#344b5e"><tspan x="787">必要な分を使い</tspan><tspan x="787" dy="32">残りは運用する</tspan></text>
+<text x="787" y="310" font-size="19" font-weight="700" fill="#397e78">運用と支出が並行</text>
+<path d="M920 235 H965 M950 220 L967 235 L950 250" fill="none" stroke="#8196a2" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="975" y="130" width="180" height="210" rx="22" fill="#f5e9df" stroke="#d4a17d" stroke-width="3"/>
+<text x="1065" y="184" font-size="25" font-weight="800" fill="#8d512f">④ 使い終える</text>
+<text x="1065" y="235" font-size="20" fill="#5e493c"><tspan x="1065">目的のために</tspan><tspan x="1065" dy="31">資産を使う</tspan></text>
+<text x="1065" y="310" font-size="18" font-weight="700" fill="#a45d38">目的に一区切り</text>
+</g>
+<path d="M355 385 V410 H910 V385" fill="none" stroke="#397e78" stroke-width="4" stroke-linecap="round"/>
+<text x="632" y="455" text-anchor="middle" font-size="25" font-weight="800" fill="#245f58">積立を止めても、保有資産の運用は続けられる</text>
+<text x="600" y="492" text-anchor="middle" font-size="18" fill="#536879">※資産をすべて売却して現金で保有することと、資産を使い終えることは別</text>
+</svg>

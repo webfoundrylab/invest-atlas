@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 590" role="img" aria-labelledby="t d">
+<title id="t">取り崩し中に使うお金と運用を続けるお金</title><desc id="d">資産を近いうちに使う現金と、当面使わず運用を続ける部分に分け、必要な支出に応じて現金を補充する考え方。</desc>
+<rect width="1200" height="590" rx="28" fill="#f4f7f8"/>
+<text x="600" y="58" text-anchor="middle" font-size="34" font-weight="800" fill="#20384d">取り崩し中も、残りの資産は運用できる</text>
+<rect x="90" y="105" width="1020" height="110" rx="20" fill="#fff" stroke="#cbd7dd" stroke-width="3"/>
+<text x="600" y="150" text-anchor="middle" font-size="26" font-weight="800" fill="#20384d">保有している資産</text>
+<text x="600" y="185" text-anchor="middle" font-size="20" fill="#536879">すべてを一度に現金化する必要はない</text>
+<path d="M600 218 V255 M600 255 H330 V285 M600 255 H870 V285" fill="none" stroke="#8297a2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="90" y="290" width="480" height="170" rx="22" fill="#e4efed" stroke="#83aaa1" stroke-width="3"/>
+<rect x="630" y="290" width="480" height="170" rx="22" fill="#e9edf3" stroke="#9baabd" stroke-width="3"/>
+<g font-family="sans-serif" text-anchor="middle">
+<text x="330" y="340" font-size="27" font-weight="800" fill="#245f58">近いうちに使うお金</text>
+<text x="330" y="386" font-size="22" fill="#344b5e"><tspan x="330">預貯金などで確保</tspan><tspan x="330" dy="34">生活費・予定支出に充てる</tspan></text>
+<text x="870" y="340" font-size="27" font-weight="800" fill="#3d5874">当面使わないお金</text>
+<text x="870" y="386" font-size="22" fill="#344b5e"><tspan x="870">リスク許容度に合わせて</tspan><tspan x="870" dy="34">保有・運用を続ける</tspan></text>
+</g>
+<path d="M330 463 V492 H600" fill="none" stroke="#b66e43" stroke-width="5" stroke-linecap="round"/>
+<path d="M580 477 L602 492 L580 507" fill="none" stroke="#b66e43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="610" y="475" width="500" height="76" rx="18" fill="#f5e9df" stroke="#d4a17d" stroke-width="2"/>
+<text x="860" y="506" text-anchor="middle" font-size="22" font-weight="800" fill="#8d512f">必要な支出に合わせて取り崩す</text>
+<text x="860" y="535" text-anchor="middle" font-size="18" fill="#6b5548">不足額・時期を定期的に見直す</text>
+<text x="600" y="575" text-anchor="middle" font-size="17" fill="#536879">※現金を確保しても、運用部分の値下がりや資産全体の損失は防げない</text>
+</svg>
