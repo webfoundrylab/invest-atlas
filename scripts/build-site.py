@@ -247,11 +247,22 @@ def clean_page_layout_styles(page):
 
 
 def clean_article_layout(page):
+    """Remove every previously generated article-layout fragment before rebuilding it.
+
+    The breadcrumb and shared asset tags used to be inserted without markers. Since
+    build-site.py rewrites article files in place, each build appended another copy.
+    """
     page = clean_category_block(page)
     page = clean_page_layout_styles(page)
     page = re.sub(re.escape(ARTICLE_OPEN_START) + r".*?" + re.escape(ARTICLE_OPEN_END), "", page, flags=re.S)
     page = re.sub(re.escape(ARTICLE_CLOSE_START) + r".*?" + re.escape(ARTICLE_CLOSE_END), "", page, flags=re.S)
     page = re.sub(re.escape(ARTICLE_STYLE_START) + r".*?" + re.escape(ARTICLE_STYLE_END), "", page, flags=re.S)
+    # Remove legacy unmarked breadcrumb/mobile-tree fragments from earlier builds.
+    page = re.sub(r'<nav class="article-category-crumbs"\\b[^>]*>.*?</nav>', "", page, flags=re.I | re.S)
+    page = re.sub(r'<div class="article-mobile-tree"\\b[^>]*>.*?</div>', "", page, flags=re.I | re.S)
+    # These shared assets are owned by this generator; remove old unmarked copies.
+    page = re.sub(r'<link\\b(?=[^>]*href=["\\']' + re.escape(BASE_URL) + r'assets/site-(?:layout|header)\\.css["\\'])[^>]*>', "", page, flags=re.I)
+    page = re.sub(r'<script\\b(?=[^>]*src=["\\']' + re.escape(BASE_URL) + r'assets/display-mode\\.js["\\'])[^>]*>.*?</script>', "", page, flags=re.I | re.S)
     return page
 
 
