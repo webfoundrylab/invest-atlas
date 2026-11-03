@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<title>株式と債券を組み合わせる意味とは？相関とリスク分散の考え方｜Invest Atlas</title>
+<meta name="description" content="株式と債券の値動きの違い、相関係数、組み合わせによるリスク分散の仕組みを解説。債券が株式と同時に下落する場合や、現金との違いも具体例で比較します。">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://webfoundrylab.github.io/invest-atlas/asset-allocation-guide.html">
+<meta name="theme-color" content="#10243a">
+<style>
+:root{--ink:#172b3d;--muted:#5c6d7a;--navy:#10243a;--teal:#176d65;--line:#dce4e8;--paper:#f5f7f8}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);line-height:1.85;background:var(--paper)}a{color:var(--teal);text-underline-offset:3px}
+h1{font-size:clamp(1.8rem,4vw,2.65rem);line-height:1.35;margin:.5em 0}.title-subtitle{display:block;font-size:.62em;line-height:1.5;font-weight:650;color:#536879;margin-top:.24em}
+h2{font-size:1.4rem;margin-top:2em;border-bottom:1px solid var(--line);padding-bottom:.4em}h3{font-size:1.1rem;margin-top:1.5em}
+p,li{font-size:1rem}.lead{font-size:1.1rem;color:#405565}.meta{font-size:.85rem;color:var(--muted)}
+.table-wrap{overflow-x:auto}table{border-collapse:collapse;width:100%;min-width:620px;font-size:.93rem;margin:18px 0}th,td{padding:11px;border:1px solid var(--line);text-align:left;vertical-align:top}th{background:#edf3f5}
+.callout{background:#edf6f4;border-left:4px solid var(--teal);padding:16px 18px;margin:22px 0}.related-inline{margin:18px 0;padding:12px 16px;background:#f4f7f8;border-radius:8px}
+.toc{margin:24px 0;padding:16px 20px;background:#f4f7f8;border:1px solid var(--line);border-radius:12px}.toc h2{margin:0 0 8px;border:0;padding:0;font-size:1.08rem}.toc ol{margin:0;padding-left:1.5em}.toc li{margin:.2em 0}.toc a{text-decoration:none}
+.diagram{margin:22px 0;padding:14px;background:#f4f7f8;border:1px solid var(--line);border-radius:12px}.diagram img{display:block;width:100%;height:auto}.diagram figcaption{font-size:.9rem;color:var(--muted);margin-top:8px}
+@media(max-width:640px){th,td{padding:8px}}
+</style>
+<!-- GENERATED ARTICLE LAYOUT STYLE: START --><style>
+main.wrap{width:min(1160px,calc(100% - 32px))}header .wrap{width:min(1160px,calc(100% - 32px))}
+.article-page-layout{display:grid;grid-template-columns:245px minmax(0,1fr);gap:26px;align-items:start;margin:22px 0 52px}
+.article-sidebar .category-tree{background:#fff;border:1px solid #dce4e8;border-radius:14px;padding:14px;position:sticky;top:18px;max-height:calc(100vh - 36px);overflow:auto}
+.article-sidebar .category-tree ul{list-style:none;padding-left:14px;margin:8px 0}.article-sidebar .category-tree>ul{padding:0}.article-sidebar .category-tree li{margin:5px 0}.article-sidebar .category-tree summary{cursor:pointer}.article-sidebar .category-tree a{font-size:.9rem}.article-sidebar .category-tree .active>a,.article-sidebar .category-tree .active>details>summary>a{font-weight:800;color:#075f59}
+.article-page-content{min-width:0}
+.article-category-crumbs{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px;font-size:.9rem}.article-mobile-tree{display:none}
+@media(max-width:850px){.article-page-layout{grid-template-columns:1fr;gap:0;margin-top:14px}.article-sidebar{display:none}.article-mobile-tree{display:block;margin:0 0 16px;padding:12px 14px;background:#fff;border:1px solid #d5e6eb;border-radius:12px}.article-mobile-tree summary{cursor:pointer;font-weight:750}.article-mobile-tree .category-tree{margin-top:10px;max-height:320px;overflow:auto}.article-mobile-tree .category-tree ul{list-style:none;padding-left:14px;margin:8px 0}.article-mobile-tree .category-tree>ul{padding:0}}
+</style><!-- GENERATED ARTICLE LAYOUT STYLE: END --><link rel="stylesheet" href="https://webfoundrylab.github.io/invest-atlas/assets/site-layout.css"><link rel="stylesheet" href="https://webfoundrylab.github.io/invest-atlas/assets/site-header.css"><script src="https://webfoundrylab.github.io/invest-atlas/assets/display-mode.js"></script></head>
+<body>
+<main class="wrap"><!-- GENERATED ARTICLE LAYOUT OPEN: START --><div class="article-page-layout"><aside class="article-sidebar"><nav class="category-tree" aria-label="カテゴリツリー"><strong>カテゴリから探す</strong><ul><li><details open><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/">投資の基礎</a></summary><ul><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/getting-started/">投資を始める前の準備</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/getting-started/investment-preparation/">家計・目的・投資期間</a></li></ul></details></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/investing-basics/">投資の仕組み・基本用語</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/risk-return/">リスクとリターン</a></li><li class="active"><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/diversification/">分散投資・資産配分</a></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/bond-investing/">債券投資</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/bond-investing/bond-basics/">債券の仕組み・利回り・リスク</a></li></ul></details></li></ul></details></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/">投資制度・税制</a></summary><ul><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/nisa-system/">新NISAの仕組み</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/nisa-system/new-nisa-basics/">投資枠・非課税保有限度額</a></li></ul></details></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/nisa-product-selection/">NISAの商品選び</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/nisa-product-selection/choosing-funds/">投資信託の選び方</a></li></ul></details></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/tax-and-nisa/">投資と税金</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/ideco-pension/">iDeCo・年金制度</a></li></ul></details></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/">投資信託・ETF</a></summary><ul><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/investment-trust-basics/">投資信託の基礎</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/investment-trust-basics/nav-price/">基準価額と値動き</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/investment-trust-basics/index-active/">インデックス型・アクティブ型</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/investment-trust-basics/investment-targets/">投資対象資産・地域</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/investment-trust-basics/distribution/">分配金と再投資</a></li></ul></details></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/etf-basics/">ETFの基礎</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/fund-etf-comparison/">投資信託とETFの比較</a></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/fund-costs/">信託報酬・手数料</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/fund-costs/expense-types/">費用の種類・実質コスト</a></li></ul></details></li></ul></details></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/strategy/">資産形成</a></summary><ul><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/strategy/regular-investing/">積立投資</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/strategy/regular-investing/dollar-cost-averaging/">定額購入・購入時期の分散</a></li></ul></details></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/strategy/long-term-investing/">長期投資</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/strategy/compound-growth/">複利の仕組み</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/strategy/goals-and-contributions/">目標額・積立額の考え方</a></li></ul></details></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/">市場・注目テーマ</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/economic-indicators/">経済指標・金融政策</a></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/market-trends/">株式市場の動向</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/market-trends/stock-indices/">株価指数</a></li></ul></details></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/investment-themes/">注目テーマ</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/investment-themes/ai-semiconductor/">AI・半導体</a></li></ul></details></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/fx-rates-inflation/">為替・金利・インフレ</a></li></ul></details></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/">個別株・企業分析</a></summary><ul><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/financial-statements/">決算書・財務分析</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/financial-statements/earnings-results/">決算の読み方</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/financial-statements/financial-metrics/">売上・利益・財務指標</a></li></ul></details></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/company-analysis/">企業・銘柄の分析</a></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/dividends-shareholder-returns/">配当・株主還元</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/dividends-shareholder-returns/stock-dividend-basics/">配当金・利回り・税金</a></li></ul></details></li></ul></details></li></ul></nav></aside><div class="article-page-content"><!-- GENERATED ARTICLE LAYOUT OPEN: END -->
+<article class="article"><nav class="article-category-crumbs" aria-label="パンくずリスト"><a href="https://webfoundrylab.github.io/invest-atlas/">トップ</a> › <a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/">投資の基礎</a> › <a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/diversification/">分散投資・資産配分</a></nav><div class="article-mobile-tree"><details><summary>カテゴリツリーを開く</summary><nav class="category-tree" aria-label="カテゴリツリー"><strong>カテゴリから探す</strong><ul><li><details open><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/">投資の基礎</a></summary><ul><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/getting-started/">投資を始める前の準備</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/getting-started/investment-preparation/">家計・目的・投資期間</a></li></ul></details></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/investing-basics/">投資の仕組み・基本用語</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/risk-return/">リスクとリターン</a></li><li class="active"><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/diversification/">分散投資・資産配分</a></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/bond-investing/">債券投資</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/bond-investing/bond-basics/">債券の仕組み・利回り・リスク</a></li></ul></details></li></ul></details></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/">投資制度・税制</a></summary><ul><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/nisa-system/">新NISAの仕組み</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/nisa-system/new-nisa-basics/">投資枠・非課税保有限度額</a></li></ul></details></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/nisa-product-selection/">NISAの商品選び</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/nisa-product-selection/choosing-funds/">投資信託の選び方</a></li></ul></details></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/tax-and-nisa/">投資と税金</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/ideco-pension/">iDeCo・年金制度</a></li></ul></details></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/">投資信託・ETF</a></summary><ul><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/investment-trust-basics/">投資信託の基礎</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/investment-trust-basics/nav-price/">基準価額と値動き</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/investment-trust-basics/index-active/">インデックス型・アクティブ型</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/investment-trust-basics/investment-targets/">投資対象資産・地域</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/investment-trust-basics/distribution/">分配金と再投資</a></li></ul></details></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/etf-basics/">ETFの基礎</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/fund-etf-comparison/">投資信託とETFの比較</a></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/fund-costs/">信託報酬・手数料</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/fund-costs/expense-types/">費用の種類・実質コスト</a></li></ul></details></li></ul></details></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/strategy/">資産形成</a></summary><ul><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/strategy/regular-investing/">積立投資</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/strategy/regular-investing/dollar-cost-averaging/">定額購入・購入時期の分散</a></li></ul></details></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/strategy/long-term-investing/">長期投資</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/strategy/compound-growth/">複利の仕組み</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/strategy/goals-and-contributions/">目標額・積立額の考え方</a></li></ul></details></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/">市場・注目テーマ</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/economic-indicators/">経済指標・金融政策</a></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/market-trends/">株式市場の動向</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/market-trends/stock-indices/">株価指数</a></li></ul></details></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/investment-themes/">注目テーマ</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/investment-themes/ai-semiconductor/">AI・半導体</a></li></ul></details></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/fx-rates-inflation/">為替・金利・インフレ</a></li></ul></details></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/">個別株・企業分析</a></summary><ul><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/financial-statements/">決算書・財務分析</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/financial-statements/earnings-results/">決算の読み方</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/financial-statements/financial-metrics/">売上・利益・財務指標</a></li></ul></details></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/company-analysis/">企業・銘柄の分析</a></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/dividends-shareholder-returns/">配当・株主還元</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/dividends-shareholder-returns/stock-dividend-basics/">配当金・利回り・税金</a></li></ul></details></li></ul></details></li></ul></nav></details></div>
+<div class="eyebrow">投資の基礎 / 分散投資・資産配分</div>
+<h1><span class="title-main">株式と債券を組み合わせる意味とは？</span><span class="title-subtitle">相関とリスク分散の考え方</span></h1>
+<p class="lead">株式と債券は、値動きに影響する要因が異なります。両方を保有すると、株式だけを持つ場合とは異なる値動きになる可能性があります。ただし、債券がいつも株式の下落を補うわけではありません。この記事では、組み合わせる意味と限界を、相関と具体的な損益例から整理します。</p>
+<p class="meta">情報確認日：2026年11月2日</p>
+<div class="callout"><b>この記事の要点</b><p>株式と債券を組み合わせる目的は、単に債券を増やして安全にすることではありません。異なる値動きの資産を組み合わせ、ポートフォリオ全体の値動きを調整することです。効果は相関や市場環境によって変わります。</p></div>
+<nav class="toc"><h2>この記事の目次</h2><ol>
+<li><a href="#difference">株式と債券は何が違う？</a></li>
+<li><a href="#combination">組み合わせると値動きはどう変わる？</a></li>
+<li><a href="#correlation">相関係数とは？</a></li>
+<li><a href="#simulation">組み合わせによる損失額を比べる</a></li>
+<li><a href="#cash">現金を増やす方法とは何が違う？</a></li>
+<li><a href="#consider">債券を組み入れるか考えるポイント</a></li>
+<li><a href="#summary">まとめ</a></li>
+</ol></nav>
+
+<h2 id="difference">1. 株式と債券は何が違う？</h2>
+<p>株式は企業の所有権の一部であり、企業利益や成長期待、景気、投資家心理などの影響を受けます。債券は国や企業などが資金を借り入れるために発行するもので、発行体の信用力、金利、残存期間などが価格に影響します。</p>
+<div class="table-wrap"><table><thead><tr><th>比較点</th><th>株式</th><th>債券</th></tr></thead><tbody>
+<tr><th>主な収益源</th><td>株価の値上がり、配当</td><td>利子、債券価格の変動</td></tr>
+<tr><th>主な価格変動要因</th><td>企業業績、景気、成長期待、需給</td><td>市場金利、発行体の信用力、残存期間</td></tr>
+<tr><th>主なリスク</th><td>企業業績悪化、株価下落、為替変動など</td><td>金利変動、信用悪化、為替変動、流動性など</td></tr>
+<tr><th>保有する意味</th><td>企業の成長や利益の分配を取り込む</td><td>利子収入や株式とは異なる値動きを取り込む</td></tr>
+</tbody></table></div>
+<p>債券は株式より値動きが小さい傾向のものもありますが、すべての債券が低リスクというわけではありません。満期までの期間が長い債券ほど金利変動の影響を受けやすく、信用力の低い発行体の債券には信用リスクがあります。外国債券には為替変動も加わります。</p>
+<div class="related-inline">債券の仕組み、利回り、金利と価格の関係は<a href="bonds-basics.html">「債券投資とは？利率・利回り・価格変動とリスクを解説」</a>で詳しく解説しています。</div>
+
+<h2 id="combination">2. 組み合わせると値動きはどう変わる？</h2>
+<p>株式と債券を組み合わせると、全体の損益はそれぞれの損益を保有割合に応じて合算したものになります。下の図は、長期では資産価値が右肩上がりになる一方、株式は大きく、債券は比較的小さく変動する傾向と、組み合わせた場合の変動幅を模式的に表しています。線は値動きの方向や幅を理解するための例で、実際の指数データではありません。</p>
+<figure class="diagram"><img src="images/asset-allocation-guide-combination.svg" alt="株式、債券、組み合わせたポートフォリオの値動きの幅を比較した模式図"><figcaption>模式図：株式の変動幅が大きく、債券の変動幅が小さい場合、組み合わせることで全体の値動きが中間的になるイメージ。架空の値動きです。</figcaption></figure>
+<p>株式より債券の変動幅が小さい傾向があっても、債券が必ず株式と反対方向に動くわけではありません。インフレや金利上昇への懸念が強まる局面などでは、株式と債券が同時に下落することもあります。組み合わせの効果は、保有する債券の種類や期間、通貨、市場環境によって異なります。</p>
+
+<h2 id="correlation">3. 相関係数とは？</h2>
+<p>2つの資産の値動きがどの程度同じ方向に動くかを示す指標の一つが「相関係数」です。一般に−1から＋1の範囲で表されます。</p>
+<div class="table-wrap"><table><thead><tr><th>相関係数</th><th>値動きの関係</th><th>組み合わせた場合の見方</th></tr></thead><tbody>
+<tr><th>＋1に近い</th><td>同じ方向に動きやすい</td><td>値動きを打ち消す効果は小さくなりやすい</td></tr>
+<tr><th>0に近い</th><td>直線的な連動が小さい</td><td>組み合わせによる変動抑制が期待できる場合がある</td></tr>
+<tr><th>−1に近い</th><td>反対方向に動きやすい</td><td>値動きを打ち消す効果が大きくなりやすい</td></tr>
+</tbody></table></div>
+<p>相関係数が低い資産を組み合わせると、同じリターンの資産だけを保有する場合に比べ、ポートフォリオ全体の価格変動を抑えられる可能性があります。ただし、相関係数は過去の一定期間の値動きから計算する指標です。計測期間や通貨、対象指数によって数値は変わり、将来も同じ関係が続くとは限りません。</p>
+<h3>株式と債券の相関は、時代によって変わる</h3>
+<p>米国の株式と国債の<strong>月次リターン</strong>を調べた研究では、相関は長い期間でも一定ではありませんでした。1970〜1999年の平均は<strong>＋0.35</strong>、2000年〜2023年6月は<strong>−0.29</strong>です。前の期間は同じ方向に動きやすく、後の期間は逆方向に動きやすい関係でした。つまり「株式と債券はいつも逆に動く」という決まりはありません。<sup><a href="#ref-stockbond">参考資料1</a></sup></p>
+<div class="table-wrap"><table><thead><tr><th>米国株・国債の月次リターン</th><th>平均相関</th><th>読み方</th></tr></thead><tbody>
+<tr><th>1970〜1999年</th><td>＋0.35</td><td>同じ方向に動きやすい</td></tr>
+<tr><th>2000〜2023年6月</th><td>−0.29</td><td>逆方向に動きやすい</td></tr>
+</tbody></table></div>
+<h3>実際の年間リターンを散布図で見る</h3>
+<p>下図は、米国株（S&amp;P 500・配当込み）を横軸、米国10年国債（利息・価格変動込み）を縦軸に置いた、2000〜2025年の代表的な年の実績です。点が右上なら両方プラス、左下なら両方マイナス、左上・右下なら異なる方向に動いた年です。背景の淡い色は、点全体が右上がりに並ぶ正の相関と、右下がりに並ぶ負の相関の方向を示す補助表示です。各年の点が入る象限だけで相関が決まるわけではありません。全期間の相関を算出する図ではなく、実際に起きた年の組み合わせを確認するための抜粋です。</p>
+<figure class="diagram"><img src="images/asset-allocation-guide-scatter.svg" alt="2000年から2025年の代表年における米国株と米国10年国債の年間トータルリターン散布図。2008年は株式下落・国債上昇、2022年は両方下落"><figcaption>実データ：NYU Stern・Aswath Damodaran「Historical Returns on Stocks, Bonds and Bills」。S&amp;P 500（配当込み）と米国10年国債の年間トータルリターンから対象年を抜粋。図中の4象限は各資産のリターンの符号を示し、相関は点全体の並び方で判断します。<a href="https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/histretSP.html" target="_blank" rel="noopener">元データ</a></figcaption></figure>
+<p>たとえば2008年は株式−36.55％・国債＋20.10％で左上に位置します。一方、2022年は株式−18.04％・国債−17.83％で左下に位置し、株式と債券が同時に下落した例です。反対方向に動く年も、同時に下落する年もあることが、実績から確認できます。</p>
+<p>さらに、2022年は株式と債券が<strong>年間リターンでともにマイナス</strong>になりました。急なインフレと金利上昇が、株価と債券価格の両方を押し下げたためです。一方、Vanguardの分析では、英国株・債券の関係は2023年に逆方向へ戻ったとされています。短期では相関がプラスに転じることもあり、時期や対象市場によって姿が変わります。<sup><a href="#ref-vanguard-correlation">参考資料2</a></sup></p>
+<div class="callout"><b>ここが重要</b><p>債券は株式より値動きが小さい傾向がありますが、値動きの小ささと「株式を逆方向に補うこと」は別の性質です。債券自体の価格変動が小さくても、株式と同時に下がれば分散効果は弱まります。</p></div>
+<p>数値の実例として、GPIF（年金積立金管理運用独立行政法人）を見てみます。GPIFは、私たちの公的年金の積立金を長期運用する機関です。年金資金をどの資産にどれくらい配分するか検討する際、資産同士の値動きの関係も考慮しています。2025年4月からの基本ポートフォリオの策定に用いた相関係数では、国内債券と国内株式は−0.254、外国債券と外国株式は＋0.560でした。つまり、国内同士はやや逆方向、外国同士は同じ方向に動く傾向を置いた前提です。</p>
+<div class="table-wrap"><table><thead><tr><th>資産の組み合わせ</th><th>GPIFが基本ポートフォリオ策定に用いた相関係数</th></tr></thead><tbody>
+<tr><th>国内債券 × 国内株式</th><td>−0.254</td></tr>
+<tr><th>外国債券 × 外国株式</th><td>＋0.560</td></tr>
+<tr><th>国内債券 × 外国株式</th><td>−0.125</td></tr>
+<tr><th>外国債券 × 国内株式</th><td>＋0.271</td></tr>
+</tbody></table></div>
+<p class="meta">出典：GPIF「分散投資の意義③ 卵を一つのかごに盛るな」。年金運用の配分検討に使った前提値であり、個人向け商品の相関や将来の値動きを予測する数値ではありません。</p>
+<p>また、相関係数は値動きの方向の関係を示すもので、損失の大きさや期待リターンを直接示すものではありません。相関だけで資産を選ばず、価格変動の大きさ、費用、投資期間、保有目的も合わせて確認します。</p>
+
+<h2 id="simulation">4. 組み合わせによる損失額を比べる</h2>
+<p>株式100万円だけを保有する場合と、債券を組み合わせる場合を比較します。次の2つは、組み合わせの違いを理解するための仮定です。実際の相場や将来予測ではありません。</p>
+<h3>ケースA：株式が下落し、債券が上昇した場合</h3>
+<p>株式が30％下落し、債券が5％上昇したと仮定します。</p>
+<div class="table-wrap"><table><thead><tr><th>配分</th><th>株式の損益</th><th>債券の損益</th><th>合計損益</th><th>下落後の資産</th></tr></thead><tbody>
+<tr><th>株式100％</th><td>−30万円</td><td>0円</td><td><b>−30万円（−30％）</b></td><td>70万円</td></tr>
+<tr><th>株式80％・債券20％</th><td>−24万円</td><td>＋1万円</td><td><b>−23万円（−23％）</b></td><td>77万円</td></tr>
+<tr><th>株式60％・債券40％</th><td>−18万円</td><td>＋2万円</td><td><b>−16万円（−16％）</b></td><td>84万円</td></tr>
+<tr><th>株式40％・債券60％</th><td>−12万円</td><td>＋3万円</td><td><b>−9万円（−9％）</b></td><td>91万円</td></tr>
+<tr><th>株式20％・債券80％</th><td>−6万円</td><td>＋4万円</td><td><b>−2万円（−2％）</b></td><td>98万円</td></tr>
+</tbody></table></div>
+<h3>ケースB：株式と債券が同時に下落した場合</h3>
+<p>株式が30％下落し、債券も5％下落したと仮定します。</p>
+<div class="table-wrap"><table><thead><tr><th>配分</th><th>株式の損益</th><th>債券の損益</th><th>合計損益</th><th>下落後の資産</th></tr></thead><tbody>
+<tr><th>株式100％</th><td>−30万円</td><td>0円</td><td><b>−30万円（−30％）</b></td><td>70万円</td></tr>
+<tr><th>株式80％・債券20％</th><td>−24万円</td><td>−1万円</td><td><b>−25万円（−25％）</b></td><td>75万円</td></tr>
+<tr><th>株式60％・債券40％</th><td>−18万円</td><td>−2万円</td><td><b>−20万円（−20％）</b></td><td>80万円</td></tr>
+<tr><th>株式40％・債券60％</th><td>−12万円</td><td>−3万円</td><td><b>−15万円（−15％）</b></td><td>85万円</td></tr>
+<tr><th>株式20％・債券80％</th><td>−6万円</td><td>−4万円</td><td><b>−10万円（−10％）</b></td><td>90万円</td></tr>
+</tbody></table></div>
+<figure class="diagram"><img src="images/asset-allocation-guide-loss.svg" alt="株式と債券の組み合わせについて、債券が上昇するケースと株式と同時に下落するケースの損失率を比較した図"><figcaption>仮定例：株式−30％、債券はケースAで＋5％、ケースBで−5％。配分ごとの損益を単純計算しています。</figcaption></figure>
+<p>ケースAでは債券の上昇が株式の損失を一部補いました。一方、ケースBでは債券も下落しているため、損失は残ります。債券を組み入れると損失が必ず防げるのではなく、株式とは異なる値動きになる可能性をポートフォリオに取り込む、と理解することが大切です。</p>
+
+<h2 id="cash">5. 現金を増やす方法とは何が違う？</h2>
+<p>株式の値下がりによる損失を小さくしたいだけなら、株式の保有割合を下げて現金・預貯金を増やす方法もあります。現金は預金金利や物価の影響を受けますが、株式や債券のように市場価格が日々変動する資産ではありません。</p>
+<div class="table-wrap"><table><thead><tr><th>比較点</th><th>現金・預貯金</th><th>債券</th></tr></thead><tbody>
+<tr><th>価格変動</th><td>円預金の元本は原則として額面で管理できる</td><td>市場金利や信用力などで価格が変動する</td></tr>
+<tr><th>主な役割</th><td>生活費、緊急時の備え、近く使う資金</td><td>利子収入や株式とは異なる値動きを取り込む</td></tr>
+<tr><th>主な注意点</th><td>物価上昇で実質的な購買力が低下することがある</td><td>金利・信用・為替などにより元本割れすることがある</td></tr>
+<tr><th>資産全体への影響</th><td>投資資産の割合を下げ、全体の価格変動を抑えやすい</td><td>株式との相関次第で全体の値動きを変える</td></tr>
+</tbody></table></div>
+<p>現金を増やすことは、価格変動する資産への投資額そのものを減らす方法です。債券を組み入れることは、株式とは異なる収益・価格変動の特徴を持つ資産を加える方法です。どちらが適切かは、資金を使う時期や目的によって異なります。</p>
+<div class="related-inline">生活費や急な支出に備えるお金は、投資配分とは分けて考えます。必要額の考え方は<a href="emergency-fund.html">「生活防衛資金とは？必要額の計算と備え方」</a>を参照してください。</div>
+
+<h2 id="consider">6. 債券を組み入れるか考えるポイント</h2>
+<ul>
+<li><b>投資する目的と期間：</b>いつ使う資金なのか、どの程度の期間保有できるのかを確認します。</li>
+<li><b>許容できる損失額：</b>株式だけの場合と債券を組み合わせた場合について、下落率だけでなく円で損失額を試算します。</li>
+<li><b>過去の下落局面：</b>想定だけでなく、過去にどの程度の下落が起きたかも確認します。指数の下落幅と回復期間は<a href="maximum-drawdown.html">「最大ドローダウンとは？」</a>で解説しています。</li>
+<li><b>債券の種類：</b>国内・外国、国債・社債、短期・長期などで金利・信用・為替リスクが異なります。</li>
+<li><b>費用と税金：</b>投資信託で保有する場合は信託報酬やその他費用、売買時のコストも確認します。</li>
+<li><b>家計全体の現金：</b>預貯金を含めた金融資産全体で、株式・債券・現金がどの割合になっているかを把握します。</li>
+</ul>
+<p>配分の割合に万人共通の正解はありません。株式と債券を何対何にするかを先に決めるのではなく、目的・投資期間・家計・値下がりへの耐性を整理してから考えます。</p>
+<div class="related-inline">値下がりへの耐性を整理するには<a href="risk-tolerance-guide.html">「リスク許容度とは？自分に合う投資リスクの考え方と判断方法」</a>、資産・地域・銘柄・時間を分ける基本は<a href="diversification-basics.html">「分散投資とは？」</a>が参考になります。</div>
+
+<h2 id="summary">まとめ</h2>
+<ul>
+<li>株式と債券は、収益の源泉や価格変動に影響する要因が異なる。</li>
+<li>値動きの異なる資産を組み合わせると、ポートフォリオ全体の変動を抑えられる場合がある。</li>
+<li>相関係数は過去の値動きの関係を示すもので、将来の関係を保証しない。</li>
+<li>株式と債券が同時に下落する局面もあり、債券は損失を必ず防ぐものではない。</li>
+<li>価格変動を抑えるために現金を増やす方法と、異なる値動きの資産を組み合わせる方法は目的が異なる。</li>
+</ul>
+<h2>公式情報・参考資料</h2>
+<ol>
+<li id="ref-stockbond"><a href="https://doi.org/10.1080/0015198X.2024.2317333" target="_blank" rel="noopener">Molenaar et al., “Empirical Evidence on the Stock–Bond Correlation,” Financial Analysts Journal, 2024</a> — 米国株と国債の月次リターン相関（1970〜1999年、2000〜2023年6月）。</li>
+<li id="ref-vanguard-correlation"><a href="https://www.vanguard.co.uk/professional/vanguard-365/investment-knowledge/portfolio-construction/understanding-stock-bond-correlations" target="_blank" rel="noopener">Vanguard「Understanding the dynamics of stock/bond correlations」</a> — 2022年の株式・債券同時下落と、相関が短期で変化する例。</li>
+<li><a href="https://www.investor.gov/introduction-investing/getting-started/asset-allocation" target="_blank" rel="noopener">米国証券取引委員会（SEC）Investor.gov「Asset Allocation and Diversification」</a> — 資産配分、分散、投資期間、リスク許容度の考え方。</li>
+<li><a href="https://www.gpif.go.jp/gpif/diversification3.html" target="_blank" rel="noopener">年金積立金管理運用独立行政法人（GPIF）「分散投資の意義③ 卵を一つのかごに盛るな」</a> — 相関係数の説明と、2025年4月適用の基本ポートフォリオ策定に用いた資産間の相関係数。</li>
+<li><a href="https://www.gpif.go.jp/gpif/portfolio.html" target="_blank" rel="noopener">GPIF「基本ポートフォリオの考え方」</a> — 2025年4月から適用された基本ポートフォリオ。</li>
+<li><a href="https://www.fsa.go.jp/policy/nisa2/invest/" target="_blank" rel="noopener">金融庁「資産形成の基本」</a> — 長期・積立・分散投資の基本。</li>
+</ol>
+<p class="meta">※損益表は本文に記載した仮定に基づく単純計算です。実際の市場データや将来の値動きを示すものではありません。</p>
+<p><a href="https://webfoundrylab.github.io/invest-atlas/">Invest Atlasの記事一覧へ</a></p>
+</article>
+<!-- GENERATED ARTICLE LAYOUT CLOSE: START --></div></div><!-- GENERATED ARTICLE LAYOUT CLOSE: END --></main>
+</body>
+</html>

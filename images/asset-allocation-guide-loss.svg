@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 720" role="img" aria-labelledby="t d">
+<title id="t">株式と債券の組み合わせによる損益比較</title><desc id="d">株式30パーセント下落時に債券が5パーセント上昇するケースと、債券も5パーセント下落するケースの損失率を5つの配分で比較。</desc>
+<rect width="900" height="720" rx="22" fill="#f4f8f8"/>
+<text x="34" y="48" font-size="27" font-weight="700" fill="#172b3d">100万円を投資した場合の仮定例</text>
+<text x="34" y="100" font-size="25" font-weight="700" fill="#176d65">ケースA：株式 −30％ ／ 債券 ＋5％</text>
+<g font-size="19" fill="#172b3d"><text x="35" y="150">株式100％</text><text x="35" y="200">株式80％・債券20％</text><text x="35" y="250">株式60％・債券40％</text><text x="35" y="300">株式40％・債券60％</text><text x="35" y="350">株式20％・債券80％</text></g>
+<g fill="#176d65"><rect x="330" y="124" width="390" height="30" rx="6"/><rect x="330" y="174" width="299" height="30" rx="6"/><rect x="330" y="224" width="208" height="30" rx="6"/><rect x="330" y="274" width="117" height="30" rx="6"/><rect x="330" y="324" width="26" height="30" rx="6"/></g>
+<g font-size="21" font-weight="700" fill="#172b3d"><text x="735" y="148">−30％</text><text x="644" y="198">−23％</text><text x="553" y="248">−16％</text><text x="462" y="298">−9％</text><text x="371" y="348">−2％</text></g>
+<path d="M34 382H866" stroke="#cbd8dc" stroke-width="2"/>
+<text x="34" y="428" font-size="25" font-weight="700" fill="#a36d2f">ケースB：株式 −30％ ／ 債券 −5％</text>
+<g font-size="19" fill="#172b3d"><text x="35" y="478">株式100％</text><text x="35" y="528">株式80％・債券20％</text><text x="35" y="578">株式60％・債券40％</text><text x="35" y="628">株式40％・債券60％</text><text x="35" y="678">株式20％・債券80％</text></g>
+<g fill="#c18a45"><rect x="330" y="452" width="390" height="30" rx="6"/><rect x="330" y="502" width="325" height="30" rx="6"/><rect x="330" y="552" width="260" height="30" rx="6"/><rect x="330" y="602" width="195" height="30" rx="6"/><rect x="330" y="652" width="130" height="30" rx="6"/></g>
+<g font-size="21" font-weight="700" fill="#172b3d"><text x="735" y="476">−30％</text><text x="670" y="526">−25％</text><text x="605" y="576">−20％</text><text x="540" y="626">−15％</text><text x="475" y="676">−10％</text></g>
+</svg>

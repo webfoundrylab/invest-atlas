@@ -781,7 +781,8 @@
         "regular-investing.html",
         "investment-trust-investment-targets.html",
         "orbukan-guide.html",
-        "bonds-basics.html"
+        "bonds-basics.html",
+        "asset-allocation-guide.html"
       ],
       "publishedAt": "2026-10-28",
       "updatedAt": "2026-10-28",
@@ -925,7 +926,8 @@
         "risk-return-basics.html",
         "investment-trust-vs-etf.html",
         "diversification-basics.html",
-        "simple-investing-guide.html"
+        "simple-investing-guide.html",
+        "asset-allocation-guide.html"
       ],
       "publishedAt": "2026-10-30",
       "updatedAt": "2026-10-30",
@@ -992,7 +994,8 @@
         "investment-trust-nav.html",
         "investment-trust-distributions.html",
         "orbukan-guide.html",
-        "bonds-basics.html"
+        "bonds-basics.html",
+        "asset-allocation-guide.html"
       ],
       "publishedAt": "2026-10-31",
       "updatedAt": "2026-10-31",
@@ -1119,7 +1122,8 @@
         "risk-return-basics.html",
         "investment-amount.html",
         "emergency-fund.html",
-        "maximum-drawdown.html"
+        "maximum-drawdown.html",
+        "asset-allocation-guide.html"
       ],
       "thumbnail": "thumbnails/risk-tolerance-guide.svg",
       "publishedAt": "2026-11-02",
@@ -1189,6 +1193,36 @@
       "publishedAt": "2026-11-03",
       "updatedAt": "2026-11-03",
       "publishOrder": 29
+    },
+    {
+      "slug": "asset-allocation-guide.html",
+      "title": "株式と債券を組み合わせる意味とは？相関とリスク分散の考え方",
+      "mainTitle": "株式と債券を組み合わせる意味とは？",
+      "subtitle": "相関とリスク分散の考え方",
+      "summary": "株式と債券の値動きの違い、相関係数、組み合わせによる損益の変化を仮定例で解説。債券が株式と同時に下落する場合や、現金を増やす方法との違いも整理。",
+      "category": "basics",
+      "subcategory": "diversification",
+      "tags": [
+        "株式",
+        "債券",
+        "相関係数",
+        "分散投資",
+        "資産配分",
+        "ポートフォリオ",
+        "リスク分散"
+      ],
+      "status": "published",
+      "related": [
+        "diversification-basics.html",
+        "risk-tolerance-guide.html",
+        "bonds-basics.html",
+        "maximum-drawdown.html",
+        "emergency-fund.html"
+      ],
+      "thumbnail": "thumbnails/asset-allocation-guide.svg",
+      "publishedAt": "2026-11-04",
+      "updatedAt": "2026-11-04",
+      "publishOrder": 30
     }
   ],
   "pages": [

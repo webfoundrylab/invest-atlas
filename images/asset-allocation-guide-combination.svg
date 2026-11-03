@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" role="img" aria-labelledby="title desc">
+<title id="title">株式と債券を組み合わせた値動きの模式図</title>
+<desc id="desc">株式の大きな変動、債券の比較的小さな変動、両者を組み合わせた値動きの例を、重ならない凡例と波形で示す。実データではない。</desc>
+<rect width="1000" height="600" rx="24" fill="#f5f8fa"/>
+<text x="40" y="48" font-size="28" font-weight="700" fill="#172b3d">組み合わせると、全体の値動きの幅が変わる</text>
+<text x="40" y="82" font-size="17" fill="#526575">値動きの違う資産を混ぜるイメージ（模式図・実績データではありません）</text>
+<!-- Legend is separated from the plotted waveforms to prevent text overlap. -->
+<g font-size="18" font-weight="700">
+<path d="M90 125H132" stroke="#d45a4a" stroke-width="5" stroke-linecap="round"/><text x="143" y="131" fill="#b7473b">株式（変動大）</text>
+<path d="M365 125H407" stroke="#3978b8" stroke-width="5" stroke-linecap="round"/><text x="418" y="131" fill="#2e679f">債券（変動小の例）</text>
+<path d="M700 125H742" stroke="#168477" stroke-width="5" stroke-linecap="round" stroke-dasharray="10 5"/><text x="753" y="131" fill="#126d62">組み合わせ</text>
+</g>
+<defs><clipPath id="plotClip"><rect x="92" y="162" width="816" height="276" rx="2"/></clipPath></defs>
+<rect x="90" y="160" width="820" height="280" rx="8" fill="#fff" stroke="#dce4e8"/>
+<g stroke="#d9e2e8" stroke-width="1.5"><path d="M90 230H910M90 300H910M90 370H910"/></g>
+<path d="M90 175V440H910" fill="none" stroke="#8798a5" stroke-width="2"/>
+<text x="500" y="477" text-anchor="middle" font-size="18" fill="#526575">時間の経過 →</text>
+<text x="34" y="300" transform="rotate(-90 34 300)" text-anchor="middle" font-size="18" fill="#526575">資産価値（概念）</text>
+<g clip-path="url(#plotClip)"><path d="M100 410 C150 355 180 435 230 320 S310 390 360 275 S430 330 480 235 S560 285 610 220 S700 270 750 200 S850 245 900 195" fill="none" stroke="#d45a4a" stroke-width="5" stroke-linecap="round"/>
+<path d="M100 410 C160 385 210 405 270 375 S360 390 420 360 S510 370 570 345 S660 360 720 325 S820 340 900 310" fill="none" stroke="#3978b8" stroke-width="5" stroke-linecap="round"/>
+<path d="M100 410 C155 370 200 420 250 345 S330 385 390 310 S470 345 530 280 S620 315 680 260 S790 290 900 245" fill="none" stroke="#168477" stroke-width="5" stroke-linecap="round" stroke-dasharray="10 5"/></g>
+<rect x="40" y="515" width="920" height="52" rx="10" fill="#fff" stroke="#dce4e8"/>
+<text x="58" y="547" font-size="16" fill="#526575">※線は説明用に描いた架空の値動きです。組み合わせ後の変動は、資産の配分や相関によって変わります。</text>
+</svg>

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" role="img" aria-labelledby="title desc">
+<title id="title">米国株と米国10年国債の年間リターン散布図（2000〜2025年の抜粋）と4象限の見方</title>
+<desc id="desc">16年分の年間リターン実績を散布図で示す。右上がり方向の組み合わせを淡い緑、右下がり方向の組み合わせを淡い青で示し、相関の見方を補助する。</desc>
+<rect width="1000" height="700" rx="24" fill="#f5f8fa"/>
+<text x="42" y="48" font-size="28" font-weight="700" fill="#172b3d">株式と国債の年間リターン（実績・抜粋）</text>
+<text x="42" y="82" font-size="18" fill="#526575">米国市場｜2000〜2025年から選んだ16年</text>
+<g font-size="16" font-weight="700">
+<rect x="190" y="103" width="18" height="18" rx="3" fill="#dcefe8"/><text x="216" y="118" fill="#176d65">正の相関（右上がり）</text>
+<rect x="465" y="103" width="18" height="18" rx="3" fill="#e1eaf5"/><text x="491" y="118" fill="#3978b8">負の相関（右下がり）</text>
+<circle cx="790" cy="112" r="6" fill="#167c72"/><text x="804" y="118" font-size="14" fill="#526575">各年の実績</text>
+</g>
+<!-- Actual annual-return scatter plot. Both axes use uniform 5% intervals. -->
+<rect x="190" y="150" width="740" height="420" fill="#fff" stroke="#8394a1" stroke-width="1.8"/>
+<!-- Diagonal pairs are lightly tinted: positive-slope direction vs negative-slope direction. -->
+<path d="M190 150H584.7V383.3H190Z M584.7 383.3H930V570H584.7Z" fill="#e1eaf5" fill-opacity=".72"/>
+<path d="M584.7 150H930V383.3H584.7Z M190 383.3H584.7V570H190Z" fill="#e4f1eb" fill-opacity=".78"/>
+<g stroke="#dce4e8" stroke-width="1.2">
+<path d="M190 150H930M190 196.7H930M190 243.3H930M190 290H930M190 336.7H930M190 383.3H930M190 430H930M190 476.7H930M190 523.3H930M190 570H930"/>
+<path d="M190 150V570M288.7 150V570M387.3 150V570M486 150V570M584.7 150V570M683.3 150V570M782 150V570M880.7 150V570"/>
+</g>
+<path d="M190 383.3H930M584.7 150V570" stroke="#8799a5" stroke-width="2.2"/>
+<g font-size="15" fill="#526575" text-anchor="end">
+<text x="174" y="155">＋25%</text><text x="174" y="202">＋20%</text><text x="174" y="249">＋15%</text><text x="174" y="296">＋10%</text><text x="174" y="342">＋5%</text><text x="174" y="389">0%</text><text x="174" y="436">−5%</text><text x="174" y="483">−10%</text><text x="174" y="529">−15%</text><text x="174" y="576">−20%</text>
+</g>
+<g font-size="15" fill="#526575" text-anchor="middle">
+<text x="190" y="596">−40%</text><text x="288.7" y="596">−30%</text><text x="387.3" y="596">−20%</text><text x="486" y="596">−10%</text><text x="584.7" y="596">0%</text><text x="683.3" y="596">＋10%</text><text x="782" y="596">＋20%</text><text x="880.7" y="596">＋30%</text>
+</g>
+<text x="560" y="642" font-size="19" text-anchor="middle" font-weight="700" fill="#172b3d">株式（S&amp;P 500・配当込み）年間リターン</text>
+<text x="48" y="360" font-size="18" text-anchor="middle" font-weight="700" fill="#172b3d" transform="rotate(-90 48 360)">米国10年国債 年間トータルリターン</text>
+<g fill="none" stroke="#8b9aa4" stroke-width="1.2">
+<path d="M224 195.7L248 177M367.9 242.2L350 211M495.6 227.8L496 190M467.7 331.3L450 359M605.4 233.6L625 205M632.3 356.5L655 327M542.9 383.5L520 417M762.5 277.6L789 247M760.1 310.5L730 286M841.8 347.1L870 316M864.5 379.8L905 365M830.1 398.6L790 413M865.6 424.6L904 431M901.9 468.3L865 488M840.6 487.1L814 527M406.7 549.7L430 532"/>
+</g>
+<g fill="#167c72" stroke="#fff" stroke-width="2">
+<circle cx="495.6" cy="227.8" r="7"/><circle cx="467.7" cy="331.3" r="7"/><circle cx="367.9" cy="242.2" r="7"/><circle cx="864.5" cy="379.8" r="7"/><circle cx="632.3" cy="356.5" r="7"/><circle cx="840.6" cy="487.1" r="7"/><circle cx="605.4" cy="233.6" r="7"/><circle cx="901.9" cy="468.3" r="7"/><circle cx="542.9" cy="383.5" r="7"/><circle cx="762.5" cy="277.6" r="7"/><circle cx="865.6" cy="424.6" r="7"/><circle cx="841.8" cy="347.1" r="7"/><circle cx="830.1" cy="398.6" r="7"/><circle cx="760.1" cy="310.5" r="7"/>
+</g>
+<g fill="#d14d42" stroke="#fff" stroke-width="2.5"><circle cx="224" cy="195.7" r="9"/><circle cx="406.7" cy="549.7" r="9"/></g>
+<g font-size="14" font-weight="700" text-anchor="middle">
+<g><rect x="226" y="163" width="46" height="25" rx="6" fill="#fff" stroke="#d14d42"/><text x="249" y="181" fill="#b43b32">2008</text></g>
+<g><rect x="326" y="184" width="46" height="25" rx="6" fill="#fff" stroke="#cbd5db"/><text x="349" y="202" fill="#344b5b">2002</text></g>
+<g><rect x="473" y="163" width="46" height="25" rx="6" fill="#fff" stroke="#cbd5db"/><text x="496" y="181" fill="#344b5b">2000</text></g>
+<g><rect x="427" y="359" width="46" height="25" rx="6" fill="#fff" stroke="#cbd5db"/><text x="450" y="377" fill="#344b5b">2001</text></g>
+<g><rect x="602" y="180" width="46" height="25" rx="6" fill="#fff" stroke="#cbd5db"/><text x="625" y="198" fill="#344b5b">2011</text></g>
+<g><rect x="632" y="302" width="46" height="25" rx="6" fill="#fff" stroke="#cbd5db"/><text x="655" y="320" fill="#344b5b">2005</text></g>
+<g><rect x="497" y="417" width="46" height="25" rx="6" fill="#fff" stroke="#cbd5db"/><text x="520" y="435" fill="#344b5b">2018</text></g>
+<g><rect x="766" y="222" width="46" height="25" rx="6" fill="#fff" stroke="#cbd5db"/><text x="789" y="240" fill="#344b5b">2020</text></g>
+<g><rect x="707" y="261" width="46" height="25" rx="6" fill="#fff" stroke="#cbd5db"/><text x="730" y="279" fill="#344b5b">2025</text></g>
+<g><rect x="847" y="291" width="46" height="25" rx="6" fill="#fff" stroke="#cbd5db"/><text x="870" y="309" fill="#344b5b">2023</text></g>
+<g><rect x="882" y="340" width="46" height="25" rx="6" fill="#fff" stroke="#cbd5db"/><text x="905" y="358" fill="#344b5b">2003</text></g>
+<g><rect x="767" y="413" width="46" height="25" rx="6" fill="#fff" stroke="#cbd5db"/><text x="790" y="431" fill="#344b5b">2024</text></g>
+<g><rect x="881" y="431" width="46" height="25" rx="6" fill="#fff" stroke="#cbd5db"/><text x="904" y="449" fill="#344b5b">2021</text></g>
+<g><rect x="842" y="488" width="46" height="25" rx="6" fill="#fff" stroke="#cbd5db"/><text x="865" y="506" fill="#344b5b">2013</text></g>
+<g><rect x="791" y="527" width="46" height="25" rx="6" fill="#fff" stroke="#cbd5db"/><text x="814" y="545" fill="#344b5b">2009</text></g>
+<g><rect x="407" y="507" width="46" height="25" rx="6" fill="#fff" stroke="#d14d42"/><text x="430" y="525" fill="#b43b32">2022</text></g>
+</g>
+<text x="190" y="678" font-size="14" fill="#526575">※色は相関の方向を理解するための補助です。実際の相関は、散布図の点全体が右上がり・右下がりのどちらに並ぶかで判断します。</text>
+</svg>

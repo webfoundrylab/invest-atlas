@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#edf3f1"/>
+    <stop offset="1" stop-color="#dce9e5"/>
+  </linearGradient>
+  <clipPath id="chartClip"><rect x="105" y="300" width="990" height="245" rx="4"/></clipPath>
+</defs>
+<rect width="1200" height="675" fill="url(#bg)"/>
+<g fill="#176d65" opacity=".075" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="270" letter-spacing="-8">
+  <text x="18" y="400">Invest</text>
+  <text x="1180" y="605" text-anchor="end">Atlas</text>
+</g>
+<rect x="24" y="22" width="1152" height="150" rx="22" fill="#fff" stroke="#d4e1df" stroke-width="2"/>
+<text x="600" y="57" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="800" letter-spacing="1" fill="#176d65">STOCKS &amp; BONDS</text>
+<text x="600" y="116" text-anchor="middle" font-family="sans-serif" font-size="44" font-weight="800" fill="#172b3d">株式と債券を組み合わせる意味とは？</text>
+<text x="600" y="157" text-anchor="middle" font-family="sans-serif" font-size="38" font-weight="650" fill="#536879">相関とリスク分散の考え方</text>
+<rect x="58" y="195" width="1084" height="365" rx="26" fill="#fff" fill-opacity=".88" stroke="#d6e3df" stroke-width="2"/>
+<g font-family="sans-serif" font-size="38" font-weight="800">
+  <path d="M135 250h48" stroke="#d45a4a" stroke-width="8" stroke-linecap="round"/>
+  <text x="198" y="263" fill="#b7473b">株式</text>
+  <path d="M445 250h48" stroke="#3978b8" stroke-width="8" stroke-linecap="round"/>
+  <text x="508" y="263" fill="#2e679f">債券</text>
+  <path d="M760 250h48" stroke="#168477" stroke-width="8" stroke-linecap="round" stroke-dasharray="14 7"/>
+  <text x="823" y="263" fill="#126d62">組み合わせ</text>
+</g>
+<g stroke="#d8e1e5" stroke-width="2">
+  <path d="M105 425H1095"/>
+  <path d="M105 345H1095M105 505H1095" stroke-dasharray="5 9" opacity=".65"/>
+</g>
+<g clip-path="url(#chartClip)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M110 425 C150 395 185 315 230 330 S315 510 350 485 S430 285 470 310 S550 475 590 465 S675 320 710 340 S795 530 830 500 S915 295 950 325 S1045 400 1090 425" stroke="#d45a4a" stroke-width="9"/>
+  <path d="M110 425 C150 440 190 455 230 450 S310 390 350 400 S430 465 470 455 S550 375 590 390 S670 455 710 445 S790 385 830 400 S910 465 950 450 S1040 435 1090 425" stroke="#3978b8" stroke-width="9"/>
+  <path d="M110 425 C150 420 190 375 230 378 S310 455 350 451 S430 355 470 368 S550 430 590 435 S670 375 710 382 S790 465 830 460 S910 365 950 375 S1040 415 1090 425" stroke="#168477" stroke-width="9" stroke-dasharray="16 8"/>
+</g>
+<rect x="225" y="575" width="750" height="76" rx="20" fill="#176d65"/>
+<text x="600" y="627" text-anchor="middle" font-family="sans-serif" font-size="44" font-weight="800" fill="#fff">値動きの幅を調整する</text>
+</svg>
