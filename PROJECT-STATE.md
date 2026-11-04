@@ -18,3 +18,10 @@
 - 残作業：GitHub Actions の手動 `dry-run` を実行し、公開側ビルド・台帳・リンク検証を確認する。現時点でdry-runは未実施・未合格。手動実行は公開ではなく検証のみを選択する。
 - 運用上の不整合：`ARTICLE-WORKFLOW.md` / `README.md` はJST 05:00・17:00の2回を記載するが、現行 `.github/workflows/publish.yml` はJST 05:00相当のcronしか持たない。17:00トリガーの追加が未対応。
 
+
+## 2026-11-04 VIX記事のプレビュー修正・承認・キュー登録
+- プレビューで発生した「files/updates間のdestination衝突」は、VIXパッケージの `updates/volatility-basics.html` が既存記事の公開先と重複していたことが原因。VIX manifestから `updates` / `registry_updates` を削除し、衝突ファイルを削除。VIX本文から既存記事へのリンクは維持し、逆リンクの上書き反映は行わない方針に変更。
+- 同じ失敗を防ぐため、全stockパッケージ横断で `files` と `updates` のdestination重複を検査するルールを `ARTICLE-WORKFLOW.md` と `USER-FEEDBACK.md` に記録。
+- ユーザーから継続・問題なしの確認を受け、本番同等プレビューの確認工程を完了扱いとした。VIX manifestの必須チェック6項目をすべて true、`draft_status` を `ready` に更新。
+- VIXを `queue.json` の末尾（公開順9番目、scheduled記事の5番目）へ追加。先行する4本のscheduled記事の後に公開される。manifest commit：`cc2fa385e4d9de12f587e11f415c5f1b4dcd49be3`、queue commit：`3ea973f5e44e92ab4b29b0aa4966a29ffecd7352`。
+- VIXは公開キュー登録済みだが、GitHub Actionsの手動dry-runは未実施。公開側の最終ビルド・検証は未確認。手動publishや公開操作は行っていない。
