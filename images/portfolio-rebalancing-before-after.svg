@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" rx="24" fill="#f5f8f7"/>
+<style>
+.title{font-family:'Noto Sans CJK JP',sans-serif;font-size:27px;font-weight:700;fill:#294d50}
+.money{font-family:'Noto Sans CJK JP',sans-serif;font-size:24px;font-weight:650;fill:#294d50}
+.pct{font-family:'Noto Sans CJK JP',sans-serif;font-size:22px;font-weight:700;fill:#fff;text-anchor:middle;dominant-baseline:middle}
+.small{font-family:'Noto Sans CJK JP',sans-serif;font-size:19px;fill:#536879}
+.mid{font-family:'Noto Sans CJK JP',sans-serif;font-size:21px;font-weight:700;fill:#294d50;text-anchor:middle}
+</style>
+<text class="title" x="250" y="55" text-anchor="middle">値動き前：合計100万円</text>
+<text class="title" x="750" y="55" text-anchor="middle">値動き後：合計115万円</text>
+<path d="M 250 240 L 250.00 120.00 A 120 120 0 1 1 179.47 337.08 Z" fill="#287e74"/>
+<path d="M 250 240 L 179.47 337.08 A 120 120 0 0 1 250.00 120.00 Z" fill="#d98a55"/>
+<path d="M 750 240 L 750.00 120.00 A 120 120 0 1 1 651.96 309.20 Z" fill="#287e74"/>
+<path d="M 750 240 L 651.96 309.20 A 120 120 0 0 1 750.00 120.00 Z" fill="#d98a55"/>
+<text class="pct" x="318.5" y="262.2">60%</text>
+<text class="pct" x="181.5" y="217.8">40%</text>
+<text class="pct" x="813.9" y="273.1">65.2%</text>
+<text class="pct" x="686.1" y="206.9">34.8%</text>
+<text class="mid" x="500" y="175">株式だけ25%上昇</text>
+<path d="M 430 240 H 570 M 548 220 L 570 240 L 548 260" fill="none" stroke="#536879" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="90" y="390" width="320" height="112" rx="14" fill="#fff" stroke="#dce4e8"/>
+<rect x="590" y="390" width="320" height="112" rx="14" fill="#fff" stroke="#dce4e8"/>
+<rect x="115" y="413" width="18" height="18" rx="3" fill="#287e74"/>
+<text class="money" x="148" y="430">株式 60万円</text>
+<rect x="115" y="455" width="18" height="18" rx="3" fill="#d98a55"/>
+<text class="money" x="148" y="472">債券 40万円</text>
+<rect x="615" y="413" width="18" height="18" rx="3" fill="#287e74"/>
+<text class="money" x="648" y="430">株式 75万円</text>
+<rect x="615" y="455" width="18" height="18" rx="3" fill="#d98a55"/>
+<text class="money" x="648" y="472">債券 40万円</text>
+<text class="small" x="500" y="535" text-anchor="middle">株式の値上がりで、株式の金額・比率がともに上昇</text>
+</svg>

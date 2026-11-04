@@ -1223,6 +1223,35 @@
       "publishedAt": "2026-11-04",
       "updatedAt": "2026-11-04",
       "publishOrder": 30
+    },
+    {
+      "slug": "portfolio-rebalancing.html",
+      "title": "リバランスとは？資産配分を整える方法",
+      "mainTitle": "リバランスとは？",
+      "subtitle": "資産配分を整える方法と判断のポイント",
+      "summary": "株式や債券の値動きで変化した資産配分を目標に戻すリバランスを解説。調整方法、定期・乖離幅の判断例、バランス型投資信託との違い、税金・費用、実践手順を整理。",
+      "category": "basics",
+      "subcategory": "diversification",
+      "tags": [
+        "リバランス",
+        "資産配分",
+        "ポートフォリオ",
+        "分散投資",
+        "株式",
+        "債券"
+      ],
+      "status": "published",
+      "related": [
+        "asset-allocation-guide.html",
+        "diversification-basics.html",
+        "risk-tolerance-guide.html",
+        "investment-trust-actual-cost.html",
+        "risk-return-basics.html"
+      ],
+      "thumbnail": "thumbnails/portfolio-rebalancing.svg",
+      "publishedAt": "2026-11-05",
+      "updatedAt": "2026-11-05",
+      "publishOrder": 31
     }
   ],
   "pages": [
