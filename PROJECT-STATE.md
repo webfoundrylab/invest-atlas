@@ -1,3 +1,12 @@
+## 2026-11-04 相関係数2記事の公開前監査
+- ユーザーによる記事内容確認は完了。対象は `correlation-coefficient.html` と `asset-correlation-comparison.html`。再度の内容確認は不要。
+- `correlation-coefficient.html`：GPIFの2025年4月適用・基本ポートフォリオ前提資料に合わせ、相関係数と標準偏差を同一資料の値に統一。国内債券2.60%、国内株式19.19%、相関−0.254による50:50試算を9.35%へ修正（相関0は9.68%、相関+1は10.90%）。公式PDFを参考資料へ追加。
+- `asset-correlation-comparison.html`：22 ETF・全231ペアの行列を点検し、負相関13ペア、最低値はTLT×DBCの−0.31と確認。本文の誤記（BIL×TLT）を訂正。EWJ行は個別相関データと照合。米国債5満期区分はSafe Rateの指数仕様・2009〜2025年の年次トータルリターンを確認。
+- 記事間リンクを整備。比較記事から相関係数解説へリンクし、既存の `diversification-basics.html` と `asset-allocation-guide.html` に文脈付きリンクを追加する更新ファイル・台帳更新を比較記事パッケージへ同梱。
+- 両記事の `sources_verified`、`internal_links_reviewed`、`backlinks_reviewed` は確認後に true。ユーザー確認済みの `editorial_review` も true。サムネイルのXML検証・実表示、本文図表のPC/スマートフォン表示は `preview.bat` 未実行のため未完了。両記事は公開キュー未登録。
+- 次工程：ユーザーPCでPrivate stockの `preview.bat` を1回実行し、本番同等ビルド・検証・プレビューを確認。通過後に `visuals_complete` / `thumbnail_svg` を確定し、2記事を順番どおりキュー末尾へ登録してdry-runを実施する。
+- 運用上の不整合：`ARTICLE-WORKFLOW.md` / `README.md` はJST 05:00・17:00の2回を記載するが、現行 `.github/workflows/publish.yml` はJST 05:00相当のcronしか持たない。17:00トリガーの追加が未対応。
+
 ## 2026-11-02 記事制作フローを一本化
 - Private stock の `ARTICLE-WORKFLOW.md` を記事制作・改稿・プレビュー・公開準備の唯一の作業手順として制定。
 - ユーザー確認は原則として記事内容の完成稿1回のみ。HTML/CSS/SVG/manifest/検証ログなどの技術工程は担当側でまとめて処理する。
