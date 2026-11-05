@@ -30,6 +30,7 @@ https://webfoundrylab.github.io/invest-atlas/investment-period-guide.html
 https://webfoundrylab.github.io/invest-atlas/lump-sum-vs-dca.html
 https://webfoundrylab.github.io/invest-atlas/asset-allocation-guide.html
 https://webfoundrylab.github.io/invest-atlas/portfolio-rebalancing.html
+https://webfoundrylab.github.io/invest-atlas/volatility-basics.html
 https://webfoundrylab.github.io/invest-atlas/categories/
 https://webfoundrylab.github.io/invest-atlas/categories/basics/
 https://webfoundrylab.github.io/invest-atlas/categories/basics/getting-started/

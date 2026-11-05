@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ボラティリティとは？リターンの変動と標準偏差の見方｜Invest Atlas</title>
+<meta name="description" content="ボラティリティとは、プラス・マイナス両方を含むリターンの変動の大きさです。標準偏差の意味、具体的な月次リターンの比較、年率換算、最大ドローダウンとの違い、投資信託を比較するときの注意点を図解します。">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://webfoundrylab.github.io/invest-atlas/volatility-basics.html">
+<style>
+:root{--ink:#172b3d;--muted:#536879;--teal:#087f75;--line:#d5e6eb;--paper:#f1f8fa}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.85 system-ui,-apple-system,"Segoe UI",sans-serif}a{color:#12665f;text-underline-offset:3px}
+.eyebrow{font-size:.82rem;font-weight:800;letter-spacing:.08em;color:var(--teal)}
+h1{font-size:clamp(1.85rem,4vw,2.65rem);line-height:1.35;margin:.5em 0}.title-main,.title-subtitle{display:block}.title-subtitle{font-size:.62em;line-height:1.5;font-weight:650;color:var(--muted);margin-top:.22em}
+.lead{font-size:1.08rem;color:#40596a}.meta{font-size:.85rem;color:var(--muted)}
+h2{font-size:1.42rem;line-height:1.45;margin:2.1em 0 .65em;border-bottom:2px solid var(--line);padding-bottom:.4em}h3{font-size:1.12rem;margin:1.45em 0 .4em}
+p{margin:.85em 0}.callout{margin:20px 0;padding:15px 18px;background:#edf7f4;border-left:4px solid #168276;border-radius:8px}.note{margin:18px 0;padding:14px 16px;background:#fff7e9;border-left:4px solid #d99a43;border-radius:8px}
+.toc{margin:24px 0;padding:17px 21px;background:#f4f8f9;border:1px solid var(--line);border-radius:12px}.toc strong{display:block;margin-bottom:6px}.toc ol{margin:0;padding-left:1.4em}.toc li{margin:.25em 0}
+.table-wrap{overflow-x:auto;margin:18px 0}table{width:100%;border-collapse:collapse;font-size:.93rem}th,td{padding:11px;border:1px solid var(--line);text-align:left;vertical-align:top}th{background:#edf4f5}
+.formula{margin:18px 0;padding:16px;background:#f2f6fa;border-radius:10px;text-align:center;font-size:1.05rem;font-weight:750;overflow-wrap:anywhere}
+.diagram{margin:24px 0;padding:14px;border:1px solid var(--line);border-radius:13px;background:#fbfdfd}.diagram img{display:block;width:100%;height:auto}.diagram figcaption{margin-top:9px;font-size:.88rem;color:var(--muted)}
+.related-inline{margin:18px 0;padding:12px 15px;background:#f3f7f8;border-radius:9px}.source-list li{margin:.6em 0}
+@media(max-width:600px){h2{font-size:1.28rem}.toc{padding:14px}.diagram{padding:8px}th,td{padding:8px;font-size:.86rem}}
+</style>
+<!-- GENERATED ARTICLE LAYOUT STYLE: START --><style>
+main.wrap{width:min(1160px,calc(100% - 32px))}header .wrap{width:min(1160px,calc(100% - 32px))}
+.article-page-layout{display:grid;grid-template-columns:245px minmax(0,1fr);gap:26px;align-items:start;margin:22px 0 52px}
+.article-sidebar .category-tree{background:#fff;border:1px solid #dce4e8;border-radius:14px;padding:14px;position:sticky;top:18px;max-height:calc(100vh - 36px);overflow:auto}
+.article-sidebar .category-tree ul{list-style:none;padding-left:14px;margin:8px 0}.article-sidebar .category-tree>ul{padding:0}.article-sidebar .category-tree li{margin:5px 0}.article-sidebar .category-tree summary{cursor:pointer}.article-sidebar .category-tree a{font-size:.9rem}.article-sidebar .category-tree .active>a,.article-sidebar .category-tree .active>details>summary>a{font-weight:800;color:#075f59}
+.article-page-content{min-width:0}
+.article-category-crumbs{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px;font-size:.9rem}.article-mobile-tree{display:none}
+@media(max-width:850px){.article-page-layout{grid-template-columns:1fr;gap:0;margin-top:14px}.article-sidebar{display:none}.article-mobile-tree{display:block;margin:0 0 16px;padding:12px 14px;background:#fff;border:1px solid #d5e6eb;border-radius:12px}.article-mobile-tree summary{cursor:pointer;font-weight:750}.article-mobile-tree .category-tree{margin-top:10px;max-height:320px;overflow:auto}.article-mobile-tree .category-tree ul{list-style:none;padding-left:14px;margin:8px 0}.article-mobile-tree .category-tree>ul{padding:0}}
+</style><!-- GENERATED ARTICLE LAYOUT STYLE: END --><link rel="stylesheet" href="https://webfoundrylab.github.io/invest-atlas/assets/site-layout.css"><link rel="stylesheet" href="https://webfoundrylab.github.io/invest-atlas/assets/site-header.css"><script src="https://webfoundrylab.github.io/invest-atlas/assets/display-mode.js"></script></head>
+<body>
+<main class="wrap"><!-- GENERATED ARTICLE LAYOUT OPEN: START --><div class="article-page-layout"><aside class="article-sidebar"><nav class="category-tree" aria-label="カテゴリツリー"><strong>カテゴリから探す</strong><ul><li><details open><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/">投資の基礎</a></summary><ul><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/getting-started/">投資を始める前の準備</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/getting-started/investment-preparation/">家計・目的・投資期間</a></li></ul></details></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/investing-basics/">投資の仕組み・基本用語</a></li><li class="active"><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/risk-return/">リスクとリターン</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/diversification/">分散投資・資産配分</a></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/bond-investing/">債券投資</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/bond-investing/bond-basics/">債券の仕組み・利回り・リスク</a></li></ul></details></li></ul></details></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/">投資制度・税制</a></summary><ul><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/nisa-system/">新NISAの仕組み</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/nisa-system/new-nisa-basics/">投資枠・非課税保有限度額</a></li></ul></details></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/nisa-product-selection/">NISAの商品選び</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/nisa-product-selection/choosing-funds/">投資信託の選び方</a></li></ul></details></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/tax-and-nisa/">投資と税金</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/ideco-pension/">iDeCo・年金制度</a></li></ul></details></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/">投資信託・ETF</a></summary><ul><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/investment-trust-basics/">投資信託の基礎</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/investment-trust-basics/nav-price/">基準価額と値動き</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/investment-trust-basics/index-active/">インデックス型・アクティブ型</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/investment-trust-basics/investment-targets/">投資対象資産・地域</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/investment-trust-basics/distribution/">分配金と再投資</a></li></ul></details></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/etf-basics/">ETFの基礎</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/fund-etf-comparison/">投資信託とETFの比較</a></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/fund-costs/">信託報酬・手数料</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/fund-costs/expense-types/">費用の種類・実質コスト</a></li></ul></details></li></ul></details></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/strategy/">資産形成</a></summary><ul><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/strategy/regular-investing/">積立投資</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/strategy/regular-investing/dollar-cost-averaging/">定額購入・購入時期の分散</a></li></ul></details></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/strategy/long-term-investing/">長期投資</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/strategy/compound-growth/">複利の仕組み</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/strategy/goals-and-contributions/">目標額・積立額の考え方</a></li></ul></details></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/">市場・注目テーマ</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/economic-indicators/">経済指標・金融政策</a></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/market-trends/">株式市場の動向</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/market-trends/stock-indices/">株価指数</a></li></ul></details></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/investment-themes/">注目テーマ</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/investment-themes/ai-semiconductor/">AI・半導体</a></li></ul></details></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/fx-rates-inflation/">為替・金利・インフレ</a></li></ul></details></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/">個別株・企業分析</a></summary><ul><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/financial-statements/">決算書・財務分析</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/financial-statements/earnings-results/">決算の読み方</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/financial-statements/financial-metrics/">売上・利益・財務指標</a></li></ul></details></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/company-analysis/">企業・銘柄の分析</a></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/dividends-shareholder-returns/">配当・株主還元</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/dividends-shareholder-returns/stock-dividend-basics/">配当金・利回り・税金</a></li></ul></details></li></ul></details></li></ul></nav></aside><div class="article-page-content"><!-- GENERATED ARTICLE LAYOUT OPEN: END --><article class="article"><nav class="article-category-crumbs" aria-label="パンくずリスト"><a href="https://webfoundrylab.github.io/invest-atlas/">トップ</a> › <a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/">投資の基礎</a> › <a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/risk-return/">リスクとリターン</a></nav><div class="article-mobile-tree"><details><summary>カテゴリツリーを開く</summary><nav class="category-tree" aria-label="カテゴリツリー"><strong>カテゴリから探す</strong><ul><li><details open><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/">投資の基礎</a></summary><ul><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/getting-started/">投資を始める前の準備</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/getting-started/investment-preparation/">家計・目的・投資期間</a></li></ul></details></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/investing-basics/">投資の仕組み・基本用語</a></li><li class="active"><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/risk-return/">リスクとリターン</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/diversification/">分散投資・資産配分</a></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/bond-investing/">債券投資</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/bond-investing/bond-basics/">債券の仕組み・利回り・リスク</a></li></ul></details></li></ul></details></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/">投資制度・税制</a></summary><ul><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/nisa-system/">新NISAの仕組み</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/nisa-system/new-nisa-basics/">投資枠・非課税保有限度額</a></li></ul></details></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/nisa-product-selection/">NISAの商品選び</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/nisa-product-selection/choosing-funds/">投資信託の選び方</a></li></ul></details></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/tax-and-nisa/">投資と税金</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/ideco-pension/">iDeCo・年金制度</a></li></ul></details></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/">投資信託・ETF</a></summary><ul><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/investment-trust-basics/">投資信託の基礎</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/investment-trust-basics/nav-price/">基準価額と値動き</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/investment-trust-basics/index-active/">インデックス型・アクティブ型</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/investment-trust-basics/investment-targets/">投資対象資産・地域</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/investment-trust-basics/distribution/">分配金と再投資</a></li></ul></details></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/etf-basics/">ETFの基礎</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/fund-etf-comparison/">投資信託とETFの比較</a></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/fund-costs/">信託報酬・手数料</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/fund-costs/expense-types/">費用の種類・実質コスト</a></li></ul></details></li></ul></details></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/strategy/">資産形成</a></summary><ul><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/strategy/regular-investing/">積立投資</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/strategy/regular-investing/dollar-cost-averaging/">定額購入・購入時期の分散</a></li></ul></details></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/strategy/long-term-investing/">長期投資</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/strategy/compound-growth/">複利の仕組み</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/strategy/goals-and-contributions/">目標額・積立額の考え方</a></li></ul></details></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/">市場・注目テーマ</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/economic-indicators/">経済指標・金融政策</a></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/market-trends/">株式市場の動向</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/market-trends/stock-indices/">株価指数</a></li></ul></details></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/investment-themes/">注目テーマ</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/investment-themes/ai-semiconductor/">AI・半導体</a></li></ul></details></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/fx-rates-inflation/">為替・金利・インフレ</a></li></ul></details></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/">個別株・企業分析</a></summary><ul><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/financial-statements/">決算書・財務分析</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/financial-statements/earnings-results/">決算の読み方</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/financial-statements/financial-metrics/">売上・利益・財務指標</a></li></ul></details></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/company-analysis/">企業・銘柄の分析</a></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/dividends-shareholder-returns/">配当・株主還元</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/dividends-shareholder-returns/stock-dividend-basics/">配当金・利回り・税金</a></li></ul></details></li></ul></details></li></ul></nav></details></div>
+<p class="eyebrow">INVESTMENT BASICS / RISK & RETURN</p>
+<h1><span class="title-main">ボラティリティとは？</span><span class="title-subtitle">値動きの大きさと投資リスクの見方</span></h1>
+<p class="meta">原稿作成：2026年11月3日</p>
+<p class="lead">ボラティリティとは、資産のリターンが時間とともにどれくらい大きく変動するかを表す言葉です。投資信託や株価指数のリスクを比較するときは、過去のリターンのばらつきを標準偏差で測り、ボラティリティとして表示することがあります。</p>
+<div class="callout"><strong>先に結論：</strong>ボラティリティは、プラスのリターンだけでなくマイナスのリターンも含めた「振れ幅」の大きさです。数値が大きいほど、過去のリターンが平均から大きく離れて動いていたことを示します。ただし、損失の大きさや将来の下落確率そのものではありません。</div>
+<nav class="toc" aria-label="目次"><strong>この記事で分かること</strong><ol>
+<li><a href="#return">リターンは利益だけを意味しない</a></li>
+<li><a href="#meaning">ボラティリティは何を測る？</a></li>
+<li><a href="#example">数字で比べるとどう違う？</a></li>
+<li><a href="#annualized">年率ボラティリティの読み方</a></li>
+<li><a href="#limits">ボラティリティだけでは分からないこと</a></li>
+<li><a href="#compare">投資信託を比較するときの確認点</a></li>
+<li><a href="#use">投資判断での使い方</a></li>
+</ol></nav>
+
+<h2 id="return">1. リターンは利益だけを意味しない</h2>
+<p>投資の「リターン」は、投資によって得られた収益率・運用成果を指します。日常会話の「利益」と違い、プラスだけでなくマイナスも含む言葉です。</p>
+<div class="table-wrap"><table><thead><tr><th>表現</th><th>意味</th><th>例</th></tr></thead><tbody>
+<tr><td>プラスのリターン</td><td>投資した金額に対して増えた</td><td>100万円が105万円になった場合、+5%</td></tr>
+<tr><td>マイナスのリターン</td><td>投資した金額に対して減った</td><td>100万円が95万円になった場合、−5%</td></tr>
+<tr><td>リターンの変動</td><td>期間ごとの収益率が上下する</td><td>ある月は+4%、次の月は−3%</td></tr>
+</tbody></table></div>
+<p>したがって「リターンの変動が大きい」というときは、値上がり幅だけでなく値下がり幅も含めて話しています。ボラティリティは、上昇・下落のどちらに動いたかではなく、リターンが平均的な水準からどれほど離れていたかに注目します。</p>
+
+<h2 id="meaning">2. ボラティリティは何を測る？</h2>
+<p>一般的な過去のボラティリティ（ヒストリカル・ボラティリティ）は、一定期間のリターンを集め、その平均からのばらつきを<strong>標準偏差</strong>で測ります。標準偏差が大きいほど、リターンの散らばりが大きく、値動きが荒かったと読みます。</p>
+<p>たとえば、毎月ほぼ+1%前後で推移する投資と、+6%の月もあれば−5%の月もある投資では、平均リターンが似ていても後者の標準偏差は大きくなります。</p>
+<figure class="diagram"><img src="images/volatility-basics-diagram.svg" alt="月ごとのリターンをゼロの基準線から上下に示し、変動が小さい例と大きい例を比較した図。大きい例にはプラスとマイナスの両方の振れがある"><figcaption>概念図。横軸は時間、縦方向は各期間のリターン。ゼロより上はプラス、下はマイナスで、上下両方の振れを標準偏差で測ります。</figcaption></figure>
+<p>標準偏差の計算では、各月のリターンと平均リターンとの差を二乗してから集計します。差を二乗するため、平均より上に離れた場合も下に離れた場合も、ばらつきの大きさとして同じように反映されます。</p>
+<div class="formula">標準偏差 s = √［Σ（各期間のリターン − 平均リターン）² ÷（データ数 − 1）］</div>
+<p>式の「二乗」がポイントです。たとえば平均が+1%のとき、+4%は平均より3ポイント上、−2%は平均より3ポイント下です。どちらも平均からの距離は3ポイントであり、ボラティリティの計算ではどちらもばらつきとして数えます。</p>
+<p>ここで大切なのは、ボラティリティが「下落だけ」を数える指標ではないことです。大きな上昇も、大きな下落も、平均から大きく離れた変動として標準偏差を大きくします。</p>
+<h3>過去の値動きと、将来の予想を表すボラティリティ</h3>
+<p>ボラティリティには、何をもとに測るかによって違いがあります。</p>
+<div class="table-wrap"><table><thead><tr><th>種類</th><th>何をもとにする？</th><th>何を表す？</th></tr></thead><tbody>
+<tr><td>ヒストリカル・ボラティリティ（実現ボラティリティ）</td><td>過去の価格やリターンのデータ</td><td>実際にどれくらい変動してきたか</td></tr>
+<tr><td>インプライド・ボラティリティ</td><td>オプション価格など市場価格から逆算</td><td>市場参加者が織り込む将来の変動の大きさ</td></tr>
+</tbody></table></div>
+<p>投資信託の運用報告書や商品情報で過去の運用実績と並んで示される標準偏差は、通常、過去のリターンを使ったヒストリカル・ボラティリティです。一方、インプライド・ボラティリティはオプション市場の価格から計算されます。代表例が、S&P 500のオプション価格をもとに今後約30日間の予想変動率を示す<strong>VIX指数（恐怖指数）</strong>です。VIXは過去の値動きを集計した標準偏差とは異なり、市場価格に織り込まれた将来の変動予想を表します。</p>
+
+<h2 id="example">3. 数字で比べるとどう違う？</h2>
+<p>次は仕組みを理解するための仮定例です。AとBはどちらも12か月の平均リターンが月+0.33%ですが、月ごとの動き方は異なります。</p>
+<div class="table-wrap"><table><thead><tr><th>月</th><th>Aの月次リターン</th><th>Bの月次リターン</th></tr></thead><tbody>
+<tr><td>1</td><td>+1%</td><td>+5%</td></tr><tr><td>2</td><td>+1%</td><td>−4%</td></tr><tr><td>3</td><td>0%</td><td>+2%</td></tr><tr><td>4</td><td>0%</td><td>−3%</td></tr><tr><td>5</td><td>−1%</td><td>+4%</td></tr><tr><td>6</td><td>+1%</td><td>−5%</td></tr><tr><td>7</td><td>0%</td><td>+3%</td></tr><tr><td>8</td><td>0%</td><td>−2%</td></tr><tr><td>9</td><td>+1%</td><td>+5%</td></tr><tr><td>10</td><td>0%</td><td>−4%</td></tr><tr><td>11</td><td>0%</td><td>+2%</td></tr><tr><td>12</td><td>+1%</td><td>+1%</td></tr>
+</tbody></table></div>
+<div class="table-wrap"><table><thead><tr><th>比較項目</th><th>A</th><th>B</th></tr></thead><tbody>
+<tr><td>平均月次リターン</td><td>約+0.33%</td><td>約+0.33%</td></tr>
+<tr><td>月次リターンの標準偏差（標本）</td><td>約0.65%</td><td>約3.73%</td></tr>
+<tr><td>年率換算した標準偏差</td><td>約2.26%</td><td>約12.90%</td></tr>
+</tbody></table></div>
+<p>平均リターンは同じでも、Bはプラスにもマイナスにも大きく振れています。そのため標準偏差はAより大きくなります。つまり、平均的な成果だけを見ても、途中の値動きの大きさまでは分かりません。</p>
+<p class="meta">数値は説明用に設定した12か月の仮定データです。月次標準偏差は標本標準偏差、年率換算は月次標準偏差×√12で計算し、小数第2位程度に丸めています。</p>
+
+<h2 id="annualized">4. 年率ボラティリティの読み方</h2>
+<p>投資信託の資料では、ボラティリティを「年率○%」と表示することがあります。月次データから年率換算する一般的な方法は、月次標準偏差に√12を掛けることです。</p>
+<div class="formula">年率ボラティリティ ≒ 月次リターンの標準偏差 × √12</div>
+<p>日次データなら、年間の営業日数を約250日とする前提で、日次標準偏差×√250とする方法がよく使われます。実際の計算では、データの頻度、観測期間、リターンの定義、年率換算のルールを確認する必要があります。</p>
+<div class="note"><strong>注意：</strong>年率12%という表示は「毎年必ず+12%または−12%動く」という意味ではありません。過去の一定期間のリターンのばらつきを年率に換算した統計値です。将来の値動きや損失額を約束する数字ではありません。</div>
+
+<h2 id="limits">5. ボラティリティだけでは分からないこと</h2>
+<h3>大きな損失がどれくらい発生したか</h3>
+<p>標準偏差は上昇・下落の両方の変動を扱います。そのため、値動きが大きくても上昇が中心だった投資と、下落が大きかった投資を、ボラティリティだけで区別できません。また、同じ標準偏差でも、損失が連続したのか、一時的に急落したのかまでは分かりません。</p>
+<h3>ピークからどれだけ下落したか</h3>
+<p>過去の最高値から、その後の最安値までの下落率を確認するには、最大ドローダウンを使います。最大ドローダウンは実際にどれほど深く下げた局面があったかを示し、ボラティリティとは異なる角度から下落リスクを見られます。</p>
+<div class="related-inline">下落幅と回復に必要な上昇率を知るには、<a href="maximum-drawdown.html">最大ドローダウンとは？計算方法・回復期間</a>も参考になります。</div>
+<h3>リスクを取った分に見合うリターンだったか</h3>
+<p>リターンとボラティリティを組み合わせて、値動きの大きさに対してどれだけの超過リターンを得たかを見る指標がシャープレシオです。ただし、シャープレシオも損失の深さや回復期間を直接示すものではありません。</p>
+<div class="related-inline">計算式と比較方法は<a href="sharpe-ratio.html">シャープレシオとは？</a>で詳しく解説しています。</div>
+
+<h2 id="compare">6. 投資信託を比較するときの確認点</h2>
+<p>複数の投資信託のボラティリティを比べるときは、数値だけを並べず、計算条件をそろえます。条件が違うと、ファンドそのものの値動きの差ではなく、測り方の差を比べてしまうためです。</p>
+<div class="table-wrap"><table><thead><tr><th>確認項目</th><th>見る理由</th></tr></thead><tbody>
+<tr><td>計測期間・基準日</td><td>相場環境が違えば、同じ商品でも数値が変わる</td></tr>
+<tr><td>データ頻度</td><td>日次・週次・月次で計算結果や年率換算が異なる</td></tr>
+<tr><td>通貨・為替ヘッジ</td><td>円換算か外貨建てか、為替変動を含むかで値動きが変わる</td></tr>
+<tr><td>分配金の扱い</td><td>分配金再投資を含むリターンか、基準価額だけかを確認する</td></tr>
+<tr><td>費用控除の扱い</td><td>費用控除前後のどちらの実績かを確認する</td></tr>
+<tr><td>比較対象</td><td>投資対象・地域・資産配分が近い商品同士で比べる</td></tr>
+</tbody></table></div>
+<p>また、運用期間が短い商品は、特定の相場環境だけを反映している可能性があります。できるだけ同じ期間・同じ条件のデータを使い、リターンや最大ドローダウンも合わせて確認しましょう。</p>
+
+<h2 id="use">7. 投資判断での使い方</h2>
+<p>ボラティリティは、投資対象の値動きの特徴を把握するための材料です。数値が低い商品を選べば必ず安心ということではなく、投資目的や保有期間、資産全体でどのような役割を持たせるかと合わせて考えます。</p>
+<ul>
+<li><strong>値動きに耐えられるか：</strong>大きな下落や評価額の変化があったとき、生活や心理面に無理がないか。</li>
+<li><strong>投資期間に合うか：</strong>近いうちに使う予定のお金と、長期間運用できるお金を分けて考える。</li>
+<li><strong>資産全体で見る：</strong>単体のボラティリティだけでなく、他の保有資産との値動きの関係や配分も確認する。</li>
+<li><strong>他の指標と組み合わせる：</strong>平均リターン、最大ドローダウン、シャープレシオなど、知りたい内容に応じて使い分ける。</li>
+</ul>
+<div class="related-inline">投資のリスクとリターンの基本的な関係は<a href="risk-return-basics.html">投資のリスクとリターンとは？</a>、自分がどの程度の値下がりに耐えられるかは<a href="risk-tolerance-guide.html">リスク許容度とは？</a>で整理できます。</div>
+
+<h2>まとめ</h2>
+<p>ボラティリティは、プラス・マイナスの両方を含むリターンの変動の大きさを、標準偏差などで測る指標です。数値が大きいほど、過去のリターンが平均から大きくばらついていたことを示します。</p>
+<p>一方で、ボラティリティだけでは最大損失や下落からの回復期間は分かりません。投資信託を比較するときは、計測条件をそろえたうえで、リターン・最大ドローダウン・シャープレシオなども合わせて確認することが大切です。</p>
+
+<h2>参考資料</h2>
+<ul class="source-list">
+<li><a href="https://www.bis.org/publications/volatility-concepts-and-risk-premium">国際決済銀行（BIS）「Volatility concepts and the risk premium」</a> — 実現ボラティリティ、リターンの標準偏差、インプライド・ボラティリティの整理。</li>
+<li><a href="https://moneysmart.gov.au/glossary/standard-deviation">Australian Securities and Investments Commission (ASIC) / Moneysmart「Standard deviation」</a> — 標準偏差と投資リターンのばらつき。</li>
+<li><a href="https://admainnew.morningstar.com/webhelp/glossary_definitions/mutual_fund/mfglossary_Standard_Deviation.html">Morningstar「Standard Deviation」</a> — 投資信託の過去リターンの標準偏差と年率換算。</li>
+</ul>
+</article><!-- GENERATED ARTICLE LAYOUT CLOSE: START --></div></div><!-- GENERATED ARTICLE LAYOUT CLOSE: END --></main>
+</body></html>

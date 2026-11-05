@@ -1252,6 +1252,33 @@
       "publishedAt": "2026-11-05",
       "updatedAt": "2026-11-05",
       "publishOrder": 31
+    },
+    {
+      "slug": "volatility-basics.html",
+      "title": "ボラティリティとは？値動きの大きさと投資リスクの見方",
+      "mainTitle": "ボラティリティとは？",
+      "subtitle": "値動きの大きさと投資リスクの見方",
+      "summary": "ボラティリティはプラス・マイナス両方を含むリターンの変動の大きさ。標準偏差の意味と計算、月次リターンの具体例、年率換算、最大ドローダウンとの違い、投資信託の比較条件を図解で解説。",
+      "category": "basics",
+      "subcategory": "risk-return",
+      "tags": [
+        "ボラティリティ",
+        "標準偏差",
+        "価格変動",
+        "リスク",
+        "投資信託"
+      ],
+      "status": "published",
+      "related": [
+        "risk-return-basics.html",
+        "maximum-drawdown.html",
+        "sharpe-ratio.html",
+        "risk-tolerance-guide.html"
+      ],
+      "thumbnail": "thumbnails/volatility-basics.svg",
+      "publishedAt": "2026-11-06",
+      "updatedAt": "2026-11-06",
+      "publishOrder": 32
     }
   ],
   "pages": [

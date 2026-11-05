@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+<title id="title">リターンの振れ幅とボラティリティ</title><desc id="desc">月次リターンの例。変動が小さい場合も大きい場合も、ゼロを基準にプラスとマイナスの両方へ動く。変動が大きいほど標準偏差が大きい。</desc>
+<rect width="1200" height="760" rx="24" fill="#f5f8fa"/>
+<text x="600" y="66" text-anchor="middle" font-family="sans-serif" font-size="38" font-weight="800" fill="#17354a">リターンは上下に動く。その振れ幅がボラティリティ</text>
+<g font-family="sans-serif" fill="#405565">
+<text x="300" y="132" text-anchor="middle" font-size="31" font-weight="800">変動が小さい</text>
+<text x="900" y="132" text-anchor="middle" font-size="31" font-weight="800">変動が大きい</text>
+</g>
+<g stroke="#9aabb6" stroke-width="2" fill="none">
+<path d="M100 380 H1100"/><path d="M100 220 V545"/><path d="M700 220 V545"/>
+<path d="M100 545 H550 l-12 -8 m12 8 l-12 8 M700 545 H1150 l-12 -8 m12 8 l-12 8"/>
+<path d="M100 300 H550 M100 460 H550 M700 300 H1150 M700 460 H1150" stroke="#d7e1e7" stroke-dasharray="7 8"/>
+</g>
+<text x="35" y="385" transform="rotate(-90 35 385)" text-anchor="middle" font-family="sans-serif" font-size="21" font-weight="700" fill="#536879">月次リターン</text>
+<g font-family="sans-serif" font-size="20" fill="#536879"><text x="540" y="578" text-anchor="end">時間 →</text><text x="1140" y="578" text-anchor="end">時間 →</text></g>
+<g font-family="sans-serif" font-size="22" fill="#536879">
+<text x="82" y="227" text-anchor="end">＋</text><text x="82" y="388" text-anchor="end" font-weight="800">0%</text><text x="82" y="548" text-anchor="end">−</text>
+<text x="680" y="227" text-anchor="end">＋</text><text x="680" y="388" text-anchor="end" font-weight="800">0%</text><text x="680" y="548" text-anchor="end">−</text>
+</g>
+<g fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M120 365 L155 394 L190 350 L225 373 L260 390 L295 359 L330 381 L365 405 L400 368 L435 388 L470 354 L530 376" stroke="#168276" stroke-width="9"/>
+<path d="M720 265 L755 470 L790 325 L825 500 L860 245 L895 445 L930 290 L965 520 L1000 235 L1035 430 L1070 310 L1120 475" stroke="#d17a43" stroke-width="9"/>
+</g>
+<g fill="#168276"><circle cx="120" cy="365" r="7"/><circle cx="155" cy="394" r="7"/><circle cx="190" cy="350" r="7"/><circle cx="225" cy="373" r="7"/><circle cx="260" cy="390" r="7"/><circle cx="295" cy="359" r="7"/><circle cx="330" cy="381" r="7"/><circle cx="365" cy="405" r="7"/><circle cx="400" cy="368" r="7"/><circle cx="435" cy="388" r="7"/><circle cx="470" cy="354" r="7"/><circle cx="530" cy="376" r="7"/></g>
+<g fill="#d17a43"><circle cx="720" cy="265" r="7"/><circle cx="755" cy="470" r="7"/><circle cx="790" cy="325" r="7"/><circle cx="825" cy="500" r="7"/><circle cx="860" cy="245" r="7"/><circle cx="895" cy="445" r="7"/><circle cx="930" cy="290" r="7"/><circle cx="965" cy="520" r="7"/><circle cx="1000" cy="235" r="7"/><circle cx="1035" cy="430" r="7"/><circle cx="1070" cy="310" r="7"/><circle cx="1120" cy="475" r="7"/></g>
+<g font-family="sans-serif" text-anchor="middle">
+<text x="300" y="605" font-size="25" font-weight="800" fill="#168276">平均からの離れ方が小さい</text>
+<text x="900" y="605" font-size="25" font-weight="800" fill="#b96531">平均からの離れ方が大きい</text>
+<text x="600" y="690" font-size="26" font-weight="800" fill="#17354a">上昇も下落も、どちらも変動として数える</text>
+</g>
+</svg>
