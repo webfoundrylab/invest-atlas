@@ -1279,6 +1279,33 @@
       "publishedAt": "2026-11-06",
       "updatedAt": "2026-11-06",
       "publishOrder": 32
+    },
+    {
+      "slug": "correlation-coefficient.html",
+      "title": "相関係数とは？分散投資での見方と注意点",
+      "mainTitle": "相関係数とは？",
+      "subtitle": "分散投資での見方と注意点",
+      "summary": "相関係数の意味と−1から＋1までの読み方、分散投資での役割を解説。GPIFの4資産の相関表を使い、相関によってポートフォリオの変動がどう変わるかを具体的に紹介。",
+      "category": "basics",
+      "subcategory": "risk-return",
+      "tags": [
+        "相関係数",
+        "分散投資",
+        "資産配分",
+        "ポートフォリオ",
+        "リスク"
+      ],
+      "status": "published",
+      "related": [
+        "diversification-basics.html",
+        "asset-allocation-guide.html",
+        "risk-return-basics.html",
+        "sharpe-ratio.html"
+      ],
+      "thumbnail": "thumbnails/correlation-coefficient.svg",
+      "publishedAt": "2026-11-07",
+      "updatedAt": "2026-11-07",
+      "publishOrder": 33
     }
   ],
   "pages": [
