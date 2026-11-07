@@ -782,7 +782,8 @@
         "investment-trust-investment-targets.html",
         "orbukan-guide.html",
         "bonds-basics.html",
-        "asset-allocation-guide.html"
+        "asset-allocation-guide.html",
+        "asset-correlation-comparison.html"
       ],
       "publishedAt": "2026-10-28",
       "updatedAt": "2026-10-28",
@@ -1217,7 +1218,9 @@
         "risk-tolerance-guide.html",
         "bonds-basics.html",
         "maximum-drawdown.html",
-        "emergency-fund.html"
+        "emergency-fund.html",
+        "correlation-coefficient.html",
+        "asset-correlation-comparison.html"
       ],
       "thumbnail": "thumbnails/asset-allocation-guide.svg",
       "publishedAt": "2026-11-04",
@@ -1306,6 +1309,36 @@
       "publishedAt": "2026-11-07",
       "updatedAt": "2026-11-07",
       "publishOrder": 33
+    },
+    {
+      "slug": "asset-correlation-comparison.html",
+      "title": "資産クラス別の相関係数を比較｜株式・債券・金・コモディティ",
+      "mainTitle": "資産クラス別の相関係数を比較",
+      "subtitle": "株式・債券・金・コモディティ",
+      "summary": "22種類のETFによる総当たり相関表と米国債の満期別相関を掲載。ティッカー・指数コード、期間・通貨・頻度の条件を示し、相関係数を比較します。",
+      "category": "basics",
+      "subcategory": "diversification",
+      "tags": [
+        "相関係数",
+        "分散投資",
+        "資産配分",
+        "株式",
+        "債券",
+        "金",
+        "コモディティ",
+        "ETF"
+      ],
+      "status": "published",
+      "related": [
+        "correlation-coefficient.html",
+        "diversification-basics.html",
+        "asset-allocation-guide.html",
+        "risk-return-basics.html"
+      ],
+      "thumbnail": "thumbnails/asset-correlation-comparison.svg",
+      "publishedAt": "2026-11-08",
+      "updatedAt": "2026-11-08",
+      "publishOrder": 34
     }
   ],
   "pages": [
