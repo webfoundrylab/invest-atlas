@@ -289,10 +289,20 @@ def ensure_article_content_container(page):
     if not main_open or main_close < main_open.end():
         return page
     body = page[main_open.end():main_close]
-    if re.search(r"""<article\b[^>]*class=["'][^"']*\barticle\b[^"']*["'][^>]*>""", body, flags=re.I):
-        return page
-    # Older articles used bare <main> or <main class="wrap"> and had no article card.
-    # Keep all existing body markup intact; only add the shared semantic container.
+    article_open = re.search(r'<article\b[^>]*>', body, flags=re.I)
+    if article_open:
+        tag = article_open.group(0)
+        class_match = re.search(r'\bclass=(["'])(.*?)\1', tag, flags=re.I)
+        if class_match:
+            classes = class_match.group(2).split()
+            if "article" not in classes:
+                updated_tag = tag[:class_match.start(2)] + class_match.group(2) + " article" + tag[class_match.end(2):]
+                body = body[:article_open.start()] + updated_tag + body[article_open.end():]
+        else:
+            updated_tag = tag[:-1] + ' class="article">'
+            body = body[:article_open.start()] + updated_tag + body[article_open.end():]
+        return page[:main_open.end()] + body + page[main_close:]
+    # Older articles had no article element; wrap their main content as one card.
     return page[:main_open.end()] + '<article class="article">' + body + '</article>' + page[main_close:]
 
 
