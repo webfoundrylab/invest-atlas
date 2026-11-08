@@ -266,8 +266,25 @@ def clean_article_layout(page):
     return page
 
 
+def demote_article_title_header(page):
+    """Keep an article's title block out of the site's semantic site-header styling."""
+    article_match = re.search(
+        r'(<article\b[^>]*class="[^"]*\barticle\b[^"]*"[^>]*>)([\s\S]*?)(</article>)',
+        page, flags=re.I
+    )
+    if not article_match:
+        return page
+    body = article_match.group(2)
+    body, count = re.subn(r'<header\b[^>]*>', '<div class="article-heading">', body, count=1, flags=re.I)
+    if count:
+        body = re.sub(r'</header\s*>', '</div>', body, count=1, flags=re.I)
+        page = page[:article_match.start(2)] + body + page[article_match.end(2):]
+    return page
+
+
 def inject_article_category_nav(page, article, registry):
     page = clean_article_layout(page)
+    page = demote_article_title_header(page)
     cats = registry.get("categories", [])
     cat = next((x for x in cats if x["id"] == article.get("category")), None)
     if not cat:
@@ -288,7 +305,7 @@ def inject_article_category_nav(page, article, registry):
     crumbs += ['<a href="' + html.escape(category_url(tuple(ids[:i])), quote=True) + '">' + html.escape(label) + '</a>' for i, label in enumerate(labels, 1)]
     tree = render_category_tree(cats, tuple(ids))
     css = """<style>
-main.wrap{width:min(1160px,calc(100% - 32px))}header .wrap{width:min(1160px,calc(100% - 32px))}
+main.wrap{width:min(1160px,calc(100% - 32px))}body > header .wrap{width:min(1160px,calc(100% - 32px))}
 .article-page-layout{display:grid;grid-template-columns:245px minmax(0,1fr);gap:26px;align-items:start;margin:22px 0 52px}
 .article-sidebar .category-tree{background:#fff;border:1px solid #dce4e8;border-radius:14px;padding:14px;position:sticky;top:18px;max-height:calc(100vh - 36px);overflow:auto}
 .article-sidebar .category-tree ul{list-style:none;padding-left:14px;margin:8px 0}.article-sidebar .category-tree>ul{padding:0}.article-sidebar .category-tree li{margin:5px 0}.article-sidebar .category-tree summary{cursor:pointer}.article-sidebar .category-tree a{font-size:.9rem}.article-sidebar .category-tree .active>a,.article-sidebar .category-tree .active>details>summary>a{font-weight:800;color:#075f59}
