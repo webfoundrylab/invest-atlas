@@ -33,3 +33,10 @@
 - 既存ヘッダーがない場合は `<body>` 直後へ共通ヘッダーを挿入する処理を追加。記事ごとのHTMLを個別修正するのではなく、共通ビルド処理を修正。
 - 修正コミット：`860a52bab9bb09cafad3f0ffaf454ad98f0e56fc`。
 - GitHub Actions Pages workflow run #1134 は起動済み（確認時点 queued）。ビルド・検証・デプロイ・公開画面の反映は未確認。完了後、上記6記事を含む対象ページのヘッダー表示を確認する。
+
+## 2026-11-08 stockプレビューの構造検査と旧記事レイアウトを根本修正
+- stockのプレビュー失敗を全15パッケージで確認。記事HTMLは `main.wrap + article.article`、裸の `main/article`、main直下本文など複数世代が混在。公開publisherはHTMLをそのまま配置するため、プレビュー側だけが単一class・タグ入れ子を強制していたのが誤り。Python regexの二重エスケープも併発。
+- stock `preview-select.py` の構造ゲートを、main要素・main内h1 1個・noindex確認に変更。既存15記事はこの条件をすべて満たすことを横断確認。stock commit：`907e067` / regex修正 `211a86b`。
+- `ARTICLE-WORKFLOW.md` の「全記事に共通shellを強制する」誤った記述を撤回し、複数世代のソース形式と公開処理の仕様を一致させた。原因・再発防止・旧対策の撤回を `USER-FEEDBACK.md` に記録。stock commits：`0e12692` / `d79e5c1`。
+- 公開側 `scripts/build-site.py` も見直し。既存記事に `article.article` がない場合、main内の既存articleへ共通classを付与し、article要素自体がない場合はmain本文を共通articleカードで包む正規化を追加。旧記事（ETF・政策金利等）も本文カードと共通CSSの適用対象になる。公開側 commits：`2d2c653` → `9ab4941` → `2a20fb7` → `f722051` → `6432e54` → `413d558`（正規表現・引用符を修正し最新ソース再取得済み）。
+- stock push Actions #443 はsuccess（push時のqueue checkのみ。プレビュー・記事buildテストではない）。公開側Pages workflow #1134相当の最新runはqueued。build/validate・デプロイ・ブラウザ表示はまだ未確認。次工程はstockをpullして `preview.bat` を実行し、本番build/validate結果と生成後の全記事プレビューを確認する。
