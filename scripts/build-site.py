@@ -292,7 +292,7 @@ def ensure_article_content_container(page):
     article_open = re.search(r'<article\b[^>]*>', body, flags=re.I)
     if article_open:
         tag = article_open.group(0)
-        class_match = re.search(r'\bclass=(["'])(.*?)\1', tag, flags=re.I)
+        class_match = re.search(r"""\bclass=(["'])(.*?)\1""", tag, flags=re.I)
         if class_match:
             classes = class_match.group(2).split()
             if "article" not in classes:
