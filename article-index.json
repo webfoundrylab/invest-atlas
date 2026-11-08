@@ -1339,6 +1339,35 @@
       "publishedAt": "2026-11-08",
       "updatedAt": "2026-11-08",
       "publishOrder": 34
+    },
+    {
+      "slug": "vix-index.html",
+      "title": "VIXとは？恐怖指数の仕組みと見方",
+      "mainTitle": "VIXとは？",
+      "subtitle": "恐怖指数の仕組みと見方",
+      "summary": "VIX指数（恐怖指数）の意味、S&P 500オプション価格から約30日間の予想変動率を算出する仕組み、数値の読み方、株価との関係、VIX先物・連動商品の注意点を解説。",
+      "category": "markets",
+      "subcategory": "market-trends",
+      "tags": [
+        "VIX",
+        "恐怖指数",
+        "ボラティリティ",
+        "インプライド・ボラティリティ",
+        "S&P 500",
+        "株式市場"
+      ],
+      "status": "published",
+      "related": [
+        "volatility-basics.html",
+        "risk-return-basics.html",
+        "maximum-drawdown.html",
+        "sharpe-ratio.html"
+      ],
+      "thumbnail": "thumbnails/vix-index.svg",
+      "topic": "stock-indices",
+      "publishedAt": "2026-11-09",
+      "updatedAt": "2026-11-09",
+      "publishOrder": 35
     }
   ],
   "pages": [
