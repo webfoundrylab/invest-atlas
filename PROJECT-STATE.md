@@ -25,3 +25,11 @@
 - ユーザーから継続・問題なしの確認を受け、本番同等プレビューの確認工程を完了扱いとした。VIX manifestの必須チェック6項目をすべて true、`draft_status` を `ready` に更新。
 - VIXを `queue.json` の末尾（公開順9番目、scheduled記事の5番目）へ追加。先行する4本のscheduled記事の後に公開される。manifest commit：`cc2fa3858d9de12f587e11f415c5f1b4dcd49be3`、queue commit：`3ea973f5e44e92ab4b29b0aa4966a29ffecd7352`。
 - VIXは公開キュー登録済みだが、GitHub Actionsの手動dry-runは未実施。公開側の最終ビルド・検証は未確認。手動publishや公開操作は行っていない。
+
+
+## 2026-11-08 公開記事の共通ヘッダー欠落を修正
+- 公開順上位15記事を調査し、6記事（asset-correlation-comparison.html、correlation-coefficient.html、volatility-basics.html、portfolio-rebalancing.html、asset-allocation-guide.html、lump-sum-vs-dca.html）で共通ヘッダーが欠落していることを確認。
+- 原因は `scripts/build-site.py` の `inject_article_category_nav()` が、元HTMLに既存の `<header>` がある場合だけ共通ヘッダーへ置換し、ヘッダーのない記事では挿入処理を行っていなかったこと。
+- 既存ヘッダーがない場合は `<body>` 直後へ共通ヘッダーを挿入する処理を追加。記事ごとのHTMLを個別修正するのではなく、共通ビルド処理を修正。
+- 修正コミット：`860a52bab9bb09cafad3f0ffaf454ad98f0e56fc`。
+- GitHub Actions Pages workflow run #1134 は起動済み（確認時点 queued）。ビルド・検証・デプロイ・公開画面の反映は未確認。完了後、上記6記事を含む対象ページのヘッダー表示を確認する。
