@@ -282,8 +282,23 @@ def demote_article_title_header(page):
     return page
 
 
+def ensure_article_content_container(page):
+    """Normalize legacy article bodies into the shared article card without rewriting their content."""
+    main_open = re.search(r'<main\\b[^>]*>', page, flags=re.I)
+    main_close = page.lower().rfind('</main>')
+    if not main_open or main_close < main_open.end():
+        return page
+    body = page[main_open.end():main_close]
+    if re.search(r'<article\\b[^>]*class=["'][^"']*\\barticle\\b[^"']*["'][^>]*>', body, flags=re.I):
+        return page
+    # Older articles used bare <main> or <main class="wrap"> and had no article card.
+    # Keep all existing body markup intact; only add the shared semantic container.
+    return page[:main_open.end()] + '<article class="article">' + body + '</article>' + page[main_close:]
+
+
 def inject_article_category_nav(page, article, registry):
     page = clean_article_layout(page)
+    page = ensure_article_content_container(page)
     page = demote_article_title_header(page)
     cats = registry.get("categories", [])
     cat = next((x for x in cats if x["id"] == article.get("category")), None)
