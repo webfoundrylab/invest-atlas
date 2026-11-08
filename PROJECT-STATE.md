@@ -40,3 +40,11 @@
 - `ARTICLE-WORKFLOW.md` の「全記事に共通shellを強制する」誤った記述を撤回し、複数世代のソース形式と公開処理の仕様を一致させた。原因・再発防止・旧対策の撤回を `USER-FEEDBACK.md` に記録。stock commits：`0e12692` / `d79e5c1`。
 - 公開側 `scripts/build-site.py` も見直し。既存記事に `article.article` がない場合、main内の既存articleへ共通classを付与し、article要素自体がない場合はmain本文を共通articleカードで包む正規化を追加。旧記事（ETF・政策金利等）も本文カードと共通CSSの適用対象になる。公開側 commits：`2d2c653` → `9ab4941` → `2a20fb7` → `f722051` → `6432e54` → `413d558`（正規表現・引用符を修正し最新ソース再取得済み）。
 - stock push Actions #443 はsuccess（push時のqueue checkのみ。プレビュー・記事buildテストではない）。公開側Pages workflow #1134相当の最新runはqueued。build/validate・デプロイ・ブラウザ表示はまだ未確認。次工程はstockをpullして `preview.bat` を実行し、本番build/validate結果と生成後の全記事プレビューを確認する。
+
+
+## 2026-11-08 投資の羅針盤を「Invest Atlasとしての結論」中心に再設計
+- ユーザー方針：読者の最終判断は読者に委ねるが、サイトとして比較・検証した結論（基本選択）を明確に出す。「人それぞれ」「条件による」で終わらせない。
+- `investment-compass.html` を全面再構成。冒頭に長期資産形成の基本結論（低コスト・広く分散された株式インデックスを軸）を明示し、全世界株式 vs S&P 500、一括 vs 積立、株式100% vs 債券併用、リバランス、投資信託費用について基本回答・理由・例外を提示。生活資金・投資期間・下落耐性などの前提確認、既存解説への導線、結論の更新原則を配置。
+- 記事リンク13件を `article-index.json` と照合し、全件既存記事に一致。
+- コミット：`05265dd08ca3ed50acd64c80c3ba3ffeb0f65394`（investment-compass.html）。
+- 未実施：HTML構文・リンク・ビルド検証、公開ページのPC/スマホ表示確認。結論の個別根拠については各比較記事の内容監査と整合確認が次の品質工程。
