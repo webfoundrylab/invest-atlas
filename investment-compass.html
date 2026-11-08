@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <script src="assets/display-mode.js"></script>
-  <title>投資の羅針盤｜比較・検証から考える投資の指針｜Invest Atlas</title>
-  <meta name="description" content="Invest Atlasの投資の羅針盤。投資対象・資産配分・投資タイミングを比較し、条件に応じた投資方針を考えます。根拠と限界を明らかにしながら随時更新します。">
+  <title>投資の羅針盤｜Invest Atlasとしての投資方針と比較結論</title>
+  <meta name="description" content="Invest Atlasが比較・検証した投資の基本方針と現時点の結論。投資対象、資産配分、投資方法、運用管理を根拠とともに整理します。">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://webfoundrylab.github.io/invest-atlas/investment-compass.html">
   <link rel="stylesheet" href="assets/site-header.css">
@@ -28,82 +28,34 @@
     .status-card{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:start;background:linear-gradient(120deg,#fff,#f1fbf8)}.status-card h2{margin:0 0 7px;font-size:1.2rem}.status-card p{margin:0;color:var(--muted);font-size:.92rem}.status-label{white-space:nowrap;font-size:.78rem;font-weight:800;color:#765522;background:#fff0c9;border:1px solid #ead49b;border-radius:99px;padding:5px 10px}
     .updated{margin-top:18px;padding-top:13px;border-top:1px solid var(--line);font-size:.82rem;color:var(--muted)}footer{background:#0c1c2b;color:#d7e1e8;padding:24px 0;font-size:.9rem}footer a{color:#aee0d7}footer p{margin:6px 0}
     @media(max-width:700px){.hero{grid-template-columns:1fr;gap:10px;padding:24px}.hero-art{max-width:180px;grid-row:1}.hero-copy{grid-row:2}.principles{grid-template-columns:1fr}.lenses,.current{grid-template-columns:1fr}.section{margin-top:24px}.status-card{grid-template-columns:1fr;gap:10px}.status-label{justify-self:start}}
+  
+/* Atlas conclusions layout */
+.verdict{display:grid;grid-template-columns:190px minmax(0,1fr);gap:20px;padding:24px;border:2px solid #80bdb4;border-radius:20px;background:linear-gradient(115deg,#e3f7f1,#fff 70%,#fff2d9)}.verdict-label{align-self:start;background:#087f75;color:#fff;border-radius:9px;padding:7px 12px;font-size:.83rem;font-weight:850;text-align:center}.verdict h2{margin:0 0 10px;color:#123653;font-size:clamp(1.45rem,3vw,2rem);line-height:1.4}.verdict p{margin:0;color:#425e70}.verdict .sub{margin-top:10px;font-size:.9rem}.conclusion-list{display:grid;gap:12px}.conclusion{display:grid;grid-template-columns:180px minmax(0,1fr);gap:18px;padding:18px 20px;background:#fff;border:1px solid var(--line);border-radius:14px}.conclusion h3{margin:0;color:#123653;font-size:1rem}.conclusion p{margin:0;color:var(--muted)}.conclusion strong{color:#075f58}.conclusion .reason{margin-top:5px;font-size:.9rem}.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.answer{display:inline-block;margin-bottom:10px;background:#e0f5ee;color:#075f58;border-radius:99px;padding:4px 10px;font-size:.78rem;font-weight:850}.pathways{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.path{display:block;padding:18px;background:#fff;border:1px solid var(--line);border-radius:15px;text-decoration:none;color:inherit}.path:hover{border-color:#65c4b5;background:#fbfffe;color:inherit}.path b{display:block;color:#075f59;margin-bottom:5px}.path span{display:block;color:var(--muted);font-size:.9rem}.method{padding:20px 22px;border-left:4px solid #d6a64b;border-radius:0 12px 12px 0;background:#fff7e5;color:#55472c}.method h3{margin:0 0 7px;font-size:1rem}.method p{margin:0;font-size:.92rem}.method ul{margin:8px 0 0;padding-left:1.2rem;font-size:.9rem}.update{margin-top:18px;padding:16px 0;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted)}@media(max-width:700px){.verdict{grid-template-columns:1fr;gap:12px;padding:20px}.verdict-label{justify-self:start}.cards,.pathways{grid-template-columns:1fr}.conclusion{grid-template-columns:1fr;gap:5px;padding:16px}}
   </style>
 </head>
 <body>
 <header class="ia-site-header"><div class="ia-header-inner"><a class="ia-brand" href="https://webfoundrylab.github.io/invest-atlas/"><img src="https://webfoundrylab.github.io/invest-atlas/favicon.svg" alt="" width="42" height="42"><span>Invest Atlas</span></a><nav class="ia-header-nav" aria-label="主要メニュー"><a href="https://webfoundrylab.github.io/invest-atlas/categories/">カテゴリ</a><a href="https://webfoundrylab.github.io/invest-atlas/getting-started.html">初めての方へ</a><a href="https://webfoundrylab.github.io/invest-atlas/investment-compass.html" aria-current="page">投資の羅針盤</a></nav></div></header>
 <main class="wrap">
-  <section class="hero" aria-labelledby="page-title">
-    <div class="hero-copy">
-      <span class="eyebrow">Investment Compass</span>
-      <h1 id="page-title">投資の羅針盤</h1>
-      <p>自分の条件を整理し、選択肢を比べ、進む方向を考える。気になる言葉や選択肢があれば解説記事で深く学び、分かったことをもとに判断を見直せる、学びと判断をつなぐページです。</p>
-    </div>
-    <div class="hero-art">
-      <svg class="compass" viewBox="0 0 300 300" role="img" aria-labelledby="compass-title compass-desc" xmlns="http://www.w3.org/2000/svg">
-        <title id="compass-title">Invest Atlasの羅針盤</title><desc id="compass-desc">地図の緯度経度を思わせる円と、北を示す紺色・青緑・珊瑚色の方位針。</desc>
-        <circle cx="150" cy="150" r="126" fill="#ffffff" fill-opacity=".8" stroke="#123a60" stroke-width="4"/>
-        <circle cx="150" cy="150" r="103" fill="none" stroke="#8bb9ba" stroke-width="1.5" stroke-dasharray="3 7"/>
-        <path d="M150 35V265M35 150H265M69 69L231 231M231 69L69 231" stroke="#b7d5d5" stroke-width="1.4"/>
-        <path d="M150 35L127 139L150 127L173 139Z" fill="#123a60"/>
-        <path d="M150 265L127 161L150 173L173 161Z" fill="#123a60" opacity=".62"/>
-        <path d="M265 150L161 127L173 150L161 173Z" fill="#087f75" opacity=".9"/>
-        <path d="M35 150L139 127L127 150L139 173Z" fill="#087f75" opacity=".6"/>
-        <path d="M224 76L160 157L76 224L140 143Z" fill="#087f75"/>
-        <path d="M224 76L160 157L140 143Z" fill="#ff8b73"/>
-        <circle cx="150" cy="150" r="8" fill="#fff" stroke="#123a60" stroke-width="3"/>
-        <text x="150" y="20" text-anchor="middle" fill="#123a60" font-size="13" font-weight="800">N</text>
-        <text x="150" y="293" text-anchor="middle" fill="#536879" font-size="10" letter-spacing="2">FIND YOUR DIRECTION</text>
-      </svg>
-    </div>
-  </section>
-
-  <section class="section" aria-labelledby="principles-title">
-    <div class="section-heading"><span class="eyebrow">Our approach</span><h2 id="principles-title">結論を急がず、判断の道筋を示す</h2><p class="section-intro">誰にとっても唯一の正解があるとは限りません。結論は、目的・期間・リスクの取り方などの条件とセットで考えます。</p></div>
-    <div class="principles">
-      <article class="principle"><span class="number">01</span><h3>条件を先に整理する</h3><p>生活資金、投資目的、使う時期、値下がりへの耐性を確認し、選択肢を比べる前提を整えます。</p></article>
-      <article class="principle"><span class="number">02</span><h3>比較条件と根拠を明示する</h3><p>公式資料や比較記事をもとに、費用・リスク・分散・過去データの条件を確認します。</p></article>
-      <article class="principle"><span class="number">03</span><h3>変わる結論は更新する</h3><p>商品条件や制度、根拠となるデータが変われば再検証します。結論を変えない場合も確認したことを記録します。</p></article>
-    </div>
-  </section>
-
-  <section class="section" aria-labelledby="starting-point-title">
-    <div class="section-heading"><span class="eyebrow">A useful starting point</span><h2 id="starting-point-title">低コスト・分散・長期保有を出発点にする</h2><p class="section-intro">長期の資産形成では、低コストで幅広く分散された商品を長く保有する考え方が、検討の出発点の一つになります。ただし、この原則だけで誰にとっても最適な商品が決まるわけではありません。生活資金・目的・運用期間・値下がりへの耐性を整理し、自分の条件に合うかを考えます。</p></div>
-    <div class="current">
-      <a href="simple-investing-guide.html"><strong>投資をシンプルに考える →</strong><span>低コスト・分散・長期保有を基本方針の候補として理解する。</span></a>
-      <a href="diversification-basics.html"><strong>分散投資とは？ →</strong><span>何をどのように分散し、どんなリスクが残るのかを学ぶ。</span></a>
-      <a href="investment-trust-fees.html"><strong>投資信託の信託報酬とは？ →</strong><span>保有中の費用を比較するときの確認点を知る。</span></a>
-    </div>
-  </section>
-
-  <section class="section" aria-labelledby="lenses-title">
-    <div class="section-heading"><span class="eyebrow">Decision lenses</span><h2 id="lenses-title">何を重視するかで、候補は変わる</h2><p class="section-intro">ここに示すのは検討の切り口です。現時点での確定ランキングや、すべての人への推奨ではありません。</p></div>
-    <div class="lenses">
-      <article class="lens"><div class="lens-head"><span class="lens-icon" aria-hidden="true">↗</span><div><h3>長期的な成長を重視する</h3><p>成長性と、値下がりに耐えられるかを一緒に考える。</p></div></div><ul><li><a href="global-vs-sp500.html">全世界株式とS&amp;P 500の違い</a></li><li>集中度・地域分散・費用</li></ul></article>
-      <article class="lens"><div class="lens-head"><span class="lens-icon" aria-hidden="true">⇄</span><div><h3>リスクに対する効率を重視する</h3><p>リターンだけでなく、どの程度の値動きを伴ったかを見る。</p></div></div><ul><li>シャープレシオなどの指標と限界</li><li>株式・債券を組み合わせた資産配分</li></ul></article>
-      <article class="lens"><div class="lens-head"><span class="lens-icon" aria-hidden="true">◎</span><div><h3>分散と安定性を重視する</h3><p>ひとつの地域や資産への依存をどう抑えるか考える。</p></div></div><ul><li>全世界株式、債券、現金の役割</li><li>相関・値下がり・資金を使う時期</li></ul></article>
-      <article class="lens"><div class="lens-head"><span class="lens-icon" aria-hidden="true">◷</span><div><h3>投資を始める時期・続け方を考える</h3><p>相場の予測だけに頼らず、資金と行動の計画を立てる。</p></div></div><ul><li>一括投資と積立投資</li><li>リバランス、見直し、売却・取り崩し</li></ul></article>
-    </div>
-    <div class="caution"><strong>大切な注意点：</strong>過去のリターンやシャープレシオが高かったことだけで、将来の最適な投資先が決まるわけではありません。比較するときは期間・通貨・リスク指標などの条件をそろえ、データの限界も確認します。</div>
-  </section>
-
-  <section class="section" aria-labelledby="existing-title">
-    <div class="section-heading"><span class="eyebrow">Learn as you decide</span><h2 id="existing-title">条件を整理し、必要な知識を深める</h2><p class="section-intro">詳しく学んでから戻っても、ここから直接読み始めてもかまいません。気になるテーマの記事へ自由に移動し、必要な知識を補いながら考えましょう。現在は公開済みの解説記事を判断材料として案内しています。</p></div>
-    <div class="current">
-      <a href="before-you-invest.html"><strong>投資を始める前に確認したい7つのこと →</strong><span>生活資金・目的・投資期間・リスク許容度など、商品選びの前提を確認。</span></a>
-      <a href="risk-return-basics.html"><strong>投資のリスクとリターンとは？ →</strong><span>リスクの意味、損失と回復、商品を比較する際の考え方。</span></a>
-      <a href="diversification-basics.html"><strong>分散投資とは？ →</strong><span>資産・地域・銘柄・時間を分ける意味と、分散の限界。</span></a>
-      <a href="investment-trust-investment-targets.html"><strong>投資信託の投資対象とは？ →</strong><span>株式・債券・REITなど、投資対象の違いを整理。</span></a>
-      <a href="simple-investing-guide.html"><strong>投資は何を買えばいい？ →</strong><span>迷ったときに、リスクや投資対象、投資方法から考える。</span></a>
-      <a href="regular-investing.html"><strong>積立投資とは？ →</strong><span>定額購入の仕組みとメリット・注意点を確認。</span></a>
-    </div>
-  </section>
-
-  <section class="section status-card" aria-labelledby="status-title">
-    <div><h2 id="status-title">このページは、更新しながら育てます</h2><p>比較記事の追加、制度や商品条件の変更、重要なデータの更新をきっかけに、判断の根拠・代替案・結論が変わる条件を見直します。根拠が十分でないテーマは、未検証であることを明記します。</p></div>
-    <span class="status-label">初版・検証継続中</span>
-  </section>
-  <p class="updated">初版公開：2026年10月29日　／　更新時は、確認日と主な変更理由を記録します。</p>
+<section class="hero" aria-labelledby="page-title"><div class="hero-copy"><span class="eyebrow">INVEST ATLAS · OUR CONCLUSIONS</span><h1 id="page-title">投資の羅針盤</h1><p>比較・検証したうえで、Invest Atlasとしての基本方針と現時点の結論を示します。結論だけでなく、理由・代替案・結論が変わる条件も確認し、自分の投資方針を考えるための判断材料にしてください。</p></div><div class="hero-art"><svg class="compass" viewBox="0 0 260 260" role="img" aria-label="北を指す羅針盤"><circle cx="130" cy="130" r="112" fill="#ffffffc9" stroke="#123a60" stroke-width="3"/><circle cx="130" cy="130" r="91" fill="none" stroke="#9bbfbd" stroke-dasharray="3 6"/><path d="M130 32L108 119L130 108L152 119Z" fill="#123a60"/><path d="M130 228L108 141L130 152L152 141Z" fill="#123a60" opacity=".5"/><path d="M228 130L141 108L152 130L141 152Z" fill="#087f75"/><path d="M32 130L119 108L108 130L119 152Z" fill="#087f75" opacity=".5"/><circle cx="130" cy="130" r="7" fill="#fff" stroke="#123a60" stroke-width="3"/><text x="130" y="20" text-anchor="middle" fill="#123a60" font-size="12" font-weight="800">N</text></svg></div></section>
+<section class="section verdict" aria-labelledby="main-verdict"><div class="verdict-label">Invest Atlasの基本結論</div><div><h2 id="main-verdict">長期の資産形成は、低コストで広く分散された株式インデックスを軸に考える</h2><p>投資先を複雑に増やす前に、生活資金を確保し、目的・期間・値下がりへの耐性を確認したうえで、幅広い企業に分散された低コスト商品を長期保有する方針を基本候補とします。</p><p class="sub">これは誰にでも株式100%を勧める結論ではありません。投資期間や資金を使う時期、損失に耐えられる範囲によって、現金や債券を含む配分を検討します。</p></div></section>
+<section class="section" aria-labelledby="answers"><div class="section-heading"><span class="eyebrow">OUR ANSWERS</span><h2 id="answers-title">迷いやすいテーマへの、現時点での回答</h2><p class="section-intro">「人それぞれ」で終わらせず、基本選択と例外を分けて示します。個別テーマの詳細な比較はリンク先で確認できます。</p></div><div class="conclusion-list">
+<article class="conclusion"><h3>全世界株式 vs S&amp;P 500</h3><div><strong>基本：全世界株式</strong><p class="reason">米国に集中する理由が特にない場合、投資先の国を自分で絞らず世界全体に分散する方を基本とします。米国の成長を強く見込む・集中を許容する場合はS&amp;P 500も選択肢です。</p><a href="global-vs-sp500.html">比較記事で根拠を確認 →</a></div></article>
+<article class="conclusion"><h3>株式100% vs 債券併用</h3><div><strong>基本：耐えられるリスクから配分を決める</strong><p class="reason">長期成長を優先し、大幅な下落にも保有を続けられるなら株式中心は合理的です。下落時に売却してしまう可能性や近い将来の支出があるなら、現金・債券を含めて調整します。</p><a href="asset-allocation-guide.html">資産配分の考え方 →</a></div></article>
+<article class="conclusion"><h3>一括投資 vs 積立投資</h3><div><strong>基本：投資可能資金があるなら一括を期待値の基準にする</strong><p class="reason">市場に投資する期間を長くできるため、期待値では一括投資が優位になりやすいと考えます。一時的な下落への心理的負担を軽減したい場合、分割投入も現実的な選択です。</p><a href="lump-sum-vs-dca.html">過去データと比較条件を見る →</a></div></article>
+<article class="conclusion"><h3>リバランス</h3><div><strong>基本：頻繁な売買を避け、追加資金で調整する</strong><p class="reason">配分のずれを確認し、可能なら積立・追加投資を偏りの大きい資産へ向けて調整します。売却を伴う調整は、必要性・税金・コストを確認して行います。</p><a href="portfolio-rebalancing.html">リバランスの方法と注意点 →</a></div></article>
+<article class="conclusion"><h3>投資信託の費用</h3><div><strong>基本：実質的な保有コストと運用品質を比較する</strong><p class="reason">信託報酬の低さを重視しつつ、その他の費用、指数への追随、純資産規模、運用の継続性も確認します。信託報酬だけで機械的に決めません。</p><a href="investment-trust-fees.html">費用の比較方法 →</a></div></article>
+</div></section>
+<section class="section" aria-labelledby="conditions"><div class="section-heading"><span class="eyebrow">START WITH YOUR CONDITIONS</span><h2 id="conditions">結論を自分の状況に当てはめる前に</h2><p class="section-intro">商品を選ぶ前に、次の前提を確認します。ここが整っていない場合、投資対象の比較より先に取り組むことがあります。</p></div><div class="cards">
+<article class="card"><span class="answer">STEP 1</span><h3>生活資金・緊急資金を確保する</h3><p>値下がりした資産を生活費のために売らずに済むよう、当面の支出と予備資金を分けます。</p><a href="before-you-invest.html">投資前の確認事項 →</a></article>
+<article class="card"><span class="answer">STEP 2</span><h3>使う時期と投資期間を決める</h3><p>近い将来に使うお金と、長期間運用できるお金を分けます。期間が短い資金を株式に依存させないことが基本です。</p><a href="risk-return-basics.html">リスクとリターンを理解する →</a></article>
+<article class="card"><span class="answer">STEP 3</span><h3>下落時に続けられる配分を選ぶ</h3><p>想定上の損失額だけでなく、実際に大幅下落したとき保有を続けられるかを考えます。</p><a href="maximum-drawdown.html">最大ドローダウンを知る →</a></article>
+<article class="card"><span class="answer">STEP 4</span><h3>制度・商品・費用を確認する</h3><p>NISAなどの制度、商品の投資対象、費用、リスクを確認してから具体的な商品を比較します。</p><a href="categories/">カテゴリ・解説記事から探す →</a></article>
+</div></section>
+<section class="section" aria-labelledby="themes"><div class="section-heading"><span class="eyebrow">EXPLORE BY QUESTION</span><h2 id="themes-title">知りたいことから、判断を深める</h2><p class="section-intro">基本結論の根拠や、別の選択肢を検討したいときはこちら。</p></div><div class="pathways">
+<a class="path" href="simple-investing-guide.html"><b>投資をシンプルに考える →</b><span>基本方針を短く整理する</span></a><a class="path" href="diversification-basics.html"><b>分散投資とは？ →</b><span>分散の効果と限界を知る</span></a><a class="path" href="asset-correlation-comparison.html"><b>資産間の相関を比較する →</b><span>組み合わせによる違いを確認</span></a><a class="path" href="risk-return-basics.html"><b>リスクとリターン →</b><span>値動きと損失を理解する</span></a><a class="path" href="regular-investing.html"><b>積立投資とは？ →</b><span>継続購入の仕組みと注意点</span></a><a class="path" href="investment-trust-investment-targets.html"><b>投資信託の投資対象 →</b><span>株式・債券・REITなどを比較</span></a>
+</div></section>
+<section class="section method" aria-labelledby="method-title"><h3 id="method-title">結論の読み方・更新方針</h3><p>ここでの「基本」は、Invest Atlasが根拠を比較したうえで採用する標準的な考え方です。万人に最適という意味ではありません。各結論は、比較条件・根拠資料・代替案・結論が変わる条件を記事側で検証し、重要な制度変更やデータ更新があれば見直します。</p><ul><li>過去の成績を将来の保証として扱わない</li><li>未検証のテーマは「検証中」と明示し、確定結論と混同しない</li><li>結論を変更した場合は、変更理由と確認日を記録する</li></ul></section>
+<p class="updated">Invest Atlas｜投資の仕組みを理解し、自分で考え、判断するための情報を届けます。<br><a href="getting-started.html">初めての方へ</a>　｜　<a href="./">トップページへ戻る</a>　｜　<a href="editorial-policy.html">編集方針・免責事項</a></p>
 </main>
 <footer><div class="wrap"><strong>Invest Atlas</strong><p>投資の仕組みを理解し、自分で考え、判断するための情報を届けます。</p><p><a href="editorial-policy.html">編集方針・免責事項</a>　｜　<a href="./">トップページへ戻る</a></p><p>本ページは一般的な情報提供を目的とし、個別の投資助言や利益を保証するものではありません。</p></div></footer>
 </body>
