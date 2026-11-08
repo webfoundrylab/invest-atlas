@@ -83,7 +83,7 @@
 - 最新の `article-index.json`、公開記事本文、stock の `queue.json`・`recommendation-order.json`・記事マニフェストを照合。個別株とインデックス投資の比較、財務指標を組み合わせた企業分析、資産の置き場所に関する記事群を優先候補として確認。
 - ゴールド投資（`articles/gold-investing/`）とREIT（`articles/reit-basics/`）はstockに既存原稿があることを確認。いずれも概要レベルで `audit_pending` のため、新規重複制作はせず既存原稿を深掘りする対象とする。
 - 新規記事 `individual-stock-vs-index.html` と `financial-metrics-analysis.html` の初稿、manifest、SVGサムネイル、本文内SVG図解をPrivate stockへ作成。前者は個別株とインデックス投資の仕組み・分散・リスク・費用・手間を比較。後者はEPS・PER・BPS・PBR・ROEを仮定企業2社の数値例と分析手順で接続。
-- 2記事を `recommendation-order.json` の末尾へ追加。公開キューには未登録。manifestの必須監査項目は false、`draft_status` は `audit_pending` のまま。記事内容の最終確認、本番同等プレビュー、SVG/XML・リンク・ビルド検証は未実施。
+- 2記事を `recommendation-order.json` の末尾へ追加。公開キューには未登録。manifestの必須監査項目は false、`draft_status` は `audit_pending` のまま。GitHub保存後の静的検査では、各記事のh1/main/article/noindex、manifest登録ファイル数、本文画像参照、manifest関連記事と本文リンクの一致、SVG viewBoxを確認し、すべて整合。SPIVA 2026年中期版の10年・15年アンダーパフォーム率を比較記事へ追加し、個人の個別株成績を示すものではないと明記。未実施：SVG/XMLパーサー検証、本番同等プレビュー、公開側build/validate、PC/スマートフォン実表示確認、ユーザー内容確認。
 - SPIVA 2026年中期版はアクティブ運用投資信託とベンチマークの比較であり、個人の個別株投資成績を直接示す資料ではないことを本文で明記。JPXの財務指標定義・業種別PER/PBR資料を企業分析記事の基礎資料として採用。
 - 要確認の既存不整合：`queue.json` では `roe-basics.html` が `scheduled` だが、同記事manifestは `audit_pending` かつ「公開キュー未登録」と記載。公開状態・準備状態の矛盾を解消するまで公開対象として扱わない。
 - 次工程：新規2記事の数値・比較範囲・説明・出典・内部リンクを監査し、既存ゴールド・REIT原稿を深掘りする。全記事を本番同等プレビューと検証に通し、内容確認が完了したものだけ公開準備へ進める。公開・キュー登録は別途指示なしに行わない。
