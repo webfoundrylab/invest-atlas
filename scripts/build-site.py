@@ -317,6 +317,11 @@ main.wrap{width:min(1160px,calc(100% - 32px))}body > header .wrap{width:min(1160
         ARTICLE_OPEN_END)
     closing = ARTICLE_CLOSE_START + '</div></div>' + ARTICLE_CLOSE_END
     page, header_count = re.subn(r'<header\b[^>]*>.*?</header>', lambda _m: render_site_header(), page, count=1, flags=re.I | re.S)
+    if not header_count:
+        # Articles without a source-level header still require the shared site header.
+        page, body_count = re.subn(r'(<body\b[^>]*>)', lambda m: m.group(1) + render_site_header(), page, count=1, flags=re.I)
+        if not body_count:
+            return page
     main_match = re.search(r'<main\b[^>]*>', page, flags=re.I)
     main_close = page.lower().rfind("</main>")
     if not main_match or main_close < 0:
