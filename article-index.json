@@ -961,7 +961,8 @@
       "related": [
         "investment-trust-distributions.html",
         "nisa-basics.html",
-        "risk-return-basics.html"
+        "risk-return-basics.html",
+        "eps-basics.html"
       ],
       "publishedAt": "2026-10-30",
       "updatedAt": "2026-10-30",
@@ -1368,6 +1369,31 @@
       "publishedAt": "2026-11-09",
       "updatedAt": "2026-11-09",
       "publishOrder": 35
+    },
+    {
+      "slug": "eps-basics.html",
+      "title": "EPSとは？1株当たり利益の計算方法と成長率の見方",
+      "mainTitle": "EPSとは？",
+      "subtitle": "1株当たり利益の計算方法と成長率の見方",
+      "summary": "EPS（1株当たり利益）の計算式を、普通株主に帰属する利益と期中平均株式数から解説。株式分割、自社株買い、増資、希薄化後EPS、成長率の見方と注意点を具体例で整理します。",
+      "category": "companies",
+      "subcategory": "financial-statements",
+      "tags": [
+        "EPS",
+        "1株当たり利益",
+        "企業分析",
+        "PER",
+        "株式数"
+      ],
+      "status": "published",
+      "related": [
+        "stock-dividends.html"
+      ],
+      "thumbnail": "thumbnails/eps-basics.svg",
+      "topic": "financial-metrics",
+      "publishedAt": "2026-11-10",
+      "updatedAt": "2026-11-10",
+      "publishOrder": 36
     }
   ],
   "pages": [

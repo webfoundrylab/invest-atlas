@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
+<title id="title">EPSの計算方法</title><desc id="desc">普通株主に帰属する利益を普通株式の期中平均株式数で割るとEPSになる。利益と株式数の両方がEPSを変化させる。</desc>
+<rect width="1200" height="430" rx="24" fill="#f4f8f9"/>
+<text x="600" y="54" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="700" fill="#17354a">EPS（1株当たり利益）の計算</text>
+<rect x="65" y="105" width="430" height="125" rx="18" fill="#e1f0eb" stroke="#287e76" stroke-width="3"/>
+<text x="280" y="151" text-anchor="middle" font-family="sans-serif" font-size="25" font-weight="700" fill="#17354a">普通株主に帰属する利益</text>
+<text x="280" y="190" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#405565">連結では親会社株主に帰属する利益が基本</text>
+<text x="600" y="183" text-anchor="middle" font-family="sans-serif" font-size="54" font-weight="700" fill="#287e76">÷</text>
+<rect x="705" y="105" width="430" height="125" rx="18" fill="#e7edf5" stroke="#55769a" stroke-width="3"/>
+<text x="920" y="151" text-anchor="middle" font-family="sans-serif" font-size="25" font-weight="700" fill="#17354a">普通株式の期中平均株式数</text>
+<text x="920" y="190" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#405565">自己株式を除き、期中の増減を反映</text>
+<path d="M600 245 V282" stroke="#287e76" stroke-width="5" stroke-linecap="round"/>
+<path d="M586 268 L600 284 L614 268" fill="none" stroke="#287e76" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="380" y="294" width="440" height="88" rx="18" fill="#fff" stroke="#c28b38" stroke-width="3"/>
+<text x="600" y="350" text-anchor="middle" font-family="sans-serif" font-size="36" font-weight="800" fill="#17354a">EPS（円／株）</text>
+<text x="600" y="414" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#536879">利益の増減だけでなく、株式数の増減でもEPSは変わる</text>
+</svg>

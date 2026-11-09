@@ -34,6 +34,7 @@ https://webfoundrylab.github.io/invest-atlas/volatility-basics.html
 https://webfoundrylab.github.io/invest-atlas/correlation-coefficient.html
 https://webfoundrylab.github.io/invest-atlas/asset-correlation-comparison.html
 https://webfoundrylab.github.io/invest-atlas/vix-index.html
+https://webfoundrylab.github.io/invest-atlas/eps-basics.html
 https://webfoundrylab.github.io/invest-atlas/categories/
 https://webfoundrylab.github.io/invest-atlas/categories/basics/
 https://webfoundrylab.github.io/invest-atlas/categories/basics/getting-started/
@@ -68,6 +69,8 @@ https://webfoundrylab.github.io/invest-atlas/categories/markets/market-trends/st
 https://webfoundrylab.github.io/invest-atlas/categories/markets/investment-themes/
 https://webfoundrylab.github.io/invest-atlas/categories/markets/investment-themes/ai-semiconductor/
 https://webfoundrylab.github.io/invest-atlas/categories/companies/
+https://webfoundrylab.github.io/invest-atlas/categories/companies/financial-statements/
+https://webfoundrylab.github.io/invest-atlas/categories/companies/financial-statements/financial-metrics/
 https://webfoundrylab.github.io/invest-atlas/categories/companies/dividends-shareholder-returns/
 https://webfoundrylab.github.io/invest-atlas/categories/companies/dividends-shareholder-returns/stock-dividend-basics/
 https://webfoundrylab.github.io/invest-atlas/investment-compass.html

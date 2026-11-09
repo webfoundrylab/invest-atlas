@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<title>EPSとは？1株当たり利益の計算方法と成長率の見方｜Invest Atlas</title>
+<meta name="description" content="EPS（1株当たり利益）の意味と計算式を、普通株主に帰属する利益・期中平均株式数から解説。株式分割、自社株買い、増資、希薄化、成長率の見方と注意点も具体例で整理します。">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://webfoundrylab.github.io/invest-atlas/eps-basics.html">
+<meta name="theme-color" content="#10243a">
+<style>
+:root{--ink:#172b3d;--muted:#536879;--teal:#087f75;--line:#d5e6eb;--paper:#f1f8fa}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.85 system-ui,-apple-system,"Segoe UI",sans-serif}a{color:#12665f;text-underline-offset:3px}
+.eyebrow{font-size:.82rem;font-weight:800;letter-spacing:.08em;color:var(--teal)}h1{font-size:clamp(1.85rem,4vw,2.65rem);line-height:1.35;margin:.5em 0}.title-main,.title-subtitle{display:block}.title-subtitle{font-size:.62em;line-height:1.5;font-weight:650;color:var(--muted);margin-top:.22em}
+.lead{font-size:1.08rem;color:#40596a}.meta{font-size:.85rem;color:var(--muted)}h2{font-size:1.42rem;line-height:1.45;margin:2.1em 0 .65em;border-bottom:2px solid var(--line);padding-bottom:.4em}h3{font-size:1.12rem;margin:1.45em 0 .4em}p{margin:.85em 0}
+.callout{margin:20px 0;padding:15px 18px;background:#edf7f4;border-left:4px solid #168276;border-radius:8px}.note{margin:18px 0;padding:14px 16px;background:#fff7e9;border-left:4px solid #d99a43;border-radius:8px}
+.toc{margin:24px 0;padding:17px 21px;background:#f4f8f9;border:1px solid var(--line);border-radius:12px}.toc strong{display:block;margin-bottom:6px}.toc ol{margin:0;padding-left:1.4em}.toc li{margin:.25em 0}
+.table-wrap{overflow-x:auto;margin:18px 0}table{width:100%;border-collapse:collapse;font-size:.93rem}th,td{padding:11px;border:1px solid var(--line);text-align:left;vertical-align:top}th{background:#edf4f5}
+.formula{margin:18px 0;padding:16px;background:#f2f6fa;border-radius:10px;text-align:center;font-size:1.05rem;font-weight:750;overflow-wrap:anywhere}
+.diagram{margin:24px 0;padding:14px;border:1px solid var(--line);border-radius:13px;background:#fbfdfd}.diagram img{display:block;width:100%;height:auto}.diagram figcaption{margin-top:9px;font-size:.88rem;color:var(--muted)}
+.related-inline{margin:18px 0;padding:12px 15px;background:#f3f7f8;border-radius:9px}.source-list li{margin:.6em 0}
+@media(max-width:600px){h2{font-size:1.28rem}.toc{padding:14px}.diagram{padding:8px}th,td{padding:8px;font-size:.86rem}}
+</style>
+<!-- GENERATED ARTICLE LAYOUT STYLE: START --><style>
+main.wrap{width:min(1160px,calc(100% - 32px))}body > header .wrap{width:min(1160px,calc(100% - 32px))}
+.article-page-layout{display:grid;grid-template-columns:245px minmax(0,1fr);gap:26px;align-items:start;margin:22px 0 52px}
+.article-sidebar .category-tree{background:#fff;border:1px solid #dce4e8;border-radius:14px;padding:14px;position:sticky;top:18px;max-height:calc(100vh - 36px);overflow:auto}
+.article-sidebar .category-tree ul{list-style:none;padding-left:14px;margin:8px 0}.article-sidebar .category-tree>ul{padding:0}.article-sidebar .category-tree li{margin:5px 0}.article-sidebar .category-tree summary{cursor:pointer}.article-sidebar .category-tree a{font-size:.9rem}.article-sidebar .category-tree .active>a,.article-sidebar .category-tree .active>details>summary>a{font-weight:800;color:#075f59}
+.article-page-content{min-width:0}
+.article-category-crumbs{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px;font-size:.9rem}.article-mobile-tree{display:none}
+@media(max-width:850px){.article-page-layout{grid-template-columns:1fr;gap:0;margin-top:14px}.article-sidebar{display:none}.article-mobile-tree{display:block;margin:0 0 16px;padding:12px 14px;background:#fff;border:1px solid #d5e6eb;border-radius:12px}.article-mobile-tree summary{cursor:pointer;font-weight:750}.article-mobile-tree .category-tree{margin-top:10px;max-height:320px;overflow:auto}.article-mobile-tree .category-tree ul{list-style:none;padding-left:14px;margin:8px 0}.article-mobile-tree .category-tree>ul{padding:0}}
+</style><!-- GENERATED ARTICLE LAYOUT STYLE: END --><link rel="stylesheet" href="https://webfoundrylab.github.io/invest-atlas/assets/site-layout.css"><link rel="stylesheet" href="https://webfoundrylab.github.io/invest-atlas/assets/site-header.css"><script src="https://webfoundrylab.github.io/invest-atlas/assets/display-mode.js"></script></head>
+<body><header class="ia-site-header"><div class="ia-header-inner"><a class="ia-brand" href="https://webfoundrylab.github.io/invest-atlas/"><img src="https://webfoundrylab.github.io/invest-atlas/favicon.svg" alt="" width="42" height="42"><span>Invest Atlas</span></a><nav class="ia-header-nav" aria-label="主要メニュー"><a href="https://webfoundrylab.github.io/invest-atlas/categories/">カテゴリ</a><a href="https://webfoundrylab.github.io/invest-atlas/getting-started.html">初めての方へ</a><a href="https://webfoundrylab.github.io/invest-atlas/investment-compass.html">投資の羅針盤</a></nav></div></header>
+<main class="wrap"><!-- GENERATED ARTICLE LAYOUT OPEN: START --><div class="article-page-layout"><aside class="article-sidebar"><nav class="category-tree" aria-label="カテゴリツリー"><strong>カテゴリから探す</strong><ul><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/">投資の基礎</a></summary><ul><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/getting-started/">投資を始める前の準備</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/getting-started/investment-preparation/">家計・目的・投資期間</a></li></ul></details></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/investing-basics/">投資の仕組み・基本用語</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/risk-return/">リスクとリターン</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/diversification/">分散投資・資産配分</a></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/bond-investing/">債券投資</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/bond-investing/bond-basics/">債券の仕組み・利回り・リスク</a></li></ul></details></li></ul></details></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/">投資制度・税制</a></summary><ul><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/nisa-system/">新NISAの仕組み</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/nisa-system/new-nisa-basics/">投資枠・非課税保有限度額</a></li></ul></details></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/nisa-product-selection/">NISAの商品選び</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/nisa-product-selection/choosing-funds/">投資信託の選び方</a></li></ul></details></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/tax-and-nisa/">投資と税金</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/ideco-pension/">iDeCo・年金制度</a></li></ul></details></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/">投資信託・ETF</a></summary><ul><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/investment-trust-basics/">投資信託の基礎</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/investment-trust-basics/nav-price/">基準価額と値動き</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/investment-trust-basics/index-active/">インデックス型・アクティブ型</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/investment-trust-basics/investment-targets/">投資対象資産・地域</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/investment-trust-basics/distribution/">分配金と再投資</a></li></ul></details></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/etf-basics/">ETFの基礎</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/fund-etf-comparison/">投資信託とETFの比較</a></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/fund-costs/">信託報酬・手数料</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/fund-costs/expense-types/">費用の種類・実質コスト</a></li></ul></details></li></ul></details></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/strategy/">資産形成</a></summary><ul><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/strategy/regular-investing/">積立投資</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/strategy/regular-investing/dollar-cost-averaging/">定額購入・購入時期の分散</a></li></ul></details></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/strategy/long-term-investing/">長期投資</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/strategy/compound-growth/">複利の仕組み</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/strategy/goals-and-contributions/">目標額・積立額の考え方</a></li></ul></details></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/">市場・注目テーマ</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/economic-indicators/">経済指標・金融政策</a></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/market-trends/">株式市場の動向</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/market-trends/stock-indices/">株価指数</a></li></ul></details></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/investment-themes/">注目テーマ</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/investment-themes/ai-semiconductor/">AI・半導体</a></li></ul></details></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/fx-rates-inflation/">為替・金利・インフレ</a></li></ul></details></li><li><details open><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/">個別株・企業分析</a></summary><ul><li><details open><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/financial-statements/">決算書・財務分析</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/financial-statements/earnings-results/">決算の読み方</a></li><li class="active"><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/financial-statements/financial-metrics/">売上・利益・財務指標</a></li></ul></details></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/company-analysis/">企業・銘柄の分析</a></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/dividends-shareholder-returns/">配当・株主還元</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/dividends-shareholder-returns/stock-dividend-basics/">配当金・利回り・税金</a></li></ul></details></li></ul></details></li></ul></nav></aside><div class="article-page-content"><!-- GENERATED ARTICLE LAYOUT OPEN: END --><article class="article"><nav class="article-category-crumbs" aria-label="パンくずリスト"><a href="https://webfoundrylab.github.io/invest-atlas/">トップ</a> › <a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/">個別株・企業分析</a> › <a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/financial-statements/">決算書・財務分析</a> › <a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/financial-statements/financial-metrics/">売上・利益・財務指標</a></nav><div class="article-mobile-tree"><details><summary>カテゴリツリーを開く</summary><nav class="category-tree" aria-label="カテゴリツリー"><strong>カテゴリから探す</strong><ul><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/">投資の基礎</a></summary><ul><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/getting-started/">投資を始める前の準備</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/getting-started/investment-preparation/">家計・目的・投資期間</a></li></ul></details></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/investing-basics/">投資の仕組み・基本用語</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/risk-return/">リスクとリターン</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/diversification/">分散投資・資産配分</a></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/bond-investing/">債券投資</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/bond-investing/bond-basics/">債券の仕組み・利回り・リスク</a></li></ul></details></li></ul></details></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/">投資制度・税制</a></summary><ul><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/nisa-system/">新NISAの仕組み</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/nisa-system/new-nisa-basics/">投資枠・非課税保有限度額</a></li></ul></details></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/nisa-product-selection/">NISAの商品選び</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/nisa-product-selection/choosing-funds/">投資信託の選び方</a></li></ul></details></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/tax-and-nisa/">投資と税金</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/ideco-pension/">iDeCo・年金制度</a></li></ul></details></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/">投資信託・ETF</a></summary><ul><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/investment-trust-basics/">投資信託の基礎</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/investment-trust-basics/nav-price/">基準価額と値動き</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/investment-trust-basics/index-active/">インデックス型・アクティブ型</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/investment-trust-basics/investment-targets/">投資対象資産・地域</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/investment-trust-basics/distribution/">分配金と再投資</a></li></ul></details></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/etf-basics/">ETFの基礎</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/fund-etf-comparison/">投資信託とETFの比較</a></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/fund-costs/">信託報酬・手数料</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/fund-costs/expense-types/">費用の種類・実質コスト</a></li></ul></details></li></ul></details></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/strategy/">資産形成</a></summary><ul><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/strategy/regular-investing/">積立投資</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/strategy/regular-investing/dollar-cost-averaging/">定額購入・購入時期の分散</a></li></ul></details></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/strategy/long-term-investing/">長期投資</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/strategy/compound-growth/">複利の仕組み</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/strategy/goals-and-contributions/">目標額・積立額の考え方</a></li></ul></details></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/">市場・注目テーマ</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/economic-indicators/">経済指標・金融政策</a></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/market-trends/">株式市場の動向</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/market-trends/stock-indices/">株価指数</a></li></ul></details></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/investment-themes/">注目テーマ</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/investment-themes/ai-semiconductor/">AI・半導体</a></li></ul></details></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/fx-rates-inflation/">為替・金利・インフレ</a></li></ul></details></li><li><details open><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/">個別株・企業分析</a></summary><ul><li><details open><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/financial-statements/">決算書・財務分析</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/financial-statements/earnings-results/">決算の読み方</a></li><li class="active"><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/financial-statements/financial-metrics/">売上・利益・財務指標</a></li></ul></details></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/company-analysis/">企業・銘柄の分析</a></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/dividends-shareholder-returns/">配当・株主還元</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/dividends-shareholder-returns/stock-dividend-basics/">配当金・利回り・税金</a></li></ul></details></li></ul></details></li></ul></nav></details></div>
+<p class="eyebrow">COMPANY ANALYSIS / FINANCIAL METRICS</p>
+<h1><span class="title-main">EPSとは？</span><span class="title-subtitle">1株当たり利益の計算方法と成長率の見方</span></h1>
+<p class="meta">情報確認日：2026年11月8日</p>
+<p class="lead">EPS（Earnings Per Share）は「1株当たり利益」のことです。会社全体の利益を株式数で割り、普通株式1株に対応する利益を表します。企業の利益水準や成長を株式数と合わせて見るための基本指標です。</p>
+<div class="callout"><strong>先に結論：</strong>EPSは、単に会社の純利益を発行済株式数で割った数字ではありません。日本基準の基本的な1株当たり当期純利益は、普通株主に帰属する利益を、自己株式を除いた普通株式の期中平均株式数で割って計算します。利益が増えなくても、株式数の変化でEPSは動きます。</div>
+<nav class="toc" aria-label="目次"><strong>この記事で分かること</strong><ol>
+<li><a href="#what">EPSとは？何を表す指標？</a></li>
+<li><a href="#formula">EPSの計算方法</a></li>
+<li><a href="#share-count">株式数が変わるとEPSはどう動く？</a></li>
+<li><a href="#diluted">基本EPSと希薄化後EPS</a></li>
+<li><a href="#growth">EPS成長率の見方</a></li>
+<li><a href="#compare">EPSと利益・PER・配当の違い</a></li>
+<li><a href="#caution">EPSを見るときの注意点</a></li>
+</ol></nav>
+
+<h2 id="what">1. EPSとは？何を表す指標？</h2>
+<p>EPSは、企業の利益を1株当たりに換算した指標です。たとえば、普通株主に帰属する利益が12億円で、期中平均の普通株式数が1億株なら、EPSは12円です。</p>
+<p>会社全体の利益だけを見ていると、株式数の違う企業を比べにくくなります。EPSに換算すると、普通株式1株に対応する利益として比較しやすくなります。ただし、EPSだけで企業の規模や株価の割安・割高、将来の成長性まで判断できるわけではありません。</p>
+<p>日本取引所グループ（JPX）はEPSを「1株当たり当期純利益」と説明しています。上場企業の決算短信や有価証券報告書では、実績値や潜在株式調整後の数値などが開示されます。</p>
+
+<h2 id="formula">2. EPSの計算方法</h2>
+<p>日本基準の基本的な1株当たり当期純利益は、普通株式に係る当期純利益を普通株式の期中平均株式数で割って計算します。連結決算では、原則として親会社株主に帰属する当期純利益が出発点です。</p>
+<div class="formula">基本EPS ＝ 普通株式に係る当期純利益 ÷ 普通株式の期中平均株式数</div>
+<p>分子・分母の中身を分けると、次のようになります。</p>
+<div class="table-wrap"><table><thead><tr><th>計算要素</th><th>意味</th><th>確認するポイント</th></tr></thead><tbody>
+<tr><td>普通株式に係る当期純利益</td><td>普通株主に帰属する利益</td><td>連結では親会社株主に帰属する当期純利益が基本。優先配当など普通株主に帰属しない金額があれば控除する</td></tr>
+<tr><td>普通株式の期中平均株式数</td><td>対象期間中に流通していた普通株式数の平均</td><td>期中の新株発行・自己株式の取得などを反映し、自己株式を除く</td></tr>
+</tbody></table></div>
+<figure class="diagram"><img src="images/eps-basics-diagram.svg" alt="普通株主に帰属する利益を普通株式の期中平均株式数で割り、EPSを計算する流れ"><figcaption>利益だけでなく、対象期間中の株式数も計算に反映します。</figcaption></figure>
+<h3>計算例：利益12億円、平均株式数1億株の場合</h3>
+<div class="table-wrap"><table><thead><tr><th>項目</th><th>金額・株数</th></tr></thead><tbody>
+<tr><td>親会社株主に帰属する当期純利益</td><td>12億円</td></tr>
+<tr><td>普通株主に帰属しない金額</td><td>0円（例示上）</td></tr>
+<tr><td>普通株式の期中平均株式数</td><td>1億株</td></tr>
+<tr><td>EPS</td><td><strong>12円</strong></td></tr>
+</tbody></table></div>
+<p>計算は、12億円 ÷ 1億株 ＝ 12円です。仮に優先配当など普通株主に帰属しない金額が2,000万円あれば、普通株式に係る利益は11億8,000万円となり、EPSは11.8円になります。</p>
+<h3>なぜ「期末の株式数」ではなく「期中平均」なのか</h3>
+<p>期中に増資や自社株買いがあると、期首と期末で株式数が異なります。期末時点の株式数だけで割ると、1年間の利益を生み出した期間中の株式数を正しく反映できません。そのため、株式が存在していた期間を考慮した平均株式数を使います。</p>
+<p>たとえば、期首に1億株あり、期末の3か月前に2,000万株を新たに発行した場合、単純化した期中平均株式数は1億株＋2,000万株×3か月÷12か月＝1億500万株です。実際の算定では発行日などを基に期間按分します。</p>
+
+<h2 id="share-count">3. 株式数が変わるとEPSはどう動く？</h2>
+<p>EPSは「利益」と「株式数」の両方で決まります。利益が同じでも、株式数が減ればEPSは上がり、株式数が増えればEPSは下がる方向に動きます。</p>
+<h3>自社株買い：利益が同じでもEPSが上がることがある</h3>
+<p>利益が10億円、期中平均株式数が1億株ならEPSは10円です。期中の途中で1,000万株を買い戻し、残り期間が半年だったと仮定すると、期中平均株式数は9,500万株となり、EPSは約10.53円になります。</p>
+<div class="table-wrap"><table><thead><tr><th>項目</th><th>買い戻し前</th><th>期中に買い戻した例</th></tr></thead><tbody>
+<tr><td>普通株式に係る利益</td><td>10億円</td><td>10億円</td></tr>
+<tr><td>期中平均株式数</td><td>1億株</td><td>9,500万株</td></tr>
+<tr><td>EPS</td><td>10円</td><td>約10.53円</td></tr>
+</tbody></table></div>
+<p>この例ではEPSが約5.3％増えていますが、会社の利益そのものは増えていません。EPSの伸びを企業の本業の成長と同じ意味で受け取らず、利益の増減と株式数の増減を分けて確認しましょう。なお、自社株買いには資金流出が伴うため、買付価格や財務余力なども別に見る必要があります。</p>
+<h3>増資：利益が増えてもEPSが下がる場合がある</h3>
+<p>反対に、新株発行で株式数が増えると、利益の増加が株式数の増加に追いつかず、EPSが下がることがあります。資金調達によって将来の利益成長につながる投資を行う場合もあるため、増資だけで良し悪しを決めず、調達資金の使い道と投資後の利益を確認します。</p>
+<h3>株式分割：会社の利益や企業価値が増えるわけではない</h3>
+<p>1株を2株に分ける「2分割」を行うと、株式数は原則2倍になり、1株当たりの利益であるEPSは半分になります。</p>
+<div class="table-wrap"><table><thead><tr><th>項目</th><th>分割前</th><th>2分割後</th></tr></thead><tbody>
+<tr><td>当期純利益</td><td>10億円</td><td>10億円</td></tr>
+<tr><td>株式数</td><td>1億株</td><td>2億株</td></tr>
+<tr><td>EPS</td><td>10円</td><td>5円</td></tr>
+</tbody></table></div>
+<p>株式分割だけで会社全体の利益や企業価値が増えるわけではありません。1株当たりの株価や配当なども分割比率に応じて調整されるため、分割前後の数字を比べるときは同じ株数基準にそろえます。会計上も、分割が行われた場合は比較可能性を保つため、過年度のEPSを分割後の株数に合わせて調整して表示する扱いがあります。</p>
+<div class="note"><strong>ここが大切：</strong>EPSが増えた理由が「利益の成長」なのか、「株式数の減少」なのかを分けて見ること。株式分割のように、株式数の基準が変わっただけのケースもあります。</div>
+
+<h2 id="diluted">4. 基本EPSと希薄化後EPS</h2>
+<p>決算資料では、基本的なEPSのほかに「潜在株式調整後1株当たり当期純利益」が開示されることがあります。これは一般に希薄化後EPSと呼ばれ、将来普通株式に変わる可能性がある権利などを考慮した指標です。</p>
+<div class="table-wrap"><table><thead><tr><th>種類</th><th>計算の考え方</th><th>見る目的</th></tr></thead><tbody>
+<tr><td>基本EPS</td><td>実際の普通株式の期中平均株式数を使う</td><td>現在の普通株式1株当たりの利益を把握する</td></tr>
+<tr><td>希薄化後EPS</td><td>新株予約権や転換証券など、希薄化効果を持つ潜在株式の影響を反映する</td><td>潜在株式が普通株式になった場合の1株当たり利益への影響を見る</td></tr>
+</tbody></table></div>
+<p>たとえば、基本EPSが12円で、潜在株式を考慮した結果、分母が増えて希薄化後EPSが11円になったとします。この差は、将来株式数が増える可能性によって、既存株式1株当たりの利益が薄まる影響を示します。これは仕組みを理解するための単純化した例で、実際の計算では転換社債の利息など分子側の調整が必要になる場合もあります。</p>
+<p>潜在株式がすべて機械的に加算されるわけではありません。EPSを小さくする効果（希薄化効果）があるものを対象とし、逆にEPSを大きくする効果（逆希薄化効果）となるものは計算から除外します。新株予約権や転換社債などの条件によって算定方法も異なります。</p>
+<p>希薄化後EPSが開示されている場合は、基本EPSとの差だけでなく、どのような潜在株式があるのか、有価証券報告書の注記などで確認すると理解が深まります。</p>
+
+<h2 id="growth">5. EPS成長率の見方</h2>
+<p>EPS成長率は、前期と当期のEPSを比べ、1株当たり利益がどの程度増減したかを見る指標です。前期・当期ともにプラスの場合、基本的な計算式は次のとおりです。</p>
+<div class="formula">EPS成長率 ＝（当期EPS ÷ 前期EPS − 1）× 100</div>
+<p>前期EPSが100円、当期EPSが120円なら、EPS成長率は20％です。</p>
+<div class="table-wrap"><table><thead><tr><th>項目</th><th>前期</th><th>当期</th><th>変化</th></tr></thead><tbody>
+<tr><td>EPS</td><td>100円</td><td>120円</td><td>＋20％</td></tr>
+</tbody></table></div>
+<h3>EPS成長率だけでは利益成長を判断できない</h3>
+<p>EPSが増える理由は、会社全体の利益が増えることだけではありません。自社株買いなどで株式数が減ってもEPSは上昇します。反対に、利益が増えていても増資などで株式数がそれ以上に増えれば、EPSは下がる場合があります。</p>
+<p>そのため、EPS成長率を見るときは、売上高・営業利益・親会社株主に帰属する当期純利益と、期中平均株式数を並べて確認しましょう。利益の成長を伴うEPS上昇なのか、株式数の変化による上昇なのかを見分けやすくなります。</p>
+<h3>赤字から黒字に変わった場合は単純な成長率に注意</h3>
+<p>前期が赤字で当期が黒字になった場合、通常の成長率の式をそのまま使うと、実態を表さない符号や数値になります。前期EPSが0円の場合は割り算自体ができません。こうした場合は、成長率を無理に計算するのではなく、赤字額がどれだけ縮小したか、黒字転換したか、利益が一時的な要因によるものかを確認します。</p>
+<p>また、前期EPSが小さい場合は、わずかな利益変化でも成長率が大きく見えます。成長率の数字だけでなく、EPSの実額と数年間の推移も合わせて見ましょう。</p>
+
+<h2 id="compare">6. EPSと利益・PER・配当の違い</h2>
+<div class="table-wrap"><table><thead><tr><th>指標</th><th>何を表す？</th><th>主な使い方</th></tr></thead><tbody>
+<tr><td>売上高</td><td>商品・サービスの販売などで得た収益</td><td>事業規模や成長の勢いを見る</td></tr>
+<tr><td>営業利益</td><td>本業の営業活動から得た利益</td><td>本業の収益力を見る</td></tr>
+<tr><td>親会社株主に帰属する当期純利益</td><td>税金などを反映した最終利益のうち親会社株主に帰属する金額</td><td>会社全体の最終的な利益を見る</td></tr>
+<tr><td>EPS</td><td>普通株式1株当たりに対応する利益</td><td>株式数を踏まえて1株当たりの利益を見る</td></tr>
+<tr><td>PER</td><td>株価がEPSの何倍か</td><td>利益に対する株価の評価水準を見る</td></tr>
+<tr><td>1株当たり配当金</td><td>普通株式1株に支払われる配当金</td><td>株主への利益還元を見る</td></tr>
+</tbody></table></div>
+<p>EPSは利益を1株当たりに換算した数字で、PERの計算にも使われます。PERは株価をEPSで割った倍率なので、EPSが同じでも株価が変わればPERは変わります。EPSはPERを理解するための土台となる指標です。</p>
+<p>また、EPSと1株当たり配当金は別の数字です。利益のすべてが配当として支払われるわけではなく、会社は利益を事業投資や内部留保に回すこともあります。配当金や配当利回りについては、<a href="stock-dividends.html">株式の配当金とは？</a>も参考になります。</p>
+
+<h2 id="caution">7. EPSを見るときの注意点</h2>
+<ul>
+<li><strong>一時的な利益・損失：</strong>資産売却益などで当期純利益が一時的に増えると、EPSも大きく上がることがあります。通常の事業で稼ぐ利益と分けて確認します。</li>
+<li><strong>株式数の変化：</strong>自社株買い、増資、株式分割などでEPSは変化します。利益と株式数を両方確認します。</li>
+<li><strong>会計基準や表示の違い：</strong>日本基準・IFRSなど、会計基準や開示上の定義を確認します。企業間比較では算定基準をそろえることが重要です。</li>
+<li><strong>実績EPSと予想EPS：</strong>実績EPSは確定した決算の利益に基づき、予想EPSは会社予想や市場予想など将来の利益見通しに基づきます。予想EPSは業績予想の修正で変わるため、対象年度・予想の出所・更新日を確認します。情報サービスによっては分母に使う株式数の基準も異なるため、異なるサイトの数値を比べるときは算定条件をそろえましょう。</li>
+<li><strong>連結と単体の違い：</strong>連結決算と個別決算では利益の範囲が異なります。比較する企業・データの対象をそろえます。</li>
+<li><strong>EPSだけで企業価値は分からない：</strong>EPSは1株当たり利益を示しますが、財務の健全性、キャッシュフロー、将来の成長、株価の妥当性を単独で示すものではありません。</li>
+</ul>
+<p>企業の決算短信では、1株当たり当期純利益や潜在株式調整後1株当たり当期純利益のほか、その算定の基礎が記載されます。数字だけを抜き出すのではなく、利益の内訳や株式数の注記も確認すると、EPSが変化した理由を追いやすくなります。</p>
+
+<div class="related-inline">EPSはPERを計算するための基礎となる指標です。利益の成長と株価の評価を分けて考え、複数の数字を組み合わせて企業を見ていきましょう。</div>
+<h2>まとめ</h2>
+<ul>
+<li>EPSは普通株式1株当たりに対応する利益を表す指標。</li>
+<li>基本EPSは、普通株主に帰属する利益を普通株式の期中平均株式数で割って求める。</li>
+<li>自社株買い・増資・株式分割など、株式数の変化でもEPSは動く。</li>
+<li>希薄化後EPSは、新株予約権や転換証券など潜在株式の影響を反映する。</li>
+<li>EPS成長率を見るときは、利益の変化と株式数の変化を分けて確認する。</li>
+<li>EPSだけで割安・割高や将来の成長を判断せず、PERや利益、財務情報などと組み合わせる。</li>
+</ul>
+
+<h2>参考資料</h2>
+<ul class="source-list">
+<li><a href="https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=29" target="_blank" rel="noopener">企業会計基準委員会（ASBJ）「企業会計基準第2号 1株当たり当期純利益に関する会計基準」</a> — 普通株式に係る利益、期中平均株式数、希薄化後EPSの基本的な算定。</li>
+<li><a href="https://www.asb-j.jp/jp/wp-content/uploads/sites/4/epsr2.pdf" target="_blank" rel="noopener">ASBJ「企業会計基準適用指針第4号 1株当たり当期純利益に関する会計基準の適用指針」</a> — 期中平均株式数や潜在株式調整後EPSの具体的な取扱い。</li>
+<li><a href="https://www.jpx.co.jp/glossary/0-9/558.html" target="_blank" rel="noopener">日本取引所グループ（JPX）「1株当たり当期純利益」</a> — EPSの用語説明。</li>
+<li><a href="https://www.jpx.co.jp/glossary/a-g/570.html" target="_blank" rel="noopener">JPX「EPS」</a> — EPSの略称。</li>
+<li><a href="https://www.ifrs.org/issued-standards/list-of-standards/ias-33-earnings-per-share.html" target="_blank" rel="noopener">IFRS Foundation「IAS 33 Earnings per Share」</a> — IFRSにおける基本EPS・希薄化後EPSの概要。</li>
+</ul>
+</article><!-- GENERATED ARTICLE LAYOUT CLOSE: START --></div></div><!-- GENERATED ARTICLE LAYOUT CLOSE: END --></main>
+</body></html>
