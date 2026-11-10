@@ -1394,6 +1394,32 @@
       "publishedAt": "2026-11-10",
       "updatedAt": "2026-11-10",
       "publishOrder": 36
+    },
+    {
+      "slug": "per-basics.html",
+      "title": "PERとは？株価収益率の計算方法と企業比較での使い方",
+      "mainTitle": "PERとは？",
+      "subtitle": "株価収益率の計算方法と企業比較での使い方",
+      "summary": "PER（株価収益率）の計算式、株価とEPSの関係、実績PERと予想PER、同業比較、赤字・一時利益で使いにくいケースを具体例で解説。",
+      "category": "companies",
+      "subcategory": "financial-statements",
+      "tags": [
+        "PER",
+        "株価収益率",
+        "株式投資",
+        "企業分析",
+        "バリュエーション"
+      ],
+      "status": "published",
+      "related": [
+        "eps-basics.html",
+        "risk-return-basics.html"
+      ],
+      "thumbnail": "thumbnails/per-basics.svg",
+      "topic": "financial-metrics",
+      "publishedAt": "2026-11-11",
+      "updatedAt": "2026-11-11",
+      "publishOrder": 37
     }
   ],
   "pages": [

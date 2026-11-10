@@ -35,6 +35,7 @@ https://webfoundrylab.github.io/invest-atlas/correlation-coefficient.html
 https://webfoundrylab.github.io/invest-atlas/asset-correlation-comparison.html
 https://webfoundrylab.github.io/invest-atlas/vix-index.html
 https://webfoundrylab.github.io/invest-atlas/eps-basics.html
+https://webfoundrylab.github.io/invest-atlas/per-basics.html
 https://webfoundrylab.github.io/invest-atlas/categories/
 https://webfoundrylab.github.io/invest-atlas/categories/basics/
 https://webfoundrylab.github.io/invest-atlas/categories/basics/getting-started/
