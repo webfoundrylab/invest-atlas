@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<title>PBRとは？株価純資産倍率の計算方法と見方｜Invest Atlas</title>
+<meta name="description" content="PBRの計算方法とBPSの意味、PBR1倍の解釈、PER・ROEとの関係、PBR1倍未満の理由、企業比較の手順と注意点を具体例で解説。">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://webfoundrylab.github.io/invest-atlas/pbr-basics.html">
+<meta name="theme-color" content="#10243a">
+<style>
+:root{--ink:#172b3d;--muted:#536879;--line:#dce4e8}
+.article h1{font-size:clamp(1.8rem,4vw,2.6rem);line-height:1.35;margin:.5em 0}
+.title-main,.title-subtitle{display:block}
+.title-subtitle{font-size:.62em;line-height:1.5;font-weight:650;letter-spacing:0;color:#536879;margin-top:.24em}
+.article h2{font-size:1.45rem;line-height:1.45;margin:2.1em 0 .65em;border-bottom:2px solid #dce4e8;padding-bottom:.4em}
+.article h3{font-size:1.12rem;margin:1.4em 0 .4em}
+.article p{margin:.8em 0}
+.article table{border-collapse:collapse;width:100%;margin:18px 0;font-size:.94rem}
+.article th,.article td{border:1px solid #dce4e8;padding:10px;text-align:left;vertical-align:top}
+.article th{background:#edf4f6}
+.diagram{margin:22px 0;padding:16px;border:1px solid #dce4e8;border-radius:14px;background:#f8fbfc}
+.diagram img{display:block;width:100%;height:auto}
+.diagram figcaption{font-size:.88rem;color:#536879;margin-top:10px}
+@media(max-width:560px){.article h2{font-size:1.28rem}.diagram{padding:10px}.article table{font-size:.86rem}.article th,.article td{padding:8px}}
+</style>
+<!-- GENERATED ARTICLE LAYOUT STYLE: START --><style>
+main.wrap{width:min(1160px,calc(100% - 32px))}body > header .wrap{width:min(1160px,calc(100% - 32px))}
+.article-page-layout{display:grid;grid-template-columns:245px minmax(0,1fr);gap:26px;align-items:start;margin:22px 0 52px}
+.article-sidebar .category-tree{background:#fff;border:1px solid #dce4e8;border-radius:14px;padding:14px;position:sticky;top:18px;max-height:calc(100vh - 36px);overflow:auto}
+.article-sidebar .category-tree ul{list-style:none;padding-left:14px;margin:8px 0}.article-sidebar .category-tree>ul{padding:0}.article-sidebar .category-tree li{margin:5px 0}.article-sidebar .category-tree summary{cursor:pointer}.article-sidebar .category-tree a{font-size:.9rem}.article-sidebar .category-tree .active>a,.article-sidebar .category-tree .active>details>summary>a{font-weight:800;color:#075f59}
+.article-page-content{min-width:0}
+.article-category-crumbs{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px;font-size:.9rem}.article-mobile-tree{display:none}
+@media(max-width:850px){.article-page-layout{grid-template-columns:1fr;gap:0;margin-top:14px}.article-sidebar{display:none}.article-mobile-tree{display:block;margin:0 0 16px;padding:12px 14px;background:#fff;border:1px solid #d5e6eb;border-radius:12px}.article-mobile-tree summary{cursor:pointer;font-weight:750}.article-mobile-tree .category-tree{margin-top:10px;max-height:320px;overflow:auto}.article-mobile-tree .category-tree ul{list-style:none;padding-left:14px;margin:8px 0}.article-mobile-tree .category-tree>ul{padding:0}}
+</style><!-- GENERATED ARTICLE LAYOUT STYLE: END --><link rel="stylesheet" href="https://webfoundrylab.github.io/invest-atlas/assets/site-layout.css"><link rel="stylesheet" href="https://webfoundrylab.github.io/invest-atlas/assets/site-header.css"><script src="https://webfoundrylab.github.io/invest-atlas/assets/display-mode.js"></script></head>
+<body>
+<header class="ia-site-header"><div class="ia-header-inner"><a class="ia-brand" href="https://webfoundrylab.github.io/invest-atlas/"><img src="https://webfoundrylab.github.io/invest-atlas/favicon.svg" alt="" width="42" height="42"><span>Invest Atlas</span></a><nav class="ia-header-nav" aria-label="主要メニュー"><a href="https://webfoundrylab.github.io/invest-atlas/categories/">カテゴリ</a><a href="https://webfoundrylab.github.io/invest-atlas/getting-started.html">初めての方へ</a><a href="https://webfoundrylab.github.io/invest-atlas/investment-compass.html">投資の羅針盤</a></nav></div></header>
+<main class="wrap"><!-- GENERATED ARTICLE LAYOUT OPEN: START --><div class="article-page-layout"><aside class="article-sidebar"><nav class="category-tree" aria-label="カテゴリツリー"><strong>カテゴリから探す</strong><ul><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/">投資の基礎</a></summary><ul><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/getting-started/">投資を始める前の準備</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/getting-started/investment-preparation/">家計・目的・投資期間</a></li></ul></details></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/investing-basics/">投資の仕組み・基本用語</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/risk-return/">リスクとリターン</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/diversification/">分散投資・資産配分</a></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/bond-investing/">債券投資</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/bond-investing/bond-basics/">債券の仕組み・利回り・リスク</a></li></ul></details></li></ul></details></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/">投資制度・税制</a></summary><ul><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/nisa-system/">新NISAの仕組み</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/nisa-system/new-nisa-basics/">投資枠・非課税保有限度額</a></li></ul></details></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/nisa-product-selection/">NISAの商品選び</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/nisa-product-selection/choosing-funds/">投資信託の選び方</a></li></ul></details></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/tax-and-nisa/">投資と税金</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/ideco-pension/">iDeCo・年金制度</a></li></ul></details></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/">投資信託・ETF</a></summary><ul><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/investment-trust-basics/">投資信託の基礎</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/investment-trust-basics/nav-price/">基準価額と値動き</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/investment-trust-basics/index-active/">インデックス型・アクティブ型</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/investment-trust-basics/investment-targets/">投資対象資産・地域</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/investment-trust-basics/distribution/">分配金と再投資</a></li></ul></details></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/etf-basics/">ETFの基礎</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/fund-etf-comparison/">投資信託とETFの比較</a></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/fund-costs/">信託報酬・手数料</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/fund-costs/expense-types/">費用の種類・実質コスト</a></li></ul></details></li></ul></details></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/strategy/">資産形成</a></summary><ul><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/strategy/regular-investing/">積立投資</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/strategy/regular-investing/dollar-cost-averaging/">定額購入・購入時期の分散</a></li></ul></details></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/strategy/long-term-investing/">長期投資</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/strategy/compound-growth/">複利の仕組み</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/strategy/goals-and-contributions/">目標額・積立額の考え方</a></li></ul></details></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/">市場・注目テーマ</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/economic-indicators/">経済指標・金融政策</a></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/market-trends/">株式市場の動向</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/market-trends/stock-indices/">株価指数</a></li></ul></details></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/investment-themes/">注目テーマ</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/investment-themes/ai-semiconductor/">AI・半導体</a></li></ul></details></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/fx-rates-inflation/">為替・金利・インフレ</a></li></ul></details></li><li><details open><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/">個別株・企業分析</a></summary><ul><li><details open><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/financial-statements/">決算書・財務分析</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/financial-statements/earnings-results/">決算の読み方</a></li><li class="active"><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/financial-statements/financial-metrics/">売上・利益・財務指標</a></li></ul></details></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/company-analysis/">企業・銘柄の分析</a></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/dividends-shareholder-returns/">配当・株主還元</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/dividends-shareholder-returns/stock-dividend-basics/">配当金・利回り・税金</a></li></ul></details></li></ul></details></li></ul></nav></aside><div class="article-page-content"><!-- GENERATED ARTICLE LAYOUT OPEN: END -->
+<article class="article"><nav class="article-category-crumbs" aria-label="パンくずリスト"><a href="https://webfoundrylab.github.io/invest-atlas/">トップ</a> › <a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/">個別株・企業分析</a> › <a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/financial-statements/">決算書・財務分析</a> › <a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/financial-statements/financial-metrics/">売上・利益・財務指標</a></nav><div class="article-mobile-tree"><details><summary>カテゴリツリーを開く</summary><nav class="category-tree" aria-label="カテゴリツリー"><strong>カテゴリから探す</strong><ul><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/">投資の基礎</a></summary><ul><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/getting-started/">投資を始める前の準備</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/getting-started/investment-preparation/">家計・目的・投資期間</a></li></ul></details></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/investing-basics/">投資の仕組み・基本用語</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/risk-return/">リスクとリターン</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/diversification/">分散投資・資産配分</a></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/bond-investing/">債券投資</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/basics/bond-investing/bond-basics/">債券の仕組み・利回り・リスク</a></li></ul></details></li></ul></details></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/">投資制度・税制</a></summary><ul><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/nisa-system/">新NISAの仕組み</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/nisa-system/new-nisa-basics/">投資枠・非課税保有限度額</a></li></ul></details></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/nisa-product-selection/">NISAの商品選び</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/nisa-product-selection/choosing-funds/">投資信託の選び方</a></li></ul></details></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/tax-and-nisa/">投資と税金</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/nisa/ideco-pension/">iDeCo・年金制度</a></li></ul></details></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/">投資信託・ETF</a></summary><ul><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/investment-trust-basics/">投資信託の基礎</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/investment-trust-basics/nav-price/">基準価額と値動き</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/investment-trust-basics/index-active/">インデックス型・アクティブ型</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/investment-trust-basics/investment-targets/">投資対象資産・地域</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/investment-trust-basics/distribution/">分配金と再投資</a></li></ul></details></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/etf-basics/">ETFの基礎</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/fund-etf-comparison/">投資信託とETFの比較</a></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/fund-costs/">信託報酬・手数料</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/funds/fund-costs/expense-types/">費用の種類・実質コスト</a></li></ul></details></li></ul></details></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/strategy/">資産形成</a></summary><ul><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/strategy/regular-investing/">積立投資</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/strategy/regular-investing/dollar-cost-averaging/">定額購入・購入時期の分散</a></li></ul></details></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/strategy/long-term-investing/">長期投資</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/strategy/compound-growth/">複利の仕組み</a></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/strategy/goals-and-contributions/">目標額・積立額の考え方</a></li></ul></details></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/">市場・注目テーマ</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/economic-indicators/">経済指標・金融政策</a></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/market-trends/">株式市場の動向</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/market-trends/stock-indices/">株価指数</a></li></ul></details></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/investment-themes/">注目テーマ</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/investment-themes/ai-semiconductor/">AI・半導体</a></li></ul></details></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/markets/fx-rates-inflation/">為替・金利・インフレ</a></li></ul></details></li><li><details open><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/">個別株・企業分析</a></summary><ul><li><details open><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/financial-statements/">決算書・財務分析</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/financial-statements/earnings-results/">決算の読み方</a></li><li class="active"><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/financial-statements/financial-metrics/">売上・利益・財務指標</a></li></ul></details></li><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/company-analysis/">企業・銘柄の分析</a></li><li><details><summary><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/dividends-shareholder-returns/">配当・株主還元</a></summary><ul><li><a href="https://webfoundrylab.github.io/invest-atlas/categories/companies/dividends-shareholder-returns/stock-dividend-basics/">配当金・利回り・税金</a></li></ul></details></li></ul></details></li></ul></nav></details></div>
+<div class="article-heading"><h1><span class="title-main">PBRとは？</span><span class="title-subtitle">株価純資産倍率の計算方法と見方</span></h1><p>PBRの意味から、BPS・PER・ROEとの関係、企業を比較するときの確認ポイントまで解説します。</p></div>
+<p>PBR（株価純資産倍率）は、株価が1株当たり純資産（BPS）の何倍で評価されているかを示す指標です。株価と企業の会計上の純資産を比べることで、市場がその企業をどの程度の価値で評価しているかを確認できます。</p>
+<p>ただし、PBRが低ければ割安、高ければ割高と単純には判断できません。純資産の中身や利益を生み出す力、将来の成長性などを合わせて見る必要があります。</p>
+<nav aria-label="目次"><h2>この記事の内容</h2><ol>
+<li><a href="#meaning">PBRとは</a></li><li><a href="#calculation">PBRの計算方法</a></li><li><a href="#bps">BPSとは何か</a></li><li><a href="#one">PBR1倍は何を意味する？</a></li><li><a href="#low">PBR1倍未満なら割安？</a></li><li><a href="#roe">PBR・PER・ROEの関係</a></li><li><a href="#compare">企業を比較するときの見方</a></li><li><a href="#caution">PBRを見るときの注意点</a></li><li><a href="#summary">まとめ</a></li></ol></nav>
+
+<h2 id="meaning">1. PBRとは？株価と純資産の関係を見る指標</h2>
+<p>PBRは「Price Book-value Ratio」の略で、日本語では株価純資産倍率といいます。株価を1株当たり純資産で割って計算し、株価が会計上の純資産に対して何倍の水準にあるかを表します。</p>
+<p>企業の価値を考えるとき、利益に注目する指標がPER、純資産に注目する指標がPBRです。</p>
+<table><thead><tr><th>指標</th><th>比べるもの</th><th>主な見方</th></tr></thead><tbody>
+<tr><td>PER</td><td>株価と1株当たり利益（EPS）</td><td>利益に対して株価が何倍か</td></tr>
+<tr><td>PBR</td><td>株価と1株当たり純資産（BPS）</td><td>純資産に対して株価が何倍か</td></tr>
+<tr><td>ROE</td><td>利益と自己資本</td><td>自己資本を使ってどれだけ利益を上げたか</td></tr>
+</tbody></table>
+<p>PERが「一定期間に生み出した利益」というフローに着目するのに対し、PBRは「ある時点で保有する純資産」というストックに着目します。どちらか一方で企業価値を判断するのではなく、異なる角度から組み合わせて見ることが大切です。</p>
+
+<h2 id="calculation">2. PBRの計算方法</h2>
+<p>PBRの基本的な計算式は次のとおりです。</p>
+<p><strong>PBR（倍）＝株価 ÷ 1株当たり純資産（BPS）</strong></p>
+<figure class="diagram"><img src="images/pbr-basics-diagram.svg" alt="株価をBPSで割るとPBRになり、0.7倍・1倍・1.5倍の関係になる図" style="display:block;width:100%;height:auto"><figcaption>株価とBPSの比率がPBRです。1倍は株価とBPSが同じ水準であることを示します。</figcaption></figure>
+<p>例えば、株価が1,500円、BPSが1,000円の企業なら、PBRは1.5倍です。</p>
+<table><thead><tr><th>項目</th><th>数値</th></tr></thead><tbody><tr><td>株価</td><td>1,500円</td></tr><tr><td>BPS</td><td>1,000円</td></tr><tr><td>PBR</td><td>1,500円 ÷ 1,000円 ＝ <strong>1.5倍</strong></td></tr></tbody></table>
+<p>同じBPSなら、株価が上がるほどPBRは高くなり、株価が下がるほどPBRは低くなります。一方、株価が変わらなくても、純資産や株式数の変化によってBPSが変わればPBRも変化します。</p>
+
+<h2 id="bps">3. BPSとは？PBRの計算に使う1株当たり純資産</h2>
+<p>BPSは「1株当たり純資産」を表す指標です。PBRは株価をBPSで割って計算します。BPSは、決算時点の純資産と自己株式を除いた普通株式数をもとに算定されるため、利益を基準とするEPSとは計算の基準が異なります。</p>
+<p>ここでは、株価1,500円・BPS1,000円ならPBRは1.5倍になる、という関係を押さえておきましょう。</p>
+
+<h2 id="one">4. PBR1倍は何を意味する？</h2>
+<p>PBRが1倍のとき、株価とBPSが同じ水準です。BPSが1,000円なら、株価1,000円でPBRは1倍になります。</p>
+<table><thead><tr><th>株価</th><th>BPS</th><th>PBR</th><th>計算上の関係</th></tr></thead><tbody>
+<tr><td>700円</td><td>1,000円</td><td>0.7倍</td><td>株価がBPSを下回る</td></tr>
+<tr><td>1,000円</td><td>1,000円</td><td>1.0倍</td><td>株価とBPSが同じ</td></tr>
+<tr><td>1,500円</td><td>1,000円</td><td>1.5倍</td><td>株価がBPSを上回る</td></tr>
+</tbody></table>
+<p>PBR1倍は、時価総額と会計上の純資産が同程度であることを示す目安です。ただし、<strong>企業を解散すればBPS相当の金額がそのまま株主に配られる、という意味ではありません。</strong></p>
+<p>貸借対照表の資産は会計上の基準で計上されています。実際に売却すると帳簿価額どおりの金額にならないことがあり、売却費用や事業の整理費用も発生します。反対に、帳簿に十分反映されていないブランドや技術、人材、顧客基盤などが事業価値を生んでいる場合もあります。PBR1倍を清算価値や解散価値と同一視しないことが重要です。</p>
+
+<h2 id="low">5. PBR1倍未満なら割安？</h2>
+<p>PBRが1倍を下回る状態は、株価が会計上のBPSを下回っていることを意味します。しかし、それだけで割安とは判断できません。市場が、保有する純資産を十分な利益につなげられない、将来の収益が縮小する、資産価値が帳簿上の金額を下回る、といった可能性を織り込んでいることもあります。</p>
+<p>例えば、同じBPS1,000円でも、株価700円の企業と株価1,500円の企業ではPBRが異なります。前者のPBRが低い理由を調べずに「安い」と決めつけるのは危険です。</p>
+<ul>
+<li><strong>収益性が低い：</strong>保有資産に対して利益が少なく、資本を効率よく使えていない。</li>
+<li><strong>業績が悪化している：</strong>赤字や利益縮小が続き、将来の純資産や利益への懸念がある。</li>
+<li><strong>成長期待が低い：</strong>事業の市場が縮小している、競争力が弱まっているなど、将来の成長が見込みにくい。</li>
+<li><strong>資産の質に懸念がある：</strong>不良債権、回収が難しい売掛金、収益性の低い設備など、帳簿価額どおりの価値がない可能性がある。</li>
+</ul>
+<p>一方で、事業の収益力や資産の価値に対して市場評価が過度に低くなっているケースもあり得ます。PBRの数字だけでは、どちらなのかを区別できません。</p>
+
+<h2 id="roe">6. PBR・PER・ROEの関係</h2>
+<p>PBRはPERとROEを使って分解して考えることもできます。定義と計算期間をそろえた単純化した関係では、次の式が成り立ちます。</p>
+<p><strong>PBR ＝ PER × ROE</strong></p>
+<p>ROEは％ではなく小数で計算します。PER10倍、ROE8％（0.08）なら、10 × 0.08 ＝ PBR0.8倍です。</p>
+<table><thead><tr><th>PER</th><th>ROE</th><th>計算上のPBR</th></tr></thead><tbody>
+<tr><td>10倍</td><td>5％</td><td>0.5倍</td></tr>
+<tr><td>10倍</td><td>8％</td><td>0.8倍</td></tr>
+<tr><td>10倍</td><td>12％</td><td>1.2倍</td></tr>
+<tr><td>15倍</td><td>8％</td><td>1.2倍</td></tr>
+</tbody></table>
+<p>この関係から、PBRはROE（資本を使って利益を生み出す力）とPER（利益に対する市場評価）の両方に左右されることが分かります。ROEが高くても、成長期待や事業リスクへの評価からPERが低ければ、PBRが高くならない場合があります。</p>
+<p>実際に公表される指標同士では、必ずしもこの式どおりに一致しません。例えば、JPXの株価検索ではROEを前期末と当期末の純資産の平均を基に計算する一方、BPSは期末の純資産と株式数を基にしています。また、PERに予想利益を使うか実績利益を使うかでも数値が変わります。式を使って比較するときは、利益・純資産・株価の基準日や連結・単体の範囲をそろえる必要があります。</p>
+<p>ROEは自己資本を使ってどれだけ利益を生み出したかを見る指標です。PBRと組み合わせることで、純資産に対する市場評価と資本効率を一緒に確認できます。</p>
+
+<h2 id="compare">7. 企業を比較するときの見方</h2>
+<p>PBRを企業比較に使うときは、単純に数値の低い順に並べるのではなく、同じ業種・似た事業構造の企業を比べ、低い・高い理由を確認します。</p>
+<ol>
+<li><strong>同業他社と比べる：</strong>業種によって必要な設備、在庫、金融資産、無形資産の比率が違うため、異なる業種のPBRをそのまま比べない。</li>
+<li><strong>ROEを確認する：</strong>純資産を使ってどれだけ利益を生み出しているかを確認する。ROEが低い場合は、その理由を利益率や資産効率などに分けて調べる。</li>
+<li><strong>PERと利益の見通しを見る：</strong>利益が一時的に増減していないか、今後の利益成長が見込めるかを確認する。</li>
+<li><strong>貸借対照表を確認する：</strong>現預金、有利子負債、運転資本、固定資産、減損リスクなど、純資産の中身を確認する。</li>
+<li><strong>資本政策と成長投資を見る：</strong>配当や自己株式取得だけでなく、将来の収益力につながる投資や資本配分の方針も確認する。</li>
+</ol>
+<p>例えば、A社のPBRが0.7倍、PERが10倍、ROEが7％で、B社のPBRが1.5倍、PERが15倍、ROEが10％だったとします。A社の方がPBRは低いものの、B社の方が高い収益性や成長期待を評価されている可能性があります。この3つの数値だけで優劣は決められず、利益の持続性や財務内容まで確認する必要があります。</p>
+<p>東京証券取引所は、上場企業に対して資本コストや株価を意識した経営に向けた対応を要請しています。PBR1倍割れは確認のきっかけの一つですが、企業を見る際は、ROEが資本コストを上回るか、事業の収益性や資本配分を改善できるかといった中身も重要です。株主還元の方法や配当利回り、権利確定日などを確認するときは、<a href="stock-dividends.html">株式の配当金の仕組み</a>も参考になります。</p>
+
+<h2 id="caution">8. PBRを見るときの注意点</h2>
+<ul>
+<li><strong>赤字企業ではPERとの組み合わせに注意：</strong>利益がマイナスの場合、PERが算出できない、または比較に適さないことがあります。</li>
+<li><strong>純資産がマイナスの場合：</strong>BPSがマイナスになるとPBRも通常の意味で解釈できず、一般的な企業比較には使いにくくなります。</li>
+<li><strong>業種によって適性が異なる：</strong>金融業、製造業、IT企業などでは資産構成やビジネスモデルが違うため、単純比較には限界があります。</li>
+<li><strong>帳簿に表れない価値がある：</strong>ブランド、技術、人材、顧客基盤などは、貸借対照表の純資産に十分反映されない場合があります。</li>
+<li><strong>株価と会計数値の基準日が違う：</strong>株価は日々変動しますが、BPSは決算時点の数値です。決算発表後の変化や株式数の変更も確認しましょう。</li>
+</ul>
+<p>PBRは企業を比較するための一つの材料です。PBRだけを投資判断の根拠にせず、利益、成長性、財務健全性、資本効率、事業の競争力などを合わせて評価しましょう。</p>
+
+<h2 id="summary">まとめ</h2>
+<ul>
+<li>PBRは株価をBPSで割った指標で、株価が1株当たり純資産の何倍かを示す。</li>
+<li>PBR1倍は株価と会計上のBPSが同じ水準という意味で、解散価値を示すものではない。</li>
+<li>PBR1倍未満でも割安とは限らず、収益性や資産の質、成長性を確認する必要がある。</li>
+<li>PBRはPERやROEと組み合わせ、同業他社との比較や財務内容の確認に使う。</li>
+</ul>
+<p>PBRの数字だけで結論を出さず、「なぜその水準で評価されているのか」を調べることが、企業分析では重要です。</p>
+
+<h2>参考資料</h2>
+<ul>
+<li><a href="https://www.jpx.co.jp/glossary/ka/74.html" target="_blank" rel="noopener">日本取引所グループ「株価純資産倍率（PBR）」</a></li>
+<li><a href="https://www.jpx.co.jp/glossary/0-9/557.html" target="_blank" rel="noopener">日本取引所グループ「1株当たり純資産（BPS）」</a></li>
+<li><a href="https://port.jpx.co.jp/jpxhp/portdocs/beginner_a_03.html" target="_blank" rel="noopener">日本取引所グループ「株価検索 - はじめての方へ」</a></li>
+<li><a href="https://www.jpx.co.jp/equities/follow-up/02.html" target="_blank" rel="noopener">日本取引所グループ「資本コストや株価を意識した経営の実現に向けた対応」</a></li>
+</ul>
+</article>
+<!-- GENERATED ARTICLE LAYOUT CLOSE: START --></div></div><!-- GENERATED ARTICLE LAYOUT CLOSE: END --></main>
+</body>
+</html>

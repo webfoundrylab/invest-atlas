@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+<title id="title">PBRの計算と読み方</title><desc id="desc">株価をBPSで割るとPBRになり、PBR1倍未満、1倍、1倍超の関係を示す図。</desc>
+<rect width="1200" height="520" rx="24" fill="#f5f7fa"/>
+<g font-family="sans-serif" fill="#17354a" font-weight="700">
+<text x="600" y="58" text-anchor="middle" font-size="34">PBR ＝ 株価 ÷ BPS</text>
+<rect x="85" y="100" width="430" height="115" rx="18" fill="#fff" stroke="#5a7890" stroke-width="3"/>
+<text x="300" y="145" text-anchor="middle" font-size="28">株価</text><text x="300" y="185" text-anchor="middle" font-size="24" fill="#536879">市場で付いている価格</text>
+<text x="600" y="173" text-anchor="middle" font-size="48" fill="#7759a5">÷</text>
+<rect x="685" y="100" width="430" height="115" rx="18" fill="#fff" stroke="#5a7890" stroke-width="3"/>
+<text x="900" y="145" text-anchor="middle" font-size="28">BPS（1株当たり純資産）</text><text x="900" y="185" text-anchor="middle" font-size="24" fill="#536879">会計上の純資産を1株換算</text>
+<path d="M600 230v50" stroke="#7759a5" stroke-width="5" stroke-linecap="round"/><path d="M585 265l15 18 15-18" fill="none" stroke="#7759a5" stroke-width="5"/>
+<text x="600" y="330" text-anchor="middle" font-size="36" fill="#7759a5">PBR</text>
+<rect x="70" y="365" width="330" height="115" rx="18" fill="#e8eef8" stroke="#5c79a8" stroke-width="3"/>
+<text x="235" y="410" text-anchor="middle" font-size="30">0.7倍</text><text x="235" y="450" text-anchor="middle" font-size="24">株価 ＜ BPS</text>
+<rect x="435" y="365" width="330" height="115" rx="18" fill="#e8f2ed" stroke="#4d8a70" stroke-width="3"/>
+<text x="600" y="410" text-anchor="middle" font-size="30">1.0倍</text><text x="600" y="450" text-anchor="middle" font-size="24">株価 ＝ BPS</text>
+<rect x="800" y="365" width="330" height="115" rx="18" fill="#f5ecdf" stroke="#b78343" stroke-width="3"/>
+<text x="965" y="410" text-anchor="middle" font-size="30">1.5倍</text><text x="965" y="450" text-anchor="middle" font-size="24">株価 ＞ BPS</text>
+</g></svg>

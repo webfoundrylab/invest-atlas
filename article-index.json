@@ -1420,6 +1420,31 @@
       "publishedAt": "2026-11-11",
       "updatedAt": "2026-11-11",
       "publishOrder": 37
+    },
+    {
+      "slug": "pbr-basics.html",
+      "title": "PBRとは？株価純資産倍率の計算方法と見方",
+      "mainTitle": "PBRとは？",
+      "subtitle": "株価純資産倍率の計算方法と見方",
+      "summary": "PBRの計算方法とBPSの意味、PBR1倍の解釈、PER・ROEとの関係、PBR1倍未満の理由、企業比較の手順と注意点を具体例で解説。",
+      "category": "companies",
+      "subcategory": "financial-statements",
+      "tags": [
+        "PBR",
+        "株価純資産倍率",
+        "企業分析",
+        "純資産",
+        "ROE"
+      ],
+      "status": "published",
+      "related": [
+        "stock-dividends.html"
+      ],
+      "thumbnail": "thumbnails/pbr-basics.svg",
+      "topic": "financial-metrics",
+      "publishedAt": "2026-11-12",
+      "updatedAt": "2026-11-12",
+      "publishOrder": 38
     }
   ],
   "pages": [
