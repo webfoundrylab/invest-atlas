@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+<rect width="1200" height="675" fill="#eaf1f5"/>
+<g font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="270" letter-spacing="-8" fill="#557a92" opacity=".07"><text x="18" y="400">Invest</text><text x="1180" y="605" text-anchor="end">Atlas</text></g>
+<rect x="24" y="22" width="1152" height="150" rx="22" fill="#fff" stroke="#557a92" stroke-width="2"/>
+<text x="600" y="57" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="800" letter-spacing="1" fill="#557a92">BPS</text>
+<text x="600" y="116" text-anchor="middle" font-family="sans-serif" font-size="48" font-weight="800" fill="#17354a">BPSとは？</text>
+<text x="600" y="157" text-anchor="middle" font-family="sans-serif" font-size="36" font-weight="650" fill="#405565">1株当たり純資産の計算方法と見方</text>
+<g font-family="sans-serif" font-weight="800" text-anchor="middle">
+<rect x="90" y="220" width="1020" height="120" rx="22" fill="#fff" stroke="#9bb1c0" stroke-width="3"/>
+<text x="600" y="270" font-size="40" fill="#294d50">純資産 ＝ 資産 − 負債</text>
+<text x="600" y="319" font-size="36" fill="#557a92">1,000億円 ＝ 1,500億円 − 500億円</text>
+<path d="M600 354v42m-16-16 16 18 16-18" fill="none" stroke="#557a92" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="145" y="420" width="910" height="128" rx="22" fill="#fff" stroke="#4d8a70" stroke-width="3"/>
+<text x="600" y="470" font-size="36" fill="#294d50">普通株式数で割る</text>
+<text x="600" y="525" font-size="48" fill="#4d8a70">BPS ＝ 1,000円</text>
+</g>
+<text x="600" y="625" text-anchor="middle" font-family="sans-serif" font-size="38" font-weight="800" fill="#294d50">純資産を1株当たりに換算する</text>
+</svg>

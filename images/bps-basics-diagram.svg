@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="540" viewBox="0 0 1200 540" role="img" aria-labelledby="title desc">
+<title id="title">純資産からBPSを計算する流れ</title><desc id="desc">資産1500億円から負債500億円を差し引き純資産1000億円を求め、普通株式数1億株で割るとBPSは1000円。</desc>
+<rect width="1200" height="540" rx="24" fill="#f5f7fa"/>
+<g font-family="sans-serif" text-anchor="middle" font-weight="700">
+<rect x="70" y="55" width="430" height="112" rx="18" fill="#e8eef8" stroke="#607da9" stroke-width="3"/>
+<text x="285" y="99" font-size="28" fill="#294d50">資産</text><text x="285" y="143" font-size="36" fill="#536f9b">1,500億円</text>
+<text x="600" y="126" font-size="48" fill="#7759a5">−</text>
+<rect x="700" y="55" width="430" height="112" rx="18" fill="#f5ecdf" stroke="#c69b62" stroke-width="3"/>
+<text x="915" y="99" font-size="28" fill="#294d50">負債</text><text x="915" y="143" font-size="36" fill="#b78343">500億円</text>
+<path d="M600 188v43m-16-16 16 18 16-18" fill="none" stroke="#7759a5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="250" y="250" width="700" height="100" rx="18" fill="#e8f2ed" stroke="#4d8a70" stroke-width="3"/>
+<text x="600" y="291" font-size="28" fill="#294d50">純資産</text><text x="600" y="332" font-size="36" fill="#4d8a70">1,000億円</text>
+<text x="600" y="395" font-size="26" fill="#536879">÷ 自己株式を除く普通株式数 1億株</text>
+<path d="M600 412v28m-14-14 14 16 14-16" fill="none" stroke="#7759a5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="350" y="455" width="500" height="65" rx="16" fill="#fff" stroke="#7759a5" stroke-width="3"/>
+<text x="600" y="499" font-size="36" fill="#7759a5">BPS ＝ 1,000円</text>
+</g></svg>

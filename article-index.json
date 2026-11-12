@@ -1445,6 +1445,33 @@
       "publishedAt": "2026-11-12",
       "updatedAt": "2026-11-12",
       "publishOrder": 38
+    },
+    {
+      "slug": "bps-basics.html",
+      "title": "BPSとは？1株当たり純資産の計算方法と見方",
+      "mainTitle": "BPSとは？",
+      "subtitle": "1株当たり純資産の計算方法と見方",
+      "summary": "BPS（1株当たり純資産）の意味と計算方法を、貸借対照表の純資産・自己株式・株式数の関係から解説。増資、自社株買い、株式分割による変化やEPS・PBRとの違い、注意点も具体例で整理します。",
+      "category": "companies",
+      "subcategory": "financial-statements",
+      "topic": "financial-metrics",
+      "tags": [
+        "BPS",
+        "1株当たり純資産",
+        "企業分析",
+        "純資産",
+        "PBR",
+        "株式数"
+      ],
+      "status": "published",
+      "related": [
+        "pbr-basics.html",
+        "eps-basics.html"
+      ],
+      "thumbnail": "thumbnails/bps-basics.svg",
+      "publishedAt": "2026-11-13",
+      "updatedAt": "2026-11-13",
+      "publishOrder": 39
     }
   ],
   "pages": [
