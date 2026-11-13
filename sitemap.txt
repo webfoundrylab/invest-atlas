@@ -38,6 +38,7 @@ https://webfoundrylab.github.io/invest-atlas/eps-basics.html
 https://webfoundrylab.github.io/invest-atlas/per-basics.html
 https://webfoundrylab.github.io/invest-atlas/pbr-basics.html
 https://webfoundrylab.github.io/invest-atlas/bps-basics.html
+https://webfoundrylab.github.io/invest-atlas/roe-basics.html
 https://webfoundrylab.github.io/invest-atlas/categories/
 https://webfoundrylab.github.io/invest-atlas/categories/basics/
 https://webfoundrylab.github.io/invest-atlas/categories/basics/getting-started/

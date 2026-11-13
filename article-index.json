@@ -1387,7 +1387,8 @@
       ],
       "status": "published",
       "related": [
-        "stock-dividends.html"
+        "stock-dividends.html",
+        "roe-basics.html"
       ],
       "thumbnail": "thumbnails/eps-basics.svg",
       "topic": "financial-metrics",
@@ -1413,7 +1414,8 @@
       "status": "published",
       "related": [
         "eps-basics.html",
-        "risk-return-basics.html"
+        "risk-return-basics.html",
+        "roe-basics.html"
       ],
       "thumbnail": "thumbnails/per-basics.svg",
       "topic": "financial-metrics",
@@ -1438,7 +1440,8 @@
       ],
       "status": "published",
       "related": [
-        "stock-dividends.html"
+        "stock-dividends.html",
+        "roe-basics.html"
       ],
       "thumbnail": "thumbnails/pbr-basics.svg",
       "topic": "financial-metrics",
@@ -1466,12 +1469,41 @@
       "status": "published",
       "related": [
         "pbr-basics.html",
-        "eps-basics.html"
+        "eps-basics.html",
+        "roe-basics.html"
       ],
       "thumbnail": "thumbnails/bps-basics.svg",
       "publishedAt": "2026-11-13",
       "updatedAt": "2026-11-13",
       "publishOrder": 39
+    },
+    {
+      "slug": "roe-basics.html",
+      "title": "ROEとは？自己資本利益率の計算方法と企業分析での使い方",
+      "mainTitle": "ROEとは？",
+      "subtitle": "自己資本利益率の計算方法と企業分析での使い方",
+      "summary": "ROE（自己資本利益率）の計算方法、デュポン分析による分解、企業比較のポイントと注意点を具体例で解説します。",
+      "category": "companies",
+      "subcategory": "financial-statements",
+      "tags": [
+        "ROE",
+        "自己資本利益率",
+        "企業分析",
+        "収益性",
+        "財務指標"
+      ],
+      "status": "published",
+      "related": [
+        "pbr-basics.html",
+        "per-basics.html",
+        "eps-basics.html",
+        "bps-basics.html"
+      ],
+      "thumbnail": "thumbnails/roe-basics.svg",
+      "topic": "financial-metrics",
+      "publishedAt": "2026-11-14",
+      "updatedAt": "2026-11-14",
+      "publishOrder": 40
     }
   ],
   "pages": [
