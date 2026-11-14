@@ -15,6 +15,37 @@ TEXT_SITEMAP_PATH = ROOT / "sitemap.txt"
 RELATED_PATH = ROOT / "related-articles.json"
 START_MARKER = "<!-- GENERATED RELATED ARTICLES: START -->"
 END_MARKER = "<!-- GENERATED RELATED ARTICLES: END -->"
+FOOTER_LINKS_START = "<!-- GENERATED SITE INFORMATION LINKS: START -->"
+FOOTER_LINKS_END = "<!-- GENERATED SITE INFORMATION LINKS: END -->"
+
+
+def inject_site_footer_links(page):
+    """Expose the site's essential information pages from every public page."""
+    start = page.find(FOOTER_LINKS_START)
+    end = page.find(FOOTER_LINKS_END)
+    if start >= 0 and end >= start:
+        page = page[:start] + page[end + len(FOOTER_LINKS_END):]
+    links = (
+        FOOTER_LINKS_START
+        + '<nav aria-label="サイト情報" style="display:flex;flex-wrap:wrap;gap:14px;margin-top:12px;font-size:.88rem">'
+        + '<a href="' + BASE_URL + 'about.html" style="color:#aee0d7">Invest Atlasについて</a>'
+        + '<a href="' + BASE_URL + 'editorial-policy.html" style="color:#aee0d7">編集方針・免責事項</a>'
+        + '<a href="' + BASE_URL + 'privacy-policy.html" style="color:#aee0d7">プライバシーポリシー</a>'
+        + '<a href="' + BASE_URL + 'contact.html" style="color:#aee0d7">お問い合わせ</a>'
+        + '</nav>' + FOOTER_LINKS_END
+    )
+    footer_match = re.search(r'</footer>', page, flags=re.I)
+    if footer_match:
+        return page[:footer_match.start()] + links + page[footer_match.start():]
+    footer = (
+        '<footer style="margin-top:40px;background:#0c1c2b;color:#d7e1e8;padding:22px 16px">'
+        '<div style="width:min(1160px,100%);margin:0 auto">Invest Atlas｜投資の仕組みを、わかりやすく。'
+        + links + '</div></footer>'
+    )
+    body_close = re.search(r'</body>', page, flags=re.I)
+    if body_close:
+        return page[:body_close.start()] + footer + page[body_close.start():]
+    return page + footer
 NS = "http://www.sitemaps.org/schemas/sitemap/0.9"
 register_namespace("", NS)
 
@@ -477,6 +508,15 @@ def main():
                    ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8"
     )
+
+    # Keep essential publisher, privacy, and contact information reachable from
+    # every public page, including older article sources and generated categories.
+    for page_path in ROOT.rglob("*.html"):
+        page = page_path.read_text(encoding="utf-8")
+        updated = inject_site_footer_links(page)
+        if updated != page:
+            page_path.write_text(updated, encoding="utf-8")
+
     print(f"Generated sitemap.xml and sitemap.txt ({len(urls)} URLs each), plus related-articles.json ({len(published)} articles).")
     return 0
 
