@@ -15,37 +15,51 @@ TEXT_SITEMAP_PATH = ROOT / "sitemap.txt"
 RELATED_PATH = ROOT / "related-articles.json"
 START_MARKER = "<!-- GENERATED RELATED ARTICLES: START -->"
 END_MARKER = "<!-- GENERATED RELATED ARTICLES: END -->"
-FOOTER_LINKS_START = "<!-- GENERATED SITE INFORMATION LINKS: START -->"
-FOOTER_LINKS_END = "<!-- GENERATED SITE INFORMATION LINKS: END -->"
+FOOTER_CSS_HREF = BASE_URL + "assets/site-footer.css"
 
 
-def inject_site_footer_links(page):
-    """Expose the site's essential information pages from every public page."""
-    start = page.find(FOOTER_LINKS_START)
-    end = page.find(FOOTER_LINKS_END)
-    if start >= 0 and end >= start:
-        page = page[:start] + page[end + len(FOOTER_LINKS_END):]
-    links = (
-        FOOTER_LINKS_START
-        + '<nav aria-label="サイト情報" style="display:flex;flex-wrap:wrap;gap:14px;margin-top:12px;font-size:.88rem">'
-        + '<a href="' + BASE_URL + 'about.html" style="color:#aee0d7">Invest Atlasについて</a>'
-        + '<a href="' + BASE_URL + 'editorial-policy.html" style="color:#aee0d7">編集方針・免責事項</a>'
-        + '<a href="' + BASE_URL + 'privacy-policy.html" style="color:#aee0d7">プライバシーポリシー</a>'
-        + '<a href="' + BASE_URL + 'contact.html" style="color:#aee0d7">お問い合わせ</a>'
-        + '</nav>' + FOOTER_LINKS_END
+def render_site_footer():
+    """Return the single shared footer used by every public page."""
+    return (
+        '<footer class="ia-site-footer">'
+        '<div class="ia-site-footer-inner">'
+        '<div class="ia-site-footer-brand">'
+        '<a href="' + BASE_URL + '">Invest Atlas</a>'
+        '<p>投資の仕組みを、わかりやすく。</p>'
+        '</div>'
+        '<nav class="ia-site-footer-nav" aria-label="サイト情報">'
+        '<a href="' + BASE_URL + 'about.html">Invest Atlasについて</a>'
+        '<a href="' + BASE_URL + 'editorial-policy.html">編集方針・免責事項</a>'
+        '<a href="' + BASE_URL + 'privacy-policy.html">プライバシーポリシー</a>'
+        '<a href="' + BASE_URL + 'contact.html">お問い合わせ</a>'
+        '</nav>'
+        '</div></footer>'
     )
-    footer_match = re.search(r'</footer>', page, flags=re.I)
-    if footer_match:
-        return page[:footer_match.start()] + links + page[footer_match.start():]
-    footer = (
-        '<footer style="margin-top:40px;background:#0c1c2b;color:#d7e1e8;padding:22px 16px">'
-        '<div style="width:min(1160px,100%);margin:0 auto">Invest Atlas｜投資の仕組みを、わかりやすく。'
-        + links + '</div></footer>'
+
+
+def normalize_site_footer(page):
+    """Replace page-specific footer markup and load the shared footer stylesheet."""
+    page, footer_count = re.subn(
+        r'<footer\b[^>]*>.*?</footer>',
+        lambda _match: render_site_footer(),
+        page,
+        flags=re.IGNORECASE | re.DOTALL,
     )
-    body_close = re.search(r'</body>', page, flags=re.I)
-    if body_close:
-        return page[:body_close.start()] + footer + page[body_close.start():]
-    return page + footer
+    if footer_count == 0:
+        body_close = re.search(r'</body>', page, flags=re.IGNORECASE)
+        if body_close:
+            page = page[:body_close.start()] + render_site_footer() + page[body_close.start():]
+        else:
+            page += render_site_footer()
+
+    if "assets/site-footer.css" not in page:
+        head_close = re.search(r'</head>', page, flags=re.IGNORECASE)
+        stylesheet = '<link rel="stylesheet" href="' + FOOTER_CSS_HREF + '">\n'
+        if head_close:
+            page = page[:head_close.start()] + stylesheet + page[head_close.start():]
+    return page
+
+
 NS = "http://www.sitemaps.org/schemas/sitemap/0.9"
 register_namespace("", NS)
 
@@ -509,11 +523,10 @@ def main():
         encoding="utf-8"
     )
 
-    # Keep essential publisher, privacy, and contact information reachable from
-    # every public page, including older article sources and generated categories.
+    # Normalize every page to the same responsive footer and shared stylesheet.
     for page_path in ROOT.rglob("*.html"):
         page = page_path.read_text(encoding="utf-8")
-        updated = inject_site_footer_links(page)
+        updated = normalize_site_footer(page)
         if updated != page:
             page_path.write_text(updated, encoding="utf-8")
 
