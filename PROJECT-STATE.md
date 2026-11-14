@@ -116,3 +116,12 @@
 - 記事HTML、SVGサムネイル、本文SVG図解、manifestをPrivate stockの `articles/stock-trading-costs/` に作成。recommendation-order.json末尾へ追加。作成コミット：article `5bc1381`、thumbnail `840dce4`、diagram `b0b820f`、manifest `0948e61`、おすすめ順 `b0cd2ea`。監査時の修正コミットは各ファイルに追加。
 - 保存後の静的確認：main/h1各1件、stock noindexあり、重複IDなし、本文画像パスとmanifest files一致、本文関連記事リンクとmanifest relatedを照合。サムネイルの副題未満の日本語ラベルを修正。
 - 状態：`audit_pending`。出典確認・本文内部リンク確認は完了。編集全体監査、SVG/XMLパーサー検証、本番同等プレビュー、縮小表示・PC/スマホ実画面確認、ユーザー内容確認は未完了。公開キュー未登録・公開操作なし。
+
+
+## 2026-11-14 未公開記事プレビュー検証の状態不整合を修正
+- **発生事象**：stock の `preview-select.py` が未公開記事を隔離プレビュー用 `article-index.json` に `status=draft` のまま登録し、本番と同じ `validate-content.py` が「unpublished stock must not be stored in the public repository」で停止した。
+- **原因**：公開側validatorは公開リポジトリ内の全登録記事が `published` であることを必須とする一方、プレビュー側が公開後の状態を再現していなかった。
+- **修正**：stock の `preview-select.py` で、隔離プレビューサイト内のindexへ登録するコピーだけ `status=published` に変換。保存先がプレビューサイト直下であることも実行時にガード。stock manifest の status は draft のまま、公開リポジトリは変更しない。stock原稿・プレビューHTMLの noindex は維持する。commit `fa3c30c7d791f8d768e4e40c13079a941afc6864`。
+- **関連修正**：stock記事 manifest に `registry_entry.thumbnail` が未登録だったため `thumbnails/stock-trading-costs.svg` を追加（commit `ec053821de4c8a8e6c6019d3ff3c5df4e976dd70`）。ARTICLE-WORKFLOW.mdへ隔離プレビューの公開状態シミュレーションを明文化（commit `4a508c9e9ebc00f9fa0f9f96a72ff2e5157303c8`）。USER-FEEDBACK.mdに原因と再発防止策を記録（commit `e501dad806230c136be36489fe1172611e28b414`）。
+- **検証**：GitHubから修正後ファイルを再取得し、status変換がプレビューindexのコピーに限定され、manifest側は draft のままであること、保存先ガード、thumbnail登録を確認。変更Pythonブロックの構文コンパイルと状態変換・保存先ガードの単体シミュレーションは成功。
+- **未確認**：ユーザーのWindows環境での `py_compile`、`preview.bat`再実行、本番同等 build/validate の通過、ブラウザ表示は未実施。ローカル実行で最終確認する。
