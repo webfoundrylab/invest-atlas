@@ -1518,6 +1518,24 @@
       "title": "初めての方へ｜Invest Atlasの使い方と学び方",
       "status": "published",
       "summary": "Invest Atlasの2つの入口、投資の羅針盤を使った学びと判断の流れ、記事の探し方を案内するページ。"
+    },
+    {
+      "slug": "about.html",
+      "title": "Invest Atlasについて｜運営・編集方針",
+      "status": "published",
+      "summary": "Invest Atlasの目的、情報の編集・確認方法、サイトの運営方針を紹介します。"
+    },
+    {
+      "slug": "privacy-policy.html",
+      "title": "プライバシーポリシー｜Invest Atlas",
+      "status": "published",
+      "summary": "Invest AtlasにおけるCookie、広告配信、アクセス情報、表示設定、外部サービスの利用について説明します。"
+    },
+    {
+      "slug": "contact.html",
+      "title": "お問い合わせ｜Invest Atlas",
+      "status": "published",
+      "summary": "Invest Atlasへのご意見・誤りのご指摘・お問い合わせ方法を案内します。"
     }
   ]
 }
