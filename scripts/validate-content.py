@@ -123,6 +123,46 @@ for page_info in static_pages:
             except Exception as exc:
                 errors.append(f"{slug}: cannot read static page: {exc}")
 
+required_information_pages = {"about.html", "privacy-policy.html", "contact.html"}
+registered_information_pages = {
+    page.get("slug") for page in static_pages
+    if page.get("status", "published") == "published"
+}
+for required_page in sorted(required_information_pages - registered_information_pages):
+    errors.append(f"required site information page is not registered: {required_page}")
+
+privacy_path = ROOT / "privacy-policy.html"
+if privacy_path.is_file():
+    privacy_html = privacy_path.read_text(encoding="utf-8")
+    for required_term in ("Google AdSense", "Cookie", "ia-display-mode",
+                          "adssettings.google.com", "aboutads.info",
+                          "GitHubのプライバシーに関する声明"):
+        if required_term not in privacy_html:
+            errors.append(f"privacy-policy.html: required disclosure missing: {required_term}")
+
+contact_path = ROOT / "contact.html"
+if contact_path.is_file():
+    contact_html = contact_path.read_text(encoding="utf-8")
+    for required_term in ("https://github.com/webfoundrylab/invest-atlas/issues/new",
+                          "公開", "個人情報"):
+        if required_term not in contact_html:
+            errors.append(f"contact.html: contact guidance missing: {required_term}")
+
+footer_targets = (
+    BASE_URL + "about.html",
+    BASE_URL + "editorial-policy.html",
+    BASE_URL + "privacy-policy.html",
+    BASE_URL + "contact.html",
+)
+for html_path in ROOT.rglob("*.html"):
+    try:
+        page_html = html_path.read_text(encoding="utf-8")
+        for target in footer_targets:
+            if target not in page_html:
+                errors.append(f"{html_path.relative_to(ROOT)}: site information footer link missing: {target}")
+    except Exception as exc:
+        errors.append(f"{html_path.relative_to(ROOT)}: cannot inspect site information links: {exc}")
+
 for item in articles:
     if item.get("status") != "published":
         continue
