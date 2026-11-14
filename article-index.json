@@ -1497,13 +1497,46 @@
         "pbr-basics.html",
         "per-basics.html",
         "eps-basics.html",
-        "bps-basics.html"
+        "bps-basics.html",
+        "individual-stock-vs-index.html"
       ],
       "thumbnail": "thumbnails/roe-basics.svg",
       "topic": "financial-metrics",
       "publishedAt": "2026-11-14",
       "updatedAt": "2026-11-14",
       "publishOrder": 40
+    },
+    {
+      "slug": "individual-stock-vs-index.html",
+      "title": "個別株投資とインデックス投資を比較｜仕組み・リスク・費用・手間の違い",
+      "mainTitle": "個別株投資とインデックス投資",
+      "subtitle": "仕組み・リスク・費用・手間を比較",
+      "summary": "個別株投資とインデックス投資の仕組み、分散、リスク、費用、分析の手間、リターンの考え方を同じ基準で比較し、投資の中心を決める判断軸を整理します。",
+      "category": "companies",
+      "subcategory": "company-analysis",
+      "tags": [
+        "個別株投資",
+        "インデックス投資",
+        "株式投資",
+        "投資方法の比較",
+        "分散投資",
+        "リスク",
+        "費用"
+      ],
+      "status": "published",
+      "related": [
+        "global-vs-sp500.html",
+        "stock-market-index-basics.html",
+        "investment-trust-index-active.html",
+        "diversification-basics.html",
+        "risk-tolerance-guide.html",
+        "investment-trust-fees.html",
+        "roe-basics.html"
+      ],
+      "thumbnail": "thumbnails/individual-stock-vs-index.svg",
+      "publishedAt": "2026-11-15",
+      "updatedAt": "2026-11-15",
+      "publishOrder": 41
     }
   ],
   "pages": [

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-labelledby="t d">
+<title id="t">個別株投資とインデックス投資の仕組み</title><desc id="d">個別株投資は自分で選んだ1社へ投資し、インデックス投資は指数に含まれる複数企業へまとめて投資する。</desc>
+<rect width="1200" height="650" rx="24" fill="#f5f8fa"/>
+<rect x="48" y="48" width="500" height="470" rx="28" fill="#fff" stroke="#b66d43" stroke-width="5"/>
+<rect x="652" y="48" width="500" height="470" rx="28" fill="#fff" stroke="#287e74" stroke-width="5"/>
+<text x="298" y="112" text-anchor="middle" font-size="40" font-weight="800" fill="#8e4e2e" font-family="sans-serif">個別株投資</text>
+<text x="902" y="112" text-anchor="middle" font-size="40" font-weight="800" fill="#176d65" font-family="sans-serif">インデックス投資</text>
+<rect x="190" y="165" width="216" height="126" rx="18" fill="#f6e5d9" stroke="#b66d43" stroke-width="4"/>
+<path d="M235 264 V214 H275 V264 M286 264 V196 H330 V264 M342 264 V230 H365 V264" fill="none" stroke="#8e4e2e" stroke-width="9" stroke-linejoin="round"/>
+<text x="298" y="345" text-anchor="middle" font-size="32" font-weight="750" fill="#49372d" font-family="sans-serif">選んだ企業</text>
+<text x="298" y="394" text-anchor="middle" font-size="30" fill="#49372d" font-family="sans-serif">企業固有リスクが集中</text>
+<g fill="#dcefe9" stroke="#287e74" stroke-width="4">
+<rect x="710" y="170" width="112" height="100" rx="14"/><rect x="846" y="170" width="112" height="100" rx="14"/><rect x="982" y="170" width="112" height="100" rx="14"/>
+<rect x="710" y="292" width="112" height="100" rx="14"/><rect x="846" y="292" width="112" height="100" rx="14"/><rect x="982" y="292" width="112" height="100" rx="14"/>
+</g>
+<g fill="none" stroke="#176d65" stroke-width="7" stroke-linecap="round">
+<path d="M745 236 V205 H790 V236 M881 236 V205 H926 V236 M1017 236 V205 H1062 V236"/>
+<path d="M745 358 V327 H790 V358 M881 358 V327 H926 V358 M1017 358 V327 H1062 V358"/>
+</g>
+<text x="902" y="444" text-anchor="middle" font-size="30" font-weight="750" fill="#24534d" font-family="sans-serif">複数企業へ分散</text>
+<rect x="100" y="548" width="1000" height="70" rx="18" fill="#e6edf1"/>
+<text x="600" y="594" text-anchor="middle" font-size="32" font-weight="800" fill="#263f50" font-family="sans-serif">分散の範囲は銘柄数だけでなく、業種・地域でも決まる</text>
+</svg>

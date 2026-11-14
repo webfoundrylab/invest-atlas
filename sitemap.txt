@@ -39,6 +39,7 @@ https://webfoundrylab.github.io/invest-atlas/per-basics.html
 https://webfoundrylab.github.io/invest-atlas/pbr-basics.html
 https://webfoundrylab.github.io/invest-atlas/bps-basics.html
 https://webfoundrylab.github.io/invest-atlas/roe-basics.html
+https://webfoundrylab.github.io/invest-atlas/individual-stock-vs-index.html
 https://webfoundrylab.github.io/invest-atlas/categories/
 https://webfoundrylab.github.io/invest-atlas/categories/basics/
 https://webfoundrylab.github.io/invest-atlas/categories/basics/getting-started/
@@ -75,7 +76,11 @@ https://webfoundrylab.github.io/invest-atlas/categories/markets/investment-theme
 https://webfoundrylab.github.io/invest-atlas/categories/companies/
 https://webfoundrylab.github.io/invest-atlas/categories/companies/financial-statements/
 https://webfoundrylab.github.io/invest-atlas/categories/companies/financial-statements/financial-metrics/
+https://webfoundrylab.github.io/invest-atlas/categories/companies/company-analysis/
 https://webfoundrylab.github.io/invest-atlas/categories/companies/dividends-shareholder-returns/
 https://webfoundrylab.github.io/invest-atlas/categories/companies/dividends-shareholder-returns/stock-dividend-basics/
 https://webfoundrylab.github.io/invest-atlas/investment-compass.html
 https://webfoundrylab.github.io/invest-atlas/getting-started.html
+https://webfoundrylab.github.io/invest-atlas/about.html
+https://webfoundrylab.github.io/invest-atlas/privacy-policy.html
+https://webfoundrylab.github.io/invest-atlas/contact.html
