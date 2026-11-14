@@ -125,3 +125,16 @@
 - **関連修正**：stock記事 manifest に `registry_entry.thumbnail` が未登録だったため `thumbnails/stock-trading-costs.svg` を追加（commit `ec053821de4c8a8e6c6019d3ff3c5df4e976dd70`）。ARTICLE-WORKFLOW.mdへ隔離プレビューの公開状態シミュレーションを明文化（commit `4a508c9e9ebc00f9fa0f9f96a72ff2e5157303c8`）。USER-FEEDBACK.mdに原因と再発防止策を記録（commit `e501dad806230c136be36489fe1172611e28b414`）。
 - **検証**：GitHubから修正後ファイルを再取得し、status変換がプレビューindexのコピーに限定され、manifest側は draft のままであること、保存先ガード、thumbnail登録を確認。変更Pythonブロックの構文コンパイルと状態変換・保存先ガードの単体シミュレーションは成功。
 - **未確認**：ユーザーのWindows環境での `py_compile`、`preview.bat`再実行、本番同等 build/validate の通過、ブラウザ表示は未実施。ローカル実行で最終確認する。
+
+## 2026-11-14 AdSense審査前のサイト情報・プライバシー整備
+- 審査前の不足として、プライバシーポリシー、サイト概要・編集体制の説明、お問い合わせ窓口が独立ページとして存在しないことを確認。
+- `article-index.json` の `pages` に `about.html`、`privacy-policy.html`、`contact.html` を登録。各ページにcanonical・description・共通ヘッダーを設定。
+- `privacy-policy.html` を新設。現時点で広告配信を開始していないことを明示したうえで、将来Google AdSense等を導入する場合のCookie・第三者配信事業者・Google広告設定によるパーソナライズ停止・aboutads.info、GitHub Pagesのホスティングに伴う技術情報、表示モード保存用localStorage（`ia-display-mode`）、外部リンクの取り扱いを説明。
+- `about.html` を新設し、サイト目的、一次情報を優先する編集方針、事実・推論・サイト判断の区別、リスク・費用の説明方針を記載。個人名・住所などの未確認情報は創作せず、サイト名を運営主体の表示として使用。
+- `contact.html` を新設。現時点で専用メール・フォームがないため、実在するGitHub Issuesを問い合わせ窓口として案内。投稿が公開されること、個人情報・口座情報等を投稿しないことを明記。
+- `scripts/build-site.py` に全公開HTML共通のサイト情報フッター生成を追加。トップ、記事、カテゴリ、静的ページのすべてから「Invest Atlasについて」「編集方針・免責事項」「プライバシーポリシー」「お問い合わせ」へ移動できる構成に統一。
+- `scripts/validate-content.py` に、必須情報ページの台帳登録、プライバシー開示の主要項目、問い合わせ案内、全HTMLページの共通フッターリンクを検査する条件を追加。
+- 主なコミット：台帳 `b8a2403`、ページ `89368be` / `7074ad8` / `3a60363`、共通フッター生成 `98c248d`、検証処理 `5047758`。
+- GitHub Actions Pages run #43550695631：build・サイトマップ生成・validate-content・artifact upload・deploy がすべて success。プライバシー等の3ページを含む5件の静的ページがサイトマップ対象になる構成。
+- 未確認：この実行環境から公開URLへのHTTPアクセスがDNS解決エラーとなり、ブラウザでの公開画面・リンク遷移確認は未実施。GitHub Actionsのデプロイ成功と実画面確認は区別する。
+- AdSense申請は未実施。今後広告配信を開始する前に、実際のAdSense設定・配信事業者・必要な同意管理を確認し、プライバシーポリシーを実運用に合わせて更新する。運営者の個人名・住所・直接連絡先を公開するかは未決定。
