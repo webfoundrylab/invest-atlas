@@ -157,11 +157,21 @@ footer_targets = (
 for html_path in ROOT.rglob("*.html"):
     try:
         page_html = html_path.read_text(encoding="utf-8")
-        for target in footer_targets:
-            if target not in page_html:
-                errors.append(f"{html_path.relative_to(ROOT)}: site information footer link missing: {target}")
+        footer_matches = re.findall(r"<footer\b[^>]*class=[\"'][^\"']*\bia-site-footer\b[^\"']*[\"'][^>]*>.*?</footer>", page_html, flags=re.I | re.S)
+        all_footers = re.findall(r"<footer\b", page_html, flags=re.I)
+        if len(all_footers) != 1 or len(footer_matches) != 1:
+            errors.append(f"{html_path.relative_to(ROOT)}: expected exactly one shared site footer; found {len(all_footers)} footer elements")
+        elif "assets/site-footer.css" not in page_html:
+            errors.append(f"{html_path.relative_to(ROOT)}: shared footer stylesheet is missing")
+        else:
+            footer_html = footer_matches[0]
+            for target in footer_targets:
+                if target not in footer_html:
+                    errors.append(f"{html_path.relative_to(ROOT)}: shared footer link missing: {target}")
+            if 'style="' in footer_html:
+                errors.append(f"{html_path.relative_to(ROOT)}: shared footer must not use inline styles")
     except Exception as exc:
-        errors.append(f"{html_path.relative_to(ROOT)}: cannot inspect site information links: {exc}")
+        errors.append(f"{html_path.relative_to(ROOT)}: cannot inspect shared footer: {exc}")
 
 for item in articles:
     if item.get("status") != "published":
