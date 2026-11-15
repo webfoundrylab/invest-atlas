@@ -1,3 +1,12 @@
+## 2026-11-15 投資の利益にかかる税金記事を確認済み・公開キュー登録
+- Private stock の `investment-tax-basics` を再監査。国内上場株式等の譲渡益・配当の税率、特定口座・一般口座、NISA、損益通算・3年間の繰越控除、分配金の扱いを確認。
+- 2026-11-15時点の国税庁資料（令和8年4月1日現在法令等）で、令和9年以後の復興特別所得税率引下げと防衛特別所得税導入後も、上場株式等の合計税率20.315%が維持されることを確認。
+- 記事内の数値例・参考資料・内部リンク・カテゴリ階層・公開予定の関連記事との順序を確認。stock原稿の `noindex,nofollow`、記事HTML 1つのh1、図解・サムネイルの実ファイルとmanifest参照を確認。
+- ユーザーから本番同等プレビューの表示・検証がすべてOKとの報告を受領。manifestの必須6チェックをすべてtrue、`draft_status=ready` に更新。
+- Private stock `queue.json` の末尾へ `investment-tax-basics.html` を `scheduled` 登録。先行する `stock-trading-costs.html` の後に公開される。queue全体17件、published 14件、scheduled 2件。
+- manifest commit：`2b768aa54beca8e50e8c28e5434519d7709cbc59`。queue commit：`5cbbf4288ae6bb029ab805db8a2dc49f80d94977`。
+- 公開リポジトリの記事HTML・article-indexは未変更。GitHub Actionsの手動dry-run、公開、公開後表示確認は未実施。次の公開対象は既存の `stock-trading-costs.html`。税金記事はその次の順番。
+
 ## 2026-11-15 株式売買手数料記事のdry-run準備確認
 - Private stock の `ARTICLE-WORKFLOW.md`、`.github/workflows/publish.yml`、`scripts/publish.py` を再確認。
 - `publish.py check` の選択ロジック上、現在の唯一の `scheduled` 記事 `stock-trading-costs.html` が次の対象になる。
