@@ -4,6 +4,7 @@
 - 100株の例では最良気配に各100株以上の注文がある前提を明記。中間値を比較用の目安とし、片道の差は100円、往復の価格差は200円となる説明へ修正。
 - Private stock記事HTML・サムネイルSVG・本文図解SVG・manifestを更新。manifestはdraft/audit_pendingのまま、公開キュー・公開側記事には未反映。
 - コミット：記事HTML `e0a6a4f374165b5c1241c3dc028c77d84eee1d12`、サムネイル `d33ca9a4a145fa7da96e3d3b8c805e8935ab1098`、本文図解 `fb09f3fd75768c9f65d4847ed6727cfcab6f9d43`、manifest `ae85f574c58ada972ab3bf9874d26c0aed3226a3`。
+- 追加修正：100株例の板数量前提と図解altを明記（記事HTML `e0a6a4f374165b5c1241c3dc028c77d84eee1d12`）。記事タイトルの主題・副題とmanifestの表示情報を完全一致させた（manifest `174e3f467ea1d870d1cf41e8e5062bce9ef7dafa`）。
 - 未実施：本番同等プレビュー、生成後build/validate、PC/スマートフォン表示確認、編集監査とサムネイル縮小表示確認。ユーザー内容確認も未完了。
 
 ## 2026-11-04 VIX解説記事をストック制作
