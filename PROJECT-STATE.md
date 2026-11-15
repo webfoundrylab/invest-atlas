@@ -1,3 +1,10 @@
+## 2026-11-15 株式売買手数料記事のdry-run準備確認
+- Private stock の `ARTICLE-WORKFLOW.md`、`.github/workflows/publish.yml`、`scripts/publish.py` を再確認。
+- `publish.py check` の選択ロジック上、現在の唯一の `scheduled` 記事 `stock-trading-costs.html` が次の対象になる。
+- GitHub上の静的事前確認：stock原稿の `noindex,nofollow` 保持、manifest必須6チェック、記事・サムネイル・図解の存在、関連記事2件の公開状態、カテゴリ階層、逆リンク更新ファイルと公開先ファイルの存在、公開先の新規ファイル衝突なし、公開側article-index未登録を確認。
+- ただしGitHub Actionsの `workflow_dispatch` を実行する操作は現在の接続ツールに提供されておらず、GitHub Actionsのdry-runそのもの（公開側へのprepare、build-site.py、validate-content.py）は未実行。従ってdry-run合格とは扱わない。
+- `publish.yml` は毎日05:00 JSTのscheduleで自動的にpublishまで進む構成。dry-run未実施のまま次回scheduleに進む可能性があるため、公開前dry-runを確実に通すまではユーザー側でActionsの手動実行を行う必要がある。Actions → Scheduled publication → Run workflow → mode=dry-run。
+
 ## 2026-11-15 株式売買手数料記事を確認済み・公開キュー登録
 - ユーザーが記事内容を確認し、主題「株式の売買手数料とは？」を承認。初心者向け表記として「成行（なりゆき）」「指値（さしね）」「呼値（よびね）」を初出時に読み方併記。
 - 2026-11-15にSBI証券のゼロ革命適用条件、楽天証券のゼロコース・SOR同意条件、JPXの現行呼値と2027-03-01の制度変更を公式資料で再確認。無料条件の一般化しすぎを避け、NISA・現物/信用・単元未満株など取引区分の確認を促す記述に修正。
