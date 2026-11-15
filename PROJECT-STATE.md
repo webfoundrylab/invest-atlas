@@ -5,7 +5,7 @@
 - ユーザーから本番同等プレビューの表示・検証がすべてOKとの報告を受領。manifestの必須6チェックをすべてtrue、`draft_status=ready` に更新。
 - Private stock `queue.json` の末尾へ `investment-tax-basics.html` を `scheduled` 登録。先行する `stock-trading-costs.html` の後に公開される。queue全体17件、published 15件、scheduled 2件。
 - manifest commit：`2b768aa54beca8e50e8c28e5434519d7709cbc59`。queue commit：`5cbbf4288ae6bb029ab805db8a2dc49f80d94977`。
-- 公開リポジトリの記事HTML・article-indexは未変更。GitHub Actionsの手動dry-run、公開、公開後表示確認は未実施。次の公開対象は既存の `stock-trading-costs.html`。税金記事はその次の順番。
+- 公開リポジトリの記事HTML・article-indexは未変更。手動dry-runは任意の追加検証であり、記事完成・プレビュー確認・キュー登録の条件ではないため実施不要。実際の公開実行時は公開ワークフロー自身が反映前にビルド・検証する。公開と公開後表示確認は未実施。次の公開対象は既存の `stock-trading-costs.html`。税金記事はその次の順番。
 
 ## 2026-11-15 株式売買手数料記事のdry-run準備確認
 - Private stock の `ARTICLE-WORKFLOW.md`、`.github/workflows/publish.yml`、`scripts/publish.py` を再確認。
