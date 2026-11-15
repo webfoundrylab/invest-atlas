@@ -37,10 +37,12 @@ def render_site_footer():
     )
 
 
+ADSENSE_SCRIPT = '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2286144432351332" crossorigin="anonymous"></script>'
+
 def normalize_site_footer(page):
-    """Replace page-specific footer markup and load the shared footer stylesheet."""
+    """Normalize shared footer and insert the AdSense verification script into every page head."""
     page, footer_count = re.subn(
-        r'<footer\b[^>]*>.*?</footer>',
+        r'<footer\\b[^>]*>.*?</footer>',
         lambda _match: render_site_footer(),
         page,
         flags=re.IGNORECASE | re.DOTALL,
@@ -54,11 +56,16 @@ def normalize_site_footer(page):
 
     if "assets/site-footer.css" not in page:
         head_close = re.search(r'</head>', page, flags=re.IGNORECASE)
-        stylesheet = '<link rel="stylesheet" href="' + FOOTER_CSS_HREF + '">\n'
+        stylesheet = '<link rel="stylesheet" href="' + FOOTER_CSS_HREF + '">' + "\\n"
         if head_close:
             page = page[:head_close.start()] + stylesheet + page[head_close.start():]
-    return page
 
+    # Idempotently place the AdSense script in the shared head of every public HTML page.
+    if "ca-pub-2286144432351332" not in page:
+        head_close = re.search(r'</head>', page, flags=re.IGNORECASE)
+        if head_close:
+            page = page[:head_close.start()] + ADSENSE_SCRIPT + "\\n" + page[head_close.start():]
+    return page
 
 NS = "http://www.sitemaps.org/schemas/sitemap/0.9"
 register_namespace("", NS)
