@@ -1,3 +1,12 @@
+## 2026-11-15 AdSense用ルートサイトの準備
+
+- `webfoundrylab/webfoundrylab.github.io` を新規作成し、ルートURL `https://webfoundrylab.github.io/` にInvest Atlas本体への案内ページを配置。自動転送は行わず、読者がリンクから既存サイトへ移動する構成。
+- ルート `index.html` に既存のSearch Console所有権確認メタタグとAdSenseの `google-adsense-account` メタタグを配置。`ads.txt` にpublisher IDを登録し、`robots.txt` から既存サイトマップを案内。
+- 既存の `webfoundrylab/invest-atlas` は変更していない。記事URL、canonical、サイトマップ、既存Search Consoleプロパティは維持。
+- ルートリポジトリのGitHub Pagesブランチ公開を設定し、GitHub Actionsのビルド・デプロイrun `43717421137` が success。独自の重複デプロイworkflowは削除し、GitHub Pages標準のブランチ公開に一本化。
+- GitHub Pagesのデプロイ成功は確認済み。ただし、この実行環境から公開URLへのHTTPアクセスは確認できず、ブラウザでの実表示・AdSense所有権確認・審査結果は未確認。次工程は `https://webfoundrylab.github.io/` と `/ads.txt` の実表示確認後、AdSenseでメタタグ方式の確認を実行する。
+- Search Consoleの既存プロパティと既存サイトマップは変更しない。ルート用の新規プロパティ追加も現時点では不要。
+
 ## 2026-11-15 情報確認日の監査反映と管理ルール整備
 - 追加監査した6記事の情報確認日を2026年11月15日に統一更新。公開日は維持。
   - `nisa-basics.html`：本文内2か所
