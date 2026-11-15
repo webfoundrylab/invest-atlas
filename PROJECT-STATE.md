@@ -3,7 +3,7 @@
 - 2026-11-15時点の国税庁資料（令和8年4月1日現在法令等）で、令和9年以後の復興特別所得税率引下げと防衛特別所得税導入後も、上場株式等の合計税率20.315%が維持されることを確認。
 - 記事内の数値例・参考資料・内部リンク・カテゴリ階層・公開予定の関連記事との順序を確認。stock原稿の `noindex,nofollow`、記事HTML 1つのh1、図解・サムネイルの実ファイルとmanifest参照を確認。
 - ユーザーから本番同等プレビューの表示・検証がすべてOKとの報告を受領。manifestの必須6チェックをすべてtrue、`draft_status=ready` に更新。
-- Private stock `queue.json` の末尾へ `investment-tax-basics.html` を `scheduled` 登録。先行する `stock-trading-costs.html` の後に公開される。queue全体17件、published 14件、scheduled 2件。
+- Private stock `queue.json` の末尾へ `investment-tax-basics.html` を `scheduled` 登録。先行する `stock-trading-costs.html` の後に公開される。queue全体17件、published 15件、scheduled 2件。
 - manifest commit：`2b768aa54beca8e50e8c28e5434519d7709cbc59`。queue commit：`5cbbf4288ae6bb029ab805db8a2dc49f80d94977`。
 - 公開リポジトリの記事HTML・article-indexは未変更。GitHub Actionsの手動dry-run、公開、公開後表示確認は未実施。次の公開対象は既存の `stock-trading-costs.html`。税金記事はその次の順番。
 
