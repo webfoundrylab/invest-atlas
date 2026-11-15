@@ -252,3 +252,10 @@
 - **未完了**：ユーザーによる記事内容確認、本番同等プレビュー（preview.bat）、PC/スマートフォン表示、SVG XML・レンダリング確認、build-site.py / validate-content.py、manifestの必須監査項目。したがってdraftのまま維持し、公開キューには登録していない。GitHub Actions・公開・デプロイは未実施。
 
 - 追加：売却益の計算例を再計算し、99,000円×20.315%=20,111.85円（約20,112円）へ修正。既存の株式売買手数料記事への本文リンクを追加（stock commit `9d03bc2e`）。内部リンクの遷移先は公開済み3記事と予約公開1記事であることを再確認。
+
+
+## 2026-11-15 AdSenseコードの共通ビルド挿入
+- AdSenseで登録済みサイト `webfoundrylab.github.io` の所有権確認用コード（publisher `ca-pub-2286144432351332`）を、`scripts/build-site.py` の共通HTML正規化処理に追加。
+- 全HTMLの `</head>` 直前にコードを一度だけ挿入する設計とし、既にコードがあるページへの重複挿入を防ぐ。フッター正規化と同じ全HTML走査で適用。
+- build script commit：`74a12020`（初回変更 `9c510e7c`、エスケープ修正 `e93842a4` を含む）。
+- GitHub Actionsの実行・ビルド検証・公開サイトへの反映・AdSense所有権確認は未確認。次はActionsの結果と公開ページのheadを確認後、AdSense画面の「コードを配置しました」→「確認」→審査リクエストへ進む。
