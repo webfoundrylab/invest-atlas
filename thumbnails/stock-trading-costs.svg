@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e6f2f1"/><stop offset="1" stop-color="#d9e5f2"/></linearGradient></defs>
+<rect width="1200" height="675" fill="url(#bg)"/>
+<g fill="#1b5860" opacity=".07" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="270" letter-spacing="-8"><text x="18" y="400">Invest</text><text x="1180" y="605" text-anchor="end">Atlas</text></g>
+<rect x="24" y="22" width="1152" height="150" rx="22" fill="#fff" stroke="#c5d9d8" stroke-width="2"/>
+<text x="600" y="57" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="800" letter-spacing="1" fill="#168276">STOCK TRADING FEES</text>
+<text x="600" y="116" text-anchor="middle" font-family="sans-serif" font-size="48" font-weight="800" fill="#172b3d">株式の売買手数料とは？</text>
+<text x="600" y="157" text-anchor="middle" font-family="sans-serif" font-size="38" font-weight="700" fill="#405d70">無料条件とスプレッドの注意点</text>
+<g transform="translate(105 235)">
+<rect width="575" height="300" rx="30" fill="#fff" stroke="#168276" stroke-width="6"/>
+<text x="287" y="78" text-anchor="middle" font-size="48" font-weight="800" fill="#145f58">取引手数料</text>
+<text x="287" y="165" text-anchor="middle" font-size="82" font-weight="800" fill="#172b3d">0円</text>
+<path d="M110 205 H465" stroke="#168276" stroke-width="8" stroke-linecap="round"/>
+<text x="287" y="270" text-anchor="middle" font-size="42" font-weight="700" fill="#405d70">無料条件を確認</text>
+</g>
+<g transform="translate(730 260)">
+<rect width="365" height="250" rx="26" fill="#edf0fa" stroke="#5368a5" stroke-width="5"/>
+<text x="182" y="65" text-anchor="middle" font-size="42" font-weight="800" fill="#3f518b">成行注文</text>
+<text x="182" y="125" text-anchor="middle" font-size="42" font-weight="800" fill="#172b3d">買い Ask</text>
+<text x="182" y="180" text-anchor="middle" font-size="42" font-weight="800" fill="#172b3d">売り Bid</text>
+</g>
+<path d="M700 385 H720 M705 365 L725 385 L705 405" fill="none" stroke="#d16b35" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="260" y="565" width="680" height="75" rx="22" fill="#173b4d"/>
+<text x="600" y="615" text-anchor="middle" font-size="40" font-weight="800" fill="#fff">手数料無料でも価格差に注意</text>
+</svg>

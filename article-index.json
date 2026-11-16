@@ -1537,6 +1537,34 @@
       "publishedAt": "2026-11-15",
       "updatedAt": "2026-11-15",
       "publishOrder": 41
+    },
+    {
+      "slug": "stock-trading-costs.html",
+      "title": "株式の売買手数料とは？無料条件とスプレッドの注意点",
+      "mainTitle": "株式の売買手数料とは？",
+      "subtitle": "無料条件とスプレッドの注意点",
+      "summary": "国内株式の売買手数料の仕組みと無料条件を解説。手数料無料でも成行注文ではスプレッドの影響を受ける仕組みや、注文方法による違いを具体例で整理。",
+      "category": "companies",
+      "subcategory": "company-analysis",
+      "tags": [
+        "株式投資",
+        "売買手数料",
+        "スプレッド",
+        "証券会社",
+        "成行注文",
+        "指値注文",
+        "取引コスト",
+        "呼値"
+      ],
+      "status": "published",
+      "related": [
+        "individual-stock-vs-index.html",
+        "investment-trust-fees.html"
+      ],
+      "thumbnail": "thumbnails/stock-trading-costs.svg",
+      "publishedAt": "2026-11-16",
+      "updatedAt": "2026-11-16",
+      "publishOrder": 42
     }
   ],
   "pages": [

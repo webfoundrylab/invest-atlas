@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 430" role="img" aria-labelledby="t d">
+<title id="t">株式の売買手数料とスプレッド</title><desc id="d">売買コストでまず確認する取引手数料と、成行注文で約定価格に影響するスプレッドを示す図</desc>
+<rect width="1000" height="430" rx="24" fill="#f4f8f8"/>
+<rect x="55" y="40" width="540" height="300" rx="24" fill="#e5f2ef" stroke="#168276" stroke-width="4"/>
+<text x="325" y="105" text-anchor="middle" font-size="42" font-weight="800" fill="#145f58">取引手数料</text>
+<text x="325" y="175" text-anchor="middle" font-size="34" font-weight="700" fill="#172b3d">証券会社へ支払う費用</text>
+<text x="325" y="240" text-anchor="middle" font-size="42" font-weight="800" fill="#145f58">無料条件を確認</text>
+<rect x="635" y="75" width="310" height="230" rx="22" fill="#edf0fa" stroke="#5368a5" stroke-width="4"/>
+<text x="790" y="135" text-anchor="middle" font-size="38" font-weight="800" fill="#3f518b">スプレッド</text>
+<text x="790" y="195" text-anchor="middle" font-size="32" font-weight="700" fill="#172b3d">買い・売り気配差</text>
+<text x="790" y="250" text-anchor="middle" font-size="32" font-weight="700" fill="#172b3d">成行注文に影響</text>
+<rect x="160" y="365" width="680" height="55" rx="16" fill="#173b4d"/>
+<text x="500" y="405" text-anchor="middle" font-size="32" font-weight="800" fill="#fff">手数料と約定価格の両方を確認</text>
+</svg>
