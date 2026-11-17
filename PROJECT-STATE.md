@@ -276,3 +276,11 @@
 - 公開コミット：`8241c10304fdd5e26035e853112deee3f5c08b84`。stock queue 更新・記事パッケージのアーカイブコミット：`cb3948ed905d77c79b4a27d622b8b5940ea3e740`。
 - 公開側 GitHub Pages workflow run `44058256019` は build・サイトマップ生成・validate-content・artifact upload・deploy がすべて success。
 - 公開URLへの外部アクセス確認はこの接続からできず、ブラウザ実表示は未確認。GitHub Pages デプロイ成功と実画面確認は区別する。
+
+
+## 2026-11-17 公開記事のnoindex混入を修正・再発防止
+- Search ConsoleのURL検査で \`stock-trading-costs.html\` が「robotsメタタグのnoindex」により除外されていることを確認。
+- 公開リポジトリの実HTMLにも \`<meta name="robots" content="noindex,nofollow">\` が残っていた。Googleの取得・クロール許可・canonicalは正常で、直接原因は公開HTMLのrobots指定。
+- 公開HTMLを \`index,follow\` に修正。Private stock側の原稿は公開前保護のため \`noindex,nofollow\` のまま維持する。
+- 再発防止として \`scripts/validate-content.py\` に、公開済み記事HTMLの \`noindex\` を検出して検証失敗にするチェックを追加。
+- GitHub Actions・Pages反映・公開URLの再取得・Search Console再検査は未確認。修正公開後、URL検査で再クロールをリクエストする。
