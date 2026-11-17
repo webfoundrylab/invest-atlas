@@ -177,7 +177,9 @@ for item in articles:
     if item.get("status") != "published":
         continue
     try:
-        page = (ROOT / item["slug"]).read_text(encoding="utf-8")
+        page = (ROOT / item["slug"]).read_text(encoding="utf-8") 
+        if re.search(r"""<meta\b(?=[^>]*\bname=["']robots["'])(?=[^>]*\bcontent=["'][^"']*\bnoindex\b)[^>]*>""", page, flags=re.IGNORECASE):
+            errors.append(f"{item['slug']}: published article contains a noindex robots directive")
         has_generated = "<!-- GENERATED RELATED ARTICLES: START -->" in page and "<!-- GENERATED RELATED ARTICLES: END -->" in page
         existing_links = set(re.findall(r"""href=["']([^"']+)["']""", page, flags=re.IGNORECASE))
         unpublished_targets = [
