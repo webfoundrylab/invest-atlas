@@ -1565,6 +1565,39 @@
       "publishedAt": "2026-11-16",
       "updatedAt": "2026-11-16",
       "publishOrder": 42
+    },
+    {
+      "slug": "investment-tax-basics.html",
+      "title": "投資の利益にかかる税金とは？株式・投資信託の税率と口座の違い",
+      "mainTitle": "投資の利益にかかる税金とは？",
+      "subtitle": "株式・投資信託の税率と口座の違い",
+      "summary": "株式・投資信託の売却益や配当・分配金にかかる税金を解説。20.315%の税率、特定口座と一般口座、NISA、損益通算・繰越控除の違いを具体例で整理。",
+      "category": "nisa",
+      "subcategory": "tax-and-nisa",
+      "tags": [
+        "投資と税金",
+        "株式投資",
+        "投資信託",
+        "譲渡益",
+        "配当金",
+        "分配金",
+        "特定口座",
+        "一般口座",
+        "NISA",
+        "損益通算",
+        "繰越控除"
+      ],
+      "status": "published",
+      "related": [
+        "nisa-basics.html",
+        "stock-dividends.html",
+        "investment-trust-distributions.html",
+        "stock-trading-costs.html"
+      ],
+      "thumbnail": "thumbnails/investment-tax-basics.svg",
+      "publishedAt": "2026-11-17",
+      "updatedAt": "2026-11-17",
+      "publishOrder": 43
     }
   ],
   "pages": [

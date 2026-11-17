@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" role="img" aria-labelledby="title desc">
+<title id="title">投資の利益と課税の関係</title><desc id="desc">投資の利益は売却益と配当・分配金に分かれ、課税口座では原則課税、NISAでは対象利益が非課税になる。</desc>
+<rect width="1000" height="520" rx="24" fill="#f7fafb"/>
+<rect x="350" y="24" width="300" height="76" rx="18" fill="#173b4d"/>
+<text x="500" y="72" fill="#fff" font-size="30" text-anchor="middle" font-weight="700">投資の利益</text>
+<path d="M500 100 V135 H250 V165 M500 135 H750 V165" fill="none" stroke="#52717d" stroke-width="5" stroke-linecap="round"/>
+<rect x="80" y="165" width="340" height="90" rx="16" fill="#e7f2f0" stroke="#168276" stroke-width="3"/>
+<text x="250" y="202" fill="#145f58" font-size="27" text-anchor="middle" font-weight="700">売却・解約による利益</text>
+<text x="250" y="235" fill="#405d70" font-size="20" text-anchor="middle">株式・投資信託の譲渡益</text>
+<rect x="580" y="165" width="340" height="90" rx="16" fill="#edf0fa" stroke="#5368a5" stroke-width="3"/>
+<text x="750" y="202" fill="#3f518b" font-size="27" text-anchor="middle" font-weight="700">保有中に受け取る利益</text>
+<text x="750" y="235" fill="#405d70" font-size="20" text-anchor="middle">配当金・普通分配金など</text>
+<path d="M250 255 V295 H250 V325 M750 255 V295 H750 V325" fill="none" stroke="#52717d" stroke-width="5"/>
+<rect x="80" y="325" width="340" height="125" rx="16" fill="#fff" stroke="#168276" stroke-width="3"/>
+<text x="250" y="365" fill="#145f58" font-size="27" text-anchor="middle" font-weight="700">課税口座</text>
+<text x="250" y="405" fill="#172b3d" font-size="30" text-anchor="middle" font-weight="800">原則 20.315%</text>
+<text x="250" y="435" fill="#536879" font-size="18" text-anchor="middle">対象となる利益に課税</text>
+<rect x="580" y="325" width="340" height="125" rx="16" fill="#fff" stroke="#5368a5" stroke-width="3"/>
+<text x="750" y="365" fill="#3f518b" font-size="27" text-anchor="middle" font-weight="700">NISA口座</text>
+<text x="750" y="405" fill="#172b3d" font-size="30" text-anchor="middle" font-weight="800">非課税</text>
+<text x="750" y="435" fill="#536879" font-size="18" text-anchor="middle">対象となる利益に税金なし</text>
+<text x="500" y="492" fill="#536879" font-size="18" text-anchor="middle">※元本払戻金（特別分配金）は利益ではなく、原則非課税</text>
+</svg>
