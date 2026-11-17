@@ -268,3 +268,11 @@
 - 全HTMLの `</head>` 直前にコードを一度だけ挿入する設計とし、既にコードがあるページへの重複挿入を防ぐ。フッター正規化と同じ全HTML走査で適用。
 - build script commit：`74a12020`（初回変更 `9c510e7c`、エスケープ修正 `e93842a4` を含む）。
 - GitHub Actionsの実行・ビルド検証・公開サイトへの反映・AdSense所有権確認は未確認。次はActionsの結果と公開ページのheadを確認後、AdSense画面の「コードを配置しました」→「確認」→審査リクエストへ進む。
+
+
+## 2026-11-17 投資の利益にかかる税金記事を公開
+- Private stock の公開キュー先頭にあった「投資の利益にかかる税金とは？株式・投資信託の税率と口座の違い」を、GitHub連携によるGitデータAPIの直接コミットで公開リポジトリへ反映。GitHub Actions の stock 公開workflow・追加課金は使用していない。
+- 公開ファイル：`investment-tax-basics.html`、`thumbnails/investment-tax-basics.svg`、`images/investment-tax-basics-flow.svg`、`article-index.json`。記事台帳 status=published、publishOrder=43、publishedAt=2026-11-17。
+- 公開コミット：`8241c10304fdd5e26035e853112deee3f5c08b84`。stock queue 更新・記事パッケージのアーカイブコミット：`cb3948ed905d77c79b4a27d622b8b5940ea3e740`。
+- 公開側 GitHub Pages workflow run `44058256019` は build・サイトマップ生成・validate-content・artifact upload・deploy がすべて success。
+- 公開URLへの外部アクセス確認はこの接続からできず、ブラウザ実表示は未確認。GitHub Pages デプロイ成功と実画面確認は区別する。
