@@ -311,3 +311,11 @@
 - **stockコミット**：共通関数 9fc95a84ed497883d5f45318317ee391574a2bdb、preview変換適用 5edd5deb58b3a99ddf21f86cb1528ade26996e97、publisher共通化 c26c60f7a5d44420d49b096df360b8eae1106ba2、単体テスト d6ebd7b4ed7332b4641e9f3325983d4b804d90af、ARTICLE-WORKFLOW caee1d6affeee968bab45c52a902b613d0d74f16、USER-FEEDBACK 356e9191db6670fe7269f0bf68328bb68259a031、起動前の構文・単体テストゲート 6e32582fb8de20c532146550496257ef8e8af30d。
 - **検証**：共通関数と単体テストの同一ソースを隔離環境でpy_compileし、4テストすべて成功。GitHub上でpublisher/preview双方の共通関数呼び出しと、プレビュー後段でのnoindex付与を再取得して静的確認。
 - **未確認**：ユーザーWindows環境でのpreview.bat再実行、全13記事の本番同等build/validate通過、生成後ブラウザ表示。これらはローカル再実行で最終確認する。stock原稿のnoindex、公開リポジトリ、公開キューは変更していない。
+
+## 2026-11-18 呼値制度変更記事の一次資料ベース改稿
+- Private stock の `articles/tick-size-guide/article.html` を改稿。2027年3月1日の東証呼値制度変更について、概要だけだった説明を、JPX公式資料に基づく詳細説明へ拡充した。
+- 追加内容：A（Active・超高流動性）/B（Basic・高流動性）/C（Calm・中流動性）/O（One Unit・売買単位1株/口）の意味と適用対象、新制度の全価格帯・4テーブルの呼値一覧、STRの時間加重平均による日次算出、評価期間の日次STR中央値、1.5未満/1.5〜5.0/5.0超の見直し基準、毎年8月の定期見直し、2027年3月初回適用に用いる2026年3月〜11月末のSTR等、2027年1月目途の銘柄別公表予定。
+- 現行制度の呼値表も全価格帯へ拡充。STRの説明は瞬間的な板の差だけで判定するかのような記述を改め、立会時間中の気配差を時間加重平均して日次STRを求める実際の方法を記載。銘柄別初回テーブルは2026年11月18日時点で未公表として、確定情報と公表待ち情報を区別した。
+- 主な一次資料：JPX「呼値の単位」 https://www.jpx.co.jp/equities/trading/domestic/07.html 、JPX運用資料 https://www.jpx.co.jp/equities/trading/domestic/tvdivq0000008dfl-att/t13vrt000001jblm.pdf 、JPX STR解説 https://www.jpx.co.jp/equities/trading/domestic/tvdivq0000008dfl-att/t13vrt000001jbo1.pdf 、制度見直し資料 https://www.jpx.co.jp/rules-participants/public-comment/detail/d2/t13vrt0000014ecv-att/t13vrt0000014efa.pdf 。
+- stockコミット：記事本文の制度詳細追加 `99e112a2676687f4da907d4c8a57f6037d8df84d`、現行呼値表の全価格帯化 `56865ee30723e9b98af8e96e9f89250ef16a1968`、manifest概要更新 `eecef147bf7aa4fdaa21ce350ed5e9037adfd1a6`、現行表の説明調整 `f8773da7d8ce97f163b822009baf80c1f78ecc10`、編集品質ルール `bad2bfc6451afaf7192471001796796896713aed`。
+- **未完了**：stock原稿はdraftのまま。Windowsの `preview.bat` 再実行、本番同等build/validator、生成後HTMLとSVGの表示検査、記事の最終監査は未実施。公開キュー・公開サイトは変更していない。
