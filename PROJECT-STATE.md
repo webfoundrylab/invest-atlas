@@ -361,3 +361,12 @@
 - Private stock `articles/roa-basics/` に記事HTML、SVGサムネイル、本文図解、manifestを作成。公開済みROE記事からの文脈リンク追加を `updates/roe-basics.html` と `registry_updates` に設定。recommendation-order.jsonへ追加。
 - 静的確認：本文のnoindex・main/h1・目次アンカー、公開済み関連記事へのリンク、図解参照、カテゴリ階層、サムネイルのviewBox・固定タイトル帯・ブランド透かし、全13 stockパッケージのプレビュー順登録・公開先destination重複なしを確認。
 - manifestは `draft_status=audit_pending`。sources_verified / internal_links_reviewed / backlinks_reviewedのみtrue。本文の最終編集監査、SVG/XML検証・縮小表示、本番同等 `preview.bat` のbuild/validator/ブラウザ表示、ユーザーの内容確認は未完了。公開キュー・公開リポジトリの公開記事は変更していない。
+
+## 2026-11-18 ROIC解説記事をPrivate stockに作成
+
+- 新規記事「ROICとは？投下資本利益率の計算方法とWACCとの関係」を `articles/roic-basics/` に作成。ROA・ROEの次に読む資本効率の指標として、NOPAT・投下資本・ROICの計算、利益率と投下資本回転率への分解、WACCとの比較、経済的利益（EP）、ROA・ROEとの違い、成長投資を含む注意点を整理。
+- 経済産業省「成長投資ガイダンス（案）」のROIC・NOPAT・投下資本・WACC・EPの定義と、同省のROIC参考資料を確認。説明用の数値例は、営業利益1億円・税率30%・NOPAT7,000万円・投下資本5億円・ROIC14%。WACCを仮に8%とした場合のEPは3,000万円で、すべての数値を仮定例として明記。
+- 記事HTML、本文分解図SVG、サムネイルSVG、manifestを作成。カテゴリ階層 `companies/financial-statements/financial-metrics`、ROA・ROEへの関連記事リンク、stock全14パッケージ横断の公開先destination重複なしを確認。`recommendation-order.json` に追加し、プレビュー一覧へ登録。
+- manifestは出典確認・内部リンク確認のみtrue。最終編集監査、SVG XMLパーサー検証・実表示確認、ユーザーの本番同等プレビュー確認は未完了のため `audit_pending`。公開キューには未登録。
+- 主なコミット：記事HTML `d4f9d6bc`、本文図解 `6b05a5de`、サムネイル `ac476b6b`、manifest `bce9cd27`、プレビュー順 `029d7fc4`。
+- 次工程：ユーザー環境で `preview.bat` を実行し、`roic-basics.html` の本文・図解・サムネイルを確認。確認後、残りの監査と公開準備を行う。
