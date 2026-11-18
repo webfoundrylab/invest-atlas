@@ -1598,6 +1598,34 @@
       "publishedAt": "2026-11-17",
       "updatedAt": "2026-11-17",
       "publishOrder": 43
+    },
+    {
+      "slug": "currency-risk.html",
+      "title": "為替リスクとは？円高・円安が海外投資に与える影響",
+      "mainTitle": "為替リスクとは？",
+      "subtitle": "円高・円安が海外投資に与える影響",
+      "summary": "海外株式や外国資産に投資するとき、円高・円安が円換算の損益に与える影響を具体例で解説。資産価格と為替を合わせたリターン計算、海外株式の通貨エクスポージャー、為替ヘッジの仕組み・コスト、商品比較の確認点を整理。",
+      "category": "markets",
+      "subcategory": "fx-rates-inflation",
+      "tags": [
+        "為替リスク",
+        "円高",
+        "円安",
+        "為替ヘッジ",
+        "海外投資",
+        "投資信託"
+      ],
+      "status": "published",
+      "related": [
+        "global-vs-sp500.html",
+        "global-equity-indexes.html",
+        "orbukan-guide.html",
+        "risk-return-basics.html"
+      ],
+      "thumbnail": "thumbnails/currency-risk.svg",
+      "publishedAt": "2026-11-18",
+      "updatedAt": "2026-11-18",
+      "publishOrder": 44
     }
   ],
   "pages": [

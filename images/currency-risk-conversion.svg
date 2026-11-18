@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="470" viewBox="0 0 1000 470">
+<rect width="1000" height="470" rx="24" fill="#f5f8f7"/>
+<text x="500" y="58" text-anchor="middle" font-size="30" font-weight="700" fill="#294d50">1万米ドルを円に換算</text>
+<g font-family="sans-serif" text-anchor="middle">
+<rect x="65" y="120" width="260" height="190" rx="18" fill="#fff" stroke="#a65e39" stroke-width="4"/><text x="195" y="180" font-size="28" fill="#a65e39">円高</text><text x="195" y="235" font-size="38" font-weight="800" fill="#294d50">140万円</text><text x="195" y="276" font-size="25" fill="#536879">1ドル＝140円</text>
+<rect x="370" y="120" width="260" height="190" rx="18" fill="#fff" stroke="#397d8a" stroke-width="4"/><text x="500" y="180" font-size="28" fill="#397d8a">基準</text><text x="500" y="235" font-size="38" font-weight="800" fill="#294d50">150万円</text><text x="500" y="276" font-size="25" fill="#536879">1ドル＝150円</text>
+<rect x="675" y="120" width="260" height="190" rx="18" fill="#fff" stroke="#a65e39" stroke-width="4"/><text x="805" y="180" font-size="28" fill="#a65e39">円安</text><text x="805" y="235" font-size="38" font-weight="800" fill="#294d50">160万円</text><text x="805" y="276" font-size="25" fill="#536879">1ドル＝160円</text>
+<text x="500" y="382" font-size="26" fill="#536879">外貨建て資産が1万米ドルで一定と仮定</text>
+</g></svg>

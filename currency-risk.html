@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>為替リスクとは？円高・円安が海外投資に与える影響｜Invest Atlas</title>
+<meta name="description" content="海外株式や投資信託の円換算リターンは、投資先の値動きと為替の両方で変わります。円高・円安の計算例、為替ヘッジの仕組みとコスト、商品を比較するときの確認点を図解します。">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://webfoundrylab.github.io/invest-atlas/currency-risk.html">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#f5f7f8;color:#172b3d;font:16px/1.85 system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:#176d65;text-underline-offset:3px}
+.article{min-width:0}
+.eyebrow{font-size:.82rem;font-weight:800;letter-spacing:.08em;color:#176d65}
+.meta{font-size:.85rem;color:#5c6d7a}
+.lead{font-size:1.08rem;color:#405565}
+h1{font-size:clamp(1.8rem,4vw,2.65rem);line-height:1.35;margin:.5em 0}
+h2{font-size:1.42rem;line-height:1.45;margin:2.1em 0 .65em;border-bottom:2px solid #dce4e8;padding-bottom:.4em}
+h3{font-size:1.12rem;margin:1.45em 0 .4em}
+.title-main,.title-subtitle{display:block}
+.title-subtitle{font-size:.62em;line-height:1.5;font-weight:650;color:#536879;margin-top:.22em}
+.callout{margin:20px 0;padding:15px 18px;background:#edf7f4;border-left:4px solid #168276;border-radius:8px}
+.toc{margin:24px 0;padding:17px 21px;background:#f4f8f9;border:1px solid #dce4e8;border-radius:12px}
+.toc ol{margin:0;padding-left:1.4em}
+.toc li{margin:.25em 0}
+.table-wrap{overflow-x:auto;margin:18px 0}
+table{width:100%;border-collapse:collapse;font-size:.93rem}
+th,td{padding:11px;border:1px solid #dce4e8;text-align:left;vertical-align:top}
+th{background:#edf4f5}
+.diagram{margin:24px 0;padding:14px;border:1px solid #dce4e8;border-radius:13px;background:#fbfdfd}
+.diagram img{display:block;width:100%;height:auto}
+.diagram figcaption{margin-top:9px;font-size:.88rem;color:#536879}
+.sources li{margin:.6em 0}
+.related-inline{margin:24px 0;padding:14px 16px;background:#f4f8f9;border-radius:10px;line-height:1.9}
+@media(max-width:600px){h2{font-size:1.28rem}.toc{padding:14px}.diagram{padding:8px}th,td{padding:8px;font-size:.86rem}}
+</style>
+</head>
+<body>
+<main class="wrap">
+<article class="article">
+<p class="eyebrow">INVESTMENT BASICS</p>
+<h1><span class="title-main">為替リスクとは？</span><span class="title-subtitle">円高・円安が海外投資に与える影響</span></h1>
+<p class="meta">更新日：2026年11月15日</p>
+<p class="lead">海外株式や外国債券、海外資産に投資する投資信託では、投資先の価格だけでなく、為替レートも円で見た損益を左右します。投資先が値上がりしても円高で円換算の利益が小さくなることがあり、反対に投資先の価格が変わらなくても円安で円換算額が増えることがあります。</p>
+<div class="callout"><strong>先に結論：</strong>為替リスクとは、外貨建て資産を円に換算するとき、為替レートの変化によって円ベースの評価額やリターンが変動するリスクです。海外投資では「投資先の値動き」と「為替の影響」を分けて考え、最後に両方を合わせて評価します。</div>
+<nav class="toc" aria-label="この記事の目次"><strong>この記事でわかること</strong><ol>
+<li><a href="#mechanism">為替リスクの仕組み</a></li>
+<li><a href="#example">円高・円安で円換算額はいくら変わる？</a></li>
+<li><a href="#combined">資産価格と為替が同時に動く場合</a></li>
+<li><a href="#exposure">海外株式の為替リスクを考えるときの注意</a></li>
+<li><a href="#hedge">為替ヘッジの仕組みとコスト</a></li>
+<li><a href="#check">投資信託・ETFを比較するときの確認点</a></li>
+</ol></nav>
+
+<h2 id="mechanism">1. 為替リスクの仕組み</h2>
+<p>米ドル建て資産を円で評価するとき、基本的な関係は「外貨建ての資産価値 × 為替レート」です。たとえば1万米ドルを保有し、1ドル＝150円なら円換算額は150万円です。</p>
+<p>ここで使う為替レートは「1米ドルを何円で交換できるか」を表します。1ドル＝150円から140円へ下がるのが円高、150円から160円へ上がるのが円安です。同じ1万ドルでも、円高なら円換算額は小さく、円安なら大きくなります。</p>
+<figure class="diagram">
+<img src="images/currency-risk-conversion.svg" alt="1万米ドルの資産を1ドル140円、150円、160円で円換算した場合、それぞれ140万円、150万円、160万円になる図">
+<figcaption>外貨建て資産が1万米ドルで変わらないと仮定した場合の円換算額。為替だけが変化した単純な例です。</figcaption>
+</figure>
+
+<h2 id="example">2. 円高・円安で円換算額はいくら変わる？</h2>
+<p>1万米ドル相当の資産を保有し、資産そのものの米ドル建て価格が変わらないと仮定します。</p>
+<div class="table-wrap"><table>
+<thead><tr><th>為替レート</th><th>円換算額</th><th>150円時点との差</th></tr></thead>
+<tbody>
+<tr><td>1ドル＝150円</td><td>150万円</td><td>基準</td></tr>
+<tr><td>1ドル＝140円（円高）</td><td>140万円</td><td>−10万円（−6.7％）</td></tr>
+<tr><td>1ドル＝160円（円安）</td><td>160万円</td><td>＋10万円（＋6.7％）</td></tr>
+</tbody></table></div>
+<p>150円から140円への変化は、為替レートの数字では約6.7％の下落です。円換算額も150万円から140万円になり、約6.7％減少します。「10円の円高」と「為替の価値が10％下落」は同じ意味ではありません。変化率を計算するときは、必ず変化前のレートを基準にします。</p>
+
+<h2 id="combined">3. 資産価格と為替が同時に動く場合</h2>
+<p>実際の海外投資では、投資先の価格と為替レートが同時に変わります。円換算リターンは、外貨建て資産のリターンと、外貨の円換算価値の変化を掛け合わせて計算します。</p>
+<div class="callout"><strong>円換算リターンの計算式</strong><br>（1＋外貨建て資産のリターン）×（1＋為替変化率）−1</div>
+<p>ここでいう為替変化率は「外貨1単位を円に換算した価値」の変化率です。たとえば1ドル＝150円から135円になった場合、ドルの円換算価値は10％下落したことになります。</p>
+<div class="table-wrap"><table>
+<thead><tr><th>外貨建て資産</th><th>ドルの円換算価値</th><th>円換算リターン</th></tr></thead>
+<tbody>
+<tr><td>＋10％</td><td>−10％</td><td>−1％</td></tr>
+<tr><td>＋10％</td><td>変化なし</td><td>＋10％</td></tr>
+<tr><td>＋10％</td><td>＋10％</td><td>＋21％</td></tr>
+<tr><td>−10％</td><td>＋10％</td><td>−1％</td></tr>
+</tbody></table></div>
+<p>たとえば資産価格が10％上がっても、ドルの円換算価値が10％下がれば、1.10×0.90−1＝−1％となり、円ベースではわずかにマイナスです。反対に、資産価格の下落を円安が一部打ち消す場合もあります。資産価格と為替は常に反対方向へ動くわけではありません。</p>
+
+<h2 id="exposure">4. 海外株式の為替リスクを考えるときの注意</h2>
+<p>為替リスクは、投資信託の名前や基準価額の表示通貨だけでは判断できません。確認したいのは、ファンドが実際にどの国・地域の資産を保有し、どの通貨に対して為替ヘッジを行っているかです。</p>
+<ul>
+<li><strong>基準価額が円表示でも為替の影響は受ける：</strong>国内の投資信託は円で購入・換金しますが、組入資産が外貨建てなら、通常は円換算して基準価額に反映します。</li>
+<li><strong>投資先企業の売上通貨と株式の取引通貨は同じとは限らない：</strong>たとえば米国市場に上場する企業でも、売上や費用は複数の通貨にまたがる場合があります。株式の取引通貨だけで企業活動全体の為替感応度を判断することはできません。</li>
+<li><strong>全世界株式でも為替の影響は一つの通貨だけではない：</strong>複数の国・地域の株式を保有するファンドでは、組入資産の通貨や各国市場の値動きが組み合わさって円ベースの成績に影響します。</li>
+<li><strong>円安が必ず利益になるわけではない：</strong>円安による円換算額の押し上げがあっても、投資先の株価下落が大きければ円ベースでは損失になります。</li>
+</ul>
+<p>全世界株式と米国株式では投資対象の地域や構成が異なります。為替だけでなく、どの市場・企業に分散しているかも合わせて比較するには、<a href="global-vs-sp500.html">全世界株式とS&amp;P 500の違い</a>も参考になります。</p>
+
+<h2 id="hedge">5. 為替ヘッジの仕組みとコスト</h2>
+<p>為替ヘッジは、為替予約などを利用して将来の通貨交換条件をあらかじめ決め、為替変動が円換算損益に与える影響を抑える方法です。投資信託では「為替ヘッジあり」「為替ヘッジなし」といったコースで提供されることがあります。</p>
+<figure class="diagram">
+<img src="images/currency-risk-hedge.svg" alt="為替ヘッジなしは外貨資産の為替変動が円換算額に反映され、為替ヘッジありは反対売買の為替予約で影響を抑える仕組みを示す図">
+<figcaption>為替ヘッジの概念図。実際のヘッジ比率や取引条件はファンドごとに異なります。</figcaption>
+</figure>
+<div class="table-wrap"><table>
+<thead><tr><th>比較</th><th>為替ヘッジなし</th><th>為替ヘッジあり</th></tr></thead>
+<tbody>
+<tr><td>為替変動</td><td>円換算額に反映される</td><td>影響を抑えることを目指す</td></tr>
+<tr><td>円安時</td><td>円換算額を押し上げる方向に働く</td><td>円安による上乗せも抑えられる</td></tr>
+<tr><td>円高時</td><td>円換算額を押し下げる方向に働く</td><td>円高による押し下げも抑えられる</td></tr>
+<tr><td>ヘッジコスト等</td><td>為替ヘッジに伴うコストは通常発生しない</td><td>金利差や市場需給等を反映したコスト・プレミアムが生じる</td></tr>
+</tbody></table></div>
+<h3>ヘッジコストはなぜ発生する？</h3>
+<p>為替予約のレートには、原則として交換する2通貨の短期金利差などが反映されます。たとえば円の短期金利が米ドルの短期金利より低い局面で、米ドル資産を円に対してヘッジすると、一般にその金利差に相当するコストが発生します。逆に金利差の向きによっては、コストではなくプレミアムが生じる場合もあります。</p>
+<p>ただし、実際のコストは金利差だけで決まるわけではなく、通貨間の需給や市場環境などによって金利差相当分を上回ることもあります。ヘッジコストは信託報酬とは別の要素として基準価額に反映されるため、信託報酬の数字だけを見ても、ヘッジあり・なしの運用コスト全体は比較できません。</p>
+<p>為替ヘッジは為替リスクを完全になくすものではありません。ヘッジ比率、為替予約の更新時期、対象通貨と実際の取引通貨の違いなどにより、為替の影響が残ることがあります。また、円安によるプラスの影響も抑えられます。</p>
+
+<h2 id="check">6. 投資信託・ETFを比較するときの確認点</h2>
+<ol>
+<li><strong>投資対象：</strong>どの国・地域・資産に投資し、組入資産の通貨は何か。</li>
+<li><strong>為替ヘッジ方針：</strong>ヘッジあり・なし、一部ヘッジのどれか。対象通貨とヘッジ比率も確認する。</li>
+<li><strong>リターンの通貨：</strong>比較する基準価額・指数の成績が円換算か外貨建てか。配当込みかどうかもそろえる。</li>
+<li><strong>費用：</strong>信託報酬だけでなく、ヘッジコスト等が運用成績に与える影響も確認する。</li>
+<li><strong>資金を使う通貨と時期：</strong>将来円で使う資金なのか、外貨で使う予定があるのか。投資期間と合わせて考える。</li>
+</ol>
+<p>商品名に「為替ヘッジあり」と書かれていても、コストやヘッジの対象・比率は同じとは限りません。目論見書や運用報告書、運用会社のFAQ・月次レポートで、具体的な方針と費用の扱いを確認しましょう。投資信託の基準価額が円で表示される理由や計算の仕組みは、<a href="orbukan-guide.html">全世界株式の投資信託を比較</a>も参考になります。</p>
+
+<div class="related-inline"><strong>関連する解説：</strong><a href="global-vs-sp500.html">全世界株式とS&amp;P 500の違い</a> ／ <a href="global-equity-indexes.html">全世界株式の指数の違い</a> ／ <a href="risk-return-basics.html">投資のリスクとリターン</a> ／ <a href="orbukan-guide.html">全世界株式の投資信託を比較</a></div>
+
+<h2>まとめ</h2>
+<p>海外資産の円ベースの損益は、投資先の価格と為替の両方で変わります。円高・円安の影響は、外貨建て資産の値動きと分けて計算したうえで、最後に掛け合わせて考えることが重要です。為替ヘッジは影響を抑える選択肢ですが、コストや円安時の上乗せを抑える面もあります。商品を比較するときは、投資対象・通貨・ヘッジ方針・費用・資金を使う時期を合わせて確認しましょう。</p>
+
+<h2>参考資料</h2>
+<ul class="sources">
+<li><a href="https://www.imaj.or.jp/special/toushin-qa100/basic/">資産運用業協会「投資信託の基礎知識」</a>（外貨建て資産の円換算と基準価額）</li>
+<li><a href="https://www.nomura-am.co.jp/sodateru/stepup/foreign-investment/foreign-investment05.html">野村アセットマネジメント「『為替ヘッジ』の仕組みとは？」</a>（為替予約とヘッジコスト）</li>
+<li><a href="https://faq1.am.mufg.jp/answer/66c85ba8e17300a001af293f/">三菱UFJアセットマネジメント「為替ヘッジとは何ですか」</a>（ヘッジの効果と限界）</li>
+<li><a href="https://faq1.am.mufg.jp/answer/660f62c2fe5ca95281bcf0d1/">三菱UFJアセットマネジメント「ファンドの為替ヘッジコストは、どこで確認できますか」</a>（コストの開示・基準価額への影響）</li>
+<li><a href="https://www.nomura-am.co.jp/sodateru/start/investment-trust-abc/currency-hedging.html">野村アセットマネジメント「為替とは？ 為替ヘッジとは？」</a>（ヘッジコスト・プレミアム）</li>
+</ul>
+<p class="meta">出典確認日：2026年11月15日。具体的なヘッジ方針・費用はファンドごとに異なるため、購入前に最新の目論見書・運用報告書を確認してください。</p>
+</article>
+</main>
+</body>
+</html>
