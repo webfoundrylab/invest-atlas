@@ -340,3 +340,12 @@
 - **未完了**：stock原稿はdraftのまま。Windowsの `preview.bat` 再実行、本番同等build/validator、生成後HTMLとSVGの表示検査、記事の最終監査は未実施。公開キュー・公開サイトは変更していない。
 - 追加反映：現行呼値表の「代表的な価格帯」表現を全価格帯掲載に合わせて修正し、TOPIX500の説明箇所に株価指数解説、個別株と指数投資の比較箇所に各関連記事への本文リンクを追加。関連記事3件すべてのslugが本文HTML内に存在すること、目次アンカーの欠落がないこと、カテゴリ階層 `markets/market-trends` が公開側台帳に存在することを静的確認。最終stock記事コミット：`1c5ce6d0577437c1005f4fb3840c41adcdd2ab89`。
 - **最終確認待ち**：`preview.bat` による本番同等ビルド・validator・生成後表示、SVGの縮小表示確認、編集監査。stock原稿はdraft・noindexのまま、queue.jsonと公開リポジトリの記事HTMLは変更していない。
+
+
+## 2026-11-18 ROA（総資産利益率）記事を新規ストック制作
+- 公開済みのEPS・PER・BPS・PBR・ROE記事群を補完する「ROAとは？総資産利益率の計算方法とROEとの違い」をPrivate stockに新規作成。
+- JPXのROA定義、経済産業省のROA/ROE算定方法の例、財務省の法人企業統計からみえる企業の財務指標、金融庁資料のROA分解を確認。ROAは分子に使う利益によって総資産営業利益率・総資産経常利益率・総資産純利益率などがあるため、本文では当期純利益／期中平均総資産を基本式として明示し、定義違いの比較を避ける構成とした。
+- 数値例（当期純利益6,000万円、期中平均総資産5億円、ROA12%）、利益率×総資産回転率の分解、ROEとの関係、業種差、成長投資・資産の帳簿価額・一時利益・負債リスクの注意点を掲載。
+- Private stock `articles/roa-basics/` に記事HTML、SVGサムネイル、本文図解、manifestを作成。公開済みROE記事からの文脈リンク追加を `updates/roe-basics.html` と `registry_updates` に設定。recommendation-order.jsonへ追加。
+- 静的確認：本文のnoindex・main/h1・目次アンカー、公開済み関連記事へのリンク、図解参照、カテゴリ階層、サムネイルのviewBox・固定タイトル帯・ブランド透かし、全13 stockパッケージのプレビュー順登録・公開先destination重複なしを確認。
+- manifestは `draft_status=audit_pending`。sources_verified / internal_links_reviewed / backlinks_reviewedのみtrue。本文の最終編集監査、SVG/XML検証・縮小表示、本番同等 `preview.bat` のbuild/validator/ブラウザ表示、ユーザーの内容確認は未完了。公開キュー・公開リポジトリの公開記事は変更していない。
