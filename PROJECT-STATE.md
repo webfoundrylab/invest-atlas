@@ -1,3 +1,13 @@
+## 2026-11-18 為替リスク記事を公開
+
+- 公開キュー先頭の `currency-risk.html` を公開。タイトルは「為替リスクとは？円高・円安が海外投資に与える影響」。
+- Private stock の manifest で必須6チェックがすべて true、`draft_status=ready`、記事HTMLは `noindex,nofollow`、関連記事4件はすべて公開済みであることを確認。カテゴリ階層 `markets/fx-rates-inflation` と公開先ファイルの新規性も確認。
+- 公開リポジトリへ記事HTML、SVGサムネイル、本文図解2点、`article-index.json` を追加。公開順44、公開日2026-11-18、robotsを `index,follow` に変換。
+- 公開コミット：`1fc37440956f7d19625e0b32062b6e6c51b62bf5`。
+- GitHub Pages workflow run `44318658803` は success。サイトマップ・関連記事データ生成、記事台帳とサイトマップの検証、artifact upload、Pages deployまで成功。
+- Private stock の queue を published に更新（commit `daa36444965437528d4c295e835d09fd6e3a3ae4`）。公開済みパッケージの原稿・manifest・サムネイル・図解2点をstockから削除し、公開側を正本とする運用へ移行。
+- 公開URL：`https://webfoundrylab.github.io/invest-atlas/currency-risk.html`。Pagesデプロイ成功は確認済み。公開URLのブラウザ実表示は別途確認対象。
+
 ## 2026-11-15 AdSense用ルートサイトの準備
 
 - `webfoundrylab/webfoundrylab.github.io` を新規作成し、ルートURL `https://webfoundrylab.github.io/` にInvest Atlas本体への案内ページを配置。自動転送は行わず、読者がリンクから既存サイトへ移動する構成。
