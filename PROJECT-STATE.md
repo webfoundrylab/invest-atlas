@@ -1,3 +1,13 @@
+## 2026-11-18 呼値の単位記事を監査・公開キュー登録
+
+- Private stock の `tick-size-guide` を内容監査。JPX公式「呼値の単位」ページ、2027年3月1日施行の運用通知、STR参考資料を照合し、現行呼値表・新A/B/C/Oテーブル・STRの時間加重平均・日次中央値・1.5/5.0の判定・年次見直し・初回移行条件を確認。
+- 監査で、現行のETF等の呼値欄は売買単位10口以上のETF等にも適用される注記が欠けていたため補正。また、全価格帯を掲載した表を「抜粋」と誤記していた箇所を修正。
+- 記事内の関連記事3件が公開済みであること、本文リンク、画像参照、カテゴリ階層 `markets/market-trends`、stock原稿の `noindex,nofollow`、記事のh1、公開先destinationの重複なしを確認。既存の「株式の売買手数料」記事への関連記事台帳追加はmanifestの `registry_updates` で公開時に同時反映する。
+- ユーザーから本番同等プレビュー確認OKの報告を受領。manifest必須6チェックをすべてtrue、`draft_status=ready` に更新。
+- Private stock `queue.json` の末尾へ `tick-size-guide.html` を `scheduled` 登録。公開済み18件、scheduled 2件（先行は `dividend-yield-basics.html`、その次が本記事）。
+- 記事HTML修正コミット：`9e03253cafd515b33db69a686e04533905c91ec4`。manifest ready：`4c5c1a7f8ea026d041e57cb7acaee24f3c4b3a17`。queue登録：`7eddba0eda3affb5ae654a3bcc51ff2bac9d75e2`。
+- 公開リポジトリへの反映・GitHub Actionsの実行・公開後画面の確認は未実施。手動dry-runは任意工程のため未実施。次の自動公開はキュー順に従い、配当利回り記事の後に呼値記事を処理する。
+
 ## 2026-11-18 為替リスク記事を公開
 
 - 公開キュー先頭の `currency-risk.html` を公開。タイトルは「為替リスクとは？円高・円安が海外投資に与える影響」。
