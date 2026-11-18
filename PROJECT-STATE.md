@@ -284,3 +284,11 @@
 - 公開HTMLを \`index,follow\` に修正。Private stock側の原稿は公開前保護のため \`noindex,nofollow\` のまま維持する。
 - 再発防止として \`scripts/validate-content.py\` に、公開済み記事HTMLの \`noindex\` を検出して検証失敗にするチェックを追加。
 - GitHub Actions・Pages反映・公開URLの再取得・Search Console再検査は未確認。修正公開後、URL検査で再クロールをリクエストする。
+
+## 2026-11-18 呼値の単位の記事を新規ストック制作
+- 既存の「株式の売買手数料」記事では呼値に触れているものの、呼値の定義・価格帯/銘柄区分別の刻み・指値注文への影響・流動性との関係を独立して理解するには説明が不足するため、独立記事「呼値の単位とは？株価の刻みと指値注文・スプレッドの関係」を制作。
+- JPX公式「呼値の単位」で2026年11月18日時点の現行表と2027年3月1日の制度変更を確認。JPX Working Paperも参照し、呼値の細分化が価格形成・流動性へ与える両面を説明。2,500円付近の1円/0.5円の具体例と指値注文の価格選択例を掲載。
+- Private stock `articles/tick-size-guide/` に記事HTML、SVGサムネイル、本文図解、manifestを追加。公開記事「株式の売買手数料」から新記事への関連記事逆リンクをmanifestのregistry_updatesに設定。recommendation-order.jsonにも未公開候補として追加。
+- コミット：記事HTML `05a60a756bb15eaef5797bf95e4a722d44393dd5`、サムネイル `11cd9bb33d71a7f59b8e1505b2bd3baebdec544b`、本文図解 `938a7186d6f62f16040c81c7c1c167ccdd81e984`、manifest `17a7e945564376755092ecee7bca1d05b00f9818`、おすすめ順 `47b2fefe84439abde1df23cb19fb978ffdf52249`。
+- 現時点では制作初稿。manifestの監査チェックはすべてfalse、draft_statusはaudit_pending。stock原稿のnoindex,nofollowを維持。公開キューには未登録で、公開リポジトリへの変更・公開操作は行っていない。
+- 未実施：記事全体の最終監査、図解・サムネイルのXML/縮小表示検証、本番同等preview.batによる生成・表示確認、ユーザー内容確認。JPXの2027年3月制度変更後の銘柄別適用呼値は、制度移行時に公表される最新情報を確認して更新する。
