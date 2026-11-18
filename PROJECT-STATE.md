@@ -1,3 +1,12 @@
+## 2026-11-18 単元株・単元未満株の記事をストック作成
+
+- 新規テーマ「単元株とは？100株単位の売買と単元未満株の違い」を `unit-shares-guide` としてPrivate stockへ作成。既存の株式売買手数料・個別株投資・配当金記事と役割を分け、100株単位の仕組み、投資単位の計算、1株からの単元未満株、配当・議決権・株主優待、注文方式・約定価格・スプレッドを扱う。
+- JPXの内国株売買単位・単元未満株の権利・単元制度の公式説明、SBI証券S株、楽天証券かぶミニの現行公式条件を確認。サービス条件は2026-11-18確認として本文に明記。
+- 記事HTML、本文比較図SVG、サムネイルSVG、manifestを作成。カテゴリ階層 `companies/company-analysis`、本文リンク4件、公開済み記事3件への関連記事台帳追加（`registry_updates`）を設定。
+- stock全パッケージの `files` / `updates` destination横断確認で衝突なし。stock原稿の `noindex,nofollow`、main内h1 1つ、本文CSS、関連記事リンク先、画像参照、サムネイルタイトル帯・透かしを確認。manifestは `sources_verified`・`internal_links_reviewed`・`backlinks_reviewed` のみtrue、残りは未確認のまま `audit_pending`。公開キュー未登録。
+- 主なコミット：記事HTML `7601adb5270033814c0afd781fb8adcaf52f3aa0`、本文図解 `3377161ccc2e2f0bb6010f0660083da6544f78b6`、サムネイル `0898721164abcbda7c2d0cf3946f7815cc938dc8`、manifest `fd59555e1fbf4f109f5a67bbbd63271f7e1338d7`。
+- 未実施：SVG/XMLパーサー検証、`preview.bat` による本番同等ビルド・プレビュー、PC/スマートフォンの表示確認、最終編集監査、ユーザーの内容確認。次工程はローカルプレビューを開き、完成稿の内容確認を1回行う。確認後に残りの監査・ready化・公開キュー登録へ進む。
+
 ## 2026-11-18 呼値の単位記事を監査・公開キュー登録
 
 - Private stock の `tick-size-guide` を内容監査。JPX公式「呼値の単位」ページ、2027年3月1日施行の運用通知、STR参考資料を照合し、現行呼値表・新A/B/C/Oテーブル・STRの時間加重平均・日次中央値・1.5/5.0の判定・年次見直し・初回移行条件を確認。
