@@ -319,3 +319,5 @@
 - 主な一次資料：JPX「呼値の単位」 https://www.jpx.co.jp/equities/trading/domestic/07.html 、JPX運用資料 https://www.jpx.co.jp/equities/trading/domestic/tvdivq0000008dfl-att/t13vrt000001jblm.pdf 、JPX STR解説 https://www.jpx.co.jp/equities/trading/domestic/tvdivq0000008dfl-att/t13vrt000001jbo1.pdf 、制度見直し資料 https://www.jpx.co.jp/rules-participants/public-comment/detail/d2/t13vrt0000014ecv-att/t13vrt0000014efa.pdf 。
 - stockコミット：記事本文の制度詳細追加 `99e112a2676687f4da907d4c8a57f6037d8df84d`、現行呼値表の全価格帯化 `56865ee30723e9b98af8e96e9f89250ef16a1968`、manifest概要更新 `eecef147bf7aa4fdaa21ce350ed5e9037adfd1a6`、現行表の説明調整 `f8773da7d8ce97f163b822009baf80c1f78ecc10`、編集品質ルール `bad2bfc6451afaf7192471001796796896713aed`。
 - **未完了**：stock原稿はdraftのまま。Windowsの `preview.bat` 再実行、本番同等build/validator、生成後HTMLとSVGの表示検査、記事の最終監査は未実施。公開キュー・公開サイトは変更していない。
+- 追加反映：現行呼値表の「代表的な価格帯」表現を全価格帯掲載に合わせて修正し、TOPIX500の説明箇所に株価指数解説、個別株と指数投資の比較箇所に各関連記事への本文リンクを追加。関連記事3件すべてのslugが本文HTML内に存在すること、目次アンカーの欠落がないこと、カテゴリ階層 `markets/market-trends` が公開側台帳に存在することを静的確認。最終stock記事コミット：`1c5ce6d0577437c1005f4fb3840c41adcdd2ab89`。
+- **最終確認待ち**：`preview.bat` による本番同等ビルド・validator・生成後表示、SVGの縮小表示確認、編集監査。stock原稿はdraft・noindexのまま、queue.jsonと公開リポジトリの記事HTMLは変更していない。
