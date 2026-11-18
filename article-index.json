@@ -172,6 +172,10 @@
             {
               "id": "ai-semiconductor",
               "label": "AI・半導体"
+            },
+            {
+              "id": "precious-metals",
+              "label": "金・貴金属"
             }
           ]
         },
