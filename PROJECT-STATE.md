@@ -302,3 +302,12 @@
 - コミット：記事HTML `05a60a756bb15eaef5797bf95e4a722d44393dd5`、サムネイル `11cd9bb33d71a7f59b8e1505b2bd3baebdec544b`、本文図解 `938a7186d6f62f16040c81c7c1c167ccdd81e984`、manifest `17a7e945564376755092ecee7bca1d05b00f9818`、おすすめ順 `47b2fefe84439abde1df23cb19fb978ffdf52249`。
 - 現時点では制作初稿。manifestの監査チェックはすべてfalse、draft_statusはaudit_pending。stock原稿のnoindex,nofollowを維持。公開キューには未登録で、公開リポジトリへの変更・公開操作は行っていない。
 - 未実施：記事全体の最終監査、図解・サムネイルのXML/縮小表示検証、本番同等preview.batによる生成・表示確認、ユーザー内容確認。JPXの2027年3月制度変更後の銘柄別適用呼値は、制度移行時に公表される最新情報を確認して更新する。
+
+## 2026-11-18 隔離プレビューのrobots変換不整合を根本修正
+- **発生事象**：呼値記事を含むstock全13記事を本番同等プレビューへ配置し、validate-content.pyを実行したところ、13記事すべてで「published article contains a noindex robots directive」となった。
+- **根本原因**：本番のscripts/publish.py prepareは公開側へコピーしたHTMLをindex,followに変換してからbuild/validateするが、preview-select.pyは隔離用indexのstatusだけpublishedにし、HTML側の公開時robots変換を再現していなかった。公開処理とプレビュー処理で変換実装も分かれていた。
+- **修正**：stockに共通関数scripts/robots_directives.pyを新設し、本番publisherと隔離プレビューが同じmake_article_indexable()を使用するよう統一。プレビューではfilesとupdatesのHTMLコピーに対して変換を適用後、本番build/validatorを実行。ブラウザ表示用__preview_article_*.htmlは生成後にnoindex,nofollowを付け直すため、プレビュー画面自体は検索登録されない。stock原稿はnoindexのまま維持し、validatorの条件は変更していない。
+- **再発防止**：共通変換関数の単体テスト4件を追加。preview-select.py起動時にpreview-select.py / publish.py / 共通関数 / テストのpy_compileと単体テストを自動実行し、失敗時はプレビュー処理を開始しない。ARTICLE-WORKFLOW.mdとUSER-FEEDBACK.mdへ原因・処理仕様・再発防止策を反映。
+- **stockコミット**：共通関数 9fc95a84ed497883d5f45318317ee391574a2bdb、preview変換適用 5edd5deb58b3a99ddf21f86cb1528ade26996e97、publisher共通化 c26c60f7a5d44420d49b096df360b8eae1106ba2、単体テスト d6ebd7b4ed7332b4641e9f3325983d4b804d90af、ARTICLE-WORKFLOW caee1d6affeee968bab45c52a902b613d0d74f16、USER-FEEDBACK 356e9191db6670fe7269f0bf68328bb68259a031、起動前の構文・単体テストゲート 6e32582fb8de20c532146550496257ef8e8af30d。
+- **検証**：共通関数と単体テストの同一ソースを隔離環境でpy_compileし、4テストすべて成功。GitHub上でpublisher/preview双方の共通関数呼び出しと、プレビュー後段でのnoindex付与を再取得して静的確認。
+- **未確認**：ユーザーWindows環境でのpreview.bat再実行、全13記事の本番同等build/validate通過、生成後ブラウザ表示。これらはローカル再実行で最終確認する。stock原稿のnoindex、公開リポジトリ、公開キューは変更していない。
