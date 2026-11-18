@@ -380,3 +380,13 @@
 - サムネイルを濃紺＋ゴールドの配色で再設計し、本文図解をドル建て価格×為替の計算フローに変更。サムネイル・本文図解のSVG XML構文を確認。本文は共通レイアウト用 `main.wrap > article.article`、h1 1つ、stockのnoindexを確認。本文リンクは公開済みの分散投資・為替リスク記事へ接続。
 - 主なコミット：本文改稿 `0cea92b7`、図解 `6a32c9bd`、サムネイル `f88ba53a`、計算例修正 `3551fc32`、サムネイル可読性修正 `312f67c0`、manifest更新 `f00301b8`。
 - `recommendation-order.json` には既に登録済み。公開キューには未登録。manifestは `audit_pending`。公開済み記事からの逆リンク確認と本番同等プレビューの表示・validator検証が未完了。ユーザーのプレビュー確認後、最終監査・ready化・キュー登録へ進む。
+
+
+## 2026-11-19 金投資記事の最終監査・公開キュー登録
+
+- ユーザーからプレビューOKを受領。最終監査を実施し、stock manifest を `ready`、必須6チェックすべてtrueへ更新。
+- NISAの参照先を金融庁の2026-11-16更新対象商品一覧と、成長投資枠の資産運用業協会案内へ分けて明確化。金地金の譲渡所得は国税庁No.3161、金価格要因はChicago Fed、需給統計はWorld Gold Council Q3 2026（2026-11-03公表、2026-09-30基準）と照合。
+- カテゴリ階層に `markets / investment-themes / precious-metals（金・貴金属）` を追加し、manifestのtopicを一致させた。
+- 内部リンク・遷移先、本文CSS、共通HTML構造、h1、stock noindex、画像参照、SVG構造、destination一意性を再確認。既存の分散投資・為替リスク記事を確認し、逆リンクは必須でないと判断。
+- 公開キュー `queue.json` の末尾へ `gold-investing.html` を `scheduled` として追加。即時公開はしていない。
+- 主なコミット：カテゴリ ea041535、NISA参照先 ddb05eeb、manifest ready 2bd06b2c、queue登録 035e9c71。
