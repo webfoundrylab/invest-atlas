@@ -5,8 +5,8 @@
 - 新規記事「デュレーションとは？金利変動による債券価格の動きと見方」を `duration-basics` としてPrivate stockへ作成。
 - 既存の「債券投資とは？」が債券の基本構造・利率・利回り・価格変動を扱うのに対し、本記事はデュレーションの平均回収期間、修正デュレーションによる金利感応度の計算、債券ファンドの平均値、コンベクシティ・信用リスク等の限界に役割を限定。
 - GPIFの用語集、財務省「ファイナンス」、東京海上アセットマネジメント、PIMCOの公式資料を確認。修正デュレーション2・5・8年について、金利0.5％・1％変化時の価格変化を一次近似で計算し、実際の価格変化と一致する保証がないことを明記。
-- 記事HTML、金利感応度の比較図SVG、サムネイルSVG、manifestを作成。カテゴリ階層は `basics/bond-investing/bond-basics`。本文内部リンクは既存債券投資記事、資産配分記事、投資対象記事を設定。
-- 主なコミット：記事HTML `6a31f55e`、本文図解 `d924fb2a`、サムネイル `0d8ababf`、manifest `95374d39`、プレビュー順 `ccfdfe23`、バックログ `3194308b`。
+- 記事HTML、金利感応度の比較図SVG、サムネイルSVG、manifestを作成。カテゴリ階層は `basics/bond-investing/bond-basics`。本文から既存公開記事3件（債券投資・資産配分・投資対象）への文脈リンクを配置。公開済み「債券投資とは？」のデュレーション節にも逆リンクを追加し、manifestのupdates/registry_updatesへ反映。リンク先の存在を確認。
+- 主なコミット：記事HTML 初稿 `6a31f55e`・リンク追加 `33dd739d`、本文図解 `d924fb2a`、サムネイル 初稿 `0d8ababf`・正式副題反映 `6cb97d2c`、manifest 初稿 `95374d39`・リンク監査反映 `4309a62b`・監査記録更新 `${mu.result.commit_sha.slice(0,8)}`、プレビュー順 `ccfdfe23`、バックログ `3194308b`。
 - 状態：`audit_pending`。公開キュー未登録。HTMLの最終編集監査、内部リンク・逆リンクの確定、SVG XML/実レンダリング、本番同等プレビュー（preview.bat）、PC/スマートフォン表示は未完了。ユーザーのプレビュー確認後に最終監査・必要な修正を行う。
 
 
@@ -390,7 +390,7 @@
 - 主な一次資料：JPX「呼値の単位」 https://www.jpx.co.jp/equities/trading/domestic/07.html 、JPX運用資料 https://www.jpx.co.jp/equities/trading/domestic/tvdivq0000008dfl-att/t13vrt000001jblm.pdf 、JPX STR解説 https://www.jpx.co.jp/equities/trading/domestic/tvdivq0000008dfl-att/t13vrt000001jbo1.pdf 、制度見直し資料 https://www.jpx.co.jp/rules-participants/public-comment/detail/d2/t13vrt0000014ecv-att/t13vrt0000014efa.pdf 。
 - stockコミット：記事本文の制度詳細追加 `99e112a2676687f4da907d4c8a57f6037d8df84d`、現行呼値表の全価格帯化 `56865ee30723e9b98af8e96e9f89250ef16a1968`、manifest概要更新 `eecef147bf7aa4fdaa21ce350ed5e9037adfd1a6`、現行表の説明調整 `f8773da7d8ce97f163b822009baf80c1f78ecc10`、編集品質ルール `bad2bfc6451afaf7192471001796796896713aed`。
 - **未完了**：stock原稿はdraftのまま。Windowsの `preview.bat` 再実行、本番同等build/validator、生成後HTMLとSVGの表示検査、記事の最終監査は未実施。公開キュー・公開サイトは変更していない。
-- 追加反映：現行呼値表の「代表的な価格帯」表現を全価格帯掲載に合わせて修正し、TOPIX500の説明箇所に株価指数解説、個別株と指数投資の比較箇所に各関連記事への本文リンクを追加。関連記事3件すべてのslugが本文HTML内に存在すること、目次アンカーの欠落がないこと、カテゴリ階層 `markets/market-trends` が公開側台帳に存在することを静的確認。最終stock記事コミット：`1c5ce6d0577437c1005f4fb3840c41adcdd2ab89`。
+- 追加反映：現行呼値表の「代表的な価格帯」表現を全価格帯掲載に合わせて修正し、TOPIX500の説明箇所に株価指数解説、個別株と指数投資の比較箇所に各関連記事への本文リンクを追加。関連記事3件すべてのslugが本文HTML内に存在すること、目次アンカーの欠落がないこと、カテゴリ階層 `markets/market-trends` が公開側台帳に存在することを静的確認。公開済み債券記事への逆リンク更新ファイル `e1f8c47a`。最終stock記事コミット：`1c5ce6d0577437c1005f4fb3840c41adcdd2ab89`。
 - **最終確認待ち**：`preview.bat` による本番同等ビルド・validator・生成後表示、SVGの縮小表示確認、編集監査。stock原稿はdraft・noindexのまま、queue.jsonと公開リポジトリの記事HTMLは変更していない。
 
 
