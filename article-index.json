@@ -966,7 +966,8 @@
         "investment-trust-distributions.html",
         "nisa-basics.html",
         "risk-return-basics.html",
-        "eps-basics.html"
+        "eps-basics.html",
+        "dividend-yield-basics.html"
       ],
       "publishedAt": "2026-10-30",
       "updatedAt": "2026-10-30",
@@ -1630,6 +1631,33 @@
       "publishedAt": "2026-11-18",
       "updatedAt": "2026-11-18",
       "publishOrder": 44
+    },
+    {
+      "slug": "dividend-yield-basics.html",
+      "title": "配当利回りとは？計算方法と高配当株の注意点",
+      "mainTitle": "配当利回りとは？",
+      "subtitle": "計算方法と高配当株の注意点",
+      "summary": "配当利回りの計算と予想・実績の違い、取得価格利回りとの使い分け、高利回りの落とし穴、配当性向・DOE・キャッシュフローから見る持続性を具体例で解説します。",
+      "category": "companies",
+      "subcategory": "dividends-shareholder-returns",
+      "topic": "stock-dividend-basics",
+      "tags": [
+        "配当",
+        "配当利回り",
+        "高配当株",
+        "配当性向",
+        "株式投資",
+        "企業分析"
+      ],
+      "status": "published",
+      "related": [
+        "stock-dividends.html",
+        "eps-basics.html"
+      ],
+      "thumbnail": "thumbnails/dividend-yield-basics.svg",
+      "publishedAt": "2026-11-20",
+      "updatedAt": "2026-11-20",
+      "publishOrder": 45
     }
   ],
   "pages": [

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="t d">
+<title id="t">配当利回りとは？ 計算方法と高配当株の注意点</title>
+<desc id="d">年間配当を株価で割ると配当利回りが求められる。株価が下がると利回りが高く見える場合がある。</desc>
+<rect width="1200" height="675" fill="#f4eee8"/>
+<g font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="270" letter-spacing="-8" fill="#9b765d" opacity=".075"><text x="18" y="400">Invest</text><text x="1180" y="605" text-anchor="end">Atlas</text></g>
+<rect x="24" y="22" width="1152" height="150" rx="22" fill="#fff" stroke="#a65b35" stroke-width="2"/>
+<text x="600" y="57" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="800" letter-spacing="1" fill="#a65b35">DIVIDEND YIELD</text>
+<text x="600" y="116" text-anchor="middle" font-family="sans-serif" font-size="58" font-weight="800" fill="#173b4d">配当利回りとは？</text>
+<text x="600" y="157" text-anchor="middle" font-family="sans-serif" font-size="39" font-weight="650" fill="#526879">計算方法と高配当株の注意点</text>
+<!-- Annual dividend -->
+<g>
+<rect x="75" y="245" width="300" height="270" rx="28" fill="#fff" stroke="#c47b4c" stroke-width="4"/>
+<text x="225" y="302" text-anchor="middle" font-family="sans-serif" font-size="42" font-weight="800" fill="#8f452d">年間配当</text>
+<g fill="#e5a36e" stroke="#8f452d" stroke-width="5">
+<circle cx="225" cy="390" r="58"/><circle cx="225" cy="390" r="43" fill="none" stroke-width="3"/>
+</g>
+<text x="225" y="405" text-anchor="middle" font-family="sans-serif" font-size="42" font-weight="800" fill="#fff">80円</text>
+<text x="225" y="477" text-anchor="middle" font-family="sans-serif" font-size="38" font-weight="700" fill="#493c36">1株あたり</text>
+</g>
+<!-- divide -->
+<g>
+<circle cx="600" cy="380" r="68" fill="#f0d9c7" stroke="#a65b35" stroke-width="4"/>
+<text x="600" y="400" text-anchor="middle" font-family="sans-serif" font-size="78" font-weight="800" fill="#8f452d">÷</text>
+<path d="M390 380 H510 M690 380 H810" stroke="#a65b35" stroke-width="8" stroke-linecap="round"/>
+<path d="M495 365 l15 15 -15 15 M795 365 l15 15 -15 15" fill="none" stroke="#a65b35" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<!-- stock price -->
+<g>
+<rect x="825" y="245" width="300" height="270" rx="28" fill="#fff" stroke="#7661a7" stroke-width="4"/>
+<text x="975" y="302" text-anchor="middle" font-family="sans-serif" font-size="42" font-weight="800" fill="#57427f">株価</text>
+<g fill="#a99ad2" stroke="#57427f" stroke-width="5"><rect x="910" y="345" width="130" height="95" rx="14"/><path d="M925 390 h100 M975 360 v65" stroke="#fff" stroke-width="5" fill="none"/></g>
+<text x="975" y="477" text-anchor="middle" font-family="sans-serif" font-size="38" font-weight="700" fill="#493c36">2,000円</text>
+</g>
+<!-- result -->
+<path d="M600 465 v70" stroke="#a65b35" stroke-width="7" stroke-linecap="round"/>
+<path d="M585 520 l15 15 15 -15" fill="none" stroke="#a65b35" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="290" y="548" width="620" height="94" rx="24" fill="#8f452d"/>
+<text x="600" y="610" text-anchor="middle" font-family="sans-serif" font-size="54" font-weight="800" fill="#fff">配当利回り ＝ 4%</text>
+</svg>
