@@ -464,4 +464,7 @@
 - 公開記事URL：`https://webfoundrylab.github.io/invest-atlas/tick-size-guide.html`。
 - 公開と同時に `stock-trading-costs.html` の本文へ呼値解説への文脈付き内部リンクを追加し、article-index.json の関連記事も相互に更新。
 - 情報確認日を2026年11月21日に更新。公開順46。
-- 公開コミットとPages Actionsの結果は公開後に追記する。
+- 公開リポジトリの公開コミット：`3dae9efe08f35180774ae694ee23db8e2c8f3fc1`。公開順46、情報確認日・公開日ともに2026年11月21日。
+- Pages workflow run `44915757545` は success。サイトマップ・関連記事データ生成、記事台帳/サイトマップ検証、artifact upload、GitHub Pages deploy がすべて成功。
+- 公開と同時に `stock-trading-costs.html` 本文へ呼値記事への内部リンクを追加し、記事台帳の関連記事も相互更新。
+- 実URLへのアクセス確認はこの環境ではエラーとなり、ブラウザでの最終表示は未確認。
