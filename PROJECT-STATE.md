@@ -468,3 +468,14 @@
 - Pages workflow run `44915757545` は success。サイトマップ・関連記事データ生成、記事台帳/サイトマップ検証、artifact upload、GitHub Pages deploy がすべて成功。
 - 公開と同時に `stock-trading-costs.html` 本文へ呼値記事への内部リンクを追加し、記事台帳の関連記事も相互更新。
 - 実URLへのアクセス確認はこの環境ではエラーとなり、ブラウザでの最終表示は未確認。
+
+
+## 2026-11-21 公開キュー未登録ストックのサムネイル見直し
+
+- Private stock の公開キュー未登録14記事を対象に、SVGサムネイルの明度・図柄・文字サイズ・矢印の重複・タイトル帯との整合を確認。
+- 濃色が続いていた6記事（キャッシュフロー計算書、為替ヘッジ、デュレーション、純資産総額、時価総額、実質金利）は、記事の図柄と文字コントラストを維持しながら、明るい中間色〜淡色背景へ再設計。暗色の連続を解消。
+- ETF・GDP・政策金利・REITの4記事は、カード内の矢印とカード間コネクターの重複を整理。副題より小さかった図柄内ラベルを拡大し、汎用ラベルを記事の主題に沿う表現へ変更。
+- 財務指標、iDeCo、インフレ、資産取り崩しの4記事は、明度・構図・文字のバランスに大きな問題がないため変更せず維持。
+- 修正した10件はGitHubから再取得し、SVGルート・タグ対応・基本的な構文構造を確認。全14件で1200×675のSVG形式とブランド透かしを確認。ブラウザでの実レンダリング・一覧縮小表示は未確認。
+- Private stock の記事原稿・manifest・公開キュー・公開サイトは変更していない。公開キュー未登録状態を維持。
+- 修正コミット：cash-flow-statement-guide `00b5f2fb`、currency-hedging-guide `9a022838`、duration-basics `b1063bb0`、fund-net-assets-guide `b4448a98`、market-capitalization-guide `6b4906e8`、real-interest-rate `bdf6c4a4`、etf-basics `90cf3a4a`、gdp-basics `97784391`、policy-rate-basics `8c0ce16f`、reit-basics `b9210ace`。
