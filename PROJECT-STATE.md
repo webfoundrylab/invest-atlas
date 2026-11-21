@@ -479,3 +479,6 @@
 - 修正した10件はGitHubから再取得し、SVGルート・タグ対応・基本的な構文構造を確認。全14件で1200×675のSVG形式とブランド透かしを確認。ブラウザでの実レンダリング・一覧縮小表示は未確認。
 - Private stock の記事原稿・manifest・公開キュー・公開サイトは変更していない。公開キュー未登録状態を維持。
 - 修正コミット：cash-flow-statement-guide `00b5f2fb`、currency-hedging-guide `9a022838`、duration-basics `b1063bb0`、fund-net-assets-guide `b4448a98`、market-capitalization-guide `6b4906e8`、real-interest-rate `bdf6c4a4`、etf-basics `90cf3a4a`、gdp-basics `97784391`、policy-rate-basics `8c0ce16f`、reit-basics `b9210ace`。
+
+
+- **同日再調整**：初回修正は淡色に寄りすぎたため、ユーザー指摘を受けて14枚すべてを中明度・有彩色の背景へ再調整。キャッシュフロー計算書・為替ヘッジのグラデーションも両端が淡色にならないよう修正。デュレーション、純資産総額、時価総額、実質金利のタイトル文字色は背景色から独立した濃色へ修正。サムネイルの色調は暗色一辺倒にも淡色一辺倒にもならない中間域を基準とする。
