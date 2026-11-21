@@ -457,3 +457,11 @@
 - 公開側の `article-index.json` に登録し、既存「株式の配当金」記事の関連記事にも追加。
 - 直近のサムネイル配色と重複しないよう、緑系から暖色・紫系へ色相を変更。タイトル・図柄の構造は維持。
 - 公開リポジトリへの反映後、GitHub Pages workflowで生成・検証・デプロイを確認する。
+
+## 2026-11-21 呼値の単位の記事を公開
+- Private stock のキュー先頭 `tick-size-guide.html` を公開。
+- JPX公式の現行呼値表、2027年3月1日導入のA・B・C・Oテーブル、STR測定・中央値による年次見直し、初回適用の銘柄別公表予定を再確認。
+- 公開記事URL：`https://webfoundrylab.github.io/invest-atlas/tick-size-guide.html`。
+- 公開と同時に `stock-trading-costs.html` の本文へ呼値解説への文脈付き内部リンクを追加し、article-index.json の関連記事も相互に更新。
+- 情報確認日を2026年11月21日に更新。公開順46。
+- 公開コミットとPages Actionsの結果は公開後に追記する。

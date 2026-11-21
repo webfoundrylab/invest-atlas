@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>呼値の単位とは？株価の刻みと指値注文・スプレッドの関係｜Invest Atlas</title>
+<meta name="description" content="呼値（よびね）の単位の仕組みを、東証の現行制度と2027年3月1日の変更後の呼値テーブルA・B・C・O、STRによる銘柄別判定・年次見直しまで、公式資料に基づいて解説します。">
+<meta name="robots" content="index,follow">
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f5f7f8;color:#172b3d;font:16px/1.85 system-ui,-apple-system,"Segoe UI",sans-serif}a{color:#176d65;text-underline-offset:3px}
+.article{min-width:0}.eyebrow{font-size:.82rem;font-weight:800;letter-spacing:.08em;color:#176d65}.meta{font-size:.85rem;color:#5c6d7a}.lead{font-size:1.08rem;color:#405565}
+h1{font-size:clamp(1.8rem,4vw,2.65rem);line-height:1.35;margin:.5em 0}h2{font-size:1.42rem;line-height:1.45;margin:2.1em 0 .65em;border-bottom:2px solid #dce4e8;padding-bottom:.4em}h3{font-size:1.12rem;margin:1.45em 0 .4em}
+.title-main,.title-subtitle{display:block}.title-subtitle{font-size:.62em;line-height:1.5;font-weight:650;color:#536879;margin-top:.22em}
+.callout{margin:20px 0;padding:15px 18px;background:#edf7f4;border-left:4px solid #168276;border-radius:8px}
+.toc{margin:24px 0;padding:17px 21px;background:#f4f8f9;border:1px solid #dce4e8;border-radius:12px}.toc ol{margin:0;padding-left:1.4em}.toc li{margin:.25em 0}
+.table-wrap{overflow-x:auto;margin:18px 0}table{width:100%;border-collapse:collapse;font-size:.93rem}th,td{padding:11px;border:1px solid #dce4e8;text-align:left;vertical-align:top}th{background:#edf4f5}
+.diagram{margin:24px 0;padding:14px;border:1px solid #dce4e8;border-radius:13px;background:#fbfdfd}.diagram img{display:block;width:100%;height:auto}.diagram figcaption{margin-top:9px;font-size:.88rem;color:#536879}
+.formula{margin:18px 0;padding:16px;background:#f2f6fa;border-radius:10px;text-align:center;font-size:1.12rem;font-weight:800}.sources li{margin:.6em 0}
+@media(max-width:600px){h2{font-size:1.28rem}.toc{padding:14px}.diagram{padding:8px}th,td{padding:8px;font-size:.86rem}}
+</style></head>
+<body>
+<main class="wrap"><article class="article">
+<p class="eyebrow">STOCK MARKET / TICK SIZE</p>
+<h1><span class="title-main">呼値の単位とは？</span><span class="title-subtitle">株価の刻みと指値注文・スプレッドの関係</span></h1>
+<p class="meta">情報確認日：2026年11月21日</p>
+<p class="lead">株式の注文画面で「2,500円」や「2,501円」といった価格を指定するとき、希望する価格をどの刻み幅で入力できるかは、銘柄や株価水準によって決まっています。この価格の最小刻みが、呼値（よびね）の単位です。呼値は単なる入力ルールではなく、注文できる価格、注文板での優先順位、スプレッドや約定価格にも関係します。</p>
+<div class="callout"><strong>先に結論：</strong>呼値の単位は、取引所で注文できる価格の最小刻みです。例えば呼値が1円なら2,500円・2,501円は指定できますが、2,500.5円は指定できません。東証では2027年3月1日から、銘柄ごとの流動性を踏まえて呼値を決める方式へ変更される予定です。</div>
+<nav class="toc" aria-label="この記事の目次"><strong>この記事でわかること</strong><ol>
+<li><a href="#definition">呼値の単位とは</a></li><li><a href="#current">現在の東証の呼値の単位</a></li><li><a href="#example">指値注文でどう影響する？</a></li><li><a href="#spread">スプレッド・流動性との関係</a></li><li><a href="#change">2027年3月の制度変更</a></li><li><a href="#tables">変更後の呼値テーブル</a></li><li><a href="#review">STRによる判定と年次見直し</a></li><li><a href="#transition">2027年3月の初回適用</a></li><li><a href="#check">注文前に確認すること</a></li>
+</ol></nav>
+
+<h2 id="definition">1. 呼値の単位とは</h2>
+<p>呼値の単位とは、取引所で株式などの注文を出すときに指定できる価格の最小刻み幅です。「ティックサイズ」と呼ばれることもあります。呼値が1円の銘柄なら、注文価格は原則として1円刻みで指定します。呼値が0.5円なら0.5円刻み、0.1円なら0.1円刻みです。</p>
+<p>呼値の単位は、売買単位（通常の国内株式では100株など）とは別のルールです。売買単位は何株単位で注文するか、呼値は1株あたりの価格をどの刻みで指定できるかを定めます。</p>
+<p>個別株を直接選ぶ投資と、指数に連動する商品を通じて市場全体へ投資する方法は、投資対象の選び方が異なります。両者の違いは<a href="individual-stock-vs-index.html">個別株投資とインデックス投資の比較</a>で整理しています。</p>
+<figure class="diagram"><img src="images/tick-size-guide-order-ladder.svg" alt="呼値が1円の場合は2,500円、2,501円、2,502円と1円刻みになり、2,500.5円は注文できないことを示す図"><figcaption>呼値が1円なら1円刻みで価格を指定します。刻みの間にある価格は取引所へ注文できません。</figcaption></figure>
+<p>呼値は注文できる価格を制限しますが、株価が必ずその刻み幅ずつ動くという意味ではありません。売買が成立する価格は、買い注文と売り注文の状況、価格優先・時間優先の原則などによって決まります。</p>
+
+<h2 id="current">2. 現在の東証の呼値の単位</h2>
+<p>2026年11月18日時点の東証では、株価水準に加えて銘柄区分などに応じて呼値の単位が定められています。価格帯ごとの呼値は次のとおりです。</p>
+<div class="table-wrap"><table><thead><tr><th>株価の水準</th><th>TOPIX500構成銘柄</th><th>売買単位1口のETF等</th><th>その他の銘柄</th></tr></thead><tbody>
+<tr><th>1,000円以下</th><td>0.1円</td><td>1円</td><td>1円</td></tr>
+<tr><th>1,000円超〜3,000円以下</th><td>0.5円</td><td>1円</td><td>1円</td></tr>
+<tr><th>3,000円超〜5,000円以下</th><td>1円</td><td>1円</td><td>5円</td></tr>
+<tr><th>5,000円超〜10,000円以下</th><td>1円</td><td>1円</td><td>10円</td></tr>
+<tr><th>10,000円超〜30,000円以下</th><td>5円</td><td>5円</td><td>10円</td></tr>
+<tr><th>30,000円超〜50,000円以下</th><td>10円</td><td>10円</td><td>50円</td></tr>
+<tr><th>50,000円超〜100,000円以下</th><td>10円</td><td>10円</td><td>100円</td></tr>
+<tr><th>100,000円超〜300,000円以下</th><td>50円</td><td>50円</td><td>100円</td></tr>
+<tr><th>300,000円超〜500,000円以下</th><td>100円</td><td>100円</td><td>500円</td></tr>
+<tr><th>500,000円超〜1,000,000円以下</th><td>100円</td><td>100円</td><td>1,000円</td></tr>
+<tr><th>1,000,000円超〜3,000,000円以下</th><td>500円</td><td>500円</td><td>1,000円</td></tr>
+<tr><th>3,000,000円超〜5,000,000円以下</th><td>1,000円</td><td>1,000円</td><td>5,000円</td></tr>
+<tr><th>5,000,000円超〜10,000,000円以下</th><td>1,000円</td><td>1,000円</td><td>10,000円</td></tr>
+<tr><th>10,000,000円超〜30,000,000円以下</th><td>5,000円</td><td>5,000円</td><td>10,000円</td></tr>
+<tr><th>30,000,000円超〜50,000,000円以下</th><td>10,000円</td><td>10,000円</td><td>50,000円</td></tr>
+<tr><th>50,000,000円超</th><td>10,000円</td><td>10,000円</td><td>100,000円</td></tr>
+</tbody></table></div>
+<p>TOPIX500構成銘柄とは、TOPIX100とTOPIX Mid400の構成銘柄を合わせた区分です。なお、ETF等の呼値欄は、売買単位が10口以上のETF等にも適用されます。実際の注文では、銘柄・取引市場・売買単位に対応する最新の呼値を証券会社の注文画面や取引所の案内で確認してください。</p>
+<p>TOPIX500は株価指数の構成銘柄区分です。日経平均やTOPIXなど、指数そのものの仕組みを先に整理したい場合は、<a href="stock-market-index-basics.html">株価指数とは？日経平均・TOPIX・S&amp;P 500の違い</a>も参考になります。</p>
+<p>例えば株価2,500円の場合、TOPIX500構成銘柄の呼値は0.5円、それ以外の一般的な銘柄では1円です。株価4,000円の場合は、TOPIX500構成銘柄なら1円、その他の銘柄なら5円となります。同じ株価水準でも銘柄区分によって指定できる価格が異なる点が重要です。</p>
+
+<h2 id="example">3. 指値注文でどう影響する？</h2>
+<p>指値（さしね）注文では、買いなら指定価格以下、売りなら指定価格以上での約定を求めます。ただし、呼値の単位に合わない価格は注文できません。</p>
+<div class="table-wrap"><table><thead><tr><th>例：株価2,500円付近</th><th>呼値1円の銘柄</th><th>呼値0.5円の銘柄</th></tr></thead><tbody>
+<tr><th>2,500円</th><td>指定できる</td><td>指定できる</td></tr>
+<tr><th>2,500.5円</th><td>指定できない</td><td>指定できる</td></tr>
+<tr><th>2,501円</th><td>指定できる</td><td>指定できる</td></tr>
+<tr><th>2,501.5円</th><td>指定できない</td><td>指定できる</td></tr>
+</tbody></table></div>
+<p>例えば、買い注文が2,500円、売り注文が2,501円に並んでいるとします。呼値が1円なら、その間に2,500.5円の買い指値を置くことはできません。一方、呼値が0.5円なら、2,500.5円で買い指値を出し、既存の2,500円の買い注文より高い価格で順番を得ることができます。ただし、売り注文が2,500.5円以下に出ていなければ、その注文はすぐには成立しません。</p>
+<p>同じ価格に複数の注文がある場合は、原則として先に出された注文が優先されます。呼値が細かいと価格の選択肢が増え、既存注文よりわずかに有利な価格を指定できる一方、注文を出す価格によっては板の順番や約定の可能性も変わります。</p>
+
+<h2 id="spread">4. スプレッド・流動性との関係</h2>
+<p>スプレッドは、最も高い買い気配と最も安い売り気配の差です。呼値の単位は、スプレッドが何円になるかを直接決めるものではありませんが、注文板に並べられる価格の間隔を決めるため、スプレッドや価格形成に影響します。</p>
+<div class="formula">STR ＝ 最良売気配と最良買気配の差 ÷ 呼値の単位</div>
+<p>例えば、最良買気配が2,999円、最良売気配が3,002円で、呼値が1円なら、気配の差は3円、つまり3ティック分です。このときのSTRは3.0です。STRが小さいほど、スプレッドに対して呼値が相対的に大きく、価格を細かく提示できない状態を示します。反対にSTRが大きいほど、呼値が相対的に細かい状態を示します。</p>
+<p>ただし、制度上のSTRは、ある瞬間の板だけで判定するわけではありません。立会時間中の最良売気配と最良買気配の差を、その時点の呼値で割り、時間加重平均して日次STRを算出します。売買停止や特別気配など、気配差を算出できない時間は対象から除かれます。呼値の適切さを、継続的な気配状況から評価する仕組みです。</p>
+<p>呼値が粗すぎると、より良い価格を提示する余地がなくなり、投資家の執行コストが高くなる可能性があります。一方、細かすぎると注文が複数の価格に分散し、板が薄くなったり値動きが不安定になったりする可能性があります。東証の制度変更は、銘柄ごとの流動性に対して呼値を適切な水準に調整することを狙っています。</p>
+<p>なお、スプレッドや注文板の厚みは、売買高、ニュース、時間帯、市場環境などでも変わります。呼値だけを見て売買コストを判断せず、注文時点の気配と数量を確認してください。売買手数料とスプレッドの違いは、<a href="stock-trading-costs.html">株式の売買手数料とスプレッドの解説</a>で詳しく扱っています。</p>
+
+<h2 id="change">5. 2027年3月1日の制度変更</h2>
+<p>東証は2027年3月1日から、現行のTOPIX500構成銘柄かどうかを基準に呼値を分ける方式をやめ、銘柄ごとの流動性をSTR（Spread to Tick Ratio）で評価して呼値テーブルを適用する方式へ変更します。対象は東証に上場する株券です。株価水準ごとの刻み幅そのものも、新しい4種類のテーブルに置き換わります。</p>
+<p>この変更は、すべての銘柄の呼値が一律に細かくなるという意味ではありません。流動性に比べて呼値が粗すぎる銘柄では刻みを細かくし、細かすぎる銘柄では刻みを粗くする方向に調整します。従来のTOPIX500区分では同じ区分の銘柄に同じ基準を当てはめていましたが、新制度では銘柄ごとの気配状況を反映します。</p>
+<div class="callout"><strong>変更の要点：</strong>2027年3月1日以降は「TOPIX500かどうか」だけでは呼値を判断できません。銘柄ごとに割り当てられたA・B・C・Oのテーブルと、その時点の株価に対応する価格帯を確認します。</div>
+
+<h2 id="tables">6. 変更後の呼値テーブルA・B・C・O</h2>
+<p>新制度では、株価の価格帯と銘柄に割り当てられたテーブルの組み合わせで呼値が決まります。A・B・Cは流動性に応じた3段階、Oは売買単位が1株・1口の銘柄向けの専用テーブルです。</p>
+<div class="table-wrap"><table><thead><tr><th>テーブル</th><th>名称</th><th>位置づけ</th></tr></thead><tbody>
+<tr><th>A</th><td>Active</td><td>超高流動性</td></tr>
+<tr><th>B</th><td>Basic</td><td>高流動性</td></tr>
+<tr><th>C</th><td>Calm</td><td>中流動性</td></tr>
+<tr><th>O</th><td>One Unit</td><td>売買単位1株・1口の銘柄向け</td></tr>
+</tbody></table></div>
+<p>東証上場株券は原則としてSTRに基づきA・B・Cを適用します。ETF・ETN・レバレッジ商品は、売買単位が1口の銘柄を除き、STRにかかわらずAを適用します。売買単位が1株・1口の銘柄は、円未満の約定が発生しないようOを適用します。Oの対象には一部のETF・ETN・レバレッジ商品、REIT、インフラファンド、優先出資証券などが含まれます。</p>
+<p>以下はJPXが公表している2027年3月1日以降の呼値テーブルです。価格帯の上限を含み、上限を超えると次の行の呼値に切り替わります。</p>
+<div class="table-wrap"><table><thead><tr><th>株価</th><th>A</th><th>B</th><th>C</th><th>O</th></tr></thead><tbody>
+<tr><th>100円以下</th><td>0.1円</td><td>0.1円</td><td>0.1円</td><td>1円</td></tr>
+<tr><th>100円超〜500円以下</th><td>0.1円</td><td>0.1円</td><td>0.5円</td><td>1円</td></tr>
+<tr><th>500円超〜1,000円以下</th><td>0.1円</td><td>0.1円</td><td>1円</td><td>1円</td></tr>
+<tr><th>1,000円超〜2,000円以下</th><td>0.2円</td><td>0.5円</td><td>2円</td><td>1円</td></tr>
+<tr><th>2,000円超〜5,000円以下</th><td>0.5円</td><td>1円</td><td>5円</td><td>1円</td></tr>
+<tr><th>5,000円超〜10,000円以下</th><td>1円</td><td>2円</td><td>10円</td><td>1円</td></tr>
+<tr><th>10,000円超〜20,000円以下</th><td>2円</td><td>5円</td><td>20円</td><td>2円</td></tr>
+<tr><th>20,000円超〜50,000円以下</th><td>5円</td><td>10円</td><td>50円</td><td>5円</td></tr>
+<tr><th>50,000円超〜100,000円以下</th><td>10円</td><td>20円</td><td>100円</td><td>10円</td></tr>
+<tr><th>100,000円超〜200,000円以下</th><td>20円</td><td>50円</td><td>200円</td><td>20円</td></tr>
+<tr><th>200,000円超〜500,000円以下</th><td>50円</td><td>100円</td><td>500円</td><td>50円</td></tr>
+<tr><th>500,000円超〜1,000,000円以下</th><td>100円</td><td>200円</td><td>1,000円</td><td>100円</td></tr>
+<tr><th>1,000,000円超〜2,000,000円以下</th><td>200円</td><td>500円</td><td>2,000円</td><td>200円</td></tr>
+<tr><th>2,000,000円超〜5,000,000円以下</th><td>500円</td><td>1,000円</td><td>5,000円</td><td>500円</td></tr>
+<tr><th>5,000,000円超〜10,000,000円以下</th><td>1,000円</td><td>2,000円</td><td>10,000円</td><td>1,000円</td></tr>
+<tr><th>10,000,000円超〜20,000,000円以下</th><td>2,000円</td><td>5,000円</td><td>20,000円</td><td>2,000円</td></tr>
+<tr><th>20,000,000円超〜50,000,000円以下</th><td>5,000円</td><td>10,000円</td><td>50,000円</td><td>5,000円</td></tr>
+<tr><th>50,000,000円超</th><td>10,000円</td><td>20,000円</td><td>100,000円</td><td>10,000円</td></tr>
+</tbody></table></div>
+<p>例えば株価3,000円の銘柄なら、Aは0.5円、Bは1円、Cは5円です。同じ株価でも、どのテーブルが割り当てられているかで注文できる価格の刻みが変わります。テーブル名は銘柄の業績や投資価値の格付けではなく、呼値の設定区分です。</p>
+
+<h2 id="review">7. STRによる判定と年次見直し</h2>
+<p>STRは、最良売気配と最良買気配の差（名目スプレッド）が、呼値の何本分に相当するかを表します。東証は日次STRの中央値について、1.5〜5.0を適切な範囲としています。中央値がこの範囲より小さければ呼値を細かくし、大きければ呼値を粗くする方向に見直します。</p>
+<div class="table-wrap"><table><thead><tr><th>現在のテーブル</th><th>日次STRの中央値が1.5未満</th><th>1.5以上5.0以下</th><th>5.0超</th></tr></thead><tbody>
+<tr><th>A</th><td>Aのまま</td><td>Aのまま</td><td>Bへ</td></tr>
+<tr><th>B</th><td>Aへ</td><td>Bのまま</td><td>Cへ</td></tr>
+<tr><th>C</th><td>Bへ</td><td>Cのまま</td><td>Cのまま</td></tr>
+<tr><th>O</th><td colspan="3">STRによるテーブル変更なし</td></tr>
+</tbody></table></div>
+<p>見直しは毎年行われます。評価期間は前年8月から当年4月末までの9か月間で、その期間の日次STRの中央値を使い、原則として毎年8月第1営業日に新しいテーブルを適用します。見直し結果は6月初めを目途にJPXウェブサイトのマーケットニュースなどで公表されます。</p>
+<p>ここでいう「中央値」は、9か月間のすべての板情報を単純平均するという意味ではありません。まず各日の立会時間中の気配差を時間加重平均して日次STRを求め、その日次STRを評価期間について並べた中央値でテーブルを判定します。</p>
+
+<h2 id="transition">8. 2027年3月1日の初回適用と銘柄別テーブルの公表</h2>
+<p>通常の年次見直しとは別に、制度開始時の初回適用テーブルは移行措置として決定されます。JPXの運用資料では、現行の呼値テーブルと、2026年3月から同年11月末までの日次STR値の中央値などを勘案し、2027年1月を目途に銘柄別の適用テーブルを公表するとしています。</p>
+<p>したがって、2026年11月18日時点では、A・B・C・Oそれぞれの呼値刻みと判定方法は確認できますが、個々の東証銘柄に初回どのテーブルが割り当てられるかは、まだ公表前です。銘柄別の適用結果を推測して断定することはできません。2027年1月以降にJPXの公表情報を確認してください。</p>
+<div class="callout"><strong>投資家が確認すること：</strong>2027年3月1日以降に注文する場合は、従来のTOPIX500区分ではなく、JPXの銘柄別公表情報や証券会社の注文画面で、その銘柄に適用されるテーブルを確認します。</div>
+
+<h2 id="check">9. 注文前に確認すること</h2>
+<ol>
+<li><strong>取引市場：</strong>東証、名証、PTSなど、どの市場へ注文を出すのか確認する。市場によって呼値のルールが異なる場合があります。</li>
+<li><strong>銘柄区分・売買単位：</strong>2027年3月1日以降は、銘柄別のA・B・C・Oの適用テーブルを確認する。</li>
+<li><strong>株価水準：</strong>価格帯によって適用される呼値が変わるため、注文価格に対応する刻みを確認する。</li>
+<li><strong>注文画面の価格候補：</strong>指定したい価格が呼値に合っているか確認する。入力できない場合は、証券会社の案内で理由を確かめる。</li>
+<li><strong>板とスプレッド：</strong>最良気配の価格差だけでなく、その価格に並ぶ注文数量も確認する。</li>
+<li><strong>制度変更：</strong>2027年3月1日以降は新テーブルと銘柄別の割当を確認し、年次見直し後は最新情報に更新する。</li>
+</ol>
+<p>注文方法そのものや、証券会社へ支払う売買手数料も合わせて理解すると、実際の取引コストを整理しやすくなります。<a href="stock-trading-costs.html">株式の売買手数料とは？無料条件とスプレッドの注意点</a>もあわせて確認してください。</p>
+
+<h2>まとめ</h2>
+<ul>
+<li>呼値の単位は、取引所で注文できる価格の最小刻み幅。</li>
+<li>適用される刻みは株価水準や銘柄区分などによって異なる。</li>
+<li>呼値は指値注文の価格選択肢や注文板の価格順位に関係し、スプレッドや約定にも影響し得る。</li>
+<li>2027年3月1日から東証ではSTRに基づく銘柄別テーブルA・B・C・Oへ移行する。</li><li>初回の銘柄別割当は2027年1月を目途に公表予定で、以後は原則毎年8月に見直される。</li>
+<li>実際の注文では、取引市場・銘柄・注文時点の最新の呼値を確認する。</li>
+</ul>
+<h2>参考資料</h2>
+<ul class="sources">
+<li><a href="https://www.jpx.co.jp/equities/trading/domestic/07.html">日本取引所グループ「呼値の単位」</a> — 現行呼値表、新制度の4テーブル一覧。</li>
+<li><a href="https://www.jpx.co.jp/equities/trading/domestic/tvdivq0000008dfl-att/t13vrt000001jblm.pdf">東京証券取引所「呼値の単位の更なる適正化に伴う運用等の取扱いについて」</a> — STRの測定、年次見直し、新規上場銘柄、2027年3月の初回移行。</li>
+<li><a href="https://www.jpx.co.jp/equities/trading/domestic/tvdivq0000008dfl-att/t13vrt000001jbo1.pdf">東京証券取引所「（参考）STRについて」</a> — STRの具体例、1.5〜5.0の適正範囲、テーブル変更基準。</li>
+<li><a href="https://www.jpx.co.jp/rules-participants/public-comment/detail/d2/t13vrt0000014ecv-att/t13vrt0000014efa.pdf">東京証券取引所「現物市場の更なる機能強化に向けた売買制度の見直しについて」</a> — 制度変更の背景と目的。</li>
+<li><a href="https://www.jpx.co.jp/equities/trading/domestic/04.html">日本取引所グループ「売買成立の方法」</a> — 価格優先・時間優先など売買成立の仕組み。</li>
+</ul>
+</article></main></body></html>

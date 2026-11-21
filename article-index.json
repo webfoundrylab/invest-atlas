@@ -1564,7 +1564,8 @@
       "status": "published",
       "related": [
         "individual-stock-vs-index.html",
-        "investment-trust-fees.html"
+        "investment-trust-fees.html",
+        "tick-size-guide.html"
       ],
       "thumbnail": "thumbnails/stock-trading-costs.svg",
       "publishedAt": "2026-11-16",
@@ -1658,6 +1659,34 @@
       "publishedAt": "2026-11-20",
       "updatedAt": "2026-11-20",
       "publishOrder": 45
+    },
+    {
+      "slug": "tick-size-guide.html",
+      "title": "呼値の単位とは？株価の刻みと指値注文・スプレッドの関係",
+      "mainTitle": "呼値の単位とは？",
+      "subtitle": "株価の刻みと指値注文・スプレッドの関係",
+      "summary": "東証の呼値の単位について、現行の価格帯別テーブル、指値注文・スプレッドへの影響、2027年3月1日から導入されるA・B・C・Oの全呼値テーブル、STRの測定方法・判定基準・年次見直し、初回適用テーブルの公表予定まで公式資料に基づいて解説。",
+      "category": "markets",
+      "subcategory": "market-trends",
+      "tags": [
+        "呼値",
+        "呼値の単位",
+        "ティックサイズ",
+        "指値注文",
+        "スプレッド",
+        "株式投資",
+        "JPX"
+      ],
+      "status": "published",
+      "related": [
+        "stock-trading-costs.html",
+        "individual-stock-vs-index.html",
+        "stock-market-index-basics.html"
+      ],
+      "thumbnail": "thumbnails/tick-size-guide.svg",
+      "publishedAt": "2026-11-21",
+      "updatedAt": "2026-11-21",
+      "publishOrder": 46
     }
   ],
   "pages": [
