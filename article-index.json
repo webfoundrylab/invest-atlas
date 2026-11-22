@@ -1660,7 +1660,7 @@
       ],
       "thumbnail": "thumbnails/dividend-yield-basics.svg",
       "publishedAt": "2026-11-20",
-      "updatedAt": "2026-11-20",
+      "updatedAt": "2026-11-23",
       "publishOrder": 45
     },
     {
@@ -1688,7 +1688,7 @@
       ],
       "thumbnail": "thumbnails/tick-size-guide.svg",
       "publishedAt": "2026-11-21",
-      "updatedAt": "2026-11-21",
+      "updatedAt": "2026-11-23",
       "publishOrder": 46
     },
     {
@@ -1718,7 +1718,7 @@
       ],
       "thumbnail": "thumbnails/unit-shares-guide.svg",
       "publishedAt": "2026-11-22",
-      "updatedAt": "2026-11-22",
+      "updatedAt": "2026-11-23",
       "publishOrder": 47
     }
   ],
