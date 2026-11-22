@@ -967,7 +967,8 @@
         "nisa-basics.html",
         "risk-return-basics.html",
         "eps-basics.html",
-        "dividend-yield-basics.html"
+        "dividend-yield-basics.html",
+        "unit-shares-guide.html"
       ],
       "publishedAt": "2026-10-30",
       "updatedAt": "2026-10-30",
@@ -1536,7 +1537,8 @@
         "diversification-basics.html",
         "risk-tolerance-guide.html",
         "investment-trust-fees.html",
-        "roe-basics.html"
+        "roe-basics.html",
+        "unit-shares-guide.html"
       ],
       "thumbnail": "thumbnails/individual-stock-vs-index.svg",
       "publishedAt": "2026-11-15",
@@ -1565,7 +1567,8 @@
       "related": [
         "individual-stock-vs-index.html",
         "investment-trust-fees.html",
-        "tick-size-guide.html"
+        "tick-size-guide.html",
+        "unit-shares-guide.html"
       ],
       "thumbnail": "thumbnails/stock-trading-costs.svg",
       "publishedAt": "2026-11-16",
@@ -1687,6 +1690,36 @@
       "publishedAt": "2026-11-21",
       "updatedAt": "2026-11-21",
       "publishOrder": 46
+    },
+    {
+      "slug": "unit-shares-guide.html",
+      "title": "単元株とは？100株単位の売買と単元未満株の違い",
+      "mainTitle": "単元株とは？",
+      "subtitle": "100株単位の売買と単元未満株の違い",
+      "summary": "日本株の100株単位の仕組み、購入代金の計算、1株から買える単元未満株の特徴を解説。配当金・議決権・株主優待、証券会社ごとの注文方法・約定価格・スプレッドの違いを具体例で整理します。",
+      "category": "companies",
+      "subcategory": "company-analysis",
+      "tags": [
+        "単元株",
+        "単元未満株",
+        "100株",
+        "1株投資",
+        "株式投資",
+        "議決権",
+        "配当金",
+        "株主優待"
+      ],
+      "status": "published",
+      "related": [
+        "stock-trading-costs.html",
+        "individual-stock-vs-index.html",
+        "stock-dividends.html",
+        "dividend-yield-basics.html"
+      ],
+      "thumbnail": "thumbnails/unit-shares-guide.svg",
+      "publishedAt": "2026-11-22",
+      "updatedAt": "2026-11-22",
+      "publishOrder": 47
     }
   ],
   "pages": [
