@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+<title id="title">ROAとは？ 総資産利益率の計算方法とROEとの違い</title>
+<desc id="desc">当期純利益6,000万円を期中平均総資産5億円で割るとROAは12%。利益率6%と総資産回転率2回の掛け算でも表せる。</desc>
+<rect width="1200" height="675" fill="#eaf1ee"/>
+<g font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="270" letter-spacing="-8" fill="#4c8b79" opacity=".07"><text x="18" y="400">Invest</text><text x="1180" y="605" text-anchor="end">Atlas</text></g>
+<rect x="24" y="22" width="1152" height="150" rx="22" fill="#fff" stroke="#397c68" stroke-width="2"/>
+<text x="600" y="57" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="800" letter-spacing="1" fill="#397c68">RETURN ON ASSETS</text>
+<text x="600" y="116" text-anchor="middle" font-family="sans-serif" font-size="48" font-weight="800" fill="#17354a">ROAとは？</text>
+<text x="600" y="157" text-anchor="middle" font-family="sans-serif" font-size="36" font-weight="650" fill="#405565">総資産利益率の計算方法とROEとの違い</text>
+<g font-family="sans-serif" text-anchor="middle">
+<rect x="55" y="240" width="300" height="190" rx="24" fill="#e0efe8" stroke="#287e74" stroke-width="4"/>
+<text x="205" y="300" font-size="38" font-weight="800" fill="#176d65">当期純利益</text>
+<text x="205" y="380" font-size="52" font-weight="900" fill="#173b4d">6,000万円</text>
+<text x="390" y="350" font-size="64" font-weight="900" fill="#287e74">÷</text>
+<rect x="440" y="240" width="310" height="190" rx="24" fill="#f7eadf" stroke="#b66d43" stroke-width="4"/>
+<text x="595" y="300" font-size="38" font-weight="800" fill="#98552f">平均総資産</text>
+<text x="595" y="380" font-size="52" font-weight="900" fill="#173b4d">5億円</text>
+<text x="785" y="350" font-size="64" font-weight="900" fill="#287e74">＝</text>
+<rect x="850" y="240" width="295" height="190" rx="24" fill="#173f59"/>
+<text x="997" y="300" font-size="42" font-weight="800" fill="#d9eee5">ROA</text>
+<text x="997" y="390" font-size="78" font-weight="900" fill="#fff">12%</text>
+</g>
+<rect x="115" y="490" width="970" height="105" rx="22" fill="#fff" stroke="#b8d2c5" stroke-width="3"/>
+<text x="600" y="555" text-anchor="middle" font-family="sans-serif" font-size="40" font-weight="800" fill="#294d50">利益率 6% × 資産回転率 2.0回 ＝ ROA 12%</text>
+</svg>

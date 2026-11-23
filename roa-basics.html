@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ROAとは？総資産利益率の計算方法とROEとの違い｜Invest Atlas</title>
+<meta name="description" content="ROA（総資産利益率）の意味と計算方法、利益率・総資産回転率への分解、ROEとの違い、企業比較の注意点を具体例で解説します。">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://webfoundrylab.github.io/invest-atlas/roa-basics.html">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#f5f7f8;color:#172b3d;font:16px/1.85 system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:#176d65;text-underline-offset:3px}
+.article{min-width:0}
+.eyebrow{font-size:.82rem;font-weight:800;letter-spacing:.08em;color:#176d65}
+.meta{font-size:.85rem;color:#5c6d7a}
+.lead{font-size:1.08rem;color:#405565}
+h1{font-size:clamp(1.8rem,4vw,2.65rem);line-height:1.35;margin:.5em 0}
+h2{font-size:1.42rem;line-height:1.45;margin:2.1em 0 .65em;border-bottom:2px solid #dce4e8;padding-bottom:.4em}
+h3{font-size:1.12rem;margin:1.45em 0 .4em}
+.title-main,.title-subtitle{display:block}
+.title-subtitle{font-size:.62em;line-height:1.5;font-weight:650;color:#536879;margin-top:.22em}
+.callout{margin:20px 0;padding:15px 18px;background:#edf7f4;border-left:4px solid #168276;border-radius:8px}
+.toc{margin:24px 0;padding:17px 21px;background:#f4f8f9;border:1px solid #dce4e8;border-radius:12px}
+.toc ol{margin:0;padding-left:1.4em}.toc li{margin:.25em 0}
+.table-wrap{overflow-x:auto;margin:18px 0}
+table{width:100%;border-collapse:collapse;font-size:.93rem}
+th,td{padding:11px;border:1px solid #dce4e8;text-align:left;vertical-align:top}
+th{background:#edf4f5}
+.formula{margin:18px 0;padding:16px;background:#f2f6fa;border-radius:10px;text-align:center;font-size:1.12rem;font-weight:800;overflow-wrap:anywhere}
+.diagram{margin:24px 0;padding:14px;border:1px solid #dce4e8;border-radius:13px;background:#fbfdfd}
+.diagram img{display:block;width:100%;height:auto}
+.diagram figcaption{margin-top:9px;font-size:.88rem;color:#536879}
+.note{font-size:.9rem;color:#536879}
+.sources li{margin:.6em 0}
+.related-inline{margin:18px 0;padding:13px 16px;background:#f1f7f6;border-radius:9px}
+@media(max-width:600px){h2{font-size:1.28rem}.toc{padding:14px}.diagram{padding:8px}th,td{padding:8px;font-size:.86rem}}
+</style>
+</head>
+<body>
+<main class="wrap"><article class="article">
+<p class="eyebrow">COMPANY ANALYSIS / FINANCIAL METRICS</p>
+<h1><span class="title-main">ROAとは？</span><span class="title-subtitle">総資産利益率の計算方法とROEとの違い</span></h1>
+<p class="meta">情報確認日：2026年11月23日</p>
+<p class="lead">ROA（総資産利益率）は、会社が保有する資産全体を使って、どれだけ利益を生み出したかを見る指標です。株主のお金だけでなく、借入金などで調達した資金も含めて事業の効率を確認できるため、ROEと組み合わせると企業の収益構造を読み取りやすくなります。</p>
+<div class="callout"><strong>この記事の結論：</strong>ROAは「利益 ÷ 総資産」で計算する収益性の指標です。利益率と総資産回転率に分解すると、利益を多く残す会社なのか、資産を効率よく回して売上を作る会社なのかが見えてきます。ただし、利益の定義によって数値が変わるため、比較時は計算基準をそろえます。</div>
+<nav class="toc" aria-label="この記事の目次"><strong>この記事でわかること</strong><ol>
+<li><a href="#meaning">ROAとは何か</a></li>
+<li><a href="#formula">ROAの計算方法</a></li>
+<li><a href="#example">具体例でROAを計算する</a></li>
+<li><a href="#breakdown">利益率と総資産回転率に分解する</a></li>
+<li><a href="#roe">ROAとROEの違い</a></li>
+<li><a href="#compare">企業比較での使い方</a></li>
+<li><a href="#limits">ROAを見るときの注意点</a></li>
+<li><a href="#steps">決算資料で確認する手順</a></li>
+</ol></nav>
+
+<h2 id="meaning">1. ROAとは何か</h2>
+<p>ROAは「Return on Assets」の略で、日本語では総資産利益率と呼ばれます。会社の総資産に対して、どれだけの利益を生み出したかを割合で示します。総資産は、現金・預金、売掛金、棚卸資産、設備などの資産の合計で、負債と純資産によって調達された資金の運用先です。</p>
+<p>ROEが株主に帰属する自己資本を分母にするのに対し、ROAは借入金などで調達した資金も含む総資産を分母にします。そのため、株主資本の大きさだけに左右されず、会社全体で資産をどれだけ効率よく使っているかを考える手掛かりになります。</p>
+<div class="table-wrap"><table><thead><tr><th>指標</th><th>分母</th><th>主に見ること</th></tr></thead><tbody>
+<tr><th>ROA</th><td>総資産</td><td>会社全体の資産を使って利益を生み出す効率</td></tr>
+<tr><th><a href="roe-basics.html">ROE</a></th><td>自己資本</td><td>株主資本を使って利益を生み出す効率</td></tr>
+</tbody></table></div>
+<p>ROAは高いほど、同じ資産規模でより多くの利益を生み出している状態を示します。ただし、資産を持たないビジネスモデルが有利になりやすいなど業種差があるため、異なる業種のROAを単純に順位付けする指標ではありません。</p>
+
+<h2 id="formula">2. ROAの計算方法</h2>
+<p>一般的な財務分析では、当期純利益を期首・期末の平均総資産で割る方法が使われます。</p>
+<div class="formula">ROA（%）＝ 当期純利益 ÷ 期中平均総資産 × 100</div>
+<p>期中平均総資産は、期首総資産と期末総資産の平均です。</p>
+<div class="formula">期中平均総資産 ＝（期首総資産 ＋ 期末総資産）÷ 2</div>
+<p>期中平均を使うのは、利益が1年間の活動によって生まれる一方、総資産は決算日時点の残高だからです。期末残高だけを使うと、期中の増資、借入、設備投資、資産売却などの変化が計算に十分反映されない場合があります。</p>
+<h3>ROAには利益の定義が複数ある</h3>
+<p>「ROA」という名前でも、分子に使う利益は必ずしも同じではありません。日本取引所グループの用語集でも、営業利益・経常利益・当期純利益などを使った総資産営業利益率、総資産経常利益率、総資産純利益率が区別されています。</p>
+<div class="table-wrap"><table><thead><tr><th>種類</th><th>分子</th><th>読み取る内容</th></tr></thead><tbody>
+<tr><th>総資産営業利益率</th><td>営業利益</td><td>本業の営業活動で資産からどれだけ利益を得たか</td></tr>
+<tr><th>総資産経常利益率</th><td>経常利益</td><td>営業外損益も含めた経常的な収益力</td></tr>
+<tr><th>総資産純利益率</th><td>当期純利益</td><td>税金や特別損益などを反映した最終利益に対する資産効率</td></tr>
+</tbody></table></div>
+<p>本記事では、企業の最終的な利益と資産規模を対応させるため、当期純利益を使うROAを基本として説明します。営業利益や経常利益を使うデータサービス・資料と比較するときは、利益の種類が一致しているか確認してください。</p>
+<div class="callout"><strong>比較の基本：</strong>分子の利益、分母の総資産（期末か期中平均か）、連結・単体の範囲、対象期間をそろえます。定義が違うROAを同じものとして比較しないことが重要です。</div>
+
+<h2 id="example">3. 具体例でROAを計算する</h2>
+<p>ある会社の当期純利益が6,000万円、期首総資産が4億円、期末総資産が6億円だったとします。</p>
+<div class="table-wrap"><table><thead><tr><th>項目</th><th>金額</th></tr></thead><tbody>
+<tr><th>当期純利益</th><td>6,000万円</td></tr>
+<tr><th>期首総資産</th><td>4億円</td></tr>
+<tr><th>期末総資産</th><td>6億円</td></tr>
+<tr><th>期中平均総資産</th><td>（4億円＋6億円）÷2＝5億円</td></tr>
+<tr><th>ROA</th><td>6,000万円÷5億円×100＝<strong>12%</strong></td></tr>
+</tbody></table></div>
+<p>この会社は、期中平均で5億円の資産を使い、6,000万円の当期純利益を生み出したため、ROAは12%です。これは「投資家が株式を買うと年12%のリターンを得られる」という意味ではありません。会社の会計上の利益を、会社が保有する資産規模と比べた経営・財務分析の指標です。</p>
+<h3>同じ利益でも資産規模が違えばROAは変わる</h3>
+<p>当期純利益がどちらも6,000万円のA社・B社を比べます。A社の期中平均総資産が5億円、B社が10億円なら、ROAは次のようになります。</p>
+<div class="table-wrap"><table><thead><tr><th>項目</th><th>A社</th><th>B社</th></tr></thead><tbody>
+<tr><th>当期純利益</th><td>6,000万円</td><td>6,000万円</td></tr>
+<tr><th>期中平均総資産</th><td>5億円</td><td>10億円</td></tr>
+<tr><th>ROA</th><td><strong>12%</strong></td><td><strong>6%</strong></td></tr>
+</tbody></table></div>
+<p>同じ利益を生み出すために、B社はA社の2倍の資産を必要としています。この条件だけを見れば、A社のほうが資産を効率よく使っているといえます。ただし、設備投資の直後でまだ売上が立ち上がっていない、成長のために先行投資をしているなど、資産が増えた理由も確認する必要があります。</p>
+
+<h2 id="breakdown">4. 利益率と総資産回転率に分解する</h2>
+<p>ROAは、売上高純利益率と総資産回転率に分解できます。ROAが高い・低いという結果だけでなく、その理由を考えるために役立つ見方です。</p>
+<div class="formula">ROA ＝ 売上高純利益率 × 総資産回転率</div>
+<ul>
+<li><strong>売上高純利益率：</strong>当期純利益 ÷ 売上高。売上から最終的にどれだけ利益を残せたかを示します。</li>
+<li><strong>総資産回転率：</strong>売上高 ÷ 期中平均総資産。保有する資産を使って、どれだけ売上を生み出したかを示します。</li>
+</ul>
+<figure class="diagram"><img src="images/roa-basics-breakdown.svg" alt="ROAを売上高純利益率と総資産回転率の掛け算に分解し、6パーセントと2回から12パーセントになる例を示した図"><figcaption>ROAの差は、利益率と資産回転率のどちらから生じているかを分けて確認できます。</figcaption></figure>
+<p>先ほどの例で、売上高が10億円、当期純利益が6,000万円、期中平均総資産が5億円なら、売上高純利益率は6%、総資産回転率は2.0回です。</p>
+<div class="formula">6% × 2.0回 ＝ ROA 12%</div>
+<p>利益率が高い会社は、価格設定や付加価値、原価・販管費の管理などによって売上から利益を多く残しています。一方、総資産回転率が高い会社は、在庫・設備・売掛金などの資産を効率よく使い、資産規模に対して大きな売上を生み出しています。</p>
+<p>たとえば小売業・卸売業では、利益率が低くても商品を速く販売し、資産を回転させることで収益を確保するビジネスがあります。反対に、高い付加価値を提供する企業では、資産回転率が比較的低くても利益率によってROAを確保する場合があります。どちらが優れているかは、業種や事業モデルを踏まえて判断します。</p>
+
+<h2 id="roe">5. ROAとROEの違い</h2>
+<p>ROAとROEは、どちらも利益を資本・資産の規模と比べる指標ですが、分母が異なります。ROAは負債と自己資本の両方で構成される総資産、ROEは株主に帰属する自己資本を使います。</p>
+<div class="table-wrap"><table><thead><tr><th>比較項目</th><th>ROA</th><th>ROE</th></tr></thead><tbody>
+<tr><th>日本語</th><td>総資産利益率</td><td>自己資本利益率</td></tr>
+<tr><th>分母</th><td>期中平均総資産</td><td>期中平均自己資本</td></tr>
+<tr><th>基本式（本記事の定義）</th><td>当期純利益÷平均総資産</td><td>当期純利益÷平均自己資本</td></tr>
+<tr><th>主な視点</th><td>会社全体の資産効率</td><td>株主資本の収益性</td></tr>
+</tbody></table></div>
+<p>利益の種類と期間基準をそろえた場合、次の関係で考えられます。</p>
+<div class="formula">ROE ＝ ROA ×（期中平均総資産 ÷ 期中平均自己資本）</div>
+<p>後半の「平均総資産 ÷ 平均自己資本」は、財務レバレッジに相当します。自己資本に対して負債を多く使う会社では、この倍率が大きくなり、ROAが同じでもROEは高くなります。</p>
+<p>例えば、平均総資産5億円、当期純利益6,000万円の会社ではROAは12%です。平均自己資本が3億円ならROEは20%、1億5,000万円ならROEは40%になります。後者のROEが高いのは、利益が増えたからではなく、自己資本に対する総資産の倍率が大きいことも理由です。</p>
+<p>したがって、ROEが高い企業を見つけたら、ROAや自己資本比率、借入金、利息負担も確認します。ROEの詳しい分解方法は<a href="roe-basics.html">ROE（自己資本利益率）の解説</a>も参照してください。</p>
+
+<h2 id="compare">6. 企業比較での使い方</h2>
+<p>ROAは、同業他社との比較や、同じ企業の複数年の推移を見るときに使います。比較するときは、少なくとも次の点をそろえましょう。</p>
+<div class="table-wrap"><table><thead><tr><th>確認すること</th><th>見る理由</th></tr></thead><tbody>
+<tr><th>同じ業種・事業モデル</th><td>設備・在庫・店舗など必要な資産の量が業種で異なるため</td></tr>
+<tr><th>同じ利益の定義</th><td>営業利益・経常利益・当期純利益では分子の意味が異なるため</td></tr>
+<tr><th>同じ資産の基準</th><td>期末総資産か期中平均総資産かで数値が変わるため</td></tr>
+<tr><th>同じ会計期間・連結範囲</th><td>対象期間や連結・単体の違いによるズレを避けるため</td></tr>
+<tr><th>複数年の推移</th><td>一時的な利益や投資直後の資産増加を見分けるため</td></tr>
+</tbody></table></div>
+<p>ROAの目安を一律に「何%以上なら優良」と決めることはできません。業種ごとの資産構成や利益率が異なるため、同業他社・業界統計・自社の過去推移を組み合わせて判断します。</p>
+<p>参考として、財務省の「法人企業統計からみえる企業の財務指標」に掲載された2024年度の総資本営業利益率は、全産業・全規模で3.8%、製造業で4.3%、非製造業で3.6%でした。ただし、これは営業利益を使った指標であり、本記事で基本式に採用した当期純利益ベースのROAとは分子が異なります。数値をそのまま同じ基準のROAとして比較しないでください。</p>
+
+<h2 id="limits">7. ROAを見るときの注意点</h2>
+<h3>① 資産を持たない企業が高く見えやすい</h3>
+<p>自社で工場や店舗などを多く保有する企業と、設備を外部委託する企業では、貸借対照表に計上される資産の量が異なります。事業の実態が似ていても、保有形態の違いでROAに差が出る場合があります。</p>
+<h3>② 成長投資の直後は一時的に低下することがある</h3>
+<p>工場・店舗・物流設備などを先に整備すると、売上や利益が十分に増える前に総資産が大きくなり、ROAが低下する場合があります。投資の目的、稼働率、売上への貢献が現れるまでの期間を確認しましょう。</p>
+<h3>③ 資産の帳簿価額と経済価値は一致しない</h3>
+<p>古い設備は減価償却が進み、帳簿上の価額が小さくなっていることがあります。その結果、同じ利益を生んでいても、設備が新しい会社よりROAが高く見える場合があります。資産の老朽化や更新投資の必要性も確認が必要です。</p>
+<h3>④ 一時的な利益で数値が上がることがある</h3>
+<p>固定資産や有価証券の売却益などによって当期純利益が一時的に増えると、ROAも上昇します。継続的な本業の収益力を見る場合は、営業利益や経常利益を使った指標も確認し、特別損益の影響を分けて考えます。</p>
+<h3>⑤ 負債のリスクを単独では測れない</h3>
+<p>ROAが高くても、借入金の返済負担や金利上昇リスクが小さいとは限りません。自己資本比率、有利子負債、利息負担、営業キャッシュフローなどを合わせて確認します。</p>
+
+<h2 id="steps">8. 決算資料で確認する手順</h2>
+<ol>
+<li><strong>損益計算書から利益を確認：</strong>当期純利益を確認し、特別利益・特別損失など一時的な要因がないか見ます。</li>
+<li><strong>貸借対照表から総資産を確認：</strong>前期末と当期末の総資産を取得し、平均値を計算します。</li>
+<li><strong>ROAを計算：</strong>当期純利益を期中平均総資産で割り、100を掛けます。</li>
+<li><strong>利益率と資産回転率に分解：</strong>売上高純利益率と総資産回転率のどちらが変化したかを確認します。</li>
+<li><strong>ROE・財務指標と組み合わせる：</strong>ROE、自己資本比率、負債、キャッシュフローを見て、資本構成と資産効率の両面を確認します。</li>
+<li><strong>同業他社・過去数年と比較：</strong>同じ定義・期間・連結範囲の数値を使い、改善・悪化の背景を決算説明資料で調べます。</li>
+</ol>
+<p class="related-inline">ROEやEPSなど、企業分析で使う指標の役割を整理したい場合は、<a href="roe-basics.html">ROEの計算方法と企業分析での使い方</a>、<a href="eps-basics.html">EPS（1株当たり利益）の解説</a>もあわせて確認してください。</p>
+
+<h2>まとめ</h2>
+<ul>
+<li>ROAは、会社の総資産に対してどれだけ利益を生み出したかを見る指標。</li>
+<li>基本式は「当期純利益 ÷ 期中平均総資産 × 100」。利益の定義によって別のROAがある。</li>
+<li>売上高純利益率と総資産回転率に分解すると、収益性の背景を読み取れる。</li>
+<li>ROEは自己資本、ROAは総資産を分母にするため、負債を含む資産全体の効率を確認するにはROAが役立つ。</li>
+<li>同業・複数年・同じ計算基準で比較し、ROAだけで企業の優劣を決めない。</li>
+</ul>
+<p>ROAは企業の資産効率を把握する入口です。利益率・資産回転率・財務レバレッジを分けて確認し、事業の収益力と財務の安全性を組み合わせて企業を分析しましょう。</p>
+
+<h2>参考資料</h2>
+<ul class="sources">
+<li><a href="https://www.jpx.co.jp/glossary/sa/554.html">日本取引所グループ「総資産利益率」</a> — ROAの定義と、利益の種類による指標の違い。</li>
+<li><a href="https://www.meti.go.jp/press/2022/03/20230331008/20230331008.pdf">経済産業省「『攻めの経営』を促す役員報酬 ～企業の持続的成長のためのインセンティブプラン導入の手引～」</a> — ROA・ROEの算定方法の例。</li>
+<li><a href="https://www.mof.go.jp/pri/reference/ssc/zaimu/zaimu01_01.pdf">財務省 財務総合政策研究所「財務指標の例①：総資本営業利益率」</a> — ROAの利益の種類による違い、総資本営業利益率の分解と2024年度の統計値。</li>
+<li><a href="https://www.fsa.go.jp/common/about/research/20230330_2/0330gyosyubetu_00.pdf">金融庁「業種別支援の着眼点」</a> — ROAの分解と業種特性を踏まえた分析の考え方。</li>
+</ul>
+</article></main>
+</body>
+</html>

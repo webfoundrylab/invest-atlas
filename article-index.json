@@ -1720,6 +1720,34 @@
       "publishedAt": "2026-11-22",
       "updatedAt": "2026-11-23",
       "publishOrder": 47
+    },
+    {
+      "slug": "roa-basics.html",
+      "title": "ROAとは？総資産利益率の計算方法とROEとの違い",
+      "mainTitle": "ROAとは？",
+      "subtitle": "総資産利益率の計算方法とROEとの違い",
+      "summary": "ROA（総資産利益率）の意味と計算方法、利益率・総資産回転率への分解、ROEとの違い、企業比較の注意点を具体例で解説します。",
+      "category": "companies",
+      "subcategory": "financial-statements",
+      "topic": "financial-metrics",
+      "tags": [
+        "ROA",
+        "総資産利益率",
+        "ROE",
+        "財務分析",
+        "企業分析",
+        "総資産回転率",
+        "利益率"
+      ],
+      "status": "published",
+      "related": [
+        "roe-basics.html",
+        "eps-basics.html"
+      ],
+      "thumbnail": "thumbnails/roa-basics.svg",
+      "publishedAt": "2026-11-23",
+      "updatedAt": "2026-11-23",
+      "publishOrder": 48
     }
   ],
   "pages": [
