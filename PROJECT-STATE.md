@@ -1,3 +1,11 @@
+## 2026-11-23 ETF価格形成の独立解説記事をPrivate stockに作成
+
+- 新規記事「米国市場が閉まっていてもETFは動く？先物・為替と価格の乖離を解説」をPrivate stockの `etf-market-hours` として作成。
+- 米国株現物市場の閉場中にS&P500連動ETFが動く理由、先物・為替・iNAV、需給と裁定取引、米国市場再開時の価格調整、オプションの位置づけを解説。
+- JPX、大和アセットマネジメント、CME、S&P Globalの公式資料を確認。公開済み関連記事4件への本文リンクを設置。
+- 本文HTML・図解SVG・サムネイルSVG・manifestをPrivate stockへ保存し、recommendation-order.jsonで既存ETF基礎記事の直後に登録。公開キュー未登録。
+- SVG XML検証・本番同等プレビュー・表示確認は未実施。manifestはaudit_pending。
+
 ## 2026-11-23 インフレ解説記事を最終監査・公開キュー登録
 
 - ユーザーから本番同等プレビューの確認OKを受領し、Private stock の `inflation-investing` を最終監査。
