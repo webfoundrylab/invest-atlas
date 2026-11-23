@@ -638,3 +638,12 @@
 - manifestの必須6チェックをすべてtrue、`draft_status=ready` に更新。公開キュー末尾（27番目）へ `etf-basics.html` を `scheduled` 登録。既存の予約済み記事の後に公開される。
 - manifest commit：`685e56967941020fc4f01550deb963e8b1d6c70d`。queue commit：`2aac065633cb413239cf21fef6cd0171fd767642`。
 - 公開リポジトリの記事HTML・article-indexは未変更。公開実行、GitHub Actions、Pagesデプロイ、公開URLでの実表示確認は未実施。公開は既存の自動公開トリガーに委ねる。
+
+
+## 2026-11-23 ETF価格形成記事のタイトル・カード・サムネイルを統一
+
+- Private stock の `etf-market-hours` について、正式タイトルを「米国市場の休場中もETF価格は動く？」に統一。
+- manifestのカード用title/mainTitle/subtitle/summary、本文HTMLのtitle/h1、サムネイルの主題・副題・SVG title、本文図解の見出しを同じ中心メッセージに揃えた。
+- ユーザーの指摘を stock の `USER-FEEDBACK.md` に記録し、今後は記事タイトルを正本としてカード・サムネイル・本文見出しを横断照合するルールを追加。
+- 更新コミット：本文 `adff2007`、サムネイル `948e7bd3`、図解 `ebbef7c0`、manifest `141aa146`、USER-FEEDBACK `b885ff98`。
+- 保存後の再取得で各タイトル表記とdraft/audit_pending状態、公開キュー未登録を確認。SVGのXMLパーサー検証・実レンダリング・本番同等プレビューは未実施。
