@@ -1,3 +1,14 @@
+## 2026-11-23 インフレ解説記事を最終監査・公開キュー登録
+
+- ユーザーから本番同等プレビューの確認OKを受領し、Private stock の `inflation-investing` を最終監査。
+- 2026年10月全国CPI（11月20日公表）の3系列、2025年基準、年率2％・20年間の購買力計算（20年後の100万円は現在の約67.3万円相当）、実質金利の計算式・数値例を再確認。
+- HTMLのnoindex/canonical/情報確認日/h1/目次アンカー/本文CSS/構造、記事内画像参照、公開済み関連記事3件へのリンク、カテゴリ階層、manifest、公開側article-index未登録を確認。
+- サムネイルに「年2％の物価上昇が20年続くと」「20年後の100万円の購買力＝現在の約67.3万円相当」を追加。本文図解とサムネイルを描画し、縮小表示での図柄・文字配置を確認。SVG XML構文検証済み。
+- stock全16パッケージのmanifestを横断し、files/updatesの公開先destination重複なしを確認。
+- manifest必須6チェックをすべてtrue、`draft_status=ready` に更新。queue末尾へ `inflation-investing.html` を `scheduled` 登録。先行する既存scheduled記事（ROIC、金投資、政策金利）の後に公開される。
+- manifest commit：`c607a1579e1f0c4290eaea4a6420f4187940fa6c`。queue commit：`c3265c98b733cf7c8a5302a2bca4defe7bb2bcf2`。
+- 公開リポジトリの記事HTML・article-indexは未変更。公開実行・GitHub Actions・Pagesデプロイ・公開URLでの実表示確認は未実施。公開は既存の自動公開トリガーに委ねる。
+
 
 
 ## 2026-11-23 ROA解説記事を公開
