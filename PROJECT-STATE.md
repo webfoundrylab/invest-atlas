@@ -545,3 +545,11 @@
 - サムネイルと本文図解をSVGで再作成。manifestの関連記事・タイトル・要約を本文と一致させ、監査チェックは未実施項目をtrueにせず、draft_statusはaudit_pendingを維持。
 - 再取得確認：h1・共通レイアウト・noindex・description・canonical・情報確認日・目次アンカー・内部リンク先・図解参照・SVGタグ構造・公開キュー未登録・公開記事台帳未登録を確認。実XMLパーサー検証、本番同等プレビュー、ブラウザ表示、全編集監査は未実施。公開キュー未登録を維持。
 - stock article commit：`80c839c18127a129eb6062519383fd392271aa6a`（本文は後続コミット `515639a2e2593f2f9d85b65bd5c64f47c88148e0` で内部リンク補完）、図解：`9feaf86a7c0d9dc1faa8b885ac69b27bd0da7d54`、サムネイル：`24c0b65c3f962428f632ea6c3f966f2bfa552862`、manifest：`933bec9dcf8ef6a5b22354224279b837c1425189`。
+
+
+### 2026-11-23 政策金利記事の未公開記事リンク修正
+
+- 再確認により、本文とmanifestの関連記事欄から未公開ストックの `real-interest-rate.html` と `inflation-investing.html` へのリンクが混入していたことを確認。
+- 両リンクを削除し、公開記事台帳に登録済みの `bonds-basics.html` と `currency-risk.html` のみを関連記事に残した。
+- 公開記事台帳と照合し、本文内HTMLリンク・manifest関連記事がすべて公開済み記事を指すことを再取得して確認。公開キューには登録していない。
+- article commit：`e31bb1703fc675dd8a78c7267bfe2a01629d7697`、manifest commit：`76452c8e4e0e12a2f3cafcef883451bb4211e229`。
