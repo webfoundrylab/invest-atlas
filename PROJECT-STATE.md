@@ -627,3 +627,14 @@
 - 背景は青系、保有資産側は青緑、取引所価格側はアンバーで区別。固定タイトル帯・ブランド透かし・文字階層はガイドラインを維持。
 - stock thumbnail commit：`9707aa93248e4b28aa0ed43d074ad5e840164c98`。manifest追記・USER-FEEDBACK記録もstock側に反映。
 - 最新SVGのXML・ブラウザ実表示と本番同等プレビューは未確認。manifestの `thumbnail_svg` / `visuals_complete` はfalse、公開キュー未登録を維持。
+
+
+## 2026-11-23 ETF基礎記事を最終監査・公開キュー登録
+
+- ユーザーから「ETFとは？」記事の本番同等プレビューOKを受領し、Private stock の `etf-basics` を最終監査。
+- 正式タイトル「ETFとは？仕組み・価格・売買方法と注意点」。本文の情報確認日2026年11月23日、h1=1、canonical/noindex、目次アンカー参照切れなし、記事内画像参照、公開済み関連記事3件への本文リンクを確認。
+- JPX公式のETFの仕組み・iNAV・売買制度・リスク・指定参加者資料を参照した既存の出典監査を確認。本文は設定・交換、市場価格/NAV/iNAV、プレミアム・ディスカウント、注文方法、売買単位、費用、リスクを扱う。
+- サムネイルの正式タイトル・主題/副題、固定タイトル帯、色相、図柄の主旨を確認。本文図解とサムネイルはユーザーのプレビュー確認OKを受領。SVGは既存のタグ構造検査済み。独立したXMLパーサー実行は未実施。
+- manifestの必須6チェックをすべてtrue、`draft_status=ready` に更新。公開キュー末尾（27番目）へ `etf-basics.html` を `scheduled` 登録。既存の予約済み記事の後に公開される。
+- manifest commit：`685e56967941020fc4f01550deb963e8b1d6c70d`。queue commit：`2aac065633cb413239cf21fef6cd0171fd767642`。
+- 公開リポジトリの記事HTML・article-indexは未変更。公開実行、GitHub Actions、Pagesデプロイ、公開URLでの実表示確認は未実施。公開は既存の自動公開トリガーに委ねる。
