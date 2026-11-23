@@ -586,3 +586,5 @@
 - HTMLの段落構造、h1、目次アンカー、noindex、canonical、画像参照、関連記事、カテゴリ階層、公開済みリンク先、manifest参照先を再取得確認。全stock記事パッケージのdestinationを横断確認し、重複なし。図解・サムネイルSVGのXML構文検証済み。
 - manifestのうち `editorial_review`、`sources_verified`、`internal_links_reviewed`、`backlinks_reviewed` をtrue。実ブラウザでのSVG表示・本番同等プレビューは未実施のため `visuals_complete` と `thumbnail_svg` はfalse、`draft_status=audit_pending` を維持。公開キュー未登録、公開記事台帳未登録。
 - stock commits：本文 `6216cd3`（後続参考資料整理 `9ad2221`）、図解 `9d1a23f`、manifest `62485ac`。サムネイルは変更なし。
+
+- 2026-11-23：`inflation-investing` のサムネイルを縮小レンダリングで確認。旧図柄は抽象的で下部の余白も大きかったため、同じ100万円で買える量を買い物袋3個から2個へ減らす比較図に再設計。透かしの強さも調整。1200×675 SVGのXML検証と縮小表示確認を完了。manifestの `thumbnail_svg=true`。実サイト一覧への組み込み表示は未確認。
