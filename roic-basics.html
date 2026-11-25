@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ROICとは？投下資本利益率の計算方法とWACCとの関係｜Invest Atlas</title>
+<meta name="description" content="ROIC（投下資本利益率）の計算方法、NOPATと投下資本の意味、ROA・ROEとの違い、WACCとの比較、具体的な数値例と注意点を解説します。">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://webfoundrylab.github.io/invest-atlas/roic-basics.html">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#f5f7f8;color:#172b3d;font:16px/1.85 system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:#176d65;text-underline-offset:3px}
+.article{min-width:0}
+.eyebrow{font-size:.82rem;font-weight:800;letter-spacing:.08em;color:#176d65}
+.meta{font-size:.85rem;color:#5c6d7a}
+.lead{font-size:1.08rem;color:#405565}
+h1{font-size:clamp(1.8rem,4vw,2.65rem);line-height:1.35;margin:.5em 0}
+h2{font-size:1.42rem;line-height:1.45;margin:2.1em 0 .65em;border-bottom:2px solid #dce4e8;padding-bottom:.4em}
+h3{font-size:1.12rem;margin:1.45em 0 .4em}
+.title-main,.title-subtitle{display:block}
+.title-subtitle{font-size:.62em;line-height:1.5;font-weight:650;color:#536879;margin-top:.22em}
+.callout{margin:20px 0;padding:15px 18px;background:#edf7f4;border-left:4px solid #168276;border-radius:8px}
+.toc{margin:24px 0;padding:17px 21px;background:#f4f8f9;border:1px solid #dce4e8;border-radius:12px}
+.toc ol{margin:0;padding-left:1.4em}.toc li{margin:.25em 0}
+.table-wrap{overflow-x:auto;margin:18px 0}
+table{width:100%;border-collapse:collapse;font-size:.93rem}
+th,td{padding:11px;border:1px solid #dce4e8;text-align:left;vertical-align:top}
+th{background:#edf4f5}
+.formula{margin:18px 0;padding:16px;background:#f2f6fa;border-radius:10px;text-align:center;font-size:1.12rem;font-weight:800;overflow-wrap:anywhere}
+.diagram{margin:24px 0;padding:14px;border:1px solid #dce4e8;border-radius:13px;background:#fbfdfd}
+.diagram img{display:block;width:100%;height:auto}
+.diagram figcaption{margin-top:9px;font-size:.88rem;color:#536879}
+.note{font-size:.9rem;color:#536879}
+.sources li{margin:.6em 0}
+.related-inline{margin:18px 0;padding:13px 16px;background:#f1f7f6;border-radius:9px}
+@media(max-width:600px){h2{font-size:1.28rem}.toc{padding:14px}.diagram{padding:8px}th,td{padding:8px;font-size:.86rem}}
+</style>
+</head>
+<body>
+<main class="wrap"><article class="article">
+<p class="eyebrow">COMPANY ANALYSIS / FINANCIAL METRICS</p>
+<h1><span class="title-main">ROICとは？</span><span class="title-subtitle">投下資本利益率の計算方法とWACCとの関係</span></h1>
+<p class="meta">情報確認日：2026年11月25日</p>
+<p class="lead">ROIC（投下資本利益率）は、企業が事業に投じた資本を使って、どれだけ税引後の営業利益を生み出したかを測る指標です。ROA・ROEと異なり、事業に使う資本と、その資本を調達するコストを比べることで、企業が資本コストを上回る価値を生み出しているかを考える手掛かりになります。</p>
+<div class="callout"><strong>この記事の結論：</strong>ROICは「税引後営業利益（NOPAT）÷投下資本」で計算します。ROICがWACC（加重平均資本コスト）を上回る状態が続けば、投下資本に対して資本コストを超える利益を生み出していると評価できます。ただし、投下資本や税率の定義は企業・分析者で異なるため、数字を比較するときは計算基準をそろえる必要があります。</div>
+<nav class="toc" aria-label="この記事の目次"><strong>この記事でわかること</strong><ol>
+<li><a href="#meaning">ROICとは何か</a></li>
+<li><a href="#formula">ROICの計算方法</a></li>
+<li><a href="#example">数値例でROICを計算する</a></li>
+<li><a href="#decompose">利益率と投下資本回転率に分解する</a></li>
+<li><a href="#wacc">ROICとWACCの関係</a></li>
+<li><a href="#compare">ROA・ROEとの違い</a></li>
+<li><a href="#use">企業分析での使い方</a></li>
+<li><a href="#limits">ROICを見るときの注意点</a></li>
+</ol></nav>
+
+<h2 id="meaning">1. ROICとは何か</h2>
+<p>ROICは「Return on Invested Capital」の略で、日本語では投下資本利益率と呼ばれます。会社が事業活動のために投じた資本を分母にし、その事業から得た税引後営業利益を分子にして、資本を使う効率を割合で表します。</p>
+<p>企業は株主から出資を受けるだけでなく、銀行借入や社債などでも資金を調達します。ROEは主に株主資本に対する最終利益を測りますが、ROICは株主資本と有利子負債など、事業に使う資本全体に着目します。そのため、借入の多さに左右されにくい形で、事業そのものの資本効率を分析する際に使われます。</p>
+<p>ROICは企業経営の指標としても利用されますが、投資家にとっても、企業が設備・在庫・売掛金などに資金を投じ、その資金からどれほど利益を生み出しているかを考える材料になります。</p>
+
+<h2 id="formula">2. ROICの計算方法</h2>
+<div class="formula">ROIC（%）＝ 税引後営業利益（NOPAT）÷ 投下資本 × 100</div>
+<h3>NOPAT（税引後営業利益）</h3>
+<p>NOPATは「Net Operating Profit After Tax」の略で、営業利益から、営業利益に対応するみなし税金を差し引いた利益です。一般的な簡便計算では、次の式を使います。</p>
+<div class="formula">NOPAT ＝ 営業利益 ×（1 − 実効税率）</div>
+<p>ここでいう実効税率は、ROICを計算するために営業利益へ適用する税率です。実際の法人税等には税務上の調整や一時差異などが含まれるため、損益計算書の法人税等をそのまま営業利益から引く計算とは一致しないことがあります。企業が独自に調整後NOPATを開示している場合は、その定義も確認します。</p>
+<h3>投下資本</h3>
+<p>投下資本は、事業を運営するために実際に使っている資本です。算出方法には、資金をどこから調達したかを見る方法と、資金を何に使っているかを見る方法があります。</p>
+<div class="table-wrap"><table><thead><tr><th>見方</th><th>計算例</th><th>考え方</th></tr></thead><tbody>
+<tr><th>調達側から見る</th><td>株主資本＋有利子負債−非事業用資産</td><td>株主・金融機関などから調達し、事業に投じた資本を捉える</td></tr>
+<tr><th>運用側から見る</th><td>運転資本＋事業用固定資産</td><td>売掛金・棚卸資産・設備など、事業運営に使う資産から事業負債を差し引いて捉える</td></tr>
+</tbody></table></div>
+<p>「非事業用資産」には、事業に必要な水準を超える余剰現金や、事業活動に直接使っていない投資資産などが含まれる場合があります。どこまでを事業用とみなすかで投下資本は変わるため、企業の開示資料や分析目的に応じた定義を確認してください。</p>
+<p>期中の資本変動が大きい企業を比較する場合は、期末の投下資本だけでなく、期首・期末平均など期間に対応した分母を使う方法もあります。分子が1年間の利益であるのに対し、分母が一時点の残高である点を意識し、比較する企業間で基準をそろえます。</p>
+
+<h2 id="example">3. 数値例でROICを計算する</h2>
+<p>ある企業の1年間の業績と資本を、次のように仮定します。金額は計算方法を示すための架空の例です。</p>
+<div class="table-wrap"><table><thead><tr><th>項目</th><th>金額・条件</th></tr></thead><tbody>
+<tr><th>売上高</th><td>10億円</td></tr>
+<tr><th>営業利益</th><td>1億円</td></tr>
+<tr><th>実効税率（仮定）</th><td>30%</td></tr>
+<tr><th>株主資本</th><td>3億5,000万円</td></tr>
+<tr><th>有利子負債</th><td>2億円</td></tr>
+<tr><th>非事業用資産（余剰現金等）</th><td>5,000万円</td></tr>
+<tr><th>投下資本</th><td>3億5,000万円＋2億円−5,000万円＝5億円</td></tr>
+</tbody></table></div>
+<p>まず、営業利益1億円に税率30%を適用し、NOPATを計算します。</p>
+<div class="formula">1億円 ×（1 − 0.30）＝ 7,000万円</div>
+<p>次に、NOPAT7,000万円を投下資本5億円で割ります。</p>
+<div class="formula">ROIC ＝ 7,000万円 ÷ 5億円 × 100 ＝ <strong>14%</strong></div>
+<p>この仮定例では、企業は事業に投じた5億円に対して、税引後営業利益7,000万円を生み出しており、ROICは14%です。これは株主が株式を保有した場合の利回りや、株価の期待リターンが14%という意味ではありません。事業に使う資本と、事業から得た利益の関係を示しています。</p>
+
+<h2 id="decompose">4. 利益率と投下資本回転率に分解する</h2>
+<p>ROICは、税引後営業利益率と投下資本回転率に分解できます。ROICが高い・低いという結果だけでなく、利益率が高いのか、資本を効率よく回して売上を作っているのかを考えるための見方です。</p>
+<div class="formula">ROIC ＝ 税引後営業利益率 × 投下資本回転率</div>
+<ul>
+<li><strong>税引後営業利益率：</strong>NOPAT ÷ 売上高。売上高から税引後営業利益をどれだけ残せたかを示します。</li>
+<li><strong>投下資本回転率：</strong>売上高 ÷ 投下資本。事業に投じた資本から、どれだけ売上高を生み出したかを示します。</li>
+</ul>
+<figure class="diagram"><img src="images/roic-basics-breakdown.svg" alt="税引後営業利益率7%と投下資本回転率2.0回を掛け合わせ、ROIC14%になる計算図"><figcaption>売上高10億円、NOPAT7,000万円、投下資本5億円の仮定例。7% × 2.0回 ＝ ROIC14%です。</figcaption></figure>
+<p>上の例では、税引後営業利益率は7,000万円÷10億円＝7%、投下資本回転率は10億円÷5億円＝2.0回です。両者を掛けると、7%×2.0回＝14%となり、ROICの計算結果と一致します。</p>
+<p>利益率を改善するには、価格設定、製品構成、原価、販管費などが関係します。投下資本回転率を改善するには、在庫や売掛金の管理、設備稼働率、遊休資産の見直しなどが関係します。どちらを改善すべきかは事業モデルによって異なります。</p>
+
+<h2 id="wacc">5. ROICとWACCの関係</h2>
+<p>ROICを企業価値の分析に使うときは、WACC（Weighted Average Cost of Capital：加重平均資本コスト）と比較します。WACCは、株主資本コストと負債コストを、それぞれの調達割合に応じて加重平均した資金調達コストです。</p>
+<div class="formula">ROIC − WACC ＝ ROICスプレッド</div>
+<p>ROICがWACCを上回る場合、事業が生み出すリターンは資本を調達・使用するコストを上回っています。反対にROICがWACCを下回る場合、会計上は利益が出ていても、資本コストを考慮すると十分なリターンを生み出せていない可能性があります。</p>
+<h3>経済的利益（EP）で金額に置き換える</h3>
+<p>ROICとWACCの差を、投下資本に対する金額で表したものが経済的利益（Economic Profit：EP）です。</p>
+<div class="formula">EP ＝ NOPAT −（投下資本 × WACC）<br>＝ 投下資本 ×（ROIC − WACC）</div>
+<p>先ほどの例で、投下資本5億円、ROIC14%に対して、WACCを仮に8%とします。</p>
+<div class="table-wrap"><table><thead><tr><th>項目</th><th>計算</th><th>結果</th></tr></thead><tbody>
+<tr><th>NOPAT</th><td>営業利益1億円×（1−30%）</td><td>7,000万円</td></tr>
+<tr><th>資本コスト</th><td>投下資本5億円×WACC8%</td><td>4,000万円</td></tr>
+<tr><th>経済的利益</th><td>7,000万円−4,000万円</td><td><strong>3,000万円</strong></td></tr>
+<tr><th>ROICスプレッド</th><td>14%−8%</td><td><strong>＋6ポイント</strong></td></tr>
+</tbody></table></div>
+<p>この仮定では、資本コストを差し引いた後も3,000万円の経済的利益が残ります。実際のWACCは、株主資本コスト、負債コスト、資本構成などから推計するもので、企業や分析者によって前提が異なります。ここでの8%は説明用の仮定であり、全企業に共通する基準値ではありません。</p>
+<div class="callout"><strong>重要：</strong>ROICがWACCを一時的に上回っただけで、企業価値が必ず高まるとは限りません。将来もその差を維持できるか、成長投資によって利益と投下資本がどう変わるか、リスクが適切に反映されているかを合わせて考えます。</div>
+
+<h2 id="compare">6. ROA・ROEとの違い</h2>
+<p>ROA・ROE・ROICはいずれも資本効率を見る指標ですが、分子と分母が異なります。</p>
+<div class="table-wrap"><table><thead><tr><th>指標</th><th>分子</th><th>分母</th><th>主な視点</th></tr></thead><tbody>
+<tr><th>ROA</th><td>当期純利益など</td><td>総資産</td><td>会社が保有する資産全体の収益性</td></tr>
+<tr><th>ROE</th><td>当期純利益</td><td>自己資本</td><td>株主資本に対する収益性</td></tr>
+<tr><th>ROIC</th><td>税引後営業利益（NOPAT）</td><td>事業に投じた資本</td><td>事業に使う資本の効率と資本コスト</td></tr>
+</tbody></table></div>
+<p>ROAは事業用資産以外も含む総資産を使うため、余剰現金や非事業資産を多く持つ企業では、事業そのものの効率が見えにくくなることがあります。ROICは事業に使う資本を切り分ける点が特徴です。一方、投下資本の定義を調整する手間があり、企業間で計算基準がそろわない場合があります。</p>
+<p>ROEは株主に帰属する利益と自己資本の関係を見るため、借入の活用や自己資本の変化で数値が大きく変わることがあります。ROICは営業利益を基にするため、資金調達方法の違いを切り離して事業効率を見やすい指標です。</p>
+<p>それぞれの計算方法を詳しく確認する場合は、<a href="roa-basics.html">ROA（総資産利益率）</a>と<a href="roe-basics.html">ROE（自己資本利益率）</a>の記事も参照してください。</p>
+
+<h2 id="use">7. 企業分析での使い方</h2>
+<ol>
+<li><strong>定義をそろえる：</strong>NOPATの税率、投下資本に含める負債・現金・固定資産、期末残高か平均残高かを確認します。</li>
+<li><strong>複数年の推移を見る：</strong>単年度のROICだけでなく、景気や一時的な利益の影響を除いて、数年間の推移を見ます。</li>
+<li><strong>同業他社と比較する：</strong>設備や在庫を多く必要とする業種と、資産をあまり必要としない業種を単純比較せず、事業モデルが近い企業同士で比較します。</li>
+<li><strong>ROICを分解する：</strong>利益率と投下資本回転率のどちらが変化したのかを確認し、価格・原価・在庫・設備投資などの要因を調べます。</li>
+<li><strong>WACCと成長投資を見る：</strong>ROICとWACCの差だけでなく、投下資本を増やす投資が将来どの程度の利益を生むか、投資回収までの時間も確認します。</li>
+<li><strong>財務諸表に戻る：</strong>営業利益、運転資本、設備投資、有利子負債、現預金などを確認し、ROICの改善が事業の競争力向上によるものかを考えます。</li>
+</ol>
+<p>特に注意したいのは、ROICを上げることだけを目的にしないことです。設備投資や研究開発、人材投資の直後は、先に投下資本が増え、利益が後から伸びるため、ROICが一時的に低下することがあります。将来の資本コストを上回るリターンが見込める成長投資まで抑えれば、短期的なROICは上がっても、企業価値の成長を損なう可能性があります。</p>
+
+<h2 id="limits">8. ROICを見るときの注意点</h2>
+<ul>
+<li><strong>投下資本の定義が統一されていない：</strong>余剰現金、リース負債、のれん、非事業資産などをどう扱うかで数値が変わります。</li>
+<li><strong>NOPATは会計上の当期純利益とは異なる：</strong>営業利益にみなし税率を適用するため、実際の法人税等や特別損益を反映した当期純利益とは一致しません。</li>
+<li><strong>過去の投資が帳簿価額に影響する：</strong>古い設備を使い続けている企業は、資産の帳簿価額が小さくなり、ROICが高く見えることがあります。</li>
+<li><strong>成長投資の初期には低下し得る：</strong>新工場・新店舗・研究開発などの投資は、利益が本格化する前に分母を増やします。短期の低下だけで投資の失敗とは判断できません。</li>
+<li><strong>金融機関は単純比較しにくい：</strong>銀行・保険などは負債や資産が事業モデルの中心にあるため、一般事業会社と同じ投下資本の考え方を当てはめにくい場合があります。</li>
+<li><strong>高ROICでも成長余地が小さい場合がある：</strong>資本をほとんど追加せず高い利益率を維持している企業と、資本を増やして成長する企業では、企業価値の伸び方が異なります。</li>
+</ul>
+<p>ROICは企業の価値創造を考える重要な指標ですが、単独で株価の割安・割高や将来の株主リターンを判断するものではありません。利益の持続性、競争優位、投資機会、財務リスク、株価に織り込まれた期待も合わせて確認しましょう。</p>
+
+<h2>まとめ</h2>
+<p>ROICは、事業に投じた資本から税引後営業利益（NOPAT）をどれだけ生み出したかを示す指標です。NOPATを投下資本で割って計算し、税引後営業利益率と投下資本回転率に分解できます。さらにWACCと比較することで、資本コストを上回るリターンを生み出しているかを考えられます。</p>
+<p>ROAは総資産全体、ROEは株主資本、ROICは事業に投じた資本を見るという違いを押さえ、計算基準・複数年の推移・成長投資を確認することが、企業分析での実践的な使い方です。</p>
+
+<h2>参考資料</h2>
+<ul class="sources">
+<li><a href="https://www.meti.go.jp/shingikai/sankoshin/shin_kijiku/value_creation/pdf/20260721_guidance_01.pdf">経済産業省「成長投資ガイダンス」（2026年7月21日公表）</a> — ROIC・NOPAT・投下資本・WACC・経済的利益の定義。</li>
+<li><a href="https://www.meti.go.jp/shingikai/sankoshin/shin_kijiku/value_creation/009.html">経済産業省「第9回 価値創造経営小委員会」</a> — 成長投資ガイダンス本文・エグゼクティブサマリー等の資料。</li>
+<li><a href="https://www.meti.go.jp/shingikai/mono_info_service/distribution_industry/pdf/20230331_1.pdf">経済産業省「ROICの算出式」（2023年3月31日資料）</a> — ROA・ROE・ROICの算出式と評価視点の比較。</li>
+<li><a href="https://www.nri.com/jp/knowledge/glossary/roic.html">野村総合研究所「ROIC（投下資本利益率）」</a> — ROICの基本的な意味とROEとの違い。</li>
+</ul>
+</article></main>
+</body></html>

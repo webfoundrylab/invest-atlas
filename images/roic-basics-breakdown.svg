@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" role="img" aria-labelledby="t d">
+<title id="t">ROICの分解図</title>
+<desc id="d">税引後営業利益率7パーセントと投下資本回転率2.0回を掛け合わせるとROIC14パーセントになる。売上高10億円、NOPAT7000万円、投下資本5億円の仮定例。</desc>
+<rect width="1200" height="600" rx="24" fill="#f5f8f7"/>
+<text x="600" y="66" text-anchor="middle" font-family="sans-serif" font-size="42" font-weight="800" fill="#173b4d">ROIC ＝ 利益率 × 資本回転率</text>
+<g font-family="sans-serif" text-anchor="middle">
+<rect x="45" y="125" width="330" height="250" rx="24" fill="#e4f1ec" stroke="#287e74" stroke-width="4"/>
+<text x="210" y="185" font-size="34" font-weight="800" fill="#176d65">税引後営業利益率</text>
+<text x="210" y="270" font-size="68" font-weight="900" fill="#173b4d">7%</text>
+<text x="210" y="325" font-size="30" font-weight="700" fill="#405565">NOPAT 7,000万円 ÷</text>
+<text x="210" y="360" font-size="30" font-weight="700" fill="#405565">売上高10億円</text>
+<text x="405" y="270" font-size="64" font-weight="900" fill="#287e74">×</text>
+<rect x="435" y="125" width="330" height="250" rx="24" fill="#f7eadf" stroke="#b66d43" stroke-width="4"/>
+<text x="600" y="185" font-size="34" font-weight="800" fill="#98552f">投下資本回転率</text>
+<text x="600" y="270" font-size="68" font-weight="900" fill="#173b4d">2.0回</text>
+<text x="600" y="325" font-size="30" font-weight="700" fill="#405565">売上高10億円 ÷</text>
+<text x="600" y="360" font-size="30" font-weight="700" fill="#405565">投下資本5億円</text>
+<text x="795" y="270" font-size="64" font-weight="900" fill="#287e74">＝</text>
+<rect x="825" y="125" width="330" height="250" rx="24" fill="#173f59" stroke="#173f59" stroke-width="4"/>
+<text x="990" y="205" font-size="42" font-weight="800" fill="#d9eee5">ROIC</text>
+<text x="990" y="300" font-size="82" font-weight="900" fill="#fff">14%</text>
+</g>
+<rect x="90" y="420" width="1020" height="115" rx="22" fill="#fff" stroke="#cbdad5" stroke-width="3"/>
+<text x="600" y="468" text-anchor="middle" font-family="sans-serif" font-size="34" font-weight="800" fill="#173b4d">売上高10億円・NOPAT7,000万円</text>
+<text x="600" y="510" text-anchor="middle" font-family="sans-serif" font-size="34" font-weight="800" fill="#173b4d">投下資本5億円の仮定例</text>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+<title id="title">ROICとは？ 投下資本利益率の計算方法とWACCとの関係</title>
+<desc id="desc">仮定例のROIC14%とWACC8%を同じ尺度の横棒で比較し、6ポイントの差があることを示す。</desc>
+<rect width="1200" height="675" fill="#f0edf5"/>
+<g font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="270" letter-spacing="-8" fill="#78658e" opacity=".075"><text x="18" y="400">Invest</text><text x="1180" y="605" text-anchor="end">Atlas</text></g>
+<rect x="24" y="22" width="1152" height="150" rx="22" fill="#fff" stroke="#79628f" stroke-width="2"/>
+<text x="600" y="57" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="800" letter-spacing="1" fill="#79628f">RETURN ON INVESTED CAPITAL</text>
+<text x="600" y="116" text-anchor="middle" font-family="sans-serif" font-size="48" font-weight="800" fill="#26334c">ROICとは？</text>
+<text x="600" y="157" text-anchor="middle" font-family="sans-serif" font-size="34" font-weight="650" fill="#4f586b">投下資本利益率の計算方法とWACCとの関係</text>
+<g font-family="sans-serif">
+<text x="92" y="302" font-size="42" font-weight="850" fill="#684783">ROIC</text>
+<rect x="280" y="260" width="630" height="66" rx="18" fill="#e3d9ed"/>
+<rect x="280" y="260" width="560" height="66" rx="18" fill="#76558f"/>
+<text x="865" y="309" font-size="54" font-weight="900" fill="#684783">14%</text>
+<text x="92" y="432" font-size="42" font-weight="850" fill="#a4672d">WACC</text>
+<rect x="280" y="390" width="630" height="66" rx="18" fill="#f2e5d5"/>
+<rect x="280" y="390" width="320" height="66" rx="18" fill="#d69a50"/>
+<text x="625" y="439" font-size="54" font-weight="900" fill="#965c28">8%</text>
+<path d="M600 480 V510 H840 V480" fill="none" stroke="#76558f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="360" y="520" width="480" height="105" rx="24" fill="#302b49"/>
+<text x="600" y="590" text-anchor="middle" font-size="52" font-weight="900" fill="#fff">＋6ポイント</text>
+</g>
+</svg>

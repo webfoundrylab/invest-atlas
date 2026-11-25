@@ -1748,6 +1748,35 @@
       "publishedAt": "2026-11-23",
       "updatedAt": "2026-11-23",
       "publishOrder": 48
+    },
+    {
+      "slug": "roic-basics.html",
+      "title": "ROICとは？投下資本利益率の計算方法とWACCとの関係",
+      "mainTitle": "ROICとは？",
+      "subtitle": "投下資本利益率の計算方法とWACCとの関係",
+      "summary": "ROIC（投下資本利益率）の計算方法、NOPATと投下資本の意味、ROA・ROEとの違い、WACCとの比較、具体的な数値例と注意点を解説します。",
+      "category": "companies",
+      "subcategory": "financial-statements",
+      "topic": "financial-metrics",
+      "tags": [
+        "ROIC",
+        "投下資本利益率",
+        "WACC",
+        "NOPAT",
+        "資本コスト",
+        "企業価値",
+        "企業分析",
+        "財務分析"
+      ],
+      "status": "published",
+      "related": [
+        "roa-basics.html",
+        "roe-basics.html"
+      ],
+      "thumbnail": "thumbnails/roic-basics.svg",
+      "publishedAt": "2026-11-25",
+      "updatedAt": "2026-11-25",
+      "publishOrder": 49
     }
   ],
   "pages": [
