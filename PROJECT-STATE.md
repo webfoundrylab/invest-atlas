@@ -670,3 +670,14 @@
 - ユーザーの指摘を stock の `USER-FEEDBACK.md` に記録し、今後は記事タイトルを正本としてカード・サムネイル・本文見出しを横断照合するルールを追加。
 - 更新コミット：本文 `adff2007`、サムネイル `948e7bd3`、図解 `ebbef7c0`、manifest `141aa146`、USER-FEEDBACK `b885ff98`。
 - 保存後の再取得で各タイトル表記とdraft/audit_pending状態、公開キュー未登録を確認。SVGのXMLパーサー検証・実レンダリング・本番同等プレビューは未実施。
+
+
+## 2026-11-25 ROIC解説記事を公開
+
+- 公開キュー先頭の `roic-basics.html` を公開。正式タイトル「ROICとは？投下資本利益率の計算方法とWACCとの関係」。公開順49、公開日2026-11-25。
+- 経済産業省「成長投資ガイダンス」のROIC・NOPAT・投下資本・WACC・経済的利益の定義と、同省のROIC算出式資料を照合。ROIC＝NOPAT÷投下資本、EP＝NOPAT−（投下資本×WACC）＝投下資本×（ROIC−WACC）の式、投下資本の調達側/運用側の定義差を確認。記事の仮定例（営業利益1億円、税率30%、NOPAT7,000万円、投下資本5億円、ROIC14%、WACC仮定8%、EP3,000万円）の計算と図解数値に不整合なし。
+- 情報確認日を2026-11-25に更新。stock原稿の `noindex,nofollow` を公開側で `index,follow` に変換。ROA・ROEへの本文内部リンク、記事台帳のカテゴリ階層・タグ・関連記事、サムネイルSVG・本文図解SVGを登録。
+- 公開コミット：`81c14a1f1afac1f13a87df21458afd407752ae2b`。
+- GitHub Pages workflow run `45544647339` は build・サイトマップ/関連記事生成・記事台帳/サイトマップ検証・artifact upload・deploy まで success。
+- Private stock のqueueを `published` に更新し、公開済みパッケージ（article.html、manifest.json、thumbnail.svg、本文図解SVG）を削除。stock queue commit：`6fee3f4c2610139a9df8741adca8d5313bb63765`。
+- 公開URL：`https://webfoundrylab.github.io/invest-atlas/roic-basics.html`。Actionsデプロイ成功は確認済み。Web確認ツールでは公開URLを取得できず、ブラウザ上の実表示は未確認。
