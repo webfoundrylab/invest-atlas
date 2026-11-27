@@ -681,3 +681,13 @@
 - GitHub Pages workflow run `45544647339` は build・サイトマップ/関連記事生成・記事台帳/サイトマップ検証・artifact upload・deploy まで success。
 - Private stock のqueueを `published` に更新し、公開済みパッケージ（article.html、manifest.json、thumbnail.svg、本文図解SVG）を削除。stock queue commit：`6fee3f4c2610139a9df8741adca8d5313bb63765`。
 - 公開URL：`https://webfoundrylab.github.io/invest-atlas/roic-basics.html`。Actionsデプロイ成功は確認済み。Web確認ツールでは公開URLを取得できず、ブラウザ上の実表示は未確認。
+
+
+## 2026-11-27 金投資の解説記事を公開
+
+- 公開キュー先頭の `gold-investing.html` を公開。正式タイトル「金投資とは？価格が動く理由・投資方法4種類とリスクを比較」。公開順50、公開日2026-11-27。
+- 公開直前にWorld Gold CouncilのQ3 2026公式資料（2026-11-03公表）、国税庁No.3161（令和8年4月1日現在法令等）、金融庁のつみたて投資枠対象商品一覧（2026-11-16更新）、資産運用業協会の成長投資枠対象商品一覧（2026-11-25更新）を再確認。年初来金需要3,881トン、中央銀行購入675トン、Q3金ETF流入211トン、地金・金貨需要前年比19%減の記述を確認。NISA参照資料の重複を解消し、成長投資枠一覧へのリンクを直接URLに修正。情報確認日を2026-11-27へ更新。
+- サムネイル副題を正式登録副題に一致させ、直近サムネイル群との一覧バランスに合わせて暗色背景を淡い青灰色へ変更。本文図解SVGは既存のプレビュー確認済み資産を使用。
+- 公開HTMLのrobotsを `index,follow` に設定。初回workflow run `45992090110` は公開HTMLの `noindex` 残存を検出して検証失敗。原因を修正したコミット `0ddececcb734889e96603dae2b494e10887e1254` で再実行し、workflow run `45992138574` のビルド・サイトマップ/関連記事生成・記事台帳/サイトマップ検証・artifact upload・Pagesデプロイがすべてsuccess。
+- 公開URL：`https://webfoundrylab.github.io/invest-atlas/gold-investing.html`。GitHub Pagesデプロイ成功・HTMLのcanonical/robots/記事台帳を確認。Web表示確認ツールではURLを取得できず、ブラウザ上の実表示は未確認。
+- Private stockのqueueを `published` に更新し、recommendation-orderから除外。公開済みパッケージ（article.html、manifest.json、thumbnail.svg、本文図解SVG）を削除。stock commit：`dc6b30240b404693a01053d210d8131c9a5e50ba`。
