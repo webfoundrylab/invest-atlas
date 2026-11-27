@@ -1777,6 +1777,35 @@
       "publishedAt": "2026-11-25",
       "updatedAt": "2026-11-25",
       "publishOrder": 49
+    },
+    {
+      "slug": "gold-investing.html",
+      "title": "金投資とは？価格が動く理由・投資方法4種類とリスクを比較",
+      "mainTitle": "金投資とは？",
+      "subtitle": "価格が動く理由・投資方法4種類とリスクを比較",
+      "summary": "金価格を動かす実質金利・米ドル・地政学リスク・需給の仕組み、円建て価格の計算、現物・純金積立・ETF・投資信託のコストや税金、分散投資での役割を具体例で解説します。",
+      "category": "markets",
+      "subcategory": "investment-themes",
+      "tags": [
+        "金投資",
+        "ゴールド",
+        "金価格",
+        "金ETF",
+        "純金積立",
+        "為替",
+        "実質金利",
+        "分散投資"
+      ],
+      "status": "published",
+      "related": [
+        "diversification-basics.html",
+        "currency-risk.html"
+      ],
+      "thumbnail": "thumbnails/gold-investing.svg",
+      "topic": "precious-metals",
+      "publishedAt": "2026-11-27",
+      "updatedAt": "2026-11-27",
+      "publishOrder": 50
     }
   ],
   "pages": [
